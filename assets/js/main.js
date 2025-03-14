@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".toggleBar").click(function () {
-        $(".side-bar").toggle();
+        $(".side-bar").toggleClass('sidebarActive');
 
     });
 })
