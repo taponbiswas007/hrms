@@ -8254,6 +8254,10 @@ fieldset:disabled .btn {
     color: #f8f9fa !important
 }
 
+.text-grey {
+    color: #8E8E93 !important
+}
+
 .text-dark {
     color: #212529 !important
 }

@@ -1,0 +1,123 @@
+.month {
+    padding-bottom: 18px;
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    border-bottom: 0.69px solid #A3A3A6;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: #B3B3B3;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.month .prev {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    float: left;
+    padding-top: 4px;
+    border: 0.6px solid #CBCBCB;
+    transition: all 0.4s ease;
+
+    &:hover {
+        background: #657FF533;
+        color: #000000;
+    }
+}
+
+.month .next {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    float: right;
+    padding-top: 4px;
+    border: 0.6px solid #CBCBCB;
+    transition: all 0.4s ease;
+
+    &:hover {
+        background: #657FF533;
+        color: #000000;
+    }
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #B3B3B3;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #ffffff;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #1B1B1B;
+    height: 43px;
+
+
+}
+
+.days .prev-and-next-munth-date {
+    color: #B3B3B3;
+}
+
+.days li .active {
+    padding: 7px 12px 15px 12px;
+    background: #657FF533;
+    color: #657FF5 !important;
+    border-radius: 6px;
+
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+
+    .weekdays li,
+    .days li {
+        width: 13.1%;
+    }
+}
+
+
+
+@media screen and (max-width: 420px) {
+
+    .weekdays li,
+    .days li {
+        width: 12.5%;
+    }
+
+
+}
+
+@media screen and (max-width: 290px) {
+
+    .weekdays li,
+    .days li {
+        width: 12.2%;
+    }
+}

@@ -7,4 +7,10 @@ $(document).ready(function () {
         $(".side-bar").removeClass('sidebarActive');
 
     });
+    $(".tablink").click(function () {
+        $(".tablink").removeClass('active');
+        $(this).addClass('active');
+
+
+    });
 })

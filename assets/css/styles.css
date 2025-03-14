@@ -60,6 +60,7 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  margin-bottom: 0;
 }
 
 /*
@@ -102,6 +103,157 @@ html {
   border-radius: 100vw;
 }
 
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.tabarea .tablink {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tabarea .tablink:hover {
+  position: relative;
+  color: #000000 !important;
+}
+.tabarea .tablink:hover::after {
+  content: "";
+  background: #4A59A7;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  border-radius: 5px;
+  left: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tabarea .active {
+  position: relative;
+  color: #000000 !important;
+}
+.tabarea .active::after {
+  content: "";
+  background: #4A59A7;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  border-radius: 5px;
+  left: 0;
+}
+
+.month {
+  padding-bottom: 18px;
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  border-bottom: 0.69px solid #A3A3A6;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: #B3B3B3;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  float: left;
+  padding-top: 4px;
+  border: 0.6px solid #CBCBCB;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.month .prev:hover {
+  background: rgba(101, 127, 245, 0.2);
+  color: #000000;
+}
+
+.month .next {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  float: right;
+  padding-top: 4px;
+  border: 0.6px solid #CBCBCB;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.month .next:hover {
+  background: rgba(101, 127, 245, 0.2);
+  color: #000000;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ffffff;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #B3B3B3;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #ffffff;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #1B1B1B;
+  height: 43px;
+}
+
+.days .prev-and-next-munth-date {
+  color: #B3B3B3;
+}
+
+.days li .active {
+  padding: 7px 12px 15px 12px;
+  background: rgba(101, 127, 245, 0.2);
+  color: #657FF5 !important;
+  border-radius: 6px;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+}
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
+}
 .side-bar {
   width: 170px;
   display: none;
@@ -122,6 +274,13 @@ html {
 
 .main-content {
   width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -162,4 +321,35 @@ html {
 }
 .header .profiledetails:hover {
   background: #4A59A7;
+}
+
+.my_attendance .calendars .days .general-do {
+  position: relative;
+}
+.my_attendance .calendars .days .general-do::after {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 7px;
+  width: 7px;
+  content: " ";
+  background: #FC5A5A;
+  border-radius: 50%;
+}
+.my_attendance .calendars .days .general-na {
+  position: relative;
+}
+.my_attendance .calendars .days .general-na::after {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 7px;
+  width: 7px;
+  content: " ";
+  background: #00B445;
+  border-radius: 50%;
 }
