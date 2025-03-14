@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid px-0 ">
+        <div class="d-flex justify-content-between align-items-start ">
+            <!-- side bar -->
+            <div class="side-bar  vh-100">
+                <a href="/" class="logo d-flex justify-content-center align-items-center p-3">
+                    <img src="../assets/images/dashboard/logo.svg" height="42px" width="63px" alt="logo">
+                </a>
+                <div class="menu bg-blue text-white">
+                    <ul class=" list-unstyled pb-4">
+                        <li><a class=" text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/settings.svg"
+                                    alt=""> Admin</a></li>
+                        <li><a class=" text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
+                                    alt=""> Dashboard</a></li>
+                        <li><a class=" text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/profile.svg"
+                                    alt=""> My Profile</a></li>
+                        <li><a class=" text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                href="#"> <img height="25px" width="25px"
+                                    src="../assets/images/dashboard/attendance.svg" alt=""> Attendance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- main content -->
+            <div class="main-content">
+                <div class="header px-1 px-md-4 d-flex j justify-content-between align-items-center">
+                    <button class="toggleBar">
+                        <svg
+                          height="30px"
+                          width="30px"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <!-- Top Bar -->
+                          <rect x="16" y="60" width="416" height="40" rx="4" fill="#ffffff" />
+                          <!-- Middle Bar -->
+                          <rect x="16" y="220" width="416" height="40" rx="4" fill="#ffffff" />
+                          <!-- Bottom Bar -->
+                          <rect x="16" y="380" width="416" height="40" rx="4" fill="#ffffff" />
+                        </svg>
+                      </button>
+                    <h1 class=" d-none d-md-block text-uppercase fs-7 fw-semibold text-white">forest essentials</h1>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <button class="notification-btn">
+                            <img height="25px" width="25px" src="../assets/images/dashboard/bell.svg" alt="">
+                        </button>
+                        <button class="profiledetails d-flex justify-content-end align-items-center">
+                            <img height="45px" width="45px" class=" rounded-circle" src="../assets/images/dashboard/managerimg.png" alt="">
+                            <div class="name-and-position">
+                                <h1 class=" text-start fs-7 mb-0 mx-3 fw-semibold text-white text-capitalize">Austin Robertson</h1>
+                                <small class="  text-start fs-8 text-white text-capitalize">Hr Manager</small>
+                            </div>
+                            <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

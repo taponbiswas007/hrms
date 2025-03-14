@@ -1,0 +1,130 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", sans-serif;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.side-bar {
+  width: 170px;
+  display: none;
+}
+
+.main-content {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .side-bar {
+    width: 170px;
+    display: block;
+  }
+  .main-content {
+    width: calc(100% - 170px);
+  }
+}
+.sidebar-link {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.sidebar-link:hover {
+  background-color: #6A7AB7;
+}
+
+.header {
+  background: url(../images/dashboard/topbar_bg.png) no-repeat 0 0/100% 100%;
+  padding: 15px;
+}
+.header .notification-btn {
+  border-radius: 50%;
+  height: 27px;
+  width: 27px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.header .notification-btn:hover {
+  background: #4A59A7;
+}
+.header .profiledetails {
+  border-radius: 5px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.header .profiledetails:hover {
+  background: #4A59A7;
+}

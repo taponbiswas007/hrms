@@ -1,0 +1,55 @@
+.side-bar {
+    width: 170px;
+    display: none;
+}
+
+.main-content {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .side-bar {
+        width: 170px;
+        display: block;
+    }
+
+    .main-content {
+        width: calc(100% - 170px);
+    }
+}
+
+.sidebar-link {
+    transition: all .4s ease;
+
+    &:hover {
+        background-color: #6A7AB7;
+    }
+}
+
+.header {
+    background: url(../images/dashboard/topbar_bg.png) no-repeat 0 0 / 100% 100%;
+    padding: 15px;
+
+    .notification-btn {
+
+        border-radius: 50%;
+        height: 27px;
+        width: 27px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            background: $blue;
+        }
+    }
+
+    .profiledetails {
+
+        border-radius: 5px;
+
+        transition: all 0.4s ease;
+
+        &:hover {
+            background: $blue;
+        }
+    }
+}
