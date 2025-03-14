@@ -80,3 +80,26 @@ button {
     background: none;
     outline: none;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D0D0D0;
+    border-radius: 100vw;
+    margin-right: 4px;
+}
+
+/* Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #D0D0D0 transparent;
+}
+
+/* SimpleBar fallback */
+.simplebar-scrollbar::before {
+    background-color: #D0D0D0;
+    border-radius: 100vw;
+}

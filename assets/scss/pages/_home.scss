@@ -1,6 +1,11 @@
 .side-bar {
     width: 170px;
     display: none;
+
+    .menu {
+        height: calc(100vh - 74px);
+        overflow-y: auto;
+    }
 }
 
 .sidebarActive {
