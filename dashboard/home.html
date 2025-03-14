@@ -236,7 +236,7 @@
                                 </button>
                             </div>
 
-                            <div class="d-flex px-3 py-2 justify-content-between align-items-center">
+                            <div class="d-flex px-3 pb-4 justify-content-between align-items-center">
                                 <h2 class="text-black fs-7 fw-normal">Leave Summary For Year</h2>
                                 <!-- year selector -->
                                 <div class="year-selector">
@@ -249,8 +249,8 @@
                             </div>
 
                             <!-- leave list -->
-                             <div class="leave-list px-3">
-                                <div class="items mb-3 d-flex justify-content-between align-items-center">
+                             <div data-simplebar class=" overflow-y-auto leave-list px-3" style=" height: 377px">
+                                <div class="items mb-4 d-flex justify-content-between align-items-center">
                                     <div class="d-flex">
                                         <span class=" bg-pink bullet"></span>
                                         <ul class=" mx-2">
@@ -263,7 +263,7 @@
                                     <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
 
                                 </div>
-                                <div class="items m-3 d-flex justify-content-between align-items-center">
+                                <div class="items mb-4 d-flex justify-content-between align-items-center">
                                     <div class="d-flex">
                                         <span class=" bg-btn-blue bullet"></span>
                                         <ul class=" mx-2">
@@ -276,10 +276,113 @@
                                     <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
 
                                 </div>
+                                <div class="items mb-4 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" bg-bright-yellow bullet"></span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 mb-1 fw-medium text-grey-558">
+                                                CO (Compensatory Off)
+                                            </li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-bright-yellow"></span>0/0 Leaves</li>
+                                        </ul>
+                                    </div>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+
+                                </div>
+                                <div class="items mb-4 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" bg-light-blue bullet"></span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 mb-1 fw-medium text-grey-558">
+                                                LP (Leave Without Pay)
+                                            </li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-light-blue"></span>0/0 Leaves</li>
+                                        </ul>
+                                    </div>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+
+                                </div>
+                                <div class="items mb-4 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" bg-begonia bullet"></span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 mb-1 fw-medium text-grey-558">
+                                                SP (Special Leave)
+                                            </li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-begonia"></span>0/0 Leaves</li>
+                                        </ul>
+                                    </div>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+
+                                </div>
+                                <div class="items mb-4 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" bg-begonia bullet"></span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 mb-1 fw-medium text-grey-558">
+                                                SP (Special Leave)
+                                            </li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-begonia"></span>0/0 Leaves</li>
+                                        </ul>
+                                    </div>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+
+                                </div>
+                                <div class="items mb-4 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" bg-begonia bullet"></span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 mb-1 fw-medium text-grey-558">
+                                                SP (Special Leave)
+                                            </li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-begonia"></span>0/0 Leaves</li>
+                                        </ul>
+                                    </div>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+
+                                </div>
                              </div>
+                             <!-- total leaves -->
+                              <div class="d-flex justify-content-between align-items-center mx-3 border-top pt-3">
+                                <small class=" fw-normal" style=" color: #404040;">Total:(SP-Special Leave is not calculated in total)</small>
+                                <h5 class="fs-6 fw-semibold text-black">10.5/22 Days</h5>
+                              </div>
                             
                         </div>
                         <!-- my leave balance area end -->
+
+                        <!-- Company Announcement area start -->
+                        <div class="company_announcement topsection-items  bg-white border ">
+                            <div class="d-flex justify-content-between px-3 py-2 align-items-center border-bottom mb-2">
+                                <h1 class=" text-black fs-6 fw-normal">Company Announcement</h1>
+                                <button class=" text-grey fs-8 fw-normal">
+                                    FULL VIEW
+                                </button>
+                            </div>
+
+                            
+
+                            <!-- leave list -->
+                             <div data-simplebar class=" pt-4 overflow-y-auto leave-list px-3" style=" height: 400px">
+                                <div class="items mb-4 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" bg-pink bullet"></span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 mb-1 fw-medium text-grey-558">
+                                                CL (Casual Leave)
+                                            </li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-pink"></span>5/5 Leaves</li>
+                                        </ul>
+                                    </div>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+
+                                </div>
+                                
+                             </div>
+                            
+                            
+                        </div>
+                        <!-- Company Announcement area end -->
                     </div>
 
                 </div>
