@@ -8258,6 +8258,10 @@ fieldset:disabled .btn {
     color: #8E8E93 !important
 }
 
+.text-grey-558 {
+    color: #555558 !important
+}
+
 .text-dark {
     color: #212529 !important
 }
@@ -8336,6 +8340,27 @@ fieldset:disabled .btn {
 
 .bg-gradient {
     background-image: var(--bs-gradient) !important
+}
+
+.bg-pink {
+    background-color: #CD60AE !important;
+}
+
+.bg-btn-blue {
+    background-color: #1DA1F2 !important;
+}
+
+.bg-bright-yellow {
+    background-color: #FAA628 !important;
+}
+
+
+.bg-light-blue {
+    background-color: #6B6BF9 !important;
+}
+
+.bg-begonia {
+    background-color: #F96B7C !important;
 }
 
 .user-select-all {
