@@ -213,6 +213,79 @@ footer {
 
 }
 
+.pagination_area {
+    ul {
+        li {
+            a {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 10.86px;
+                line-height: 16.29px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #616161;
+                transition: all 0.4s ease;
+                border-radius: 6px;
+
+                &:hover {
+                    color: $white;
+                    background: #4A59A7;
+                }
+            }
+
+            small {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 12.67px;
+                line-height: 19px;
+                letter-spacing: -0.6%;
+                text-align: center;
+                color: #404040;
+
+            }
+
+            span {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 10.86px;
+                line-height: 16.29px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #616161;
+                padding: 8px 12px;
+                border: 0.9px solid #E0E0E0;
+                border-radius: 5px;
+
+            }
+
+            p {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 12.67px;
+                line-height: 19px;
+                letter-spacing: -0.6%;
+                text-align: center;
+                color: #4A59A7;
+                margin-bottom: 0;
+            }
+
+            select {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 10.86px;
+                line-height: 16.29px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #616161;
+                background: none;
+                padding: 8px;
+                border: 0.9px solid #E0E0E0;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
 @media (min-width:768px) {
     .side-bar {
         width: 170px;

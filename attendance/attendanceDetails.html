@@ -117,17 +117,19 @@
             <div data-simplebar class="main-content">
                 <!-- header area -->
                 <div class="header sticky-top z-3 px-1 px-md-4 d-flex j justify-content-between align-items-center">
-                    <button class="toggleBar d-block d-md-none">
-                        <svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <!-- Top Bar -->
-                            <rect x="16" y="60" width="416" height="40" rx="4" fill="#ffffff" />
-                            <!-- Middle Bar -->
-                            <rect x="16" y="220" width="416" height="40" rx="4" fill="#ffffff" />
-                            <!-- Bottom Bar -->
-                            <rect x="16" y="380" width="416" height="40" rx="4" fill="#ffffff" />
-                        </svg>
-                    </button>
-                    <h1 class=" d-none d-md-block text-uppercase fs-7 fw-semibold text-white">forest essentials</h1>
+                    <div class="d-flex justify-content-start align-items-center gap-4">
+                        <button class="toggleBar d-block d-md-none">
+                            <svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!-- Top Bar -->
+                                <rect x="16" y="60" width="416" height="40" rx="4" fill="#ffffff" />
+                                <!-- Middle Bar -->
+                                <rect x="16" y="220" width="416" height="40" rx="4" fill="#ffffff" />
+                                <!-- Bottom Bar -->
+                                <rect x="16" y="380" width="416" height="40" rx="4" fill="#ffffff" />
+                            </svg>
+                        </button>
+                        <h1 class=" d-none d-sm-block text-uppercase fs-7 fw-semibold text-white">forest essentials</h1>
+                    </div>
                     <div class="d-flex justify-content-end align-items-center">
                         <!-- notification area -->
                         <button class="notification-btn">
@@ -168,8 +170,10 @@
                     <!-- ================= attendance details area start================= -->
                     <div class="attendance-area py-2 px-4">
                         <div class=" p-4 mb-4  bg-white rounded-3 shadow-sm">
-                            <div class="d-flex gap-4 justify-content-between align-items-center">
-                                <div class="d-flex justify-content-start gap-4">
+                            <div
+                                class="d-flex gap-4 flex-lg-row flex-column justify-content-between align-items-center">
+                                <div
+                                    class="d-flex justify-content-md-start justify-content-center align-items-center  flex-md-row flex-column  gap-4">
                                     <img class=" rounded-3 border" height="180px" width="144px"
                                         src="../assets/images/tapon_sarker.png" alt="">
                                     <div class="details">
@@ -335,6 +339,50 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+
+                            <!-- pagination area -->
+                            <div class="pagination_area d-flex justify-content-end align-items-center p-4">
+                                <ul class=" d-flex flex-wrap justify-content-end align-items-center gap-3">
+                                    <li>
+                                        <a class=" border rounded-2 p-2 d-flex justify-content-center align-items-center "
+                                            href="">
+                                            <img height="14px" width="14px"
+                                                src="../assets/images/dashboard/left-arrow.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class=" border rounded-2 p-2 d-flex justify-content-center align-items-center "
+                                            href="">
+                                            Prev
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class=" border rounded-2 p-2 d-flex justify-content-center align-items-center "
+                                            href="">
+                                            Next
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <small>Page:</small>
+                                        <span>1</span>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex gap-2">
+                                            <small>Of</small>
+                                            <p>100</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <select name="" id="">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <!-- =================data table area end=================== -->
