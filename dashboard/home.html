@@ -14,7 +14,25 @@
     <!-- bootstrap -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- simple bar -->
-    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <noscript>
+        <style>
+            /**
+      * Reinstate scrolling for non-JS clients
+      */
+            .simplebar-content-wrapper {
+                scrollbar-width: auto;
+                -ms-overflow-style: auto;
+            }
+
+            .simplebar-content-wrapper::-webkit-scrollbar,
+            .simplebar-hide-scrollbar::-webkit-scrollbar {
+                display: initial;
+                width: initial;
+                height: initial;
+            }
+        </style>
+    </noscript>
     <!-- css -->
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
@@ -96,7 +114,7 @@
                 </div>
             </div>
             <!-- main content area -->
-            <div data-simplebar="" class="main-content">
+            <div data-simplebar class="main-content">
                 <!-- header area -->
                 <div class="header sticky-top z-3 px-1 px-md-4 d-flex j justify-content-between align-items-center">
                     <button class="toggleBar d-block d-md-none">
@@ -148,7 +166,7 @@
                         </button>
                     </div>
 
-                    <div class="top_sections d-flex justify-content-between align-items-start">
+                    <div class="top_sections d-flex justify-content-start  align-items-start">
                         <!-- my attendance area start -->
                         <div class="my_attendance topsection-items bg-white border ">
                             <div class="d-flex justify-content-between px-3 py-2 align-items-center border-bottom mb-2">
@@ -249,7 +267,7 @@
                             </div>
 
                             <!-- leave list -->
-                             <div data-simplebar class=" overflow-y-auto leave-list px-3" style=" height: 377px">
+                            <div data-simplebar class=" overflow-y-auto  leave-list px-3" style=" height: 360px">
                                 <div class="items mb-4 d-flex justify-content-between align-items-center">
                                     <div class="d-flex">
                                         <span class=" bg-pink bullet"></span>
@@ -257,10 +275,12 @@
                                             <li class=" fs-7 mb-1 fw-medium text-grey-558">
                                                 CL (Casual Leave)
                                             </li>
-                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-pink"></span>5/5 Leaves</li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span
+                                                    class=" vr-line bg-pink"></span>5/5 Leaves</li>
                                         </ul>
                                     </div>
-                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium "
+                                        style="color: #404040; background: #F6F6F6;">1 Applied</span>
 
                                 </div>
                                 <div class="items mb-4 d-flex justify-content-between align-items-center">
@@ -270,10 +290,12 @@
                                             <li class=" fs-7 mb-1 fw-medium text-grey-558">
                                                 SL (Sick Leave)
                                             </li>
-                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-btn-blue"></span>4/6 Leaves</li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span
+                                                    class=" vr-line bg-btn-blue"></span>4/6 Leaves</li>
                                         </ul>
                                     </div>
-                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium "
+                                        style="color: #404040; background: #F6F6F6;">1 Applied</span>
 
                                 </div>
                                 <div class="items mb-4 d-flex justify-content-between align-items-center">
@@ -283,10 +305,12 @@
                                             <li class=" fs-7 mb-1 fw-medium text-grey-558">
                                                 CO (Compensatory Off)
                                             </li>
-                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-bright-yellow"></span>0/0 Leaves</li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span
+                                                    class=" vr-line bg-bright-yellow"></span>0/0 Leaves</li>
                                         </ul>
                                     </div>
-                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium "
+                                        style="color: #404040; background: #F6F6F6;">1 Applied</span>
 
                                 </div>
                                 <div class="items mb-4 d-flex justify-content-between align-items-center">
@@ -296,10 +320,12 @@
                                             <li class=" fs-7 mb-1 fw-medium text-grey-558">
                                                 LP (Leave Without Pay)
                                             </li>
-                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-light-blue"></span>0/0 Leaves</li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span
+                                                    class=" vr-line bg-light-blue"></span>0/0 Leaves</li>
                                         </ul>
                                     </div>
-                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium "
+                                        style="color: #404040; background: #F6F6F6;">1 Applied</span>
 
                                 </div>
                                 <div class="items mb-4 d-flex justify-content-between align-items-center">
@@ -309,10 +335,12 @@
                                             <li class=" fs-7 mb-1 fw-medium text-grey-558">
                                                 SP (Special Leave)
                                             </li>
-                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-begonia"></span>0/0 Leaves</li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span
+                                                    class=" vr-line bg-begonia"></span>0/0 Leaves</li>
                                         </ul>
                                     </div>
-                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium "
+                                        style="color: #404040; background: #F6F6F6;">1 Applied</span>
 
                                 </div>
                                 <div class="items mb-4 d-flex justify-content-between align-items-center">
@@ -322,10 +350,12 @@
                                             <li class=" fs-7 mb-1 fw-medium text-grey-558">
                                                 SP (Special Leave)
                                             </li>
-                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-begonia"></span>0/0 Leaves</li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span
+                                                    class=" vr-line bg-begonia"></span>0/0 Leaves</li>
                                         </ul>
                                     </div>
-                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium "
+                                        style="color: #404040; background: #F6F6F6;">1 Applied</span>
 
                                 </div>
                                 <div class="items mb-4 d-flex justify-content-between align-items-center">
@@ -335,19 +365,22 @@
                                             <li class=" fs-7 mb-1 fw-medium text-grey-558">
                                                 SP (Special Leave)
                                             </li>
-                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-begonia"></span>0/0 Leaves</li>
+                                            <li class=" fs-7 fw-medium text-grey-558"> <span
+                                                    class=" vr-line bg-begonia"></span>0/0 Leaves</li>
                                         </ul>
                                     </div>
-                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+                                    <span class=" p-1 rounded-2 fs-7 fw-medium "
+                                        style="color: #404040; background: #F6F6F6;">1 Applied</span>
 
                                 </div>
-                             </div>
-                             <!-- total leaves -->
-                              <div class="d-flex justify-content-between align-items-center mx-3 border-top pt-3">
-                                <small class=" fw-normal" style=" color: #404040;">Total:(SP-Special Leave is not calculated in total)</small>
-                                <h5 class="fs-6 fw-semibold text-black">10.5/22 Days</h5>
-                              </div>
-                            
+                            </div>
+                            <!-- total leaves -->
+                            <div class="d-flex justify-content-between align-items-center mx-3 border-top pt-3">
+                                <small class=" fw-normal fs-8" style=" color: #404040;">Total:(SP-Special Leave is not
+                                    calculated in total)</small>
+                                <h5 class="fs-7 flex-shrink-0 fw-semibold text-black">10.5/22 Days</h5>
+                            </div>
+
                         </div>
                         <!-- my leave balance area end -->
 
@@ -360,29 +393,383 @@
                                 </button>
                             </div>
 
-                            
 
-                            <!-- leave list -->
-                             <div data-simplebar class=" pt-4 overflow-y-auto leave-list px-3" style=" height: 400px">
+
+                            <!--  Announcement list -->
+                            <div data-simplebar class=" pt-4 overflow-y-auto  announcement-list px-3"
+                                style=" height: 400px">
                                 <div class="items mb-4 d-flex justify-content-between align-items-center">
                                     <div class="d-flex">
-                                        <span class=" bg-pink bullet"></span>
+                                        <span class=" announcement-icon">
+                                            <img height="20px" width="21px"
+                                                src="../assets/images/dashboard/announcement-blue.svg" alt="">
+                                        </span>
                                         <ul class=" mx-2">
-                                            <li class=" fs-7 mb-1 fw-medium text-grey-558">
-                                                CL (Casual Leave)
+                                            <li class=" fs-7 fw-medium text-black">
+                                                Internal Committee
                                             </li>
-                                            <li class=" fs-7 fw-medium text-grey-558"> <span class=" vr-line bg-pink"></span>5/5 Leaves</li>
+                                            <li class=" fs-8 fw-medium text-grey-558"> Posh Internal Committee (IC)</li>
                                         </ul>
                                     </div>
-                                    <span class=" p-1 rounded-2 fs-7 fw-medium " style="color: #404040; background: #F6F6F6;">1 Applied</span>
+                                    <span
+                                        class=" d-flex justify-content-between align-items-center gap-2 px-1 py-0 rounded-2 fs-7 fw-medium "
+                                        style="color: #404040; background: #F6F6F6;">1 <img height="13px" width="13px"
+                                            src="../assets/images/dashboard/file_downloadIcon.svg" alt=""></span>
 
                                 </div>
-                                
-                             </div>
-                            
-                            
+                                <div class="items mb-4 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" announcement-icon">
+                                            <img height="20px" width="21px"
+                                                src="../assets/images/dashboard/announcement-red.svg" alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-medium text-black">
+                                                Team Leader Meeting
+                                            </li>
+                                            <li class=" fs-8 fw-medium text-grey-558"> Team Leader Meeting</li>
+                                        </ul>
+                                    </div>
+                                    <span
+                                        class=" d-flex justify-content-between align-items-center gap-2 px-1 py-0 rounded-2 fs-7 fw-medium "
+                                        style="color: #404040; background: #F6F6F6;">1 <img height="13px" width="13px"
+                                            src="../assets/images/dashboard/file_downloadIcon.svg" alt=""></span>
+
+                                </div>
+                                <div class="items mb-4 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" announcement-icon">
+                                            <img height="20px" width="21px"
+                                                src="../assets/images/dashboard/announcement-blue.svg" alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-medium text-black">
+                                                Internal Committee
+                                            </li>
+                                            <li class=" fs-8 fw-medium text-grey-558"> Posh Internal Committee (IC)</li>
+                                        </ul>
+                                    </div>
+                                    <span
+                                        class=" d-flex justify-content-between align-items-center gap-2 px-1 py-0 rounded-2 fs-7 fw-medium "
+                                        style="color: #404040; background: #F6F6F6;">1 <img height="13px" width="13px"
+                                            src="../assets/images/dashboard/file_downloadIcon.svg" alt=""></span>
+
+                                </div>
+
+                            </div>
+
+
                         </div>
                         <!-- Company Announcement area end -->
+
+
+                        <!-- Holiday List area start -->
+                        <div class="holiday_list_area topsection-items  bg-white border ">
+                            <div class="d-flex justify-content-between px-3 py-2 align-items-center border-bottom mb-2">
+                                <h1 class=" text-black fs-6 fw-normal">Holiday List</h1>
+                                <button class=" text-grey fs-8 fw-normal">
+                                    FULL VIEW
+                                </button>
+                            </div>
+
+
+
+                            <!--  AnHoliday List -->
+                            <div data-simplebar class=" pt-4 overflow-y-auto  holiday-list px-3" style=" height: 400px">
+
+                                <!-- new year -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #E1F1FE;">
+                                            <img height="24px" width="24px" src="../assets/images/dashboard/newyear.svg"
+                                                alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                New Year Day
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 01/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+
+                                </div>
+                                <!-- Republic Day -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #F4EDFE;">
+                                            <img height="24px" width="24px" src="../assets/images/dashboard/flag.svg"
+                                                alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                Republic Day
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 26/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+
+                                </div>
+
+                                <!-- Holi Day -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #FDE1F3;">
+                                            <img height="24px" width="24px"
+                                                src="../assets/images/dashboard/celebration-fire.svg" alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                Holi
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 26/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Eid Ul Fitr -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #FFFAEC;">
+                                            <img height="24px" width="24px"
+                                                src="../assets/images/dashboard/eid-mubarak.svg" alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                Eid Ul Fitr
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 26/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Independence Day -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #FEF0F0;">
+                                            <img height="24px" width="24px" src="../assets/images/dashboard/flag.svg"
+                                                alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                Independence Day
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 26/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Gandhi jayanti -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #CDF4FF;">
+                                            <img height="24px" width="24px"
+                                                src="../assets/images/dashboard/vaadin_glasses.svg" alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                Gandhi jayanti
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 26/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                        <!-- Holiday List area end -->
+
+
+                        <!-- Work Anniversaries List area start -->
+                        <div class="holiday_list_area topsection-items  bg-white border ">
+                            <div class="d-flex justify-content-between px-3 py-2 align-items-center border-bottom mb-2"
+                                style="  background: url(../assets/images/dashboard/congras_bg.png) no-repeat 0 0 / 100% 100%;">
+                                <h1 class=" text-black fs-6 fw-normal">Work Anniversaries 🎉</h1>
+
+                            </div>
+
+
+
+                            <!--  AnHoliday List -->
+                            <div data-simplebar class=" pt-4 overflow-y-auto  holiday-list px-3" style=" height: 400px">
+
+                                <!-- new year -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #E1F1FE;">
+                                            <img height="24px" width="24px" src="../assets/images/dashboard/newyear.svg"
+                                                alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                New Year Day
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 01/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+
+                                </div>
+                                <!-- Republic Day -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #F4EDFE;">
+                                            <img height="24px" width="24px" src="../assets/images/dashboard/flag.svg"
+                                                alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                Republic Day
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 26/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+
+                                </div>
+
+                                <!-- Holi Day -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #FDE1F3;">
+                                            <img height="24px" width="24px"
+                                                src="../assets/images/dashboard/celebration-fire.svg" alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                Holi
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 26/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Eid Ul Fitr -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #FFFAEC;">
+                                            <img height="24px" width="24px"
+                                                src="../assets/images/dashboard/eid-mubarak.svg" alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                Eid Ul Fitr
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 26/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Independence Day -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #FEF0F0;">
+                                            <img height="24px" width="24px" src="../assets/images/dashboard/flag.svg"
+                                                alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                Independence Day
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 26/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Gandhi jayanti -->
+                                <div class="items py-2 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex">
+                                        <span class=" holiday-icon list_icon" style=" background: #CDF4FF;">
+                                            <img height="24px" width="24px"
+                                                src="../assets/images/dashboard/vaadin_glasses.svg" alt="">
+                                        </span>
+                                        <ul class=" mx-2">
+                                            <li class=" fs-7 fw-normal text-black">
+                                                Gandhi jayanti
+                                            </li>
+                                            <li class=" fs-8 fw-normal text-grey-558"> 26/01/2025</li>
+                                        </ul>
+                                    </div>
+                                    <ul class=" mx-2">
+                                        <li class=" fs-7 fw-light  text-black">
+                                            Head Office
+                                        </li>
+                                        <li class=" fs-8 fw-normal text-grey-558"> Branch</li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                        <!-- Holiday List area end -->
                     </div>
 
                 </div>
@@ -404,7 +791,7 @@
     <!-- bootstrap js -->
     <script src="../assets/js/bootstrap.min.js"></script>
     <!-- simple bar js -->
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <!-- js -->
     <script src="../assets/js/main.js"></script>
 </body>
