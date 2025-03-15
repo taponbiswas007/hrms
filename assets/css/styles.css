@@ -414,6 +414,45 @@ footer {
   padding: 5px 7px;
 }
 
+.unmarked {
+  background: #C2FFCF;
+  color: #0A7E22;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+.na {
+  background: #FFD8D8;
+  color: #FF3C3C;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+.dayof {
+  background: #FFDEBD;
+  color: #F67B00;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
 @media (min-width: 768px) {
   .side-bar {
     width: 170px;

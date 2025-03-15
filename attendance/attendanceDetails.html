@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- simple bar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <noscript>
+        <style>
+            /**
+      * Reinstate scrolling for non-JS clients
+      */
+            .simplebar-content-wrapper {
+                scrollbar-width: auto;
+                -ms-overflow-style: auto;
+            }
+
+            .simplebar-content-wrapper::-webkit-scrollbar,
+            .simplebar-hide-scrollbar::-webkit-scrollbar {
+                display: initial;
+                width: initial;
+                height: initial;
+            }
+        </style>
+    </noscript>
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid px-0 ">
+        <div class="d-flex justify-content-between align-items-start ">
+            <!-- side bar -->
+            <div class="side-bar bg-white  vh-100">
+                <div class="inner_area position-relative">
+                    <a href="/" class="logo d-flex justify-content-center align-items-center p-3">
+                        <img src="../assets/images/dashboard/logo.svg" height="42px" width="63px" alt="logo">
+                    </a>
+
+                    <button class="closeSidebar d-block d-md-none position-absolute  z-3 "
+                        style=" top: 25px ; right: -10px">
+                        <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Arrow line -->
+                            <path d="M5 11H18" stroke="#8833ff" stroke-width="2" stroke-linecap="round" />
+                            <!-- Arrow head -->
+                            <path d="M12 5L5 11L12 17" stroke="#8833ff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <!-- Line to the left -->
+                            <path d="M1 2V18" stroke="#8833ff" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+
+                    <div data-simplebar class="menu bg-blue  text-white ">
+
+                        <!-- menu items -->
+                        <ul class="   list-unstyled pb-4">
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/settings.svg" alt=""> Admin</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/dashboard.svg" alt=""> Dashboard</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/profile.svg" alt=""> My Profile</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/attendance.svg" alt=""> Attendance</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg"
+                                        alt=""> Leave</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/employee.svg" alt=""> Employee</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/dashboard.svg" alt=""> Probation</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/bulkUpload.svg" alt=""> Bulk Upload</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/dashboard.svg" alt=""> Assets</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/performance.svg" alt=""> PMS</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/learn-outline.svg" alt=""> LMS</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/expanse.svg" alt=""> Reimbursements</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/task.svg"
+                                        alt=""> Managerial Task</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/registration.svg" alt=""> Resignation</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/policy.svg" alt=""> HR Policies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- main content area -->
+            <div data-simplebar class="main-content">
+                <!-- header area -->
+                <div class="header sticky-top z-3 px-1 px-md-4 d-flex j justify-content-between align-items-center">
+                    <button class="toggleBar d-block d-md-none">
+                        <svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!-- Top Bar -->
+                            <rect x="16" y="60" width="416" height="40" rx="4" fill="#ffffff" />
+                            <!-- Middle Bar -->
+                            <rect x="16" y="220" width="416" height="40" rx="4" fill="#ffffff" />
+                            <!-- Bottom Bar -->
+                            <rect x="16" y="380" width="416" height="40" rx="4" fill="#ffffff" />
+                        </svg>
+                    </button>
+                    <h1 class=" d-none d-md-block text-uppercase fs-7 fw-semibold text-white">forest essentials</h1>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <!-- notification area -->
+                        <button class="notification-btn">
+                            <img height="25px" width="25px" src="../assets/images/dashboard/bell.svg" alt="">
+                        </button>
+
+                        <!-- profile area -->
+                        <button class="profiledetails d-flex justify-content-end align-items-center">
+                            <img height="45px" width="45px" class=" rounded-circle"
+                                src="../assets/images/dashboard/managerimg.png" alt="">
+                            <div class="name-and-position">
+                                <h1 class=" text-start fs-7 mb-0 mx-3 fw-semibold text-white text-capitalize">Austin
+                                    Robertson</h1>
+                                <small class="  text-start fs-8 text-white text-capitalize">Hr Manager</small>
+                            </div>
+                            <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ================main content area start============== -->
+                <div class="bg-light">
+
+                    <!-- tabs area -->
+                    <div class="tabarea p-3  mb-3 d-flex justify-content-between align-items-center"
+                        style="background: #F5F5F5;">
+
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a style="color: #757575;" href="#">Attendance</a></li>
+                                <li class="breadcrumb-item " aria-current="page">Attendance Details <img
+                                        class=" d-inline" height="13px " width="13px"
+                                        src="../assets/images/dashboard/downarrowBlack.svg" alt=""></li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <!-- ================= attendance details area start================= -->
+                    <div class="attendance-area py-2 px-4">
+                        <div class=" p-4 mb-4  bg-white rounded-3 shadow-sm">
+                            <div class="d-flex gap-4 justify-content-between align-items-center">
+                                <div class="d-flex justify-content-start gap-4">
+                                    <img class=" rounded-3 border" height="180px" width="144px"
+                                        src="../assets/images/tapon_sarker.png" alt="">
+                                    <div class="details">
+                                        <h1 class=" mb-3 fs-5 fw-bold text-capitalize " style=" color:#4A59A7 ">Tapon
+                                            sarker</h1>
+                                        <ul>
+                                            <li class=" border px-3 py-2 rounded-3 mb-4">
+                                                <div class="d-flex  justify-content-between align-items-center gap-4">
+                                                    <ul class=" w-50">
+                                                        <li class=" text-start fs-7 fw-medium " style="color: #404040;">
+                                                            FE0134
+
+                                                        </li>
+                                                        <li class=" text-start fs-8 fw-normal" style=" color: #8E8E93">
+                                                            Employee Code</li>
+                                                    </ul>
+
+                                                    <ul class=" w-50 border-start px-2">
+                                                        <li class=" text-start fs-7 fw-medium " style="color: #404040;">
+                                                            Accounts
+
+                                                        </li>
+                                                        <li class=" text-start fs-8 fw-normal" style=" color: #8E8E93">
+                                                            Department</li>
+                                                    </ul>
+
+                                                </div>
+                                            </li>
+                                            <li class=" border px-3 py-2 rounded-3 ">
+                                                <div class="d-flex justify-content-between align-items-center gap-4">
+                                                    <ul class=" w-50">
+                                                        <li class=" text-nowrap text-start fs-7 fw-medium "
+                                                            style="color: #404040;">
+                                                            Senior Executive
+
+                                                        </li>
+                                                        <li class=" text-start fs-8 fw-normal" style=" color: #8E8E93">
+                                                            Designation</li>
+                                                    </ul>
+
+                                                    <ul class=" w-50 border-start px-2">
+                                                        <li class=" text-start fs-7 fw-medium " style="color: #404040;">
+                                                            Head Office
+
+                                                        </li>
+                                                        <li class=" text-start fs-8 fw-normal" style=" color: #8E8E93">
+                                                            Location</li>
+                                                    </ul>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="time_count">
+                                    <div class=" mb-3 gap-3 d-flex justify-content-center align-items-center rounded-3 "
+                                        style="background: #EEF1FF; width: 207px; height: 101px">
+                                        <img height="20px " width="20px" src="../assets/images/dashboard/clock.svg"
+                                            alt="">
+                                        <span class=" fs-5 fw-medium " style="color: #404040;"> 18:26:15</span>
+                                    </div>
+                                    <div class="d-flex gap-3  justify-content-between align-items-center">
+                                        <button
+                                            class=" w-50 fs-7 fw-semibold text-white bg-blue rounded-3 p-1">Check-in</button>
+                                        <button
+                                            class=" w-50 fs-7 fw-semibold text-white bg-blue rounded-3 p-1">Check-out</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- =================data table area start=================== -->
+                        <div class="dataTable-area bg-white rounded-3 shadow-sm p-4">
+                            <div class="table-responsive">
+                                <table class="table border-gray table-bordered">
+                                    <thead>
+                                        <tr class=" border-0 text-nowrap fs-7 fw-medium "
+                                            style="color: #404040; background: #F9F9F9">
+                                            <th class=" border-0">Date</th>
+                                            <th class=" border-0">Shift</th>
+                                            <th class=" border-0">Shift Start Time</th>
+                                            <th class=" border-0">Shift End Time</th>
+                                            <th class=" border-0">Sign-In-Time</th>
+                                            <th class=" border-0">Sign-Out-Time</th>
+                                            <th class=" border-0">Present Hours(HH:MM)</th>
+                                            <th class=" border-0">Att. Status</th>
+                                            <th class=" border-0">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="font-family: DM Sans, sans-serif;">
+                                        <tr class=" text-nowrap fs-8 fw-normal "
+                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            <td class=" p-2">25/02/2025</td>
+                                            <td class=" p-2">General</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">10:00</td>
+                                            <td class=" p-2"><span class=" unmarked">UNMARKED</span></td>
+                                            <td class=" p-2"><span class=" na">NA</span></td>
+                                        </tr>
+                                        <tr class=" text-nowrap fs-8 fw-normal "
+                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            <td class=" p-2">25/02/2025</td>
+                                            <td class=" p-2">General</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">10:00</td>
+                                            <td class=" p-2"><span class=" unmarked">UNMARKED</span></td>
+                                            <td class=" p-2"><span class=" na">NA</span></td>
+                                        </tr>
+                                        <tr class=" text-nowrap fs-8 fw-normal "
+                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            <td class=" p-2">25/02/2025</td>
+                                            <td class=" p-2">General</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">10:00</td>
+                                            <td class=" p-2"><span class=" dayof">Day Off</span></td>
+                                            <td class=" p-2"><span class=" na">NA</span></td>
+                                        </tr>
+                                        <tr class=" text-nowrap fs-8 fw-normal "
+                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            <td class=" p-2">25/02/2025</td>
+                                            <td class=" p-2">General</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">10:00</td>
+                                            <td class=" p-2"><span class=" unmarked">UNMARKED</span></td>
+                                            <td class=" p-2"><span class=" na">NA</span></td>
+                                        </tr>
+                                        <tr class=" text-nowrap fs-8 fw-normal "
+                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            <td class=" p-2">25/02/2025</td>
+                                            <td class=" p-2">General</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">10:00</td>
+                                            <td class=" p-2"><span class=" dayof">Day Off</span></td>
+                                            <td class=" p-2"><span class=" na">NA</span></td>
+                                        </tr>
+                                        <tr class=" text-nowrap fs-8 fw-normal "
+                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            <td class=" p-2">25/02/2025</td>
+                                            <td class=" p-2">General</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">09:00 AM</td>
+                                            <td class=" p-2">06:00 PM</td>
+                                            <td class=" p-2">10:00</td>
+                                            <td class=" p-2"><span class=" unmarked">UNMARKED</span></td>
+                                            <td class=" p-2"><span class=" na">NA</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- =================data table area end=================== -->
+                    </div>
+                    <!-- ================= attendance details area end================= -->
+
+
+
+
+                </div>
+                <!-- ================main content area end============== -->
+
+                <!-- ==========footer area start========= -->
+                <footer class=" sticky-bottom p-2 d-flex justify-content-center align-items-center"
+                    style=" background: #DBE1FF;">
+                    <small class=" text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
+                </footer>
+                <!-- ==========footer area end========= -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- simple bar js -->
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- js -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

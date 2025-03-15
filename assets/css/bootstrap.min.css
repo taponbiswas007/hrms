@@ -7399,6 +7399,10 @@ fieldset:disabled .btn {
     border-color: #0d6efd !important
 }
 
+.border-gray {
+    border-color: #EBECEE !important
+}
+
 .border-secondary {
     border-color: #6c757d !important
 }
