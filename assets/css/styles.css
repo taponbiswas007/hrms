@@ -145,7 +145,7 @@ ul {
 }
 
 .month {
-  padding-bottom: 18px;
+  padding-bottom: 25px;
   width: 100%;
   background: #ffffff;
   text-align: center;
@@ -163,6 +163,15 @@ ul {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+.month ul li span {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #1B1B1B;
+}
 
 .month .prev {
   cursor: pointer;
@@ -173,6 +182,7 @@ ul {
   border: 0.6px solid #CBCBCB;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  border-radius: 5px;
 }
 .month .prev:hover {
   background: rgba(101, 127, 245, 0.2);
@@ -188,6 +198,7 @@ ul {
   border: 0.6px solid #CBCBCB;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  border-radius: 5px;
 }
 .month .next:hover {
   background: rgba(101, 127, 245, 0.2);
@@ -301,36 +312,10 @@ footer {
   /* Include padding and border in the element's total width */
 }
 
-.topsection-items {
+.section-items {
   height: 524px;
 }
 
-@media (max-width: 1150px) {
-  .top_sections > * {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 48%;
-            flex: 1 1 48%;
-    /* Each item will take up roughly 1/3 of the row */
-    max-width: 47%;
-    /* Ensure each item doesn't exceed 1/3 of the row */
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    /* Include padding and border in the element's total width */
-  }
-}
-@media (max-width: 620px) {
-  .top_sections > * {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-    /* Each item will take up roughly 1/3 of the row */
-    max-width: 100%;
-    /* Ensure each item doesn't exceed 1/3 of the row */
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    /* Include padding and border in the element's total width */
-  }
-}
 .my_leaveBalance .year-selector select {
   border: 0.9px solid #E0E0E0;
   background: #ffffff;
@@ -514,6 +499,10 @@ footer {
   border-radius: 5px;
 }
 
+.tabs-title {
+  font-size: 20px;
+}
+
 @media (min-width: 768px) {
   .side-bar {
     width: 170px;
@@ -533,7 +522,7 @@ footer {
 
 .header {
   background: url(../images/dashboard/topbar_bg.png) no-repeat 0 0/100% 100%;
-  padding: 15px;
+  padding: 14px;
 }
 .header .notification-btn {
   border-radius: 50%;
@@ -583,4 +572,43 @@ footer {
   content: " ";
   background: #00B445;
   border-radius: 50%;
+}
+
+.dropdownFilteritems {
+  cursor: pointer !important;
+}
+.dropdownFilteritems label {
+  cursor: pointer;
+}
+.dropdownFilteritems input {
+  cursor: pointer;
+}
+.dropdownFilteritems:hover {
+  color: #000000 !important;
+}
+
+@media (max-width: 1400px) {
+  .tabs-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1280px) {
+  .tabs-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1200px) {
+  .tabs-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1150px) {
+  .tabs-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .tabs-title {
+    font-size: 16px;
+  }
 }

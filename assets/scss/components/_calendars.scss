@@ -1,5 +1,5 @@
 .month {
-    padding-bottom: 18px;
+    padding-bottom: 25px;
     width: 100%;
     background: #ffffff;
     text-align: center;
@@ -17,6 +17,15 @@
     text-transform: uppercase;
     letter-spacing: 3px;
 
+    span {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #1B1B1B;
+    }
 }
 
 .month .prev {
@@ -27,6 +36,7 @@
     padding-top: 4px;
     border: 0.6px solid #CBCBCB;
     transition: all 0.4s ease;
+    border-radius: 5px;
 
     &:hover {
         background: #657FF533;
@@ -42,6 +52,7 @@
     padding-top: 4px;
     border: 0.6px solid #CBCBCB;
     transition: all 0.4s ease;
+    border-radius: 5px;
 
     &:hover {
         background: #657FF533;
