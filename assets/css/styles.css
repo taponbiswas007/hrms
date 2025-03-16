@@ -587,6 +587,25 @@ footer {
   color: #000000 !important;
 }
 
+.updatedatetext {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 9.26px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #8E8E93;
+  margin-bottom: 0;
+}
+
+.apexcharts-toolbar {
+  display: none;
+}
+
+.apexcharts-legend {
+  display: none !important;
+}
+
 @media (max-width: 1400px) {
   .tabs-title {
     font-size: 18px;
