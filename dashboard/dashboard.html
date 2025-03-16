@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- simple bar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <noscript>
+        <style>
+            /**
+      * Reinstate scrolling for non-JS clients
+      */
+            .simplebar-content-wrapper {
+                scrollbar-width: auto;
+                -ms-overflow-style: auto;
+            }
+
+            .simplebar-content-wrapper::-webkit-scrollbar,
+            .simplebar-hide-scrollbar::-webkit-scrollbar {
+                display: initial;
+                width: initial;
+                height: initial;
+            }
+        </style>
+    </noscript>
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid px-0 ">
+        <div class="d-flex justify-content-between align-items-start ">
+            <!-- side bar -->
+            <div class="side-bar   vh-100">
+                <div class="inner_area position-relative">
+                    <a href="/" class="logo d-flex justify-content-center align-items-center p-3"
+                        style=" background: url(../assets/images/dashboard/topbar_bg.png) no-repeat 0 0/100% 100%; margin-bottom: -1px">
+                        <img src="../assets/images/dashboard/logo.svg" height="42px" width="63px" alt="logo">
+                    </a>
+
+                    <button class="closeSidebar d-block d-md-none position-absolute  z-3 "
+                        style=" top: 25px ; right: -10px">
+                        <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Arrow line -->
+                            <path d="M5 11H18" stroke="#8833ff" stroke-width="2" stroke-linecap="round" />
+                            <!-- Arrow head -->
+                            <path d="M12 5L5 11L12 17" stroke="#8833ff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <!-- Line to the left -->
+                            <path d="M1 2V18" stroke="#8833ff" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+
+                    <div data-simplebar class="menu bg-blue  text-white ">
+
+                        <!-- menu items -->
+                        <ul class="   list-unstyled pb-4">
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/settings.svg" alt=""> Admin</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/dashboard.svg" alt=""> Dashboard</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/profile.svg" alt=""> My Profile</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/attendance.svg" alt=""> Attendance</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg"
+                                        alt=""> Leave</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/employee.svg" alt=""> Employee</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/dashboard.svg" alt=""> Probation</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/bulkUpload.svg" alt=""> Bulk Upload</a></li>
+                            <li><a class=" text-capitalize text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/dashboard.svg" alt=""> Assets</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/performance.svg" alt=""> PMS</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/learn-outline.svg" alt=""> LMS</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/expanse.svg" alt=""> Reimbursements</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/task.svg"
+                                        alt=""> Managerial Task</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/registration.svg" alt=""> Resignation</a></li>
+                            <li><a class="  text-white d-flex justify-content-center align-items-center flex-column py-2 border-bottom-op4 fs-7 fw-normal sidebar-link"
+                                    href="#"> <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/policy.svg" alt=""> HR Policies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- main content area -->
+            <div data-simplebar class="main-content">
+                <!-- header area -->
+                <div class="header sticky-top z-3 px-1 px-md-4 d-flex j justify-content-between align-items-center">
+                    <div class="d-flex justify-content-start align-items-center gap-4">
+                        <button class="toggleBar d-block d-md-none">
+                            <svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!-- Top Bar -->
+                                <rect x="16" y="60" width="416" height="40" rx="4" fill="#ffffff" />
+                                <!-- Middle Bar -->
+                                <rect x="16" y="220" width="416" height="40" rx="4" fill="#ffffff" />
+                                <!-- Bottom Bar -->
+                                <rect x="16" y="380" width="416" height="40" rx="4" fill="#ffffff" />
+                            </svg>
+                        </button>
+                        <h1 class=" d-none d-sm-block text-uppercase fs-7 fw-semibold text-white">forest essentials</h1>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <!-- notification area -->
+                        <button class="notification-btn">
+                            <img height="25px" width="25px" src="../assets/images/dashboard/bell.svg" alt="">
+                        </button>
+
+                        <!-- profile area -->
+                        <button class="profiledetails d-flex justify-content-end align-items-center">
+                            <img height="45px" width="45px" class=" rounded-circle"
+                                src="../assets/images/dashboard/managerimg.png" alt="">
+                            <div class="name-and-position">
+                                <h1 class=" text-start fs-7 mb-0 mx-3 fw-semibold text-white text-capitalize">Austin
+                                    Robertson</h1>
+                                <small class="  text-start fs-8 text-white text-capitalize">Hr Manager</small>
+                            </div>
+                            <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ================main content area start============== -->
+                <div class="py-2 px-4 bg-light">
+
+                    <!-- tabs area -->
+                    <div
+                        class="tabarea mb-3 d-flex justify-content-between align-items-center bg-white p-2 shadow-sm rounded-3">
+                        <ul class="  px-md-5 px-2 d-flex justify-content-start align-items-center">
+                            <li>
+                                <a class=" tablink  text-grey fs-6 fw-normal " href="home.html">Home</a>
+                            </li>
+                            <li class=" mx-5">
+                                <a class=" tablink active text-grey fs-6 fw-normal " href="dashboard.html">Dashboard</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <button class=" bg-blue p-2 rounded-3" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img width="18px" height="18px" src="../assets/images/dashboard/filterIcon.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu shadow-lg border-0 rounded-3 bg-blue">
+                                <li class=" dropdown-item dropdownFilteritems mb-3 text-white">
+                                    <input type="checkbox" id="myAttendance">
+                                    <label for="myAttendance">My Attendance</label>
+
+                                </li>
+                                <li class=" dropdown-item dropdownFilteritems mb-3 text-white">
+                                    <input type="checkbox" id="myLeaveBalance">
+                                    <label for="myLeaveBalance">My Leave Balance</label>
+
+                                </li>
+                                <li class=" dropdown-item dropdownFilteritems mb-3 text-white">
+                                    <input type="checkbox" id="companyAnnouncement">
+                                    <label for="companyAnnouncement">Company Announcement</label>
+
+                                </li>
+                                <li class=" dropdown-item dropdownFilteritems mb-3 text-white">
+                                    <input type="checkbox" id="holidayList">
+                                    <label for="holidayList">Holiday List</label>
+
+                                </li>
+                                <li class=" dropdown-item dropdownFilteritems mb-3 text-white">
+                                    <input type="checkbox" id="workAnniversaries">
+                                    <label for="workAnniversaries">Work Anniversaries</label>
+
+                                </li>
+                                <li class=" dropdown-item dropdownFilteritems mb-3 text-white">
+                                    <input type="checkbox" id="birthdays">
+                                    <label for="birthdays">Birthdays</label>
+
+                                </li>
+                                <li class=" dropdown-item dropdownFilteritems mb-3 text-white">
+                                    <input type="checkbox" id="employeeOnLeave">
+                                    <label for="employeeOnLeave">Employee On Leave</label>
+
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="row g-4">
+                        <div class=" col-lg-6 col-md-12">
+                            <div class="chart_items  bg-white shadow rounded-4">
+                                <div
+                                    class="d-flex justify-content-between px-3 py-3 align-items-center border-bottom mb-2">
+                                    <h1 class=" text-black fs-5  fw-medium">Organisation Salary Trend</h1>
+                                    <button class=" text-grey fs-7 fw-normal">
+                                        <img height="24px" width="24px" src="../assets/images/dashboard/bx_refresh.svg"
+                                            alt="">
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end p-3">
+                                    <div class="d-flex">
+                                        <div >
+                                            <h2 class=" fs-7 fw-normal text-black mb-1">Department</h2>
+                                            <div class="d-flex justify-content-start gap-4">
+                                                <input class=" form-control" type="text">
+                                                <button class=" btn bg-blue text-white">Apply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ================main content area end============== -->
+
+                <!-- ==========footer area start========= -->
+                <footer class=" sticky-bottom p-2 d-flex justify-content-center align-items-center"
+                    style=" background: #DBE1FF;">
+                    <small class=" text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
+                </footer>
+                <!-- ==========footer area end========= -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <!-- simple bar js -->
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- js -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
