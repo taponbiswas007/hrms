@@ -43,7 +43,8 @@
             <!-- side bar -->
             <div class="side-bar bg-white  vh-100">
                 <div class="inner_area position-relative">
-                    <a href="/" class="logo d-flex justify-content-center align-items-center p-3" style=" background: url(../assets/images/dashboard/topbar_bg.png) no-repeat 0 0/100% 100%; margin-bottom: -1px">
+                    <a href="/" class="logo d-flex justify-content-center align-items-center p-3"
+                        style=" background: url(../assets/images/dashboard/topbar_bg.png) no-repeat 0 0/100% 100%; margin-bottom: -1px">
                         <img src="../assets/images/dashboard/logo.svg" height="42px" width="63px" alt="logo">
                     </a>
 
@@ -154,22 +155,32 @@
                 <div class="bg-light">
 
                     <!-- tabs area -->
-                    <div class="tabarea p-3  mb-3 d-flex justify-content-between align-items-center"
-                        style="background: #F5F5F5;">
+                    <div
+                        class="tabarea p-3  mb-3 d-flex justify-content-between align-items-center bg-white shadow-sm rounded-3 mx-4">
 
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a style="color: #757575;" href="#">Attendance</a></li>
-                                <li class="breadcrumb-item " aria-current="page">Attendance Details <img
-                                        class=" d-inline" height="13px " width="13px"
-                                        src="../assets/images/dashboard/downarrowBlack.svg" alt=""></li>
+                                <li class="breadcrumb-item " aria-current="page">
+                                    <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Attendance Details <img class=" d-inline" height="13px "
+                                            width="13px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
+                                    <ul class="dropdown-menu shadow-lg border-0 rounded-3  ">
+                                        <li><a class="dropdown-item  mb-3" href="#">Attendance Details</a></li>
+                                        <li><a class="dropdown-item  mb-3" href="#">Attendance Request</a></li>
+                                        <li><a class="dropdown-item  mb-3" href="#">Multiple Days OD</a></li>
+                                        <li><a class="dropdown-item  mb-3" href="#">View My Roster</a></li>
+
+                                    </ul>
+                                </li>
                             </ol>
                         </nav>
                     </div>
 
                     <!-- ================= attendance details area start================= -->
                     <div class="attendance-area py-2 px-4">
-                        <div class=" p-4 mb-4  bg-white rounded-3 shadow-sm">
+                        <div class=" p-4 mb-4  bg-white rounded-4 shadow">
                             <div
                                 class="d-flex gap-4 flex-lg-row flex-column justify-content-between align-items-center">
                                 <div
@@ -247,7 +258,7 @@
 
 
                         <!-- =================data table area start=================== -->
-                        <div class="dataTable-area bg-white rounded-3 shadow-sm p-4">
+                        <div class="dataTable-area bg-white rounded-4 shadow p-4 mb-4">
                             <div class="table-responsive">
                                 <table class="table border-gray table-bordered">
                                     <thead>
@@ -410,6 +421,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- bootstrap js -->
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
     <!-- simple bar js -->
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <!-- js -->
