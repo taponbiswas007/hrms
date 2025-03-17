@@ -8461,6 +8461,10 @@ fieldset:disabled .btn {
     visibility: hidden !important
 }
 
+.ff-p {
+    font-family: "Poppins", sans-serif !important;
+}
+
 @media (min-width:576px) {
     .float-sm-start {
         float: left !important
@@ -11780,7 +11784,8 @@ fieldset:disabled .btn {
         display: none !important
     }
 }
-.logoutmenu{
+
+.logoutmenu {
     transform: translate(454px, 72px) !important;
 }
 

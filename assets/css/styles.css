@@ -636,6 +636,11 @@ footer {
     font-size: 16px;
   }
 }
+@media (max-width: 540px) {
+  footer {
+    font-size: 10px !important;
+  }
+}
 .attendanceTable {
   height: 250px;
 }

@@ -1,4 +1,35 @@
 $(document).ready(function () {
+
+    // password visible
+    $('.passwordHideshowbtn').click(function (e) {
+        e.preventDefault(); // Prevent the default button action
+
+        var passwordInput = $('#password');
+        var icon = $(this).find('.toggle-icon');
+
+        if (passwordInput.attr('type') === 'password') {
+            // Change input type to text (show password)
+            passwordInput.attr('type', 'text');
+            // Replace SVG with open lock icon
+            icon.replaceWith(`
+                <svg class="toggle-icon" height="24px" width="24px" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+                </svg>
+            `);
+        } else {
+            // Change input type to password (hide password)
+            passwordInput.attr('type', 'password');
+            // Replace SVG with closed lock icon
+            icon.replaceWith(`
+                <svg class="toggle-icon" height="24px" width="24px" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+            `);
+        }
+    });
+    // menu bar
     $(".toggleBar").click(function () {
         $(".side-bar").addClass('sidebarActive');
 

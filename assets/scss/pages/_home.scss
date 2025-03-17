@@ -27,6 +27,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+
 }
 
 .top_sections {
@@ -426,6 +427,13 @@ footer {
     .tabs-title {
         font-size: 16px;
     }
+}
+
+@media (max-width: 540px) {
+    footer {
+        font-size: 10px !important;
+    }
+
 }
 
 .attendanceTable {
