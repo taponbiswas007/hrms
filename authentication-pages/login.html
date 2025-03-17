@@ -45,9 +45,12 @@
            </div>
            <div class="row pb-5">
             <div class="col-md-6">
-                <div class="d-flex justify-content-center align-items-center flex-column h-100" >
-                    <h1 class=" display-6 fw-bold">Forest Essentials' Employee</h1>
-                <a class=" mb-3" href="#">Connect</a>
+                
+                <div class="d-flex justify-content-center align-items-center flex-column h-100">
+                    <h1 class=" display-6 fw-bold text-start w-100">Forest Essentials' Employee</h1>
+                    <div class="d-flex justify-content-start w-100">
+                        <a class=" mb-3 display-6 fw-bold" style="color:#4A59A7 ;" href="#">Connect</a>
+                    </div>
                 </div>
             </div>
             
@@ -64,13 +67,18 @@
                             <img height="24px" width="24px" class=" position-absolute top-50 translate-middle-y end-0" src="../assets/images/fe_user.svg" alt="">
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label ff-p">Password</label>
+                      <!-- Password Field -->
+                      <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
                         <div class="position-relative">
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
-                            <button class="passwordHideshowbtn position-absolute top-50 translate-middle-y end-0">
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Enter your password" required>
+                            <button
+                                class="passwordHideshowbtn position-absolute top-50 translate-middle-y end-0">
                                 <!-- Default SVG icon for closed lock -->
-                                <svg class="toggle-icon" height="24px" width="24px" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg class="toggle-icon" height="24px" width="24px" viewBox="0 0 24 24"
+                                    fill="none" stroke="black" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                                 </svg>
@@ -78,10 +86,10 @@
                         </div>
                     </div>
                     <div class="mb-3 text-end">
-                        <a href="/forgot-password" class="text-decoration-none text-black">Forgot Password?</a>
+                        <a href="forgotPassword.html" class="text-decoration-none text-black">Forgot Password?</a>
                     </div>
                    
-                    <button type="submit" class="btn btn-primary w-100 bg-blue">Login</button>
+                    <a href=" ../dashboard/home.html" type="submit" class="btn btn-primary w-100 bg-blue">Login</a>
                 </form>
                 
             </div>

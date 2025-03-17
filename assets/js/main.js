@@ -1,11 +1,10 @@
 $(document).ready(function () {
 
     // password visible
-    $('.passwordHideshowbtn').click(function (e) {
-        e.preventDefault(); // Prevent the default button action
-
-        var passwordInput = $('#password');
-        var icon = $(this).find('.toggle-icon');
+    // Function to toggle password visibility
+    function togglePasswordVisibility(button, inputId) {
+        var passwordInput = $(inputId);
+        var icon = $(button).find('.toggle-icon');
 
         if (passwordInput.attr('type') === 'password') {
             // Change input type to text (show password)
@@ -28,6 +27,13 @@ $(document).ready(function () {
                 </svg>
             `);
         }
+    }
+
+    // Attach click event to both toggle buttons
+    $('.passwordHideshowbtn').click(function (e) {
+        e.preventDefault(); // Prevent the default button action
+        var inputId = '#' + $(this).closest('.position-relative').find('input').attr('id'); // Get the associated input field
+        togglePasswordVisibility(this, inputId); // Call the toggle function
     });
     // menu bar
     $(".toggleBar").click(function () {
