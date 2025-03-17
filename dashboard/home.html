@@ -138,16 +138,24 @@
                         </button>
 
                         <!-- profile area -->
-                        <button class="profiledetails d-flex justify-content-end align-items-center">
-                            <img height="45px" width="45px" class=" rounded-circle"
-                                src="../assets/images/dashboard/managerimg.png" alt="">
-                            <div class="name-and-position">
-                                <h1 class=" text-start fs-7 mb-0 mx-3 fw-semibold text-white text-capitalize">Austin
-                                    Robertson</h1>
-                                <small class="  text-start fs-8 text-white text-capitalize">Hr Manager</small>
-                            </div>
-                            <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
-                        </button>
+                         <div class="">
+                            <button class="profiledetails d-flex justify-content-end align-items-center"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img height="45px" width="45px" class=" rounded-circle"
+                                    src="../assets/images/dashboard/managerimg.png" alt="">
+                                <div class="name-and-position">
+                                    <h1 class=" text-start fs-7 mb-0 mx-3 fw-semibold text-white text-capitalize">Austin
+                                        Robertson</h1>
+                                    <small class="  text-start fs-8 text-white text-capitalize">Hr Manager</small>
+                                </div>
+                                <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu shadow-lg rounded-4  ">
+                                <li><a class="dropdown-item d-flex justify-content-start align-items-center mb-2 gap-4" href="#"> <img height="30px" width="30px" src="../assets/images/dashboard/info_icon.svg" alt=""> Personal Information</a></li>
+                                <li><a class="dropdown-item d-flex justify-content-start align-items-center mb-2 gap-4" href="#"> <img height="30px" width="30px" src="../assets/images/dashboard/lock-password.svg" alt=""> Change Password</a></li>
+                                <li><a class="dropdown-item d-flex justify-content-start align-items-center mb-2 gap-4" href="#"> <img height="30px" width="30px" src="../assets/images/dashboard/logout.svg" alt=""> Log Out</a></li>
+                              </ul>
+                         </div>
+                        
                     </div>
                 </div>
 

@@ -11780,5 +11780,8 @@ fieldset:disabled .btn {
         display: none !important
     }
 }
+.logoutmenu{
+    transform: translate(454px, 72px) !important;
+}
 
 /*# sourceMappingURL=bootstrap.min.css.map */
