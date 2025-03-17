@@ -15,31 +15,47 @@ $(document).ready(function () {
     });
 
     // filter items
-    // By default, all content divs are visible
+       // Function to update content visibility based on checkbox states
+    function updateContentVisibility() {
+        // Hide all content divs first
+        $('.myAttendance, .myLeaveBalance, .companyAnnouncement, .holidayList, .workAnniversaries, .birthdays, .employeeOnLeave').hide();
 
-    // Attach change event listener to checkboxes
-    $('input[type="checkbox"]').change(function () {
-        // Check if any checkbox is checked
-        let anyChecked = false;
-        $('input[type="checkbox"]').each(function () {
-            if ($(this).is(':checked')) {
-                anyChecked = true;
-            }
+        // Show only the checked items
+        $('input[type="checkbox"]:checked').each(function () {
+            $('.' + $(this).attr('id')).show();
         });
+    }
 
-        // If no checkboxes are checked, show all content divs
-        if (!anyChecked) {
-            $('.myAttendance, .myLeaveBalance, .companyAnnouncement, .holidayList, .workAnniversaries, .birthdays, .employeeOnLeave').show();
+    // Function to handle "Select All" checkbox
+    function handleSelectAll() {
+        if ($('#SelectAll').is(':checked')) {
+            // Check all checkboxes
+            $('input[type="checkbox"]').prop('checked', true);
         } else {
-            // Hide all content divs first
-            $('.myAttendance, .myLeaveBalance, .companyAnnouncement, .holidayList, .workAnniversaries, .birthdays, .employeeOnLeave').hide();
-
-            // Show only the checked items
-            $('input[type="checkbox"]:checked').each(function () {
-                $('.' + $(this).attr('id')).show();
-            });
+            // Uncheck all checkboxes
+            $('input[type="checkbox"]').prop('checked', false);
         }
+        // Update content visibility
+        updateContentVisibility();
+    }
+
+    // Attach change event listener to "Select All" checkbox
+    $('#SelectAll').change(function () {
+        handleSelectAll();
     });
+
+    // Attach change event listener to other checkboxes
+    $('input[type="checkbox"]').not('#SelectAll').change(function () {
+        // If any checkbox is unchecked, uncheck "Select All"
+        if (!this.checked) {
+            $('#SelectAll').prop('checked', false);
+        }
+        // Update content visibility
+        updateContentVisibility();
+    });
+
+    // Initialize content visibility on page load
+    updateContentVisibility();
 })
 document.querySelectorAll('.dropdown-menu .dropdown-item').forEach(item => {
     item.addEventListener('click', function (event) {
