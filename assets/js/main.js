@@ -222,3 +222,77 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#attendanceReport"), options);
 chart.render();
 
+// Organisation Attrition Details
+
+var ottritionDetailsoptions = {
+    series: [
+        {
+            name: 'Actual',
+            data: [
+                {
+                    x: 'April',
+                    y: 1 // 1%
+                },
+                {
+                    x: 'June',
+                    y: 0.5 // 0.5%
+                },
+                {
+                    x: 'July',
+                    y: 0.3 // 0.3%
+                },
+                {
+                    x: 'Aug',
+                    y: 0 // 0%
+                },
+                {
+                    x: 'Sep',
+                    y: 0.4 // 0.4%
+                },
+                {
+                    x: 'Oct',
+                    y: 1.5 // 1.5%
+                },
+                {
+                    x: 'Nov',
+                    y: 1.8 // 1.8%
+                },
+                {
+                    x: 'Dec',
+                    y: 1 // 1%
+                }
+            ]
+        }
+    ],
+    chart: {
+        height: 350,
+        type: 'bar'
+    },
+    plotOptions: {
+        bar: {
+            columnWidth: '20%',
+            borderRadius: 2,
+        }
+    },
+    colors: ['#7787FF'],
+    dataLabels: {
+        enabled: false
+    },
+    yaxis: {
+        labels: {
+            formatter: function (value) {
+                return value + '%'; // Add % sign to y-axis labels
+            }
+        }
+    },
+    tooltip: {
+        y: {
+            formatter: function (value) {
+                return value + '%'; // Add % sign to tooltip values
+            }
+        }
+    }
+};
+
+var chart = new ApexCharts(document.querySelector("#organisationAttritionDetails"), ottritionDetailsoptions);
+chart.render();
