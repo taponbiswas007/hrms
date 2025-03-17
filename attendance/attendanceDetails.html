@@ -138,21 +138,28 @@
                         </button>
 
                         <!-- profile area -->
-                        <button class="profiledetails d-flex justify-content-end align-items-center">
-                            <img height="45px" width="45px" class=" rounded-circle"
-                                src="../assets/images/dashboard/managerimg.png" alt="">
-                            <div class="name-and-position">
-                                <h1 class=" text-start fs-7 mb-0 mx-3 fw-semibold text-white text-capitalize">Austin
-                                    Robertson</h1>
-                                <small class="  text-start fs-8 text-white text-capitalize">Hr Manager</small>
-                            </div>
-                            <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
-                        </button>
+                        <div class="">
+                            <button class="profiledetails d-flex justify-content-end align-items-center"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img height="45px" width="45px" class=" rounded-circle"
+                                    src="../assets/images/dashboard/managerimg.png" alt="">
+                                <div class="name-and-position">
+                                    <h1 class=" text-start fs-7 mb-0 mx-3 fw-semibold text-white text-capitalize">Austin
+                                        Robertson</h1>
+                                    <small class="  text-start fs-8 text-white text-capitalize">Hr Manager</small>
+                                </div>
+                                <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu shadow-lg rounded-4  ">
+                                <li><a class="dropdown-item d-flex justify-content-start align-items-center mb-2 gap-4" href="#"> <img height="30px" width="30px" src="../assets/images/dashboard/info_icon.svg" alt=""> Personal Information</a></li>
+                                <li><a class="dropdown-item d-flex justify-content-start align-items-center mb-2 gap-4" href="#"> <img height="30px" width="30px" src="../assets/images/dashboard/lock-password.svg" alt=""> Change Password</a></li>
+                                <li><a class="dropdown-item d-flex justify-content-start align-items-center mb-2 gap-4" href="#"> <img height="30px" width="30px" src="../assets/images/dashboard/logout.svg" alt=""> Log Out</a></li>
+                              </ul>
+                         </div>
                     </div>
                 </div>
 
                 <!-- ================main content area start============== -->
-                <div class="bg-light">
+                <div class="main-content-area">
 
                     <!-- tabs area -->
                     <div
@@ -259,10 +266,10 @@
 
                         <!-- =================data table area start=================== -->
                         <div class="dataTable-area bg-white rounded-4 shadow p-4 mb-4">
-                            <div data-simplebar class="table-responsive">
+                            <div data-simplebar class="table-responsive attendanceTable" >
                                 <table class="table border-gray table-bordered">
                                     <thead>
-                                        <tr class=" border-0 text-nowrap fs-7 fw-medium "
+                                        <tr class=" sticky-top border-0 text-nowrap fs-7 fw-medium "
                                             style="color: #404040; background: #F9F9F9">
                                             <th class=" border-0">Date</th>
                                             <th class=" border-0">Shift</th>
@@ -277,7 +284,7 @@
                                     </thead>
                                     <tbody style="font-family: DM Sans, sans-serif;">
                                         <tr class=" text-nowrap fs-8 fw-normal "
-                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            style="color: #202020; height: 40px; vertical-align: middle; ">
                                             <td class=" p-2">25/02/2025</td>
                                             <td class=" p-2">General</td>
                                             <td class=" p-2">09:00 AM</td>
@@ -289,7 +296,7 @@
                                             <td class=" p-2"><span class=" na">NA</span></td>
                                         </tr>
                                         <tr class=" text-nowrap fs-8 fw-normal "
-                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            style="color: #202020; height: 40px; vertical-align: middle; ">
                                             <td class=" p-2">25/02/2025</td>
                                             <td class=" p-2">General</td>
                                             <td class=" p-2">09:00 AM</td>
@@ -301,7 +308,7 @@
                                             <td class=" p-2"><span class=" na">NA</span></td>
                                         </tr>
                                         <tr class=" text-nowrap fs-8 fw-normal "
-                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            style="color: #202020; height: 40px; vertical-align: middle; ">
                                             <td class=" p-2">25/02/2025</td>
                                             <td class=" p-2">General</td>
                                             <td class=" p-2">09:00 AM</td>
@@ -313,7 +320,7 @@
                                             <td class=" p-2"><span class=" na">NA</span></td>
                                         </tr>
                                         <tr class=" text-nowrap fs-8 fw-normal "
-                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            style="color: #202020; height: 40px; vertical-align: middle; ">
                                             <td class=" p-2">25/02/2025</td>
                                             <td class=" p-2">General</td>
                                             <td class=" p-2">09:00 AM</td>
@@ -325,7 +332,7 @@
                                             <td class=" p-2"><span class=" na">NA</span></td>
                                         </tr>
                                         <tr class=" text-nowrap fs-8 fw-normal "
-                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            style="color: #202020; height: 40px; vertical-align: middle; ">
                                             <td class=" p-2">25/02/2025</td>
                                             <td class=" p-2">General</td>
                                             <td class=" p-2">09:00 AM</td>
@@ -337,7 +344,7 @@
                                             <td class=" p-2"><span class=" na">NA</span></td>
                                         </tr>
                                         <tr class=" text-nowrap fs-8 fw-normal "
-                                            style="color: #202020; height: 53px; vertical-align: middle; ">
+                                            style="color: #202020; height: 40px; vertical-align: middle; ">
                                             <td class=" p-2">25/02/2025</td>
                                             <td class=" p-2">General</td>
                                             <td class=" p-2">09:00 AM</td>
@@ -353,7 +360,7 @@
                             </div>
 
                             <!-- pagination area -->
-                            <div class="pagination_area d-flex justify-content-end align-items-center p-4">
+                            <div class="pagination_area d-flex justify-content-end align-items-center py-2">
                                 <ul class=" d-flex flex-wrap justify-content-end align-items-center gap-3">
                                     <li>
                                         <a class=" border rounded-2 p-2 d-flex justify-content-center align-items-center "
@@ -402,16 +409,16 @@
 
 
 
-
+                    <!-- ==========footer area start========= -->
+                <footer class=" p-2 d-flex justify-content-center align-items-center"
+                style=" background: #DBE1FF;">
+                <small class=" text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
+            </footer>
+            <!-- ==========footer area end========= -->
                 </div>
                 <!-- ================main content area end============== -->
 
-                <!-- ==========footer area start========= -->
-                <footer class=" sticky-bottom p-2 d-flex justify-content-center align-items-center"
-                    style=" background: #DBE1FF;">
-                    <small class=" text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
-                </footer>
-                <!-- ==========footer area end========= -->
+                
             </div>
         </div>
     </div>

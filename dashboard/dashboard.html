@@ -138,21 +138,28 @@
                         </button>
 
                         <!-- profile area -->
-                        <button class="profiledetails d-flex justify-content-end align-items-center">
-                            <img height="45px" width="45px" class=" rounded-circle"
-                                src="../assets/images/dashboard/managerimg.png" alt="">
-                            <div class="name-and-position">
-                                <h1 class=" text-start fs-7 mb-0 mx-3 fw-semibold text-white text-capitalize">Austin
-                                    Robertson</h1>
-                                <small class="  text-start fs-8 text-white text-capitalize">Hr Manager</small>
-                            </div>
-                            <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
-                        </button>
+                        <div class="">
+                            <button class="profiledetails d-flex justify-content-end align-items-center"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img height="45px" width="45px" class=" rounded-circle"
+                                    src="../assets/images/dashboard/managerimg.png" alt="">
+                                <div class="name-and-position">
+                                    <h1 class=" text-start fs-7 mb-0 mx-3 fw-semibold text-white text-capitalize">Austin
+                                        Robertson</h1>
+                                    <small class="  text-start fs-8 text-white text-capitalize">Hr Manager</small>
+                                </div>
+                                <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu shadow-lg rounded-4  ">
+                                <li><a class="dropdown-item d-flex justify-content-start align-items-center mb-2 gap-4" href="#"> <img height="30px" width="30px" src="../assets/images/dashboard/info_icon.svg" alt=""> Personal Information</a></li>
+                                <li><a class="dropdown-item d-flex justify-content-start align-items-center mb-2 gap-4" href="#"> <img height="30px" width="30px" src="../assets/images/dashboard/lock-password.svg" alt=""> Change Password</a></li>
+                                <li><a class="dropdown-item d-flex justify-content-start align-items-center mb-2 gap-4" href="#"> <img height="30px" width="30px" src="../assets/images/dashboard/logout.svg" alt=""> Log Out</a></li>
+                              </ul>
+                         </div>
                     </div>
                 </div>
 
                 <!-- ================main content area start============== -->
-                <div class="py-2 px-4 bg-light">
+                <div class="pt-2 px-4  pb-4">
 
                     <!-- tabs area -->
                     <div
@@ -212,7 +219,7 @@
 
                     </div>
 
-                    <div class="row g-4">
+                    <div class="row g-4 pb-4">
                         <div class=" col-lg-6 col-md-12">
                             <div class="chart_items  bg-white shadow rounded-4">
                                 <div
@@ -294,16 +301,15 @@
                         </div> -->
                         <!-- =============Attendance Report end============== -->
                     </div>
-
+                         
                 </div>
                 <!-- ================main content area end============== -->
-
-                <!-- ==========footer area start========= -->
-                <footer class=" sticky-bottom p-2 d-flex justify-content-center align-items-center"
-                    style=" background: #DBE1FF;">
-                    <small class=" text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
-                </footer>
-                <!-- ==========footer area end========= -->
+                 <!-- ==========footer area start========= -->
+                 <footer class=" p-2 d-flex justify-content-center align-items-center"
+                 style=" background: #DBE1FF;">
+                 <small class=" text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
+             </footer>
+             <!-- ==========footer area end========= -->
             </div>
         </div>
     </div>

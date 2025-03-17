@@ -17,6 +17,7 @@ body {
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-family: "Inter", sans-serif;
+  background: #F8F7FA;
 }
 
 /* 5. Improve media defaults */
@@ -290,8 +291,9 @@ ul {
 }
 
 footer {
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  width: 100%;
 }
 
 .top_sections {
@@ -511,6 +513,9 @@ footer {
   .main-content {
     width: calc(100% - 170px);
   }
+  footer {
+    width: calc(100% - 170px);
+  }
 }
 .sidebar-link {
   -webkit-transition: all 0.4s ease;
@@ -629,5 +634,14 @@ footer {
 @media (max-width: 992px) {
   .tabs-title {
     font-size: 16px;
+  }
+}
+.attendanceTable {
+  height: 250px;
+}
+
+@media (min-width: 1080px) {
+  .attendanceTable {
+    height: calc(100vh - 570px);
   }
 }
