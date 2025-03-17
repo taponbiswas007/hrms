@@ -15,7 +15,7 @@ $(document).ready(function () {
     });
 
     // filter items
-       // Function to update content visibility based on checkbox states
+    // Function to update content visibility based on checkbox states
     function updateContentVisibility() {
         // Hide all content divs first
         $('.myAttendance, .myLeaveBalance, .companyAnnouncement, .holidayList, .workAnniversaries, .birthdays, .employeeOnLeave').hide();
@@ -201,6 +201,8 @@ var options = {
     series: [44],
     chart: {
         type: 'donut',
+
+
     },
     responsive: [{
         breakpoint: 480,
@@ -208,11 +210,13 @@ var options = {
             chart: {
                 width: 200
             },
-            legend: {
-                position: 'bottom'
-            }
+            // legend: {
+            //     position: 'bottom'
+            // }
         }
-    }]
+    }],
+    labels: ['Present'],
+    colors: ['#3A5AFE'],
 };
 
 var chart = new ApexCharts(document.querySelector("#attendanceReport"), options);
