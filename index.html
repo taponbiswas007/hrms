@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- simple bar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <noscript>
+        <style>
+            /**
+      * Reinstate scrolling for non-JS clients
+      */
+            .simplebar-content-wrapper {
+                scrollbar-width: auto;
+                -ms-overflow-style: auto;
+            }
+
+            .simplebar-content-wrapper::-webkit-scrollbar,
+            .simplebar-hide-scrollbar::-webkit-scrollbar {
+                display: initial;
+                width: initial;
+                height: initial;
+            }
+        </style>
+    </noscript>
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <div class=" h-100 pb-5" style=" background: url(assets/images/singinbg.png ) no-repeat 0 0 / 100% 100%;">
+        <div class="container">
+           <div class=" pt-4">
+            <a  href="/" class="logo">
+                <img width="202px" height="135px" src="assets/images/dashboard/logo.svg" alt="">
+            </a>
+           </div>
+           <div class="row">
+            <div class="col-md-6">
+                <h1 class=" display-6 fw-bold">Forest Essentials' Employee</h1>
+                <a href="#">Connect</a>
+            </div>
+            
+          <!-- ========== sign in form========== -->
+           <div class="col-md-6">
+            <div class="card p-4 shadow-sm">
+                <h2 class="mb-4 text-start">Sign In</h2>
+                <form action="/login" method="POST">
+                    <div class="mb-3">
+                        <label for="useName" class="form-label">User name</label>
+                        <input type="useName" class="form-control" id="useName" name="useName" placeholder="John Doe" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                </form>
+                <div class="mt-3 text-center">
+                    <a href="/forgot-password" class="text-decoration-none">Forgot Password?</a>
+                </div>
+            </div>
+           </div>
+        </div>
+        <!-- ==========footer area start========= -->
+        <footer class=" position-fixed bottom-0 start-0 end-0 w-100 p-2 d-flex justify-content-center align-items-center"
+            style=" background: #DBE1FF;">
+            <small class=" text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
+        </footer>
+        <!-- ==========footer area end========= -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <!-- simple bar js -->
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- js -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
