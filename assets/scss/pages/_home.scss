@@ -465,12 +465,12 @@ footer {
 }
 
 .attendanceTable {
-    height: 250px;
+    max-height: 423px;
 }
 
-@media (min-width: 1080px) {
+@media (min-height: 1024px) {
     .attendanceTable {
-        height: calc(100vh - 570px);
+        height: 423px;
     }
 
 
