@@ -1,0 +1,45 @@
+.formCard {
+    max-width: 512px;
+    width: 100%;
+    padding-bottom: 48px !important;
+
+    h2 {
+        margin-top: 10px;
+    }
+}
+
+// .authpageTitle {
+//     h1 {
+//         font-size: 40px;
+//     }
+
+//     a {
+//         font-size: 40px;
+//     }
+// }
+
+@media (min-width: 1080px) {
+
+
+    .authpage {
+        .logo {
+            margin-bottom: 117px !important;
+            display: block;
+        }
+    }
+
+    .authpageTitle {
+        padding-left: 83px;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+
+
+    .authpageTitle {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

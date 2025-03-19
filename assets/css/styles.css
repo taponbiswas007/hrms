@@ -650,8 +650,28 @@ footer {
   .attendanceTable {
     height: calc(100vh - 570px);
   }
+}
+.formCard {
+  max-width: 512px;
+  width: 100%;
+  padding-bottom: 48px !important;
+}
+.formCard h2 {
+  margin-top: 10px;
+}
+
+@media (min-width: 1080px) {
   .authpage .logo {
-    margin-bottom: 100px !important;
+    margin-bottom: 117px !important;
     display: block;
+  }
+  .authpageTitle {
+    padding-left: 83px;
+  }
+}
+@media (max-width: 768px) {
+  .authpageTitle {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
