@@ -266,6 +266,15 @@ ul {
     width: 12.2%;
   }
 }
+.modal-header {
+  background: rgba(195, 206, 255, 0.2);
+}
+
+.modal-header .btn-close {
+  background: #6879CD;
+  color: #ffffff;
+}
+
 .side-bar {
   width: 170px;
   display: none;
@@ -556,6 +565,15 @@ footer {
 }
 .header .profiledetails:hover {
   background: #4A59A7;
+}
+
+.announcement-list .items {
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.announcement-list .items:hover {
+  background: rgba(172, 180, 245, 0.2);
 }
 
 .my_attendance .calendars .days .general-do {
