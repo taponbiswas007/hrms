@@ -4,6 +4,28 @@ $(document).ready(function () {
         $(this).next('.todosubtitle').slideToggle(); // Only toggles the next subtitle related to the clicked item
     });
 
+    // holiday changer
+    $('.holidayMenu li button').click(function () {
+        $('.holidayMenu li button').removeClass('holidayActive');
+        $(this).addClass('holidayActive');
+    });
+
+    $('.fixedHolidayBtn').click(function () {
+        if (!$('.fixdHoliday').is(':visible')) {
+            $('.optionalHoliday').slideUp(300, function () {
+                $('.fixdHoliday').slideDown(300);
+            });
+        }
+    });
+
+    $('.optionalHolidayBtn').click(function () {
+        if (!$('.optionalHoliday').is(':visible')) {
+            $('.fixdHoliday').slideUp(300, function () {
+                $('.optionalHoliday').slideDown(300);
+            });
+        }
+    });
+
     // password visible
     // Function to toggle password visibility
     function togglePasswordVisibility(button, inputId) {
