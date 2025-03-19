@@ -532,10 +532,19 @@ footer {
 }
 .header .notification-btn {
   border-radius: 50%;
-  height: 27px;
-  width: 27px;
+  height: 40px;
+  width: 40px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header .notification-btn:hover {
   background: #4A59A7;
@@ -642,6 +651,23 @@ footer {
     font-size: 10px !important;
   }
 }
+.attendanceReporttext {
+  height: 220px;
+  width: 220px;
+}
+.attendanceReporttext h2 {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 481px) {
+  .attendanceReporttext {
+    height: 166px;
+    width: 190px;
+  }
+  .attendanceReporttext h2 {
+    font-size: 0.75rem;
+  }
+}
 .attendanceTable {
   height: 250px;
 }
@@ -649,6 +675,11 @@ footer {
 @media (min-width: 1080px) {
   .attendanceTable {
     height: calc(100vh - 570px);
+  }
+}
+@media (min-width: 768px) {
+  .chart_items {
+    height: 600px;
   }
 }
 .formCard {

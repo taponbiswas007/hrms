@@ -303,9 +303,12 @@ footer {
     .notification-btn {
 
         border-radius: 50%;
-        height: 27px;
-        width: 27px;
+        height: 40px;
+        width: 40px;
         transition: all 0.4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         &:hover {
             background: $blue;
@@ -323,6 +326,8 @@ footer {
         }
     }
 }
+
+
 
 .my_attendance {
     .calendars {
@@ -437,6 +442,28 @@ footer {
 
 }
 
+.attendanceReporttext {
+    height: 220px;
+    width: 220px;
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (max-width: 481px) {
+    .attendanceReporttext {
+        height: 166px;
+        width: 190px;
+
+        h2 {
+            font-size: .75rem;
+        }
+    }
+
+}
+
 .attendanceTable {
     height: 250px;
 }
@@ -444,6 +471,14 @@ footer {
 @media (min-width: 1080px) {
     .attendanceTable {
         height: calc(100vh - 570px);
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .chart_items {
+        height: 600px;
     }
 
 
