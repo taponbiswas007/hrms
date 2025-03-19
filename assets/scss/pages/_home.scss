@@ -338,6 +338,97 @@ footer {
     }
 }
 
+.todolistitemssection {
+    &:nth-child(even) {
+        .todosubtitle {
+            border-left: 1.5px solid #00B445;
+        }
+    }
+
+    &:nth-child(odd) {
+        .todosubtitle {
+            border-left: 1.5px solid #4A59A7;
+        }
+    }
+}
+
+.todoitems {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    cursor: pointer;
+}
+
+.todosubtitle {
+    padding-left: 9px;
+    margin-top: 10px;
+    margin-left: 13px;
+
+
+    li {
+        font-family: Inter;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000000;
+        margin-bottom: 7px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        button {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 9px;
+            line-height: 125%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #FFFFFF;
+            background: #4A59A7;
+            border-radius: 5.27px;
+            padding-top: 7px;
+            padding-right: 10px;
+            padding-bottom: 7px;
+            padding-left: 10px;
+
+        }
+    }
+}
+
+.todoMoredetails {
+    .modal-body {
+        h3 {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000000;
+            margin-bottom: 14px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            span {
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #4A59A7;
+
+            }
+        }
+    }
+}
+
 .announcementDialogue {
     .modal-body {
         h1 {

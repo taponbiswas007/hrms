@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    $('.todoitems').click(function () {
+        $(this).next('.todosubtitle').slideToggle(); // Only toggles the next subtitle related to the clicked item
+    });
+
     // password visible
     // Function to toggle password visibility
     function togglePasswordVisibility(button, inputId) {
@@ -333,3 +337,6 @@ var ottritionDetailsoptions = {
 
 var chart = new ApexCharts(document.querySelector("#organisationAttritionDetails"), ottritionDetailsoptions);
 chart.render();
+
+
+
