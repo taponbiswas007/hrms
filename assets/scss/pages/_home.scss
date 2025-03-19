@@ -338,6 +338,37 @@ footer {
     }
 }
 
+.announcementDialogue {
+    .modal-body {
+        h1 {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000000;
+        }
+
+        h2 {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000000;
+        }
+
+        small {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #AEAEB2;
+        }
+    }
+}
+
 .my_attendance {
     .calendars {
         .days {

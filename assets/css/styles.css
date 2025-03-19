@@ -273,6 +273,21 @@ ul {
 .modal-header .btn-close {
   background: #6879CD;
   color: #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+}
+
+.modal-body {
+  padding: 23px 17px;
 }
 
 .side-bar {
@@ -574,6 +589,31 @@ footer {
 }
 .announcement-list .items:hover {
   background: rgba(172, 180, 245, 0.2);
+}
+
+.announcementDialogue .modal-body h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.announcementDialogue .modal-body h2 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.announcementDialogue .modal-body small {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #AEAEB2;
 }
 
 .my_attendance .calendars .days .general-do {
