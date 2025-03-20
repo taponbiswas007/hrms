@@ -83,27 +83,45 @@ button {
     outline: none;
 }
 
+/* WebKit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
     width: 8px;
-
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #D0D0D0;
+    background: #d0d0d09c;
     border-radius: 100vw;
-    margin-right: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 /* Firefox */
 html {
     scrollbar-width: thin;
-    scrollbar-color: #D0D0D0 transparent;
+    scrollbar-color: #d0d0d08b transparent;
+    border-radius: 100vw;
+
 }
 
 /* SimpleBar fallback */
 .simplebar-scrollbar::before {
-    background-color: #D0D0D0;
+    background-color: #d0d0d081;
     border-radius: 100vw;
+}
+
+/* Customize OverlayScrollbars scrollbar */
+.os-scrollbar-handle {
+    background: #d0d0d09c !important;
+    /* Thumb color */
+    border-radius: 100vw !important;
+    /* Rounded corners */
+}
+
+.os-scrollbar-track {
+    background: transparent !important;
+    /* Track color */
 }
 
 ul {

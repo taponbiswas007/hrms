@@ -1,3 +1,7 @@
+.header {
+    z-index: 999999999999999999999999999999;
+}
+
 .side-bar {
     width: 170px;
     display: none;
@@ -5,8 +9,22 @@
     .menu {
         height: calc(100vh - 74px);
         overflow-y: auto;
+        overflow-x: visible !important;
         padding-bottom: 100px;
     }
+
+    .dropdown-menu {
+        z-index: 1000;
+        /* Bring dropdown to the front */
+        position: absolute;
+        /* Ensure it's positioned correctly */
+    }
+
+    .sidebarItem {
+        position: static !important;
+    }
+
+
 }
 
 .sidebarActive {
@@ -167,7 +185,7 @@ footer {
                     position: absolute;
                     bottom: -5px;
                     left: 5px;
-                    
+
                 }
             }
         }
@@ -661,13 +679,14 @@ footer {
 
 @media (min-width: 768px) {
     .side-bar {
-       
-    
+
+
         .menu {
-        
+
             padding-bottom: 20px !important;
         }
     }
+
     .chart_items {
         height: 600px;
     }

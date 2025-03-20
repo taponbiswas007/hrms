@@ -82,26 +82,44 @@ button {
   outline: none;
 }
 
+/* WebKit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D0D0D0;
+  background: rgba(208, 208, 208, 0.6117647059);
   border-radius: 100vw;
-  margin-right: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 /* Firefox */
 html {
   scrollbar-width: thin;
-  scrollbar-color: #D0D0D0 transparent;
+  scrollbar-color: rgba(208, 208, 208, 0.5450980392) transparent;
+  border-radius: 100vw;
 }
 
 /* SimpleBar fallback */
 .simplebar-scrollbar::before {
-  background-color: #D0D0D0;
+  background-color: rgba(208, 208, 208, 0.5058823529);
   border-radius: 100vw;
+}
+
+/* Customize OverlayScrollbars scrollbar */
+.os-scrollbar-handle {
+  background: rgba(208, 208, 208, 0.6117647059) !important;
+  /* Thumb color */
+  border-radius: 100vw !important;
+  /* Rounded corners */
+}
+
+.os-scrollbar-track {
+  background: transparent !important;
+  /* Track color */
 }
 
 ul {
@@ -291,6 +309,10 @@ ul {
   padding: 23px 17px;
 }
 
+.header {
+  z-index: 1000000000000000000000000000000;
+}
+
 .side-bar {
   width: 170px;
   display: none;
@@ -298,7 +320,17 @@ ul {
 .side-bar .menu {
   height: calc(100vh - 74px);
   overflow-y: auto;
+  overflow-x: visible !important;
   padding-bottom: 100px;
+}
+.side-bar .dropdown-menu {
+  z-index: 1000;
+  /* Bring dropdown to the front */
+  position: absolute;
+  /* Ensure it's positioned correctly */
+}
+.side-bar .sidebarItem {
+  position: static !important;
 }
 
 .sidebarActive {

@@ -66,7 +66,7 @@
                         </svg>
                     </button>
 
-                    <div data-simplebar class="bg-blue text-white menu">
+                    <div  class="bg-blue text-white menu">
 
                         <!-- menu items -->
                         <ul class="list-unstyled">
@@ -79,9 +79,20 @@
                             <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
                                     href="#"> <img height="25px" width="25px"
                                         src="../assets/images/dashboard/profile.svg" alt=""> My Profile</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="attendanceDetails.html"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/attendance.svg" alt=""> Attendance</a></li>
+                                        <li class=" sidebarItem    dropend">
+                                            <button type="button" data-bs-toggle="dropdown"  class="   d-flex w-100 flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
+                                               > <img height="25px" width="25px"
+                                                    src="../assets/images/dashboard/attendance.svg" alt=""> Attendance</button>
+                                                    <ul class="submenu dropdown-menu shadow rounded-4 border-0 ms-3 p-2">
+                                                        <li><a href="../attendance/attendanceDetails.html" class="dropdown-item mb-2">My Attendance</a></li>
+                                                        <li><a href="../reports/attendance.html" class="dropdown-item mb-2">Reports</a></li>
+                                                        <li><a href="#" class="dropdown-item mb-2">Branch Hr</a></li>
+                                                        <li><a href="#" class="dropdown-item mb-2">Supervisor</a></li>
+                                                        <li><a href="#" class="dropdown-item mb-2">HR Task</a></li>
+                                                        <li><a href="#" class="dropdown-item mb-2">Late</a></li>
+                                                        <li><a href="#" class="dropdown-item mb-2">Biometric</a></li>
+                                                      </ul>
+                                        </li>
                             <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
                                     href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg"
                                         alt=""> Leave</a></li>
@@ -220,7 +231,7 @@
                     <div class="attendance-area pb-4 pt-3">
                         <div class="bg-white p-4 rounded-4 shadow mb-4">
                             <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                View My Roster</h1>
+                                Select Criteria</h1>
 
                             <div class="row g-4 pt-3">
 

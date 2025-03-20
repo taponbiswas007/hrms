@@ -235,6 +235,12 @@ $(document).ready(function () {
 
 
 
+    // side bar items
+    // $('.sidebarItem .submenu').click(function () {
+    //     $('.sidebarItem .submenu').removeClass('sideBarActive');
+    //     $(this).addClass('sideBarActive');
+    // });
+
 })
 
 
@@ -507,3 +513,9 @@ function toggleSections() {
         todoListContainer.parentNode.insertBefore(holidayListContainer, todoListContainer);
     }
 }
+
+
+
+
+
+
