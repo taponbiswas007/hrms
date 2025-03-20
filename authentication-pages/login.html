@@ -36,35 +36,35 @@
 </head>
 
 <body>
-    <div class=" authpage  pb-5" style="background: url(../assets/images/singinbg.png) no-repeat center center / cover; min-height: 100vh">
+    <div class="authpage pb-5" style="background: url(../assets/images/singinbg.png) no-repeat center center / cover; min-height: 100vh">
         <div class="container">
-           <div class=" pt-4">
+           <div class="pt-4">
             <a  href="#" class="logo">
-                <img width="202px" height="135px" src="../assets/images/dashboard/logo.svg" alt="">
+                <img width="202px" height="135px" src="../assets/images/dashboard/logo.png" alt="">
             </a>
            </div>
            <div class="row pb-5">
             <div class="col-md-6">
                 
-                <div class="d-flex authpageTitle justify-content-center align-items-center flex-column h-100">
-                    <h1 class=" display-6 fw-bold text-start w-100">Forest Essentials' Employee</h1>
+                <div class="d-flex flex-column align-items-center h-100 justify-content-center authpageTitle">
+                    <h1 class="display-6 text-start w-100 fw-bold">Forest Essentials' Employee</h1>
                     <div class="d-flex justify-content-start w-100">
-                        <a class=" mb-3 display-6 fw-bold" style="color:#4A59A7 ;" href="#">Connect</a>
+                        <a class="display-6 fw-bold mb-3" style="color:#4A59A7 ;" href="#">Connect</a>
                     </div>
                 </div>
             </div>
             
           <!-- ========== sign in form========== -->
            <div class="col-md-6">
-            <div class="card bg-white formCard p-4 shadow rounded-4">
-                <h2 class="mb-0 text-start ff-p">Sign In</h2>
+            <div class="card formCard bg-white p-4 rounded-4 shadow">
+                <h2 class="text-start ff-p mb-0">Sign In</h2>
                 <hr style="border: 1px solid #D3D3D3">
                 <form action="/login" method="POST">
                     <div class="mb-3">
                         <label for="useName" class="form-label ff-p">Username</label>
                         <div class="position-relative">
                             <input type="useName" style="padding-right: 45px;" class="form-control" id="useName" name="useName" placeholder="John Doe" required>
-                            <img height="24px" width="24px" class=" position-absolute top-50 translate-middle-y " style=" right: 20px" src="../assets/images/fe_user.svg" alt="">
+                            <img height="24px" width="24px" class="position-absolute top-50 translate-middle-y" style=" right: 20px" src="../assets/images/fe_user.svg" alt="">
                         </div>
                     </div>
                       <!-- Password Field -->
@@ -74,7 +74,7 @@
                             <input type="password" style="padding-right: 45px;" class="form-control" id="password" name="password"
                                 placeholder="Enter your password" required>
                             <button
-                                class="passwordHideshowbtn position-absolute top-50 translate-middle-y p-0"  style=" right: 20px">
+                                class="p-0 position-absolute passwordHideshowbtn top-50 translate-middle-y"  style=" right: 20px">
                                 <!-- Default SVG icon for closed lock -->
                                 <svg class="toggle-icon" height="24px" width="24px" viewBox="0 0 24 24"
                                     fill="none" stroke="black" stroke-width="2" stroke-linecap="round"
@@ -85,20 +85,20 @@
                             </button>
                         </div>
                     </div>
-                    <div class=" text-end" style=" margin-bottom: 40px">
+                    <div class="text-end" style=" margin-bottom: 40px">
                         <a href="forgotPassword.html" class="text-decoration-none" style=" color: #000000 !important">Forgot Password?</a>
                     </div>
                    
-                    <a href=" ../dashboard/home.html" type="submit" class="btn btn-primary w-100 bg-blue">Login</a>
+                    <a href=" ../dashboard/home.html" type="submit" class="btn btn-primary bg-blue w-100">Login</a>
                 </form>
                 
             </div>
            </div>
         </div>
         <!-- ==========footer area start========= -->
-        <footer class=" position-fixed bottom-0 start-0 end-0 w-100 p-2 d-flex justify-content-center align-items-center"
+        <footer class="d-flex align-items-center justify-content-center p-2 position-fixed w-100 bottom-0 end-0 start-0"
             style=" background: #DBE1FF;">
-            <small class=" text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
+            <small class="text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
         </footer>
         <!-- ==========footer area end========= -->
     </div>
