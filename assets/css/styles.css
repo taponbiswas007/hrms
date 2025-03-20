@@ -867,15 +867,6 @@ footer {
     font-size: 0.75rem;
   }
 }
-.attendanceTable {
-  max-height: 423px;
-}
-
-@media (min-height: 1024px) {
-  .attendanceTable {
-    height: 423px;
-  }
-}
 @media (min-width: 768px) {
   .side-bar .menu {
     padding-bottom: 20px !important;
@@ -919,4 +910,53 @@ footer {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+.stausChangermenu li button {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  color: #8E8E93;
+  padding: 8px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.stausChangermenu li button:hover {
+  background: #5A6185;
+  color: #ffffff;
+}
+.stausChangermenu li .active {
+  background: #5A6185;
+  color: #ffffff;
+}
+
+.attendanceTable {
+  max-height: 423px;
+}
+
+.statusDetailsTable {
+  max-height: 240px;
+}
+
+@media (min-height: 1024px) {
+  .attendanceTable {
+    height: 423px;
+  }
+  .statusDetailsTable {
+    height: 240px;
+  }
+}
+.tab-content {
+  display: none;
+  /* Initially hidden */
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tab-content.statusactive {
+  display: block;
+  opacity: 1;
+}

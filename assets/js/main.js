@@ -17,7 +17,7 @@ $(document).ready(function () {
             });
         }
     });
-    
+
     $('.optionalHolidayBtn').click(function () {
         if (!$('.optionalHoliday').is(':visible')) {
             $('.fixdHoliday').fadeOut(200, function () {
@@ -25,7 +25,7 @@ $(document).ready(function () {
             });
         }
     });
-    
+
 
     // password visible
     // Function to toggle password visibility
@@ -120,7 +120,139 @@ $(document).ready(function () {
 
     // Initialize content visibility on page load
     updateContentVisibility();
+
+
+    // dashboard filter items
+    function updateContentVisibilityDashboard() {
+        // Hide all content divs first
+        $('.organisationsalary, .organisationhead, .attendancereport, .organisationattrition').hide();
+
+        // Show only the checked items by mapping checkbox IDs to their corresponding content classes
+        $('input[type="checkbox"]:checked').not('#markAll').each(function () {
+            let checkboxId = $(this).attr('id');
+            let targetClass = '';
+
+            // Map checkbox IDs to their corresponding content classes
+            switch (checkboxId) {
+                case 'organisationSala1ryTrend':
+                    targetClass = 'organisationsalary';
+                    break;
+                case 'organisationHe2adCount':
+                    targetClass = 'organisationhead';
+                    break;
+                case 'attendanc3eReport':
+                    targetClass = 'attendancereport';
+                    break;
+                case 'organisationAttrition4Details':
+                    targetClass = 'organisationattrition';
+                    break;
+                default:
+                    break;
+            }
+
+            // Show the corresponding content div
+            if (targetClass) {
+                $('.' + targetClass).show();
+            }
+        });
+    }
+
+    function handleSelectAllDashboard() {
+        let isChecked = $('#markAll').is(':checked');
+
+        // Check/uncheck all checkboxes except "Select All"
+        $('input[type="checkbox"]').not('#markAll').prop('checked', isChecked);
+
+        // Update content visibility
+        updateContentVisibilityDashboard();
+    }
+
+    // Attach event listener to "Select All" checkbox
+    $('#markAll').change(function () {
+        handleSelectAllDashboard();
+    });
+
+    // Attach event listener to individual checkboxes
+    $('input[type="checkbox"]').not('#markAll').change(function () {
+        // If all other checkboxes are checked, check "Select All"
+        if ($('input[type="checkbox"]').not('#markAll').length === $('input[type="checkbox"]:checked').not('#markAll').length) {
+            $('#markAll').prop('checked', true);
+        } else {
+            $('#markAll').prop('checked', false);
+        }
+
+        // Update content visibility
+        updateContentVisibilityDashboard();
+    });
+
+    // Initialize content visibility on page load
+    updateContentVisibilityDashboard();
+
+
+    // status changer 
+    $('.stausChangermenu li button').click(function () {
+        $('.stausChangermenu li button').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // $('.pendingBtn').click(function () {
+    //     if (!$('#pendingStatus').is(':visible')) {
+    //         $('#approvedStatus, #rejectedStatus ').fadeOut(100, function () {
+    //             $('#pendingStatus').fadeIn(100);
+    //         });
+    //     }
+    // });
+
+    // $('.approvedBtn').click(function () {
+    //     if (!$('#approvedStatus').is(':visible')) {
+    //         $('#pendingStatus, #rejectedStatus').fadeOut(100, function () {
+    //             $('#approvedStatus').fadeIn(100);
+    //         });
+    //     }
+    // });
+    // $('.rejectedBtn').click(function () {
+    //     if (!$('#rejectedStatus').is(':visible')) {
+    //         $('#pendingStatus, #approvedStatus').fadeOut(100, function () {
+    //             $('#rejectedStatus').fadeIn(100);
+    //         });
+    //     }
+    // });
+
+    $('.tab-content').hide();  // Hide all by default
+    $('#pendingStatus').show().addClass('statusactive'); // Show default one
+
+    function changeTab(target) {
+        $('.tab-content.statusactive').fadeOut(300, function () {
+            $(this).removeClass('statusactive');
+            $('#' + target).fadeIn(300).addClass('statusactive');
+        });
+    }
+
+    $('.pendingBtn').click(function () { changeTab('pendingStatus'); });
+    $('.approvedBtn').click(function () { changeTab('approvedStatus'); });
+    $('.rejectedBtn').click(function () { changeTab('rejectedStatus'); });
+
+
+
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.querySelectorAll('.dropdown-menu .dropdown-item').forEach(item => {
     item.addEventListener('click', function (event) {
         event.stopPropagation(); // Prevent the dropdown from closing
@@ -133,45 +265,42 @@ document.querySelectorAll('.dropdown-menu .dropdown-item').forEach(item => {
 
 // head count chart
 var options = {
-    series: [
+    series: [{
+        name: 'Actual',
+        data: [{
+            x: 'April',
+            y: 1292
+        },
         {
-            name: 'Actual',
-            data: [
-                {
-                    x: 'April',
-                    y: 1292
-                },
-                {
-                    x: 'June',
-                    y: 4432
-                },
-                {
-                    x: 'July',
-                    y: 5423
-                },
-                {
-                    x: 'Aug',
-                    y: 6653
-                },
-                {
-                    x: 'Sep',
-                    y: 8133
-                },
-                {
-                    x: 'Oct',
-                    y: 7132
-                },
-                {
-                    x: 'Nov',
-                    y: 7332
-                },
-                {
-                    x: 'Dec',
-                    y: 6553
-                }
-            ]
+            x: 'June',
+            y: 4432
+        },
+        {
+            x: 'July',
+            y: 5423
+        },
+        {
+            x: 'Aug',
+            y: 6653
+        },
+        {
+            x: 'Sep',
+            y: 8133
+        },
+        {
+            x: 'Oct',
+            y: 7132
+        },
+        {
+            x: 'Nov',
+            y: 7332
+        },
+        {
+            x: 'Dec',
+            y: 6553
         }
-    ],
+        ]
+    }],
     chart: {
         height: 350,
         type: 'bar'
@@ -209,15 +338,14 @@ var series = {
     }
 };
 var options = {
-    series: [
-        {
-            name: "Series 1",
-            data: series.monthDataSeries1.prices
-        },
-        {
-            name: "Series 2",
-            data: series.monthDataSeries2.prices
-        }
+    series: [{
+        name: "Series 1",
+        data: series.monthDataSeries1.prices
+    },
+    {
+        name: "Series 2",
+        data: series.monthDataSeries2.prices
+    }
     ],
     chart: {
         height: 350,
@@ -289,45 +417,42 @@ chart.render();
 // Organisation Attrition Details
 
 var ottritionDetailsoptions = {
-    series: [
+    series: [{
+        name: 'Actual',
+        data: [{
+            x: 'April',
+            y: 1 // 1%
+        },
         {
-            name: 'Actual',
-            data: [
-                {
-                    x: 'April',
-                    y: 1 // 1%
-                },
-                {
-                    x: 'June',
-                    y: 0.5 // 0.5%
-                },
-                {
-                    x: 'July',
-                    y: 0.3 // 0.3%
-                },
-                {
-                    x: 'Aug',
-                    y: 0 // 0%
-                },
-                {
-                    x: 'Sep',
-                    y: 0.4 // 0.4%
-                },
-                {
-                    x: 'Oct',
-                    y: 1.5 // 1.5%
-                },
-                {
-                    x: 'Nov',
-                    y: 1.8 // 1.8%
-                },
-                {
-                    x: 'Dec',
-                    y: 1 // 1%
-                }
-            ]
+            x: 'June',
+            y: 0.5 // 0.5%
+        },
+        {
+            x: 'July',
+            y: 0.3 // 0.3%
+        },
+        {
+            x: 'Aug',
+            y: 0 // 0%
+        },
+        {
+            x: 'Sep',
+            y: 0.4 // 0.4%
+        },
+        {
+            x: 'Oct',
+            y: 1.5 // 1.5%
+        },
+        {
+            x: 'Nov',
+            y: 1.8 // 1.8%
+        },
+        {
+            x: 'Dec',
+            y: 1 // 1%
         }
-    ],
+        ]
+    }],
     chart: {
         height: 350,
         type: 'bar'
@@ -382,6 +507,3 @@ function toggleSections() {
         todoListContainer.parentNode.insertBefore(holidayListContainer, todoListContainer);
     }
 }
-
-
-

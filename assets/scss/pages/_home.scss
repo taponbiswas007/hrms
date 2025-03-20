@@ -167,6 +167,7 @@ footer {
                     position: absolute;
                     bottom: -5px;
                     left: 5px;
+                    
                 }
             }
         }
@@ -656,17 +657,7 @@ footer {
 
 }
 
-.attendanceTable {
-    max-height: 423px;
-}
 
-@media (min-height: 1024px) {
-    .attendanceTable {
-        height: 423px;
-    }
-
-
-}
 
 @media (min-width: 768px) {
     .side-bar {
