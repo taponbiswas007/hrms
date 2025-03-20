@@ -898,9 +898,21 @@ footer {
     padding-left: 83px;
   }
 }
+@media screen and (min-height: 767px) and (max-height: 880px) {
+  .authpage .logo {
+    margin-bottom: 60px !important;
+    display: block;
+  }
+}
+@media (max-height: 767px) {
+  .authpage .logo {
+    margin-bottom: 40px !important;
+    display: block;
+  }
+}
 @media (max-width: 768px) {
   .authpageTitle {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
