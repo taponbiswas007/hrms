@@ -81,7 +81,7 @@ $(document).ready(function () {
     // Function to update content visibility based on checkbox states
     function updateContentVisibility() {
         // Hide all content divs first
-        $('.myAttendance, .myLeaveBalance, .companyAnnouncement, .holidayList, .workAnniversaries, .birthdays, .employeeOnLeave').hide();
+        $('.myAttendance, .myLeaveBalance, .companyAnnouncement, .todoList, .holidayList, .workAnniversaries, .birthdays, .employeeOnLeave').hide();
 
         // Show only the checked items
         $('input[type="checkbox"]:checked').each(function () {
@@ -359,6 +359,28 @@ var ottritionDetailsoptions = {
 
 var chart = new ApexCharts(document.querySelector("#organisationAttritionDetails"), ottritionDetailsoptions);
 chart.render();
+
+
+// filter over take items
+function toggleSections() {
+    const todoListContainer = document.getElementById('todoListContainer');
+    const holidayListContainer = document.getElementById('holidayListContainer');
+    const myLeaveBalanceCheckbox = document.getElementById('myLeaveBalance');
+    const companyAnnouncementCheckbox = document.getElementById('companyAnnouncement');
+    const myAttendanceCheckbox = document.getElementById('myAttendance');
+
+    // Count how many checkboxes are unchecked
+    const uncheckedCount = [myLeaveBalanceCheckbox, companyAnnouncementCheckbox, myAttendanceCheckbox]
+        .filter(checkbox => !checkbox.checked).length;
+
+    // If at least two checkboxes are unchecked, show To Do List first
+    if (uncheckedCount >= 2) {
+        todoListContainer.parentNode.insertBefore(todoListContainer, holidayListContainer);
+    } else {
+        // Otherwise, show Holiday List first
+        todoListContainer.parentNode.insertBefore(holidayListContainer, todoListContainer);
+    }
+}
 
 
 

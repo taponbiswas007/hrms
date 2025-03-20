@@ -198,16 +198,20 @@
                                     <label for="SelectAll">Select All</label>
                                 </li>
                                 <li class="dropdown-item dropdownFilteritems text-white mb-3">
-                                    <input type="checkbox" checked id="myAttendance">
+                                    <input type="checkbox" checked id="myAttendance" onchange="toggleSections()">
                                     <label for="myAttendance">My Attendance</label>
                                 </li>
                                 <li class="dropdown-item dropdownFilteritems text-white mb-3">
-                                    <input type="checkbox" checked id="myLeaveBalance">
+                                    <input type="checkbox" checked id="myLeaveBalance" onchange="toggleSections()">
                                     <label for="myLeaveBalance">My Leave Balance</label>
                                 </li>
                                 <li class="dropdown-item dropdownFilteritems text-white mb-2">
-                                    <input type="checkbox" checked id="companyAnnouncement">
+                                    <input type="checkbox" checked id="companyAnnouncement" onchange="toggleSections()">
                                     <label for="companyAnnouncement">Company Announcement</label>
+                                </li>
+                                <li class="dropdown-item dropdownFilteritems text-white mb-2">
+                                    <input type="checkbox" checked id="todoList">
+                                    <label for="todoList">To Do’s</label>
                                 </li>
                                 <li class="dropdown-item dropdownFilteritems text-white mb-2">
                                     <input type="checkbox" checked id="holidayList">
@@ -564,7 +568,7 @@
 
 
                         <!-- ==============to do list start================= -->
-                        <div class="col-lg-12 col-mb-12 col-xl-8">
+                        <div id="todoListContainer" class="col-lg-12 col-mb-12 col-xl-8 todoList">
                             <div class="bg-white rounded-4 shadow overflow-hidden pb-3 section-items">
                                 <div class="border-bottom p-3 mb-2">
                                     <h1 class="text-black fs-5 fw-medium">To Do’s</h1>
@@ -729,7 +733,7 @@
 
 
                         <!-- Holiday List area start -->
-                        <div class="col-lg-6 col-mb-12 col-xl-4 holidayList">
+                        <div id="holidayListContainer" class="col-lg-6 col-mb-12 col-xl-4 holidayList">
                             <div
                                 class="bg-white rounded-4 shadow holiday_list_area overflow-hidden pb-3 section-items">
                                 <div class="d-flex align-items-center border-bottom justify-content-between p-3 mb-2">
@@ -1121,7 +1125,7 @@
 
 
                         <!-- Work Anniversaries List area start -->
-                        <div class="col-lg-6 col-mb-12 col-xl-4 workAnniversaries">
+                        <div id="workanniversariesListContainer" class="col-lg-6 col-mb-12 col-xl-4 workAnniversaries">
                             <div class="bg-white rounded-4 shadow section-items work_anniversaries_area">
                                 <div class="d-flex align-items-center border-bottom justify-content-between p-3 mb-2"
                                     style="  background: url(../assets/images/dashboard/congras_bg.png) no-repeat 0 0 / 100% 100%;">
@@ -1833,6 +1837,8 @@
 
     <!-- js -->
     <script src="../assets/js/main.js"></script>
+
+  
 </body>
 
 </html>
