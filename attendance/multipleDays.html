@@ -184,13 +184,13 @@
                                 <li class="breadcrumb-item"><a style="color: #757575;" href="#">Attendance</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Attendance Request <img class="d-inline" height="13px "
+                                        aria-expanded="false">Multiple Days OD <img class="d-inline" height="13px "
                                             width="13px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-3" href="attendanceDetails.html">Attendance Details</a></li>
                                         <li><a class="dropdown-item mb-3" href="attendanceRequest.html">Attendance Request</a></li>
-                                        <li><a class="dropdown-item mb-3" href="">Multiple Days OD</a></li>
+                                        <li><a class="dropdown-item mb-3" href="multipleDays.html">Multiple Days OD</a></li>
                                         <li><a class="dropdown-item mb-3" href="#">View My Roster</a></li>
 
                                     </ul>
@@ -202,61 +202,36 @@
                     <!-- ================= New Attendance Regularization Request area start================= -->
                     <div class="attendance-area pb-4 pt-3">
                         <div class="bg-white p-4 rounded-4 shadow mb-4">
-                           <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">New Attendance Regularization Request</h1>
+                           <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">Multiple Days Outdoor Duty</h1>
 
                            <div class="row g-4 pt-3">
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                            
+                            <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <label class=" mb-1" for="">
-                                    Regularization Type: <span class=" text-danger">*</span>
-                                </label>
-                                <select name="" style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7" id="">
-                                    <option value="">Present</option>
-                                    <option value="">Absent</option>
-                                </select>
-                            </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <label class=" mb-1" for="">
-                                    Attendance Date <span class=" text-danger">*</span>
+                                    From Date <span class=" text-danger">*</span>
                                 </label>
                                 <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7" type="date">
                             </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <label class=" mb-1" for="">
+                                    To Date <span class=" text-danger">*</span>
+                                </label>
+                                <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7" type="date">
+                            </div>
+                            <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <label class="mb-1" for="timeIn">
-                                    Time In <span class="text-danger">*</span>
+                                    Reason for Multiple OD <span class="text-danger">*</span>
                                 </label>
-                                <div class="input-group position-relative">
-                                    <input style="border-color: #C2C2C2; border-radius:8px;" class="form-control fs-7" type="time" id="timeIn">
-                                    <span class=" position-absolute top-50 translate-middle-y" style="right: 15px;">
-                                        <i class="fa-regular fa-clock"></i>
-                                    </span>
-                                </div>
+                                <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7" type="text" placeholder="Reason..">
                             </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <label class="mb-1" for="timeOut">
-                                    Time Out <span class="text-danger">*</span>
-                                </label>
-                                <div class="input-group position-relative">
-                                    <input style="border-color: #C2C2C2; border-radius:8px;" class="form-control fs-7" type="time" id="timeOut">
-                                    <span class=" position-absolute top-50 translate-middle-y" style="right: 15px; ">
-                                        <i class="fa-regular fa-clock"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                <label class="mb-1" for="timeOut">
-                                    Reason for Regularization: <span class="text-danger">*</span>
-                                </label>
-                               
-                                    <textarea class="form-control" placeholder="Describe" style="height: 70px; border-radius:8px;"></textarea>
-                                    <p class=" text-start fw-bold mt-3 mb-0 d-block d-sm-none" style="color: #4A59A7; font-size: 12px;">Note: All fields marked with an asterisk (*) are mandatory.</p>
-                            </div>
-                            <div class="col-xxl-9 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                           
+                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class=" h-100 d-flex justify-content-end align-items-end">
-                                    <button class="btn bg-blue text-white">Send</button>
+                                    <button class="btn bg-blue text-white rounded-4">Submit</button>
                                 </div>
                             </div>
                            </div>
-                           <p class=" text-start fw-bold mt-3 mb-0 d-none d-sm-block" style="color: #4A59A7; font-size: 12px;">Note: All fields marked with an asterisk (*) are mandatory.</p>
+                          
                         </div>
 
 
@@ -285,127 +260,97 @@
                                         <thead>
                                             <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
                                                 style="color: #404040; background: #F9F9F9">
-                                                <th class="border-0">Type</th>
-                                                <th class="border-0">Date</th>
-                                                <th class="border-0">InTime</th>
-                                                <th class="border-0">OutTime</th>
-                                                <th class="border-0">Status</th>
+                                                <th class="border-0">From Date</th>
+                                                <th class="border-0">To Date</th>
                                                 <th class="border-0">Reason</th>
+                                                <th class="border-0">Status</th>
                                                 <th class="border-0">Requested On</th>
+                                            
                                                
                                             </tr>
                                         </thead>
                                         <tbody style="font-family: DM Sans, sans-serif;">
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
                                                 
-                                            </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
-                                                <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
-                                                <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
-                                                <td class="p-2">25/02/2025</td>
                                                 
                                             </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
-                                                <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
-                                                <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
-                                                <td class="p-2">25/02/2025</td>
-                                                
-                                            </tr>
+                                          
                                          
                                         </tbody>
                                     </table>
@@ -464,127 +409,97 @@
                                         <thead>
                                             <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
                                                 style="color: #404040; background: #F9F9F9">
-                                                <th class="border-0">Type</th>
-                                                <th class="border-0">Date</th>
-                                                <th class="border-0">InTime</th>
-                                                <th class="border-0">OutTime</th>
-                                                <th class="border-0">Status</th>
+                                                <th class="border-0">From Date</th>
+                                                <th class="border-0">To Date</th>
                                                 <th class="border-0">Reason</th>
-                                                <th class="border-0">Requested On</th>
+                                                <th class="border-0">Status</th>
+                                                <th class="border-0">Approved On</th>
+                                            
                                                
                                             </tr>
                                         </thead>
                                         <tbody style="font-family: DM Sans, sans-serif;">
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
                                                 
-                                            </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
-                                                <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
-                                                <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
-                                                <td class="p-2">25/02/2025</td>
                                                 
                                             </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
-                                                <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
-                                                <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
-                                                <td class="p-2">25/02/2025</td>
-                                                
-                                            </tr>
+                                          
                                          
                                         </tbody>
                                     </table>
@@ -638,132 +553,102 @@
 
                             <!-- =============Approved status start============= -->
                              <div id="rejectedStatus" class="tab-content">
-                                <div data-simplebar class="table-responsive statusDetailsTable" >
+                                <div data-simplebar class="table-responsive statusDetailsTable">
                                     <table class="table table-bordered border-gray">
                                         <thead>
                                             <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
                                                 style="color: #404040; background: #F9F9F9">
-                                                <th class="border-0">Type</th>
-                                                <th class="border-0">Date</th>
-                                                <th class="border-0">InTime</th>
-                                                <th class="border-0">OutTime</th>
-                                                <th class="border-0">Status</th>
+                                                <th class="border-0">From Date</th>
+                                                <th class="border-0">To Date</th>
                                                 <th class="border-0">Reason</th>
+                                                <th class="border-0">Status</th>
                                                 <th class="border-0">Created On</th>
+                                            
                                                
                                             </tr>
                                         </thead>
                                         <tbody style="font-family: DM Sans, sans-serif;">
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
+                                                
                                                 
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
+                                                <td class="p-2">25/02/2025</td>
+                                                <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
                                                 <td class="p-2">25/02/2025</td>
                                                 
-                                            </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
-                                                <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
-                                                <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
-                                                <td class="p-2">25/02/2025</td>
                                                 
                                             </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">Present</td>
-                                                <td class="p-2">25/02/2025</td>
-                                                <td class="p-2">09:00 AM</td>
-                                                <td class="p-2">06:00 PM</td>
-                                                <td class="p-2">Pending at Supervisor</td>
-                                                <td class="p-2">i am going to delhi ...</td>
-                                                <td class="p-2">25/02/2025</td>
-                                                
-                                            </tr>
+                                          
                                          
                                         </tbody>
                                     </table>
