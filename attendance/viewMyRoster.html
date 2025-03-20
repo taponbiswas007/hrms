@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Details</title>
+    <title>View My Roster</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -184,7 +184,7 @@
                                 <li class="breadcrumb-item"><a style="color: #757575;" href="#">Attendance</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Attendance Details <img class="d-inline" height="13px "
+                                        aria-expanded="false">View My Roster <img class="d-inline" height="13px "
                                             width="13px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
@@ -203,180 +203,129 @@
                         </nav>
                     </div>
 
-                    <!-- ================= attendance details area start================= -->
+                    <!-- ================= my roster area start================= -->
                     <div class="attendance-area pb-4 pt-3">
                         <div class="bg-white p-4 rounded-4 shadow mb-4">
-                            <div
-                                class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4">
-                                <div
-                                    class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start gap-4">
-                                    <img class="border rounded-3" height="180px" width="144px"
-                                        src="../assets/images/tapon_sarker.png" alt="">
-                                    <div class="details">
-                                        <h1 class="text-capitalize fs-5 fw-bold mb-3" style=" color:#4A59A7 ">Tapon
-                                            sarker</h1>
-                                        <ul>
-                                            <li class="border rounded-3 mb-4 px-3 py-2">
-                                                <div class="d-flex align-items-center justify-content-between gap-4">
-                                                    <ul class="w-50">
-                                                        <li class="text-start fs-7 fw-medium" style="color: #404040;">
-                                                            FE0134
+                            <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                View My Roster</h1>
 
-                                                        </li>
-                                                        <li class="text-start fs-8 fw-normal" style=" color: #8E8E93">
-                                                            Employee Code</li>
-                                                    </ul>
+                            <div class="row g-4 pt-3">
 
-                                                    <ul class="border-start w-50 px-2">
-                                                        <li class="text-start fs-7 fw-medium" style="color: #404040;">
-                                                            Accounts
-
-                                                        </li>
-                                                        <li class="text-start fs-8 fw-normal" style=" color: #8E8E93">
-                                                            Department</li>
-                                                    </ul>
-
-                                                </div>
-                                            </li>
-                                            <li class="border rounded-3 px-3 py-2">
-                                                <div class="d-flex align-items-center justify-content-between gap-4">
-                                                    <ul class="w-50">
-                                                        <li class="text-nowrap text-start fs-7 fw-medium"
-                                                            style="color: #404040;">
-                                                            Senior Executive
-
-                                                        </li>
-                                                        <li class="text-start fs-8 fw-normal" style=" color: #8E8E93">
-                                                            Designation</li>
-                                                    </ul>
-
-                                                    <ul class="border-start w-50 px-2">
-                                                        <li class="text-start fs-7 fw-medium" style="color: #404040;">
-                                                            Head Office
-
-                                                        </li>
-                                                        <li class="text-start fs-8 fw-normal" style=" color: #8E8E93">
-                                                            Location</li>
-                                                    </ul>
-
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        From Date <span class=" text-danger">*</span>
+                                    </label>
+                                    <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7"
+                                        type="date">
                                 </div>
-                                <div class="time_count">
-                                    <div class="d-flex align-items-center justify-content-center rounded-3 gap-3 mb-3"
-                                        style="background: #EEF1FF; width: 207px; height: 101px">
-                                        <img height="20px " width="20px" src="../assets/images/dashboard/clock.svg"
-                                            alt="">
-                                        <span class="fs-5 fw-medium" style="color: #404040;"> 18:26:15</span>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between gap-3">
-                                        <button
-                                            class="bg-blue p-1 rounded-3 text-white w-50 fs-7 fw-semibold">Check-in</button>
-                                        <button
-                                            class="bg-blue p-1 rounded-3 text-white w-50 fs-7 fw-semibold">Check-out</button>
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        To Date <span class=" text-danger">*</span>
+                                    </label>
+                                    <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7"
+                                        type="date">
+                                </div>
+
+
+                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class=" h-100 d-flex justify-content-end align-items-end">
+                                        <button class="btn bg-blue text-white rounded-4">Search</button>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
 
                         <!-- =================data table area start=================== -->
                         <div class="bg-white p-4 rounded-4 shadow dataTable-area">
-                            <div data-simplebar class="table-responsive attendanceTable">
+                            <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">My
+                                Roster</h1>
+
+
+
+                            <div data-simplebar class="table-responsive statusDetailsTable mt-3">
                                 <table class="table table-bordered border-gray">
                                     <thead>
                                         <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
                                             style="color: #404040; background: #F9F9F9">
-                                            <th class="border-0">Date</th>
-                                            <th class="border-0">Shift</th>
-                                            <th class="border-0">Shift Start Time</th>
-                                            <th class="border-0">Shift End Time</th>
-                                            <th class="border-0">Sign-In-Time</th>
-                                            <th class="border-0">Sign-Out-Time</th>
-                                            <th class="border-0">Present Hours(HH:MM)</th>
-                                            <th class="border-0">Att. Status</th>
-                                            <th class="border-0">Status</th>
+                                            <th class="border-0">EMPCODE</th>
+                                            <th class="border-0">EMPNAME</th>
+                                            <th class="border-0">01 Feb 2025</th>
+                                            <th class="border-0">02 Feb 2025</th>
+                                            <th class="border-0">03 Feb 2025</th>
+                                            <th class="border-0">04 Feb 2025</th>
+                                            <th class="border-0">05 Feb 2025</th>
+                                            <th class="border-0">06 Feb 2025</th>
+                                            <th class="border-0">07 Feb 2025</th>
+
+
                                         </tr>
                                     </thead>
                                     <tbody style="font-family: DM Sans, sans-serif;">
                                         <tr class="text-nowrap fs-8 fw-normal"
                                             style="color: #202020; height: 40px; vertical-align: middle; ">
-                                            <td class="p-2">25/02/2025</td>
-                                            <td class="p-2">General</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">10:00</td>
-                                            <td class="p-2"><span class="unmarked">UNMARKED</span></td>
-                                            <td class="p-2"><span class="na">NA</span></td>
+                                            <td class="p-2">FE0134</td>
+                                            <td class="p-2">Austin Robertson</td>
+                                            <td class="p-2">
+                                                <select name="" class=" form-select fs-8" id="">
+                                                    <option value="">General</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </td>
+                                            <td class="p-2">
+                                                <select name="" class=" form-select fs-8" id="">
+                                                    <option value="">General</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </td>
+                                            <td class="p-2">
+                                                <select name="" class=" form-select fs-8" id="">
+                                                    <option value="">General</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </td>
+                                            <td class="p-2">
+                                                <select name="" class=" form-select fs-8" id="">
+                                                    <option value="">General</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </td>
+                                            <td class="p-2">
+                                                <select name="" class=" form-select fs-8" id="">
+                                                    <option value="">General</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </td>
+                                            <td class="p-2">
+                                                <select name="" class=" form-select fs-8" id="">
+                                                    <option value="">General</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </td>
+                                            <td class="p-2">
+                                                <select name="" class=" form-select fs-8" id="">
+                                                    <option value="">General</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </td>
+
+
+
                                         </tr>
-                                        <tr class="text-nowrap fs-8 fw-normal"
-                                            style="color: #202020; height: 40px; vertical-align: middle; ">
-                                            <td class="p-2">25/02/2025</td>
-                                            <td class="p-2">General</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">10:00</td>
-                                            <td class="p-2"><span class="unmarked">UNMARKED</span></td>
-                                            <td class="p-2"><span class="na">NA</span></td>
-                                        </tr>
-                                        <tr class="text-nowrap fs-8 fw-normal"
-                                            style="color: #202020; height: 40px; vertical-align: middle; ">
-                                            <td class="p-2">25/02/2025</td>
-                                            <td class="p-2">General</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">10:00</td>
-                                            <td class="p-2"><span class="dayof">Day Off</span></td>
-                                            <td class="p-2"><span class="na">NA</span></td>
-                                        </tr>
-                                        <tr class="text-nowrap fs-8 fw-normal"
-                                            style="color: #202020; height: 40px; vertical-align: middle; ">
-                                            <td class="p-2">25/02/2025</td>
-                                            <td class="p-2">General</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">10:00</td>
-                                            <td class="p-2"><span class="unmarked">UNMARKED</span></td>
-                                            <td class="p-2"><span class="na">NA</span></td>
-                                        </tr>
-                                        <tr class="text-nowrap fs-8 fw-normal"
-                                            style="color: #202020; height: 40px; vertical-align: middle; ">
-                                            <td class="p-2">25/02/2025</td>
-                                            <td class="p-2">General</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">10:00</td>
-                                            <td class="p-2"><span class="dayof">Day Off</span></td>
-                                            <td class="p-2"><span class="na">NA</span></td>
-                                        </tr>
-                                        <tr class="text-nowrap fs-8 fw-normal"
-                                            style="color: #202020; height: 40px; vertical-align: middle; ">
-                                            <td class="p-2">25/02/2025</td>
-                                            <td class="p-2">General</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">09:00 AM</td>
-                                            <td class="p-2">06:00 PM</td>
-                                            <td class="p-2">10:00</td>
-                                            <td class="p-2"><span class="unmarked">UNMARKED</span></td>
-                                            <td class="p-2"><span class="na">NA</span></td>
-                                        </tr>
+
+
+
                                     </tbody>
                                 </table>
                             </div>
-
                             <!-- pagination area -->
                             <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
                                 <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
@@ -419,10 +368,20 @@
                                     </li>
                                 </ul>
                             </div>
+
+
+
+
+
+
+
+
+
+
                         </div>
                         <!-- =================data table area end=================== -->
                     </div>
-                    <!-- ================= attendance details area end================= -->
+                    <!-- ================= my roster area end================= -->
 
 
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Details</title>
+    <title>Multiple Days OD</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -188,10 +188,14 @@
                                             width="13px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-3" href="attendanceDetails.html">Attendance Details</a></li>
-                                        <li><a class="dropdown-item mb-3" href="attendanceRequest.html">Attendance Request</a></li>
-                                        <li><a class="dropdown-item mb-3" href="multipleDays.html">Multiple Days OD</a></li>
-                                        <li><a class="dropdown-item mb-3" href="#">View My Roster</a></li>
+                                        <li><a class="dropdown-item mb-3" href="attendanceDetails.html">Attendance
+                                                Details</a></li>
+                                        <li><a class="dropdown-item mb-3" href="attendanceRequest.html">Attendance
+                                                Request</a></li>
+                                        <li><a class="dropdown-item mb-3" href="multipleDays.html">Multiple Days OD</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-3" href="viewMyRoster.html">View My Roster</a>
+                                        </li>
 
                                     </ul>
                                 </li>
@@ -199,47 +203,52 @@
                         </nav>
                     </div>
 
-                    <!-- ================= New Attendance Regularization Request area start================= -->
+                    <!-- ================= Multiple Days Outdoor Duty area start================= -->
                     <div class="attendance-area pb-4 pt-3">
                         <div class="bg-white p-4 rounded-4 shadow mb-4">
-                           <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">Multiple Days Outdoor Duty</h1>
+                            <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                Multiple Days Outdoor Duty</h1>
 
-                           <div class="row g-4 pt-3">
-                            
-                            <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                <label class=" mb-1" for="">
-                                    From Date <span class=" text-danger">*</span>
-                                </label>
-                                <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7" type="date">
-                            </div>
-                            <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                <label class=" mb-1" for="">
-                                    To Date <span class=" text-danger">*</span>
-                                </label>
-                                <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7" type="date">
-                            </div>
-                            <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                <label class="mb-1" for="timeIn">
-                                    Reason for Multiple OD <span class="text-danger">*</span>
-                                </label>
-                                <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7" type="text" placeholder="Reason..">
-                            </div>
-                           
-                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div class=" h-100 d-flex justify-content-end align-items-end">
-                                    <button class="btn bg-blue text-white rounded-4">Submit</button>
+                            <div class="row g-4 pt-3">
+
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        From Date <span class=" text-danger">*</span>
+                                    </label>
+                                    <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7"
+                                        type="date">
+                                </div>
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        To Date <span class=" text-danger">*</span>
+                                    </label>
+                                    <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7"
+                                        type="date">
+                                </div>
+                                <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <label class="mb-1" for="timeIn">
+                                        Reason for Multiple OD <span class="text-danger">*</span>
+                                    </label>
+                                    <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7"
+                                        type="text" placeholder="Reason..">
+                                </div>
+
+                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class=" h-100 d-flex justify-content-end align-items-end">
+                                        <button class="btn bg-blue text-white rounded-4">Submit</button>
+                                    </div>
                                 </div>
                             </div>
-                           </div>
-                          
+
                         </div>
 
 
                         <!-- =================data table area start=================== -->
                         <div class="bg-white p-4 rounded-4 shadow dataTable-area">
-                            <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">Request Status History</h1>
+                            <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                Request Status History</h1>
                             <!-- status type changer menu area -->
-                             <ul class="stausChangermenu d-flex justify-content-start align-items-center gap-4 my-3">
+                            <ul class="stausChangermenu d-flex justify-content-start align-items-center gap-4 my-3">
                                 <li>
                                     <button class="active pendingBtn">Pending</button>
                                 </li>
@@ -249,12 +258,12 @@
                                 <li>
                                     <button class="rejectedBtn">Rejected</button>
                                 </li>
-                             </ul>
+                            </ul>
                             <!-- status type changer menu end -->
 
 
                             <!-- =============pending status start============= -->
-                             <div id="pendingStatus" class="tab-content statusactive">
+                            <div id="pendingStatus" class="tab-content statusactive">
                                 <div data-simplebar class="table-responsive statusDetailsTable">
                                     <table class="table table-bordered border-gray">
                                         <thead>
@@ -265,8 +274,8 @@
                                                 <th class="border-0">Reason</th>
                                                 <th class="border-0">Status</th>
                                                 <th class="border-0">Requested On</th>
-                                            
-                                               
+
+
                                             </tr>
                                         </thead>
                                         <tbody style="font-family: DM Sans, sans-serif;">
@@ -277,8 +286,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -287,8 +296,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -297,8 +306,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -307,8 +316,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -317,8 +326,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -327,8 +336,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -337,8 +346,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -347,63 +356,63 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
-                                          
-                                         
+
+
                                         </tbody>
                                     </table>
                                 </div>
-                                 <!-- pagination area -->
-                            <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
-                                <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
-                                            href="">
-                                            <i class="fa-angle-left fa-solid"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
-                                            href="">
-                                            Prev
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
-                                            href="">
-                                            Next
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <small>Page:</small>
-                                        <span>1</span>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex gap-2">
-                                            <small>Of</small>
-                                            <p>100</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <select name="" id="">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                    </li>
-                                </ul>
+                                <!-- pagination area -->
+                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
+                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
+                                                href="">
+                                                <i class="fa-angle-left fa-solid"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
+                                                href="">
+                                                Prev
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
+                                                href="">
+                                                Next
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <small>Page:</small>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex gap-2">
+                                                <small>Of</small>
+                                                <p>100</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <select name="" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                             </div>
-                            
+
                             <!-- =============pending status end============= -->
 
 
                             <!-- =============Approved status start============= -->
-                             <div id="approvedStatus" class="tab-content">
+                            <div id="approvedStatus" class="tab-content">
                                 <div data-simplebar class="table-responsive statusDetailsTable">
                                     <table class="table table-bordered border-gray">
                                         <thead>
@@ -414,8 +423,8 @@
                                                 <th class="border-0">Reason</th>
                                                 <th class="border-0">Status</th>
                                                 <th class="border-0">Approved On</th>
-                                            
-                                               
+
+
                                             </tr>
                                         </thead>
                                         <tbody style="font-family: DM Sans, sans-serif;">
@@ -426,8 +435,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -436,8 +445,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -446,8 +455,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -456,8 +465,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -466,8 +475,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -476,8 +485,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -486,8 +495,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -496,63 +505,63 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
-                                          
-                                         
+
+
                                         </tbody>
                                     </table>
                                 </div>
-                                  <!-- pagination area -->
-                            <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
-                                <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
-                                            href="">
-                                            <i class="fa-angle-left fa-solid"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
-                                            href="">
-                                            Prev
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
-                                            href="">
-                                            Next
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <small>Page:</small>
-                                        <span>1</span>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex gap-2">
-                                            <small>Of</small>
-                                            <p>100</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <select name="" id="">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                    </li>
-                                </ul>
+                                <!-- pagination area -->
+                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
+                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
+                                                href="">
+                                                <i class="fa-angle-left fa-solid"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
+                                                href="">
+                                                Prev
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
+                                                href="">
+                                                Next
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <small>Page:</small>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex gap-2">
+                                                <small>Of</small>
+                                                <p>100</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <select name="" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                             </div>
-                           
+
                             <!-- =============Approved status end============= -->
 
 
                             <!-- =============Approved status start============= -->
-                             <div id="rejectedStatus" class="tab-content">
+                            <div id="rejectedStatus" class="tab-content">
                                 <div data-simplebar class="table-responsive statusDetailsTable">
                                     <table class="table table-bordered border-gray">
                                         <thead>
@@ -563,8 +572,8 @@
                                                 <th class="border-0">Reason</th>
                                                 <th class="border-0">Status</th>
                                                 <th class="border-0">Created On</th>
-                                            
-                                               
+
+
                                             </tr>
                                         </thead>
                                         <tbody style="font-family: DM Sans, sans-serif;">
@@ -575,8 +584,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -585,8 +594,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -595,8 +604,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -605,8 +614,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -615,8 +624,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -625,8 +634,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -635,8 +644,8 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
                                             <tr class="text-nowrap fs-8 fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
@@ -645,67 +654,67 @@
                                                 <td class="p-2">out of office work</td>
                                                 <td class="p-2">Pending at Supervisor</td>
                                                 <td class="p-2">25/02/2025</td>
-                                                
-                                                
+
+
                                             </tr>
-                                          
-                                         
+
+
                                         </tbody>
                                     </table>
                                 </div>
-                                 <!-- pagination area -->
-                            <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
-                                <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
-                                            href="">
-                                            <i class="fa-angle-left fa-solid"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
-                                            href="">
-                                            Prev
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
-                                            href="">
-                                            Next
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <small>Page:</small>
-                                        <span>1</span>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex gap-2">
-                                            <small>Of</small>
-                                            <p>100</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <select name="" id="">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                    </li>
-                                </ul>
+                                <!-- pagination area -->
+                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
+                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
+                                                href="">
+                                                <i class="fa-angle-left fa-solid"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
+                                                href="">
+                                                Prev
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
+                                                href="">
+                                                Next
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <small>Page:</small>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex gap-2">
+                                                <small>Of</small>
+                                                <p>100</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <select name="" id="">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                             </div>
-                           
+
                             <!-- =============Approved status end============= -->
 
 
 
-                           
+
                         </div>
                         <!-- =================data table area end=================== -->
                     </div>
-                    <!-- ================= New Attendance Regularization Request area end================= -->
+                    <!-- ================= Multiple Days Outdoor Duty area end================= -->
 
 
 
