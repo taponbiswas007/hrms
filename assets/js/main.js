@@ -12,19 +12,20 @@ $(document).ready(function () {
 
     $('.fixedHolidayBtn').click(function () {
         if (!$('.fixdHoliday').is(':visible')) {
-            $('.optionalHoliday').slideUp(300, function () {
-                $('.fixdHoliday').slideDown(300);
+            $('.optionalHoliday').fadeOut(200, function () {
+                $('.fixdHoliday').fadeIn(200);
             });
         }
     });
-
+    
     $('.optionalHolidayBtn').click(function () {
         if (!$('.optionalHoliday').is(':visible')) {
-            $('.fixdHoliday').slideUp(300, function () {
-                $('.optionalHoliday').slideDown(300);
+            $('.fixdHoliday').fadeOut(200, function () {
+                $('.optionalHoliday').fadeIn(200);
             });
         }
     });
+    
 
     // password visible
     // Function to toggle password visibility
