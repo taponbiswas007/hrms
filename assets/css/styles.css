@@ -234,6 +234,7 @@ ul {
   font-size: 12px;
   color: #1B1B1B;
   height: 43px;
+  cursor: pointer;
 }
 
 .days .prev-and-next-munth-date {
