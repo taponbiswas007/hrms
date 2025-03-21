@@ -478,7 +478,7 @@
                             <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
                                 <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
                                     <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 rounded-2"
+                                        <a class="d-flex align-items-center fs-6 border justify-content-center p-2 rounded-2"
                                             href="">
                                             <i class="fa-angle-left fa-solid"></i>
                                         </a>
@@ -506,13 +506,21 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <select name="" id="">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
+                                         <div class="custom-dropdown">
+                                            <!-- Dropdown button -->
+                                            <div class="custom-dropdown-button" onclick="toggleDropdown()">
+                                                10
+                                            </div>
+                                            <!-- Dropdown options -->
+                                            <div class="custom-dropdown-options shadow">
+                                                <div class="custom-dropdown-option" onclick="selectOption('1', '10')">10</div>
+                                                <div class="custom-dropdown-option" onclick="selectOption('2', '11')">11</div>
+                                                <div class="custom-dropdown-option" onclick="selectOption('3', '12')">12</div>
+                                                <div class="custom-dropdown-option" onclick="selectOption('4', '13')">13</div>
+                                                <div class="custom-dropdown-option" onclick="selectOption('5', '14')">14</div>
+                                            </div>
+                                        </div>
+                                     
                                     </li>
                                 </ul>
                             </div>

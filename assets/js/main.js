@@ -537,6 +537,30 @@ function toggleSections() {
 
 
 
+// select function
+function toggleDropdown() {
+    const dropdown = document.querySelector('.custom-dropdown');
+    dropdown.classList.toggle('active');
+}
 
+// Function to select an option
+function selectOption(value, text) {
+    const button = document.querySelector('.custom-dropdown-button');
+    button.textContent = text;
+    toggleDropdown(); // Close the dropdown after selection
+    console.log('Selected value:', value, 'Text:', text);
+}
+
+// Close the dropdown if the user clicks outside
+window.onclick = function (event) {
+    if (!event.target.matches('.custom-dropdown-button')) {
+        const dropdowns = document.querySelectorAll('.custom-dropdown');
+        dropdowns.forEach(dropdown => {
+            if (dropdown.classList.contains('active')) {
+                dropdown.classList.remove('active');
+            }
+        });
+    }
+};
 
 
