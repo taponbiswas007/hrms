@@ -1,5 +1,26 @@
 $(document).ready(function () {
 
+
+    function adjustMenuItems() {
+        // Check if the screen width is lg (992px or above)
+        if ($(window).width() >= 992) {
+            // Add the .dropend class to .splitmenuItems
+            $('.splitmenuItems').addClass('dropend');
+        } else {
+            // Remove the .dropend class if the screen width is less than lg
+            $('.splitmenuItems').removeClass('dropend');
+        }
+    }
+
+    // Call the function on page load
+    adjustMenuItems();
+
+    // Call the function on window resize
+    $(window).resize(function () {
+        adjustMenuItems();
+    });
+
+
     $('.todoitems').click(function () {
         $(this).next('.todosubtitle').slideToggle(); // Only toggles the next subtitle related to the clicked item
     });
