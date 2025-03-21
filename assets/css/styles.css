@@ -198,6 +198,10 @@ ul {
   display: block;
 }
 
+.dropdown-menu {
+  max-height: calc(100vh - 250px);
+}
+
 .tabarea .tablink {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;

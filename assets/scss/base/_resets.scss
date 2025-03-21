@@ -200,3 +200,8 @@ ul {
 .custom-dropdown.active .custom-dropdown-options {
     display: block;
 }
+
+.dropdown-menu {
+    max-height: calc(100vh - 250px);
+  
+}
