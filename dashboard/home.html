@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fav icon -->
-     <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
     <title>Home</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,7 +68,7 @@
                         </svg>
                     </button>
 
-                    <div  class="bg-blue text-white menu">
+                    <div class="bg-blue text-white menu">
 
                         <!-- menu items -->
                         <ul class="list-unstyled">
@@ -82,18 +82,21 @@
                                     href="#"> <img height="25px" width="25px"
                                         src="../assets/images/dashboard/profile.svg" alt=""> My Profile</a></li>
                             <li class=" sidebarItem    dropend">
-                                <button type="button" data-bs-toggle="dropdown"  class="   d-flex w-100 flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                   > <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/attendance.svg" alt=""> Attendance</button>
-                                        <ul class="submenu dropdown-menu shadow rounded-4 border-0 ms-2 p-2">
-                                            <li><a href="../attendance/attendanceDetails.html" class="dropdown-item mb-2">My Attendance</a></li>
-                                            <li><a href="../reports/attendance.html" class="dropdown-item mb-2">Reports</a></li>
-                                            <li><a href="../branchHr/markAttendance.html" class="dropdown-item mb-2">Branch Hr</a></li>
-                                            <li><a href="#" class="dropdown-item mb-2">Supervisor</a></li>
-                                            <li><a href="#" class="dropdown-item mb-2">HR Task</a></li>
-                                            <li><a href="#" class="dropdown-item mb-2">Late</a></li>
-                                            <li><a href="#" class="dropdown-item mb-2">Biometric</a></li>
-                                          </ul>
+                                <button type="button" data-bs-toggle="dropdown"
+                                    class="   d-flex w-100 flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/attendance.svg"
+                                        alt=""> Attendance</button>
+                                <ul class="submenu dropdown-menu shadow rounded-4 border-0 ms-2 p-2">
+                                    <li><a href="../attendance/attendanceDetails.html" class="dropdown-item mb-2">My
+                                            Attendance</a></li>
+                                    <li><a href="../reports/attendance.html" class="dropdown-item mb-2">Reports</a></li>
+                                    <li><a href="../branchHr/markAttendance.html" class="dropdown-item mb-2">Branch
+                                            Hr</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Supervisor</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">HR Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Late</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Biometric</a></li>
+                                </ul>
                             </li>
                             <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
                                     href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg"
@@ -585,8 +588,7 @@
                                     style=" height: 430px">
                                     <h1 class="d-flex align-items-center text-black fs-7 fw-medium pb-2"
                                         style="border-bottom: 1px solid #E5E5EA">Attendance
-                                        Regularization Request Pending <a href="#" class="d-inline ms-2"
-                                           ><img
+                                        Regularization Request Pending <a href="#" class="d-inline ms-2"><img
                                                 src="../assets/images/dashboard/circleArrow.svg" alt=""></a></h1>
 
 
@@ -599,22 +601,71 @@
 
                                         <ul class="todosubtitle" id="list1">
                                             <li>
-                                                <span>
+                                                <div
+                                                    class="d-flex w-100 justify-content-start align-items-center gap-1">
                                                     <input id="items1" class="me-2" type="checkbox">
-                                                    <label for="items1">TEMP2, Abhinav Rana, Leave Request from
-                                                        26/02/2025 To 26/02/2025</label>
-                                                </span>
-                                                <button type="button">More Details <i
-                                                        class="fa-arrow-right fa-solid"></i></button>
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <label class=" lh-base" for="items1">TEMP2, Abhinav Rana, Leave Request from
+                                                            26/02/2025 To 26/02/2025</label>
+
+                                                        <button class=" flex-shrink-0" type="button">More Details <i
+                                                                class="fa-arrow-right fa-solid"></i></button>
+                                                    </div>
+                                                </div>
                                             </li>
                                             <li>
-                                                <span>
-                                                    <input id="items2" class="me-2" type="checkbox">
-                                                    <label for="items2">TEMP2, Abhinav Rana, Leave Request from
-                                                        26/02/2025 To 26/02/2025</label>
-                                                </span>
-                                                <button type="button">More Details <i
-                                                        class="fa-arrow-right fa-solid"></i></button>
+                                                <div
+                                                    class="d-flex w-100 justify-content-start align-items-center gap-1">
+                                                    <input id="items1" class="me-2" type="checkbox">
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <label class=" lh-base" for="items1">TEMP2, Abhinav Rana, Leave Request from
+                                                            26/02/2025 To 26/02/2025</label>
+
+                                                        <button class=" flex-shrink-0" type="button">More Details <i
+                                                                class="fa-arrow-right fa-solid"></i></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                           
+                                        </ul>
+                                    </div>
+                                    <!-- To Do List -->
+                                    <div class="todolistitemssection">
+                                        <a class="d-block ms-2 my-3 todoitems">
+                                            <span class="me-2"><i class="fa-angle-down fa-solid"></i></span> OD Request
+                                            Pending BY Supervisor
+                                        </a>
+
+                                        <ul class="todosubtitle" id="list1">
+                                             <li>
+                                                <div
+                                                    class="d-flex w-100 justify-content-start align-items-center gap-1">
+                                                    <input id="items1" class="me-2" type="checkbox">
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <label class=" lh-base" for="items1">TEMP2, Abhinav Rana, Leave Request from
+                                                            26/02/2025 To 26/02/2025</label>
+
+                                                        <button class=" flex-shrink-0" type="button">More Details <i
+                                                                class="fa-arrow-right fa-solid"></i></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    class="d-flex w-100 justify-content-start align-items-center gap-1">
+                                                    <input id="items1" class="me-2" type="checkbox">
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <label class=" lh-base" for="items1">TEMP2, Abhinav Rana, Leave Request from
+                                                            26/02/2025 To 26/02/2025</label>
+
+                                                        <button class=" flex-shrink-0" type="button">More Details <i
+                                                                class="fa-arrow-right fa-solid"></i></button>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -626,23 +677,33 @@
                                         </a>
 
                                         <ul class="todosubtitle" id="list1">
-                                            <li>
-                                                <span>
+                                             <li>
+                                                <div
+                                                    class="d-flex w-100 justify-content-start align-items-center gap-1">
                                                     <input id="items1" class="me-2" type="checkbox">
-                                                    <label for="items1">TEMP2, Abhinav Rana, Leave Request from
-                                                        26/02/2025 To 26/02/2025</label>
-                                                </span>
-                                                <button type="button">More Details <i
-                                                        class="fa-arrow-right fa-solid"></i></button>
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <label class=" lh-base" for="items1">TEMP2, Abhinav Rana, Leave Request from
+                                                            26/02/2025 To 26/02/2025</label>
+
+                                                        <button class=" flex-shrink-0" type="button">More Details <i
+                                                                class="fa-arrow-right fa-solid"></i></button>
+                                                    </div>
+                                                </div>
                                             </li>
                                             <li>
-                                                <span>
-                                                    <input id="items2" class="me-2" type="checkbox">
-                                                    <label for="items2">TEMP2, Abhinav Rana, Leave Request from
-                                                        26/02/2025 To 26/02/2025</label>
-                                                </span>
-                                                <button type="button">More Details <i
-                                                        class="fa-arrow-right fa-solid"></i></button>
+                                                <div
+                                                    class="d-flex w-100 justify-content-start align-items-center gap-1">
+                                                    <input id="items1" class="me-2" type="checkbox">
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <label class=" lh-base" for="items1">TEMP2, Abhinav Rana, Leave Request from
+                                                            26/02/2025 To 26/02/2025</label>
+
+                                                        <button class=" flex-shrink-0" type="button">More Details <i
+                                                                class="fa-arrow-right fa-solid"></i></button>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -654,23 +715,33 @@
                                         </a>
 
                                         <ul class="todosubtitle" id="list1">
-                                            <li>
-                                                <span>
+                                             <li>
+                                                <div
+                                                    class="d-flex w-100 justify-content-start align-items-center gap-1">
                                                     <input id="items1" class="me-2" type="checkbox">
-                                                    <label for="items1">TEMP2, Abhinav Rana, Leave Request from
-                                                        26/02/2025 To 26/02/2025</label>
-                                                </span>
-                                                <button type="button">More Details <i
-                                                        class="fa-arrow-right fa-solid"></i></button>
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <label class=" lh-base" for="items1">TEMP2, Abhinav Rana, Leave Request from
+                                                            26/02/2025 To 26/02/2025</label>
+
+                                                        <button class=" flex-shrink-0" type="button">More Details <i
+                                                                class="fa-arrow-right fa-solid"></i></button>
+                                                    </div>
+                                                </div>
                                             </li>
                                             <li>
-                                                <span>
-                                                    <input id="items2" class="me-2" type="checkbox">
-                                                    <label for="items2">TEMP2, Abhinav Rana, Leave Request from
-                                                        26/02/2025 To 26/02/2025</label>
-                                                </span>
-                                                <button type="button">More Details <i
-                                                        class="fa-arrow-right fa-solid"></i></button>
+                                                <div
+                                                    class="d-flex w-100 justify-content-start align-items-center gap-1">
+                                                    <input id="items1" class="me-2" type="checkbox">
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <label class=" lh-base" for="items1">TEMP2, Abhinav Rana, Leave Request from
+                                                            26/02/2025 To 26/02/2025</label>
+
+                                                        <button class=" flex-shrink-0" type="button">More Details <i
+                                                                class="fa-arrow-right fa-solid"></i></button>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -682,49 +753,33 @@
                                         </a>
 
                                         <ul class="todosubtitle" id="list1">
-                                            <li>
-                                                <span>
+                                             <li>
+                                                <div
+                                                    class="d-flex w-100 justify-content-start align-items-center gap-1">
                                                     <input id="items1" class="me-2" type="checkbox">
-                                                    <label for="items1">TEMP2, Abhinav Rana, Leave Request from
-                                                        26/02/2025 To 26/02/2025</label>
-                                                </span>
-                                                <button type="button">More Details <i
-                                                        class="fa-arrow-right fa-solid"></i></button>
-                                            </li>
-                                            <li>
-                                                <span>
-                                                    <input id="items2" class="me-2" type="checkbox">
-                                                    <label for="items2">TEMP2, Abhinav Rana, Leave Request from
-                                                        26/02/2025 To 26/02/2025</label>
-                                                </span>
-                                                <button type="button">More Details <i
-                                                        class="fa-arrow-right fa-solid"></i></button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!-- To Do List -->
-                                    <div class="todolistitemssection">
-                                        <a class="d-block ms-2 my-3 todoitems">
-                                            <span class="me-2"><i class="fa-angle-down fa-solid"></i></span> OD Request
-                                            Pending BY Supervisor
-                                        </a>
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <label class=" lh-base" for="items1">TEMP2, Abhinav Rana, Leave Request from
+                                                            26/02/2025 To 26/02/2025</label>
 
-                                        <ul class="todosubtitle" id="list1">
-                                            <li>
-                                                <span>
-                                                    <input id="items1" class="me-2" type="checkbox">
-                                                    <label for="items1">TEMP2, Abhinav Rana, Leave Request from
-                                                        26/02/2025 To 26/02/2025</label>
-                                                </span>
-                                                <button>More Details <i class="fa-arrow-right fa-solid"></i></button>
+                                                        <button class=" flex-shrink-0" type="button">More Details <i
+                                                                class="fa-arrow-right fa-solid"></i></button>
+                                                    </div>
+                                                </div>
                                             </li>
                                             <li>
-                                                <span>
-                                                    <input id="items2" class="me-2" type="checkbox">
-                                                    <label for="items2">TEMP2, Abhinav Rana, Leave Request from
-                                                        26/02/2025 To 26/02/2025</label>
-                                                </span>
-                                                <button>More Details <i class="fa-arrow-right fa-solid"></i></button>
+                                                <div
+                                                    class="d-flex w-100 justify-content-start align-items-center gap-1">
+                                                    <input id="items1" class="me-2" type="checkbox">
+                                                    <div
+                                                        class="d-flex w-100 justify-content-between align-items-center">
+                                                        <label class=" lh-base" for="items1">TEMP2, Abhinav Rana, Leave Request from
+                                                            26/02/2025 To 26/02/2025</label>
+
+                                                        <button class=" flex-shrink-0" type="button">More Details <i
+                                                                class="fa-arrow-right fa-solid"></i></button>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -1487,8 +1542,7 @@
                         <div class="col-lg-6 col-mb-12 col-xl-4 employeeOnLeave">
                             <div class="bg-white rounded-4 shadow employee_on_leave_area section-items">
                                 <div class="d-flex align-items-center border-bottom justify-content-between p-3 "
-                                style="margin-bottom: .3rem;"
-                                   >
+                                    style="margin-bottom: .3rem;">
                                     <h1 class="text-black fs-5 fw-medium">Employee On Leave</h1>
                                     <!-- season selector -->
                                     <div class="season-selector">
@@ -1499,15 +1553,19 @@
                                         </select> -->
                                         <div class="custom-dropdown" style="width: 100%;">
                                             <!-- Dropdown button -->
-                                            <div class="custom-dropdown-button" style="padding: 5px 28px 5px 14px;" onclick="toggleDropdown()">
+                                            <div class="custom-dropdown-button" style="padding: 5px 28px 5px 14px;"
+                                                onclick="toggleDropdown()">
                                                 This week
                                             </div>
                                             <!-- Dropdown options -->
                                             <div class="custom-dropdown-options shadow ">
-                                                <div class="custom-dropdown-option text-nowrap" onclick="selectOption('1', 'This Week')">This Week</div>
-                                                <div class="custom-dropdown-option text-nowrap" onclick="selectOption('2', 'This Month')">This Month</div>
-                                                <div class="custom-dropdown-option text-nowrap" onclick="selectOption('3', 'This year')">This year</div>
-                
+                                                <div class="custom-dropdown-option text-nowrap"
+                                                    onclick="selectOption('1', 'This Week')">This Week</div>
+                                                <div class="custom-dropdown-option text-nowrap"
+                                                    onclick="selectOption('2', 'This Month')">This Month</div>
+                                                <div class="custom-dropdown-option text-nowrap"
+                                                    onclick="selectOption('3', 'This year')">This year</div>
+
                                             </div>
                                         </div>
                                     </div>
