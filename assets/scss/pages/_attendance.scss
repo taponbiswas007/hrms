@@ -39,6 +39,33 @@
 // #rejectedStatus {
 //     display: none;
 // }
+.select-criteria {
+    ul {
+        li {
+            &:first-child {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 11.3px;
+                line-height: 18.33px;
+                letter-spacing: -0.6%;
+                vertical-align: middle;
+                color: #8E8E93;
+            }
+
+            &:last-child {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 12.92px;
+                line-height: 18.15px;
+                letter-spacing: -0.6%;
+                vertical-align: middle;
+                color: #000000;
+            }
+
+
+        }
+    }
+}
 
 @media (min-height: 1024px) {
     .attendanceTable {
