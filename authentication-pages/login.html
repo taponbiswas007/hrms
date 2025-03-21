@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fav icon -->
+     <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
+
     <title>Login</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +40,7 @@
 </head>
 
 <body>
-    <div class="authpage pb-5" style="background: url(../assets/images/singinbg.png) no-repeat center center / cover; min-height: 100vh">
+    <div class="authpage ">
         <div class="container">
            <div class="pt-4">
             <a  href="#" class="logo">
@@ -56,43 +60,46 @@
             
           <!-- ========== sign in form========== -->
            <div class="col-md-6">
-            <div class="card formCard bg-white p-4 rounded-4 shadow">
-                <h2 class="text-start ff-p mb-0">Sign In</h2>
-                <hr style="border: 1px solid #D3D3D3">
-                <form action="/login" method="POST">
-                    <div class="mb-3">
-                        <label for="useName" class="form-label ff-p">Username</label>
-                        <div class="position-relative">
-                            <input type="useName" style="padding-right: 45px;" class="form-control" id="useName" name="useName" placeholder="John Doe" required>
-                            <img height="24px" width="24px" class="position-absolute top-50 translate-middle-y" style=" right: 20px" src="../assets/images/fe_user.svg" alt="">
+            <div class="form_area">
+                <div class="card formCard bg-white p-4 rounded-4 shadow">
+                    <h2 class="text-start ff-p mb-0">Sign In</h2>
+                    <hr style="border: 1px solid #D3D3D3">
+                    <form action="/login" method="POST">
+                        <div class="mb-3">
+                            <label for="useName" class="form-label ff-p">Username</label>
+                            <div class="position-relative">
+                                <input type="useName" style="padding-right: 45px;" class="form-control" id="useName" name="useName" placeholder="John Doe" required>
+                                <img height="24px" width="24px" class="position-absolute top-50 translate-middle-y" style=" right: 20px" src="../assets/images/fe_user.svg" alt="">
+                            </div>
                         </div>
-                    </div>
-                      <!-- Password Field -->
-                      <div class="mb-2">
-                        <label for="password" class="form-label">Password</label>
-                        <div class="position-relative">
-                            <input type="password" style="padding-right: 45px;" class="form-control" id="password" name="password"
-                                placeholder="Enter your password" required>
-                            <button
-                                class="p-0 position-absolute passwordHideshowbtn top-50 translate-middle-y"  style=" right: 20px">
-                                <!-- Default SVG icon for closed lock -->
-                                <svg class="toggle-icon" height="24px" width="24px" viewBox="0 0 24 24"
-                                    fill="none" stroke="black" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                </svg>
-                            </button>
+                          <!-- Password Field -->
+                          <div class="mb-2">
+                            <label for="password" class="form-label">Password</label>
+                            <div class="position-relative">
+                                <input type="password" style="padding-right: 45px;" class="form-control" id="password" name="password"
+                                    placeholder="Enter your password" required>
+                                <button
+                                    class="p-0 position-absolute passwordHideshowbtn top-50 translate-middle-y"  style=" right: 20px">
+                                    <!-- Default SVG icon for closed lock -->
+                                    <svg class="toggle-icon" height="24px" width="24px" viewBox="0 0 24 24"
+                                        fill="none" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="text-end" style=" margin-bottom: 40px">
-                        <a href="forgotPassword.html" class="text-decoration-none" style=" color: #000000 !important">Forgot Password?</a>
-                    </div>
-                   
-                    <a href=" ../dashboard/home.html" type="submit" class="btn btn-primary bg-blue w-100">Login</a>
-                </form>
-                
+                        <div class="text-end" style=" margin-bottom: 40px">
+                            <a href="forgotPassword.html" class="text-decoration-none" style=" color: #000000 !important">Forgot Password?</a>
+                        </div>
+                       
+                        <a href=" ../dashboard/home.html" type="submit" class="btn btn-primary bg-blue w-100">Login</a>
+                    </form>
+                    
+                </div>
             </div>
+           
            </div>
         </div>
         <!-- ==========footer area start========= -->
