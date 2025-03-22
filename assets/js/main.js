@@ -1,4 +1,114 @@
 $(document).ready(function () {
+    // $('.sidebar-link-items').each(function () {
+    //     let parentItem = $(this);
+    //     let submenu = parentItem.find('.sidebar-submenu');
+
+    //     parentItem.hover(function () {
+    //         let offset = parentItem.offset();
+
+    //         submenu.appendTo('body').css({
+    //             position: 'absolute',
+    //             top: offset.top,
+    //             left: offset.left + parentItem.outerWidth(),
+    //             display: 'block',
+    //             zIndex: 99999
+    //         });
+    //     }, function () {
+    //         setTimeout(function () {
+    //             if (!submenu.is(':hover')) {
+    //                 submenu.hide().appendTo(parentItem);
+    //             }
+    //         }, 200); // Small delay to allow moving to submenu
+    //     });
+
+    //     submenu.hover(function () {
+    //         $(this).show();
+    //     }, function () {
+    //         $(this).hide().appendTo(parentItem);
+    //     });
+    // });
+    
+
+
+
+
+
+
+
+
+    $('.sidebar-link-items').each(function () {
+        let parentItem = $(this);
+        let submenu = parentItem.find('.sidebar-submenu');
+    
+        parentItem.hover(function () {
+            let offset = parentItem.offset();
+            let submenuHeight = submenu.outerHeight();
+            let windowHeight = $(window).height();
+            let spaceBelow = windowHeight - (offset.top + parentItem.outerHeight());
+            let spaceAbove = offset.top;
+    
+            // Check if there's enough space below or above
+            if (spaceBelow >= submenuHeight) {
+                // Enough space below, show submenu from top to bottom
+                submenu.appendTo('body').css({
+                    position: 'absolute',
+                    top: offset.top,
+                    left: offset.left + 170, // Move 170px to the right
+                    display: 'block',
+                    zIndex: 99999,
+                    overflowY: 'hidden' // Reset overflow
+                });
+            } else if (spaceAbove >= submenuHeight) {
+                // Not enough space below, but enough space above, show submenu from bottom to top
+                submenu.appendTo('body').css({
+                    position: 'absolute',
+                    top: offset.top + parentItem.outerHeight() - submenuHeight, // Align bottom of submenu with bottom of parent
+                    left: offset.left + 170, // Move 170px to the right
+                    display: 'block',
+                    zIndex: 99999,
+                    overflowY: 'hidden' // Reset overflow
+                });
+            } else {
+                // Not enough space on either side, show in the direction with maximum space
+                if (spaceBelow >= spaceAbove) {
+                    // More space below, show submenu from top to bottom with scroll
+                    submenu.appendTo('body').css({
+                        position: 'absolute',
+                        top: offset.top,
+                        left: offset.left + 170, // Move 170px to the right
+                        display: 'block',
+                        zIndex: 99999,
+                        overflowY: 'auto', // Enable scroll
+                        maxHeight: spaceBelow // Limit height to available space
+                    });
+                } else {
+                    // More space above, show submenu from bottom to top with scroll
+                    submenu.appendTo('body').css({
+                        position: 'absolute',
+                        top: offset.top + parentItem.outerHeight() - Math.min(submenuHeight, spaceAbove), // Align bottom of submenu with bottom of parent
+                        left: offset.left + 170, // Move 170px to the right
+                        display: 'block',
+                        zIndex: 99999,
+                        overflowY: 'auto', // Enable scroll
+                        maxHeight: spaceAbove // Limit height to available space
+                    });
+                }
+            }
+        }, function () {
+            setTimeout(function () {
+                if (!submenu.is(':hover')) {
+                    submenu.hide().appendTo(parentItem);
+                }
+            }, 200); // Small delay to allow moving to submenu
+        });
+    
+        submenu.hover(function () {
+            $(this).show();
+        }, function () {
+            $(this).hide().appendTo(parentItem);
+        });
+    });
+
 
 
     function adjustMenuItems() {

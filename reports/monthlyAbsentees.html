@@ -81,13 +81,13 @@
                             <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
                                     href="#"> <img height="25px" width="25px"
                                         src="../assets/images/dashboard/profile.svg" alt=""> My Profile</a></li>
-                            <li class=" sidebar-link-items">
+                            <li class="sidebar-link-items">
                                 <button
-                                    class="d-flex w-100 sidebar-link-btn flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link">
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link sidebar-link-btn">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/attendance.svg"
                                         alt=""> Attendance
                                 </button>
-                                <ul class="sidebar-submenu  position-absolute shadow rounded-0 border-0 p-2">
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
                                     <li><a href="../attendance/attendanceDetails.html" class="dropdown-item mb-2">My
                                             Attendance</a></li>
                                     <li><a href="../reports/attendance.html" class="dropdown-item mb-2">Reports</a></li>
@@ -98,9 +98,20 @@
                                     <li><a href="#" class="dropdown-item mb-2">Biometric</a></li>
                                 </ul>
                             </li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg"
-                                        alt=""> Leave</a></li>
+                            <li class="sidebar-link-items"><button class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link"
+                                    > <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg"
+                                        alt=""> Leave</button>
+                                        <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                            <li><a href="../attendance/attendanceDetails.html" class="dropdown-item mb-2">My
+                                                    Attendance</a></li>
+                                            <li><a href="../reports/attendance.html" class="dropdown-item mb-2">Reports</a></li>
+                                            <li><a href="#" class="dropdown-item mb-2">Branch Hr</a></li>
+                                            <li><a href="#" class="dropdown-item mb-2">Supervisor</a></li>
+                                            <li><a href="#" class="dropdown-item mb-2">HR Task</a></li>
+                                            <li><a href="#" class="dropdown-item mb-2">Late</a></li>
+                                            <li><a href="#" class="dropdown-item mb-2">Biometric</a></li>
+                                        </ul>
+                                    </li>
                             <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
                                     href="#"> <img height="25px" width="25px"
                                         src="../assets/images/dashboard/employee.svg" alt=""> Employee</a></li>
@@ -203,7 +214,7 @@
                                         aria-expanded="false">Monthly Absentees <img class="d-inline" height="13px "
                                             width="13px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
-                                    <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
+                                    <ul class="dropdown-menu border-0 rounded-3 shadow-lg overflow-y-auto">
                                         <li><a class="dropdown-item mb-3" href="attendance.html">Attendance</a></li>
                                         <li><a class="dropdown-item mb-3" href="absentees.html">Absentees</a></li>
                                         <li><a class="dropdown-item mb-3" href="monthlyAbsentees.html">Monthly
@@ -245,24 +256,24 @@
                     <!-- ================= monthly absentees area start================= -->
                     <div class="attendance-area pb-4 pt-3">
                         <div class="bg-white p-3 rounded-4 shadow mb-4">
-                            <div class="d-flex select-criteria justify-content-between align-items-center  pb-3"
+                            <div class="d-flex align-items-center justify-content-between pb-3 select-criteria"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-5 text-black ">
+                                <h1 class="text-black fs-5 fw-medium">
                                     Select Criteria</h1>
                                 <ul>
                                     <li>Role</li>
-                                    <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li>
+                                    <li>User Role <span class="ms-2"><i class="fa-angle-down fa-solid"></i></span></li>
                                 </ul>
                             </div>
 
 
-                            <div class="row g-4 pt-3">
+                            <div class="g-4 row pt-3">
 
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-4 col-xxl-3">
+                                    <label class="mb-1" for="">
                                         Company
                                     </label>
-                                    <select style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7"
+                                    <select style="border-color: #C2C2C2; border-radius:8px;" class="form-select fs-7"
                                         name="" id="">
                                         <option value="">All Company</option>
                                         <option value="">Example 1</option>
@@ -270,11 +281,11 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-4 col-xxl-3">
+                                    <label class="mb-1" for="">
                                         Branch
                                     </label>
-                                    <select style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7"
+                                    <select style="border-color: #C2C2C2; border-radius:8px;" class="form-select fs-7"
                                         name="" id="">
                                         <option value="">All Branch</option>
                                         <option value="">Example 1</option>
@@ -282,11 +293,11 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-4 col-xxl-3">
+                                    <label class="mb-1" for="">
                                         Department
                                     </label>
-                                    <select style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7"
+                                    <select style="border-color: #C2C2C2; border-radius:8px;" class="form-select fs-7"
                                         name="" id="">
                                         <option value="">All Department</option>
                                         <option value="">Example 1</option>
@@ -294,11 +305,11 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-4 col-xxl-3">
+                                    <label class="mb-1" for="">
                                         Division
                                     </label>
-                                    <select style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7"
+                                    <select style="border-color: #C2C2C2; border-radius:8px;" class="form-select fs-7"
                                         name="" id="">
                                         <option value="">All Division</option>
                                         <option value="">Example 1</option>
@@ -306,11 +317,11 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-4 col-xxl-3">
+                                    <label class="mb-1" for="">
                                         Employee
                                     </label>
-                                    <select style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7"
+                                    <select style="border-color: #C2C2C2; border-radius:8px;" class="form-select fs-7"
                                         name="" id="">
                                         <option value="">All Employee</option>
                                         <option value="">Example 1</option>
@@ -318,11 +329,11 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-4 col-xxl-3">
+                                    <label class="mb-1" for="">
                                         Employee Status
                                     </label>
-                                    <select style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7"
+                                    <select style="border-color: #C2C2C2; border-radius:8px;" class="form-select fs-7"
                                         name="" id="">
                                         <option value="">All Status</option>
                                         <option value="">Example 1</option>
@@ -330,11 +341,11 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-4 col-xxl-3">
+                                    <label class="mb-1" for="">
                                         Employee Category
                                     </label>
-                                    <select style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7"
+                                    <select style="border-color: #C2C2C2; border-radius:8px;" class="form-select fs-7"
                                         name="" id="">
                                         <option value="">All Category</option>
                                         <option value="">Example 1</option>
@@ -344,11 +355,11 @@
                                 </div>
                                 <div class="col-xxl-3 d-none d-xxl-block">
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-4 col-xxl-3">
+                                    <label class="mb-1" for="">
                                         For Month
                                     </label>
-                                    <select style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7"
+                                    <select style="border-color: #C2C2C2; border-radius:8px;" class="form-select fs-7"
                                         name="" id="">
                                         <option value="">January</option>
                                         <option value="">Feb</option>
@@ -357,11 +368,11 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-4 col-xxl-3">
+                                    <label class="mb-1" for="">
                                         Year
                                     </label>
-                                    <select style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7"
+                                    <select style="border-color: #C2C2C2; border-radius:8px;" class="form-select fs-7"
                                         name="" id="">
                                         <option value="">2025</option>
                                         <option value="">2026</option>
@@ -372,9 +383,9 @@
                                 </div>
                                 <div class="col-xxl-3 d-none d-xxl-block">
                                 </div>
-                                <div class="col-xxl-3 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class=" h-100 d-flex justify-content-end align-items-end">
-                                        <button class="btn bg-blue text-white rounded-4">View Report</button>
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-12 col-xxl-3">
+                                    <div class="d-flex align-items-end h-100 justify-content-end">
+                                        <button class="btn bg-blue rounded-4 text-white">View Report</button>
                                     </div>
                                 </div>
                             </div>
@@ -384,17 +395,17 @@
 
                         <!-- =================data table area start=================== -->
                         <div class="bg-white p-3 rounded-4 shadow dataTable-area">
-                            <div class="d-flex justify-content-between flex-wrap gap-3 align-items-center pb-3"
+                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-6  text-black  ">Monthly Absentees Report</h1>
-                                <button class="btn bg-blue text-white rounded-4"><span class=" me-2"><i
-                                            class="fa-solid fa-download"></i></span>Download</button>
+                                <h1 class="text-black fs-6 fw-medium">Monthly Absentees Report</h1>
+                                <button class="btn bg-blue rounded-4 text-white"><span class="me-2"><i
+                                            class="fa-download fa-solid"></i></span>Download</button>
                             </div>
 
 
 
 
-                            <div class="table-responsive statusDetailsTable mt-3" style=" height: auto !important">
+                            <div class="table-responsive mt-3 statusDetailsTable" style=" height: auto !important">
                                 <table class="table table-bordered border-gray">
                                     <thead>
                                         <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
@@ -450,19 +461,19 @@
                             <!-- <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
                                 <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
                                    <li>
-                                             <a class="d-flex align-items-center fs-6  border justify-content-center p-2 " style=" border-radius: 7.24px;"
+                                             <a class="d-flex align-items-center border justify-content-center p-2 fs-6" style=" border-radius: 7.24px;"
                                                 href="">
                                                 <i class="fa-angle-left fa-solid"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "  style=" border-radius: 7.24px;"
+                                            <a class="d-flex align-items-center border justify-content-center p-2"  style=" border-radius: 7.24px;"
                                                 href="">
                                                 Prev
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "  style=" border-radius: 7.24px;"
+                                            <a class="d-flex align-items-center border justify-content-center p-2"  style=" border-radius: 7.24px;"
                                                 href="">
                                                 Next
                                             </a>

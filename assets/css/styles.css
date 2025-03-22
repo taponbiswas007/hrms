@@ -424,23 +424,26 @@ ul {
   overflow-y: auto;
 }
 
+.menu {
+  width: 170px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: visible;
+  position: relative;
+}
+
 .sidebar-link-items {
   position: relative;
   z-index: 9999;
 }
-.sidebar-link-items:hover .sidebar-submenu {
-  display: block;
-}
 
 .sidebar-submenu {
-  z-index: 999999999999;
-  background: #ffffff;
-  top: 0;
-  left: 152px;
-  /* Example positioning */
+  position: absolute;
+  background: white;
   width: 200px;
-  border: 1px solid #4A59A7;
-  display: block;
+  border: 1px solid blue;
+  display: none;
+  overflow-y: auto;
 }
 
 footer {
@@ -1126,4 +1129,4 @@ footer {
 .tab-content.statusactive {
   display: block;
   opacity: 1;
-}
+}/*# sourceMappingURL=styles.css.map */

@@ -44,27 +44,33 @@
     overflow-y: auto;
 }
 
+.menu {
+    width: 170px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: visible;
+    position: relative;
+}
+
 .sidebar-link-items {
     position: relative;
     z-index: 9999;
-
-    &:hover {
-        .sidebar-submenu {
-            display: block;
-        }
-    }
 }
 
 .sidebar-submenu {
-    z-index: 999999999999;
-    background: $white;
-    top: 0;
-    left: 152px;
-    /* Example positioning */
+    position: absolute;
+    background: white;
     width: 200px;
-    border: 1px solid $blue;
-    display: block;
+    border: 1px solid blue;
+    display: none;
+    overflow-y: auto;
 }
+
+
+
+
+
+
 
 footer {
     position: fixed;
