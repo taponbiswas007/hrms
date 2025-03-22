@@ -1,4 +1,18 @@
 $(document).ready(function () {
+
+    // header profile area
+    $("#headerProfile").click(function (event) {
+        $(".headerProfileDropdown").toggle();
+        event.stopPropagation(); // Prevent the click from propagating to the document
+    });
+
+    $(document).click(function (event) {
+        if (!$(event.target).closest(".headerProfileDropdown").length && !$(event.target).is("#headerProfile")) {
+            $(".headerProfileDropdown").hide();
+        }
+    });
+
+
     // $('.sidebar-link-items').each(function () {
     //     let parentItem = $(this);
     //     let submenu = parentItem.find('.sidebar-submenu');
@@ -27,7 +41,7 @@ $(document).ready(function () {
     //         $(this).hide().appendTo(parentItem);
     //     });
     // });
-    
+
 
 
 
@@ -39,14 +53,14 @@ $(document).ready(function () {
     $('.sidebar-link-items').each(function () {
         let parentItem = $(this);
         let submenu = parentItem.find('.sidebar-submenu');
-    
+
         parentItem.hover(function () {
             let offset = parentItem.offset();
             let submenuHeight = submenu.outerHeight();
             let windowHeight = $(window).height();
             let spaceBelow = windowHeight - (offset.top + parentItem.outerHeight());
             let spaceAbove = offset.top;
-    
+
             // Check if there's enough space below or above
             if (spaceBelow >= submenuHeight) {
                 // Enough space below, show submenu from top to bottom
@@ -101,7 +115,7 @@ $(document).ready(function () {
                 }
             }, 200); // Small delay to allow moving to submenu
         });
-    
+
         submenu.hover(function () {
             $(this).show();
         }, function () {

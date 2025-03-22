@@ -387,6 +387,10 @@ ul {
 .header {
   z-index: 1000000000000000000000000000000;
 }
+.header .headerProfileDropdown {
+  width: 250px;
+  display: none;
+}
 
 .side-bar {
   width: 170px;

@@ -328,9 +328,8 @@
                         </button>
 
                         <!-- profile area -->
-                        <div class="">
-                            <button class="d-flex align-items-center justify-content-end profiledetails" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class=" position-relative">
+                            <button class="d-flex align-items-center justify-content-end profiledetails" id="headerProfile">
                                 <img height="45px" width="45px" class="rounded-circle"
                                     src="../assets/images/dashboard/managerimg.png" alt="">
                                 <div class="name-and-position">
@@ -340,21 +339,20 @@
                                 </div>
                                 <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
                             </button>
-                            <ul class="dropdown-menu rounded-4 shadow-lg">
-                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-4 mb-2"
+                            <ul class="headerProfileDropdown bg-white  rounded-4 top-100 end-0 position-absolute shadow-lg py-3 px-2" >
+                                <li><a class="d-flex w-100 dropdown-item align-items-center justify-content-start gap-2 mb-2"
                                         href="#"> <img height="30px" width="30px"
                                             src="../assets/images/dashboard/info_icon.svg" alt=""> Personal
                                         Information</a></li>
-                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-4 mb-2"
+                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-2 mb-2"
                                         href="#"> <img height="30px" width="30px"
                                             src="../assets/images/dashboard/lock-password.svg" alt=""> Change
                                         Password</a></li>
-                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-4 mb-2"
+                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-2 mb-2"
                                         href="../authentication-pages/login.html"> <img height="30px" width="30px"
                                             src="../assets/images/dashboard/logout.svg" alt=""> Log Out</a></li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
 
