@@ -200,7 +200,6 @@ ul {
 
 .dropdown-menu {
   max-height: calc(100vh - 250px);
-  z-index: 10000000000000000;
 }
 
 .tabarea .tablink {
@@ -439,8 +438,7 @@ ul {
 
 .sidebar-submenu {
   position: absolute;
-  background: white;
-  width: 200px;
+  background: #ffffff;
   border: 1px solid blue;
   display: none;
   overflow-y: auto;
@@ -1129,4 +1127,4 @@ footer {
 .tab-content.statusactive {
   display: block;
   opacity: 1;
-}/*# sourceMappingURL=styles.css.map */
+}
