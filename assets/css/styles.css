@@ -147,6 +147,20 @@ ul {
   color: #616161;
 }
 
+.attendance-area .custom-dropdown::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 10.86px;
+  color: #616161;
+}
+
 /* Custom dropdown button */
 .custom-dropdown-button {
   width: 100%;

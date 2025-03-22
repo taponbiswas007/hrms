@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fav icon -->
-     <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
     <title>Attendance</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -153,8 +153,8 @@
                                 <button
                                     class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/employee.svg"
-                                    alt="">
-                                        Employee
+                                        alt="">
+                                    Employee
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
@@ -163,7 +163,7 @@
                                     <li><a href="#" class="dropdown-item mb-2">Reports</a></li>
                                 </ul>
                             </li>
-                           
+
                             <!-- Probation -->
                             <li class="sidebar-link-items">
                                 <button
@@ -329,7 +329,8 @@
 
                         <!-- profile area -->
                         <div class=" position-relative">
-                            <button class="d-flex align-items-center justify-content-end profiledetails" id="headerProfile">
+                            <button class="d-flex align-items-center justify-content-end profiledetails"
+                                id="headerProfile">
                                 <img height="45px" width="45px" class="rounded-circle"
                                     src="../assets/images/dashboard/managerimg.png" alt="">
                                 <div class="name-and-position">
@@ -339,7 +340,8 @@
                                 </div>
                                 <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
                             </button>
-                            <ul class="headerProfileDropdown bg-white  rounded-4 top-100 end-0 position-absolute shadow-lg py-3 px-2" >
+                            <ul
+                                class="headerProfileDropdown bg-white  rounded-4 top-100 end-0 position-absolute shadow-lg py-3 px-2">
                                 <li><a class="d-flex w-100 dropdown-item align-items-center justify-content-start gap-2 mb-2"
                                         href="#"> <img height="30px" width="30px"
                                             src="../assets/images/dashboard/info_icon.svg" alt=""> Personal
@@ -363,16 +365,17 @@
                     <div
                         class="d-flex align-items-center bg-white justify-content-between p-3 rounded-3 shadow-sm mb-3 tabarea">
 
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a style="color: #757575;" href="../attendance/attendanceDetails.html">Attendance</a></li>
+                                <li class="breadcrumb-item"><a style="color: #757575;"
+                                        href="../attendance/attendanceDetails.html">Attendance</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Reports <img class="d-inline" height="20px "
-                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
-                                            alt=""></button>
+                                        aria-expanded="false">Reports <img class="d-inline" height="20px " width="20px"
+                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-3" href="../attendance/attendanceDetails.html">My Attendance</a></li>
+                                        <li><a class="dropdown-item mb-3" href="../attendance/attendanceDetails.html">My
+                                                Attendance</a></li>
                                         <li><a class="dropdown-item mb-3" href="#">Branch Hr</a></li>
                                         <li><a class="dropdown-item mb-3" href="#">Supervisor</a>
                                         </li>
@@ -387,8 +390,8 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Absentees <img class="d-inline" height="13px "
-                                            width="13px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                        aria-expanded="false">Absentees <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-3" href="attendance.html">Attendance</a></li>
@@ -438,7 +441,41 @@
                                     Select Criteria</h1>
                                 <ul>
                                     <li>Role</li>
-                                    <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li>
+                                    <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
+
+
+                                    <li>
+                                        <div class="custom-dropdown roleDropdown" style="width: 100%;">
+                                            <!-- Dropdown button -->
+                                            <div class="custom-dropdown-button border-0"
+                                                style="font-size: 12px !important; padding:0 18px 0 0;"
+                                                onclick="toggleDropdown()">
+                                                HR Factory
+                                            </div>
+                                            <!-- Dropdown options -->
+                                            <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
+                                                style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('1', ' HR Factory')"> HR Factory</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('2', 'L2')">L2</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('3', 'L1')">L1</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('4', 'CorpComm')">CorpComm</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('5', 'Administration Clearance Factory')">
+                                                    Administration Clearance Factory</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('6', 'Business Card')">Business Card</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('7', 'HRADMIN')">HRADMIN</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('8', 'Administration')">Administration</div>
+
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -535,14 +572,16 @@
                                     <label class=" mb-1" for="">
                                         From Date
                                     </label>
-                                    
-                                    <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7" type="date">
+
+                                    <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7"
+                                        type="date">
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class=" mb-1" for="">
                                         To Date
                                     </label>
-                                    <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7" type="date">
+                                    <input style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7"
+                                        type="date">
 
                                 </div>
                                 <div class="col-xxl-3 d-none d-xxl-block">

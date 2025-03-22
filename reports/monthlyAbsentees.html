@@ -363,7 +363,7 @@
                     <div
                         class="d-flex align-items-center bg-white justify-content-between p-3 rounded-3 shadow-sm mb-3 tabarea">
 
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a style="color: #757575;" href="../attendance/attendanceDetails.html">Attendance</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
@@ -387,8 +387,8 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Monthly Absentees <img class="d-inline" height="13px "
-                                            width="13px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                        aria-expanded="false">Monthly Absentees <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg overflow-y-auto">
                                         <li><a class="dropdown-item mb-3" href="attendance.html">Attendance</a></li>
@@ -438,7 +438,41 @@
                                     Select Criteria</h1>
                                 <ul>
                                     <li>Role</li>
-                                    <li>User Role <span class="ms-2"><i class="fa-angle-down fa-solid"></i></span></li>
+                                     <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
+
+
+                                     <li>
+                                        <div class="custom-dropdown roleDropdown" style="width: 100%;">
+                                            <!-- Dropdown button -->
+                                            <div class="custom-dropdown-button border-0"
+                                                style="font-size: 12px !important; padding:0 18px 0 0;"
+                                                onclick="toggleDropdown()">
+                                                HR Factory
+                                            </div>
+                                            <!-- Dropdown options -->
+                                            <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
+                                                style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('1', ' HR Factory')"> HR Factory</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('2', 'L2')">L2</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('3', 'L1')">L1</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('4', 'CorpComm')">CorpComm</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('5', 'Administration Clearance Factory')">
+                                                    Administration Clearance Factory</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('6', 'Business Card')">Business Card</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('7', 'HRADMIN')">HRADMIN</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption('8', 'Administration')">Administration</div>
+
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
 
