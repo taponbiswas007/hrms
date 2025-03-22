@@ -443,9 +443,14 @@ ul {
 .sidebar-submenu {
   position: absolute;
   background: #ffffff;
-  border: 1px solid blue;
   display: none;
   overflow-y: auto;
+  /* Top, right, bottom shadow */
+  /* If you want to customize the shadow more: */
+  /*top, bottom right*/
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 2px 0 5px rgba(0, 0, 0, 0.25) !important;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 2px 0 5px rgba(0, 0, 0, 0.25) !important;
+  /* bottom and right*/
 }
 
 footer {

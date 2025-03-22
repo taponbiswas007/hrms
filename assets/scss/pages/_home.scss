@@ -66,9 +66,15 @@
     position: absolute;
     background: #ffffff;
     // width: 200px;
-    border: 1px solid blue;
     display: none;
     overflow-y: auto;
+    // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15) !important;
+    /* Top, right, bottom shadow */
+    /* If you want to customize the shadow more: */
+    //  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0,0,0,0.15) !important; 
+    /*top, bottom right*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 2px 0 5px rgba(0, 0, 0, 0.25) !important;
+    /* bottom and right*/
 }
 
 
