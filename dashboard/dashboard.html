@@ -48,7 +48,7 @@
     <div class="container-fluid px-0">
         <div class="d-flex align-items-start justify-content-between">
             <!-- side bar -->
-            <div class="side-bar vh-100">
+            <div class="bg-white side-bar vh-100">
                 <div class="position-relative inner_area">
                     <a href="#" class="d-flex align-items-center justify-content-center p-3 logo"
                         style=" background: url(../assets/images/dashboard/topbar_bg.png) no-repeat 0 0/100% 100%; margin-bottom: -1px">
@@ -68,69 +68,238 @@
                         </svg>
                     </button>
 
-                    <div  class="bg-blue text-white menu">
+                    <div class="bg-blue text-white menu">
 
                         <!-- menu items -->
-                        <ul class="list-unstyle">
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/settings.svg" alt=""> Admin</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="../dashboard/dashboard.html"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/dashboard.svg" alt=""> Dashboard</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/profile.svg" alt=""> My Profile</a></li>
-                                        <li class="sidebar-link-items">
-                                            <button
-                                                class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link sidebar-link-btn">
-                                                <img height="25px" width="25px" src="../assets/images/dashboard/attendance.svg"
-                                                    alt=""> Attendance
-                                            </button>
-                                            <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
-                                                <li><a href="../attendance/attendanceDetails.html" class="dropdown-item mb-2">My
-                                                        Attendance</a></li>
-                                                <li><a href="../reports/attendance.html" class="dropdown-item mb-2">Reports</a></li>
-                                                <li><a href="#" class="dropdown-item mb-2">Branch Hr</a></li>
-                                                <li><a href="#" class="dropdown-item mb-2">Supervisor</a></li>
-                                                <li><a href="#" class="dropdown-item mb-2">HR Task</a></li>
-                                                <li><a href="#" class="dropdown-item mb-2">Late</a></li>
-                                                <li><a href="#" class="dropdown-item mb-2">Biometric</a></li>
-                                            </ul>
-                                        </li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg"
-                                        alt=""> Leave</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/employee.svg" alt=""> Employee</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/dashboard.svg" alt=""> Probation</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/bulkUpload.svg" alt=""> Bulk Upload</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/dashboard.svg" alt=""> Assets</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/performance.svg" alt=""> PMS</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/learn-outline.svg" alt=""> LMS</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/expanse.svg" alt=""> Reimbursements</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px" src="../assets/images/dashboard/task.svg"
-                                        alt=""> Managerial Task</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/registration.svg" alt=""> Resignation</a></li>
-                            <li><a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-white fs-7 fw-normal py-2 sidebar-link"
-                                    href="#"> <img height="25px" width="25px"
-                                        src="../assets/images/dashboard/policy.svg" alt=""> HR Policies</a></li>
+                        <ul class="list-unstyled">
+
+                            <!-- admin -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link w-100">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/settings.svg"
+                                        alt="">
+                                    Admin
+                                </button>
+                                <!-- dropdown menu -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-2">Member Management</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Company Master</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">EMS Master</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Attendance Master</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">History Data</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Emp Seperation Master</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Confirmation Master </a></li>
+                                </ul>
+                            </li>
+                            <!-- Dashboard -->
+                            <li>
+                                <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
+                                    href="../dashboard/dashboard.html">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
+                                        alt="">
+                                    Dashboard
+                                </a>
+                            </li>
+
+                            <!-- my profile -->
+                            <li>
+                                <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
+                                    href="#">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/profile.svg" alt="">
+                                    My Profile
+                                </a>
+                            </li>
+
+                            <!-- Attendance -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link sidebar-link-btn">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/attendance.svg"
+                                        alt="">
+                                    Attendance
+                                </button>
+
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="../attendance/attendanceDetails.html" class="dropdown-item mb-2">My
+                                            Attendance</a></li>
+                                    <li><a href="../reports/attendance.html" class="dropdown-item mb-2">Reports</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Branch Hr</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Supervisor</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">HR Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Late</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Biometric</a></li>
+                                </ul>
+                            </li>
+                            <!-- Leaves -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg" alt="">
+                                    Leave
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-2">My Leaves</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Supervisor</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Reports</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">HR Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Leave Regularization</a></li>
+                                </ul>
+                            </li>
+                            <!-- employee -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/employee.svg"
+                                    alt="">
+                                        Employee
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-2">Employee Management</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">HR Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Reports</a></li>
+                                </ul>
+                            </li>
+                           
+                            <!-- Probation -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
+                                        alt="">
+                                    Probation
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-2">My Probation</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Probation KRA</a></li>
+                                </ul>
+                            </li>
+                            <!-- Bulk upload -->
+                            <li>
+                                <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
+                                    href="#">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/bulkUpload.svg"
+                                        alt="">
+                                    Bulk Upload
+                                </a>
+                            </li>
+                            <!-- Assets -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
+                                        alt="">
+                                    Assets
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-2">Asset Issuance</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Reports</a></li>
+                                </ul>
+                            </li>
+                            <!-- PMS -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/performance.svg"
+                                        alt="">
+                                    PMS
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-2">Self Appraisal</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Team Appraisal</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Reviewer Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">HR View</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Status Change</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Hierarchy BulkUpload</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">KRA BulkUpload</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">PMS Master</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- LMS -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/learn-outline.svg"
+                                        alt="">
+                                    LMS
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-2">Admin Dashboard</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Course Management</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Assessment</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Module</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">QuestionBank</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">My Dashboard</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">My Courses</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Category</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Reports</a></li>
+
+                                </ul>
+                            </li>
+
+                            <!-- Reimbursements -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/expanse.svg" alt="">
+                                    Reimbursements
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-2">My Claim</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Claim Approval</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Claim Payment</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Configuration</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Claim Report</a></li>
+                                </ul>
+                            </li>
+
+
+                            <!-- Managerial Task -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/task.svg" alt="">
+                                    Managerial Task
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-2">Supervisor Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Department Clearance</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">L1 Probation Approval</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">L2 Probation Approval</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-white fs-7 fw-normal py-2 sidebar-link"
+                                    href="#">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/registration.svg"
+                                        alt="">
+                                    Resignation
+                                </a>
+                            </li>
+
+                            <!-- HR Policies  -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/policy.svg" alt="">
+                                    HR Policies
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-2">Document</a></li>
+                                    <li><a href="#" class="dropdown-item mb-2">Document Master</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
