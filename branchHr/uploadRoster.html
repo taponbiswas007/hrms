@@ -673,26 +673,31 @@
                                     <!-- data upload -->
                                     <li>Upload the excel file in .xls format with modified data.</li>
                                     <div class="pt-4">
-                                        <div class="d-flex justify-content-between " >
-                                            <div class="chooseFile-area">
-                                                <h1 class=" mb-2">Choose File</h1>
-                                                <div class="imageBox">
-                                                    <img height="28px" width="28px" src="../assets/images/dashboard/imageupload.svg" alt="">
-                                                    <h2>Drop your files here</h2>
-                                                    <button class="btn bg-blue fw-bold text-white rounded-4">Choose file</button>
-                                                </div>
-                                            </div>
-                                            <div class="h-100">
-                                                <div class="d-flex justify-content-end align-items-end gap-4">
-                                                    <button class="btn bg-blue fw-bold text-white rounded-4">Upload</button>
-                                                    <button class="btn bg-blue fw-bold text-white rounded-4" style="background: #5A6185;">Verify Data</button>
-                                                    <button class="btn bg-blue fw-bold text-white rounded-4" style="background: #5A6185;">Bulk Insert</button>
-                                                </div>
+
+                                        <div class="chooseFile-area">
+                                            <h1 class=" mb-2">Choose File</h1>
+                                            <div class="imageBox">
+                                                <img height="28px" width="28px"
+                                                    src="../assets/images/dashboard/imageupload.svg" alt="">
+                                                <h2>Drop your files here</h2>
+                                                <button class="btn bg-blue fw-bold text-white rounded-4">Choose
+                                                    file</button>
                                             </div>
                                         </div>
+                                        <div class="mt-3">
+                                            <div
+                                                class="d-flex justify-content-sm-end justify-content-center flex-wrap align-items-end gap-4">
+                                                <button class="btn bg-blue fw-bold text-white rounded-4">Upload</button>
+                                                <button class="btn bg-blue fw-bold text-white rounded-4"
+                                                    style="background: #5A6185;">Verify Data</button>
+                                                <button class="btn bg-blue fw-bold text-white rounded-4"
+                                                    style="background: #5A6185;">Bulk Insert</button>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </ul>
-                               
+
 
                             </div>
 
@@ -703,109 +708,14 @@
                         <div class="bg-white p-4 rounded-4 shadow dataTable-area">
                             <div class="d-flex justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-6 text-black  ">Attendance Report</h1>
-                                <button class="btn bg-blue text-white rounded-4"><span class=" me-2 me-sm-4"><i
-                                            class="fa-solid fa-download"></i></span>Download</button>
+                                <h1 class=" fw-medium fs-6 text-black  ">Import Results</h1>
+
                             </div>
-
-
-
-
-                            <div data-simplebar class="table-responsive statusDetailsTable mt-3">
-                                <table class="table table-bordered border-gray">
-                                    <thead>
-                                        <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
-                                            style="color: #404040; background: #F9F9F9">
-                                            <th class="border-0">EMPCODE</th>
-                                            <th class="border-0">EMPNAME</th>
-                                            <th class="border-0">05 Mar 2025</th>
-
-
-
-
-                                        </tr>
-                                    </thead>
-                                    <tbody style="font-family: DM Sans, sans-serif;">
-                                        <tr class="text-nowrap fs-7 fw-normal"
-                                            style="color: #202020; height: 40px; vertical-align: middle; ">
-                                            <td class="p-2">FE0134</td>
-                                            <td class="p-2">Nitin Kumar</td>
-                                            <td class="p-2">
-                                                <select name="" class=" form-select fs-7" id=""
-                                                    style="width: fit-content;">
-                                                    <option value="">General</option>
-                                                    <option value="">Example 1</option>
-                                                    <option value="">Example 2</option>
-                                                </select>
-                                            </td>
-
-
-
-
-
-
-                                        </tr>
-
-
-
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <!-- <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
-                                <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                                   <li>
-                                             <a class="d-flex align-items-center fs-6  border justify-content-center p-2 " style=" border-radius: 7.24px;"
-                                                href="">
-                                                <i class="fa-angle-left fa-solid"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "  style=" border-radius: 7.24px;"
-                                                href="">
-                                                Prev
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "  style=" border-radius: 7.24px;"
-                                                href="">
-                                                Next
-                                            </a>
-                                        </li>
-                                    <li>
-                                        <small>Page:</small>
-                                        <span>1</span>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex gap-2">
-                                            <small>Of</small>
-                                            <p>100</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                         <div class="custom-dropdown">
-                                          
-                                            <div class="custom-dropdown-button" onclick="toggleDropdown()">
-                                                10
-                                            </div>
-                                         
-                                            <div class="custom-dropdown-options shadow">
-                                                <div class="custom-dropdown-option" onclick="selectOption('1', '10')">10</div>
-                                                <div class="custom-dropdown-option" onclick="selectOption('2', '11')">11</div>
-                                                <div class="custom-dropdown-option" onclick="selectOption('3', '12')">12</div>
-                                                <div class="custom-dropdown-option" onclick="selectOption('4', '13')">13</div>
-                                                <div class="custom-dropdown-option" onclick="selectOption('5', '14')">14</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div> -->
-
 
                             <div class=" pt-3 d-flex justify-content-end align-items-center gap-4">
-                                <button class="btn bg-blue text-nowrap px-4 text-white rounded-4">Save</button>
-                                <button class="btn bg-blue text-nowrap px-4 text-white rounded-4">Download
-                                    Report</button>
+                                <button class="btn bg-blue text-nowrap px-4 text-white rounded-4">Export To
+                                    Excel</button>
+
                             </div>
 
 
@@ -846,7 +756,7 @@
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <!-- js -->
     <script src="../assets/js/main.js"></script>
-  
+
 </body>
 
 </html>
