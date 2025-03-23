@@ -398,6 +398,51 @@ ul {
   padding: 23px 17px;
 }
 
+.imageBox {
+  background: rgba(101, 127, 245, 0.2);
+  border: 0.6px dashed #4A59A7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 334px;
+  width: 100%;
+  height: 124px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 9px;
+  border-radius: 5px;
+}
+.imageBox h2 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4D4D4D;
+}
+.imageBox button {
+  font-size: 12px;
+}
+
+.chooseFile-area h1 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #4D4D4D;
+}
+
 .header {
   z-index: 1000000000000000000000000000000;
 }
