@@ -69,11 +69,11 @@
 
 @media (min-height: 1024px) {
     .attendanceTable {
-        height: 423px;
+        max-height: 423px;
     }
 
     .statusDetailsTable {
-        height: 240px;
+        max-height: 240px;
     }
 
 
