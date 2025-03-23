@@ -443,6 +443,59 @@ ul {
   color: #4D4D4D;
 }
 
+/* Hide the default checkbox */
+.custom-checkbox input {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #65558F;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Style the checkmark when the checkbox is checked */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #65558F;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark */
+.custom-checkbox .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.thCustom-checkbox .checkmark:after {
+  width: 4px !important;
+  height: 8px !important;
+}
+
 .header {
   z-index: 1000000000000000000000000000000;
 }

@@ -1,5 +1,54 @@
 $(document).ready(function () {
 
+
+
+
+    // Handle the "Reject" header checkbox
+    $('thead .thCustom-checkbox:eq(0) input[type="checkbox"]').on('change', function () {
+        var isChecked = $(this).prop('checked');
+        // Check/uncheck all "Reject" column checkboxes in the table body
+        $('tbody tr td:nth-child(12) .custom-checkbox input[type="checkbox"]').prop('checked', isChecked);
+    });
+
+    // Handle the "Approved" header checkbox
+    $('thead .thCustom-checkbox:eq(1) input[type="checkbox"]').on('change', function () {
+        var isChecked = $(this).prop('checked');
+        // Check/uncheck all "Approved" column checkboxes in the table body
+        $('tbody tr td:nth-child(13) .custom-checkbox input[type="checkbox"]').prop('checked', isChecked);
+    });
+
+    // Handle individual "Reject" column checkboxes
+    $('tbody tr td:nth-child(12) .custom-checkbox input[type="checkbox"]').on('change', function () {
+        var allChecked = true;
+        // Check if all "Reject" column checkboxes are checked
+        $('tbody tr td:nth-child(12) .custom-checkbox input[type="checkbox"]').each(function () {
+            if (!$(this).prop('checked')) {
+                allChecked = false;
+                return false; // Exit the loop early if any checkbox is unchecked
+            }
+        });
+        // Update the "Reject" header checkbox state
+        $('thead .thCustom-checkbox:eq(0) input[type="checkbox"]').prop('checked', allChecked);
+    });
+
+    // Handle individual "Approved" column checkboxes
+    $('tbody tr td:nth-child(13) .custom-checkbox input[type="checkbox"]').on('change', function () {
+        var allChecked = true;
+        // Check if all "Approved" column checkboxes are checked
+        $('tbody tr td:nth-child(13) .custom-checkbox input[type="checkbox"]').each(function () {
+            if (!$(this).prop('checked')) {
+                allChecked = false;
+                return false; // Exit the loop early if any checkbox is unchecked
+            }
+        });
+        // Update the "Approved" header checkbox state
+        $('thead .thCustom-checkbox:eq(1) input[type="checkbox"]').prop('checked', allChecked);
+    });
+
+
+
+
+
     // header profile area
     $("#headerProfile").click(function (event) {
         $(".headerProfileDropdown").toggle();
@@ -686,6 +735,10 @@ window.onclick = function (event) {
         });
     }
 };
+
+
+
+
 
 
 
