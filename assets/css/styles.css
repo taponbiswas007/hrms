@@ -147,7 +147,7 @@ ul {
   color: #616161;
 }
 
-.attendance-area .custom-dropdown::after {
+.roleDropdownarea .custom-dropdown::after {
   content: "\f107";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;

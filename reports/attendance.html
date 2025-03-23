@@ -440,35 +440,38 @@
                                 <ul>
                                     <li>Role</li>
                                       <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
-                                    <li>
-                                        <div class="custom-dropdown roleDropdown" style="width: 100%;">
-                                        <!-- Dropdown button -->
-                                        <div class="custom-dropdown-button border-0" style="font-size: 12px !important; padding:0 18px 0 0;"
-                                            onclick="toggleDropdown()">
-                                            HR Factory
-                                        </div>
-                                        <!-- Dropdown options -->
-                                        <div class="shadow custom-dropdown-options p-2 overflow-y-auto" style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption('1', ' HR Factory')"> HR Factory</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption('2', 'L2')">L2</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption('3', 'L1')">L1</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption('4', 'CorpComm')">CorpComm</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption('5', 'Administration Clearance Factory')">Administration Clearance Factory</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption('6', 'Business Card')">Business Card</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption('7', 'HRADMIN')">HRADMIN</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption('8', 'Administration')">Administration</div>
+                                      <li class="roleDropdownarea">
+                                        <div class="custom-dropdown roleDropdown" style="width: 100%;" >
+                                            <!-- Dropdown button -->
+                                            <div class="custom-dropdown-button border-0"
+                                                style="font-size: 12px !important; padding:0 18px 0 0;"
+                                                onclick="toggleDropdown(event)">
+                                                HR Factory
+                                            </div>
+                                            <!-- Dropdown options -->
+                                            <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
+                                                style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'1', ' HR Factory')"> HR Factory</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'2', 'L2')">L2</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'3', 'L1')">L1</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'4', 'CorpComm')">CorpComm</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'5', 'Administration Clearance Factory')">
+                                                    Administration Clearance Factory</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'6', 'Business Card')">Business Card</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'7', 'HRADMIN')">HRADMIN</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'8', 'Administration')">Administration</div>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
+                                    </li>
                                 </ul>
                             </div>
 
