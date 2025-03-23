@@ -711,16 +711,29 @@ function toggleSections() {
 
 
 // select function
-// function toggleDropdown() {
-//     const dropdown = document.querySelector('.custom-dropdown');
+
+// // Function to toggle the dropdown
+// function toggleDropdown(event) {
+//     // Get the clicked button
+//     const button = event.target;
+//     // Find the parent dropdown container
+//     const dropdown = button.closest('.custom-dropdown');
+//     // Toggle the active class only for the parent dropdown
 //     dropdown.classList.toggle('active');
 // }
 
 // // Function to select an option
-// function selectOption(value, text) {
-//     const button = document.querySelector('.custom-dropdown-button');
+// function selectOption(event, value, text) {
+//     // Get the clicked option
+//     const option = event.target;
+//     // Find the parent dropdown container
+//     const dropdown = option.closest('.custom-dropdown');
+//     // Find the button inside the dropdown
+//     const button = dropdown.querySelector('.custom-dropdown-button');
+//     // Update the button text
 //     button.textContent = text;
-//     toggleDropdown(); // Close the dropdown after selection
+//     // Close the dropdown after selection
+//     dropdown.classList.remove('active');
 //     console.log('Selected value:', value, 'Text:', text);
 // }
 
@@ -737,88 +750,61 @@ function toggleSections() {
 // };
 
 // Function to toggle the dropdown
-// function toggleDropdown(id) {
-//     let dropdown;
-//     if (id) {
-//         // If ID is provided, find the dropdown by data-id
-//         dropdown = document.querySelector(`.custom-dropdown[data-id="${id}"]`);
-//     } else {
-//         // If no ID is provided, find the first dropdown (old behavior)
-//         dropdown = document.querySelector('.custom-dropdown');
-//     }
-//     dropdown.classList.toggle('active');
-// }
-
-// // Function to select an option
-// function selectOption(dropdownId, value, text) {
-//     let dropdown;
-//     if (dropdownId) {
-//         // If ID is provided, find the dropdown by data-id
-//         dropdown = document.querySelector(`.custom-dropdown[data-id="${dropdownId}"]`);
-//     } else {
-//         // If no ID is provided, find the first dropdown (old behavior)
-//         dropdown = document.querySelector('.custom-dropdown');
-//     }
-//     const button = dropdown.querySelector('.custom-dropdown-button');
-//     button.textContent = text;
-//     toggleDropdown(dropdownId); // Close the dropdown after selection
-//     console.log('Dropdown ID:', dropdownId, 'Selected value:', value, 'Text:', text);
-// }
-
-// // Close the dropdown if the user clicks outside
-// window.onclick = function (event) {
-//     if (!event.target.matches('.custom-dropdown-button')) {
-//         const dropdowns = document.querySelectorAll('.custom-dropdown');
-//         dropdowns.forEach(dropdown => {
-//             if (dropdown.classList.contains('active')) {
-//                 dropdown.classList.remove('active');
-//             }
-//         });
-//     }
-// };
-
-
-
-
-
-
-
-// Function to toggle the dropdown
 function toggleDropdown(event) {
+    // Stop event propagation to prevent immediate closing
+    event.stopPropagation();
+
     // Get the clicked button
     const button = event.target;
+
     // Find the parent dropdown container
     const dropdown = button.closest('.custom-dropdown');
-    // Toggle the active class only for the parent dropdown
+
+    // Close all other open dropdowns
+    document.querySelectorAll('.custom-dropdown').forEach(otherDropdown => {
+        if (otherDropdown !== dropdown) {
+            otherDropdown.classList.remove('active');
+        }
+    });
+
+    // Toggle the active class only for the clicked dropdown
     dropdown.classList.toggle('active');
 }
 
 // Function to select an option
 function selectOption(event, value, text) {
+    // Stop event propagation to prevent immediate closing
+    event.stopPropagation();
+
     // Get the clicked option
     const option = event.target;
+
     // Find the parent dropdown container
     const dropdown = option.closest('.custom-dropdown');
+
     // Find the button inside the dropdown
     const button = dropdown.querySelector('.custom-dropdown-button');
+
     // Update the button text
     button.textContent = text;
+
     // Close the dropdown after selection
     dropdown.classList.remove('active');
+
     console.log('Selected value:', value, 'Text:', text);
 }
 
-// Close the dropdown if the user clicks outside
-window.onclick = function (event) {
-    if (!event.target.matches('.custom-dropdown-button')) {
-        const dropdowns = document.querySelectorAll('.custom-dropdown');
-        dropdowns.forEach(dropdown => {
-            if (dropdown.classList.contains('active')) {
-                dropdown.classList.remove('active');
-            }
+// Close all dropdowns when clicking outside
+document.addEventListener('click', function (event) {
+    if (!event.target.closest('.custom-dropdown')) {
+        document.querySelectorAll('.custom-dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
         });
     }
-};
+});
+
+
+
 
 
 
