@@ -118,7 +118,7 @@ $(document).ready(function () {
                     top: offset.top,
                     left: offset.left + 170, // Move 170px to the right
                     display: 'block',
-                    zIndex: 1,
+                    zIndex: 99999,
                     overflowY: 'hidden' // Reset overflow
                 });
             } else if (spaceAbove >= submenuHeight) {
@@ -128,7 +128,7 @@ $(document).ready(function () {
                     top: offset.top + parentItem.outerHeight() - submenuHeight, // Align bottom of submenu with bottom of parent
                     left: offset.left + 170, // Move 170px to the right
                     display: 'block',
-                    zIndex: 1,
+                    zIndex: 99999,
                     overflowY: 'hidden' // Reset overflow
                 });
             } else {
@@ -140,7 +140,7 @@ $(document).ready(function () {
                         top: offset.top,
                         left: offset.left + 170, // Move 170px to the right
                         display: 'block',
-                        zIndex: 1,
+                        zIndex: 99999,
                         overflowY: 'auto', // Enable scroll
                         maxHeight: spaceBelow // Limit height to available space
                     });
@@ -151,7 +151,7 @@ $(document).ready(function () {
                         top: offset.top + parentItem.outerHeight() - Math.min(submenuHeight, spaceAbove), // Align bottom of submenu with bottom of parent
                         left: offset.left + 170, // Move 170px to the right
                         display: 'block',
-                        zIndex: 1,
+                        zIndex: 99999,
                         overflowY: 'auto', // Enable scroll
                         maxHeight: spaceAbove // Limit height to available space
                     });
@@ -258,7 +258,7 @@ $(document).ready(function () {
     });
     // menu bar
     $(".toggleBar").click(function () {
-        $(".side-bar").addClass('sidebarActive');
+        $(".side-bar").toggleClass('sidebarActive');
 
     });
     $(".closeSidebar").click(function () {
