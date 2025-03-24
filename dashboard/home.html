@@ -1712,7 +1712,7 @@
                         <div class="col-lg-6 col-mb-12 col-xl-4 employeeOnLeave">
                             <div class="bg-white rounded-4 shadow employee_on_leave_area section-items">
                                 <div class="d-flex align-items-center border-bottom justify-content-between p-3"
-                                    style="margin-bottom: .3rem;">
+                                    style="margin-bottom: .4rem;">
                                     <h1 class="text-black fs-5 fw-medium">Employee On Leave</h1>
                                     <!-- season selector -->
                                     <div class="season-selector">
@@ -1723,18 +1723,18 @@
                                         </select> -->
                                         <div class="custom-dropdown" style="width: 100%;">
                                             <!-- Dropdown button -->
-                                            <div class="custom-dropdown-button" style="padding: 5px 28px 5px 14px;"
-                                                onclick="toggleDropdown()">
+                                            <div class="custom-dropdown-button" style="padding: 3px 28px 3px 14px;"
+                                                onclick="toggleDropdown(event)">
                                                 This week
                                             </div>
                                             <!-- Dropdown options -->
-                                            <div class="shadow custom-dropdown-options">
+                                            <div class="shadow custom-dropdown-options" style=" top: 100% ;bottom: unset;">
                                                 <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption('1', 'This Week')">This Week</div>
+                                                    onclick="selectOption( event,'1', 'This Week')">This Week</div>
                                                 <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption('2', 'This Month')">This Month</div>
+                                                    onclick="selectOption( event,'2', 'This Month')">This Month</div>
                                                 <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption('3', 'This year')">This year</div>
+                                                    onclick="selectOption( event,'3', 'This year')">This year</div>
 
                                             </div>
                                         </div>
