@@ -1098,6 +1098,11 @@ footer {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 1270px) and (min-width: 1200px) {
+  .section-items h1 {
+    font-size: 1rem !important;
+  }
+}
 @media (max-width: 1150px) {
   .tabs-title {
     font-size: 20px;
