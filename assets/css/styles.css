@@ -880,16 +880,30 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+.header .notification-btn img {
+  height: 27px;
+  width: 27px;
+}
 .header .notification-btn:hover {
   background: #4A59A7;
 }
 .header .profiledetails {
+  width: 250px;
   border-radius: 5px;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 .header .profiledetails:hover {
   background: #4A59A7;
+}
+.header .profiledetails small {
+  display: block;
+}
+.header .profiledetails h1 {
+  margin: 0 !important;
 }
 
 .announcement-list .items {

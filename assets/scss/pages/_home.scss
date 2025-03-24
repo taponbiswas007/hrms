@@ -431,19 +431,32 @@ footer {
         justify-content: center;
         align-items: center;
 
+        img {
+            height: 27px;
+            width: 27px;
+        }
+
         &:hover {
             background: $blue;
         }
     }
 
     .profiledetails {
-
+        width: 250px;
         border-radius: 5px;
-
+        justify-content: space-between !important;
         transition: all 0.4s ease;
 
         &:hover {
             background: $blue;
+        }
+
+        small {
+            display: block;
+        }
+
+        h1 {
+            margin: 0 !important;
         }
     }
 }
