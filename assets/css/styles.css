@@ -216,6 +216,10 @@ ul {
   max-height: calc(100vh - 250px);
 }
 
+.roleDropdownarea .custom-dropdown-button {
+  color: #000000 !important;
+}
+
 .tabarea .tablink {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
