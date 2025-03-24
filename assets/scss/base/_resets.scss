@@ -124,6 +124,29 @@ html {
     /* Track color */
 }
 
+
+/* Hide scrollbar by default */
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+    opacity: 0;
+}
+
+/* Show scrollbar on hover */
+.scroll-container:hover::-webkit-scrollbar {
+    opacity: 1;
+}
+
+/* Thumb styling */
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #d0d0d09c;
+    border-radius: 100vw;
+}
+
+/* Track styling */
+.scroll-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 ul {
     list-style-type: none;
     margin-bottom: 0;

@@ -804,6 +804,38 @@ document.addEventListener('click', function (event) {
 });
 
 
+// scroll bar 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let scrollDivs = document.querySelectorAll(".scroll-container");
+
+    scrollDivs.forEach(div => {
+        // Hide scrollbar initially
+        div.style.overflow = "hidden";
+
+        // Show scrollbar on hover or touch
+        div.addEventListener("mouseenter", function () {
+            div.style.overflow = "auto";
+        });
+
+        div.addEventListener("mouseleave", function () {
+            div.style.overflow = "hidden";
+        });
+
+        // Show scrollbar on touch (for mobile)
+        div.addEventListener("touchstart", function () {
+            div.style.overflow = "auto";
+        });
+
+        div.addEventListener("touchend", function () {
+            setTimeout(() => {
+                div.style.overflow = "hidden";
+            }, 2000); // Hide after 2 seconds
+        });
+    });
+});
+
 
 
 
