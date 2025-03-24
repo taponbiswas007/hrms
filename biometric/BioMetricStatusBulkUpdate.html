@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fav icon -->
     <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
-    <title>Late Exceptions</title>
+    <title>BioMetric Status Bulk Update</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
     <!-- bootstrap -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- simple bar -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" /> -->
     <!-- <noscript>
         <style>
             /**
@@ -372,8 +372,9 @@
                                         href="attendanceDetails.html">Attendance</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Late <img class="d-inline" height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
+                                        aria-expanded="false">Biometric <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1" href="../attendance/attendanceDetails.html">My
                                                 Attendance</a></li>
@@ -386,23 +387,25 @@
                                         <li><a class="dropdown-item mb-1" href="employeeRegularizationRequests.html">HR
                                                 Task</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="#">Late</a>
+                                        <li><a class="dropdown-item mb-1" href="../late/lateUpdate.html">Late</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="#">Biometric</a>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="bioMetricStatusUpdate.html">Biometric</a>
                                         </li>
 
                                     </ul>
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Late Exceptions <img class="d-inline" height="20px "
-                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
-                                            alt=""></button>
+                                        aria-expanded="false">BioMetric Status Bulk Update <img class="d-inline"
+                                            height="20px " width="20px"
+                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
+                                        <li><a class="dropdown-item mb-1" href="bioMetricStatusUpdate.html">BioMetric
+                                                Status Update</a></li>
                                         <li><a class="dropdown-item mb-1"
-                                            href="lateUpdate.html">Late Update</a></li>
-                                    <li><a class="dropdown-item mb-1" href="lateExceptions.html">Late Exceptions</a>
-                                    </li>
+                                                href="BioMetricStatusBulkUpdate.html">BioMetric Status Bulk Update</a>
+                                        </li>
 
                                     </ul>
                                 </li>
@@ -416,7 +419,7 @@
                             <div class="d-flex select-criteria justify-content-between align-items-center  pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
                                 <h1 class=" fw-medium fs-6 text-black ">
-                                    Late Exceptions</h1>
+                                    Update Bio-Metric Registration Status</h1>
                                 <ul>
                                     <li>Role</li>
 
@@ -460,35 +463,38 @@
 
                             <div class=" pt-3">
 
-                                <h4 class=" fw-normal fs-8 text-danger lh-base">Note : It's Recommended to download Excel format and Red columns are mandatory</h4>
+                                <h4 class=" fw-normal fs-8  lh-base"><span class=" text-black">Bio Metrics Status Bulk
+                                        Upload</span> <span class=" text-danger">Note : It's Recommended to download
+                                        Excel format and Red columns are mandatory</span></h4>
                                 <h4 class=" fw-normal fs-8 text-black mt-2 lh-base">
-                                    Click Here to download format <a style="color: #008DFF;" href="#">DownLoad Excel Format</a>
+                                    Click Here to download format <a style="color: #008DFF;" href="#">DownLoad Excel
+                                        Format</a>
                                 </h4>
-                                
-                                    <div class="pt-3">
 
-                                        <div class="chooseFile-area">
-                                            <h1 class=" mb-2">Choose File</h1>
-                                            <div class="imageBox">
-                                                <img height="28px" width="28px"
-                                                    src="../assets/images/dashboard/imageupload.svg" alt="">
-                                                <h2>Drop your files here</h2>
-                                                <button class="btn bg-blue fw-bold text-white rounded-4">Choose
-                                                    file</button>
-                                            </div>
-                                        </div>
-                                        <div class="mt-3">
-                                            <div
-                                                class="d-flex justify-content-sm-end justify-content-center flex-wrap align-items-end gap-4">
-                                                <button class="btn bg-blue fw-bold text-white rounded-4">Upload</button>
-                                                <button class="btn bg-blue fw-bold text-white rounded-4"
-                                                    style="background: #5A6185;">Verify Data</button>
-                                                <button class="btn bg-blue fw-bold text-white rounded-4"
-                                                    style="background: #5A6185;">Bulk Insert</button>
-                                            </div>
-                                        </div>
+                                <div class="pt-3">
 
+                                    <div class="chooseFile-area">
+                                        <h1 class=" mb-2">Choose File</h1>
+                                        <div class="imageBox">
+                                            <img height="28px" width="28px"
+                                                src="../assets/images/dashboard/imageupload.svg" alt="">
+                                            <h2>Drop your files here</h2>
+                                            <button class="btn bg-blue fw-bold text-white rounded-4">Choose
+                                                file</button>
+                                        </div>
                                     </div>
+                                    <div class="mt-3">
+                                        <div
+                                            class="d-flex justify-content-sm-end justify-content-center flex-wrap align-items-end gap-4">
+                                            <button class="btn bg-blue fw-bold text-white rounded-4">Upload</button>
+                                            <button class="btn bg-blue fw-bold text-white rounded-4"
+                                                style="background: #5A6185;">Verify Data</button>
+                                            <button class="btn bg-blue fw-bold text-white rounded-4"
+                                                style="background: #5A6185;">Bulk Insert</button>
+                                        </div>
+                                    </div>
+
+                                </div>
 
 
                             </div>
@@ -522,7 +528,7 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <!-- simple bar js -->
-   <!-- <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script> -->
     <!-- js -->
     <script src="../assets/js/main.js"></script>
 
