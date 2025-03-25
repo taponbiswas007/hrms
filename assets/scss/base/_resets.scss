@@ -124,27 +124,39 @@ html {
     /* Track color */
 }
 
-/* Hide scrollbar by default */
-.scroll-container::-webkit-scrollbar {
-    width: 8px;
-    opacity: 0;
+.scroll-container {
+    overflow: hidden;
 }
 
-/* Show scrollbar on hover */
-.scroll-container:hover::-webkit-scrollbar {
-    opacity: 1;
+.scroll-container:hover {
+    overflow: auto;
 }
 
-/* Thumb styling */
-.scroll-container::-webkit-scrollbar-thumb {
-    background: #d0d0d09c;
-    border-radius: 100vw;
+/* Mobile touch devices might need this */
+@media (hover: none) {
+    .scroll-container {
+        overflow: auto;
+    }
 }
 
-/* Track styling */
-.scroll-container::-webkit-scrollbar-track {
-    background: transparent;
-}
+/* Scrollbar styling */
+// .scroll-container::-webkit-scrollbar {
+    //     width: 8px;
+    //     opacity: 0;
+    // }
+
+    // .scroll-container:hover::-webkit-scrollbar {
+    //     opacity: 1;
+    // }
+
+    // .scroll-container::-webkit-scrollbar-thumb {
+    //     background: #d0d0d09c;
+    //     border-radius: 100vw;
+    // }
+
+    // .scroll-container::-webkit-scrollbar-track {
+    //     background: transparent;
+    // }
 
 ul {
     list-style-type: none;

@@ -807,34 +807,35 @@ document.addEventListener('click', function (event) {
 // scroll bar
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    let scrollDivs = document.querySelectorAll(".scroll-container");
+// Use event delegation for dynamically added elements
+// document.addEventListener("DOMContentLoaded", function () {
+//     function setupScrollDiv(div) {
+//         div.style.overflow = "hidden";
 
-    scrollDivs.forEach(div => {
-        // Hide scrollbar initially
-        div.style.overflow = "hidden";
+//         div.addEventListener("mouseenter", function () {
+//             div.style.overflow = "auto";
+//         });
 
-        // Show scrollbar on hover or touch
-        div.addEventListener("mouseenter", function () {
-            div.style.overflow = "auto";
-        });
+//         div.addEventListener("mouseleave", function () {
+//             div.style.overflow = "hidden";
+//         });
 
-        div.addEventListener("mouseleave", function () {
-            div.style.overflow = "hidden";
-        });
+//         div.addEventListener("touchstart", function () {
+//             div.style.overflow = "auto";
+//         });
 
-        // Show scrollbar on touch (for mobile)
-        div.addEventListener("touchstart", function () {
-            div.style.overflow = "auto";
-        });
+//         div.addEventListener("touchend", function () {
+//             setTimeout(() => {
+//                 div.style.overflow = "hidden";
+//             }, 2000);
+//         });
+//     }
 
-        div.addEventListener("touchend", function () {
-            setTimeout(() => {
-                div.style.overflow = "hidden";
-            }, 2000); // Hide after 2 seconds
-        });
-    });
-});
+//     // Setup existing elements
+//     document.querySelectorAll(".scroll-container").forEach(setupScrollDiv);
+
+//     // Optional: If you add elements dynamically, you'd need to call setupScrollDiv on them
+// });
 
 
 
