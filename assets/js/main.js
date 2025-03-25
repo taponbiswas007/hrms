@@ -804,7 +804,7 @@ document.addEventListener('click', function (event) {
 });
 
 
-// scroll bar 
+// scroll bar
 
 
 document.addEventListener("DOMContentLoaded", function () {
