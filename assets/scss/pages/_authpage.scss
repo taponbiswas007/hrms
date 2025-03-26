@@ -91,6 +91,12 @@
 @media screen and (min-height: 600px) and (max-height: 768px) {
 
     .authpage {
+        .logo{
+            img{
+                width: 150px;
+                height: 100px;
+            }
+        }
         .forgot-password-link-area {
             margin-bottom: 15px !important;
         }

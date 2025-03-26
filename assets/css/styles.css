@@ -1241,6 +1241,10 @@ footer {
   }
 }
 @media screen and (min-height: 600px) and (max-height: 768px) {
+  .authpage .logo img {
+    width: 150px;
+    height: 100px;
+  }
   .authpage .forgot-password-link-area {
     margin-bottom: 15px !important;
   }
@@ -1324,4 +1328,4 @@ footer {
 .tab-content.statusactive {
   display: block;
   opacity: 1;
-}
+}/*# sourceMappingURL=styles.css.map */
