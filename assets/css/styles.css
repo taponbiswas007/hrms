@@ -1208,6 +1208,9 @@ footer {
 .formCard h2 {
   margin-top: 10px;
 }
+.formCard .user-name {
+  margin-bottom: 3rem;
+}
 
 @media (min-width: 768px) {
   .authpage {
@@ -1239,6 +1242,12 @@ footer {
     margin-bottom: 3% !important;
     display: block;
   }
+  .authpage .user-name {
+    margin-bottom: 15px !important;
+  }
+  .formCard .user-name {
+    margin-bottom: 1rem;
+  }
 }
 @media screen and (min-height: 600px) and (max-height: 768px) {
   .authpage .logo img {
@@ -1247,6 +1256,10 @@ footer {
   }
   .authpage .forgot-password-link-area {
     margin-bottom: 15px !important;
+  }
+  .formCard .user-name {
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 @media (max-height: 767px) {
