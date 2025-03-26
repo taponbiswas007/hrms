@@ -721,7 +721,7 @@ footer {
   width: 40%;
   position: absolute;
   bottom: -5px;
-  left: 5px;
+  left: 0;
 }
 .holidayMenu .holidayActive {
   color: #000000;
@@ -736,7 +736,7 @@ footer {
   width: 40%;
   position: absolute;
   bottom: -5px;
-  left: 5px;
+  left: 0;
 }
 
 .optionalHoliday {
