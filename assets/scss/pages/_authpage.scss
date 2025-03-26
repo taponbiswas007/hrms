@@ -82,8 +82,17 @@
 
     .authpage {
         .logo {
-            // margin-bottom: 60px !important;
+            margin-bottom: 3% !important;
             display: block;
+        }
+    }
+}
+
+@media screen and (min-height: 600px) and (max-height: 768px) {
+
+    .authpage {
+        .forgot-password-link-area {
+            margin-bottom: 15px !important;
         }
     }
 }
