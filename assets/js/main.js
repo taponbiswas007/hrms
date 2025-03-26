@@ -1,5 +1,56 @@
 $(document).ready(function () {
 
+    // Toggle dropdown when clicking the button
+    $(document).on('click', '.custom-dropdown-button', function (event) {
+        event.stopPropagation();
+
+        // Get the clicked button and its dropdown
+        const $button = $(this);
+        const $dropdown = $button.closest('.custom-dropdown');
+
+        // Close all other dropdowns
+        $('.custom-dropdown').not($dropdown).removeClass('active');
+
+        // Toggle current dropdown
+        $dropdown.toggleClass('active');
+    });
+
+    // Handle option selection
+    $(document).on('click', '.custom-dropdown-option', function (event) {
+        event.stopPropagation();
+
+        const $option = $(this);
+        const value = $option.data('value'); // Assuming you store value in data-value
+        const text = $option.text();
+
+        const $dropdown = $option.closest('.custom-dropdown');
+        const $button = $dropdown.find('.custom-dropdown-button');
+
+        // Update button text
+        $button.text(text);
+
+        // Close dropdown
+        $dropdown.removeClass('active');
+
+        console.log('Selected value:', value, 'Text:', text);
+
+        // Optional: Trigger change event
+        $dropdown.trigger('change', [value, text]);
+    });
+
+    // Close dropdowns when clicking outside
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.custom-dropdown').length) {
+            $('.custom-dropdown').removeClass('active');
+        }
+    });
+
+
+
+
+
+
+
 
 
 
@@ -710,132 +761,7 @@ function toggleSections() {
 
 
 
-// select function
 
-// // Function to toggle the dropdown
-// function toggleDropdown(event) {
-//     // Get the clicked button
-//     const button = event.target;
-//     // Find the parent dropdown container
-//     const dropdown = button.closest('.custom-dropdown');
-//     // Toggle the active class only for the parent dropdown
-//     dropdown.classList.toggle('active');
-// }
-
-// // Function to select an option
-// function selectOption(event, value, text) {
-//     // Get the clicked option
-//     const option = event.target;
-//     // Find the parent dropdown container
-//     const dropdown = option.closest('.custom-dropdown');
-//     // Find the button inside the dropdown
-//     const button = dropdown.querySelector('.custom-dropdown-button');
-//     // Update the button text
-//     button.textContent = text;
-//     // Close the dropdown after selection
-//     dropdown.classList.remove('active');
-//     console.log('Selected value:', value, 'Text:', text);
-// }
-
-// // Close the dropdown if the user clicks outside
-// window.onclick = function (event) {
-//     if (!event.target.matches('.custom-dropdown-button')) {
-//         const dropdowns = document.querySelectorAll('.custom-dropdown');
-//         dropdowns.forEach(dropdown => {
-//             if (dropdown.classList.contains('active')) {
-//                 dropdown.classList.remove('active');
-//             }
-//         });
-//     }
-// };
-
-// Function to toggle the dropdown
-function toggleDropdown(event) {
-    // Stop event propagation to prevent immediate closing
-    event.stopPropagation();
-
-    // Get the clicked button
-    const button = event.target;
-
-    // Find the parent dropdown container
-    const dropdown = button.closest('.custom-dropdown');
-
-    // Close all other open dropdowns
-    document.querySelectorAll('.custom-dropdown').forEach(otherDropdown => {
-        if (otherDropdown !== dropdown) {
-            otherDropdown.classList.remove('active');
-        }
-    });
-
-    // Toggle the active class only for the clicked dropdown
-    dropdown.classList.toggle('active');
-}
-
-// Function to select an option
-function selectOption(event, value, text) {
-    // Stop event propagation to prevent immediate closing
-    event.stopPropagation();
-
-    // Get the clicked option
-    const option = event.target;
-
-    // Find the parent dropdown container
-    const dropdown = option.closest('.custom-dropdown');
-
-    // Find the button inside the dropdown
-    const button = dropdown.querySelector('.custom-dropdown-button');
-
-    // Update the button text
-    button.textContent = text;
-
-    // Close the dropdown after selection
-    dropdown.classList.remove('active');
-
-    console.log('Selected value:', value, 'Text:', text);
-}
-
-// Close all dropdowns when clicking outside
-document.addEventListener('click', function (event) {
-    if (!event.target.closest('.custom-dropdown')) {
-        document.querySelectorAll('.custom-dropdown').forEach(dropdown => {
-            dropdown.classList.remove('active');
-        });
-    }
-});
-
-
-// scroll bar
-
-
-// Use event delegation for dynamically added elements
-// document.addEventListener("DOMContentLoaded", function () {
-//     function setupScrollDiv(div) {
-//         div.style.overflow = "hidden";
-
-//         div.addEventListener("mouseenter", function () {
-//             div.style.overflow = "auto";
-//         });
-
-//         div.addEventListener("mouseleave", function () {
-//             div.style.overflow = "hidden";
-//         });
-
-//         div.addEventListener("touchstart", function () {
-//             div.style.overflow = "auto";
-//         });
-
-//         div.addEventListener("touchend", function () {
-//             setTimeout(() => {
-//                 div.style.overflow = "hidden";
-//             }, 2000);
-//         });
-//     }
-
-//     // Setup existing elements
-//     document.querySelectorAll(".scroll-container").forEach(setupScrollDiv);
-
-//     // Optional: If you add elements dynamically, you'd need to call setupScrollDiv on them
-// });
 
 
 
