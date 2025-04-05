@@ -228,7 +228,6 @@ ul {
 
 .dropdown-menu {
   max-height: calc(100vh - 250px);
-  overflow-y: auto;
 }
 
 .roleDropdownarea .custom-dropdown-button {
