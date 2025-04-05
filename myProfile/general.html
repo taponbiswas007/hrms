@@ -368,54 +368,34 @@
                         <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a style="color: #757575;"
-                                        href="attendanceDetails.html">Attendance</a></li>
+                                        href="general.html">My Profile</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
-                                    <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">HR Task <img class="d-inline" height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
-                                    <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="../attendance/attendanceDetails.html">My
-                                                Attendance</a></li>
-                                        <li><a class="dropdown-item mb-1" href="../reports/attendance.html">Reports</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="../branchHr/markAttendance.html">Branch
-                                                Hr</a></li>
-                                        <li><a class="dropdown-item mb-1" href="#">Supervisor</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="employeeRegularizationRequests.html">HR
-                                                Task</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="../late/lateUpdate.html">Late</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1"
-                                                href="../biometric/bioMetricStatusUpdate.html">Biometric</a>
-                                        </li>
-
-                                    </ul>
+                                    <a  href="#" style="color: #757575;">My Info </a>
+                                  
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Multiple Days OD <img class="d-inline" height="20px "
+                                        aria-expanded="false">General <img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1"
-                                                href="employeeRegularizationRequests.html">Employee Regularization
-                                                Requests</a></li>
-                                        <li><a class="dropdown-item mb-1" href="multipleDaysOD.html">Multiple Days
-                                                OD</a></li>
-                                        <li><a class="dropdown-item mb-1" href="showRoster.html">Show Roster</a></li>
-                                        <li><a class="dropdown-item mb-1" href="uploadRoster.html">Roster Update</a>
+                                                href="general.html">General</a></li>
+                                        <li><a class="dropdown-item mb-1" href="administration.html">Administration</a></li>
+                                        <li><a class="dropdown-item mb-1" href="communication.html">Communication</a></li>
+                                        <li><a class="dropdown-item mb-1" href="financial.html">Financial</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
-                                                href="attendanceAutoRegularization.html">Attendance Auto
-                                                Regularization</a>
+                                                href="medical.html">Medical</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="scheduleBioSync.html">Schedule Bio
-                                                Sync</a>
+                                        <li><a class="dropdown-item mb-1" href="joining.html">Joining</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="attendancelocking.html">Attendance
-                                                locking</a>
+                                        <li><a class="dropdown-item mb-1" href="personal.html">Personal</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="educational.html">Educational</a>
+                                        <li><a class="dropdown-item mb-1" href="workExp.html">Work Exp.</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="other.html">Other</a>
                                         </li>
 
                                     </ul>
@@ -429,8 +409,14 @@
                         <div class="bg-white p-3 rounded-4 shadow mb-4">
                             <div class="d-flex select-criteria justify-content-between align-items-center  pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-5 text-black ">
-                                    General</h1>
+                                <div class="d-flex justify-content-start align-items-center gap-4">
+                                    <h1 class=" fw-medium fs-5 text-black ">
+                                        General</h1>
+                                    <button class="profileEditbtn">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </button>
+                                </div>
+                               
                                 <ul>
                                     <li>Role</li>
                                     <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
@@ -476,15 +462,77 @@
                             <div class="row g-4 pt-3">
 
 
-                                <div class="col-xxl-3 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-12">
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class=" mb-1" for="">
-                                        Select Employee Category
+                                        Title
                                     </label>
                                     <select name="" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-select fs-7" id="">
-                                        <option value="">Head Office</option>
-                                        <option value="">Example</option>
+                                        <option value="">Mr.</option>
+                                        <option value="">Mrs.</option>
                                     </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        First Name
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter First Name">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Middle Name
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter Middle Name">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Last Name
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter Last Name">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Employee Code
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter Employee Code">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Temp Code
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter Temp Code">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Status
+                                    </label>
+                                    <select name="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7" id="">
+                                        <option value="">Permanent</option>
+                                        <option value="">Part Time</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1 w-100" for="">
+                                        <div class="d-felx justify-content-between align-items-center">
+                                           <span class=" d-block"> Pan Card No</span>
+                                           <div class="d-flex justify-content-end align-items-center gap-3">
+                                            <label class="custom-checkbox" for="panCardCheckbox">
+                                                <input type="checkbox"  id="panCardCheckbox">
+                                                <span class="checkmark"></span>
+                                                Valid
+                                            </label>
+                                            
+                                           </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter Temp Code">
                                 </div>
                                 <div class="col-xxl-9 col-xl-7 col-lg-6 col-md-5 col-sm-4 col-12">
                                     <div class=" h-100 w-100 d-flex justify-content-end align-items-end">
@@ -500,159 +548,6 @@
                         <div class="bg-white p-3 rounded-4 shadow dataTable-area">
                             <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">
                                 List</h1>
-
-
-
-                            <!-- =============List start============= -->
-                            <div class=" mt-3 ">
-                                <div class="table-responsive statusDetailsTable">
-                                    <table class="table table-bordered border-gray">
-                                        <thead>
-                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top  align-middle"
-                                                style="color: #404040; background: #F9F9F9">
-                                                <th class="border-0">Code</th>
-                                                <th class="border-0">Name</th>
-                                                <th class="border-0">Supervisor</th>
-                                                <th class="border-0">Reason</th>
-                                                <th class="border-0">Req From</th>
-                                                <th class="border-0">Req To</th>
-                                                <th class="border-0">Days</th>
-                                                <th class="border-0">Req On</th>
-                                                <th class="border-0 text-center">
-                                                    Reject
-
-                                                </th>
-                                                <th class="border-0 text-center">
-                                                    Approved
-
-                                                </th>
-                                                <th class="border-0 text-center">
-                                                    Requested on
-
-                                                </th>
-
-
-                                            </tr>
-                                        </thead>
-                                        <tbody style="font-family: DM Sans, sans-serif;">
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
-                                                <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2 text-center">
-                                                    <div class=" position-relative "
-                                                        style="height: 20px; width: 20px; ">
-                                                        <label class="custom-checkbox">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2 text-center">
-                                                    <div class=" position-relative "
-                                                        style="height: 20px; width: 20px; ">
-                                                        <label class="custom-checkbox">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-
-                                                        </label>
-                                                    </div>
-                                                </td>
-
-                                                <td class="p-2">
-                                                    <select name="" class=" form-select fs-7" id=""
-                                                        style="width: fit-content;">
-                                                        <option value="">Reason Insufficient</option>
-                                                        <option value="">Example 1</option>
-                                                        <option value="">Example 2</option>
-                                                    </select>
-                                                </td>
-
-                                            </tr>
-
-
-
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- pagination area -->
-                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
-                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                                        <li>
-                                            <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                <i class="fa-angle-left fa-solid"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                Prev
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                Next
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <small>Page:</small>
-                                            <span>1</span>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex gap-2">
-                                                <small>Of</small>
-                                                <p>100</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="custom-dropdown">
-                                                <!-- Dropdown button -->
-                                                <div class="custom-dropdown-button" onclick="toggleDropdown(event)">
-                                                    10
-                                                </div>
-                                                <!-- Dropdown options -->
-                                                <div class="custom-dropdown-options shadow">
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '1', '10')">10</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '2', '11')">11</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '3', '12')">12</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '4', '13')">13</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '5', '14')">14</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class=" w-100 d-flex justify-content-end align-items-end pt-3 ">
-                                    <button class="btn bg-blue text-white rounded-4 px-4">Submit</button>
-                                </div>
-                            </div>
-
-                            <!-- =============List end============= -->
-
-
-
-
-
-
-
-
-
-
                         </div>
                         <!-- =================data table area end=================== -->
                     </div>
