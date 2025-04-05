@@ -1344,6 +1344,14 @@ footer {
   opacity: 1;
 }
 
+.form-control {
+  height: 42px;
+}
+
+.form-select {
+  height: 42px;
+}
+
 .profileEditbtn {
   height: 25px;
   width: 25px;
