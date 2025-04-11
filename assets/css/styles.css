@@ -1387,4 +1387,10 @@ footer {
   letter-spacing: 0%;
   text-transform: capitalize;
   color: #FC5A5A;
+}
+
+@media (max-width: 992px) {
+  .profile_image_box {
+    margin-bottom: 10px !important;
+  }
 }/*# sourceMappingURL=styles.css.map */
