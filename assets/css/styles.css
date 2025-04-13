@@ -1417,12 +1417,14 @@ footer {
   letter-spacing: -0.6%;
   vertical-align: middle;
   text-wrap: nowrap;
+  cursor: pointer;
 }
 .financial_filter_area li label .checkmark {
   height: 15px;
   width: 15px;
   margin-right: 0;
   margin-left: 8px;
+  cursor: pointer;
 }
 .financial_filter_area li label .checkmark::after {
   left: 37%;
@@ -1461,6 +1463,38 @@ footer {
   letter-spacing: 0%;
   text-align: left;
   color: #008DFF;
+}
+
+.custom-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.custom-radio:checked {
+  border-color: #65558F;
+}
+
+.custom-radio:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: #65558F;
+  border-radius: 50%;
 }
 
 @media (max-width: 992px) {
