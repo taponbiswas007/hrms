@@ -1389,8 +1389,72 @@ footer {
   color: #FC5A5A;
 }
 
+.financial_filter_area {
+  padding-left: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  overflow-x: auto;
+}
+.financial_filter_area li {
+  position: relative;
+}
+.financial_filter_area li label {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  text-wrap: nowrap;
+}
+.financial_filter_area li label .checkmark {
+  height: 15px;
+  width: 15px;
+  margin-right: 0;
+  margin-left: 8px;
+}
+.financial_filter_area li label .checkmark::after {
+  left: 37%;
+  top: 12%;
+  width: 5px;
+  height: 8px;
+}
+
+.select-consentforBulkReturn label {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #000000;
+}
+.select-consentforBulkReturn label .checkmark {
+  height: 15px;
+  width: 15px;
+  margin-right: 0;
+  margin-left: 8px;
+}
+.select-consentforBulkReturn label .checkmark::after {
+  left: 37%;
+  top: 12%;
+  width: 5px;
+  height: 8px;
+}
+
 @media (max-width: 992px) {
   .profile_image_box {
     margin-bottom: 10px !important;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
