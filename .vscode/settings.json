@@ -1,3 +1,99 @@
 {
-    "liveServer.settings.port": 5501
-}
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "~/../css"
+      }
+    ],
+    "liveSassCompile.settings.excludeList": [
+      "**/node_modules/**",
+      ".vscode/**",
+      "**/other-folder/**"
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.autoprefix": [
+      
+      "> 1%",
+      "last 2 versions"
+    ],
+    "liveSassCompile.settings.sassValidation": false,
+    "liveSassCompile.settings.watchSass": true,
+    "liveSassCompile.settings.formatter": "expanded",
+    "liveSassCompile.settings.rythem": 1000,
+    "liveSassCompile.settings.savePath": "/dist/css",
+    "workbench.colorTheme": "Cobalt2",
+    "workbench.settings.applyToAllProfiles": [
+      "emulator.emulatorPathWindows"
+    ],
+    "terminal.integrated.mouseWheelZoom": true,
+    "editor.mouseWheelZoom": true,
+    "json.schemas": [],
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "terminal.integrated.profiles.osx": {
+      "bash": {
+        "path": "bash",
+        "args": [
+          "-l"
+        ],
+        "icon": "terminal-bash"
+      },
+      "zsh": {
+        "path": "zsh",
+        "args": [
+          "-l"
+        ]
+      },
+      "fish": {
+        "path": "fish",
+        "args": [
+          "-l"
+        ]
+      },
+      "tmux": {
+        "path": "tmux",
+        "icon": "terminal-tmux"
+      },
+      "pwsh": {
+        "path": "pwsh",
+        "icon": "terminal-powershell"
+      }
+    },
+    "[php]": {
+      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "window.customTitleBarVisibility": "windowed",
+    "editor.suggest.showStatusBar": true,
+    "problems.showCurrentInStatus": true,
+    "errorLens.statusBarColorsEnabled": true,
+    "errorLens.statusBarIconsEnabled": true,
+    "errorLens.statusBarMessageEnabled": true,
+    "laravel-pint.enable": true,
+    "editor.formatOnSave": true,
+    "[blade]": {
+      "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "cSpell.userWords": [
+      "Adminprofile"
+    ],
+    "[scss]": {
+      "editor.defaultFormatter": "michelemelluso.code-beautifier"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "errorLens.excludeBySource": [
+      "Laravel Extension(asset)"
+    ],
+    "remote.SSH.remotePlatform": {
+      "198.54.115.151": "linux",
+      "bspdigitalsolutions.com": "linux"
+    },
+    "git.ignoreMissingGitWarning": true,
+    "bootstrapIntelliSense": {
+      "enable": true,
+      "bsVersion": "5.3.0"
+    }
+  }
