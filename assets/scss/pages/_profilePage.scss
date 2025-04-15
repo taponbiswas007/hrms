@@ -49,7 +49,7 @@
 
     li {
         position: relative;
-     
+
         label {
             font-family: Inter;
             font-weight: 500;
@@ -59,6 +59,7 @@
             vertical-align: middle;
             text-wrap: nowrap;
             cursor: pointer;
+
             .checkmark {
                 height: 15px;
                 width: 15px;
@@ -77,39 +78,43 @@
         }
     }
 }
-.select-consentforBulkReturn{
-    label{
-        font-family: Inter;
-font-weight: 500;
-font-size: 14px;
-line-height: 22.48px;
-letter-spacing: -0.6%;
-vertical-align: middle;
-color: #000000;
-.checkmark {
-    height: 15px;
-    width: 15px;
-    margin-right: 0;
-    margin-left: 8px;
 
-    &::after {
-        left: 37%;
-        top: 12%;
-        width: 5px;
-        height: 8px;
+.select-consentforBulkReturn {
+    label {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22.48px;
+        letter-spacing: -0.6%;
+        vertical-align: middle;
+        color: #000000;
+
+        .checkmark {
+            height: 15px;
+            width: 15px;
+            margin-right: 0;
+            margin-left: 8px;
+
+            &::after {
+                left: 37%;
+                top: 12%;
+                width: 5px;
+                height: 8px;
+            }
+        }
     }
 }
-    }
-}
-.fileupload_guidline{
+
+.fileupload_guidline {
     font-family: Inter;
-font-weight: 500;
-font-size: 12px;
-line-height: 125%;
-letter-spacing: 0%;
-text-align: left;
-color: #008DFF;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #008DFF;
 }
+
 .custom-radio {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -140,6 +145,7 @@ color: #008DFF;
     background-color: #65558F;
     border-radius: 50%;
 }
+
 @media (max-width: 992px) {
     .profile_image_box {
         margin-bottom: 10px !important;

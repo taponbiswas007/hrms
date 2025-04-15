@@ -1502,3 +1502,24 @@ footer {
     margin-bottom: 10px !important;
   }
 }
+.enter_code_only {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 22.7px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #000000;
+}
+
+@media (max-width: 376px) {
+  .myleaveBalance_header {
+    font-size: 1rem !important;
+  }
+  .leaveItem_title {
+    font-size: 0.775rem !important;
+  }
+  .totalLeaves_balance {
+    font-size: 0.775rem !important;
+  }
+}
