@@ -1512,6 +1512,29 @@ footer {
   color: #000000;
 }
 
+.requestedMark {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FF8A14;
+  background: rgba(255, 138, 20, 0.2392156863);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.cancelMark {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #009FD9;
+}
+
 @media (max-width: 376px) {
   .myleaveBalance_header {
     font-size: 1rem !important;
