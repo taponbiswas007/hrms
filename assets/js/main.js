@@ -475,6 +475,7 @@ $(document).ready(function () {
 
     $('.pendingBtn').click(function () { changeTab('pendingStatus'); });
     $('.approvedBtn').click(function () { changeTab('approvedStatus'); });
+    $('.cancelledBtn').click(function () { changeTab('cancelledStatus'); });
     $('.rejectedBtn').click(function () { changeTab('rejectedStatus'); });
 
 
