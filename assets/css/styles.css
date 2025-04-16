@@ -1535,6 +1535,35 @@ footer {
   color: #009FD9;
 }
 
+.employee_leave_details_list li {
+  margin-bottom: 10px;
+}
+.employee_leave_details_list li:last-child {
+  margin-bottom: 0;
+}
+.employee_leave_details_list li span {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #000000;
+  text-align: left;
+  width: 160px;
+  display: block;
+}
+.employee_leave_details_list li span:last-child {
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #000000;
+  text-align: left;
+}
+
 @media (max-width: 376px) {
   .myleaveBalance_header {
     font-size: 1rem !important;
