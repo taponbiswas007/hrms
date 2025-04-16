@@ -66,39 +66,45 @@
     }
 
 }
-.codebox{
+
+.codebox {
     background: #4A59A7;
     color: #ffffff;
     padding: 5px 5px;
     border-radius: 4px;
 }
-#leaveSummaryofsupervisor{
-    .modal-body{
+
+#leaveSummaryofsupervisor {
+    .modal-body {
         padding: 25px 30px 10px 30px !important;
-      
+
     }
-    .modal-footer{
+
+    .modal-footer {
         border-top: none;
         background: #C3CEFF33;
 
     }
-    .modal-title{
+
+    .modal-title {
         font-family: Inter;
-font-weight: 500;
-font-size: 16px;
-line-height: 22.48px;
-letter-spacing: -0.6%;
-vertical-align: middle;
-color: #000000;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22.48px;
+        letter-spacing: -0.6%;
+        vertical-align: middle;
+        color: #000000;
     }
 }
-@media (max-width: 540px){
-    #leaveSummaryofsupervisor{
-        .modal-title{
+
+@media (max-width: 540px) {
+    #leaveSummaryofsupervisor {
+        .modal-title {
             text-wrap: wrap !important;
         }
     }
 }
+
 @media (max-width: 376px) {
     .myleaveBalance_header {
         font-size: 1rem !important;
