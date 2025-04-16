@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
+    <title>Supervisor</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- simple bar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <noscript>
+        <style>
+            /**
+     
+      */
+            .simplebar-content-wrapper {
+                scrollbar-width: auto;
+                -ms-overflow-style: auto;
+            }
+
+            .simplebar-content-wrapper::-webkit-scrollbar,
+            .simplebar-hide-scrollbar::-webkit-scrollbar {
+                display: initial;
+                width: initial;
+                height: initial;
+            }
+        </style>
+    </noscript>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid px-0 overflow-x-hidden">
+        <div class="d-flex align-items-start justify-content-between">
+            <!-- side bar -->
+            <div class="bg-white side-bar vh-100">
+                <div class="position-relative inner_area">
+                    <a href="#" class="d-flex align-items-center justify-content-center p-3 logo"
+                        style=" background: url(../assets/images/dashboard/topbar_bg.png) no-repeat 0 0/100% 100%; margin-bottom: -1px">
+                        <img src="../assets/images/dashboard/logo.png" height="42px" width="63px" alt="logo">
+                    </a>
+
+                    <button class="d-block d-md-none position-absolute closeSidebar z-3"
+                        style=" top: 25px ; right: -10px">
+                        <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Arrow line -->
+                            <path d="M5 11H18" stroke="#8833ff" stroke-width="2" stroke-linecap="round" />
+                            <!-- Arrow head -->
+                            <path d="M12 5L5 11L12 17" stroke="#8833ff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <!-- Line to the left -->
+                            <path d="M1 2V18" stroke="#8833ff" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+
+                    <div data-simplebar class="bg-blue text-white menu  scroll-container">
+
+                        <!-- menu items -->
+                        <ul class="list-unstyled">
+
+                            <!-- admin -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link w-100">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/settings.svg"
+                                        alt="">
+                                    Admin
+                                </button>
+                                <!-- dropdown menu -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-1">Member Management</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Company Master</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">EMS Master</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Attendance Master</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">History Data</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Emp Seperation Master</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Confirmation Master </a></li>
+                                </ul>
+                            </li>
+                            <!-- Dashboard -->
+                            <li>
+                                <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
+                                    href="../dashboard/dashboard.html">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
+                                        alt="">
+                                    Dashboard
+                                </a>
+                            </li>
+
+                            <!-- my profile -->
+                            <li>
+                                <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
+                                    href="general.html">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/profile.svg" alt="">
+                                    My Profile
+                                </a>
+                            </li>
+
+                            <!-- Attendance -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link sidebar-link-btn">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/attendance.svg"
+                                        alt="">
+                                    Attendance
+                                </button>
+
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="../attendance/attendanceDetails.html" class="dropdown-item mb-1">My
+                                            Attendance</a></li>
+                                    <li><a href="../reports/attendance.html" class="dropdown-item mb-1">Reports</a></li>
+                                    <li><a href="../branchHr/markAttendance.html" class="dropdown-item mb-1">Branch
+                                            Hr</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Supervisor</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">HR Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Late</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Biometric</a></li>
+                                </ul>
+                            </li>
+                            <!-- Leaves -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg" alt="">
+                                    Leave
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-1">My Leaves</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Supervisor</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Reports</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">HR Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Leave Regularization</a></li>
+                                </ul>
+                            </li>
+                            <!-- employee -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/employee.svg"
+                                        alt="">
+                                    Employee
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-1">Employee Management</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">HR Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Reports</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Probation -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
+                                        alt="">
+                                    Probation
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-1">My Probation</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Probation KRA</a></li>
+                                </ul>
+                            </li>
+                            <!-- Bulk upload -->
+                            <li>
+                                <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
+                                    href="#">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/bulkUpload.svg"
+                                        alt="">
+                                    Bulk Upload
+                                </a>
+                            </li>
+                            <!-- Assets -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
+                                        alt="">
+                                    Assets
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-1">Asset Issuance</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Reports</a></li>
+                                </ul>
+                            </li>
+                            <!-- PMS -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/performance.svg"
+                                        alt="">
+                                    PMS
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-1">Self Appraisal</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Team Appraisal</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Reviewer Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">HR View</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Status Change</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Hierarchy BulkUpload</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">KRA BulkUpload</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">PMS Master</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- LMS -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/learn-outline.svg"
+                                        alt="">
+                                    LMS
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-1">Admin Dashboard</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Course Management</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Assessment</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Module</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">QuestionBank</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">My Dashboard</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">My Courses</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Category</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Reports</a></li>
+
+                                </ul>
+                            </li>
+
+                            <!-- Reimbursements -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/expanse.svg" alt="">
+                                    Reimbursements
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-1">My Claim</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Claim Approval</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Claim Payment</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Configuration</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Claim Report</a></li>
+                                </ul>
+                            </li>
+
+
+                            <!-- Managerial Task -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/task.svg" alt="">
+                                    Managerial Task
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-1">Supervisor Task</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Department Clearance</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">L1 Probation Approval</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">L2 Probation Approval</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-white fs-7 fw-normal py-2 sidebar-link"
+                                    href="#">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/registration.svg"
+                                        alt="">
+                                    Resignation
+                                </a>
+                            </li>
+
+                            <!-- HR Policies  -->
+                            <li class="sidebar-link-items">
+                                <button
+                                    class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white w-100 fs-7 fw-normal py-2 sidebar-link">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/policy.svg" alt="">
+                                    HR Policies
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="border-0 p-2 position-absolute rounded-0 shadow sidebar-submenu">
+                                    <li><a href="#" class="dropdown-item mb-1">Document</a></li>
+                                    <li><a href="#" class="dropdown-item mb-1">Document Master</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- main content area -->
+            <div class="main-content">
+                <!-- header area -->
+                <div class="d-flex align-items-center justify-content-between header  px-1 px-md-4 sticky-top z-3">
+                    <div class="d-flex align-items-center justify-content-start gap-4">
+                        <button class="d-block d-md-none toggleBar">
+                            <svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!-- Top Bar -->
+                                <rect x="16" y="60" width="416" height="40" rx="4" fill="#ffffff" />
+                                <!-- Middle Bar -->
+                                <rect x="16" y="220" width="416" height="40" rx="4" fill="#ffffff" />
+                                <!-- Bottom Bar -->
+                                <rect x="16" y="380" width="416" height="40" rx="4" fill="#ffffff" />
+                            </svg>
+                        </button>
+                        <!-- <h1 class="d-none d-sm-block text-uppercase text-white fs-7 fw-semibold">forest essentials</h1> -->
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end">
+                        <!-- notification area -->
+                        <button class="notification-btn">
+                            <img src="../assets/images/dashboard/bell.svg" alt="">
+                        </button>
+
+                        <!-- profile area -->
+                        <div class=" position-relative">
+                            <button class="d-flex align-items-center justify-content-end profiledetails"
+                                id="headerProfile">
+                                <img height="45px" width="45px" class="rounded-circle"
+                                    src="../assets/images/dashboard/managerimg.png" alt="">
+                                <div class="name-and-position">
+                                    <h1 class="text-capitalize text-start text-white fs-7 fw-semibold mb-0 mx-3">Austin
+                                        Robertson</h1>
+                                    <small class="text-capitalize text-start text-white fs-8">Hr Manager</small>
+                                </div>
+                                <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
+                            </button>
+                            <ul
+                                class="headerProfileDropdown bg-white  rounded-4 top-100 end-0 position-absolute shadow-lg py-3 px-2">
+                                <li><a class="d-flex w-100 dropdown-item align-items-center justify-content-start gap-2 mb-2"
+                                        href="#"> <img height="30px" width="30px"
+                                            src="../assets/images/dashboard/info_icon.svg" alt=""> Personal
+                                        Information</a></li>
+                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-2 mb-2"
+                                        href="#"> <img height="30px" width="30px"
+                                            src="../assets/images/dashboard/lock-password.svg" alt=""> Change
+                                        Password</a></li>
+                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-2 mb-2"
+                                        href="../authentication-pages/login.html"> <img height="30px" width="30px"
+                                            src="../assets/images/dashboard/logout.svg" alt=""> Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ================main content area start============== -->
+                <div class="main-content-area pb-5 pt-3 px-2 px-md-5">
+
+                    <!-- tabs area -->
+                    <div
+                        class="d-flex align-items-center bg-white justify-content-between p-3 rounded-3 shadow-sm mb-3 tabarea">
+
+                        <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a style="color: #757575;"
+                                        href="leaveRequest.html">Leave</a></li>
+                                <li class="breadcrumb-item"><a style="color: #757575;"
+                                        href="#">Supervisor</a></li>
+
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Leave Approval <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
+                                    <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
+                                        <li><a class="dropdown-item mb-1" href="leaveApproval.html">Leave Approval</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="requestforSubordinate.html">Request for Subordinate</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="restrictedHolidayApproval.html">Restricted Holiday Approval</a>
+                                        </li>
+                                       
+
+
+                                    </ul>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <!-- ================= Main body area area start================= -->
+                    <div class="main-body-area pb-4 pt-3">
+                        <div class="bg-white p-3 rounded-4 shadow mb-4">
+                            <div class="d-flex select-criteria justify-content-between align-items-center  pb-3"
+                                style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                <div class="d-flex justify-content-start align-items-center gap-4">
+                                    <h1 class=" fw-medium fs-5 text-black ">
+                                        Request Type</h1>
+
+                                </div>
+                                <ul>
+                                    <li>Role</li>
+                                    <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
+
+
+                                    <li class="roleDropdownarea">
+                                        <div class="custom-dropdown roleDropdown" style="width: 100%;">
+                                            <!-- Dropdown button -->
+                                            <div class="custom-dropdown-button border-0"
+                                                style="font-size: 12px !important; padding:0 18px 0 0;"
+                                                onclick="toggleDropdown(event)">
+                                                HR Factory
+                                            </div>
+                                            <!-- Dropdown options -->
+                                            <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
+                                                style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'1', ' HR Factory')"> HR Factory</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'2', 'L2')">L2</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'3', 'L1')">L1</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'4', 'CorpComm')">CorpComm</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'5', 'Administration Clearance Factory')">
+                                                    Administration Clearance Factory</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'6', 'Business Card')">Business Card
+                                                </div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'7', 'HRADMIN')">HRADMIN</div>
+                                                <div class="text-nowrap custom-dropdown-option"
+                                                    onclick="selectOption(event,'8', 'Administration')">Administration
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row g-4 pt-4">
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Request Type
+                                    </label>
+                                    <select name="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7" id="">
+                                        <option value="">Leave Request</option>
+                                        <option value="">Leave Request</option>
+                                    </select>
+                                </div>
+                               
+                                <div class="col-xxl-9 col-xl-8 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class=" h-100 w-100 d-flex justify-content-end align-items-end pt-3">
+                                        <button class="btn bg-blue text-white rounded-4 px-5">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                         <!-- =================data table area start=================== -->
+                         <div class="bg-white p-3 rounded-4 shadow dataTable-area">
+                            <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                Restricted Holiday For Year 2025</h1>
+
+                            <div class="table-responsive mt-3">
+                                <table class="table table-bordered border-gray">
+                                    <thead>
+                                        <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
+                                            style="color: #404040; background: #F9F9F9">
+                                            <th class="border-0">Code</th>
+                                            <th class="border-0">Name</th>
+                                            <th class="border-0">Req On</th>
+                                            <th class="border-0">From</th>
+                                            <th class="border-0">To</th>
+                                            <th class="border-0">Type</th>
+                                            <th class="border-0">DAYS</th>
+                                            <th class="border-0">Days_Type</th>
+                                            <th class="border-0 text-center">Reject</th>
+                                            <th class="border-0 text-center">Approved</th>
+                                            <th class="border-0">Rejection Reason</th>
+
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody style="font-family: DM Sans, sans-serif; font-size: 12px !important;">
+                                        <tr class="text-nowrap  fw-normal"
+                                            style="color: #202020; height: 50px; vertical-align: middle; ">
+                                            <td class="p-2 text-center">
+                                                <button class="codebox" data-bs-target="#leaveSummaryofsupervisor" data-bs-toggle="modal" type="button">
+                                                    TEMP 2
+                                                </button>
+                                            </td>
+                                            <td class="p-2">Abhinav Rana</td>
+                                            <td class="p-2">20/May/2025</td>
+                                            <td class="p-2">24/Apr/2025</td>
+                                            <td class="p-2">24/Apr/2025</td>
+                                            <td class="p-2">CL</td>
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">DAYS</td>
+                                            <td class="p-2 text-center">
+                                                <div class=" position-relative ">
+                                                    <label class="custom-checkbox" for="rejectCheck">
+                                                        <input type="checkbox" id="rejectCheck">
+                                                        <span class="checkmark" style="margin-top: -2px;"></span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 text-center">
+                                                <div class=" position-relative ">
+                                                    <label class="custom-checkbox" for="approvedHoliday">
+                                                        <input type="checkbox" id="approvedHoliday">
+                                                        <span class="checkmark" style="margin-top: -2px;"></span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="p-2">
+                                                <span class="reasonbox form-control">
+                                                   Less Man Power
+                                                </span>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr class="text-nowrap  fw-normal"
+                                            style="color: #202020; height: 50px; vertical-align: middle; ">
+                                            <td class="p-2 text-center">
+                                                <button class="codebox" data-bs-target="#leaveSummaryofsupervisor" data-bs-toggle="modal" type="button">
+                                                    TEMP 2
+                                                </button>
+                                            </td>
+                                            <td class="p-2">Abhinav Rana</td>
+                                            <td class="p-2">20/May/2025</td>
+                                            <td class="p-2">24/Apr/2025</td>
+                                            <td class="p-2">24/Apr/2025</td>
+                                            <td class="p-2">CL</td>
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">DAYS</td>
+                                            <td class="p-2 text-center">
+                                                <div class=" position-relative ">
+                                                    <label class="custom-checkbox" for="rejectCheck1">
+                                                        <input type="checkbox" id="rejectCheck1">
+                                                        <span class="checkmark" style="margin-top: -2px;"></span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 text-center">
+                                                <div class=" position-relative ">
+                                                    <label class="custom-checkbox" for="approvedHoliday1">
+                                                        <input type="checkbox" id="approvedHoliday1">
+                                                        <span class="checkmark" style="margin-top: -2px;"></span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="p-2">
+                                                <span class="reasonbox form-control">
+                                                   Less Man Power
+                                                </span>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr class="text-nowrap  fw-normal"
+                                            style="color: #202020; height: 50px; vertical-align: middle; ">
+                                            <td class="p-2 text-center">
+                                                <button class="codebox" data-bs-target="#leaveSummaryofsupervisor" data-bs-toggle="modal" type="button">
+                                                    TEMP 2
+                                                </button>
+                                            </td>
+                                            <td class="p-2">Abhinav Rana</td>
+                                            <td class="p-2">20/May/2025</td>
+                                            <td class="p-2">24/Apr/2025</td>
+                                            <td class="p-2">24/Apr/2025</td>
+                                            <td class="p-2">CL</td>
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">DAYS</td>
+                                            <td class="p-2 text-center">
+                                                <div class=" position-relative ">
+                                                    <label class="custom-checkbox" for="rejectCheck2">
+                                                        <input type="checkbox" id="rejectCheck2">
+                                                        <span class="checkmark" style="margin-top: -2px;"></span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 text-center">
+                                                <div class=" position-relative ">
+                                                    <label class="custom-checkbox" for="approvedHoliday2">
+                                                        <input type="checkbox" id="approvedHoliday2">
+                                                        <span class="checkmark" style="margin-top: -2px;"></span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="p-2">
+                                                <span class="reasonbox form-control">
+                                                   Less Man Power
+                                                </span>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr class="text-nowrap  fw-normal"
+                                            style="color: #202020; height: 50px; vertical-align: middle; ">
+                                            <td class="p-2 text-center">
+                                                <button class="codebox" data-bs-target="#leaveSummaryofsupervisor" data-bs-toggle="modal" type="button">
+                                                    TEMP 2
+                                                </button>
+                                            </td>
+                                            <td class="p-2">Abhinav Rana</td>
+                                            <td class="p-2">20/May/2025</td>
+                                            <td class="p-2">24/Apr/2025</td>
+                                            <td class="p-2">24/Apr/2025</td>
+                                            <td class="p-2">CL</td>
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">DAYS</td>
+                                            <td class="p-2 text-center">
+                                                <div class=" position-relative ">
+                                                    <label class="custom-checkbox" for="rejectCheck3">
+                                                        <input type="checkbox" id="rejectCheck3">
+                                                        <span class="checkmark" style="margin-top: -2px;"></span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 text-center">
+                                                <div class=" position-relative ">
+                                                    <label class="custom-checkbox" for="approvedHoliday3">
+                                                        <input type="checkbox" id="approvedHoliday3">
+                                                        <span class="checkmark" style="margin-top: -2px;"></span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="p-2">
+                                                <span class="reasonbox form-control">
+                                                   Less Man Power
+                                                </span>
+                                            </td>
+
+
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                          
+
+
+
+
+
+
+                        </div>
+                        <!-- =================data table area end=================== -->
+
+
+
+
+                        <!-- ================================================ -->
+                        <!-- ===========leave details pop up area start====== -->
+                        <!-- ================================================ -->
+
+                        <div class="modal fade" id="leaveSummaryofsupervisor" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                 <div class="d-flex justify-content-start flex-lg-row flex-column align-items-center gap-3">
+                                    <h5 class="modal-title text-nowrap" id="exampleModalToggleLabel">Leave Summary of: Abhinav Rana [TEMP2]</h5>
+                                    <select name="" class=" form-select fs-7" id="">
+                                        <option value="">2024-2025</option>
+                                        <option value="">2024-2025</option>
+                                        <option value="">2024-2025</option>
+                                    </select>
+                                   
+                                 </div>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="table-responsive ">
+                                        <table class="table table-bordered border-gray">
+                                            <thead>
+                                                <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
+                                                    style="color: #404040; background: #F9F9F9">
+                                                    <th class="border-0">Type</th>
+                                                    <th class="border-0 ">Opening Balance</th>
+                                                    <th class="border-0 ">Applied</th>
+                                                    <th class="border-0">Taken</th>
+                                                    <th class="border-0">Remaining</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody style="font-family: DM Sans, sans-serif;">
+                                                <tr class="text-nowrap fs-7 fw-normal"
+                                                    style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2" style="min-width: 250px">
+                                                        CL (Casual Leave)
+                                                    </td>
+                                                    <td class="p-2 " style="min-width: 100px">
+                                                        6
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                </tr>
+        
+                                                <tr class="text-nowrap fs-7 fw-normal"
+                                                    style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2" style="min-width: 250px">
+                                                        SL (Sick Leave)
+                                                    </td>
+                                                    <td class="p-2 " style="min-width: 100px">
+                                                        6
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-nowrap fs-7 fw-normal"
+                                                    style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2" style="min-width: 250px">
+                                                        AL (Annual Leave)
+                                                    </td>
+                                                    <td class="p-2 " style="min-width: 100px">
+                                                        6
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-nowrap fs-7 fw-normal"
+                                                    style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2" style="min-width: 250px">
+                                                        CO (Compensatory Off)
+                                                    </td>
+                                                    <td class="p-2 " style="min-width: 100px">
+                                                        6
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-nowrap fs-7 fw-normal"
+                                                    style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2" style="min-width: 250px">
+                                                        LP (Leave Without Pay)
+                                                    </td>
+                                                    <td class="p-2 " style="min-width: 100px">
+                                                        6
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-nowrap fs-7 fw-normal"
+                                                    style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2" style="min-width: 250px">
+                                                        SP (Special Leave)
+                                                    </td>
+                                                    <td class="p-2 " style="min-width: 100px">
+                                                        6
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-nowrap fs-7 fw-normal"
+                                                    style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2" style="min-width: 250px">
+                                                        WH (Work From home)
+                                                    </td>
+                                                    <td class="p-2 " style="min-width: 100px">
+                                                        6
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-nowrap fs-7 fw-normal"
+                                                    style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2" style="min-width: 250px">
+                                                        CD (Covid Leave)
+                                                    </td>
+                                                    <td class="p-2 " style="min-width: 100px">
+                                                        6
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-nowrap fs-7 fw-normal"
+                                                    style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2" style="min-width: 250px">
+                                                        OL (Odd Even Leave)
+                                                    </td>
+                                                    <td class="p-2 " style="min-width: 100px">
+                                                        6
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                </tr>
+                                                <!-- total balance area start -->
+                                                <tr class="text-nowrap fs-7 fw-normal"
+                                                    style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-bold" style="min-width: 250px">
+                                                        Total:(SP-Special Leave is not calculated in total)
+                                                    </td>
+                                                    <td class="p-2 fw-bold " style="min-width: 100px">
+                                                        30
+                                                    </td>
+                                                    <td class="p-2 fw-bold" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2 fw-bold" style="min-width: 100px;">
+                                                        0
+                                                    </td>
+                                                    <td class="p-2 fw-bold" style="min-width: 100px;">
+                                                        30
+                                                    </td>
+                                                </tr>
+                                                <!-- total balance area end -->
+        
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                 
+                                  <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                         
+                          
+
+                        <!-- ================================================ -->
+                        <!-- ===========leave details pop up area end====== -->
+                        <!-- ================================================ -->
+                      
+
+
+                    </div>
+                    <!-- ================= Main body area area end================= -->
+
+
+
+
+                </div>
+                <!-- ================main content area end============== -->
+                <!-- ==========footer area start========= -->
+                <footer class="d-flex align-items-center justify-content-center p-2" style=" background: #DBE1FF;">
+                    <small class="text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
+                </footer>
+                <!-- ==========footer area end========= -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <!-- simple bar js -->
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- js -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

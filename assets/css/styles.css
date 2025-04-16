@@ -515,7 +515,7 @@ ul {
 }
 
 .header {
-  z-index: 1000000000000000000000000000000;
+  z-index: 99;
 }
 .header .headerProfileDropdown {
   width: 250px;
@@ -1564,6 +1564,35 @@ footer {
   text-align: left;
 }
 
+.codebox {
+  background: #4A59A7;
+  color: #ffffff;
+  padding: 5px 5px;
+  border-radius: 4px;
+}
+
+#leaveSummaryofsupervisor .modal-body {
+  padding: 25px 30px 10px 30px !important;
+}
+#leaveSummaryofsupervisor .modal-footer {
+  border-top: none;
+  background: rgba(195, 206, 255, 0.2);
+}
+#leaveSummaryofsupervisor .modal-title {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #000000;
+}
+
+@media (max-width: 540px) {
+  #leaveSummaryofsupervisor .modal-title {
+    text-wrap: wrap !important;
+  }
+}
 @media (max-width: 376px) {
   .myleaveBalance_header {
     font-size: 1rem !important;
