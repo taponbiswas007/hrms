@@ -74,6 +74,8 @@
     border-radius: 4px;
 }
 
+
+
 #leaveSummaryofsupervisor {
     .modal-body {
         padding: 25px 30px 10px 30px !important;
@@ -97,6 +99,32 @@
     }
 }
 
+.flug_identify_area {
+    color: #000000;
+
+    span {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 12.56px;
+        line-height: 17.65px;
+        letter-spacing: -0.6%;
+        vertical-align: middle;
+        color: #000000;
+    }
+
+    img {
+        height: 15px;
+        width: 12px;
+    }
+}
+
+.leaverequesteditbtn {
+    background: #4A59A7;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
 @media (max-width: 540px) {
     #leaveSummaryofsupervisor {
         .modal-title {
@@ -116,5 +144,14 @@
 
     .totalLeaves_balance {
         font-size: .775rem !important;
+    }
+
+    .flug_identify_area {
+        flex-direction: column !important;
+        margin-top: 20px;
+
+        .legendDivider {
+            display: none !important;
+        }
     }
 }

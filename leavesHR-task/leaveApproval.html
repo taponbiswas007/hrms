@@ -104,7 +104,7 @@
 
                             <!-- my profile -->
                             <li>
-                                  <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
+                                <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
                                     href="../myProfile/general.html">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/profile.svg" alt="">
                                     My Profile
@@ -376,14 +376,17 @@
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1" href="../myLeave/leaveRequest.html">My
                                                 Leave</a></li>
-                                        
-                                        <li><a class="dropdown-item mb-1" href="../supervisor/leaveApproval.html">Supervisor</a>
+
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../supervisor/leaveApproval.html">Supervisor</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="../leavesHR-task/leaveApproval.html">HR Task</a>
+                                        <li><a class="dropdown-item mb-1" href="../leavesHR-task/leaveApproval.html">HR
+                                                Task</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="../leavesHR-task/leaveApproval.html">HR Task</a>
+                                        <li><a class="dropdown-item mb-1" href="../leavesHR-task/leaveApproval.html">HR
+                                                Task</a>
                                         </li>
-                                     
+
 
                                     </ul>
                                 </li>
@@ -393,15 +396,25 @@
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="leaveApproval.html">Leave Approval</a></li>
+                                        <li><a class="dropdown-item mb-1" href="leaveApproval.html">Leave Approval</a>
+                                        </li>
                                         <li><a class="dropdown-item mb-1" href="mailGroup.html">Mail Group</a></li>
-                                        <li><a class="dropdown-item mb-1" href="mailTemplate.html">Mail Template</a></li>
-                                        <li><a class="dropdown-item mb-1" href="absenteesList.html">Absentees List</a></li>
-                                        <li><a class="dropdown-item mb-1" href="compensatoryOffInsert.html">Compensatory Off Insert</a></li>
-                                        <li><a class="dropdown-item mb-1" href="compensatoryOffUpdate.html">Compensatory Off Update</a></li>
-                                        <li><a class="dropdown-item mb-1" href="restrictedHolidayApproveReject.html">Restricted Holiday Approve Reject</a></li>
-                                        <li><a class="dropdown-item mb-1" href="hRApprovedLeaveView.html">HR Approved Leave View</a></li>
-                                        <li><a class="dropdown-item mb-1" href="compensatoryOffInsert2.html">Compensatory Off Insert Final</a></li>
+                                        <li><a class="dropdown-item mb-1" href="mailTemplate.html">Mail Template</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="absenteesList.html">Absentees List</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="compensatoryOffInsert.html">Compensatory
+                                                Off Insert</a></li>
+                                        <li><a class="dropdown-item mb-1" href="compensatoryOffUpdate.html">Compensatory
+                                                Off Update</a></li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="restrictedHolidayApproveReject.html">Restricted Holiday Approve
+                                                Reject</a></li>
+                                        <li><a class="dropdown-item mb-1" href="hRApprovedLeaveView.html">HR Approved
+                                                Leave View</a></li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="compensatoryOffInsert2.html">Compensatory Off Insert Final</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ol>
@@ -468,11 +481,11 @@
                                         <option value="">Example</option>
                                     </select>
                                 </div>
-                               
+
 
                                 <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label class=" mb-1" for="">
-                                       Employee Category
+                                        Employee Category
                                     </label>
                                     <select name="" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-select fs-7" id="">
@@ -492,73 +505,93 @@
 
                         <!-- =================data table area start=================== -->
                         <div class="bg-white p-3 rounded-4 shadow dataTable-area">
-                            
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                        List</h1>
+
+                            <div class=" w-100 d-flex flex-sm-row flex-column justify-content-between align-items-center pb-3"
+                                style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                <h1 class=" fw-medium fs-5 text-black  ">
+                                    Leave Request</h1>
+                                <div class="d-flex justify-content-end align-items-center gap-3 flug_identify_area">
+                                    <div class="d-flex justify-content-end align-content-center gap-2">
+                                        <span>Legends</span>
+                                        <img src="../assets/images/leaves/orange_flug.svg" alt="Flug">
+                                        <span>= Older than 3 days</span>
+                                    </div>
+                                    <div class="legendDivider">|</div>
+                                    <div class="d-flex justify-content-end align-content-center gap-2">
+
+                                        <img src="../assets/images/leaves/blue_flug.svg" alt="Flug">
+                                        <span>= Current</span>
+                                    </div>
                                 </div>
+                            </div>
 
 
 
                             <!-- =============List start============= -->
                             <div class="mt-3">
-                                <div class="table-responsive statusDetailsTable">
+                                <div class="table-responsive ">
                                     <table class="table table-bordered border-gray">
                                         <thead>
                                             <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top align-top"
                                                 style="color: #404040; background: #F9F9F9">
+                                                <th class="border-0">
+                                                    <img style="height: 15px; width: 12px;"
+                                                        src="../assets/images/leaves/black_flug.svg" alt="Flug">
+                                                </th>
                                                 <th class="border-0">Code</th>
                                                 <th class="border-0">Name</th>
-                                                <th class="border-0">Supervisor</th>
-                                                <th class="border-0">Reason</th>
-                                                <th class="border-0">Req Date</th>
-                                                <th class="border-0">Date</th>
-                                                <th class="border-0">Actual Time</th>
-                                                <th class="border-0">Total Time</th>
-                                                <th class="border-0">InTime</th>
-                                                <th class="border-0">OutTime</th>
+                                                <th class="border-0">From</th>
+                                                <th class="border-0">To</th>
+                                                <th class="border-0">Leave</th>
                                                 <th class="border-0">Days</th>
-                                                <th class="border-0 text-center">
+                                                <th class="border-0">Days_Type</th>
+
+                                                <th class="border-0 text-center ">
                                                     Reject
                                                     <br>
-                                                    <label class="custom-checkbox thCustom-checkbox d-flex justify-content-center align-items-center">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark me-0" style="height: 15px; width:15px"></span>
+                                                    <label
+                                                        class="custom-checkbox thCustom-checkbox d-flex justify-content-center align-items-center">
+                                                        <input type="checkbox" class="reject_checkbox">
+                                                        <span class="checkmark me-0"
+                                                            style="height: 15px; width:15px"></span>
 
                                                     </label>
                                                 </th>
                                                 <th class="border-0 text-center">
                                                     Approved
                                                     <br>
-                                                    <label class="custom-checkbox thCustom-checkbox d-flex justify-content-center align-items-center">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark me-0" style="height: 15px; width:15px"></span>
+                                                    <label
+                                                        class="custom-checkbox thCustom-checkbox d-flex justify-content-center align-items-center">
+                                                        <input type="checkbox" class="approved_checkbox">
+                                                        <span class="checkmark me-0"
+                                                            style="height: 15px; width:15px"></span>
 
                                                     </label>
                                                 </th>
-                                                <th class="border-0">Rejection Reason</th>
+                                                <th class="border-0">Document</th>
+                                                <th class="border-0">Remark</th>
+                                                <th class="border-0">Override</th>
 
                                             </tr>
                                         </thead>
-                                        <tbody style="font-family: DM Sans, sans-serif;">
-                                            <tr class="text-nowrap fs-8 fw-normal"
+                                        <tbody style="font-family: DM Sans, sans-serif; font-size: 12px !important;">
+                                            <tr class="text-nowrap  fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                <td class="p-2">
+                                                    <img style="height: 15px; width: 12px;"
+                                                        src="../assets/images/leaves/orange_flug.svg" alt="Flug">
+                                                </td>
                                                 <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
                                                 <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
                                                 <td class="p-2">04/07/2024</td>
                                                 <td class="p-2">04/07/2024</td>
+                                                <td class="p-2">CL</td>
                                                 <td class="p-2">
-                                                    In: 10:31:16
-                                                    <br>
-                                                    Out: 19:59:58
+                                                    1
                                                 </td>
-                                                <td class="p-2">09:28:42</td>
-                                                <td class="p-2">21:45:00</td>
-                                                <td class="p-2">20:00:00</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2 text-center">
+                                                <td class="p-2">Second_Half</td>
+
+                                                <td class="p-2 text-center reject_column">
 
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <div class=" position-relative "
@@ -570,11 +603,8 @@
                                                             </label>
                                                         </div>
                                                     </div>
-
-
-
                                                 </td>
-                                                <td class="p-2 text-center">
+                                                <td class="p-2 text-center approved_column">
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <div class=" position-relative "
                                                             style="height: 20px; width: 20px; ">
@@ -588,28 +618,35 @@
                                                 </td>
 
                                                 <td class="p-2">
-                                                    <span class="p-1 border rounded-3">Reason Insufficient</span>
+                                                    N/A
+                                                </td>
+                                                <td class="p-2">
+                                                    Personal
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button class="leaverequesteditbtn">
+                                                        Edit
+                                                    </button>
                                                 </td>
 
                                             </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
+                                            <tr class="text-nowrap  fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                <td class="p-2">
+                                                    <img style="height: 15px; width: 12px;"
+                                                        src="../assets/images/leaves/orange_flug.svg" alt="Flug">
+                                                </td>
                                                 <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
                                                 <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
                                                 <td class="p-2">04/07/2024</td>
                                                 <td class="p-2">04/07/2024</td>
+                                                <td class="p-2">CL</td>
                                                 <td class="p-2">
-                                                    In: 10:31:16
-                                                    <br>
-                                                    Out: 19:59:58
+                                                    1
                                                 </td>
-                                                <td class="p-2">09:28:42</td>
-                                                <td class="p-2">21:45:00</td>
-                                                <td class="p-2">20:00:00</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2 text-center">
+                                                <td class="p-2">Second_Half</td>
+
+                                                <td class="p-2 text-center reject_column">
 
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <div class=" position-relative "
@@ -621,9 +658,8 @@
                                                             </label>
                                                         </div>
                                                     </div>
-
                                                 </td>
-                                                <td class="p-2 text-center">
+                                                <td class="p-2 text-center approved_column">
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <div class=" position-relative "
                                                             style="height: 20px; width: 20px; ">
@@ -637,28 +673,35 @@
                                                 </td>
 
                                                 <td class="p-2">
-                                                    <span class="p-1 border rounded-3">Reason Insufficient</span>
+                                                    N/A
+                                                </td>
+                                                <td class="p-2">
+                                                    Personal
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button class="leaverequesteditbtn">
+                                                        Edit
+                                                    </button>
                                                 </td>
 
                                             </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
+                                            <tr class="text-nowrap  fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                <td class="p-2">
+                                                    <img style="height: 15px; width: 12px;"
+                                                        src="../assets/images/leaves/orange_flug.svg" alt="Flug">
+                                                </td>
                                                 <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
                                                 <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
                                                 <td class="p-2">04/07/2024</td>
                                                 <td class="p-2">04/07/2024</td>
+                                                <td class="p-2">CL</td>
                                                 <td class="p-2">
-                                                    In: 10:31:16
-                                                    <br>
-                                                    Out: 19:59:58
+                                                    1
                                                 </td>
-                                                <td class="p-2">09:28:42</td>
-                                                <td class="p-2">21:45:00</td>
-                                                <td class="p-2">20:00:00</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2 text-center">
+                                                <td class="p-2">Second_Half</td>
+
+                                                <td class="p-2 text-center reject_column">
 
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <div class=" position-relative "
@@ -670,9 +713,8 @@
                                                             </label>
                                                         </div>
                                                     </div>
-
                                                 </td>
-                                                <td class="p-2 text-center">
+                                                <td class="p-2 text-center approved_column">
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <div class=" position-relative "
                                                             style="height: 20px; width: 20px; ">
@@ -686,28 +728,35 @@
                                                 </td>
 
                                                 <td class="p-2">
-                                                    <span class="p-1 border rounded-3">Reason Insufficient</span>
+                                                    N/A
+                                                </td>
+                                                <td class="p-2">
+                                                    Personal
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button class="leaverequesteditbtn">
+                                                        Edit
+                                                    </button>
                                                 </td>
 
                                             </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
+                                            <tr class="text-nowrap  fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                <td class="p-2">
+                                                    <img style="height: 15px; width: 12px;"
+                                                        src="../assets/images/leaves/orange_flug.svg" alt="Flug">
+                                                </td>
                                                 <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
                                                 <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
                                                 <td class="p-2">04/07/2024</td>
                                                 <td class="p-2">04/07/2024</td>
+                                                <td class="p-2">CL</td>
                                                 <td class="p-2">
-                                                    In: 10:31:16
-                                                    <br>
-                                                    Out: 19:59:58
+                                                    1
                                                 </td>
-                                                <td class="p-2">09:28:42</td>
-                                                <td class="p-2">21:45:00</td>
-                                                <td class="p-2">20:00:00</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2 text-center">
+                                                <td class="p-2">Second_Half</td>
+
+                                                <td class="p-2 text-center reject_column">
 
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <div class=" position-relative "
@@ -719,9 +768,8 @@
                                                             </label>
                                                         </div>
                                                     </div>
-
                                                 </td>
-                                                <td class="p-2 text-center">
+                                                <td class="p-2 text-center approved_column">
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <div class=" position-relative "
                                                             style="height: 20px; width: 20px; ">
@@ -735,28 +783,35 @@
                                                 </td>
 
                                                 <td class="p-2">
-                                                    <span class="p-1 border rounded-3">Reason Insufficient</span>
+                                                    N/A
+                                                </td>
+                                                <td class="p-2">
+                                                    Personal
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button class="leaverequesteditbtn">
+                                                        Edit
+                                                    </button>
                                                 </td>
 
                                             </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
+                                            <tr class="text-nowrap  fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                <td class="p-2">
+                                                    <img style="height: 15px; width: 12px;"
+                                                        src="../assets/images/leaves/orange_flug.svg" alt="Flug">
+                                                </td>
                                                 <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
                                                 <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
                                                 <td class="p-2">04/07/2024</td>
                                                 <td class="p-2">04/07/2024</td>
+                                                <td class="p-2">CL</td>
                                                 <td class="p-2">
-                                                    In: 10:31:16
-                                                    <br>
-                                                    Out: 19:59:58
+                                                    1
                                                 </td>
-                                                <td class="p-2">09:28:42</td>
-                                                <td class="p-2">21:45:00</td>
-                                                <td class="p-2">20:00:00</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2 text-center">
+                                                <td class="p-2">Second_Half</td>
+
+                                                <td class="p-2 text-center reject_column">
 
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <div class=" position-relative "
@@ -768,9 +823,8 @@
                                                             </label>
                                                         </div>
                                                     </div>
-
                                                 </td>
-                                                <td class="p-2 text-center">
+                                                <td class="p-2 text-center approved_column">
                                                     <div class="d-flex justify-content-center align-items-center">
                                                         <div class=" position-relative "
                                                             style="height: 20px; width: 20px; ">
@@ -784,255 +838,19 @@
                                                 </td>
 
                                                 <td class="p-2">
-                                                    <span class="p-1 border rounded-3">Reason Insufficient</span>
+                                                    N/A
+                                                </td>
+                                                <td class="p-2">
+                                                    Personal
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button class="leaverequesteditbtn">
+                                                        Edit
+                                                    </button>
                                                 </td>
 
                                             </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
-                                                <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    In: 10:31:16
-                                                    <br>
-                                                    Out: 19:59:58
-                                                </td>
-                                                <td class="p-2">09:28:42</td>
-                                                <td class="p-2">21:45:00</td>
-                                                <td class="p-2">20:00:00</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2 text-center">
 
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class=" position-relative "
-                                                            style="height: 20px; width: 20px; ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark"></span>
-
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2 text-center">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class=" position-relative "
-                                                            style="height: 20px; width: 20px; ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark"></span>
-
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td class="p-2">
-                                                    <span class="p-1 border rounded-3">Reason Insufficient</span>
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
-                                                <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    In: 10:31:16
-                                                    <br>
-                                                    Out: 19:59:58
-                                                </td>
-                                                <td class="p-2">09:28:42</td>
-                                                <td class="p-2">21:45:00</td>
-                                                <td class="p-2">20:00:00</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2 text-center">
-
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class=" position-relative "
-                                                            style="height: 20px; width: 20px; ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark"></span>
-
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2 text-center">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class=" position-relative "
-                                                            style="height: 20px; width: 20px; ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark"></span>
-
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td class="p-2">
-                                                    <span class="p-1 border rounded-3">Reason Insufficient</span>
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
-                                                <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    In: 10:31:16
-                                                    <br>
-                                                    Out: 19:59:58
-                                                </td>
-                                                <td class="p-2">09:28:42</td>
-                                                <td class="p-2">21:45:00</td>
-                                                <td class="p-2">20:00:00</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2 text-center">
-
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class=" position-relative "
-                                                            style="height: 20px; width: 20px; ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark"></span>
-
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2 text-center">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class=" position-relative "
-                                                            style="height: 20px; width: 20px; ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark"></span>
-
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td class="p-2">
-                                                    <span class="p-1 border rounded-3">Reason Insufficient</span>
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
-                                                <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    In: 10:31:16
-                                                    <br>
-                                                    Out: 19:59:58
-                                                </td>
-                                                <td class="p-2">09:28:42</td>
-                                                <td class="p-2">21:45:00</td>
-                                                <td class="p-2">20:00:00</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2 text-center">
-
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class=" position-relative "
-                                                            style="height: 20px; width: 20px; ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark"></span>
-
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2 text-center">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class=" position-relative "
-                                                            style="height: 20px; width: 20px; ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark"></span>
-
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td class="p-2">
-                                                    <span class="p-1 border rounded-3">Reason Insufficient</span>
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-8 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
-                                                <td class="p-2">Rock</td>
-                                                <td class="p-2">Dear Lu...</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    In: 10:31:16
-                                                    <br>
-                                                    Out: 19:59:58
-                                                </td>
-                                                <td class="p-2">09:28:42</td>
-                                                <td class="p-2">21:45:00</td>
-                                                <td class="p-2">20:00:00</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2 text-center">
-
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class=" position-relative "
-                                                            style="height: 20px; width: 20px; ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark"></span>
-
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2 text-center">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class=" position-relative "
-                                                            style="height: 20px; width: 20px; ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark"></span>
-
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td class="p-2">
-                                                    <span class="p-1 border rounded-3">Reason Insufficient</span>
-                                                </td>
-
-                                            </tr>
 
 
 
@@ -1040,60 +858,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <!-- pagination area -->
-                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
-                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                                        <li>
-                                            <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                <i class="fa-angle-left fa-solid"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                Prev
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                Next
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <small>Page:</small>
-                                            <span>1</span>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex gap-2">
-                                                <small>Of</small>
-                                                <p>100</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="custom-dropdown">
-                                                <!-- Dropdown button -->
-                                                <div class="custom-dropdown-button" onclick="toggleDropdown(event)">
-                                                    10
-                                                </div>
-                                                <!-- Dropdown options -->
-                                                <div class="custom-dropdown-options shadow">
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '1', '10')">10</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '2', '11')">11</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '3', '12')">12</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '4', '13')">13</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '5', '14')">14</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+
                                 <div class=" w-100 d-flex justify-content-end align-items-end pt-3 ">
                                     <button class="btn bg-blue text-white rounded-4 px-4">Submit</button>
                                 </div>

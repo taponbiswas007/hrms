@@ -487,6 +487,50 @@ $(document).ready(function () {
     //     $(this).addClass('sideBarActive');
     // });
 
+
+    // leave request table checkbox controller
+    // Handle the reject_checkbox change event
+    $('.reject_checkbox').change(function () {
+        if ($(this).is(':checked')) {
+            // When reject_checkbox is checked, check all checkboxes in reject_column
+            $('.reject_column input[type="checkbox"]').prop('checked', true);
+        } else {
+            // When reject_checkbox is unchecked, uncheck all checkboxes in reject_column
+            $('.reject_column input[type="checkbox"]').prop('checked', false);
+        }
+    });
+
+    // Handle individual checkbox changes in reject_column
+    $('.reject_column input[type="checkbox"]').change(function () {
+        // Check if any checkbox in reject_column is unchecked
+        const allChecked = $('.reject_column input[type="checkbox"]').length ===
+            $('.reject_column input[type="checkbox"]:checked').length;
+
+        // Update the reject_checkbox accordingly
+        $('.reject_checkbox').prop('checked', allChecked);
+    });
+
+
+    $('.approved_checkbox').change(function () {
+        if ($(this).is(':checked')) {
+            // When reject_checkbox is checked, check all checkboxes in reject_column
+            $('.approved_column input[type="checkbox"]').prop('checked', true);
+        } else {
+            // When reject_checkbox is unchecked, uncheck all checkboxes in reject_column
+            $('.approved_column input[type="checkbox"]').prop('checked', false);
+        }
+    });
+
+    // Handle individual checkbox changes in reject_column
+    $('.approved_column input[type="checkbox"]').change(function () {
+        // Check if any checkbox in reject_column is unchecked
+        const allChecked = $('.approved_column input[type="checkbox"]').length ===
+            $('.approved_column input[type="checkbox"]:checked').length;
+
+        // Update the reject_checkbox accordingly
+        $('.approved_checkbox').prop('checked', allChecked);
+    });
+
 })
 
 
