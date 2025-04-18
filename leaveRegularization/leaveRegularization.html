@@ -371,9 +371,10 @@
                                         href="../myLeave/leaveRequest.html">Leave</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Regularization <img class="d-inline" height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
-                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
+                                        aria-expanded="false">Regularization <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
+                                    <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1" href="../myLeave/leaveRequest.html">My
                                                 Leave</a></li>
 
@@ -383,13 +384,15 @@
                                         <li><a class="dropdown-item mb-1" href="../leavesHR-task/leaveApproval.html">HR
                                                 Task</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="../leaveRegularization/leaveRegularization.html">Leave Regularization</a>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../leaveRegularization/leaveRegularization.html">Leave
+                                                Regularization</a>
                                         </li>
 
 
                                     </ul>
                                 </li>
-                              
+
                             </ol>
                         </nav>
                     </div>
@@ -401,7 +404,7 @@
                                 <div class="d-flex select-criteria justify-content-between align-items-center  pb-3"
                                     style="border-bottom:0.9px dashed #D2D2D2 ;">
                                     <h1 class=" fw-medium fs-6 text-black ">
-                                        Select Criteria</h1>
+                                        Leave Regularization</h1>
                                     <ul>
                                         <li>Role</li>
                                         <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
@@ -499,11 +502,11 @@
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <label class=" mb-1" for="">
-                                            Employee
+                                            Designation
                                         </label>
                                         <select style="border-color: #C2C2C2; border-radius:8px;"
                                             class=" form-select fs-7" name="" id="">
-                                            <option value="">All Employee</option>
+                                            <option value="">Select</option>
                                             <option value="">Example 1</option>
                                             <option value="">Example 2</option>
                                         </select>
@@ -511,14 +514,11 @@
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <label class=" mb-1" for="">
-                                            Employee Status
+                                            Employee Code
                                         </label>
-                                        <select style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-select fs-7" name="" id="">
-                                            <option value="">All Status</option>
-                                            <option value="">Example 1</option>
-                                            <option value="">Example 2</option>
-                                        </select>
+                                        <input type="text" placeholder="FE0123"
+                                            style="border-color: #C2C2C2; border-radius:8px;" class=" form-select fs-7">
+
 
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -548,32 +548,9 @@
                                         </select>
 
                                     </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <label class=" mb-1" for="">
-                                            Leave Type
-                                        </label>
-                                        <select style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-select fs-7" name="" id="">
-                                            <option value="">Casual Leave</option>
-                                            <option value="">Example 1</option>
-                                            <option value="">Example 2</option>
-                                        </select>
 
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <div class="d-flex h-100 w-100 justify-content-start align-items-center">
-                                            <div class=" position-relative w-100" style="height: 20px; width: 20px; ">
-                                                <label class="custom-checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkmark"></span>
-                                                    Document Attached
-                                                </label>
-                                            </div>
-                                        </div>
 
-                                    </div>
-
-                                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="col-xxl-9 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <div class=" h-100 d-flex justify-content-end align-items-end">
                                             <button class="btn bg-blue text-white rounded-4 px-4">Get Data</button>
                                         </div>
@@ -592,8 +569,9 @@
 
                             <div class="d-flex select-criteria justify-content-between align-items-center  pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-6 text-black ">
+                                <h1 class=" fw-medium fs-5 text-black ">
                                     List</h1>
+                                <button class="btn bg-blue text-white rounded-4 px-4">Export To Excel</button>
 
                             </div>
 
@@ -607,16 +585,16 @@
                                             <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top align-top"
                                                 style="color: #404040; background: #F9F9F9">
 
-                                                <th class="border-0">Code</th>
                                                 <th class="border-0">Name</th>
-                                                <th class="border-0">From</th>
-                                                <th class="border-0">To</th>
-                                                <th class="border-0">Leave</th>
-                                                <th class="border-0">Days</th>
-                                                <th class="border-0">Days_Type</th>
-                                                <th class="border-0">Document</th>
-                                                <th class="border-0">Approve Date</th>
-                                                <th class="border-0">Approve By</th>
+                                                <th class="border-0">1/2/2025</th>
+                                                <th class="border-0">2/2/2025</th>
+                                                <th class="border-0">3/2/2025</th>
+                                                <th class="border-0">4/2/2025</th>
+                                                <th class="border-0">5/2/2025</th>
+                                                <th class="border-0">6/2/2025</th>
+                                                <th class="border-0">6/2/2025</th>
+                                                <th class="border-0">8/2/2025</th>
+                                                <th class="border-0">9/2/2025</th>
 
 
 
@@ -627,78 +605,140 @@
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
 
                                                 <td class="p-2">FE0134</td>
-                                                <td class="p-2">FE0134</td>
-                                                <td class="p-2">26/02/2025</td>
-                                                <td class="p-2">26/02/2025</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">0.5</td>
-                                                <td class="p-2">Second_Half</td>
                                                 <td class="p-2">N/A</td>
-                                                <td class="p-2">12/03/2025</td>
-                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+
                                             </tr>
                                             <tr class="text-nowrap  fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
 
                                                 <td class="p-2">FE0134</td>
-                                                <td class="p-2">FE0134</td>
-                                                <td class="p-2">26/02/2025</td>
-                                                <td class="p-2">26/02/2025</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">0.5</td>
-                                                <td class="p-2">Second_Half</td>
                                                 <td class="p-2">N/A</td>
-                                                <td class="p-2">12/03/2025</td>
-                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+
                                             </tr>
                                             <tr class="text-nowrap  fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
 
                                                 <td class="p-2">FE0134</td>
-                                                <td class="p-2">FE0134</td>
-                                                <td class="p-2">26/02/2025</td>
-                                                <td class="p-2">26/02/2025</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">0.5</td>
-                                                <td class="p-2">Second_Half</td>
                                                 <td class="p-2">N/A</td>
-                                                <td class="p-2">12/03/2025</td>
-                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+
                                             </tr>
                                             <tr class="text-nowrap  fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
 
                                                 <td class="p-2">FE0134</td>
-                                                <td class="p-2">FE0134</td>
-                                                <td class="p-2">26/02/2025</td>
-                                                <td class="p-2">26/02/2025</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">0.5</td>
-                                                <td class="p-2">Second_Half</td>
                                                 <td class="p-2">N/A</td>
-                                                <td class="p-2">12/03/2025</td>
-                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+
                                             </tr>
                                             <tr class="text-nowrap  fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
 
                                                 <td class="p-2">FE0134</td>
-                                                <td class="p-2">FE0134</td>
-                                                <td class="p-2">26/02/2025</td>
-                                                <td class="p-2">26/02/2025</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">0.5</td>
-                                                <td class="p-2">Second_Half</td>
                                                 <td class="p-2">N/A</td>
-                                                <td class="p-2">12/03/2025</td>
-                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+                                                <td class="p-2">N/A</td>
+
                                             </tr>
+
 
 
                                         </tbody>
                                     </table>
                                 </div>
-
+                                <!-- pagination area -->
+                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
+                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                                        <li>
+                                            <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                <i class="fa-angle-left fa-solid"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                Prev
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                Next
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <small>Page:</small>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex gap-2">
+                                                <small>Of</small>
+                                                <p>100</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-dropdown">
+                                                <!-- Dropdown button -->
+                                                <div class="custom-dropdown-button" onclick="toggleDropdown(event)">
+                                                    10
+                                                </div>
+                                                <!-- Dropdown options -->
+                                                <div class="custom-dropdown-options shadow">
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '1', '10')">10</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '2', '11')">11</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '3', '12')">12</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '4', '13')">13</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '5', '14')">14</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" h-100 d-flex justify-content-end align-items-end mt-3">
+                                    <button class="btn bg-blue text-white rounded-4 px-4">Save</button>
+                                </div>
                             </div>
 
                             <!-- =============List end============= -->
