@@ -125,6 +125,63 @@
     border-radius: 4px;
 }
 
+.mailtemplate_textarea {
+    resize: none;
+    overflow-y: auto;
+    height: 240px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: #000000;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.mail_tag_side {
+    width: calc((100% - 82px) / 2);
+}
+
+.direction_area {
+    width: 32px;
+}
+
+.mail_template_side {
+    width: calc((100% - 82px) / 2);
+}
+
+.markedbutton {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #0A7E22;
+    background: #C2FFCF;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+@media (max-width: 1200px) {
+    .mailtemplate_textarea {
+        width: 100%;
+    }
+
+    .mail_tag_side {
+        width: 100%;
+    }
+
+    .direction_area {
+        transform: rotateZ(90deg);
+    }
+
+    .mail_template_side {
+        width: 100%
+    }
+}
+
 @media (max-width: 540px) {
     #leaveSummaryofsupervisor {
         .modal-title {
