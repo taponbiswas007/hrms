@@ -588,7 +588,8 @@
                                     </table>
                                 </div>
                                 <div class="  w-100 d-flex justify-content-end align-items-end pt-3">
-                                    <button class="btn bg-blue text-white rounded-4 px-4">Add Compensatory Off</button>
+                                    <button data-bs-target="#AddcompensaroryOff" data-bs-toggle="modal"
+                                        class="btn bg-blue text-white rounded-4 px-4">Add Compensatory Off</button>
 
                                 </div>
                             </div>
@@ -596,6 +597,83 @@
                             <!-- =============List end============= -->
 
 
+                            <!-- ================================================ -->
+                            <!-- ===========Add Compensarory Off pop up area start====== -->
+                            <!-- ================================================ -->
+
+                            <div class="modal fade" id="AddcompensaroryOff" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-nowrap" id="exampleModalToggleLabel">Leave
+                                                Add Compensarory Off</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row g-4">
+                                                <div class="col-sm-12">
+                                                    <label class=" mb-1" for="">
+                                                        User Name <span class=" text-danger">*</span>
+                                                    </label>
+                                                    <input type="text" name="" id="" placeholder="FE0123"
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7">
+
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <label class=" mb-1" for="">
+                                                        Days <span class=" text-danger">*</span>
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <label class=" mb-1" for="">
+                                                        Compensatory Date<span class=" text-danger">*</span>
+                                                    </label>
+                                                    <input type="date" name="" id="" placeholder="1"
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7">
+
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <label class=" mb-1" for="">
+                                                        Comments
+                                                    </label>
+                                                    <textarea name="" id="" placeholder="Add your comments.."
+                                                        style="border-color: #C2C2C2; border-radius:8px; height: 82px; resize: none;"
+                                                        class=" form-control fs-7"></textarea>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+
+                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Save</button>
+                                            <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- ================================================ -->
+                            <!-- ===========Add Compensarory Off pop up area end====== -->
+                            <!-- ================================================ -->
 
 
 
