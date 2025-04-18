@@ -1651,6 +1651,48 @@ footer {
   border-radius: 3px;
 }
 
+.activemarkbutton {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #0A7E22;
+  background: #C2FFCF;
+  padding: 3px 11px;
+  border-radius: 3px;
+}
+
+.customborder {
+  border: 0.95px solid #EBECEE !important;
+}
+
+.employeeInfotable thead tr th {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+}
+.employeeInfotable tr {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+}
+.employeeInfotable tr td {
+  min-width: 24%;
+}
+.employeeInfotable tr:nth-child(even) {
+  background: #F9F9F9;
+}
+
 @media (max-width: 1200px) {
   .mailtemplate_textarea {
     width: 100%;
