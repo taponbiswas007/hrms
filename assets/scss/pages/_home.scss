@@ -228,7 +228,7 @@ footer {
                     position: absolute;
                     bottom: -5px;
                     left: 0;
-                   
+
 
                 }
             }
@@ -397,6 +397,10 @@ footer {
     font-size: 20px;
 }
 
+.fs-6 {
+    font-size: 18px !important;
+}
+
 @media (min-width:768px) {
     .side-bar {
         width: 170px;
@@ -409,6 +413,10 @@ footer {
 
     footer {
         width: calc(100% - 170px);
+    }
+
+    .header {
+        padding-right: 3rem !important;
     }
 }
 
@@ -675,7 +683,7 @@ footer {
 
 @media (max-width: 1400px) {
     .tabs-title {
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 
@@ -694,7 +702,7 @@ footer {
 @media screen and (max-width: 1270px) and (min-width:1200px) {
     .section-items {
         h1 {
-            font-size: 1rem !important;
+            font-size: 14px !important;
         }
     }
 }

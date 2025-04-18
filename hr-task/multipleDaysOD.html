@@ -17,7 +17,7 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- simple bar -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
-      <noscript>
+    <noscript>
         <style>
             /**
      
@@ -68,8 +68,7 @@
                         </svg>
                     </button>
 
-                    <div data-simplebar 
- class="bg-blue text-white menu  scroll-container">
+                    <div data-simplebar class="bg-blue text-white menu  scroll-container">
 
                         <!-- menu items -->
                         <ul class="list-unstyled">
@@ -105,7 +104,7 @@
 
                             <!-- my profile -->
                             <li>
-                                  <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
+                                <a class="d-flex flex-column align-items-center border-bottom-op4 justify-content-center text-capitalize text-white fs-7 fw-normal py-2 sidebar-link"
                                     href="../myProfile/general.html">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/profile.svg" alt="">
                                     My Profile
@@ -307,7 +306,7 @@
                 </div>
             </div>
             <!-- main content area -->
-            <div  class="main-content">
+            <div class="main-content">
                 <!-- header area -->
                 <div class="d-flex align-items-center justify-content-between header  px-1 px-md-4 sticky-top z-3">
                     <div class="d-flex align-items-center justify-content-start gap-4">
@@ -376,21 +375,21 @@
                                             src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 overflow-y-auto shadow-lg">
                                         <li><a class="dropdown-item mb-1" href="../attendance/attendanceDetails.html">My
-                                            Attendance</a></li>
-                                    <li><a class="dropdown-item mb-1" href="../reports/attendance.html">Reports</a>
-                                    </li>
-                                    <li><a class="dropdown-item mb-1" href="../branchHr/markAttendance.html">Branch
-                                            Hr</a></li>
-                                    <li><a class="dropdown-item mb-1" href="#">Supervisor</a>
-                                    </li>
-                                    <li><a class="dropdown-item mb-1" href="employeeRegularizationRequests.html">HR
-                                            Task</a>
-                                    </li>
-                                    <li><a class="dropdown-item mb-1" href="../late/lateUpdate.html">Late</a>
-                                    </li>
-                                    <li><a class="dropdown-item mb-1"
-                                            href="../biometric/bioMetricStatusUpdate.html">Biometric</a>
-                                    </li>
+                                                Attendance</a></li>
+                                        <li><a class="dropdown-item mb-1" href="../reports/attendance.html">Reports</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="../branchHr/markAttendance.html">Branch
+                                                Hr</a></li>
+                                        <li><a class="dropdown-item mb-1" href="#">Supervisor</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="employeeRegularizationRequests.html">HR
+                                                Task</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="../late/lateUpdate.html">Late</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../biometric/bioMetricStatusUpdate.html">Biometric</a>
+                                        </li>
 
                                     </ul>
                                 </li>
@@ -483,6 +482,7 @@
                                     </label>
                                     <select name="" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-select fs-7" id="">
+                                        <option value="">Select Category</option>
                                         <option value="">Head Office</option>
                                         <option value="">Example</option>
                                     </select>
@@ -514,7 +514,7 @@
                                                 <th class="border-0">Code</th>
                                                 <th class="border-0">Name</th>
                                                 <th class="border-0">Supervisor</th>
-                                                <th class="border-0">Reason</th>
+                                                <th class="border-0">Req Reason</th>
                                                 <th class="border-0">Req From</th>
                                                 <th class="border-0">Req To</th>
                                                 <th class="border-0">Days</th>
@@ -535,43 +535,54 @@
 
                                             </tr>
                                         </thead>
-                                        <tbody style="font-family: DM Sans, sans-serif;">
-                                            <tr class="text-nowrap fs-8 fw-normal"
+                                        <tbody style="font-family: DM Sans, sans-serif; font-size: 12px;">
+                                            <tr class="text-nowrap  fw-normal"
                                                 style="color: #202020; height: 40px; vertical-align: middle; ">
                                                 <td class="p-2">FE1611</td>
                                                 <td class="p-2">John Doe</td>
                                                 <td class="p-2">Rock</td>
                                                 <td class="p-2">Dear Lu...</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">04/07/2024</td>
+                                                <td class="p-2 text-center">04/07/2024</td>
+                                                <td class="p-2 text-center">04/07/2024</td>
+                                                <td class="p-2 text-center">1</td>
+                                                <td class="p-2 text-center">04/07/2024</td>
                                                 <td class="p-2 text-center">
-                                                    <div class=" position-relative " style="height: 20px; width: 20px; ">
-                                                    <label class="custom-checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <div class=" position-relative "
+                                                            style="height: 20px; width: 20px; ">
+                                                            <label class="custom-checkbox">
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
 
-                                                    </label>
-                                                   </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <div class=" position-relative " style="height: 20px; width: 20px; ">
-                                                    <label class="custom-checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <div class=" position-relative "
+                                                            style="height: 20px; width: 20px; ">
+                                                            <label class="custom-checkbox">
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
 
-                                                    </label>
-                                                   </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
                                                 </td>
 
-                                                <td class="p-2">
-                                                    <select name="" class=" form-select fs-7" id=""
-                                                        style="width: fit-content;">
-                                                        <option value="">Reason Insufficient</option>
-                                                        <option value="">Example 1</option>
-                                                        <option value="">Example 2</option>
-                                                    </select>
+                                                <td class="p-2 text-center">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <select name="" class=" form-select fs-7" id=""
+                                                            style="width: fit-content;">
+                                                            <option value="">Reason Insufficient</option>
+                                                            <option value="">Example 1</option>
+                                                            <option value="">Example 2</option>
+                                                        </select>
+                                                    </div>
+
                                                 </td>
 
                                             </tr>
@@ -680,7 +691,7 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <!-- simple bar js -->
- <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <!-- js -->
     <script src="../assets/js/main.js"></script>
 </body>
