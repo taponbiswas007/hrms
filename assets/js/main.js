@@ -113,41 +113,13 @@ $(document).ready(function () {
     });
 
 
-    // $('.sidebar-link-items').each(function () {
-    //     let parentItem = $(this);
-    //     let submenu = parentItem.find('.sidebar-submenu');
-
-    //     parentItem.hover(function () {
-    //         let offset = parentItem.offset();
-
-    //         submenu.appendTo('body').css({
-    //             position: 'absolute',
-    //             top: offset.top,
-    //             left: offset.left + parentItem.outerWidth(),
-    //             display: 'block',
-    //             zIndex: 99999
-    //         });
-    //     }, function () {
-    //         setTimeout(function () {
-    //             if (!submenu.is(':hover')) {
-    //                 submenu.hide().appendTo(parentItem);
-    //             }
-    //         }, 200); // Small delay to allow moving to submenu
-    //     });
-
-    //     submenu.hover(function () {
-    //         $(this).show();
-    //     }, function () {
-    //         $(this).hide().appendTo(parentItem);
-    //     });
-    // });
-
     $('.sidebar-link-items').each(function () {
         const parentItem = $(this);
         const submenu = parentItem.find('.sidebar-submenu');
         let hoverTimeout;
         const submenuWidth = 200; // Set your desired submenu width
         const horizontalOffset = 0; // Space between parent and submenu
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints;
 
         // Pre-calculate submenu height without showing it
         submenu.css({
@@ -163,7 +135,7 @@ $(document).ready(function () {
             'display': ''
         });
 
-        parentItem.hover(function () {
+        function showSubmenu() {
             clearTimeout(hoverTimeout);
 
             const offset = parentItem.offset();
@@ -180,66 +152,200 @@ $(document).ready(function () {
             let topPosition, leftPosition, maxHeight, overflowY = 'hidden';
 
             // Vertical positioning
-            if (spaceBelow >= submenuHeight) {
+            if (spaceBelow >= submenuHeight || (isTouchDevice && spaceBelow >= spaceAbove)) {
                 // Open downward - align to top of parent
                 topPosition = offset.top;
-                maxHeight = spaceBelow + parentHeight; // Include parent height in available space
-            } else if (spaceAbove >= submenuHeight) {
+                maxHeight = spaceBelow + parentHeight;
+            } else if (spaceAbove >= submenuHeight || isTouchDevice) {
                 // Open upward - align to bottom of parent
                 topPosition = offset.top + parentHeight - submenuHeight;
-                maxHeight = spaceAbove + parentHeight; // Include parent height in available space
+                maxHeight = spaceAbove + parentHeight;
             } else {
                 // Not enough space, use best available
                 if (spaceBelow >= spaceAbove) {
-                    // Open downward with scroll
                     topPosition = offset.top;
                     maxHeight = spaceBelow + parentHeight;
                     overflowY = 'auto';
                 } else {
-                    // Open upward with scroll
                     topPosition = Math.max(0, offset.top + parentHeight - submenuHeight);
                     maxHeight = Math.min(submenuHeight, spaceAbove + parentHeight);
                     overflowY = 'auto';
                 }
             }
 
-            // Horizontal positioning
-            if (spaceRight >= 0) {
+            // On mobile, we want to take full width if needed
+            const actualWidth = isTouchDevice ? Math.min(submenuWidth, windowWidth - 20) : submenuWidth;
+
+            // Horizontal positioning - center on mobile if not enough space
+            if (isTouchDevice) {
+                leftPosition = Math.max(10, (windowWidth - actualWidth) / 2);
+            } else if (spaceRight >= 0) {
                 // Open to the right
                 leftPosition = offset.left + parentWidth + horizontalOffset;
             } else {
                 // Open to the left if no space on right
-                leftPosition = offset.left - submenuWidth - horizontalOffset;
+                leftPosition = offset.left - actualWidth - horizontalOffset;
             }
 
             // Apply styles
             submenu.appendTo('body').css({
-                'position': 'absolute',
+                'position': 'fixed', // Use fixed for mobile to handle scrolling
                 'top': topPosition,
                 'left': leftPosition,
-                'width': submenuWidth,
+                'width': actualWidth,
                 'display': 'block',
                 'z-index': 99999,
                 'overflow-y': overflowY,
-                'max-height': maxHeight
+                'max-height': maxHeight,
+                'box-sizing': 'border-box'
             });
 
-        }, function () {
-            hoverTimeout = setTimeout(function () {
-                if (!submenu.is(':hover')) {
-                    submenu.hide().appendTo(parentItem);
-                }
-            }, 200);
-        });
+            // Close when clicking outside on mobile
+            if (isTouchDevice) {
+                $('body').on('touchstart.clickoutside', function (e) {
+                    if (!parentItem.is(e.target) && parentItem.has(e.target).length === 0 &&
+                        !submenu.is(e.target) && submenu.has(e.target).length === 0) {
+                        hideSubmenu();
+                    }
+                });
+            }
+        }
 
-        submenu.hover(function () {
-            clearTimeout(hoverTimeout);
-        }, function () {
+        function hideSubmenu() {
             hoverTimeout = setTimeout(function () {
-                $(this).hide().appendTo(parentItem);
-            }.bind(this), 200);
-        });
+                submenu.hide().appendTo(parentItem);
+                if (isTouchDevice) {
+                    $('body').off('touchstart.clickoutside');
+                }
+            }, isTouchDevice ? 0 : 200); // Immediate hide on mobile
+        }
+
+        // Desktop hover events
+        if (!isTouchDevice) {
+            parentItem.hover(showSubmenu, hideSubmenu);
+            submenu.hover(
+                function () { clearTimeout(hoverTimeout); },
+                hideSubmenu
+            );
+        }
+        // Mobile touch events
+        else {
+            parentItem.on('click touchstart', function (e) {
+                e.stopPropagation();
+                e.preventDefault();
+
+                if (submenu.is(':visible')) {
+                    hideSubmenu();
+                } else {
+                    showSubmenu();
+                }
+            });
+
+            // Prevent submenu from closing when interacting with it
+            submenu.on('touchstart', function (e) {
+                e.stopPropagation();
+            });
+        }
     });
+
+    // $('.sidebar-link-items').each(function () {
+    //     const parentItem = $(this);
+    //     const submenu = parentItem.find('.sidebar-submenu');
+    //     let hoverTimeout;
+    //     const submenuWidth = 200; // Set your desired submenu width
+    //     const horizontalOffset = 0; // Space between parent and submenu
+
+    //     // Pre-calculate submenu height without showing it
+    //     submenu.css({
+    //         'position': 'absolute',
+    //         'visibility': 'hidden',
+    //         'display': 'block',
+    //         'width': submenuWidth
+    //     });
+    //     const submenuHeight = submenu.outerHeight();
+    //     submenu.css({
+    //         'position': '',
+    //         'visibility': '',
+    //         'display': ''
+    //     });
+
+    //     parentItem.hover(function () {
+    //         clearTimeout(hoverTimeout);
+
+    //         const offset = parentItem.offset();
+    //         const parentWidth = parentItem.outerWidth();
+    //         const parentHeight = parentItem.outerHeight();
+    //         const windowHeight = $(window).height();
+    //         const windowWidth = $(window).width();
+
+    //         const spaceBelow = windowHeight - (offset.top + parentHeight);
+    //         const spaceAbove = offset.top;
+    //         const spaceRight = windowWidth - (offset.left + parentWidth + horizontalOffset + submenuWidth);
+
+    //         // Calculate position
+    //         let topPosition, leftPosition, maxHeight, overflowY = 'hidden';
+
+    //         // Vertical positioning
+    //         if (spaceBelow >= submenuHeight) {
+    //             // Open downward - align to top of parent
+    //             topPosition = offset.top;
+    //             maxHeight = spaceBelow + parentHeight; // Include parent height in available space
+    //         } else if (spaceAbove >= submenuHeight) {
+    //             // Open upward - align to bottom of parent
+    //             topPosition = offset.top + parentHeight - submenuHeight;
+    //             maxHeight = spaceAbove + parentHeight; // Include parent height in available space
+    //         } else {
+    //             // Not enough space, use best available
+    //             if (spaceBelow >= spaceAbove) {
+    //                 // Open downward with scroll
+    //                 topPosition = offset.top;
+    //                 maxHeight = spaceBelow + parentHeight;
+    //                 overflowY = 'auto';
+    //             } else {
+    //                 // Open upward with scroll
+    //                 topPosition = Math.max(0, offset.top + parentHeight - submenuHeight);
+    //                 maxHeight = Math.min(submenuHeight, spaceAbove + parentHeight);
+    //                 overflowY = 'auto';
+    //             }
+    //         }
+
+    //         // Horizontal positioning
+    //         if (spaceRight >= 0) {
+    //             // Open to the right
+    //             leftPosition = offset.left + parentWidth + horizontalOffset;
+    //         } else {
+    //             // Open to the left if no space on right
+    //             leftPosition = offset.left - submenuWidth - horizontalOffset;
+    //         }
+
+    //         // Apply styles
+    //         submenu.appendTo('body').css({
+    //             'position': 'absolute',
+    //             'top': topPosition,
+    //             'left': leftPosition,
+    //             'width': submenuWidth,
+    //             'display': 'block',
+    //             'z-index': 99999,
+    //             'overflow-y': overflowY,
+    //             'max-height': maxHeight
+    //         });
+
+    //     }, function () {
+    //         hoverTimeout = setTimeout(function () {
+    //             if (!submenu.is(':hover')) {
+    //                 submenu.hide().appendTo(parentItem);
+    //             }
+    //         }, 200);
+    //     });
+
+    //     submenu.hover(function () {
+    //         clearTimeout(hoverTimeout);
+    //     }, function () {
+    //         hoverTimeout = setTimeout(function () {
+    //             $(this).hide().appendTo(parentItem);
+    //         }.bind(this), 200);
+    //     });
+    // });
 
 
 
