@@ -582,6 +582,7 @@ ul {
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 2px 0 5px rgba(0, 0, 0, 0.25) !important;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 2px 0 5px rgba(0, 0, 0, 0.25) !important;
   /* bottom and right*/
+  padding: 10px;
 }
 
 footer {
@@ -614,7 +615,7 @@ footer {
 }
 
 .my_leaveBalance .year-selector select {
-  border: 0.9px solid #E0E0E0;
+  border: 0.9px solid #e0e0e0;
   background: #ffffff;
   border-radius: 5px;
   font-family: Inter;
@@ -655,10 +656,10 @@ footer {
   width: 50px;
 }
 .announcement-list .items:nth-child(odd) .announcement-icon {
-  background: #E1F1FE;
+  background: #e1f1fe;
 }
 .announcement-list .items:nth-child(even) .announcement-icon {
-  background: #FEF0F0;
+  background: #fef0f0;
 }
 
 .list_icon {
@@ -677,7 +678,7 @@ footer {
 }
 
 .holiday-list .items {
-  border-bottom: 0.5px solid #DADADA;
+  border-bottom: 0.5px solid #dadada;
 }
 .holiday-list .items:last-child {
   border-bottom: 0;
@@ -706,7 +707,7 @@ footer {
   line-height: 100%;
   letter-spacing: 1%;
   text-align: center;
-  color: #8E8E93;
+  color: #8e8e93;
   position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -716,7 +717,7 @@ footer {
 }
 .holidayMenu li button:hover::after {
   content: "";
-  background: #4A59A7;
+  background: #4a59a7;
   height: 2px;
   width: 40%;
   position: absolute;
@@ -731,7 +732,7 @@ footer {
 }
 .holidayMenu .holidayActive::after {
   content: "";
-  background: #4A59A7;
+  background: #4a59a7;
   height: 2px;
   width: 40%;
   position: absolute;
@@ -744,7 +745,7 @@ footer {
 }
 
 .season-selector select {
-  border: 0.9px solid #E0E0E0;
+  border: 0.9px solid #e0e0e0;
   background: #ffffff;
   border-radius: 5px;
   font-family: Inter;
@@ -757,8 +758,8 @@ footer {
 }
 
 .unmarked {
-  background: #C2FFCF;
-  color: #0A7E22;
+  background: #c2ffcf;
+  color: #0a7e22;
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
@@ -770,8 +771,8 @@ footer {
 }
 
 .na {
-  background: #FFD8D8;
-  color: #FF3C3C;
+  background: #ffd8d8;
+  color: #ff3c3c;
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
@@ -783,8 +784,8 @@ footer {
 }
 
 .dayof {
-  background: #FFDEBD;
-  color: #F67B00;
+  background: #ffdebd;
+  color: #f67b00;
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
@@ -809,7 +810,7 @@ footer {
 }
 .pagination_area ul li a:hover {
   color: #ffffff;
-  background: #4A59A7;
+  background: #4a59a7;
 }
 .pagination_area ul li small {
   font-family: Inter;
@@ -829,7 +830,7 @@ footer {
   text-align: center;
   color: #616161;
   padding: 8px 12px;
-  border: 0.9px solid #E0E0E0;
+  border: 0.9px solid #e0e0e0;
   border-radius: 5px;
 }
 .pagination_area ul li p {
@@ -839,7 +840,7 @@ footer {
   line-height: 19px;
   letter-spacing: -0.6%;
   text-align: center;
-  color: #4A59A7;
+  color: #4a59a7;
   margin-bottom: 0;
 }
 .pagination_area ul li select {
@@ -852,7 +853,7 @@ footer {
   color: #616161;
   background: none;
   padding: 8px;
-  border: 0.9px solid #E0E0E0;
+  border: 0.9px solid #e0e0e0;
   border-radius: 5px;
 }
 
@@ -884,7 +885,7 @@ footer {
   transition: all 0.4s ease;
 }
 .sidebar-link:hover {
-  background-color: #6A7AB7;
+  background-color: #6a7ab7;
 }
 
 .header {
@@ -943,10 +944,10 @@ footer {
 }
 
 .todolistitemssection:nth-child(even) .todosubtitle {
-  border-left: 1.5px solid #00B445;
+  border-left: 1.5px solid #00b445;
 }
 .todolistitemssection:nth-child(odd) .todosubtitle {
-  border-left: 1.5px solid #4A59A7;
+  border-left: 1.5px solid #4a59a7;
 }
 
 .todoitems {
@@ -992,8 +993,8 @@ footer {
   line-height: 125%;
   letter-spacing: 0%;
   vertical-align: middle;
-  color: #FFFFFF;
-  background: #4A59A7;
+  color: #ffffff;
+  background: #4a59a7;
   border-radius: 5.27px;
   padding-top: 7px;
   padding-right: 10px;
@@ -1019,7 +1020,7 @@ footer {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #4A59A7;
+  color: #4a59a7;
 }
 
 .announcementDialogue .modal-body h1 {
@@ -1044,7 +1045,7 @@ footer {
   font-size: 8px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #AEAEB2;
+  color: #aeaeb2;
 }
 
 .my_attendance .calendars .days .general-do {
@@ -1059,7 +1060,7 @@ footer {
   height: 7px;
   width: 7px;
   content: " ";
-  background: #FC5A5A;
+  background: #fc5a5a;
   border-radius: 50%;
 }
 .my_attendance .calendars .days .general-na {
@@ -1074,7 +1075,7 @@ footer {
   height: 7px;
   width: 7px;
   content: " ";
-  background: #00B445;
+  background: #00b445;
   border-radius: 50%;
 }
 
@@ -1098,7 +1099,7 @@ footer {
   line-height: 125%;
   letter-spacing: 0%;
   vertical-align: middle;
-  color: #8E8E93;
+  color: #8e8e93;
   margin-bottom: 0;
 }
 
