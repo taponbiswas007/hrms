@@ -115,183 +115,183 @@ $(document).ready(function () {
 
 
 
-    $('.sidebar-link-items').each(function () {
-        const parentItem = $(this);
-        const submenu = parentItem.find('.sidebar-submenu');
-        let hoverTimeout;
-        const submenuWidth = 200; // Set your desired submenu width
-        const horizontalOffset = 0; // Space between parent and submenu
-
-        // Pre-calculate submenu height without showing it
-        submenu.css({
-            'position': 'absolute',
-            'visibility': 'hidden',
-            'display': 'block',
-            'width': submenuWidth
-        });
-        const submenuHeight = submenu.outerHeight();
-        submenu.css({
-            'position': '',
-            'visibility': '',
-            'display': ''
-        });
-
-        parentItem.hover(function () {
-            clearTimeout(hoverTimeout);
-
-            const offset = parentItem.offset();
-            const parentWidth = parentItem.outerWidth();
-            const parentHeight = parentItem.outerHeight();
-            const windowHeight = $(window).height();
-            const windowWidth = $(window).width();
-
-            const spaceBelow = windowHeight - (offset.top + parentHeight);
-            const spaceAbove = offset.top;
-            const spaceRight = windowWidth - (offset.left + parentWidth + horizontalOffset + submenuWidth);
-
-            // Calculate position
-            let topPosition, leftPosition, maxHeight, overflowY = 'hidden';
-
-            // Vertical positioning
-            if (spaceBelow >= submenuHeight) {
-                // Open downward - align to top of parent
-                topPosition = offset.top;
-                maxHeight = spaceBelow + parentHeight; // Include parent height in available space
-            } else if (spaceAbove >= submenuHeight) {
-                // Open upward - align to bottom of parent
-                topPosition = offset.top + parentHeight - submenuHeight;
-                maxHeight = spaceAbove + parentHeight; // Include parent height in available space
-            } else {
-                // Not enough space, use best available
-                if (spaceBelow >= spaceAbove) {
-                    // Open downward with scroll
-                    topPosition = offset.top;
-                    maxHeight = spaceBelow + parentHeight;
-                    overflowY = 'auto';
-                } else {
-                    // Open upward with scroll
-                    topPosition = Math.max(0, offset.top + parentHeight - submenuHeight);
-                    maxHeight = Math.min(submenuHeight, spaceAbove + parentHeight);
-                    overflowY = 'auto';
-                }
-            }
-
-            // Horizontal positioning
-            if (spaceRight >= 0) {
-                // Open to the right
-                leftPosition = offset.left + parentWidth + horizontalOffset;
-            } else {
-                // Open to the left if no space on right
-                leftPosition = offset.left - submenuWidth - horizontalOffset;
-            }
-
-            // Apply styles
-            submenu.appendTo('body').css({
-                'position': 'absolute',
-                'top': topPosition,
-                'left': leftPosition,
-                'width': submenuWidth,
-                'display': 'block',
-                'z-index': 99999,
-                'overflow-y': overflowY,
-                'max-height': maxHeight
-            });
-
-        }, function () {
-            hoverTimeout = setTimeout(function () {
-                if (!submenu.is(':hover')) {
-                    submenu.hide().appendTo(parentItem);
-                }
-            }, 200);
-        });
-
-        submenu.hover(function () {
-            clearTimeout(hoverTimeout);
-        }, function () {
-            hoverTimeout = setTimeout(function () {
-                $(this).hide().appendTo(parentItem);
-            }.bind(this), 200);
-        });
-    });
-
-
-
-
-
-
-
     // $('.sidebar-link-items').each(function () {
-    //     let parentItem = $(this);
-    //     let submenu = parentItem.find('.sidebar-submenu');
+    //     const parentItem = $(this);
+    //     const submenu = parentItem.find('.sidebar-submenu');
+    //     let hoverTimeout;
+    //     const submenuWidth = 200; // Set your desired submenu width
+    //     const horizontalOffset = 0; // Space between parent and submenu
+
+    //     // Pre-calculate submenu height without showing it
+    //     submenu.css({
+    //         'position': 'absolute',
+    //         'visibility': 'hidden',
+    //         'display': 'block',
+    //         'width': submenuWidth
+    //     });
+    //     const submenuHeight = submenu.outerHeight();
+    //     submenu.css({
+    //         'position': '',
+    //         'visibility': '',
+    //         'display': ''
+    //     });
 
     //     parentItem.hover(function () {
-    //         let offset = parentItem.offset();
-    //         let submenuHeight = submenu.outerHeight();
-    //         let windowHeight = $(window).height();
-    //         let spaceBelow = windowHeight - (offset.top + parentItem.outerHeight());
-    //         let spaceAbove = offset.top;
+    //         clearTimeout(hoverTimeout);
 
-    //         // Check if there's enough space below or above
+    //         const offset = parentItem.offset();
+    //         const parentWidth = parentItem.outerWidth();
+    //         const parentHeight = parentItem.outerHeight();
+    //         const windowHeight = $(window).height();
+    //         const windowWidth = $(window).width();
+
+    //         const spaceBelow = windowHeight - (offset.top + parentHeight);
+    //         const spaceAbove = offset.top;
+    //         const spaceRight = windowWidth - (offset.left + parentWidth + horizontalOffset + submenuWidth);
+
+    //         // Calculate position
+    //         let topPosition, leftPosition, maxHeight, overflowY = 'hidden';
+
+    //         // Vertical positioning
     //         if (spaceBelow >= submenuHeight) {
-    //             // Enough space below, show submenu from top to bottom
-    //             submenu.appendTo('body').css({
-    //                 position: 'absolute',
-    //                 top: offset.top,
-    //                 left: offset.left + 170, // Move 170px to the right
-    //                 display: 'block',
-    //                 zIndex: 99999,
-    //                 overflowY: 'hidden' // Reset overflow
-    //             });
+    //             // Open downward - align to top of parent
+    //             topPosition = offset.top;
+    //             maxHeight = spaceBelow + parentHeight; // Include parent height in available space
     //         } else if (spaceAbove >= submenuHeight) {
-    //             // Not enough space below, but enough space above, show submenu from bottom to top
-    //             submenu.appendTo('body').css({
-    //                 position: 'absolute',
-    //                 top: offset.top + parentItem.outerHeight() - submenuHeight, // Align bottom of submenu with bottom of parent
-    //                 left: offset.left + 170, // Move 170px to the right
-    //                 display: 'block',
-    //                 zIndex: 99999,
-    //                 overflowY: 'hidden' // Reset overflow
-    //             });
+    //             // Open upward - align to bottom of parent
+    //             topPosition = offset.top + parentHeight - submenuHeight;
+    //             maxHeight = spaceAbove + parentHeight; // Include parent height in available space
     //         } else {
-    //             // Not enough space on either side, show in the direction with maximum space
+    //             // Not enough space, use best available
     //             if (spaceBelow >= spaceAbove) {
-    //                 // More space below, show submenu from top to bottom with scroll
-    //                 submenu.appendTo('body').css({
-    //                     position: 'absolute',
-    //                     top: offset.top,
-    //                     left: offset.left + 170, // Move 170px to the right
-    //                     display: 'block',
-    //                     zIndex: 99999,
-    //                     overflowY: 'auto', // Enable scroll
-    //                     maxHeight: spaceBelow // Limit height to available space
-    //                 });
+    //                 // Open downward with scroll
+    //                 topPosition = offset.top;
+    //                 maxHeight = spaceBelow + parentHeight;
+    //                 overflowY = 'auto';
     //             } else {
-    //                 // More space above, show submenu from bottom to top with scroll
-    //                 submenu.appendTo('body').css({
-    //                     position: 'absolute',
-    //                     top: offset.top + parentItem.outerHeight() - Math.min(submenuHeight, spaceAbove), // Align bottom of submenu with bottom of parent
-    //                     left: offset.left + 170, // Move 170px to the right
-    //                     display: 'block',
-    //                     zIndex: 99999,
-    //                     overflowY: 'auto', // Enable scroll
-    //                     maxHeight: spaceAbove // Limit height to available space
-    //                 });
+    //                 // Open upward with scroll
+    //                 topPosition = Math.max(0, offset.top + parentHeight - submenuHeight);
+    //                 maxHeight = Math.min(submenuHeight, spaceAbove + parentHeight);
+    //                 overflowY = 'auto';
     //             }
     //         }
+
+    //         // Horizontal positioning
+    //         if (spaceRight >= 0) {
+    //             // Open to the right
+    //             leftPosition = offset.left + parentWidth + horizontalOffset;
+    //         } else {
+    //             // Open to the left if no space on right
+    //             leftPosition = offset.left - submenuWidth - horizontalOffset;
+    //         }
+
+    //         // Apply styles
+    //         submenu.appendTo('body').css({
+    //             'position': 'absolute',
+    //             'top': topPosition,
+    //             'left': leftPosition,
+    //             'width': submenuWidth,
+    //             'display': 'block',
+    //             'z-index': 99999,
+    //             'overflow-y': overflowY,
+    //             'max-height': maxHeight
+    //         });
+
     //     }, function () {
-    //         setTimeout(function () {
+    //         hoverTimeout = setTimeout(function () {
     //             if (!submenu.is(':hover')) {
     //                 submenu.hide().appendTo(parentItem);
     //             }
-    //         }, 200); // Small delay to allow moving to submenu
+    //         }, 200);
     //     });
 
     //     submenu.hover(function () {
-    //         $(this).show();
+    //         clearTimeout(hoverTimeout);
     //     }, function () {
-    //         $(this).hide().appendTo(parentItem);
+    //         hoverTimeout = setTimeout(function () {
+    //             $(this).hide().appendTo(parentItem);
+    //         }.bind(this), 200);
     //     });
     // });
+
+
+
+
+
+
+
+    $('.sidebar-link-items').each(function () {
+        let parentItem = $(this);
+        let submenu = parentItem.find('.sidebar-submenu');
+
+        parentItem.hover(function () {
+            let offset = parentItem.offset();
+            let submenuHeight = submenu.outerHeight();
+            let windowHeight = $(window).height();
+            let spaceBelow = windowHeight - (offset.top + parentItem.outerHeight());
+            let spaceAbove = offset.top;
+
+            // Check if there's enough space below or above
+            if (spaceBelow >= submenuHeight) {
+                // Enough space below, show submenu from top to bottom
+                submenu.appendTo('body').css({
+                    position: 'absolute',
+                    top: offset.top,
+                    left: offset.left + 170, // Move 170px to the right
+                    display: 'block',
+                    zIndex: 99999,
+                    overflowY: 'hidden' // Reset overflow
+                });
+            } else if (spaceAbove >= submenuHeight) {
+                // Not enough space below, but enough space above, show submenu from bottom to top
+                submenu.appendTo('body').css({
+                    position: 'absolute',
+                    top: offset.top + parentItem.outerHeight() - submenuHeight, // Align bottom of submenu with bottom of parent
+                    left: offset.left + 170, // Move 170px to the right
+                    display: 'block',
+                    zIndex: 99999,
+                    overflowY: 'hidden' // Reset overflow
+                });
+            } else {
+                // Not enough space on either side, show in the direction with maximum space
+                if (spaceBelow >= spaceAbove) {
+                    // More space below, show submenu from top to bottom with scroll
+                    submenu.appendTo('body').css({
+                        position: 'absolute',
+                        top: offset.top,
+                        left: offset.left + 170, // Move 170px to the right
+                        display: 'block',
+                        zIndex: 99999,
+                        overflowY: 'auto', // Enable scroll
+                        maxHeight: spaceBelow // Limit height to available space
+                    });
+                } else {
+                    // More space above, show submenu from bottom to top with scroll
+                    submenu.appendTo('body').css({
+                        position: 'absolute',
+                        top: offset.top + parentItem.outerHeight() - Math.min(submenuHeight, spaceAbove), // Align bottom of submenu with bottom of parent
+                        left: offset.left + 170, // Move 170px to the right
+                        display: 'block',
+                        zIndex: 99999,
+                        overflowY: 'auto', // Enable scroll
+                        maxHeight: spaceAbove // Limit height to available space
+                    });
+                }
+            }
+        }, function () {
+            setTimeout(function () {
+                if (!submenu.is(':hover')) {
+                    submenu.hide().appendTo(parentItem);
+                }
+            }, 200); // Small delay to allow moving to submenu
+        });
+
+        submenu.hover(function () {
+            $(this).show();
+        }, function () {
+            $(this).hide().appendTo(parentItem);
+        });
+    });
 
 
 
