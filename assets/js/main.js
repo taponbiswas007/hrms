@@ -510,6 +510,12 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
+    // filter by word 
+    $('.filteringKeyword ul li button').click(function () {
+        $('.filteringKeyword ul li button').removeClass('active');
+        $(this).addClass('active');
+    });
+
     // $('.pendingBtn').click(function () {
     //     if (!$('#pendingStatus').is(':visible')) {
     //         $('#approvedStatus, #rejectedStatus ').fadeOut(100, function () {
