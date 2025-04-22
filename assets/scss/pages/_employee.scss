@@ -128,6 +128,19 @@
     color: #4A59A7;
 }
 
+.extra_references_area {
+    h3 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22.7px;
+        letter-spacing: -0.6%;
+        vertical-align: middle;
+        margin-bottom: 0;
+        color: #0A0A0A;
+    }
+}
+
 @media (max-width: 576px) {
     .user-role-area {
         width: 100%;
