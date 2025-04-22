@@ -118,6 +118,16 @@
     color: #4A59A7;
 }
 
+.optional_description {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22.48px;
+    letter-spacing: -0.6%;
+    vertical-align: middle;
+    color: #4A59A7;
+}
+
 @media (max-width: 576px) {
     .user-role-area {
         width: 100%;
@@ -140,6 +150,10 @@
             //     display: none;
             // }
         }
+    }
+
+    .font-small {
+        font-size: 12px;
     }
 }
 
