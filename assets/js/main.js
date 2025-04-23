@@ -516,28 +516,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-    // $('.pendingBtn').click(function () {
-    //     if (!$('#pendingStatus').is(':visible')) {
-    //         $('#approvedStatus, #rejectedStatus ').fadeOut(100, function () {
-    //             $('#pendingStatus').fadeIn(100);
-    //         });
-    //     }
-    // });
 
-    // $('.approvedBtn').click(function () {
-    //     if (!$('#approvedStatus').is(':visible')) {
-    //         $('#pendingStatus, #rejectedStatus').fadeOut(100, function () {
-    //             $('#approvedStatus').fadeIn(100);
-    //         });
-    //     }
-    // });
-    // $('.rejectedBtn').click(function () {
-    //     if (!$('#rejectedStatus').is(':visible')) {
-    //         $('#pendingStatus, #approvedStatus').fadeOut(100, function () {
-    //             $('#rejectedStatus').fadeIn(100);
-    //         });
-    //     }
-    // });
 
     $('.tab-content').hide();  // Hide all by default
     $('#pendingStatus').show().addClass('statusactive'); // Show default one
@@ -555,18 +534,25 @@ $(document).ready(function () {
     $('.rejectedBtn').click(function () { changeTab('rejectedStatus'); });
 
 
+    // status changer 
+    $('.other_link_tab_area li button').click(function () {
+        $('.other_link_tab_area li button').removeClass('active');
+        $(this).addClass('active');
+    });
     $('.protab-content').hide();  // Hide all by default
     $('#promotionArea').show().addClass('protabactive'); // Show default one
 
     function changeproTab(target) {
-        $('.protab-content.statusactive').fadeOut(300, function () {
+        $('.protab-content.protabactive').fadeOut(300, function () {
             $(this).removeClass('protabactive');
             $('#' + target).fadeIn(300).addClass('protabactive');
         });
     }
 
-    $('.pendingBtn').click(function () { changeproTab('promotionArea'); });
-    $('.approvedBtn').click(function () { changeproTab('transferArea'); });
+    $('.promotionBtn').click(function () { changeproTab('promotionArea'); });
+    $('.transferBtn').click(function () { changeproTab('transferArea'); });
+    $('.reassignmentBtn').click(function () { changeproTab('reassignmentArea'); });
+    $('.incrementDecrementBtn').click(function () { changeproTab('incrementDecrementArea'); });
 
 
 

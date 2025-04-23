@@ -655,10 +655,10 @@
                                     <button class="transferBtn">Transfer</button>
                                 </li>
                                 <li>
-                                    <button class="" >Re-assignment</button>
+                                    <button class="reassignmentBtn" >Re-assignment</button>
                                 </li>
                                 <li>
-                                    <button  class="">Increment/Decrement</button>
+                                    <button  class="incrementDecrementBtn">Increment/Decrement</button>
                                 </li>
                             </ul>
 
@@ -667,7 +667,7 @@
                             <!-- ======================================== -->
                             <!-- ==========promotion area start========== -->
                             <!-- ======================================== -->
-                            <div id="promotionArea" class="protab-content">
+                            <div id="promotionArea" class="protab-content ">
                                 <div class="row g-5">
                                     <div class="col-xl-6 col-lg-6 col-12">
                                         <div class=" pb-3" style="border-bottom: 0.9px dashed #d2d2d2">
@@ -973,6 +973,374 @@
                             <!-- ======================================== -->
                             <!-- ==========transfer area end============= -->
                             <!-- ======================================== -->
+
+
+                            <!-- ============================================= -->
+                            <!-- ==========Re-assignment area start=========== -->
+                            <!-- ============================================= -->
+                             <div id="reassignmentArea" class="protab-content">
+                                <div class="row g-5">
+                                    <div class="col-xl-6 col-lg-6 col-12">
+                                        <div class=" pb-3" style="border-bottom: 0.9px dashed #d2d2d2">
+                                            <h1 class="fw-medium fs-5 text-black mt-3">Current Status</h1>
+                                        </div>
+                                        <div class="row g-4 pt-4">
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Designation </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Branch </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Supervisor </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Department </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div
+                                                    class="d-flex justify-content-start align-items-center gap-4 flex-wrap">
+                                                    <div class="position-relative">
+                                                        <label class="custom-checkbox text-nowrap" style="font-size: 12px;">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                            Is Supervisor
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative">
+                                                        <label class="custom-checkbox text-nowrap" style="font-size: 12px;">
+                                                            <input type="checkbox" checked>
+                                                            <span class="checkmark"></span>
+                                                            Is Supervisor Mark Attendence
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Division </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-12">
+                                        <div class=" pb-3" style="border-bottom: 0.9px dashed #d2d2d2">
+                                            <h1 class="fw-medium fs-5 text-black mt-3">New Status</h1>
+                                        </div>
+                                        <div class="row g-4 pt-4">
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Designation </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Branch </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Supervisor </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Department </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div
+                                                    class="d-flex justify-content-start align-items-center gap-4 flex-wrap">
+                                                    <div class="position-relative">
+                                                        <label class="custom-checkbox text-nowrap" style="font-size: 12px;">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                            Is Supervisor
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative">
+                                                        <label class="custom-checkbox text-nowrap" style="font-size: 12px;">
+                                                            <input type="checkbox" checked>
+                                                            <span class="checkmark"></span>
+                                                            Is Supervisor Mark Attendence
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Division </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> With Effect From </label>
+                                                <input type="date" style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-control fs-7" placeholder="10/5/2025">
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <label class="mb-1" for=""> Remarks </label>
+                                                <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-control fs-7" placeholder="Remarks here...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class=" pt-3 d-flex flex-wrap justify-content-end align-items-end gap-3">
+                                    <button class="btn bg-blue text-white rounded-4 px-4"><i
+                                            class="fa-solid fa-arrow-left me-2"></i>Back </button>
+                                    <button class="btn bg-blue text-white rounded-4 px-4"
+                                        style="background: #5A6185;">Cancel Promotion</button>
+                                    <button class="btn bg-blue text-white rounded-4 px-4">Save</button>
+    
+                                </div>
+                             </div>
+                            <!-- ============================================= -->
+                            <!-- ==========Re-assignment area end============= -->
+                            <!-- ============================================= -->
+
+
+
+                            <!-- =================================================== -->
+                            <!-- ==========Increment/Decrement area start=========== -->
+                            <!-- =================================================== -->
+                             <div id="incrementDecrementArea" class="protab-content">
+                                <div class="row g-5">
+                                    <div class="col-12">
+                                        <div class=" pb-3" style="border-bottom: 0.9px dashed #d2d2d2">
+                                            <h1 class="fw-medium fs-5 text-black mt-3">Selected EmployeeList</h1>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered border-gray">
+                                                <thead>
+                                                    <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top align-top"
+                                                        style="color: #404040; background: #f9f9f9">
+                                                        <th class="border-0"></th>
+                                                        <th class="border-0">Employee Code</th>
+                                                        <th class="border-0">Effective From</th>
+                                                        <th class="border-0">Pay From</th>
+                                                        <th class="border-0">Amount Type</th>
+                                                        <th class="border-0">Increment/Decrement Amount</th>
+                                                        <th class="border-0">Old Annual Gross</th>
+                                                        <th class="border-0">New Annual Gross</th>
+                                                        <th class="border-0">Remarks</th>
+                                                        <th class="border-0">Type</th>
+                                                        <th class="border-0"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody style="
+                                                    font-family: DM Sans, sans-serif;
+                                                    font-size: 12px !important;
+                                                    ">
+                                                    <tr class="text-nowrap fw-normal" style="
+                                                            color: #202020;
+                                                            height: 40px;
+                                                            vertical-align: middle;
+                                                        ">
+                                                        <td class="p-2">
+                                                            <div class="position-relative" style="height: 20px; width: 20px">
+                                                                <label class="custom-checkbox">
+                                                                    <input type="checkbox" />
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="p-2">FE0134</td>
+                                                        <td class="p-2"></td>
+                                                        <td class="p-2"></td>
+                                                        <td class="p-2"></td>
+                                                        <td class="p-2"></td>
+                                                        <td class="p-2"></td>
+                                                        <td class="p-2"> </td>
+                                                        <td class="p-2"> </td>
+                                                        <td class="p-2"> </td>
+                                                        <td class="p-2 text-center">
+                                                            <button class="indechistoryBtn">History</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-nowrap fw-normal" style="
+                                                            color: #202020;
+                                                            height: 40px;
+                                                            vertical-align: middle;
+                                                        ">
+                                                        <td class="p-2">
+                                                            <div class="position-relative" style="height: 20px; width: 20px">
+                                                                <label class="custom-checkbox">
+                                                                    <input type="checkbox" />
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="p-2">FE0134</td>
+                                                        <td class="p-2"></td>
+                                                        <td class="p-2"></td>
+                                                        <td class="p-2"></td>
+                                                        <td class="p-2"></td>
+                                                        <td class="p-2"></td>
+                                                        <td class="p-2"> </td>
+                                                        <td class="p-2"> </td>
+                                                        <td class="p-2"> </td>
+                                                        <td class="p-2 text-center">
+                                                            <button class="indechistoryBtn">History</button>
+                                                        </td>
+                                                    </tr>
+                                                 
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class=" pb-3" style="border-bottom: 0.9px dashed #d2d2d2">
+                                            <h1 class="fw-medium fs-5 text-black mt-3">Salary Increment</h1>
+                                        </div>
+                                        <div class="row g-4 pt-4">
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Increment/Decrement Salary By </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Designation </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Branch </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Supervisor </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Department </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div
+                                                    class="d-flex justify-content-start align-items-center gap-4 flex-wrap">
+                                                    <div class="position-relative">
+                                                        <label class="custom-checkbox text-nowrap" style="font-size: 12px;">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                            Is Supervisor
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative">
+                                                        <label class="custom-checkbox text-nowrap" style="font-size: 12px;">
+                                                            <input type="checkbox" checked>
+                                                            <span class="checkmark"></span>
+                                                            Is Supervisor Mark Attendence
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> Division </label>
+                                                <select style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-select fs-7" name="" id="">
+                                                    <option value="">Select</option>
+                                                    <option value="">Example 1</option>
+                                                    <option value="">Example 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 col-12">
+                                                <label class="mb-1" for=""> With Effect From </label>
+                                                <input type="date" style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-control fs-7" placeholder="10/5/2025">
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <label class="mb-1" for=""> Remarks </label>
+                                                <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
+                                                    class="form-control fs-7" placeholder="Remarks here...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class=" pt-3 d-flex flex-wrap justify-content-end align-items-end gap-3">
+                                    <button class="btn bg-blue text-white rounded-4 px-4"><i
+                                            class="fa-solid fa-arrow-left me-2"></i>Back </button>
+                                    <button class="btn bg-blue text-white rounded-4 px-4"
+                                        style="background: #5A6185;">Cancel Promotion</button>
+                                    <button class="btn bg-blue text-white rounded-4 px-4">Save</button>
+    
+                                </div>
+                             </div>
+                            <!-- =================================================== -->
+                            <!-- ==========Increment/Decrement area end============= -->
+                            <!-- =================================================== -->
                             
 
 

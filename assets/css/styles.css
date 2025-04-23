@@ -2129,8 +2129,11 @@ footer {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 10px;
 }
-.other_link_tab_area li a {
+.other_link_tab_area li button {
   padding: 5px 8px;
   font-family: Inter;
   font-weight: 500;
@@ -2142,7 +2145,7 @@ footer {
   transition: all 0.3s ease;
   color: #8E8E93;
 }
-.other_link_tab_area li a:hover {
+.other_link_tab_area li button:hover {
   color: #ffffff;
   background: #4A59A7;
 }
@@ -2164,6 +2167,16 @@ footer {
   opacity: 1;
 }
 
+.indechistoryBtn {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #4A59A7;
+}
+
 @media (max-width: 576px) {
   .user-role-area {
     width: 100%;
@@ -2174,6 +2187,10 @@ footer {
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
     row-gap: 15px;
+  }
+  .other_link_tab_area li button {
+    font-size: 11px;
+    padding: 0px 5px;
   }
 }
 @media (max-width: 420px) {
