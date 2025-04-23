@@ -2116,6 +2116,54 @@ footer {
   color: #0A0A0A;
 }
 
+.other_link_tab_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.other_link_tab_area li a {
+  padding: 5px 8px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #8E8E93;
+}
+.other_link_tab_area li a:hover {
+  color: #ffffff;
+  background: #4A59A7;
+}
+.other_link_tab_area li .active {
+  color: #ffffff;
+  background: #4A59A7;
+}
+
+.protab-content {
+  display: none;
+  /* Initially hidden */
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.protab-content.protabactive {
+  display: block;
+  opacity: 1;
+}
+
 @media (max-width: 576px) {
   .user-role-area {
     width: 100%;

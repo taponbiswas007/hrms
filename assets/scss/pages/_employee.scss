@@ -141,6 +141,49 @@
     }
 }
 
+.other_link_tab_area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+
+    li {
+        a {
+            padding: 5px 8px;
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22.48px;
+            letter-spacing: -0.6%;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            color: #8E8E93;
+
+            &:hover {
+                color: #ffffff;
+                background: #4A59A7;
+            }
+        }
+
+        .active {
+            color: #ffffff;
+            background: #4A59A7;
+        }
+    }
+}
+
+.protab-content {
+    display: none;
+    /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.protab-content.protabactive {
+    display: block;
+    opacity: 1;
+}
+
 @media (max-width: 576px) {
     .user-role-area {
         width: 100%;

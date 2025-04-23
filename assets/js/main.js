@@ -555,6 +555,21 @@ $(document).ready(function () {
     $('.rejectedBtn').click(function () { changeTab('rejectedStatus'); });
 
 
+    $('.protab-content').hide();  // Hide all by default
+    $('#promotionArea').show().addClass('protabactive'); // Show default one
+
+    function changeproTab(target) {
+        $('.protab-content.statusactive').fadeOut(300, function () {
+            $(this).removeClass('protabactive');
+            $('#' + target).fadeIn(300).addClass('protabactive');
+        });
+    }
+
+    $('.pendingBtn').click(function () { changeproTab('promotionArea'); });
+    $('.approvedBtn').click(function () { changeproTab('transferArea'); });
+
+
+
 
 
     // side bar items
