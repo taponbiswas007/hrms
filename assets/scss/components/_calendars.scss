@@ -166,11 +166,33 @@
 }
 
 .general-do {
-    background-color: #f0f8ff;
+    position: relative;
+   &::after{
+    content: '';
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background: #00B445;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+   }
 }
 
 .general-na {
-    background-color: #fff0f0;
+    position: relative;
+    &::after{
+     content: '';
+     height: 7px;
+     width: 7px;
+     border-radius: 50%;
+     background: #FC5A5A;
+     bottom: 15px;
+     left: 50%;
+     transform: translateX(-50%);
+     position: absolute;
+    }
 }
 
 /* FullCalendar customizations */
@@ -236,7 +258,8 @@
     width: 40px;
     border-radius: 8px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 5px;
     align-items: center;
     flex-direction: column;
     row-gap: 5px;

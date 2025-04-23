@@ -388,10 +388,34 @@ ul {
   color: #ccc;
 }
 .calendars .general-do {
-  background-color: #f0f8ff;
+  position: relative;
+}
+.calendars .general-do::after {
+  content: "";
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #00B445;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
 }
 .calendars .general-na {
-  background-color: #fff0f0;
+  position: relative;
+}
+.calendars .general-na::after {
+  content: "";
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #FC5A5A;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
 }
 .calendars .fc-header-toolbar {
   display: none !important;
@@ -448,9 +472,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
