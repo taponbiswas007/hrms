@@ -2177,6 +2177,128 @@ footer {
   color: #4A59A7;
 }
 
+.visibilityselectbtn {
+  background: #0A7E22;
+  color: #ffffff;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  border: none;
+  border-radius: 2px;
+  padding: 3px 23px 3px 5px;
+}
+
+.visibleselector .custom-dropdown::after {
+  color: #ffffff;
+  right: 5px !important;
+}
+
+.visibleItemaddbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 7px;
+  margin: 12px 0;
+  border-radius: 5px;
+  border: 1px solid #a6a6a6;
+  position: relative;
+  min-height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.visibleItemaddbox ul li {
+  color: #333;
+  margin: 4px 3px;
+  list-style: none;
+  border-radius: 5px;
+  background: #f2f2f2;
+  padding: 5px 8px 5px 10px;
+  border: 1px solid #e3e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visibleItemaddbox ul li .close {
+  height: 18px;
+  width: 18px;
+  color: #808080;
+  margin-left: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #dfdfdf;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+}
+
+.visibleItemaddbox ul input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  min-width: 150px;
+}
+
+/* Dropdown styles */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #a6a6a6;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  z-index: 1000;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+.dropdown ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.dropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: #fff;
+}
+
+.dropdown li:hover {
+  background-color: #f2f2f2;
+}
+
 @media (max-width: 576px) {
   .user-role-area {
     width: 100%;

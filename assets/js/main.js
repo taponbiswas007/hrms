@@ -1,5 +1,79 @@
 $(document).ready(function () {
 
+    // visible box
+    const $input = $('.visibleItemaddbox input');
+    const $dropdown = $('.dropdown');
+    const $dropdownItems = $('.dropdown li');
+    const $tagsContainer = $('.visibleItemaddbox ul');
+
+    // Show dropdown when input is focused
+    $input.on('focus', function () {
+        filterDropdown();
+    });
+
+    // Hide dropdown when clicking outside
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.visibleItemaddbox').length) {
+            $dropdown.removeClass('show');
+        }
+    });
+
+    // Filter dropdown items based on input
+    $input.on('input', filterDropdown);
+
+    // Add click event to all dropdown items
+    $dropdownItems.on('click', function () {
+        addTag($(this).text());
+        $input.val('');
+        $dropdown.removeClass('show');
+    });
+
+    function filterDropdown() {
+        const searchTerm = $input.val().toLowerCase();
+        let hasMatches = false;
+
+        $dropdownItems.each(function () {
+            const text = $(this).text().toLowerCase();
+            if (text.includes(searchTerm)) {
+                $(this).show();
+                hasMatches = true;
+            } else {
+                $(this).hide();
+            }
+        });
+
+        if (hasMatches) {
+            $dropdown.addClass('show');
+        } else {
+            $dropdown.removeClass('show');
+        }
+    }
+
+    function addTag(text) {
+        // Create tag element
+        const $tag = $(`
+      <li>
+        ${text}
+        <span class="close">×</span>
+      </li>
+    `);
+
+        // Add click event to close button
+        $tag.find('.close').on('click', function () {
+            $tag.remove();
+        });
+
+        // Insert before input
+        $tag.insertBefore($input);
+    }
+
+    // Handle removing tags when clicking close button (delegated event)
+    $tagsContainer.on('click', '.close', function () {
+        $(this).parent().remove();
+    });
+
+
+
     // Toggle dropdown when clicking the button
     $(document).on('click', '.custom-dropdown-button', function (event) {
         event.stopPropagation();
@@ -880,12 +954,6 @@ function toggleSections() {
         todoListContainer.parentNode.insertBefore(holidayListContainer, todoListContainer);
     }
 }
-
-
-
-
-
-
 
 
 
