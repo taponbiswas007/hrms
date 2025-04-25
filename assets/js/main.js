@@ -1,5 +1,24 @@
 $(document).ready(function () {
 
+    // select all function
+    // Handle select all in thead
+    $(document).on('change', '.select-all-checkbox', function () {
+        const $table = $(this).closest('table');
+        const isChecked = $(this).is(':checked');
+        $table.find('tbody .row-checkbox').prop('checked', isChecked);
+    });
+
+    // Handle single checkbox in tbody
+    $(document).on('change', '.row-checkbox', function () {
+        const $table = $(this).closest('table');
+        const $allCheckboxes = $table.find('tbody .row-checkbox');
+        const $checkedCheckboxes = $allCheckboxes.filter(':checked');
+        const $headerCheckbox = $table.find('thead .select-all-checkbox');
+
+        $headerCheckbox.prop('checked', $allCheckboxes.length === $checkedCheckboxes.length);
+    });
+
+
     // approve checkbox
     $(document).on('change', '.approvecheckbox-group input[name="approval-status"]', function () {
         const $group = $(this).closest('.approvecheckbox-group');
