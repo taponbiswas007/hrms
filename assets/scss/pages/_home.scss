@@ -7,9 +7,10 @@
     }
 }
 
+
+
 .side-bar {
-    width: 170px;
-    display: none;
+    width: 230px;
 
     .menu {
         height: calc(100vh - 74px);
@@ -18,64 +19,114 @@
         padding-bottom: 100px;
     }
 
-    .dropdown-menu {
-        z-index: 1000;
-        /* Bring dropdown to the front */
-        position: absolute;
-        /* Ensure it's positioned correctly */
-    }
-
-    .sidebarItem {
-        position: static !important;
-    }
 }
 
-.sidebarActive {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    display: block;
-    height: 100vh;
+
+
+footer {
+    width: calc(100% - 230px);
 }
+
+.header {
+    padding-right: 3rem !important;
+}
+
+
+
 
 .main-content {
-    width: 100%;
+    width: calc(100% - 230px);
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden !important;
 }
 
 .menu {
-    width: 170px;
+    width: 230px;
     height: 100vh;
     overflow-y: auto;
     overflow-x: visible;
     position: relative;
 }
 
+
 .sidebar-link-items {
-    position: relative;
-    z-index: 9;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom:
+        1px solid #FFFFFF0A !important;
+}
+
+.border-bottom-op4 {
+    border-bottom:
+        none !important;
 }
 
 .sidebar-submenu {
-    position: absolute;
-    background: #ffffff;
-    // width: fit-content;
-    display: none;
-    overflow-y: auto;
-    // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15) !important;
-    /* Top, right, bottom shadow */
-    /* If you want to customize the shadow more: */
-    //  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0,0,0,0.15) !important;
-    /*top, bottom right*/
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 2px 0 5px rgba(0, 0, 0, 0.25) !important;
-    /* bottom and right*/
-    padding: 10px;
+
+    background: #19286f;
+    padding-left: 1.5rem !important;
+
+    li {
+        a {
+            position: relative;
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24.12px;
+            letter-spacing: 1%;
+            text-align: center;
+            color: #ffffff;
+            text-align: left;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            column-gap: 7px;
+            padding: 5px 10px;
+
+            &:hover {
+                background: #4a59a7;
+            }
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
 }
 
+.sidebar-link-items {
+    button {
+        position: relative;
+        width: 100%;
 
+        &::after {
+            position: absolute;
+            content: "";
+            width: .50em;
+            height: .50em;
+            border-style: solid;
+            border-width: 1.2px 0 0 1.2px;
+            border-color: initial;
+            right: 15px;
+            transform: rotate(-45deg) translateY(-50%);
+            transform-origin: top;
+            top: 50%;
+            transition: all .3s ease-out;
+        }
+
+        &:not(.collapsed) {
+            &::after {
+
+                transform: rotate(-134.26deg) translateY(-50%);
+            }
+        }
+    }
+
+
+}
+
+// transform: rotate(-128.26deg) translateY(-50%);
 
 footer {
     position: fixed;
@@ -367,24 +418,7 @@ footer {
     font-size: 18px !important;
 }
 
-@media (min-width: 768px) {
-    .side-bar {
-        width: 170px;
-        display: block;
-    }
 
-    .main-content {
-        width: calc(100% - 170px);
-    }
-
-    footer {
-        width: calc(100% - 170px);
-    }
-
-    .header {
-        padding-right: 3rem !important;
-    }
-}
 
 .sidebar-link {
     transition: all 0.4s ease;
@@ -673,6 +707,27 @@ footer {
 }
 
 @media (max-width: 992px) {
+    .main-content {
+        width: 100%;
+    }
+
+    .side-bar {
+        width: 200px;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        z-index: 999;
+        transition: all 0.3s ease;
+
+
+
+
+    }
+
+    .sidebarActive {
+        left: 0;
+    }
+
     .tabs-title {
         font-size: 16px;
     }
