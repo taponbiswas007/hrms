@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
     // approve checkbox
-    $('input[name="approval-status"]').on('change', function () {
-        if (this.checked) {
-            $('input[name="approval-status"]').not(this).prop('checked', false);
-        }
+    $(document).on('change', '.approvecheckbox-group input[name="approval-status"]', function () {
+        const $group = $(this).closest('.approvecheckbox-group');
+        $group.find('input[name="approval-status"]').not(this).prop('checked', false);
     });
+
 
 
     // visible box

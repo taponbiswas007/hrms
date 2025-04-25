@@ -2421,6 +2421,9 @@ footer {
 .addressTablelist li .active .tablehidden {
   display: none;
 }
+.addressTablelist .addressdetailsTablearea {
+  margin-top: 10px;
+}
 
 @media (max-width: 576px) {
   .user-role-area {
