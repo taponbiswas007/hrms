@@ -837,14 +837,12 @@
                                 <li class="breadcrumb-item">
                                     <a style="color: #757575" href="companyAnnouncements.html">Hr Task</a>
                                 </li>
-                                <li class="breadcrumb-item">
-                                    <a style="color: #757575" href="#">Absconding Separation</a>
-                                </li>
+
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Involuntary Separation Approval <img class="d-inline"
-                                            height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
+                                        aria-expanded="false">Absconding Separation <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1" href="companyAnnouncements.html">Company
                                                 Announcements</a></li>
@@ -861,6 +859,21 @@
                                         <li><a class="dropdown-item mb-1" href="clearance.html">Clearance</a></li>
                                         <li><a class="dropdown-item mb-1" href="interviewList.html">Interview List</a>
                                         </li>
+                                    </ul>
+                                </li>
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Get Absconding<img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
+                                    <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
+                                        <li><a class="dropdown-item mb-1"
+                                                href="involuntarySeparationApproval.html">Involuntary Separation
+                                                Approval</a></li>
+                                        <li><a class="dropdown-item mb-1" href="getAbsconding.html">Get Absconding</a>
+                                        </li>
+
+
                                     </ul>
                                 </li>
                             </ol>
@@ -1010,6 +1023,24 @@
                             <div class="row g-4 pt-3">
 
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Company </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Branch </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class="mb-1" for=""> Employee Code </label>
                                     <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
                                         class="form-control fs-7" placeholder="Enter Employee Code" />
@@ -1019,22 +1050,28 @@
                                     <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
                                         class="form-control fs-7" placeholder="Enter Employee Name" />
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Employee Status </label>
-                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
-                                        name="" id="">
-                                        <option value="">Select</option>
-                                        <option value="">Example 1</option>
-                                        <option value="">Example 2</option>
-                                    </select>
+
+
+
+
+                                <div class="col-xxl-6 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="h-100 w-100 d-flex justify-content-start align-items-end">
+                                        <div class="position-relative">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" />
+                                                <span class="checkmark" style=" margin-top: -3px;"></span>
+                                                Show Absconding
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-
-
-
-                                <div class="col-xxl-3 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="h-100 d-flex justify-content-end align-items-end">
-                                        <button class="btn bg-blue text-white rounded-4 px-5">
+                                <div class="col-xxl-6 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="h-100 d-flex justify-content-end align-items-end gap-3 flex-wrap">
+                                        <button class="btn bg-blue text-white rounded-4 px-4">
                                             Search
+                                        </button>
+                                        <button class="btn bg-blue text-white rounded-4 px-4">
+                                            Export to Excel
                                         </button>
                                     </div>
                                 </div>
@@ -1045,7 +1082,7 @@
                         <div class="bg-white p-3 rounded-4 mt-4 shadow dataTable-area">
                             <div class="d-flex select-criteria justify-content-between align-items-center pb-3"
                                 style="border-bottom: 0.9px dashed #d2d2d2">
-                                <h1 class="fw-medium fs-5 text-black">Involuntary Separation Approval List</h1>
+                                <h1 class="fw-medium fs-5 text-black">Absconding List</h1>
 
                             </div>
 
@@ -1070,12 +1107,18 @@
                                                 </th>
                                                 <th class="border-0 ">Code</th>
                                                 <th class="border-0 ">Name</th>
-                                                <th class="border-0   ">Termination Date</th>
-                                                <th class="border-0   ">Terminated By</th>
-                                                <th class="border-0   ">Supervisor Remarks</th>
-                                                <th class="border-0 text-center  ">Asset Status</th>
-                                                <th class="border-0 text-center  ">Last Working Date</th>
-                                                <th class="border-0  px-3 ">Remarks
+                                                <th class="border-0   ">Designation</th>
+                                                <th class="border-0   ">Mobile</th>
+                                                <th class="border-0   ">EmailID</th>
+                                                <th class="border-0   ">Absconding Days</th>
+                                                <th class="border-0   ">Absconding Date</th>
+                                                <th class="border-0 ">Status
+                                                </th>
+                                                <th class="border-0 ">Last Working Date
+                                                </th>
+                                                <th class="border-0 ">Termination Reason
+                                                </th>
+                                                <th class="border-0 ">Upload Termination Letter
                                                 </th>
 
                                             </tr>
@@ -1100,25 +1143,296 @@
                                                 <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
                                                 <td class="p-2">
-                                                    07/09/2024
+                                                    Trainee Beauty Consultant
                                                 </td>
                                                 <td class="p-2 ">
-                                                    SUP00001 - SupperAdmin Admin
+                                                    9865412358
                                                 </td>
-                                                <td class="p-2">Remarks</td>
+                                                <td class="p-2">John.doe@intero.in</td>
 
-                                                <td class="p-2 text-center">
-                                                    <button class="noAssets">No Assets</button>
+                                                <td class="p-2 ">
+                                                    182
+                                                </td>
+                                                <td class="p-2 ">
+                                                    7/5/2024 12:00:00 AM
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <span class="statustext">
+                                                        Permanent
+                                                    </span>
                                                 </td>
                                                 <td class="p-2">
                                                     <div class="d-flex align-items-center justify-content-center">
                                                         <input type="date" class="form-control" placeholder="Remarks">
                                                     </div>
                                                 </td>
-                                                <td class="p-2 text-center" style="min-width: 225px;">
+                                                <td class="p-2 text-center" style="min-width: 165px;">
                                                     <div class="d-flex align-items-center justify-content-center">
                                                         <input type="text" class="form-control" placeholder="Remarks">
                                                     </div>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <button class="datadownloadbtn">Download</button>
+                                                </td>
+
+
+
+
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">
+                                                    <div class="position-relative" style="height: 20px; width: 20px">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" class="row-checkbox" />
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">
+                                                    Trainee Beauty Consultant
+                                                </td>
+                                                <td class="p-2 ">
+                                                    9865412358
+                                                </td>
+                                                <td class="p-2">John.doe@intero.in</td>
+
+                                                <td class="p-2 ">
+                                                    182
+                                                </td>
+                                                <td class="p-2 ">
+                                                    7/5/2024 12:00:00 AM
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <span class="statustext">
+                                                        Permanent
+                                                    </span>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <input type="date" class="form-control" placeholder="Remarks">
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 text-center" style="min-width: 165px;">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <input type="text" class="form-control" placeholder="Remarks">
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <button class="datadownloadbtn">Download</button>
+                                                </td>
+
+
+
+
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">
+                                                    <div class="position-relative" style="height: 20px; width: 20px">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" class="row-checkbox" />
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">
+                                                    Trainee Beauty Consultant
+                                                </td>
+                                                <td class="p-2 ">
+                                                    9865412358
+                                                </td>
+                                                <td class="p-2">John.doe@intero.in</td>
+
+                                                <td class="p-2 ">
+                                                    182
+                                                </td>
+                                                <td class="p-2 ">
+                                                    7/5/2024 12:00:00 AM
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <span class="statustext">
+                                                        Permanent
+                                                    </span>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <input type="date" class="form-control" placeholder="Remarks">
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 text-center" style="min-width: 165px;">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <input type="text" class="form-control" placeholder="Remarks">
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <button class="datadownloadbtn">Download</button>
+                                                </td>
+
+
+
+
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">
+                                                    <div class="position-relative" style="height: 20px; width: 20px">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" class="row-checkbox" />
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">
+                                                    Trainee Beauty Consultant
+                                                </td>
+                                                <td class="p-2 ">
+                                                    9865412358
+                                                </td>
+                                                <td class="p-2">John.doe@intero.in</td>
+
+                                                <td class="p-2 ">
+                                                    182
+                                                </td>
+                                                <td class="p-2 ">
+                                                    7/5/2024 12:00:00 AM
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <span class="statustext">
+                                                        Permanent
+                                                    </span>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <input type="date" class="form-control" placeholder="Remarks">
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 text-center" style="min-width: 165px;">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <input type="text" class="form-control" placeholder="Remarks">
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <button class="datadownloadbtn">Download</button>
+                                                </td>
+
+
+
+
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">
+                                                    <div class="position-relative" style="height: 20px; width: 20px">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" class="row-checkbox" />
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">
+                                                    Trainee Beauty Consultant
+                                                </td>
+                                                <td class="p-2 ">
+                                                    9865412358
+                                                </td>
+                                                <td class="p-2">John.doe@intero.in</td>
+
+                                                <td class="p-2 ">
+                                                    182
+                                                </td>
+                                                <td class="p-2 ">
+                                                    7/5/2024 12:00:00 AM
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <span class="statustext">
+                                                        Permanent
+                                                    </span>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <input type="date" class="form-control" placeholder="Remarks">
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 text-center" style="min-width: 165px;">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <input type="text" class="form-control" placeholder="Remarks">
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <button class="datadownloadbtn">Download</button>
+                                                </td>
+
+
+
+
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">
+                                                    <div class="position-relative" style="height: 20px; width: 20px">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" class="row-checkbox" />
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">
+                                                    Trainee Beauty Consultant
+                                                </td>
+                                                <td class="p-2 ">
+                                                    9865412358
+                                                </td>
+                                                <td class="p-2">John.doe@intero.in</td>
+
+                                                <td class="p-2 ">
+                                                    182
+                                                </td>
+                                                <td class="p-2 ">
+                                                    7/5/2024 12:00:00 AM
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <span class="statustext">
+                                                        Permanent
+                                                    </span>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <input type="date" class="form-control" placeholder="Remarks">
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 text-center" style="min-width: 165px;">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <input type="text" class="form-control" placeholder="Remarks">
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <button class="datadownloadbtn">Download</button>
                                                 </td>
 
 
@@ -1146,10 +1460,7 @@
                                             <button class="btn bg-blue text-white rounded-4 px-4">
                                                 Approved
                                             </button>
-                                            <button class="btn bg-blue text-white rounded-4 px-4"
-                                                style="background: #FC5A5A;">
-                                                Reject
-                                            </button>
+
                                         </div>
                                     </div>
 

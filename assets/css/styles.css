@@ -2408,6 +2408,19 @@ footer {
   border-radius: 2px;
 }
 
+.datadownloadbtn {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+  background: #4A59A7;
+  padding: 7px 10px;
+  border-radius: 2px;
+}
+
 .addressTable tbody tr:nth-child(odd) {
   background: #FAFAFA;
 }
@@ -2439,6 +2452,19 @@ footer {
 
 .viewscannedbtn {
   color: #0A7E22;
+}
+
+.statustext {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #0A7E22;
+  background: #C2FFCF;
+  padding: 7px 10px;
+  border-radius: 3px;
 }
 
 @media (max-width: 576px) {
