@@ -195,7 +195,8 @@
     text-align: center;
     color: #4A59A7;
 }
-.visibilityselectbtn{
+
+.visibilityselectbtn {
     background: #0A7E22;
     color: #ffffff;
     width: fit-content !important;
@@ -203,99 +204,135 @@
     border-radius: 2px;
     padding: 3px 23px 3px 5px;
 }
-.visibleselector .custom-dropdown::after{
+
+.visibleselector .custom-dropdown::after {
     color: #ffffff;
     right: 5px !important;
 }
+
 .visibleItemaddbox ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 7px;
-  margin: 12px 0;
-  border-radius: 5px;
-  border: 1px solid #a6a6a6;
-  position: relative;
-  min-height: 40px;
-  align-items: center;
-  list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px 7px;
+    border: 1px solid #C2C2C2;
+    border-radius: 8px;
+    position: relative;
+    min-height: 40px;
+    align-items: center;
+    list-style: none;
+    font-size: 0.875rem !important;
 }
 
 .visibleItemaddbox ul li {
-  color: #333;
-  margin: 4px 3px;
-  list-style: none;
-  border-radius: 5px;
-  background: #f2f2f2;
-  padding: 5px 8px 5px 10px;
-  border: 1px solid #e3e1e1;
-  display: flex;
-  align-items: center;
+    color: #ffffff;
+    margin: 4px 3px;
+    list-style: none;
+    background: #4A59A7;
+    padding: 5px 8px 5px 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22.7px;
+    letter-spacing: -0.6%;
+    vertical-align: middle;
+
 }
 
 .visibleItemaddbox ul li .close {
-  height: 18px;
-  width: 18px;
-  color: #808080;
-  margin-left: 8px;
-  font-size: 12px;
-  cursor: pointer;
-  border-radius: 50%;
-  background: #dfdfdf;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
+    height: 18px;
+    width: 18px;
+    color: #ffffff;
+    margin-left: 8px;
+    font-size: 18px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #6879CD;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .visibleItemaddbox ul input {
-  flex: 1;
-  padding: 5px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  min-width: 150px;
+    flex: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    min-width: 150px;
 }
 
 /* Dropdown styles */
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  max-height: 200px;
-  overflow-y: auto;
-  background: #fff;
-  border: 1px solid #a6a6a6;
-  border-top: none;
-  border-radius: 0 0 5px 5px;
-  z-index: 1000;
+.visiblelistdropdown {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #ffffff;
+    border: 1px solid #C2C2C2;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
-.dropdown.show {
-  display: block;
+.visiblelistdropdown.show {
+    display: block;
 }
 
-.dropdown ul {
-  display: block;
-  padding: 0;
-  margin: 0;
-  border: none;
+.visiblelistdropdown ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
-.dropdown li {
-  padding: 8px 12px;
-  cursor: pointer;
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  background: #fff;
+.visiblelistdropdown ul li {
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 0;
+    border: none;
+    border-radius: 3px;
+    background: #ffffff;
+    color: #000000;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
 }
 
-.dropdown li:hover {
-  background-color: #f2f2f2;
+.visiblelistdropdown li:hover {
+    background-color: #f2f2f2;
 }
-@media (max-width:  576px) {
+
+.attachfile label {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22.7px;
+    letter-spacing: -0.6%;
+    color: #0A0A0A;
+    background: none;
+    text-align: left;
+    padding: .375rem .75rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.modal-footer {
+    background:
+        rgba(195, 206, 255, 0.2);
+    border-top: none;
+}
+
+@media (max-width: 576px) {
     .user-role-area {
         width: 100%;
     }

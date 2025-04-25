@@ -2,8 +2,8 @@ $(document).ready(function () {
 
     // visible box
     const $input = $('.visibleItemaddbox input');
-    const $dropdown = $('.dropdown');
-    const $dropdownItems = $('.dropdown li');
+    const $dropdown = $('.visiblelistdropdown');
+    const $dropdownItems = $('.visiblelistdropdown li');
     const $tagsContainer = $('.visibleItemaddbox ul');
 
     // Show dropdown when input is focused
@@ -18,23 +18,51 @@ $(document).ready(function () {
         }
     });
 
-    // Filter dropdown items based on input
+    // Filter dropdown items
     $input.on('input', filterDropdown);
 
-    // Add click event to all dropdown items
+    // Handle click on dropdown items
     $dropdownItems.on('click', function () {
-        addTag($(this).text());
+        const tagText = $(this).text().trim();
+
+        // Hide item from dropdown
+        $(this).addClass('hidden').hide();
+
+        // Add tag
+        const $tag = $(`
+        <li>
+          ${tagText}
+          <span class="close">×</span>
+        </li>
+      `);
+
+        // Handle removing tag
+        $tag.find('.close').on('click', function () {
+            $tag.remove();
+
+            // Show this tag back in dropdown
+            $dropdownItems.each(function () {
+                if ($(this).text().trim() === tagText) {
+                    $(this).removeClass('hidden').show();
+                }
+            });
+        });
+
+        // Insert before input
+        $tag.insertBefore($input);
         $input.val('');
-        $dropdown.removeClass('show');
+        filterDropdown(); // update dropdown display
     });
 
+    // Filter dropdown function
     function filterDropdown() {
         const searchTerm = $input.val().toLowerCase();
         let hasMatches = false;
 
         $dropdownItems.each(function () {
             const text = $(this).text().toLowerCase();
-            if (text.includes(searchTerm)) {
+            const isHidden = $(this).hasClass('hidden');
+            if (text.includes(searchTerm) && !isHidden) {
                 $(this).show();
                 hasMatches = true;
             } else {
@@ -49,28 +77,7 @@ $(document).ready(function () {
         }
     }
 
-    function addTag(text) {
-        // Create tag element
-        const $tag = $(`
-      <li>
-        ${text}
-        <span class="close">×</span>
-      </li>
-    `);
 
-        // Add click event to close button
-        $tag.find('.close').on('click', function () {
-            $tag.remove();
-        });
-
-        // Insert before input
-        $tag.insertBefore($input);
-    }
-
-    // Handle removing tags when clicking close button (delegated event)
-    $tagsContainer.on('click', '.close', function () {
-        $(this).parent().remove();
-    });
 
 
 
