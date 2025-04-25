@@ -706,12 +706,16 @@ footer {
      -moz-column-gap: 7px;
           column-gap: 7px;
   padding: 5px 10px;
+  margin-bottom: 0 !important;
 }
 .sidebar-submenu li a:hover {
   background: #4a59a7;
 }
-.sidebar-submenu li a:last-child {
-  margin-bottom: 0 !important;
+.sidebar-submenu li:first-child {
+  padding-top: 10px !important;
+}
+.sidebar-submenu li:last-child {
+  padding-bottom: 10px !important;
 }
 
 .sidebar-link-items button {

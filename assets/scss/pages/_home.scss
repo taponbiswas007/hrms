@@ -71,6 +71,8 @@ footer {
     padding-left: 1.5rem !important;
 
     li {
+
+
         a {
             position: relative;
             font-family: Inter;
@@ -86,15 +88,23 @@ footer {
             align-items: center;
             column-gap: 7px;
             padding: 5px 10px;
+            margin-bottom: 0 !important;
 
             &:hover {
                 background: #4a59a7;
             }
 
-            &:last-child {
-                margin-bottom: 0 !important;
-            }
+
         }
+
+        &:first-child {
+            padding-top: 10px !important;
+        }
+
+        &:last-child {
+            padding-bottom: 10px !important;
+        }
+
     }
 }
 
