@@ -2430,17 +2430,15 @@ footer {
 }
 
 .seeapprobtn {
-  color: #ffffff;
-  background: #4A59A7;
-  padding: 2px 10px;
-  border-radius: 3px;
+  color: #4A59A7;
+}
+
+.noAssets {
+  color: #4A59A7;
 }
 
 .viewscannedbtn {
-  color: #ffffff;
-  background: #0A7E22;
-  padding: 2px 10px;
-  border-radius: 3px;
+  color: #0A7E22;
 }
 
 @media (max-width: 576px) {
