@@ -332,6 +332,66 @@
     border-top: none;
 }
 
+.showingHiddenbtn {
+    height: 18px;
+    width: 18px;
+    background: #4A59A7;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.addressDownloadbtn {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    background: #4A59A7;
+    padding: 7px 10px;
+    border-radius: 2px;
+}
+
+.addressTable {
+
+
+    tbody {
+        tr {
+            &:nth-child(odd) {
+                background: #FAFAFA;
+            }
+        }
+    }
+}
+
+.addressTablelist {
+
+    li {
+        .showingHiddenbtn {
+            .tableVisible {
+                display: none;
+            }
+        }
+
+        .active {
+            .tableVisible {
+                display: block;
+            }
+
+            .tablehidden {
+                display: none;
+            }
+
+        }
+    }
+
+
+}
+
 @media (max-width: 576px) {
     .user-role-area {
         width: 100%;

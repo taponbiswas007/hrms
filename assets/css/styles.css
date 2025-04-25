@@ -731,8 +731,8 @@ footer {
   border-width: 1.2px 0 0 1.2px;
   border-color: initial;
   right: 15px;
-  -webkit-transform: rotate(-45deg) translateY(-50%);
-          transform: rotate(-45deg) translateY(-50%);
+  -webkit-transform: rotate(135deg) translateY(-50%);
+          transform: rotate(135deg) translateY(-50%);
   -webkit-transform-origin: top;
           transform-origin: top;
   top: 50%;
@@ -740,8 +740,8 @@ footer {
   transition: all 0.3s ease-out;
 }
 .sidebar-link-items button:not(.collapsed)::after {
-  -webkit-transform: rotate(-134.26deg) translateY(-50%);
-          transform: rotate(-134.26deg) translateY(-50%);
+  -webkit-transform: rotate(226deg) translateY(-50%);
+          transform: rotate(226deg) translateY(-50%);
 }
 
 footer {
@@ -2376,6 +2376,50 @@ footer {
 .modal-footer {
   background: rgba(195, 206, 255, 0.2);
   border-top: none;
+}
+
+.showingHiddenbtn {
+  height: 18px;
+  width: 18px;
+  background: #4A59A7;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+}
+
+.addressDownloadbtn {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+  background: #4A59A7;
+  padding: 7px 10px;
+  border-radius: 2px;
+}
+
+.addressTable tbody tr:nth-child(odd) {
+  background: #FAFAFA;
+}
+
+.addressTablelist li .showingHiddenbtn .tableVisible {
+  display: none;
+}
+.addressTablelist li .active .tableVisible {
+  display: block;
+}
+.addressTablelist li .active .tablehidden {
+  display: none;
 }
 
 @media (max-width: 576px) {

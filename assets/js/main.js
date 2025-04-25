@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    // approve checkbox
+    $('input[name="approval-status"]').on('change', function () {
+        if (this.checked) {
+            $('input[name="approval-status"]').not(this).prop('checked', false);
+        }
+    });
+
+
     // visible box
     const $input = $('.visibleItemaddbox input');
     const $dropdown = $('.visiblelistdropdown');
@@ -597,9 +605,23 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
+    // table collapseing 
+
+    $('.addressTablelist li .showingHiddenbtn').click(function () {
+        // If clicked button already has .active, remove it
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        }
+        // Otherwise, remove .active from all buttons and add it to the clicked one
+        else {
+            $('.addressTablelist li .showingHiddenbtn').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
 
 
-    $('.tab-content').hide();  // Hide all by default
+
+    $('.tab-content').hide(); // Hide all by default
     $('#pendingStatus').show().addClass('statusactive'); // Show default one
 
     function changeTab(target) {
@@ -609,10 +631,18 @@ $(document).ready(function () {
         });
     }
 
-    $('.pendingBtn').click(function () { changeTab('pendingStatus'); });
-    $('.approvedBtn').click(function () { changeTab('approvedStatus'); });
-    $('.cancelledBtn').click(function () { changeTab('cancelledStatus'); });
-    $('.rejectedBtn').click(function () { changeTab('rejectedStatus'); });
+    $('.pendingBtn').click(function () {
+        changeTab('pendingStatus');
+    });
+    $('.approvedBtn').click(function () {
+        changeTab('approvedStatus');
+    });
+    $('.cancelledBtn').click(function () {
+        changeTab('cancelledStatus');
+    });
+    $('.rejectedBtn').click(function () {
+        changeTab('rejectedStatus');
+    });
 
 
     // status changer 
@@ -630,10 +660,18 @@ $(document).ready(function () {
         });
     }
 
-    $('.promotionBtn').click(function () { changeproTab('promotionArea'); });
-    $('.transferBtn').click(function () { changeproTab('transferArea'); });
-    $('.reassignmentBtn').click(function () { changeproTab('reassignmentArea'); });
-    $('.incrementDecrementBtn').click(function () { changeproTab('incrementDecrementArea'); });
+    $('.promotionBtn').click(function () {
+        changeproTab('promotionArea');
+    });
+    $('.transferBtn').click(function () {
+        changeproTab('transferArea');
+    });
+    $('.reassignmentBtn').click(function () {
+        changeproTab('reassignmentArea');
+    });
+    $('.incrementDecrementBtn').click(function () {
+        changeproTab('incrementDecrementArea');
+    });
 
 
 
@@ -961,7 +999,3 @@ function toggleSections() {
         todoListContainer.parentNode.insertBefore(holidayListContainer, todoListContainer);
     }
 }
-
-
-
-
