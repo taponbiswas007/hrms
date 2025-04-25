@@ -466,6 +466,39 @@
     border-radius: 3px;
 }
 
+.generateLetterlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 15px;
+
+    li {
+        button {
+            color: #ffffff;
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 125%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            padding: 15px 30px;
+            border-radius: 9px;
+
+        }
+
+        .enabledatabtn {
+            background: #4A59A7;
+        }
+
+        .desabledatabtn {
+            background: #808DCF;
+            cursor: not-allowed;
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .user-role-area {
         width: 100%;

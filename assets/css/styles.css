@@ -2493,6 +2493,42 @@ footer {
   border-radius: 3px;
 }
 
+.generateLetterlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+}
+.generateLetterlist li button {
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding: 15px 30px;
+  border-radius: 9px;
+}
+.generateLetterlist li .enabledatabtn {
+  background: #4A59A7;
+}
+.generateLetterlist li .desabledatabtn {
+  background: #808DCF;
+  cursor: not-allowed;
+}
+
 @media (max-width: 576px) {
   .user-role-area {
     width: 100%;
