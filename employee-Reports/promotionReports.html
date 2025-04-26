@@ -908,9 +908,25 @@
                                 Select Criteria
                             </h1>
 
+                            <!-- select date or joining date -->
+                            <div class="d-flex justify-content-start align-items-center gap-3 flex-wrap pt-3">
+                                <div class="d-flex justify-content-start align-items-center gap-3">
+                                    <input type="radio" name="promotreporttype" id="betweenSelectedDates"
+                                        class="  custom-radio" checked>
+                                    <label for="betweenSelectedDates">Between Selected Dates</label>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center gap-3">
+                                    <input type="radio" name="promotreporttype" id="fromJoiningDate"
+                                        class="  custom-radio">
+                                    <label for="fromJoiningDate">From Joining Date</label>
+                                </div>
+                            </div>
 
 
-                            <div class="row g-4 pt-3">
+                            <!-- ==================================================================== -->
+                            <!-- ======================= Between Selected Dates ===================== -->
+                            <!-- ==================================================================== -->
+                            <div id="betweenSelectedDatesarea" class="row g-4 pt-3">
 
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class="mb-1" for=""> Company </label>
@@ -999,6 +1015,92 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- ==================================================================== -->
+                            <!-- ======================= Between Selected end========================= -->
+                            <!-- ==================================================================== -->
+
+                            <!-- ==================================================================== -->
+                            <!-- ======================= From Joining Date start ========================= -->
+                            <!-- ==================================================================== -->
+                            <div id="FromJoiningDatearea" class="row g-4 pt-3 " style="display: none;">
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Company </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Branch </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Department </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Division </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Employee </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Employee Status </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Report type </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="col-xxl-3 col-xl-8 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="h-100 d-flex justify-content-end align-items-end flex-wrap gap-3">
+                                        <button class="btn bg-blue text-white rounded-4 px-4">
+                                            Generate Excel Report
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ==================================================================== -->
+                            <!-- ======================= From Joining Date end========================= -->
+                            <!-- ==================================================================== -->
                         </div>
 
 

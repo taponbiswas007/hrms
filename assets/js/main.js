@@ -1,5 +1,39 @@
 $(document).ready(function () {
 
+    // promote type selector
+    // Function to show/hide areas
+    function toggleReportAreas(showJoining) {
+        if (showJoining) {
+            $('#betweenSelectedDatesarea').stop(true, true).fadeOut(300, function () {
+                $('#FromJoiningDatearea').stop(true, true).fadeIn(300);
+            });
+        } else {
+            $('#FromJoiningDatearea').stop(true, true).fadeOut(300, function () {
+                $('#betweenSelectedDatesarea').stop(true, true).fadeIn(300);
+            });
+        }
+    }
+
+    // Load from localStorage
+    let savedType = localStorage.getItem('promotreporttype');
+    if (savedType === 'fromJoiningDate') {
+        $('#fromJoiningDate').prop('checked', true);
+        toggleReportAreas(true);
+    } else {
+        $('#betweenSelectedDates').prop('checked', true);
+        toggleReportAreas(false);
+    }
+
+    // Save selection and toggle views
+    $('input[name="promotreporttype"]').change(function () {
+        let isJoining = $('#fromJoiningDate').is(':checked');
+        localStorage.setItem('promotreporttype', isJoining ? 'fromJoiningDate' : 'betweenSelectedDates');
+        toggleReportAreas(isJoining);
+    });
+
+
+
+
     // select all function
     // Handle select all in thead
     $(document).on('change', '.select-all-checkbox', function () {
