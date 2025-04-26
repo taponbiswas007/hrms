@@ -2406,6 +2406,12 @@ footer {
   background: #4A59A7;
   padding: 7px 10px;
   border-radius: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.addressDownloadbtn:hover {
+  color: #ffffff;
+  background: #0c1546;
 }
 
 .datadownloadbtn {
@@ -2419,6 +2425,12 @@ footer {
   background: #4A59A7;
   padding: 7px 10px;
   border-radius: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.datadownloadbtn:hover {
+  color: #ffffff;
+  background: #0c1546;
 }
 
 .detailsviewbtn {
@@ -2432,6 +2444,12 @@ footer {
   background: #4A59A7;
   padding: 7px 10px;
   border-radius: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.detailsviewbtn:hover {
+  color: #ffffff;
+  background: #0c1546;
 }
 
 .commonbtn {
@@ -2454,6 +2472,12 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.commonbtn:hover {
+  color: #ffffff;
+  background: #0c1546;
 }
 
 .addressTable tbody tr:nth-child(odd) {
@@ -2612,4 +2636,61 @@ footer {
   vertical-align: middle;
   color: #4A59A7;
   margin-top: 7px;
+}
+
+.requestedStatus {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #14B8FF;
+  background: #DDFCFF;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.approvedStatus {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #00B445;
+  background: rgba(70, 176, 0, 0.168627451);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.claimApprovalDetailslist li span {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #000000;
+}
+.claimApprovalDetailslist li .title {
+  font-weight: 500;
+}
+.claimApprovalDetailslist li .dcontent {
+  font-weight: 300;
+}
+
+.processconfirmationtext {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.7px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #0A0A0A;
+}
+
+@media (max-width: 374px) {
+  .processconfirmationtext {
+    font-size: 16px;
+  }
 }
