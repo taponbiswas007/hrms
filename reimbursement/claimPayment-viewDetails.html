@@ -845,7 +845,7 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Claim Approval <img class="d-inline" height="20px "
+                                        aria-expanded="false">Claim Payment <img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
@@ -954,7 +954,6 @@
                                                 <th class="border-0 ">Bill No.</th>
                                                 <th class="border-0 ">Bill Date</th>
                                                 <th class="border-0 ">Amount</th>
-                                                <th class="border-0  ">Emp Remarks</th>
                                                 <th class="border-0  ">Approved</th>
                                                 <th class="border-0   ">Reject</th>
                                                 <th class="border-0   ">Remarks</th>
@@ -982,9 +981,7 @@
                                                 <td class="p-2">
                                                     100.00
                                                 </td>
-                                                <td class="p-2  ">
-                                                    Remarks
-                                                </td>
+
 
                                                 <td class="p-2  ">
                                                     <div class=" position-relative "
@@ -1017,7 +1014,7 @@
                                                     </div>
                                                 </td>
                                                 <td class="p-2">
-                                                    Approved by HR
+                                                    <span class="depstatustext">Pending</span>
                                                 </td>
 
                                             </tr>
@@ -1027,16 +1024,19 @@
                                     </table>
                                 </div>
 
-                                <div class=" w-100 d-flex justify-content-end align-items-end pt-3 ">
-                                    <button type="button" data-bs-target="#processConfirmation" data-bs-toggle="modal"
-                                        class="btn bg-blue text-white rounded-4 px-4">Process Claim</button>
+                                <div class="h-100 d-flex justify-content-end align-items-end flex-wrap gap-3 pt-3">
+                                    <button data-bs-target="#paidConfirmation" data-bs-toggle="modal" type="button"
+                                        class="btn bg-blue text-white rounded-4 px-4">
+                                        Mark Claim As Paid
+                                    </button>
+
                                 </div>
 
-                                <!--  process the claims dialogue box start  -->
-                                <div class="modal fade " id="processConfirmation" tabindex="-1"
+                                <!--  paid confirmation dialogue box start  -->
+                                <div class="modal fade " id="paidConfirmation" tabindex="-1"
                                     aria-labelledby="dailyroutineDetailsLabel" aria-hidden="true"
                                     style="z-index: 1060;">
-                                    <!-- Add inline z-index if needed -->
+
                                     <div class="modal-dialog  modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="modal-header border-bottom-0 pb-0" style="background: none;">
@@ -1047,7 +1047,8 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <h1 class="processconfirmationtext">Are you sure to process the claims?
+                                                <h1 class="processconfirmationtext">Do you want to mark selected claim's
+                                                    as paid ?
                                                 </h1>
 
                                             </div>
@@ -1063,7 +1064,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--  process the claims dialogue box end  -->
+                                <!--  paid confirmations dialogue box end  -->
 
                             </div>
 

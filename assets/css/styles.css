@@ -2689,8 +2689,13 @@ footer {
   color: #0A0A0A;
 }
 
-@media (max-width: 374px) {
+@media (max-width: 440px) {
   .processconfirmationtext {
-    font-size: 16px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 370px) {
+  .processconfirmationtext {
+    font-size: 12px;
   }
 }
