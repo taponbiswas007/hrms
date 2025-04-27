@@ -865,9 +865,10 @@
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
-                                       
+
                                         <li><a class="dropdown-item mb-1" href="claimMaster.html">Claim Master</a></li>
-                                        <li><a class="dropdown-item mb-1" href="approvalLevels.html">Approval Levels</a></li>
+                                        <li><a class="dropdown-item mb-1" href="approvalLevels.html">Approval Levels</a>
+                                        </li>
                                         <li><a class="dropdown-item mb-1" href="batchMaster.html">Batch Master</a></li>
 
                                     </ul>
@@ -933,25 +934,30 @@
 
                             <div class="row g-4 pt-3">
 
-                             
-                                <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Branch </label>
-                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
-                                        name="" id="">
-                                        <option value="">Select</option>
-                                        <option value="">Example 1</option>
-                                        <option value="">Example 2</option>
-                                    </select>
-                                   
+
+                                <div class="col-xxl-5 col-xl-6 col-12">
+                                    <label class="mb-1" for=""> Claim Name </label>
+                                    <div class="d-flex justify-content-start align-items-center gap-3">
+                                        <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
+                                            class="form-control fs-7" placeholder="Enter Claim Name">
+                                        <div class="position-relative flex-shrink-0">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" class="select-all-checkbox" />
+                                                <span class="checkmark" style="margin-top: -4px;"></span>
+                                                Active
+                                            </label>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                
 
 
 
-                                <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-6  col-12">
+
+                                <div class="col-xxl-7 col-xl-6   col-12">
                                     <div class="h-100 d-flex justify-content-end align-items-end flex-wrap gap-3">
                                         <button class="btn bg-blue text-white rounded-4 px-5">
-                                            Search
+                                            Save
                                         </button>
 
                                     </div>
@@ -966,27 +972,38 @@
                                 <h1 class="fw-medium fs-5 text-black">Search criteria</h1>
 
                             </div>
+                            <div class="row g-4 pt-3">
 
-                            <div class="col-xxl-5 col-xl-6 col-12">
-                                <label class="mb-1" for=""> Claim Name </label>
-                                <div class="d-flex justify-content-start align-items-center gap-3">
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                    class="form-control fs-7" placeholder="Enter Claim Name">
-                                    <div class="position-relative flex-shrink-0" >
-                                        <label class="custom-checkbox">
-                                            <input type="checkbox" class="select-all-checkbox" />
-                                            <span class="checkmark" style="margin-top: -4px;"></span>
-                                            Active
-                                        </label>
+
+                                <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Status </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+
+                                </div>
+
+
+
+
+                                <div class="col-xxl-8 col-xl-6 col-lg-6 col-md-6 col-sm-6  col-12">
+                                    <div class="h-100 d-flex justify-content-end align-items-end flex-wrap gap-3">
+                                        <button class="btn bg-blue text-white rounded-4 px-5">
+                                            Search
+                                        </button>
+
                                     </div>
                                 </div>
-                               
                             </div>
-                            <div class="d-flex select-criteria justify-content-between align-items-center pb-3 mt-3"
-                            style="border-bottom: 0.9px dashed #d2d2d2">
-                            <h1 class="fw-medium fs-5 text-black">List of Claim's</h1>
 
-                        </div>
+                            <div class="d-flex select-criteria justify-content-between align-items-center pb-3 mt-3"
+                                style="border-bottom: 0.9px dashed #d2d2d2">
+                                <h1 class="fw-medium fs-5 text-black">Claim Details</h1>
+
+                            </div>
 
                             <!-- =============List start============= -->
                             <div class="mt-3">
@@ -995,22 +1012,7 @@
                                         <thead>
                                             <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
                                                 style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
-
-                                                <th class="border-0 ">
-                                                    <div class="position-relative" style="height: 20px; width: 20px">
-                                                        <label class="custom-checkbox">
-                                                            <input type="checkbox" class="select-all-checkbox" />
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </th>
-                                                <th class="border-0 ">Claim No.</th>
-                                                <th class="border-0 ">Emp Code</th>
-                                                <th class="border-0 ">Emp Name</th>
                                                 <th class="border-0  ">Claim Name</th>
-                                                <th class="border-0  ">Batch</th>
-                                                <th class="border-0   ">Net Amount</th>
-                                                <th class="border-0   ">Fin Year</th>
                                                 <th class="border-0   ">Status</th>
                                                 <th class="border-0">Action
                                                 </th>
@@ -1029,43 +1031,20 @@
                                                 ">
 
 
-                                                <td class="p-2">
-                                                    <div class="position-relative" style="height: 20px; width: 20px">
-                                                        <label class="custom-checkbox">
-                                                            <input type="checkbox" class="row-checkbox" />
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">
-                                                    fe0123
-                                                </td>
-                                                <td class="p-2  ">
-                                                    Mohammmed Shaikh (FE2534)
-                                                </td>
+
                                                 <td class="p-2  ">
                                                     Hotel
                                                 </td>
-                                                <td class="p-2  ">
-                                                    April 2025
-                                                </td>
-                                                <td class="p-2  ">
-                                                    100.00
-                                                </td>
-                                                <td class="p-2  ">
-                                                    100.00
-                                                </td>
+
                                                 <td class="p-2">
                                                     <span class="statustext">
-                                                        Approved
+                                                        Active
                                                     </span>
                                                 </td>
 
                                                 <td class="p-2">
                                                     <div class="d-flex justify-content-start align-items-center gap-3">
-                                                        <a href="claimPayment-viewDetails.html"
-                                                            class="datadownloadbtn px-4">View</a>
+                                                        <a href="#" class="datadownloadbtn px-4">Edit</a>
 
                                                     </div>
                                                 </td>
@@ -1078,43 +1057,20 @@
                                                 ">
 
 
-                                                <td class="p-2">
-                                                    <div class="position-relative" style="height: 20px; width: 20px">
-                                                        <label class="custom-checkbox">
-                                                            <input type="checkbox" class="row-checkbox" />
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">
-                                                    fe0123
-                                                </td>
-                                                <td class="p-2  ">
-                                                    Mohammmed Shaikh (FE2534)
-                                                </td>
+
                                                 <td class="p-2  ">
                                                     Hotel
                                                 </td>
-                                                <td class="p-2  ">
-                                                    April 2025
-                                                </td>
-                                                <td class="p-2  ">
-                                                    100.00
-                                                </td>
-                                                <td class="p-2  ">
-                                                    100.00
-                                                </td>
+
                                                 <td class="p-2">
                                                     <span class="statustext">
-                                                        Approved
+                                                        Active
                                                     </span>
                                                 </td>
 
                                                 <td class="p-2">
                                                     <div class="d-flex justify-content-start align-items-center gap-3">
-                                                        <a href="claimPayment-viewDetails.html"
-                                                            class="datadownloadbtn px-4">View</a>
+                                                        <a href="#" class="datadownloadbtn px-4">Edit</a>
 
                                                     </div>
                                                 </td>
@@ -1127,199 +1083,33 @@
                                                 ">
 
 
-                                                <td class="p-2">
-                                                    <div class="position-relative" style="height: 20px; width: 20px">
-                                                        <label class="custom-checkbox">
-                                                            <input type="checkbox" class="row-checkbox" />
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">
-                                                    fe0123
-                                                </td>
-                                                <td class="p-2  ">
-                                                    Mohammmed Shaikh (FE2534)
-                                                </td>
+
                                                 <td class="p-2  ">
                                                     Hotel
                                                 </td>
-                                                <td class="p-2  ">
-                                                    April 2025
-                                                </td>
-                                                <td class="p-2  ">
-                                                    100.00
-                                                </td>
-                                                <td class="p-2  ">
-                                                    100.00
-                                                </td>
+
                                                 <td class="p-2">
                                                     <span class="statustext">
-                                                        Approved
+                                                        Active
                                                     </span>
                                                 </td>
 
                                                 <td class="p-2">
                                                     <div class="d-flex justify-content-start align-items-center gap-3">
-                                                        <a href="claimPayment-viewDetails.html"
-                                                            class="datadownloadbtn px-4">View</a>
+                                                        <a href="#" class="datadownloadbtn px-4">Edit</a>
 
                                                     </div>
                                                 </td>
 
                                             </tr>
-                                            <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 40px;
-                                                    vertical-align: middle;
-                                                ">
 
-
-                                                <td class="p-2">
-                                                    <div class="position-relative" style="height: 20px; width: 20px">
-                                                        <label class="custom-checkbox">
-                                                            <input type="checkbox" class="row-checkbox" />
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">
-                                                    fe0123
-                                                </td>
-                                                <td class="p-2  ">
-                                                    Mohammmed Shaikh (FE2534)
-                                                </td>
-                                                <td class="p-2  ">
-                                                    Hotel
-                                                </td>
-                                                <td class="p-2  ">
-                                                    April 2025
-                                                </td>
-                                                <td class="p-2  ">
-                                                    100.00
-                                                </td>
-                                                <td class="p-2  ">
-                                                    100.00
-                                                </td>
-                                                <td class="p-2">
-                                                    <span class="statustext">
-                                                        Approved
-                                                    </span>
-                                                </td>
-
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-start align-items-center gap-3">
-                                                        <a href="claimPayment-viewDetails.html"
-                                                            class="datadownloadbtn px-4">View</a>
-
-                                                    </div>
-                                                </td>
-
-                                            </tr>
 
 
                                         </tbody>
                                     </table>
                                 </div>
 
-                                <!-- pagination area -->
-                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
-                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                                        <li>
-                                            <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                <i class="fa-angle-left fa-solid"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                Prev
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                Next
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <small>Page:</small>
-                                            <span>1</span>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex gap-2">
-                                                <small>Of</small>
-                                                <p>100</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="custom-dropdown">
-                                                <!-- Dropdown button -->
-                                                <div class="custom-dropdown-button" onclick="toggleDropdown(event)">
-                                                    10
-                                                </div>
-                                                <!-- Dropdown options -->
-                                                <div class="custom-dropdown-options shadow">
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '1', '10')">10</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '2', '11')">11</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '3', '12')">12</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '4', '13')">13</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '5', '14')">14</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
 
-                                <div class="h-100 d-flex justify-content-end align-items-end flex-wrap gap-3 pt-3">
-                                    <button data-bs-target="#paidConfirmation" data-bs-toggle="modal" type="button"
-                                        class="btn bg-blue text-white rounded-4 px-4">
-                                        Mark All Claim As Paid
-                                    </button>
-
-                                </div>
-
-                                <!--  paid confirmation dialogue box start  -->
-                                <div class="modal fade " id="paidConfirmation" tabindex="-1"
-                                    aria-labelledby="dailyroutineDetailsLabel" aria-hidden="true"
-                                    style="z-index: 1060;">
-
-                                    <div class="modal-dialog  modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header border-bottom-0 pb-0" style="background: none;">
-
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <i class="fa-solid fa-xmark"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h1 class="processconfirmationtext">Do you want to mark selected claim's
-                                                    as paid ?
-                                                </h1>
-
-                                            </div>
-                                            <div class="modal-footer">
-
-                                                <button class="btn bg-blue text-white rounded-4 px-4"
-                                                    data-bs-toggle="modal" data-bs-dismiss="modal">Yes</button>
-                                                <button class="btn  text-white rounded-4 px-4"
-                                                    style="background: #5A6185;" data-bs-toggle="modal"
-                                                    data-bs-dismiss="modal">Cancel</button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--  paid confirmations dialogue box end  -->
 
                             </div>
 
