@@ -696,6 +696,9 @@ $(document).ready(function () {
     $('.rejectedBtn').click(function () {
         changeTab('rejectedStatus');
     });
+    $('.escalatedBtn').click(function () {
+        changeTab('escalatedStatus');
+    });
 
 
     // status changer 
