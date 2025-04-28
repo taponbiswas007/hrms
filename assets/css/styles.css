@@ -640,6 +640,8 @@ ul {
   display: flex;
   gap: 8px;
   border-radius: 10px 10px 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.4196078431);
+  border-bottom: 1px solid #0E1747;
 }
 
 #toolbar button {
@@ -667,6 +669,7 @@ ul {
   line-height: 100%;
   letter-spacing: 0%;
   color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.4196078431);
 }
 
 .header {
