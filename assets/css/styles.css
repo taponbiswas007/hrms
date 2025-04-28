@@ -628,11 +628,11 @@ ul {
   height: 8px !important;
 }
 
-.editor-container {
+.texteditor_area .editor-container {
   width: 100%;
 }
 
-#toolbar {
+.texteditor_area #toolbar {
   background: #ffffff;
   padding: 8px;
   display: -webkit-box;
@@ -644,7 +644,7 @@ ul {
   border-bottom: 1px solid #0E1747;
 }
 
-#toolbar button {
+.texteditor_area #toolbar button {
   width: 32px;
   height: 32px;
   display: -webkit-box;
@@ -660,7 +660,7 @@ ul {
   cursor: pointer;
 }
 
-#editor {
+.texteditor_area #editor {
   height: 300px;
   border-radius: 0 0 10px 10px;
   font-family: Inter;
