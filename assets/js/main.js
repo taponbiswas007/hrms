@@ -439,7 +439,7 @@ $(document).ready(function () {
 
     function adjustMenuItems() {
         // Check if the screen width is lg (992px or above)
-        if ($(window).width() >= 992) {
+        if ($(window).width() >= 768) {
             // Add the .dropend class to .splitmenuItems
             $('.splitmenuItems').addClass('dropend');
         } else {
