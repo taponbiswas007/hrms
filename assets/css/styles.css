@@ -2770,3 +2770,15 @@ footer {
           text-decoration-skip-ink: auto;
   color: #3A57E8;
 }
+
+.guidline_list {
+  list-style-type: decimal;
+}
+.guidline_list li {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #000000;
+}

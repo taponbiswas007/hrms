@@ -930,15 +930,74 @@
                             <div class="d-flex pt-3 justify-content-start align-items-center gap-3">
                                 <p class="guidlinetext mb-0"><span>Important!</span> It's mandatory to use provided
                                     Excel format. Red columns in the template are mandatory.</p>
-                                <button class="commonbtn">View Details</button>
+                                <button data-bs-toggle="modal" data-bs-target="#fileUploadguidline" type="button"
+                                    class="commonbtn flex-shrink-0">View Details</button>
                             </div>
                             <!-- file upload guidline area end -->
+
+                            <!-- file upload guidline dialogue box start  -->
+                            <div class="modal fade " id="fileUploadguidline" tabindex="-1"
+                                aria-labelledby="dailyroutineDetailsLabel" aria-hidden="true" style="z-index: 1060;">
+                                <!-- Add inline z-index if needed -->
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Details</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body ">
+                                            <ul class="guidline_list ps-5 pe-3">
+                                                <li>Please download the excel template file and upload it after filling
+                                                    the data.</li>
+                                                <li>Do not modify, insert or delete any column headers from the
+                                                    downloaded template</li>
+                                                <li>All column headers in red are mandatory, Please ensure that they are
+                                                    filled.</li>
+                                                <li>Please read the comments (guidelines) for every mandatory column
+                                                    before filling up.</li>
+                                                <li>Some columns such as Department, Designation, Section, Division etc.
+                                                    can only take values, which are present in their masters. You can
+                                                    create these values by going to Admin -> Company Master.</li>
+                                                <li>All Date formats would be in DD/MM/YYYY.</li>
+                                                <li>Once you have filled the data, click on browse button.</li>
+                                                <li>Select your excel file and click on upload.</li>
+                                                <li>You will get a success message if the file uploaded successfully. If
+                                                    you get an error message then it is either due to a change in file
+                                                    format or modification of header columns.</li>
+                                                <li>After getting the success message for upload process click on verify
+                                                    data button.</li>
+                                                <li>Clicking on ‘Verify Data’ start the process of data validation.</li>
+                                                <li>If you get any errors then go to the bottom of the page then scroll
+                                                    toward right and you will see the error message for that particular
+                                                    record.</li>
+                                                <li>You can also download an excel file with all the errors.</li>
+                                                <li>Once you have corrected all error the ‘Verify Data’ process will
+                                                    return success message and the ‘Bulk Insert‘ button will be
+                                                    unlocked.</li>
+                                                <li>Clicking ‘Bulk insert’ button starts the process of employee
+                                                    creation.</li>
+                                                <li>Once done, you will get a list of employee codes created.</li>
+                                            </ul>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- file upload guidline  dialogue box end  -->
+
+
 
                             <!-- Click Here to download format start -->
                             <a class="formatdownloadbtn" href="#">
                                 Click Here to download format
                             </a>
                             <!-- Click Here to download format end -->
+
 
                             <div class="row g-4 pt-3">
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -977,10 +1036,12 @@
 
                         <!-- =================data table area start=================== -->
                         <div class="bg-white p-3 rounded-4 mt-4 shadow dataTable-area">
-                            <div class="d-flex select-criteria justify-content-between align-items-center pb-3"
+                            <div class="d-flex select-criteria justify-content-between align-items-center pb-3 gap-3 flex-wrap"
                                 style="border-bottom: 0.9px dashed #d2d2d2">
                                 <h1 class="fw-medium fs-5 text-black">Import Result</h1>
-
+                                <button class="btn bg-blue text-white rounded-4 px-4">
+                                    Export To Excel
+                                </button>
                             </div>
 
                             <!-- =============List start============= -->
