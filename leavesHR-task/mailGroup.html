@@ -857,18 +857,39 @@
                                         aria-expanded="false">Mail Group<img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
-                                    <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
+                                    <ul class="dropdown-menu  border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1" href="leaveApproval.html">Leave Approval</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1" href="mailGroup.html">Mail Group</a></li>
                                         <li><a class="dropdown-item mb-1" href="mailTemplate.html">Mail Template</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="absenteesList.html">Absentees List</a>
+                  <li><a class="dropdown-item mb-1" href="absenteesList.html">Absentees List</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="compensatoryOffInsert.html">Compensatory
-                                                Off Insert</a></li>
-                                        <li><a class="dropdown-item mb-1" href="compensatoryOffUpdate.html">Compensatory
-                                                Off Update</a></li>
+
+                                        <li class=" splitmenuItems CompensatoryOffmenu">
+                                            <button class="dropdown-item mb-1 ps-3 dropdown-toggle-split"
+                                                data-bs-toggle="dropdown">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span>Compensatory Off</span>
+                                                    <span class=" ms-5"><i class="fa-solid fa-angle-right"></i></span>
+                                                </div>
+                                            </button>
+                                            <!-- ===Compensatory Update submenu=== -->
+                                            <ul class="dropdown-menu subdrpdownActive border-0 rounded-3 shadow-lg">
+                                                <li><a class="dropdown-item mb-1"
+                                                        href="compensatoryOffInsert.html">Compensatory
+                                                        Off Insert</a></li>
+                                                <li><a class="dropdown-item mb-1"
+                                                        href="compensatoryOffUpdate.html">Compensatory
+                                                        Off Update</a></li>
+
+
+
+
+                                            </ul>
+                                        </li>
+
+
                                         <li><a class="dropdown-item mb-1"
                                                 href="restrictedHolidayApproveReject.html">Restricted Holiday Approve
                                                 Reject</a></li>
