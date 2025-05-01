@@ -730,6 +730,25 @@ $(document).ready(function () {
     });
 
 
+    // get absents and unapproved list
+    $('.getabsents_and_unapprovedarea').hide();  // Hide all by default
+    $('#getAbsentslist').show().addClass('activegetandunapprovelist'); // Show default one
+
+    function changeproTab(target) {
+        $('.getabsents_and_unapprovedarea.activegetandunapprovelist').fadeOut(300, function () {
+            $(this).removeClass('activegetandunapprovelist');
+            $('#' + target).fadeIn(300).addClass('activegetandunapprovelist');
+        });
+    }
+
+    $('.getAbsentslistBtn').click(function () {
+        changeproTab('getAbsentslist');
+    });
+    $('.unapproveListBtn').click(function () {
+        changeproTab('unapproveList');
+    });
+
+
 
 
 

@@ -1869,6 +1869,10 @@ footer {
   border-radius: 4px;
 }
 
+.activegetandunapprovelist {
+  display: block;
+}
+
 #leaveSummaryofsupervisor .modal-body {
   padding: 25px 30px 10px 30px !important;
 }
