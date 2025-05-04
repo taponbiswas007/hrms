@@ -836,9 +836,9 @@
                                             src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1" href="employeeManagement.html">Employee Management</a></li>
-                                        <li><a class="dropdown-item mb-1" href="companyAnnouncements.html">Hr Task</a></li>
+                                       <li><a class="dropdown-item mb-1" href="../employee-HR-Task/companyAnnouncements.html">Hr Task</a></li>
                                         <li><a class="dropdown-item mb-1"
-                                                href="letters.html">Reports</a></li>
+                                                href="../employee-Reports/letters.html">Reports</a></li>
                                               <li><a class="dropdown-item mb-1"
                                                 href="../employee-Appointment-Letters/appointmentLetters.html">Appointment Letters</a></li>
 
@@ -997,10 +997,10 @@
                                     </label>
                                     <input type="text" class="form-control fs-7"
                                         style="border-color: #C2C2C2; border-radius:8px;"
-                                        placeholder="FE0123 (John Doe)">
+                                        placeholder="Enter Reports To">
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-12 col-sm-6 col-12">
-                                    <div class="d-flex justify-content-start align-items-center  gap-3">
+                                    <div class="d-flex justify-content-start align-items-center  gap-2">
                                         <div>
                                             <label class=" mb-1" for="">
                                                 Probation Up to
@@ -1011,9 +1011,9 @@
                                         </div>
                                         <div class="position-relative">
                                             <label class="custom-checkbox text-nowrap" for="panCardCheckbox"
-                                                style="font-size: 12px;">
+                                                style="font-size: 14px; margin-top: 7px;">
                                                 <input type="checkbox" id="panCardCheckbox">
-                                                <span class="checkmark"></span>
+                                                <span class="checkmark me-0"></span>
                                                 Is Supervisor
                                             </label>
                                         </div>
@@ -1024,8 +1024,19 @@
                                     <label class=" mb-1" for="">
                                         Last Modify Date
                                     </label>
-                                    <input type="date" class="form-control fs-7"
+                                    <div class="d-flex justify-content-between align-items-center gap-3">
+                                        <div class="position-relative">
+                                            <label class="custom-checkbox disablecheckbox text-nowrap"
+                                                style="font-size: 14px;">
+                                                <input type="checkbox" checked >
+                                                <span class="checkmark"></span>
+                                             
+                                            </label>
+                                        </div>
+                                        <input disabled readonly type="date" class="form-control fs-7"
                                         style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter Temp Code">
+                                    </div>
+                                  
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class=" mb-1" for="">

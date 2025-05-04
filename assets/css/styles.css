@@ -2856,6 +2856,10 @@ footer {
   color: #0A0A0A;
 }
 
+.disablecheckbox input:checked ~ .checkmark {
+  background-color: #9A989D !important;
+}
+
 @media (max-width: 440px) {
   .processconfirmationtext {
     font-size: 14px;
