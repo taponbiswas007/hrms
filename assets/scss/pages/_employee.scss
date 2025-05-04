@@ -221,6 +221,9 @@
     align-items: center;
     list-style: none;
     font-size: 0.875rem !important;
+    &::after{
+        position: absolute;
+    }
 }
 
 .visibleItemaddbox ul li {

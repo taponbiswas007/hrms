@@ -915,6 +915,9 @@
                                         + New Employee
                                     </a>
                                 </div>
+                                <h1 class=" fw-medium fs-7 text-black pt-3 " style="font-size: 12px;">
+                                    Wildcard character * is permitted
+                                </h1>
 
                                 <!-- keyword select area -->
                                 <div class="filteringKeyword">
@@ -999,7 +1002,7 @@
                                             <button>z</button>
                                         </li>
                                         <li>
-                                            <button>Show all</button>
+                                            <button style="font-size: 16px;">Show all</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -1050,7 +1053,7 @@
                                             class="form-control fs-7" />
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <label class="mb-1" for=""> Email Id </label>
+                                        <label class="mb-1" for=""> Email ID </label>
                                         <input type="email" placeholder="Enter Email Id"
                                             style="border-color: #c2c2c2; border-radius: 8px"
                                             class="form-control fs-7" />
@@ -1067,12 +1070,31 @@
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <label class="mb-1" for=""> Employee Category </label>
-                                        <select style="border-color: #c2c2c2; border-radius: 8px"
+                                        <!-- <select style="border-color: #c2c2c2; border-radius: 8px"
                                             class="form-select fs-7" name="" id="">
                                             <option value="">All Category</option>
                                             <option value="">Example 1</option>
                                             <option value="">Example 2</option>
-                                        </select>
+                                        </select> -->
+                                        <div class="visibleItemaddbox">
+                                            <ul class="py-0 ">
+                                                <input type="text"  spellcheck="false"
+                                                    placeholder="Type or select...">
+                                                <div class="visiblelistdropdown">
+                                                    <ul>
+                                                        <li>Head office</li>
+                                                        <li>GK-M</li>
+                                                        <li>Ludhiana MBD</li>
+                                                        <li>Jaipur</li>
+                                                        <li>Head office 1</li>
+                                                        <li>GK-M 1</li>
+                                                        <li>Ludhiana MBD 1</li>
+                                                        <li>Jaipur 1</li>
+
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <label class="mb-1" for=""> Records Per Page </label>

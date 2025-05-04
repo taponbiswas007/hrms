@@ -2353,6 +2353,9 @@ footer {
   list-style: none;
   font-size: 0.875rem !important;
 }
+.visibleItemaddbox ul::after {
+  position: absolute;
+}
 
 .visibleItemaddbox ul li {
   color: #ffffff;
