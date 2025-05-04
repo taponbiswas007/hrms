@@ -185,7 +185,7 @@
                                 </button>
 
                                 <!-- dropdown -->
-                                  <ul class="sidebar-submenu accordion-collapse collapse" data-bs-parent="#accordionMenu"
+                                <ul class="sidebar-submenu accordion-collapse collapse" data-bs-parent="#accordionMenu"
                                     id="attendanceLink">
                                     <li><a href="../attendance/attendanceDetails.html" class="mb-1">
                                             <div class="arrow-right">
@@ -225,8 +225,7 @@
                                             </div>
                                             Supervisor
                                         </a></li>
-                                    <li><a href="../hr-task/employeeRegularizationRequests.html"
-                                            class="mb-1">
+                                    <li><a href="../hr-task/employeeRegularizationRequests.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -266,7 +265,8 @@
                                     Leave
                                 </button>
                                 <!-- dropdown -->
-                                <ul class="sidebar-submenu accordion-collapse collapse" id="leaveLink" data-bs-parent="#accordionMenu">
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="leaveLink"
+                                    data-bs-parent="#accordionMenu">
                                     <li><a href="../myLeave/leaveRequest.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
@@ -376,7 +376,7 @@
                                     Probation
                                 </button>
                                 <!-- dropdown -->
-                                 <ul class="sidebar-submenu accordion-collapse collapse" id="probationLink"
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="probationLink"
                                     data-bs-parent="#accordionMenu">
                                     <li><a href="../probation/myProbation.html" class="mb-1">
                                             <div class="arrow-right">
@@ -400,7 +400,7 @@
                             </li>
                             <!-- Bulk upload -->
                             <li class="sidebar-link-items">
-                                 <a class="d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
+                                <a class="d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
                                     href="../bulkUpload/importEmployee.html">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/bulkUpload.svg"
                                         alt="">
@@ -417,7 +417,7 @@
                                     Assets
                                 </button>
                                 <!-- dropdown -->
-                                 <ul class="sidebar-submenu accordion-collapse collapse" id="assetsLink"
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="assetsLink"
                                     data-bs-parent="#accordionMenu">
                                     <li><a href="../asset_management/assetIssuance.html" class="mb-1">
                                             <div class="arrow-right">
@@ -938,7 +938,7 @@
 
                             <!-- keyword select area -->
                             <div class="filteringKeyword pb-3 mb-3" style="border-bottom: 0.9px dashed #d2d2d2">
-                                 <ul class="d-flex justify-content-start align-items-center">
+                                <ul class="d-flex justify-content-start align-items-center">
                                     <li>
                                         <button>a</button>
                                     </li>
@@ -996,7 +996,7 @@
                                     <li>
                                         <button>s</button>
                                     </li>
-                                  
+
                                     <li>
                                         <button>t</button>
                                     </li>
@@ -1096,11 +1096,17 @@
                                                 <th class="border-0 px-3">Emp. Code</th>
                                                 <th class="border-0 px-3">Name</th>
                                                 <th class="border-0 text-center px-3 ">Resignation Date</th>
-                                                <th class="border-0 text-center px-3 ">Orginal LWD</th>
+                                                <th class="border-0 text-center px-3 ">Original LWD</th>
                                                 <th class="border-0 text-center px-3 ">Proposed LWD</th>
                                                 <th class="border-0 text-center px-3 ">Contact No.</th>
 
                                                 <th class="border-0 text-center px-3 ">Email ID/Status
+                                                </th>
+                                                <th class="border-0 text-center px-3 ">Shortfall in Notice Period
+                                                </th>
+                                                <th class="border-0 text-center px-3 ">Reason
+                                                </th>
+                                                <th class="border-0 text-center px-3 ">Remarks
                                                 </th>
 
                                             </tr>
@@ -1134,11 +1140,17 @@
 
                                                 <td class="p-2">
                                                     <div
-                                                        class="d-flex justify-content-center align-items-center  flex-column">
+                                                        class="d-flex justify-content-center align-items-center gap-3  ">
                                                         <span>mukesh.kumar@intero.in</span>
                                                         <button class="seeapprobtn">See Approval Remarks</button>
-                                                        <button class="viewscannedbtn" href="#">View Scanned RL</button>
+
                                                     </div>
+                                                </td>
+                                                <td class="p-2">0</td>
+                                                <td class="p-2">Test</td>
+                                                <td class="p-2" style="min-width: 130px;">
+                                                    <input type="text" class="form-control rounded-4"
+                                                        placeholder="Remarks">
                                                 </td>
 
 
@@ -1169,11 +1181,17 @@
 
                                                 <td class="p-2">
                                                     <div
-                                                        class="d-flex justify-content-center align-items-center  flex-column">
+                                                        class="d-flex justify-content-center align-items-center gap-3  ">
                                                         <span>mukesh.kumar@intero.in</span>
                                                         <button class="seeapprobtn">See Approval Remarks</button>
-                                                        <button class="viewscannedbtn" href="#">View Scanned RL</button>
+
                                                     </div>
+                                                </td>
+                                                <td class="p-2">0</td>
+                                                <td class="p-2">Test</td>
+                                                <td class="p-2" style="min-width: 130px;">
+                                                    <input type="text" class="form-control rounded-4"
+                                                        placeholder="Remarks">
                                                 </td>
 
 
@@ -1204,11 +1222,17 @@
 
                                                 <td class="p-2">
                                                     <div
-                                                        class="d-flex justify-content-center align-items-center  flex-column">
+                                                        class="d-flex justify-content-center align-items-center gap-3  ">
                                                         <span>mukesh.kumar@intero.in</span>
                                                         <button class="seeapprobtn">See Approval Remarks</button>
-                                                        <button class="viewscannedbtn" href="#">View Scanned RL</button>
+
                                                     </div>
+                                                </td>
+                                                <td class="p-2">0</td>
+                                                <td class="p-2">Test</td>
+                                                <td class="p-2" style="min-width: 130px;">
+                                                    <input type="text" class="form-control rounded-4"
+                                                        placeholder="Remarks">
                                                 </td>
 
 
@@ -1239,11 +1263,17 @@
 
                                                 <td class="p-2">
                                                     <div
-                                                        class="d-flex justify-content-center align-items-center  flex-column">
+                                                        class="d-flex justify-content-center align-items-center gap-3  ">
                                                         <span>mukesh.kumar@intero.in</span>
                                                         <button class="seeapprobtn">See Approval Remarks</button>
-                                                        <button class="viewscannedbtn" href="#">View Scanned RL</button>
+
                                                     </div>
+                                                </td>
+                                                <td class="p-2">0</td>
+                                                <td class="p-2">Test</td>
+                                                <td class="p-2" style="min-width: 130px;">
+                                                    <input type="text" class="form-control rounded-4"
+                                                        placeholder="Remarks">
                                                 </td>
 
 
@@ -1274,11 +1304,17 @@
 
                                                 <td class="p-2">
                                                     <div
-                                                        class="d-flex justify-content-center align-items-center  flex-column">
+                                                        class="d-flex justify-content-center align-items-center gap-3  ">
                                                         <span>mukesh.kumar@intero.in</span>
                                                         <button class="seeapprobtn">See Approval Remarks</button>
-                                                        <button class="viewscannedbtn" href="#">View Scanned RL</button>
+
                                                     </div>
+                                                </td>
+                                                <td class="p-2">0</td>
+                                                <td class="p-2">Test</td>
+                                                <td class="p-2" style="min-width: 130px;">
+                                                    <input type="text" class="form-control rounded-4"
+                                                        placeholder="Remarks">
                                                 </td>
 
 
@@ -1309,11 +1345,17 @@
 
                                                 <td class="p-2">
                                                     <div
-                                                        class="d-flex justify-content-center align-items-center  flex-column">
+                                                        class="d-flex justify-content-center align-items-center gap-3  ">
                                                         <span>mukesh.kumar@intero.in</span>
                                                         <button class="seeapprobtn">See Approval Remarks</button>
-                                                        <button class="viewscannedbtn" href="#">View Scanned RL</button>
+
                                                     </div>
+                                                </td>
+                                                <td class="p-2">0</td>
+                                                <td class="p-2">Test</td>
+                                                <td class="p-2" style="min-width: 130px;">
+                                                    <input type="text" class="form-control rounded-4"
+                                                        placeholder="Remarks">
                                                 </td>
 
 
@@ -1333,7 +1375,7 @@
                                                     </div>
                                                 </td>
                                                 <td class="p-2">FE0123</td>
-                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">Tapon chandra sarker</td>
                                                 <td class="p-2">20/12/2024</td>
                                                 <td class="p-2">20/12/2024</td>
                                                 <td class="p-2" style="min-width: 140px;">
@@ -1344,11 +1386,17 @@
 
                                                 <td class="p-2">
                                                     <div
-                                                        class="d-flex justify-content-center align-items-center  flex-column">
+                                                        class="d-flex justify-content-center align-items-center gap-3  ">
                                                         <span>mukesh.kumar@intero.in</span>
                                                         <button class="seeapprobtn">See Approval Remarks</button>
-                                                        <button class="viewscannedbtn" href="#">View Scanned RL</button>
+
                                                     </div>
+                                                </td>
+                                                <td class="p-2">0</td>
+                                                <td class="p-2">Test</td>
+                                                <td class="p-2" style="min-width: 130px;">
+                                                    <input type="text" class="form-control rounded-4"
+                                                        placeholder="Remarks">
                                                 </td>
 
 
@@ -1359,6 +1407,63 @@
                                         </tbody>
                                     </table>
                                 </div>
+
+                                <!-- pagination area -->
+                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
+                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                                        <li>
+                                            <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                <i class="fa-angle-left fa-solid"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                Prev
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                Next
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <small>Page:</small>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex gap-2">
+                                                <small>Of</small>
+                                                <p>100</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-dropdown">
+                                                <!-- Dropdown button -->
+                                                <div class="custom-dropdown-button" onclick="toggleDropdown(event)">
+                                                    10
+                                                </div>
+                                                <!-- Dropdown options -->
+                                                <div class="custom-dropdown-options shadow">
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '1', '10')">10</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '2', '11')">11</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '3', '12')">12</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '4', '13')">13</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '5', '14')">14</div>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+
 
                                 <div class=" d-flex justify-content-end gap-3  align-items-center mt-3">
                                     <button class="btn bg-blue text-white rounded-4 px-4">
