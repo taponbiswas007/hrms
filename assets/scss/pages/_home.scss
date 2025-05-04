@@ -142,7 +142,7 @@ footer {
 // transform: rotate(-128.26deg) translateY(-50%);
 
 footer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     z-index: 2;
