@@ -1477,9 +1477,6 @@ footer {
 .formCard h2 {
   margin-top: 10px;
 }
-.formCard .user-name {
-  margin-bottom: 1rem;
-}
 
 @media (min-width: 768px) {
   .authpage {
