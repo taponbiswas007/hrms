@@ -706,8 +706,8 @@ $(document).ready(function () {
         $('.other_link_tab_area li button').removeClass('active');
         $(this).addClass('active');
     });
-    // $('.protab-content').hide();  // Hide all by default
-    // $('#promotionArea').show().addClass('protabactive'); // Show default one
+    $('.protab-content').hide();  // Hide all by default
+    $('#promotionArea').show().addClass('protabactive'); // Show default one
 
     function changeproTab(target) {
         $('.protab-content.protabactive').fadeOut(300, function () {
