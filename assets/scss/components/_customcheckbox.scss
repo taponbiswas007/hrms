@@ -15,6 +15,20 @@
     border-radius: 3px;
     margin-right: 8px;
     vertical-align: middle;
+    cursor: pointer;
+}
+
+.disablecheckmark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #A9A8AA;
+    border-radius: 3px;
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 /* Style the checkmark when the checkbox is checked */
@@ -22,8 +36,18 @@
     background-color: #65558F;
 }
 
+.custom-checkbox input:checked~.disablecheckmark {
+    background-color: #A9A8AA;
+}
+
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.disablecheckmark:after {
     content: "";
     position: absolute;
     display: none;
@@ -34,8 +58,24 @@
     display: block;
 }
 
+.custom-checkbox input:checked~.disablecheckmark:after {
+    display: block;
+}
+
 /* Style the checkmark */
 .custom-checkbox .checkmark:after {
+    // left: 6px;
+    // top: 2px;
+    left: 39%;
+    top: 16%;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox .disablecheckmark:after {
     // left: 6px;
     // top: 2px;
     left: 39%;
