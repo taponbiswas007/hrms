@@ -59,6 +59,12 @@
     background-color: #9A989D !important;
 }
 
+@media (max-width: 540px) {
+    .processconfirmationtext {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 440px) {
     .processconfirmationtext {
         font-size: 14px;

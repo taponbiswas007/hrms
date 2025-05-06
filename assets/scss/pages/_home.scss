@@ -23,9 +23,7 @@
 
 
 
-footer {
-    width: calc(100% - 230px);
-}
+
 
 .header {
     padding-right: 3rem !important;
@@ -143,11 +141,13 @@ footer {
 // transform: rotate(-128.26deg) translateY(-50%);
 
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 230px);
     z-index: 2;
+    right: 0;
 }
+
 
 .top_sections {
     gap: 25px;
@@ -722,6 +722,10 @@ footer {
 
 @media (max-width: 992px) {
     .main-content {
+        width: 100%;
+    }
+
+    footer {
         width: 100%;
     }
 
