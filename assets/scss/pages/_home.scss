@@ -11,7 +11,9 @@
 
 .side-bar {
     width: 230px;
-
+    .logo{
+        width: 230px;
+    }
     .menu {
         height: calc(100vh - 74px);
         overflow-y: auto;
@@ -518,6 +520,7 @@ footer {
     letter-spacing: 0%;
     color: #000000;
     cursor: pointer;
+    margin-bottom: 0 !important;
 }
 
 .todosubtitle {
@@ -538,7 +541,9 @@ footer {
         align-items: center;
         flex-wrap: wrap;
         gap: 10px;
-
+        &:last-child{
+            margin-bottom: 0 !important;
+        }
         button {
             font-family: Poppins;
             font-weight: 700;
@@ -865,6 +870,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding-right: .25rem !important;
+      }
     .subdrpdownActive {
         transform: unset !important;
         inset: unset !important;
