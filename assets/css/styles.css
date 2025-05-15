@@ -1918,6 +1918,20 @@ footer {
   color: #4A59A7;
 }
 
+.aprebtn {
+  background: #8E8E93;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 10px;
+}
+
 .employee_leave_details_list li {
   margin-bottom: 10px;
 }
