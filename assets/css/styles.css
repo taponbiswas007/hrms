@@ -2171,7 +2171,6 @@ footer {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    margin-top: 20px;
   }
   .flug_identify_area .legendDivider {
     display: none !important;
