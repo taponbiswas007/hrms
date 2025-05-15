@@ -11,9 +11,11 @@
 
 .side-bar {
     width: 230px;
-    .logo{
+
+    .logo {
         width: 230px;
     }
+
     .menu {
         height: calc(100vh - 74px);
         overflow-y: auto;
@@ -541,9 +543,11 @@ footer {
         align-items: center;
         flex-wrap: wrap;
         gap: 10px;
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0 !important;
         }
+
         button {
             font-family: Poppins;
             font-weight: 700;
@@ -758,7 +762,7 @@ footer {
 
 @media (max-width: 540px) {
     footer {
-        font-size: 10px !important;
+        font-size: 14px !important;
     }
 }
 
@@ -872,7 +876,8 @@ footer {
 @media (max-width: 768px) {
     .header {
         padding-right: .25rem !important;
-      }
+    }
+
     .subdrpdownActive {
         transform: unset !important;
         inset: unset !important;
