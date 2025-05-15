@@ -618,6 +618,14 @@
     }
 }
 
+@media (max-width: 440px) {
+    .dayrutineSelector {
+        label {
+            font-size: 14px;
+        }
+    }
+}
+
 @media (max-width: 420px) {
     .employeeotherlinklist {
         align-items: center;
