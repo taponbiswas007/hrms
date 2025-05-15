@@ -1010,8 +1010,10 @@
                                                 29/06/2024
                                             </td>
                                             <td class="p-2 ">
-                                                <button class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span>Click to view reason</span>
+                                                <button class="d-flex justify-content-center align-items-center gap-2 "
+                                                    data-bs-target="#commentDetails" data-bs-toggle="modal"
+                                                    type="button">
+                                                    <span class="fs-7">Click to view reason</span>
                                                     <img style="height: 20px; width: 20px;"
                                                         src="../assets/images/commentIcon.svg" alt="">
                                                 </button>
@@ -1039,7 +1041,89 @@
 
                         </div>
 
+                        <!-- ================================================ -->
+                        <!-- ===========Comment details pop up area start====== -->
+                        <!-- ================================================ -->
 
+                        <div class="modal fade" id="commentDetails" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div
+                                            class="d-flex justify-content-start flex-lg-row flex-column align-items-center gap-3">
+                                            <h5 class="modal-title " id="exampleModalToggleLabel">Attendance details for
+                                                compensatory off</h5>
+
+
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="d-flex select-criteria justify-content-between align-items-center  pb-3"
+                                            style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                            <div class="d-flex justify-content-start align-items-center gap-4">
+                                                <h1 class=" fw-medium fs-5 text-black ">
+                                                    Final Attendance Details</h1>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="table-responsive mt-3 ">
+                                            <table class="table table-bordered border-gray">
+                                                <thead>
+                                                    <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
+                                                        style="color: #404040; background: #F9F9F9">
+                                                        <th class="border-0">Date</th>
+                                                        <th class="border-0 ">Time in</th>
+                                                        <th class="border-0 ">Time out</th>
+                                                        <th class="border-0">Remarks</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody style="font-family: DM Sans, sans-serif;">
+                                                    <tr class="text-nowrap fs-7 fw-normal"
+                                                        style="color: #202020; height: 50px; vertical-align: middle; ">
+                                                        <td class="p-2">
+                                                            29/06/2024
+                                                        </td>
+                                                        <td class="p-2 ">
+                                                            11:56 AM
+                                                        </td>
+                                                        <td class="p-2">
+                                                            09:30 PM
+                                                        </td>
+                                                        <td class="p-2" style="min-width: 250px">
+                                                            User worked on DayOff
+                                                        </td>
+
+                                                    </tr>
+
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer py-4">
+                                        <div class=" h-100 w-100 d-flex justify-content-end align-items-end ">
+                                            <button class="btn text-white rounded-4 px-4" style="background:#5A6185 ;"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- ================================================ -->
+                        <!-- ===========Comment details pop up area end====== -->
+                        <!-- ================================================ -->
 
 
 
