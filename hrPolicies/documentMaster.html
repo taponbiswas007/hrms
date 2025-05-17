@@ -967,7 +967,8 @@
                                                 </div>
                                             </td>
                                             <td class="p-2 text-center" style="width: 83px;">
-                                                <button class="approvedStatus h-25W-25">
+                                                <button class="approvedStatus h-25W-25" data-bs-toggle="modal"
+                                                    data-bs-target="#editPopup">
                                                     <i class="fa-solid fa-pen-to-square"></i>
                                                 </button>
                                             </td>
@@ -1005,7 +1006,85 @@
                     </div>
                     <!-- ================= Main body area area end================= -->
 
+                    <!-- Edit dialogue box start  -->
+                    <div class="modal fade " id="editPopup" tabindex="-1" aria-labelledby="dailyroutineDetailsLabel"
+                        aria-hidden="true" style="z-index: 1060;">
+                        <!-- Add inline z-index if needed -->
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Edit Category</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row g-4">
+                                        <div class=" col-xl-4 col-lg-6 col-12">
+                                            <label class=" mb-1" for="">
+                                                Category Name
+                                            </label>
+                                            <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                class=" form-control fs-7" placeholder="Enter Category Name">
+                                        </div>
+                                        <div class=" col-xl-4 col-lg-6 col-12">
+                                            <label class=" mb-1" for="">
+                                                Company Name
+                                            </label>
+                                            <select name="" style="border-color: #C2C2C2; border-radius:8px;"
+                                                class=" form-select fs-7" id="">
+                                                <option value="">Select</option>
+                                            </select>
+                                        </div>
+                                        <div class=" col-xl-4 col-lg-6 col-12">
+                                            <label class=" mb-1" for="">
+                                                Branch Name
+                                            </label>
+                                            <select name="" style="border-color: #C2C2C2; border-radius:8px;"
+                                                class=" form-select fs-7" id="">
+                                                <option value="">Select</option>
+                                            </select>
+                                        </div>
+                                        <div class=" col-xl-4 col-lg-6 col-12">
+                                            <label class=" mb-1" for="">
+                                                Employee Category
+                                            </label>
+                                            <select name="" style="border-color: #C2C2C2; border-radius:8px;"
+                                                class=" form-select fs-7" id="">
+                                                <option value="">Select</option>
+                                            </select>
+                                        </div>
+                                        <div class=" col-xl-4 col-lg-6 col-12">
+                                            <div class="d-flex h-100 justify-content-start align-items-end pb-2">
+                                                <div class="position-relative">
+                                                    <label class="custom-checkbox text-nowrap "
+                                                        style="font-size: 16px;">
+                                                        <input type="checkbox" checked disabled readonly>
+                                                        <span class=" disablecheckmark"></span>
 
+                                                    </label>
+                                                    Is Active
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+
+
+                                    <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
+                                        data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
+                                    <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Save</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Edit  dialogue box end  -->
 
 
                 </div>
