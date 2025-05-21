@@ -87,7 +87,7 @@
                                 <ul class=" sidebar-submenu accordion-collapse collapse" id="adminLink"
                                     data-bs-parent="#accordionMenu">
                                     <li>
-                                        <a href="#" class=" mb-1">
+                                        <a href="memberSetup.html" class=" mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -98,7 +98,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class=" mb-1">
+                                        <a href="../admin-companyMaster/companySetup.html" class=" mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -108,7 +108,7 @@
                                             Company Master
                                         </a>
                                     </li>
-                                    <li><a href="#" class=" mb-1">
+                                    <li><a href="../admin-eMSMaster/joiningDetails.html" class=" mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -117,7 +117,7 @@
                                             </div>
                                             EMS Master
                                         </a></li>
-                                    <li><a href="#" class=" mb-1">
+                                    <li><a href="../admin-attendanceMaster/leave.html" class=" mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -126,7 +126,7 @@
                                             </div>
                                             Attendance Master
                                         </a></li>
-                                    <li><a href="#" class=" mb-1">
+                                    <li><a href="../admin-historyData/historyData.html" class=" mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -135,7 +135,8 @@
                                             </div>
                                             History Data
                                         </a></li>
-                                    <li><a href="#" class=" mb-1">
+                                    <li><a href="../admin-EmployeeSeparationMaster/employeeSeparationMaster.html"
+                                            class=" mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -144,7 +145,7 @@
                                             </div>
                                             Emp Seperation Master
                                         </a></li>
-                                    <li><a href="#" class=" ">
+                                    <li><a href="../admin-confirmationMaster/probationAssessmentMaster.html" class=" ">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -864,6 +865,10 @@
                                         </li>
                                         <li><a class="dropdown-item mb-1"
                                                 href="../admin-historyData/historyData.html">History Data</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../admin-EmployeeSeparationMaster/employeeSeparationMaster.html">Employee
+                                                Separation Master</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
                                                 href="../admin-confirmationMaster/probationAssessmentMaster.html">Confirmation
@@ -1640,55 +1645,55 @@
                                         </div>
                                         <div class="modal-body">
                                             <div class="row g-4">
-                                                <div class="col-sm-12">
+                                                <div class="col-12">
                                                     <label class=" mb-1" for="">
-                                                        User Name <span class=" text-danger">*</span>
+                                                        User Name
                                                     </label>
-                                                    <input type="text" name="" id="" placeholder="Enter User Name"
+                                                    <input type="text" name="" disabled readonly id="" value="FE0123"
                                                         style="border-color: #C2C2C2; border-radius:8px;"
                                                         class=" form-control fs-7">
 
                                                 </div>
-                                                <div class="col-sm-3">
+                                                <div class="col-12">
                                                     <label class=" mb-1" for="">
-                                                        Days <span class=" text-danger">*</span>
+                                                        Email Address
                                                     </label>
-                                                    <select name="" id=""
-                                                        style="border-color: #C2C2C2; border-radius:8px;"
-                                                        class=" form-select fs-7">
-                                                        <option value="">1</option>
-                                                        <option value="">2</option>
-                                                        <option value="">3</option>
-                                                    </select>
-
-                                                </div>
-                                                <div class="col-sm-9">
-                                                    <label class=" mb-1" for="">
-                                                        Compensatory Date<span class=" text-danger">*</span>
-                                                    </label>
-                                                    <input type="date" name="" id="" placeholder="1"
+                                                    <input type="text" name="" disabled readonly id=""
+                                                        value="mukesh.kumar@intero.in"
                                                         style="border-color: #C2C2C2; border-radius:8px;"
                                                         class=" form-control fs-7">
 
                                                 </div>
-                                                <div class="col-sm-12">
+                                                <div class="col-12">
                                                     <label class=" mb-1" for="">
-                                                        Comments
+                                                        Password
                                                     </label>
-                                                    <textarea name="" id="" placeholder="Add your comments.."
-                                                        style="border-color: #C2C2C2; border-radius:8px; height: 82px; resize: none;"
-                                                        class=" form-control fs-7"></textarea>
-
+                                                    <input type="password" name="" id=""
+                                                        placeholder="Enter Your Password"
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7">
 
                                                 </div>
+                                                <div class="col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Confirm Password
+                                                    </label>
+                                                    <input type="password" name="" id=""
+                                                        placeholder="Enter Confirm Password"
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7">
+
+                                                </div>
+
                                             </div>
                                         </div>
                                         <div class="modal-footer">
 
-                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
-                                                data-bs-dismiss="modal">Save</button>
+
                                             <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
                                                 data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
+                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Save</button>
                                         </div>
                                     </div>
                                 </div>
