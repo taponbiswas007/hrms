@@ -1,5 +1,104 @@
-.changeRolecheckbox_area{
-    span{
+.changeRolecheckbox_area {
+    span {
         margin-top: -3px !important;
     }
+}
+
+.selecttoSup {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.7px;
+    letter-spacing: -0.6%;
+    vertical-align: middle;
+    color: #0a0a0a;
+    margin-bottom: 15px;
+}
+
+.selecttochangelist {
+    box-shadow: 0px 0px 3px 0px #00000040;
+    border-radius: 8px;
+    padding: 16px 25px;
+    overflow-y: auto;
+    max-height: 226px;
+
+    ul {
+        li {
+            margin-bottom: 10px;
+
+            .custom-radio {
+                border: 2px solid #0a0a0a;
+                margin-right: 10px;
+            }
+
+            label {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 22.7px;
+                letter-spacing: -0.6%;
+                color: #0a0a0a;
+            }
+
+            &:last-child {
+                margin-bottom: none;
+            }
+        }
+
+    }
+}
+
+.changeTypearea {
+    li {
+        margin-bottom: 10px;
+
+        .custom-radio {
+            border: 2px solid #0a0a0a;
+            margin-right: 10px;
+        }
+
+        label {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 22.7px;
+            letter-spacing: -0.6%;
+            color: #0a0a0a;
+        }
+
+        &:last-child {
+            margin-bottom: none;
+        }
+    }
+}
+
+.checkcondition {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22.7px;
+    letter-spacing: -0.6%;
+    vertical-align: middle;
+    color: #4A59A7;
+    margin-bottom: 0;
+}
+
+.employeename {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22.7px;
+    letter-spacing: -0.6%;
+    color: #FC5A5A;
+    margin-bottom: 0;
+}
+
+.ifSelectbox {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22.48px;
+    letter-spacing: -0.6%;
+    vertical-align: middle;
+    color: #000000;
 }
