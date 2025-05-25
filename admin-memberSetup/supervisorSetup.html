@@ -1114,12 +1114,11 @@
                                 <button class="mt-3 ">
                                     <div class="position-relative">
                                         <label class="custom-checkbox ifSelectbox">
-                                            <input type="checkbox" />
-                                            <span class="checkmark me-2" style="margin-top: -3px;"></span>
-                                            Select if you want to assign/reassign employees to selected Branch HR Rep or
-                                            Supervisor
+                                          <input type="checkbox" id="assignReassignshow"/>
+                                          <span class="checkmark me-2" style="margin-top: -3px;"></span>
+                                          Select if you want to assign/reassign employees to selected Branch HR Rep or Supervisor
                                         </label>
-                                    </div>
+                                      </div>
                                 </button>
 
                             </div>
@@ -1129,298 +1128,7 @@
 
 
 
-                            <!-- ================================================ -->
-                            <!-- ===========Employee Login Details pop up area start====== -->
-                            <!-- ================================================ -->
-
-                            <div class="modal fade" id="showSupervisorlist" aria-hidden="true"
-                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                <div class="modal-dialog modal-dialog-centered modal-xl">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-nowrap" id="exampleModalToggleLabel">
-                                                Employees</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close">
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p class="showSupervorser_number_counter_number">
-                                                Total Employees : 1471
-                                            </p>
-                                            <div class="mt-3">
-                                                <div class="table-responsive ">
-                                                    <table class="table table-bordered border-gray">
-                                                        <thead>
-                                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top align-top"
-                                                                style="color: #404040; background: #F9F9F9">
-                                                                <th class="border-0 text-center">
-                                                                    <div class="d-flex justify-content-center align-items-center">
-                                                                        <div class="position-relative"
-                                                                            >
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox" class="select-all-checkbox" />
-                                                                                <span class="checkmark"></span>
-                                                                                All
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                
-                                                                </th>
-                                                                <th class="border-0">Employee Name/Code</th>
-                                                                <th class="border-0">Date</th>
-                                                                <th class="border-0">Status</th>
-                                                                <th class="border-0">Department_Name</th>
-                                                                <th class="border-0">Division</th>
-                                                                <th class="border-0">Branch</th>
-                
-                
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody style="font-family: DM Sans, sans-serif;">
-                                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                                <td class="p-2">
-                                                                    <div class="d-flex justify-content-center align-items-center">
-                                                                        <div class="position-relative"
-                                                                            style="height: 20px; width: 20px">
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox" class="row-checkbox" />
-                                                                                <span class="checkmark"></span>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                
-                                                                </td>
-                                                                <td class="p-2">E123 - Shivam</td>
-                                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                                <td class="p-2">
-                                                                    <span class="statustext">Present</span>
-                                                                </td>
-                                                                <td class="p-2">Development</td>
-                                                                <td class="p-2">Tech</td>
-                                                                <td class="p-2">
-                                                                    Mumbai
-                
-                                                                </td>
-                
-                                                            </tr>
-                                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                                <td class="p-2">
-                                                                    <div class="d-flex justify-content-center align-items-center">
-                                                                        <div class="position-relative"
-                                                                            style="height: 20px; width: 20px">
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox" class="row-checkbox" />
-                                                                                <span class="checkmark"></span>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                
-                                                                </td>
-                                                                <td class="p-2">E123 - Shivam</td>
-                                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                                <td class="p-2">
-                                                                    <span class="depstatustext">Absent</span>
-                                                                </td>
-                                                                <td class="p-2">Development</td>
-                                                                <td class="p-2">Tech</td>
-                                                                <td class="p-2">
-                                                                    Mumbai
-                
-                                                                </td>
-                
-                                                            </tr>
-                                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                                <td class="p-2">
-                                                                    <div class="d-flex justify-content-center align-items-center">
-                                                                        <div class="position-relative"
-                                                                            style="height: 20px; width: 20px">
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox" class="row-checkbox" />
-                                                                                <span class="checkmark"></span>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                
-                                                                </td>
-                                                                <td class="p-2">E123 - Shivam</td>
-                                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                                <td class="p-2">
-                                                                    <span class="statustext">Present</span>
-                                                                </td>
-                                                                <td class="p-2">Development</td>
-                                                                <td class="p-2">Tech</td>
-                                                                <td class="p-2">
-                                                                    Mumbai
-                
-                                                                </td>
-                
-                                                            </tr>
-                                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                                <td class="p-2">
-                                                                    <div class="d-flex justify-content-center align-items-center">
-                                                                        <div class="position-relative"
-                                                                            style="height: 20px; width: 20px">
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox" class="row-checkbox" />
-                                                                                <span class="checkmark"></span>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                
-                                                                </td>
-                                                                <td class="p-2">E123 - Shivam</td>
-                                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                                <td class="p-2">
-                                                                    <span class="depstatustext">Absent</span>
-                                                                </td>
-                                                                <td class="p-2">Development</td>
-                                                                <td class="p-2">Tech</td>
-                                                                <td class="p-2">
-                                                                    Mumbai
-                
-                                                                </td>
-                
-                                                            </tr>
-                                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                                <td class="p-2">
-                                                                    <div class="d-flex justify-content-center align-items-center">
-                                                                        <div class="position-relative"
-                                                                            style="height: 20px; width: 20px">
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox" class="row-checkbox" />
-                                                                                <span class="checkmark"></span>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                
-                                                                </td>
-                                                                <td class="p-2">E123 - Shivam</td>
-                                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                                <td class="p-2">
-                                                                    <span class="statustext">Present</span>
-                                                                </td>
-                                                                <td class="p-2">Development</td>
-                                                                <td class="p-2">Tech</td>
-                                                                <td class="p-2">
-                                                                    Mumbai
-                
-                                                                </td>
-                
-                                                            </tr>
-                                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                                <td class="p-2">
-                                                                    <div class="d-flex justify-content-center align-items-center">
-                                                                        <div class="position-relative"
-                                                                            style="height: 20px; width: 20px">
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox" class="row-checkbox" />
-                                                                                <span class="checkmark"></span>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                
-                                                                </td>
-                                                                <td class="p-2">E123 - Shivam</td>
-                                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                                <td class="p-2">
-                                                                    <span class="depstatustext">Absent</span>
-                                                                </td>
-                                                                <td class="p-2">Development</td>
-                                                                <td class="p-2">Tech</td>
-                                                                <td class="p-2">
-                                                                    Mumbai
-                
-                                                                </td>
-                
-                                                            </tr>
-                                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                                <td class="p-2">
-                                                                    <div class="d-flex justify-content-center align-items-center">
-                                                                        <div class="position-relative"
-                                                                            style="height: 20px; width: 20px">
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox" class="row-checkbox" />
-                                                                                <span class="checkmark"></span>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                
-                                                                </td>
-                                                                <td class="p-2">E123 - Shivam</td>
-                                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                                <td class="p-2">
-                                                                    <span class="statustext">Present</span>
-                                                                </td>
-                                                                <td class="p-2">Development</td>
-                                                                <td class="p-2">Tech</td>
-                                                                <td class="p-2">
-                                                                    Mumbai
-                
-                                                                </td>
-                
-                                                            </tr>
-                                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                                <td class="p-2">
-                                                                    <div class="d-flex justify-content-center align-items-center">
-                                                                        <div class="position-relative"
-                                                                            style="height: 20px; width: 20px">
-                                                                            <label class="custom-checkbox">
-                                                                                <input type="checkbox" class="row-checkbox" />
-                                                                                <span class="checkmark"></span>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                
-                                                                </td>
-                                                                <td class="p-2">E123 - Shivam</td>
-                                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                                <td class="p-2">
-                                                                    <span class="depstatustext">Absent</span>
-                                                                </td>
-                                                                <td class="p-2">Development</td>
-                                                                <td class="p-2">Tech</td>
-                                                                <td class="p-2">
-                                                                    Mumbai
-                
-                                                                </td>
-                
-                                                            </tr>
-                
-                
-                
-                
-                
-                
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                               
-                                             
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer justify-content-center">
-                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
-                                                data-bs-dismiss="modal">Assign</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <!-- ================================================ -->
-                            <!-- ===========Employee Login Details pop up area end====== -->
-                            <!-- ================================================ -->
+                            
 
 
 
@@ -1434,8 +1142,9 @@
                     </div>
                     <!-- ================= superveisor setup area end================= -->
 
-                    <!-- ========Employee for Supervisor start======== -->
-                    <div class="bg-white p-3 rounded-4 shadow dataTable-area">
+                 <div class="conditionalSupstatus_area" style="display: none;">
+                       <!-- ========Employee for Supervisor start======== -->
+                       <div class="bg-white p-3 rounded-4 shadow dataTable-area">
 
                         <div class=" w-100 d-flex flex-sm-row flex-column justify-content-between align-items-center pb-3"
                             style="border-bottom:0.9px dashed #D2D2D2 ;">
@@ -1511,7 +1220,382 @@
                         </div>
                     </div>
                     <!-- ======show area end======= -->
+                 </div>
 
+                    <!-- ================================================ -->
+                            <!-- ===========show supervigor list pop up area start====== -->
+                            <!-- ================================================ -->
+
+                            <div class="modal fade" id="showSupervisorlist" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-nowrap" id="exampleModalToggleLabel">
+                                                Employees</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="showSupervorser_number_counter_number">
+                                                Total Employees : 1471
+                                            </p>
+                                            <div class="mt-3">
+                                                <div class="table-responsive " style="max-height: 326px;">
+                                                    <table class="table table-bordered border-gray">
+                                                        <thead>
+                                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top align-top"
+                                                                style="color: #404040; background: #F9F9F9">
+                                                                <th class="border-0 text-center">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            >
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="select-all-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                                All
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </th>
+                                                                <th class="border-0">Sr.No.</th>
+                                                                <th class="border-0">Employee Code</th>
+                                                                <th class="border-0">Name</th>
+                                                                <th class="border-0">Supervisor</th>
+                                                                <th class="border-0">BackOffice</th>
+                                                                <th class="border-0">Super BackOffice</th>
+                
+                
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody style="font-family: DM Sans, sans-serif;">
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                            <tr class="text-nowrap fs-7 fw-normal"
+                                                                style="color: #202020; height: 40px; vertical-align: middle; ">
+                                                                <td class="p-2">
+                                                                    <div class="d-flex justify-content-center align-items-center">
+                                                                        <div class="position-relative"
+                                                                            style="height: 20px; width: 20px">
+                                                                            <label class="custom-checkbox">
+                                                                                <input type="checkbox" class="row-checkbox" />
+                                                                                <span class="checkmark"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                
+                                                                </td>
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">FE0123</td>
+                                                                <td class="p-2">
+                                                                    Aalok Komalram Chaturvedi
+                                                                </td>
+                                                                <td class="p-2">TEMP2</td>
+                                                                <td class="p-2">BackOffice</td>
+                                                                <td class="p-2">
+                                                                    HD0132
+                
+                                                                </td>
+                
+                                                            </tr>
+                                                           
+                
+                
+                
+                
+                
+                
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                               
+                                             
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer justify-content-center">
+                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Assign</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- ================================================ -->
+                            <!-- ===========show supervigor list pop up area end====== -->
+                            <!-- ================================================ -->
 
 
                 </div>

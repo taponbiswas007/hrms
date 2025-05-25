@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    // promote type selector
     // Function to show/hide areas
     function toggleReportAreas(showJoining) {
         if (showJoining) {
@@ -801,6 +800,14 @@ $(document).ready(function () {
         // Update the reject_checkbox accordingly
         $('.approved_checkbox').prop('checked', allChecked);
     });
+
+    $('#assignReassignshow').change(function () {
+        if ($(this).is(':checked')) {
+            $('#conditionalSupstatus_area').show();
+        } else {
+            $('#conditionalSupstatus_area').hide();
+        }
+    }).trigger('change'); // This sets the initial state
 
 })
 
