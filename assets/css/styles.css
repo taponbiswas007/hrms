@@ -3134,3 +3134,12 @@ footer {
   vertical-align: middle;
   color: #000000;
 }
+
+.showSupervorser_number_counter_number {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
