@@ -801,13 +801,32 @@ $(document).ready(function () {
         $('.approved_checkbox').prop('checked', allChecked);
     });
 
+    // $('#assignReassignshow').change(function () {
+    //     if ($(this).is(':checked')) {
+    //         $('#conditionalSupstatus_area').show();
+    //     } else {
+    //         $('#conditionalSupstatus_area').hide();
+    //     }
+    // }).trigger('change');
+
+
+    // supervisor setup
+
+    // Hide the area initially (optional, if you want it hidden by default)
+    $('.conditionalSupstatus_area').hide();
+
+    // Handle checkbox change event
     $('#assignReassignshow').change(function () {
         if ($(this).is(':checked')) {
-            $('#conditionalSupstatus_area').show();
+            $('.conditionalSupstatus_area').show();
         } else {
-            $('#conditionalSupstatus_area').hide();
+            $('.conditionalSupstatus_area').hide();
         }
-    }).trigger('change'); // This sets the initial state
+    });
+
+    // Trigger the change event immediately in case the checkbox is already checked on page load
+    $('#assignReassignshow').trigger('change');
+
 
 })
 
