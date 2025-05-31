@@ -913,32 +913,146 @@
                     <div class=" pb-4 pt-3">
                         <div class="bg-white p-3 rounded-4 shadow mb-4">
 
+                            <div class="d-flex select-criteria justify-content-between align-items-center  pb-3"
+                                style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                <div class="d-flex justify-content-start align-items-center gap-4">
+                                    <h1 class=" fw-medium fs-5 text-black ">
+                                        Company Details</h1>
+                                   
+                                </div>
+
+                            </div>
 
                             <div class="row g-4 pt-3">
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
 
-                                    <input type="text" name="" id="" placeholder="Enter Company Name to Search"
-                                        style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7">
 
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Company Name
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                        placeholder="Enter Company Name">
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-
-                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-select fs-7">
-                                        <option value="">Active</option>
-
+                                <div class="col-xxl-6 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <label class=" mb-1" for="">
+                                        Street Address
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                        placeholder="Enter Street Address">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        State
+                                    </label>
+                                    <select name="" id="" class="form-select fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;">
+                                        <option value=""> Select</option>
                                     </select>
+                                </div>
 
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        City
+                                    </label>
+                                    <select name="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7" id="">
+                                        <option value="">Select</option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        PinCode
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter PinCode">
+                                </div>
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        PostBox
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                        placeholder="Enter PostBox No">
+                                </div>
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Phone
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter Phone No">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Fax
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter Fax No">
                                 </div>
 
 
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Email
+                                    </label>
+                                    <input type="email" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter Email">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        WebSite
+                                    </label>
+                                    <input type="email" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter WebSite">
+                                </div>
 
-                                <div class="col-xxl-6 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                    <div class=" h-100 w-100 d-flex justify-content-end align-items-end ">
-                                        <button class="btn bg-blue text-white rounded-4 px-5">Search</button>
+                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="w-100 d-flex justify-content-start align-items-stretch gap-4 flex-wrap">
+                                        <!-- company logo -->
+                                        <div class="company_and_mobile_logo">
+                                            <label class=" mb-1" for="">
+                                                Company Logo
+                                            </label>
+                                            <div class="chooseFile-area">
 
+                                                <div class="imageBox profile_image_box ">
+                                                    <img height="28px" width="28px"
+                                                        src="../assets/images/dashboard/imageupload.svg" alt="">
+                                                    <h2>Drop your files here</h2>
+                                                    <button class="btn bg-blue fw-normal text-white rounded-4">Choose
+                                                        File</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- company mobile logo -->
+                                        <div class="company_and_mobile_logo">
+                                            <label class=" mb-1" for="">
+                                                Company Mobile Logo
+                                            </label>
+                                            <div class="chooseFile-area">
+
+                                                <div class="imageBox profile_image_box ">
+                                                    <img height="28px" width="28px"
+                                                        src="../assets/images/dashboard/imageupload.svg" alt="">
+                                                    <h2>Drop your files here</h2>
+                                                    <button class="btn bg-blue fw-normal text-white rounded-4">Choose
+                                                        File</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
+
+
                                 </div>
+
 
                             </div>
 
@@ -951,191 +1065,125 @@
                             <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
                                 <h1 class=" fw-medium fs-5 text-black  ">
-                                    Company</h1>
-                                <div
-                                    class="d-flex flex-wrap justify-content-sm-end justify-content-center align-items-center gap-3">
-                                    <a href="addNewCompany.html" class="btn bg-blue text-white rounded-4 px-4">+ New
-                                        Company</a>
-                                    <button class="btn bg-blue text-white rounded-4 px-4">Generate Excel Report</button>
+                                    Susidiary Information</h1>
+
+
+
+                            </div>
+
+                            <!-- =================================Susidiary Information============================= -->
+
+                            <div class="row g-4 pt-3">
+
+
+
+                                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Opening Date
+                                    </label>
+                                    <input type="date" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;">
                                 </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Date of Coverage Under PF
+                                    </label>
+                                    <input type="date" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;">
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Date of Coverage Under ESI
+                                    </label>
+                                    <input type="date" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;">
+                                </div>
+
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        PF Number
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;" placeholder="Enter PF Number">
+                                </div>
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        ESI Number
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                        placeholder="Enter ESI Number">
+                                </div>
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        PAN Number
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                        placeholder="Enter PAN Number">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        TAN Number
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                        placeholder="Enter TAN Number">
+                                </div>
+
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Establishment Status
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                        placeholder="Enter Establishment Status">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Establishment Group Code
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                        placeholder="Enter Establishment Group Code">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Bank A/c No.
+                                    </label>
+                                    <input type="text" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                        placeholder="Enter Bank A/c No.">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Bank
+                                    </label>
+                                    <select name="" id="" class="form-control fs-7"
+                                        style="border-color: #C2C2C2; border-radius:8px;">
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-12 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div
+                                        class=" h-100 w-100 d-flex justify-content-sm-end justify-content-center align-items-end gap-3">
+                                        <button class="btn  text-white rounded-4 px-4"
+                                            style="background: #5A6185;">Cancel</button>
+                                        <button class="btn bg-blue text-white rounded-4 px-4">Submit</button>
+
+                                    </div>
+                                </div>
+
+
 
 
                             </div>
 
 
-
-                            <!-- =============List start============= -->
-                            <div class="mt-3">
-                                <div class="table-responsive ">
-                                    <table class="table table-bordered border-gray ">
-                                        <thead>
-                                            <tr class=" border-0 text-nowrap  "
-                                                style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
-
-                                                <th class="border-0 " style="color: #4A59A7; font-weight: 500;">Company
-                                                    Name</th>
-                                                <th class="border-0 " style="font-weight: 500;">Website</th>
-                                                <th class="border-0 " style="font-weight: 500;">
-                                                    Status
-                                                </th>
-                                                <th class="border-0 " style="font-weight: 500;">Action</th>
-
-
-
-
-                                            </tr>
-                                        </thead>
-                                        <tbody style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Forest Essentials</td>
-                                                <td class="p-2">https://www.forestessentialsindia.com/</td>
-
-                                                <td class="p-2"> <span class="activemarkbutton">Active</span></td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn">Edit/View</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Forest Essentials</td>
-                                                <td class="p-2">https://www.forestessentialsindia.com/</td>
-
-                                                <td class="p-2"> <span class="activemarkbutton">Active</span></td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn">Edit/View</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Forest Essentials</td>
-                                                <td class="p-2">https://www.forestessentialsindia.com/</td>
-
-                                                <td class="p-2"> <span class="activemarkbutton">Active</span></td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn">Edit/View</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Forest Essentials</td>
-                                                <td class="p-2">https://www.forestessentialsindia.com/</td>
-
-                                                <td class="p-2"> <span class="activemarkbutton">Active</span></td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn">Edit/View</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Forest Essentials</td>
-                                                <td class="p-2">https://www.forestessentialsindia.com/</td>
-
-                                                <td class="p-2"> <span class="activemarkbutton">Active</span></td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn">Edit/View</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Forest Essentials</td>
-                                                <td class="p-2">https://www.forestessentialsindia.com/</td>
-
-                                                <td class="p-2"> <span class="activemarkbutton">Active</span></td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn">Edit/View</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Forest Essentials</td>
-                                                <td class="p-2">https://www.forestessentialsindia.com/</td>
-
-                                                <td class="p-2"> <span class="activemarkbutton">Active</span></td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn">Edit/View</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Forest Essentials</td>
-                                                <td class="p-2">https://www.forestessentialsindia.com/</td>
-
-                                                <td class="p-2"> <span class="activemarkbutton">Active</span></td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn">Edit/View</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Forest Essentials</td>
-                                                <td class="p-2">https://www.forestessentialsindia.com/</td>
-
-                                                <td class="p-2"> <span class="activemarkbutton">Active</span></td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn">Edit/View</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Forest Essentials</td>
-                                                <td class="p-2">https://www.forestessentialsindia.com/</td>
-
-                                                <td class="p-2"> <span class="activemarkbutton">Active</span></td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn">Edit/View</button>
-                                                </td>
-
-
-
-                                            </tr>
-
-
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-
-                            <!-- =============List end============= -->
 
 
 

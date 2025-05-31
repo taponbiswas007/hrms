@@ -112,3 +112,27 @@
     letter-spacing: 0%;
     color: #000000;
 }
+
+.company_and_mobile_logo {
+    width: 334px;
+}
+
+@media (max-width:992px) {
+    .company_and_mobile_logo {
+        width: 48%;
+
+        .profile_image_box {
+            max-width: unset;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .company_and_mobile_logo {
+        width: 100%;
+
+        .profile_image_box {
+            max-width: unset;
+        }
+    }
+}
