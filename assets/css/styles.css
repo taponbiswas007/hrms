@@ -3204,6 +3204,25 @@ footer {
   color: #000000;
 }
 
+.validate_list_area p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.7px;
+  letter-spacing: -0.6%;
+  color: #0A0A0A;
+}
+
+.modal-title {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+}
+
 @media (max-width: 992px) {
   .company_and_mobile_logo {
     width: 48%;

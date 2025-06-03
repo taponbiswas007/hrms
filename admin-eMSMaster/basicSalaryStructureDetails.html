@@ -891,11 +891,11 @@
                                         <li><a class="dropdown-item mb-1" href="salaryStructure.html">Salary
                                                 Structure</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="divisionSetup.html">Salary Component</a>
+                                         <li><a class="dropdown-item mb-1" href="salaryComponent.html">Salary Component</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="departmentSetup.html">Assign HOD</a>
+                                         <li><a class="dropdown-item mb-1" href="assignHOD.html">Assign HOD</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="sectionSetup.html">General Setting</a>
+                                        <li><a class="dropdown-item mb-1" href="generalSetting.html">General Setting</a>
                                         </li>
 
 
@@ -1124,7 +1124,7 @@
                             </div>
 
                             <div class="row g-4 mt-3">
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class=" mb-1" for="">
                                         Rounding Type
                                     </label>
@@ -1136,7 +1136,7 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class=" mb-1" for="">
                                         Effective Date
                                     </label>
@@ -1144,7 +1144,7 @@
                                         class=" form-control fs-7">
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class=" mb-1" for="">
                                         Formula Type
                                     </label>
@@ -1156,7 +1156,7 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class=" mb-1" for="">
                                         Frequency
                                     </label>
@@ -1168,7 +1168,7 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                     <label class=" mb-1" for="">
                                         Component List
                                     </label>
@@ -1197,7 +1197,7 @@
 
 
                                 </div>
-                                <div class="col-xxl-3 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                     <label class=" mb-1" for="">
                                         Keyword List
                                     </label>
@@ -1228,11 +1228,11 @@
                                 </div>
                                 <div class="col-xxl-6 d-none d-xxl-block">
                                 </div>
-                                <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
 
-                                    <div style="border-color: #C2C2C2; border-radius:8px; height: 123px;"
-                                        class=" form-control  keyword_list_area fs-7 border-1">
-                                        <div class="overflow-auto" style="height: 110px;">
+                                    <div style="border-color: #C2C2C2; border-radius:8px; height: 196px;"
+                                        class=" form-control  validate_list_area fs-7 border-1">
+                                        <div class="overflow-auto" style="height: 183px;">
                                             <p>
                                                 IF( (ANNUAL_GROSS/12) < MIN_PAY ) <br>
                                                     BEGIN <br>
@@ -1251,13 +1251,10 @@
 
                                 </div>
 
-                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                     <div
-                                        class=" h-100 w-100 d-flex justify-content-md-end justify-content-center align-items-end gap-3 ">
-
-                                        <button class="btn bg-blue text-white rounded-4 px-4"
-                                            style="background: #5A6185;">Cancel</button>
-                                        <button class="btn bg-blue text-white rounded-4 px-4">Add/Update</button>
+                                        class=" h-100 w-100 d-flex justify-content-md-start justify-content-center align-items-end gap-3 ">
+                                        <button class="btn bg-blue text-white rounded-4 px-4">Validate</button>
                                     </div>
 
                                 </div>
@@ -1266,8 +1263,11 @@
                             </div>
 
                             <!-- PF Calculate  area end -->
-                            <div class=" h-100 w-100 d-flex justify-content-end align-items-end mt-3">
-                                <button class="btn bg-blue text-white rounded-4 px-4">Cancel</button>
+                            <div
+                                class=" h-100 w-100 d-flex justify-content-md-end justify-content-center align-items-end mt-3 gap-3">
+                                <button class="btn bg-blue text-white rounded-4 px-4"
+                                    style="background: #5A6185;">Cancel</button>
+                                <button class="btn bg-blue text-white rounded-4 px-4">Save</button>
 
                             </div>
 
