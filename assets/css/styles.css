@@ -3185,6 +3185,25 @@ footer {
   font-size: 11px;
 }
 
+.basicCheckmark {
+  height: 15px !important;
+  width: 15px !important;
+}
+.basicCheckmark::after {
+  left: 36% !important;
+  top: 0% !important;
+}
+
+.basiccustom-checkbox {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #000000;
+}
+
 @media (max-width: 992px) {
   .company_and_mobile_logo {
     width: 48%;
