@@ -3290,6 +3290,15 @@ footer {
   width: 109px !important;
 }
 
+.dayOffdateprevmonth {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #000000;
+}
+
 @media (max-width: 992px) {
   .company_and_mobile_logo {
     width: 48%;
