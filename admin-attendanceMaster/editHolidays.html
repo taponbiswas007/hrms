@@ -916,7 +916,7 @@
                         </nav>
                     </div>
 
-                    <!-- ================= Holidays area start================= -->
+                    <!-- ================= leave approval area start================= -->
                     <div class=" pb-4 pt-3">
 
                         <div class="bg-white p-3 rounded-4 shadow mb-4">
@@ -934,10 +934,287 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-6 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <div
-                                        class=" h-100 w-100 d-flex justify-content-sm-start justify-content-center align-items-end ">
-                                        <button class="btn bg-blue text-white rounded-4 px-5">ADD</button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================Holiday Configuration area start=================== -->
+                        <div class="bg-white p-3 rounded-4 shadow dataTable-area">
+
+                            <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
+                                style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                <h1 class=" fw-medium fs-6 text-black  ">Holiday Configuration</h1>
+                            </div>
+
+                            <div class="row g-4 mt-3">
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+
+                                    <div class="row g-3 ">
+                                        <div class="col-12">
+                                            <label for="" class="mb-1">
+                                                Holiday Name
+                                            </label>
+                                            <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                class=" form-control fs-7" placeholder="Enter Holiday Name">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="" class="mb-1">
+                                                Holiday Type
+                                            </label>
+                                            <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                                class=" form-select fs-7">
+                                                <option value="">Select</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="" class="mb-1">
+                                                Holiday Date
+                                            </label>
+                                            <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
+                                                class=" form-control fs-7" placeholder="Enter Holiday Name">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="position-relative ">
+                                                <label class="custom-checkbox">
+                                                    Is Repeated Annually
+                                                    <input type="checkbox" checked>
+                                                    <span class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xxl-9 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                    <div class="selectbranch_area_forHolidays">
+                                        <div class=" w-100 px-3 mb-3 d-flex  gap-3 justify-content-between flex-wrap align-items-center pb-3"
+                                            style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                            <h1 class=" fw-medium fs-6 text-black  ">Select Branch</h1>
+                                            <div class="position-relative ">
+                                                <label class="custom-checkbox">
+                                                    Select All Branch
+                                                    <input type="checkbox" checked name="selectAllbranch">
+                                                    <span class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-y-auto allBranchCheckboxarea px-3" style="height: 228px; ">
+                                            <div class="row  g-3">
+                                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <div class="position-relative ">
+                                                        <label class="custom-checkbox">
+                                                            Head Office
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Jaipur
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Ambiance Ggn
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Jaipur
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Jaipur
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Jaipur
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+
+                                                    <div class="position-relative ">
+                                                        <label class="custom-checkbox">
+                                                            GK N store
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Chandigarh
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Jodhpur
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Chandigarh
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Chandigarh
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Chandigarh
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <div class="position-relative ">
+                                                        <label class="custom-checkbox">
+                                                            GK-M
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Amritsar
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Vijayawada Airport
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Amritsar
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Amritsar
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Amritsar
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <div class="position-relative">
+                                                        <label class="custom-checkbox">
+                                                            Ludhiana MBD
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            SCW
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            Ambience VK
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            SCW
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            SCW
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="position-relative mt-3">
+                                                        <label class="custom-checkbox">
+                                                            SCW
+                                                            <input type="checkbox" checked name="branchName">
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class=" h-100 w-100 d-flex  justify-content-end align-items-end gap-3">
+                                        <button class="btn bg-blue text-white rounded-4 px-4"
+                                            style="background:#5A6185;">Cancel</button>
+                                        <button class="btn bg-blue text-white rounded-4 px-4">Save</button>
 
                                     </div>
                                 </div>
@@ -945,349 +1222,7 @@
                             </div>
 
                         </div>
-
-
-                        <!-- =================data table area start=================== -->
-                        <div class="bg-white p-3 rounded-4 shadow dataTable-area">
-
-                            <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
-                                style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-5 text-black  ">Shifts Configuration</h1>
-
-
-
-                            </div>
-
-
-
-                            <!-- =============List start============= -->
-                            <div class="mt-3">
-                                <div class="table-responsive ">
-                                    <table class="table table-bordered border-gray ">
-                                        <thead>
-                                            <tr class=" border-0 text-nowrap  "
-                                                style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
-
-                                                <th class="border-0 " style=" font-weight: 500;">Sr No.</th>
-                                                <th class="border-0 " style=" font-weight: 500;">Holiday Date</th>
-
-                                                <th class="border-0 " style="font-weight: 500;">
-                                                    Holiday Description
-                                                </th>
-                                                <th class="border-0 text-center" style="font-weight: 500;">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
-
-                                                <td class="p-2">
-                                                    Gandhi jayanti
-                                                </td>
-                                                <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
-
-                                                <td class="p-2">
-                                                    Gandhi jayanti
-                                                </td>
-                                                <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
-
-                                                <td class="p-2">
-                                                    Gandhi jayanti
-                                                </td>
-                                                <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
-
-                                                <td class="p-2">
-                                                    Gandhi jayanti
-                                                </td>
-                                                <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
-
-                                                <td class="p-2">
-                                                    Gandhi jayanti
-                                                </td>
-                                                <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
-
-                                                <td class="p-2">
-                                                    Gandhi jayanti
-                                                </td>
-                                                <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
-
-                                                <td class="p-2">
-                                                    Gandhi jayanti
-                                                </td>
-                                                <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-                
-                        </div>
-                        <!-- =================data table area end=================== -->
+                        <!-- =================Holiday Configuration area end=================== -->
 
                     </div>
                     <!-- ================= holidays area end================= -->

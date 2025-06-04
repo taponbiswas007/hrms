@@ -3204,6 +3204,25 @@ footer {
   color: #000000;
 }
 
+.branchCheckmark {
+  height: 15px !important;
+  width: 15px !important;
+}
+.branchCheckmark::after {
+  left: 36% !important;
+  top: 0% !important;
+}
+
+.basiccustom-checkbox {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #000000;
+}
+
 .validate_list_area p {
   font-family: Inter;
   font-weight: 400;
@@ -3360,6 +3379,78 @@ footer {
   padding: 0px 5px !important;
   height: 23px !important;
   width: 109px !important;
+}
+
+.selectbranch_area_forHolidays {
+  border: 1px solid #D2D2D2;
+  border-radius: 9px;
+  padding: 9px 0;
+}
+
+.deleteBtnGray {
+  background: #E5E5EA !important;
+}
+
+.shift_name {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #000000;
+}
+.shift_name span {
+  font-weight: 400;
+}
+
+.dayNameofweek {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 10.86px;
+  line-height: 16.29px;
+  letter-spacing: 0%;
+  color: #616161;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  border-radius: 7px;
+  height: 29px;
+  width: 84px;
+  border: 0.9px solid #E0E0E0;
+  background: #F2F2F7;
+}
+
+.timeBoxofduty {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 10.86px;
+  line-height: 16.29px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #616161;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  border-radius: 7px;
+  height: 29px;
+  width: 84px;
+  border: 0.9px solid #E0E0E0;
+  background: #FFFFFF;
 }
 
 @media (max-width: 992px) {

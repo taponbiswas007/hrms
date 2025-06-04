@@ -828,6 +828,39 @@ $(document).ready(function () {
     $('#assignReassignshow').trigger('change');
 
 
+    // select all branch in holiday
+
+    // Handle the "Select All Branch" checkbox
+    $('input[name="selectAllbranch"]').change(function () {
+        // Get the checked status of the select all checkbox
+        var isChecked = $(this).is(':checked');
+
+        // Set all branch checkboxes to the same status
+        $('.allBranchCheckboxarea input[name="branchName"]').prop('checked', isChecked);
+
+        // Update the checkmark appearance for all checkboxes
+        if (isChecked) {
+            $('.allBranchCheckboxarea .branchCheckmark').addClass('basicCheckmark');
+        } else {
+            $('.allBranchCheckboxarea .branchCheckmark').removeClass('basicCheckmark');
+        }
+    });
+
+    // Handle individual branch checkbox changes
+    $('.allBranchCheckboxarea input[name="branchName"]').change(function () {
+        // Count how many checkboxes are checked and how many exist
+        var totalCheckboxes = $('.allBranchCheckboxarea input[name="branchName"]').length;
+        var checkedCheckboxes = $('.allBranchCheckboxarea input[name="branchName"]:checked').length;
+
+        // Update the "Select All" checkbox status
+        if (checkedCheckboxes === totalCheckboxes) {
+            $('input[name="selectAllbranch"]').prop('checked', true);
+            $('input[name="selectAllbranch"]').siblings('.branchCheckmark').addClass('basicCheckmark');
+        } else {
+            $('input[name="selectAllbranch"]').prop('checked', false);
+            $('input[name="selectAllbranch"]').siblings('.branchCheckmark').removeClass('basicCheckmark');
+        }
+    });
 })
 
 
