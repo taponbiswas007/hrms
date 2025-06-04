@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
+    <title>Admin</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- simple bar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <noscript>
+        <style>
+            /**
+     
+      */
+            .simplebar-content-wrapper {
+                scrollbar-width: auto;
+                -ms-overflow-style: auto;
+            }
+
+            .simplebar-content-wrapper::-webkit-scrollbar,
+            .simplebar-hide-scrollbar::-webkit-scrollbar {
+                display: initial;
+                width: initial;
+                height: initial;
+            }
+        </style>
+    </noscript>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid px-0 overflow-x-hidden">
+        <div class="d-flex align-items-start justify-content-between">
+            <!-- side bar -->
+            <div class="bg-white side-bar vh-100">
+                <div class="position-relative ">
+                    <a href="#" class="d-flex  align-items-center justify-content-center p-3 logo"
+                        style="  background: url(../assets/images/dashboard/topbar_bg.png) no-repeat 0 0/100% 100%; margin-bottom: -1px">
+                        <img src="../assets/images/dashboard/logo.png" height="42px" width="63px" alt="logo">
+                    </a>
+
+                    <button class="d-block d-lg-none position-absolute closeSidebar z-3"
+                        style=" top: 25px ; right: -35px">
+                        <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Arrow line -->
+                            <path d="M5 11H18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+                            <!-- Arrow head -->
+                            <path d="M12 5L5 11L12 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <!-- Line to the left -->
+                            <path d="M1 2V18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+
+                    <div data-simplebar class="bg-blue text-white menu ">
+
+                        <!-- menu items -->
+                        <ul class="list-unstyled " id="accordionMenu">
+
+                            <!-- admin -->
+                            <li class="sidebar-link-items">
+                                <button type="button" data-bs-toggle="collapse" data-bs-target="#adminLink"
+                                    aria-expanded="false" aria-controls="adminLink"
+                                    class=" collapsed d-flex align-items-center border-bottom-op4 justify-content-start text-capitalize text-white fs-7 fw-normal py-2 ps-3 sidebar-link w-100 gap-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/settings.svg"
+                                        alt="">
+                                    Admin
+
+                                </button>
+                                <!-- dropdown menu -->
+                                <ul class=" sidebar-submenu accordion-collapse collapse" id="adminLink"
+                                    data-bs-parent="#accordionMenu">
+                                    <li>
+                                        <a href="memberSetup.html" class=" mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Member Management
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../admin-companyMaster/companySetup.html" class=" mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Company Master
+                                        </a>
+                                    </li>
+                                    <li><a href="../admin-eMSMaster/joiningDetails.html" class=" mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            EMS Master
+                                        </a></li>
+                                    <li><a href="../admin-attendanceMaster/leave.html" class=" mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Attendance Master
+                                        </a></li>
+                                    <li><a href="../admin-historyData/historyData.html" class=" mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            History Data
+                                        </a></li>
+                                    <li><a href="../admin-EmployeeSeparationMaster/employeeSeparationMaster.html"
+                                            class=" mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Emp Seperation Master
+                                        </a></li>
+                                    <li><a href="../admin-confirmationMaster/probationAssessmentMaster.html" class=" ">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Confirmation Master
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <!-- Dashboard -->
+                            <li class="sidebar-link-items">
+                                <a class="d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
+                                    href="../dashboard/dashboard.html">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
+                                        alt="">
+                                    Dashboard
+                                </a>
+                            </li>
+
+                            <!-- my profile -->
+                            <li class="sidebar-link-items">
+                                <a class="d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
+                                    href="../myProfile/general.html">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/profile.svg" alt="">
+                                    My Profile
+                                </a>
+                            </li>
+
+                            <!-- Attendance -->
+                            <li class="sidebar-link-items">
+                                <button type="button" data-bs-toggle="collapse" data-bs-target="#attendanceLink"
+                                    aria-expanded="false" aria-controls="attendanceLink"
+                                    class="collapsed d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/attendance.svg"
+                                        alt="">
+                                    Attendance
+                                </button>
+
+                                <!-- dropdown -->
+                                <ul class="sidebar-submenu accordion-collapse collapse" data-bs-parent="#accordionMenu"
+                                    id="attendanceLink">
+                                    <li><a href="../attendance/attendanceDetails.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            My
+                                            Attendance
+                                        </a></li>
+                                    <li><a href="../reports/attendance.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Reports
+                                        </a></li>
+                                    <li><a href="../branchHr/markAttendance.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Branch
+                                            Hr
+                                        </a></li>
+                                    <li><a href="../attendanceSupervisor/newJoineeAttendanceApproval.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Supervisor
+                                        </a></li>
+                                    <li><a href="../hr-task/employeeRegularizationRequests.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            HR Task
+                                        </a></li>
+                                    <li><a href="../late/lateUpdate.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Late
+                                        </a></li>
+                                    <li><a href="../biometric/bioMetricStatusUpdate.html" class="mb-1">
+                                            <div class="arrow-right">
+
+
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Biometric
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <!-- Leaves -->
+                            <li class="sidebar-link-items">
+                                <button data-bs-toggle="collapse" data-bs-target="#leaveLink" aria-expanded="false"
+                                    aria-controls="leaveLink"
+                                    class="collapsed d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg" alt="">
+                                    Leave
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="leaveLink"
+                                    data-bs-parent="#accordionMenu">
+                                    <li><a href="../myLeave/leaveRequest.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            My Leaves
+                                        </a>
+                                    </li>
+                                    <li><a href="../supervisor/leaveApproval.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Supervisor
+                                        </a></li>
+                                    <li><a href="../leaveReports/employeeLeaveApplication.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Reports
+                                        </a></li>
+                                    <li><a href="../leavesHR-task/leaveApproval.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            HR Task
+                                        </a></li>
+                                    <li><a href="../leaveRegularization/leaveRegularization.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Leave Regularization
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <!-- employee -->
+                            <li class="sidebar-link-items">
+                                <button data-bs-toggle="collapse" data-bs-target="#employeeLink" aria-expanded="false"
+                                    aria-controls="employeeLink"
+                                    class=" collapsed d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/employee.svg"
+                                        alt="">
+                                    Employee
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="employeeLink"
+                                    data-bs-parent="#accordionMenu">
+                                    <li><a href="../employee/employeeManagement.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Employee Management
+                                        </a></li>
+                                    <li><a href="../employee-HR-Task/companyAnnouncements.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            HR Task
+                                        </a></li>
+                                    <li><a href="../employee-Reports/letters.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Reports
+                                        </a></li>
+                                    <li><a href="../employee-Appointment-Letters/appointmentLetters.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Appointment Letters
+                                        </a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Probation -->
+                            <li class="sidebar-link-items">
+                                <button data-bs-toggle="collapse" data-bs-target="#probationLink" aria-expanded="false"
+                                    aria-controls="probationLink"
+                                    class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
+                                        alt="">
+                                    Probation
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="probationLink"
+                                    data-bs-parent="#accordionMenu">
+                                    <li><a href="../probation/myProbation.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            My Probation
+                                        </a></li>
+                                    <li><a href="../probation/probationKRA.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Probation KRA
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <!-- Bulk upload -->
+                            <li class="sidebar-link-items">
+                                <a class="d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
+                                    href="../bulkUpload/importEmployee.html">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/bulkUpload.svg"
+                                        alt="">
+                                    Bulk Upload
+                                </a>
+                            </li>
+                            <!-- Assets -->
+                            <li class="sidebar-link-items">
+                                <button data-bs-toggle="collapse" data-bs-target="#assetsLink" aria-expanded="false"
+                                    aria-controls="assetsLink"
+                                    class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
+                                        alt="">
+                                    Assets
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="assetsLink"
+                                    data-bs-parent="#accordionMenu">
+                                    <li><a href="../asset_management/assetIssuance.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Asset Issuance
+                                        </a></li>
+                                    <li><a href="../asset_management/employeeAssetReports.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Reports
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <!-- PMS -->
+                            <li class="sidebar-link-items">
+                                <button data-bs-toggle="collapse" data-bs-target="#pmsLink" aria-expanded="false"
+                                    aria-controls="pmsLink"
+                                    class="d-flex  collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/performance.svg"
+                                        alt="">
+                                    PMS
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="pmsLink"
+                                    data-bs-parent="#accordionMenu">
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Self Appraisal
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Team Appraisal
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Reviewer Task
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            HR View
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Status Change
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Hierarchy BulkUpload
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            KRA BulkUpload
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            PMS Master
+                                        </a></li>
+                                </ul>
+                            </li>
+
+                            <!-- LMS -->
+                            <li class="sidebar-link-items">
+                                <button data-bs-toggle="collapse" data-bs-target="#lmsLink" aria-expanded="false"
+                                    aria-controls="lmsLink"
+                                    class="d-flex collapsed  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/learn-outline.svg"
+                                        alt="">
+                                    LMS
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="lmsLink"
+                                    data-bs-parent="#accordionMenu">
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Admin Dashboard
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Course Management
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Assessment
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Module
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            QuestionBank
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            My Dashboard
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            My Courses
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Category
+                                        </a></li>
+                                    <li><a href="#" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Reports
+                                        </a></li>
+
+                                </ul>
+                            </li>
+
+                            <!-- Reimbursements -->
+                            <li class="sidebar-link-items">
+                                <button data-bs-toggle="collapse" data-bs-target="#reimbursementsLink"
+                                    aria-expanded="false" aria-controls="reimbursementsLink"
+                                    class="d-flex collapsed  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/expanse.svg" alt="">
+                                    Reimbursements
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="reimbursementsLink"
+                                    data-bs-parent="#accordionMenu">
+                                    <li><a href="../reimbursement/myClaim.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            My Claim
+                                        </a></li>
+                                    <li><a href="../reimbursement/claimApproval.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Claim Approval
+                                        </a></li>
+                                    <li><a href="../reimbursement/claimPayment.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Claim Payment
+                                        </a></li>
+                                    <li><a href="../reimbursement/claimMaster.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Configuration
+                                        </a></li>
+                                    <li><a href="../reimbursement/claimReport.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+
+
+                                            Claim Report
+                                        </a></li>
+                                </ul>
+                            </li>
+
+
+                            <!-- Managerial Task -->
+                            <li class="sidebar-link-items">
+                                <button data-bs-toggle="collapse" data-bs-target="#managerialTaskLink"
+                                    aria-expanded="false" aria-controls="managerialTaskLink"
+                                    class="d-flex collapsed  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/task.svg" alt="">
+                                    Managerial Task
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="managerialTaskLink"
+                                    data-bs-parent="#accordionMenu">
+                                    <li><a href="../managerialTask-SupervisorTasks/resignationAcceptance.html"
+                                            class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Supervisor Task
+                                        </a></li>
+                                    <li><a href="../managerialTask-departmentClearance/departmentClearance.html"
+                                            class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Department Clearance
+                                        </a></li>
+                                    <li><a href="../managerialTask-L1ProbationApproval/l1ProbationApproval.html"
+                                            class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            L1 Probation Approval
+                                        </a></li>
+                                    <li><a href="../managerialTask-l2ProbationApproval/l2ProbationApproval.html"
+                                            class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            L2 Probation Approval
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-link-items">
+                                <a class="d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
+                                    href="../resignation/resignation.html">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/registration.svg"
+                                        alt="">
+                                    Resignation
+                                </a>
+                            </li>
+
+                            <!-- HR Policies  -->
+                            <li class="sidebar-link-items">
+                                <button data-bs-toggle="collapse" data-bs-target="#hRPoliciesLink" aria-expanded="false"
+                                    aria-controls="hRPoliciesLink"
+                                    class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/policy.svg" alt="">
+                                    HR Policies
+                                </button>
+                                <!-- dropdown -->
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="hRPoliciesLink"
+                                    data-bs-parent="#accordionMenu">
+                                    <li><a href="../hrPolicies/documents.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Document
+                                        </a></li>
+                                    <li><a href="../hrPolicies/documentMaster.html" class="mb-1">
+                                            <div class="arrow-right">
+                                                <svg viewBox="0 0 448 512" width="10" height="10">
+                                                    <path fill="currentColor"
+                                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                                </svg>
+                                            </div>
+                                            Document Master
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- main content area -->
+            <div class="main-content">
+                <!-- header area -->
+                <div class="d-flex align-items-center justify-content-between header  px-1 px-md-4 sticky-top z-3">
+                    <div class="d-flex align-items-center justify-content-start gap-4">
+                        <button class="d-block d-lg-none toggleBar">
+                            <svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!-- Top Bar -->
+                                <rect x="16" y="60" width="416" height="40" rx="4" fill="#ffffff" />
+                                <!-- Middle Bar -->
+                                <rect x="16" y="220" width="416" height="40" rx="4" fill="#ffffff" />
+                                <!-- Bottom Bar -->
+                                <rect x="16" y="380" width="416" height="40" rx="4" fill="#ffffff" />
+                            </svg>
+                        </button>
+                        <!-- <h1 class="d-none d-sm-block text-uppercase text-white fs-7 fw-semibold">forest essentials</h1> -->
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end">
+                        <!-- notification area -->
+                        <button class="notification-btn">
+                            <img src="../assets/images/dashboard/bell.svg" alt="">
+                        </button>
+
+                        <!-- profile area -->
+                        <div class=" position-relative">
+                            <button class="d-flex align-items-center justify-content-end profiledetails"
+                                id="headerProfile">
+                                <img height="45px" width="45px" class="rounded-circle"
+                                    src="../assets/images/dashboard/managerimg.png" alt="">
+                                <div class="name-and-position">
+                                    <h1 class="text-capitalize text-start text-white fs-7 fw-semibold mb-0 mx-3">Austin
+                                        Robertson</h1>
+                                    <small class="text-capitalize text-start text-white fs-8">Hr Manager</small>
+                                </div>
+                                <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
+                            </button>
+                            <ul
+                                class="headerProfileDropdown bg-white  rounded-4 top-100 end-0 position-absolute shadow-lg py-3 px-2">
+                                <li><a class="d-flex w-100 dropdown-item align-items-center justify-content-start gap-2 mb-2"
+                                        href="#"> <img height="30px" width="30px"
+                                            src="../assets/images/dashboard/info_icon.svg" alt=""> Personal
+                                        Information</a></li>
+                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-2 mb-2"
+                                        href="#"> <img height="30px" width="30px"
+                                            src="../assets/images/dashboard/lock-password.svg" alt=""> Change
+                                        Password</a></li>
+                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-2 mb-2"
+                                        href="../authentication-pages/login.html"> <img height="30px" width="30px"
+                                            src="../assets/images/dashboard/logout.svg" alt=""> Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ================main content area start============== -->
+                <div class="pb-5 pt-3 px-2 px-lg-3">
+
+                    <!-- tabs area -->
+                    <div
+                        class="d-flex align-items-center bg-white justify-content-between p-3 rounded-3 shadow-sm mb-3 tabarea">
+
+                        <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a style="color: #757575;" href="#">Admin</a></li>
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Employee Separation Master <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
+                                    <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../admin-memberSetup/memberSetup.html">Member Setup</a></li>
+
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../admin-companyMaster/companySetup.html">Company Master</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../admin-eMSMaster/joiningDetails.html">EMS Master</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="../admin-attendanceMaster/leave.html">Attendance Master</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../admin-historyData/historyData.html">History Data</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="employeeSeparationMaster.html">Employee
+                                                Separation Master</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../admin-confirmationMaster/probationAssessmentMaster.html">Confirmation
+                                                Master</a>
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Employee Separation Master<img class="d-inline" height="20px " width="20px"
+                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
+                                    <ul class="dropdown-menu  border-0 rounded-3 shadow-lg">
+                                        <li><a class="dropdown-item mb-1" href="employeeSeparationMaster.html">Employee Separation Master</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="addClearanceActivity.html">Add Clearance Activity</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="holidays.html">Interview Master</a>
+                                        </li>
+                                       
+
+
+                                    </ul>
+                                </li>
+
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <!-- ================= Holidays area start================= -->
+                    <div class=" pb-4 pt-3">
+
+                        <div class="bg-white p-3 rounded-4 shadow mb-4">
+
+
+                            <div class="row g-4 ">
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <label for="" class="mb-1">
+                                        Select Year For Holiday
+                                    </label>
+                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7">
+                                        <option value="">Select</option>
+
+                                    </select>
+
+                                </div>
+                                <div class="col-xxl-6 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div
+                                        class=" h-100 w-100 d-flex justify-content-sm-start justify-content-center align-items-end ">
+                                        <button class="btn bg-blue text-white rounded-4 px-5">ADD</button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================data table area start=================== -->
+                        <div class="bg-white p-3 rounded-4 shadow dataTable-area">
+
+                            <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
+                                style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                <h1 class=" fw-medium fs-5 text-black  ">Shifts Configuration</h1>
+
+
+
+                            </div>
+
+
+
+                            <!-- =============List start============= -->
+                            <div class="mt-3">
+                                <div class="table-responsive ">
+                                    <table class="table table-bordered border-gray ">
+                                        <thead>
+                                            <tr class=" border-0 text-nowrap  "
+                                                style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
+
+                                                <th class="border-0 " style=" font-weight: 500;">Sr No.</th>
+                                                <th class="border-0 " style=" font-weight: 500;">Holiday Date</th>
+
+                                                <th class="border-0 " style="font-weight: 500;">
+                                                    Holiday Description
+                                                </th>
+                                                <th class="border-0 text-center" style="font-weight: 500;">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">02/10/2025</td>
+
+                                                <td class="p-2">
+                                                    Gandhi jayanti
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="editHolidays.html"
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">02/10/2025</td>
+
+                                                <td class="p-2">
+                                                    Gandhi jayanti
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="editHolidays.html"
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">02/10/2025</td>
+
+                                                <td class="p-2">
+                                                    Gandhi jayanti
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="editHolidays.html"
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">02/10/2025</td>
+
+                                                <td class="p-2">
+                                                    Gandhi jayanti
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="editHolidays.html"
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">02/10/2025</td>
+
+                                                <td class="p-2">
+                                                    Gandhi jayanti
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="editHolidays.html"
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">02/10/2025</td>
+
+                                                <td class="p-2">
+                                                    Gandhi jayanti
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="editHolidays.html"
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">02/10/2025</td>
+
+                                                <td class="p-2">
+                                                    Gandhi jayanti
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="editHolidays.html"
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                
+                        </div>
+                        <!-- =================data table area end=================== -->
+
+                    </div>
+                    <!-- ================= holidays area end================= -->
+
+
+
+
+                </div>
+                <!-- ================main content area end============== -->
+                <!-- ==========footer area start========= -->
+                <footer class="d-flex align-items-center justify-content-center p-2" style=" background: #DBE1FF;">
+                    <small class="text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
+                </footer>
+                <!-- ==========footer area end========= -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- simple bar js -->
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- js -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
