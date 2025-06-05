@@ -13,10 +13,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <!-- bootstrap -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- simple bar -->
@@ -852,9 +848,9 @@
                                 <li class="breadcrumb-item"><a style="color: #757575;" href="#">Admin</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Employee Separation Master <img class="d-inline"
-                                            height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
+                                        aria-expanded="false">Confirmation Master <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1"
                                                 href="../admin-memberSetup/memberSetup.html">Member Setup</a></li>
@@ -871,11 +867,12 @@
                                         <li><a class="dropdown-item mb-1"
                                                 href="../admin-historyData/historyData.html">History Data</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="employeeSeparationMaster.html">Employee
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../admin-EmployeeSeparationMaster/employeeSeparationMaster.html">Employee
                                                 Separation Master</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
-                                                href="../admin-confirmationMaster/probationAssessmentMaster.html">Confirmation
+                                                href="probationAssessmentMaster.html">Confirmation
                                                 Master</a>
                                         </li>
 
@@ -884,88 +881,24 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Interview Master<img class="d-inline" height="20px "
+                                        aria-expanded="false">Question Answer Setup <img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu  border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="employeeSeparationMaster.html">Employee
-                                                Separation Master</a>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="probationAssessmentMaster.html">Probation Assessment Master</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="addClearanceActivity.html">Add Clearance
-                                                Activity</a>
+                                        <li><a class="dropdown-item mb-1" href="sectionSetup.html">Section Setup</a>
                                         </li>
-
-                                        <!-- ===Interview Master menu=== -->
-                                        <li class=" splitmenuItems interviewMastermenuautoreg">
-                                            <button class="dropdown-item mb-1 ps-3 dropdown-toggle-split"
-                                                data-bs-toggle="dropdown">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <span>Interview Master</span>
-                                                    <span class=" ms-5"><i class="fa-solid fa-angle-right"></i></span>
-                                                </div>
-                                            </button>
-                                            <!-- ===Interview Master submenu=== -->
-                                            <ul class="dropdown-menu subdrpdownActive border-0 rounded-3 shadow-lg">
-                                                <li><a href="interviewTypeMaster.html" class="dropdown-item mb-1">
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <span>Interview Type Master</span>
-
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li><a href="questionSectionMaster.html" class="dropdown-item mb-1">
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <span>Question Section Master</span>
-
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li><a href="questionSectionMaster.html" class="dropdown-item mb-1">
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <span>Question Sub Section Master</span>
-
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li><a href="question&AnswerMaster.html" class="dropdown-item mb-1">
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <span>Question & Answer Master</span>
-
-                                                        </div>
-                                                    </a>
-                                                </li>
-
-
-
-
-                                            </ul>
+                                        <li><a class="dropdown-item mb-1" href="subSectionSetup.html">Sub Section
+                                                Setup</a>
                                         </li>
-
-
-                                    </ul>
-                                </li>
-                                <li class="breadcrumb-item" aria-current="page">
-                                    <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Question & Answer Master<img class="d-inline"
-                                            height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
-                                    <ul class="dropdown-menu  border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="interviewTypeMaster.html">Interview Type
-                                                Master</a>
+                                        <li><a class="dropdown-item mb-1" href="questionAnswerSetup.html">Question
+                                                Answer Setup</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="questionSectionMaster.html">Question
-                                                Section Master</a>
+                                        <li><a class="dropdown-item mb-1" href="probationApprovalLevel.html">Probation
+                                                Approval Level</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="questionSubSectionMaster.html">Question
-                                                Sub Section Master</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="question&AnswerMaster.html">Question &
-                                                Answer Master</a>
-                                        </li>
-
-
-
-
                                     </ul>
                                 </li>
 
@@ -973,167 +906,32 @@
                         </nav>
                     </div>
 
-                    <!-- ================= Add/Update Question Sub Section area start================= -->
+                    <!-- ================= Manage Section area start================= -->
                     <div class=" pb-4 pt-3">
 
                         <div class="bg-white p-3 rounded-4 shadow mb-4">
                             <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-6 text-black  ">Add/Update Question & Answer Master</h1>
-                            </div>
-
-                            <div class="row g-4 mt-2">
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <label for="" class="mb-1">
-                                        <span class="text-danger">*</span> Interview Type
-                                    </label>
-                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-select fs-7">
-                                        <option value="">Select</option>
-                                    </select>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <label for="" class="mb-1">
-                                        <span class="text-danger">*</span> Section
-                                    </label>
-                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-select fs-7">
-                                        <option value="">Select</option>
-                                    </select>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <label for="" class="mb-1">
-                                        Section-Sub Heading
-                                    </label>
-                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-control fs-7" placeholder="Enter Section-Sub Heading">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <label for="" class="mb-1">
-                                        Serial Number
-                                    </label>
-                                    <input type="text" disabled style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-control fs-7">
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <div class="d-flex justify-content-start align-items-center flex-wrap gap-3 fs-14">
-                                        <span><span class="text-danger">*</span> Type of Questions</span>
-                                        <div class="d-flex justify-content-start align-items-center flex-wrap gap-3">
-                                            <div class="d-flex justify-content-start align-items-center gap-3">
-                                                <input type="radio" checked name="typeofquestion"
-                                                    class="  custom-radio">
-                                                <label>Objective</label>
-                                            </div>
-                                            <div class="d-flex justify-content-start align-items-center gap-3">
-                                                <input type="radio" name="typeofquestion" class="  custom-radio">
-                                                <label>Multi Select</label>
-                                            </div>
-                                            <div class="d-flex justify-content-start align-items-center gap-3">
-                                                <input type="radio" name="typeofquestion" class="  custom-radio">
-                                                <label>Textual</label>
-                                            </div>
-                                            <div class="d-flex justify-content-start align-items-center gap-3">
-                                                <input type="radio" name="typeofquestion" class="  custom-radio">
-                                                <label>True/False</label>
-                                            </div>
-                                            <div class="d-flex justify-content-start align-items-center gap-3">
-                                                <input type="radio" name="typeofquestion" class="  custom-radio">
-                                                <label>Rating</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <label for="" class="mb-1">
-                                        <span class="text-danger">*</span> Question
-                                    </label>
-                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-control fs-7" placeholder="Enter Question">
-                                </div>
-
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div
-                                        class="d-flex justify-content-star align-items-end pb-2 gap-3 h-100 w-100 flex-wrap">
-                                        <div class="position-relative ">
-                                            <label class="custom-checkbox fs-14">
-                                                Is Show Comment?
-                                                <input type="checkbox" checked>
-                                                <span class="checkmark  basicCheckmark ms-1 me-0"></span>
-                                            </label>
-                                        </div>
-                                        <div class="position-relative ">
-                                            <label class="custom-checkbox fs-14">
-                                                Is Active?
-                                                <input type="checkbox" checked>
-                                                <span class="checkmark  basicCheckmark ms-1 me-0"></span>
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <label for="" class="mb-1">
-                                        Rating Out Of
-                                    </label>
-                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-control fs-7" placeholder="Enter Rating Out Of">
-                                </div>
-                                <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <label for="" class="mb-1">
-                                        <span class="text-danger">*</span> MCQ/Multi Select Answer
-                                    </label>
-                                    <div class="d-flex justify-content-between align-items-center gap-3">
-                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7" placeholder="Enter MCQ/Multi Select Answer">
-                                        <div class="position-relative flex-shrink-0 ">
-                                            <label class="custom-checkbox fs-14">
-                                                Is Active?
-                                                <input type="checkbox" checked>
-                                                <span class="checkmark  basicCheckmark ms-1"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <div
-                                        class="d-flex justify-content-between align-items-end  gap-3 h-100 w-100 flex-wrap">
-                                        <button class="btn bg-blue text-white rounded-4 px-4">Add</button>
-                                        <div class="d-flex justify-content-end align-items-center gap-3">
-                                            <button class="btn bg-blue text-white rounded-4 px-4"
-                                                style="background: #5A6185;">Cancel</button>
-                                            <button class="btn bg-blue text-white rounded-4 px-4">Save</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-
+                                <h1 class=" fw-medium fs-5 text-black  ">Manage Question</h1>
+                                <a href="newQuestionAdd.html" 
+                                    class="btn bg-blue text-white rounded-4 px-4">+ New Question</a>
 
 
                             </div>
 
-                        </div>
-
-
-                        <!-- =================data table area start=================== -->
-                        <div class="bg-white p-3 rounded-4 shadow dataTable-area">
-
-                            <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
-                                style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-5 text-black  ">Question Answer Master</h1>
-                            </div>
+                           
 
                             <div class="row g-4 mt-1">
-                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
-                                        Interview type
+                                        Probation Assessment
                                     </label>
                                     <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-select fs-7">
                                         <option value="">Select</option>
                                     </select>
                                 </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
                                         Section
                                     </label>
@@ -1142,7 +940,7 @@
                                         <option value="">Select</option>
                                     </select>
                                 </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
                                         Sub-Section
                                     </label>
@@ -1151,102 +949,200 @@
                                         <option value="">Select</option>
                                     </select>
                                 </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
-                                        Questions
+                                     Questions
                                     </label>
                                     <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-control fs-7" placeholder="Enter Questions">
+
                                 </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
-                                        Is Active
+                                        Is Acive
                                     </label>
                                     <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-select fs-7">
                                         <option value="">Select</option>
+
                                     </select>
+
                                 </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
                                         Order By
                                     </label>
                                     <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-select fs-7">
                                         <option value="">Select</option>
+
                                     </select>
-                                </div>
 
-                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <div class="d-flex w-100 h-100  justify-content-end align-items-end ">
+                                </div>
+                                <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div
+                                        class=" h-100 w-100 d-flex  justify-content-xxl-start justify-content-end align-items-end gap-3">
+
                                         <button class="btn bg-blue text-white rounded-4 px-4">Search</button>
+
                                     </div>
+
                                 </div>
+
                             </div>
+                        </div>
 
-
+                        <!-- =================data table area start=================== -->
+                        <div class="bg-white p-3 rounded-4 shadow dataTable-area">
 
                             <!-- =============List start============= -->
-                            <div class="mt-4">
+                            <div class="mt-0">
                                 <div class="table-responsive ">
                                     <table class="table table-bordered border-gray ">
                                         <thead>
                                             <tr class=" border-0 text-nowrap  "
                                                 style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
-
-                                                <th class="border-0 " style=" font-weight: 500;">Interview Type</th>
-                                                <th class="border-0 " style=" font-weight: 500;">Section</th>
-
-                                                <th class="border-0 " style=" font-weight: 500;">Questions
+                                                <th class="border-0 " style=" font-weight: 500;">
+                                                    Sr No.</th>
+                                                <th class="border-0 " style=" font-weight: 500;">
+                                                    Probation Assessment</th>
+                                                <th class="border-0 " style=" font-weight: 500;">
+                                                    Section</th>
+                                                <th class="border-0 " style=" font-weight: 500;">Section-Sub Heading
                                                 </th>
                                                 <th class="border-0 text-center" style=" font-weight: 500;">Is Active
                                                 </th>
-                                                <th class="border-0 text-center" style=" font-weight: 500;">Action
-                                                </th>
+                                                <th class="border-0 text-center" style="font-weight: 500;">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
-                                            <tr class=" text-nowrap   border-top-0"
+                                            <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2 ">Exit Interview</td>
-                                                <td class="p-2">PERSONAL DETAILS</td>
-                                                <td class="p-2 ">
-                                                    No. of years in organisation
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">Probation Assessment Form - Head Office</td>
+                                                <td class="p-2">To Be Filled By The Employee</td>
+                                                <td class="p-2">
+                                                    Section-Sub Heading
                                                 </td>
-                                                <td class="p-2 text-center ">
+                                                <td class="p-2 text-center">
                                                     Yes
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <button
+                                                        <a href="newQuestionAdd.html" 
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </button>
+                                                        </a>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class=" text-nowrap   border-top-0"
+                                            <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2 ">Exit Interview</td>
-                                                <td class="p-2">PERSONAL DETAILS</td>
-                                                <td class="p-2 ">
-                                                    No. of years in organisation
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">Probation Assessment Form - Head Office</td>
+                                                <td class="p-2">To Be Filled By The Employee</td>
+                                                <td class="p-2">
+                                                    Section-Sub Heading
                                                 </td>
-                                                <td class="p-2 text-center ">
+                                                <td class="p-2 text-center">
                                                     Yes
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <button
+                                                        <a href="newQuestionAdd.html" 
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </button>
+                                                        </a>
                                                     </div>
                                                 </td>
                                             </tr>
-
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">Probation Assessment Form - Head Office</td>
+                                                <td class="p-2">To Be Filled By The Employee</td>
+                                                <td class="p-2">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    Yes
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="newQuestionAdd.html" 
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">Probation Assessment Form - Head Office</td>
+                                                <td class="p-2">To Be Filled By The Employee</td>
+                                                <td class="p-2">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    Yes
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="newQuestionAdd.html" 
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">Probation Assessment Form - Head Office</td>
+                                                <td class="p-2">To Be Filled By The Employee</td>
+                                                <td class="p-2">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    Yes
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="newQuestionAdd.html" 
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">Probation Assessment Form - Head Office</td>
+                                                <td class="p-2">To Be Filled By The Employee</td>
+                                                <td class="p-2">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    Yes
+                                                </td>
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <a href="newQuestionAdd.html" 
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
                                         </tbody>
                                     </table>
                                 </div>
@@ -1258,35 +1154,33 @@
 
                         </div>
                         <!-- =================data table area end=================== -->
+                        <!-- ================= Manage Section  area end================= -->
+
+
+
 
                     </div>
-                    <!-- ================= holidays area end================= -->
-
-
+                    <!-- ================main content area end============== -->
+                    <!-- ==========footer area start========= -->
+                    <footer class="d-flex align-items-center justify-content-center p-2" style=" background: #DBE1FF;">
+                        <small class="text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
+                    </footer>
+                    <!-- ==========footer area end========= -->
 
 
                 </div>
-                <!-- ================main content area end============== -->
-                <!-- ==========footer area start========= -->
-                <footer class="d-flex align-items-center justify-content-center p-2" style=" background: #DBE1FF;">
-                    <small class="text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
-                </footer>
-                <!-- ==========footer area end========= -->
-
-
             </div>
         </div>
-    </div>
 
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- simple bar js -->
-    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-    <!-- js -->
-    <script src="../assets/js/main.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- simple bar js -->
+        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+        <!-- js -->
+        <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
