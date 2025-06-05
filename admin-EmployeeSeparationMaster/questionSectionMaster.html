@@ -946,9 +946,9 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Question Section Master<img class="d-inline" height="20px "
-                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
-                                            alt=""></button>
+                                        aria-expanded="false">Question Section Master<img class="d-inline"
+                                            height="20px " width="20px"
+                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
                                     <ul class="dropdown-menu  border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1" href="interviewTypeMaster.html">Interview Type
                                                 Master</a>
@@ -992,7 +992,7 @@
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
-                                         <span class="text-danger">*</span> Section
+                                        <span class="text-danger">*</span> Section
                                     </label>
                                     <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-control fs-7" placeholder="Enter Section">
@@ -1033,18 +1033,15 @@
                             <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
                                 <h1 class=" fw-medium fs-5 text-black  ">Question Section</h1>
-
-
-
                             </div>
 
-                            <div class="row g-4 mt-2">
+                            <div class="row g-4 mt-1">
                                 <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
-                                        Interview Type
+                                        Section Name
                                     </label>
                                     <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-control fs-7" placeholder="Enter Interview Type">
+                                        class=" form-control fs-7" placeholder="Enter Section Name">
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
@@ -1055,10 +1052,19 @@
                                         <option value="">Select</option>
                                     </select>
                                 </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <label for="" class="mb-1">
+                                        Order By
+                                    </label>
+                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7">
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
 
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                <div class="col-xxl-3 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
                                     <div
-                                        class="d-flex w-100 h-100 justify-content-lg-start justify-content-center align-items-end ">
+                                        class="d-flex w-100 h-100 justify-content-sm-start justify-content-lg-end justify-content-xxl-start justify-content-center align-items-end ">
                                         <button class="btn bg-blue text-white rounded-4 px-4">Search</button>
                                     </div>
                                 </div>
@@ -1074,27 +1080,28 @@
                                             <tr class=" border-0 text-nowrap  "
                                                 style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
 
-                                                <th class="border-0 " style=" font-weight: 500;">Interview Type</th>
-                                                <th class="border-0 " style=" font-weight: 500;">Heading</th>
-                                                <th class="border-0 text-center " style=" font-weight: 500;">Is Active
+                                                <th class="border-0 " style=" font-weight: 500;">Sr No.</th>
+                                                <th class="border-0 " style=" font-weight: 500;">Section</th>
+                                                <th class="border-0  " style=" font-weight: 500;">Section-Sub Heading
                                                 </th>
-                                                <th class="border-0 text-center" style=" font-weight: 500;">Edit
+                                                <th class="border-0 text-center" style=" font-weight: 500;">Is Active
+                                                </th>
+                                                <th class="border-0 text-center" style=" font-weight: 500;">Action
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
-                                            <tr class="   border-top-0" style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2 text-nowrap">Exit Interview</td>
-                                                <td class="p-2" style="min-width: 250px;">Help us make Schoolnet a great
-                                                    place to work by completing this questionnaire and send a completed
-                                                    copy to us before your scheduled exit interview. Your honest and
-                                                    open feedback is important to us. It will help us assess and improve
-                                                    our organization. It will also help us develop policies and
-                                                    practices that reflect needs of employees.</td>
-                                                <td class="p-2 text-center" style="width: 80px;">
+                                            <tr class=" text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2 ">1</td>
+                                                <td class="p-2">PERSONAL DETAILS</td>
+                                                <td class="p-2 ">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center ">
                                                     Yes
                                                 </td>
-                                                <td class="p-2 " style="width: 80px;">
+                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
                                                         <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
@@ -1104,18 +1111,17 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="   border-top-0" style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2 text-nowrap">Exit Interview</td>
-                                                <td class="p-2" style="min-width: 250px;">Help us make Schoolnet a great
-                                                    place to work by completing this questionnaire and send a completed
-                                                    copy to us before your scheduled exit interview. Your honest and
-                                                    open feedback is important to us. It will help us assess and improve
-                                                    our organization. It will also help us develop policies and
-                                                    practices that reflect needs of employees.</td>
-                                                <td class="p-2 text-center" style="width: 80px;">
+                                            <tr class=" text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2 ">1</td>
+                                                <td class="p-2">PERSONAL DETAILS</td>
+                                                <td class="p-2 ">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center ">
                                                     Yes
                                                 </td>
-                                                <td class="p-2 " style="width: 80px;">
+                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
                                                         <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
@@ -1125,18 +1131,17 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="   border-top-0" style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2 text-nowrap">Exit Interview</td>
-                                                <td class="p-2" style="min-width: 250px;">Help us make Schoolnet a great
-                                                    place to work by completing this questionnaire and send a completed
-                                                    copy to us before your scheduled exit interview. Your honest and
-                                                    open feedback is important to us. It will help us assess and improve
-                                                    our organization. It will also help us develop policies and
-                                                    practices that reflect needs of employees.</td>
-                                                <td class="p-2 text-center" style="width: 80px;">
+                                            <tr class=" text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2 ">1</td>
+                                                <td class="p-2">PERSONAL DETAILS</td>
+                                                <td class="p-2 ">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center ">
                                                     Yes
                                                 </td>
-                                                <td class="p-2 " style="width: 80px;">
+                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
                                                         <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
@@ -1146,18 +1151,17 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="   border-top-0" style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2 text-nowrap">Exit Interview</td>
-                                                <td class="p-2" style="min-width: 250px;">Help us make Schoolnet a great
-                                                    place to work by completing this questionnaire and send a completed
-                                                    copy to us before your scheduled exit interview. Your honest and
-                                                    open feedback is important to us. It will help us assess and improve
-                                                    our organization. It will also help us develop policies and
-                                                    practices that reflect needs of employees.</td>
-                                                <td class="p-2 text-center" style="width: 80px;">
+                                            <tr class=" text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2 ">1</td>
+                                                <td class="p-2">PERSONAL DETAILS</td>
+                                                <td class="p-2 ">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center ">
                                                     Yes
                                                 </td>
-                                                <td class="p-2 " style="width: 80px;">
+                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
                                                         <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
@@ -1167,18 +1171,17 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="   border-top-0" style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2 text-nowrap">Exit Interview</td>
-                                                <td class="p-2" style="min-width: 250px;">Help us make Schoolnet a great
-                                                    place to work by completing this questionnaire and send a completed
-                                                    copy to us before your scheduled exit interview. Your honest and
-                                                    open feedback is important to us. It will help us assess and improve
-                                                    our organization. It will also help us develop policies and
-                                                    practices that reflect needs of employees.</td>
-                                                <td class="p-2 text-center" style="width: 80px;">
+                                            <tr class=" text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2 ">1</td>
+                                                <td class="p-2">PERSONAL DETAILS</td>
+                                                <td class="p-2 ">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center ">
                                                     Yes
                                                 </td>
-                                                <td class="p-2 " style="width: 80px;">
+                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
                                                         <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
@@ -1188,18 +1191,37 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="   border-top-0" style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2 text-nowrap">Exit Interview</td>
-                                                <td class="p-2" style="min-width: 250px;">Help us make Schoolnet a great
-                                                    place to work by completing this questionnaire and send a completed
-                                                    copy to us before your scheduled exit interview. Your honest and
-                                                    open feedback is important to us. It will help us assess and improve
-                                                    our organization. It will also help us develop policies and
-                                                    practices that reflect needs of employees.</td>
-                                                <td class="p-2 text-center" style="width: 80px;">
+                                            <tr class=" text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2 ">1</td>
+                                                <td class="p-2">PERSONAL DETAILS</td>
+                                                <td class="p-2 ">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center ">
                                                     Yes
                                                 </td>
-                                                <td class="p-2 " style="width: 80px;">
+                                                <td class="p-2 ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <button
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class=" text-nowrap   border-top-0"
+                                                style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2 ">1</td>
+                                                <td class="p-2">PERSONAL DETAILS</td>
+                                                <td class="p-2 ">
+                                                    Section-Sub Heading
+                                                </td>
+                                                <td class="p-2 text-center ">
+                                                    Yes
+                                                </td>
+                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
                                                         <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
