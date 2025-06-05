@@ -852,9 +852,9 @@
                                 <li class="breadcrumb-item"><a style="color: #757575;" href="#">Admin</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Employee Separation Master <img class="d-inline" height="20px "
-                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
-                                            alt=""></button>
+                                        aria-expanded="false">Employee Separation Master <img class="d-inline"
+                                            height="20px " width="20px"
+                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1"
                                                 href="../admin-memberSetup/memberSetup.html">Member Setup</a></li>
@@ -865,13 +865,13 @@
                                         <li><a class="dropdown-item mb-1"
                                                 href="../admin-eMSMaster/joiningDetails.html">EMS Master</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="../admin-attendanceMaster/leave.html">Attendance Master</a>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../admin-attendanceMaster/leave.html">Attendance Master</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
                                                 href="../admin-historyData/historyData.html">History Data</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1"
-                                                href="employeeSeparationMaster.html">Employee
+                                        <li><a class="dropdown-item mb-1" href="employeeSeparationMaster.html">Employee
                                                 Separation Master</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
@@ -884,16 +884,62 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Employee Separation Master<img class="d-inline" height="20px " width="20px"
+                                        aria-expanded="false">Employee Separation Master<img class="d-inline"
+                                            height="20px " width="20px"
                                             src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
                                     <ul class="dropdown-menu  border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="employeeSeparationMaster.html">Employee Separation Master</a>
+                                        <li><a class="dropdown-item mb-1" href="employeeSeparationMaster.html">Employee
+                                                Separation Master</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="addClearanceActivity.html">Add Clearance Activity</a>
+                                        <li><a class="dropdown-item mb-1" href="addClearanceActivity.html">Add Clearance
+                                                Activity</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="holidays.html">Interview Master</a>
+
+                                        <!-- ===Interview Master menu=== -->
+                                        <li class=" splitmenuItems interviewMastermenuautoreg">
+                                            <button class="dropdown-item mb-1 ps-3 dropdown-toggle-split"
+                                                data-bs-toggle="dropdown">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span>Interview Master</span>
+                                                    <span class=" ms-5"><i class="fa-solid fa-angle-right"></i></span>
+                                                </div>
+                                            </button>
+                                            <!-- ===Interview Master submenu=== -->
+                                            <ul class="dropdown-menu subdrpdownActive border-0 rounded-3 shadow-lg">
+                                                <li><a href="interviewTypeMaster.html" class="dropdown-item mb-1">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Interview Type Master</span>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a href="questionSectionMaster.html" class="dropdown-item mb-1">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Question Section Master</span>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a href="questionSectionMaster.html" class="dropdown-item mb-1">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Question Sub Section Master</span>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a href="question&AnswerMaster.html" class="dropdown-item mb-1">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Question & Answer Master</span>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+
+
+                                            </ul>
                                         </li>
-                                       
 
 
                                     </ul>
@@ -912,7 +958,7 @@
                             <div class="row g-4 ">
                                 <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
-                                        Select Year For Holiday
+                                        Company
                                     </label>
                                     <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-select fs-7">
@@ -921,13 +967,18 @@
                                     </select>
 
                                 </div>
-                                <div class="col-xxl-6 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <div
-                                        class=" h-100 w-100 d-flex justify-content-sm-start justify-content-center align-items-end ">
-                                        <button class="btn bg-blue text-white rounded-4 px-5">ADD</button>
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <label for="" class="mb-1">
+                                        Department
+                                    </label>
+                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7">
+                                        <option value="">Select</option>
 
-                                    </div>
+                                    </select>
+
                                 </div>
+
 
                             </div>
 
@@ -939,12 +990,100 @@
 
                             <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-5 text-black  ">Shifts Configuration</h1>
-
+                                <h1 class=" fw-medium fs-5 text-black  ">Employee Separation Master</h1>
+                                <button data-bs-toggle="modal" data-bs-target="#employeeSeperationActivity"
+                                    class="btn bg-blue text-white rounded-4 px-4">Assign Department
+                                    Approver</button>
 
 
                             </div>
 
+
+                            <!-- ===============Employee Seperation Activity area start============ -->
+                            <div class="modal fade" id="employeeSeperationActivity" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
+                                                Employee Separation Activity</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row g-4">
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Company
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">Select</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Department
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">Select</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Roles
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">Select</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Add Description/Comments
+                                                    </label>
+                                                    <textarea name="" id="" placeholder="Add Description/Comments"
+                                                        style="border-color: #C2C2C2; border-radius:8px; height: 108px; resize: none;"
+                                                        class=" form-control fs-7"></textarea>
+
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-12">
+                                                    <div class="position-relative ">
+                                                        <label class="custom-checkbox">
+                                                            Status(Active/InActive)
+                                                            <input type="checkbox" checked>
+                                                            <span
+                                                                class="checkmark branchCheckmark basicCheckmark ms-2"></span>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+
+
+                                            <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
+                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ===============Employee Seperation Activity area end============ -->
 
 
                             <!-- =============List start============= -->
@@ -955,11 +1094,16 @@
                                             <tr class=" border-0 text-nowrap  "
                                                 style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
 
-                                                <th class="border-0 " style=" font-weight: 500;">Sr No.</th>
-                                                <th class="border-0 " style=" font-weight: 500;">Holiday Date</th>
+                                                <th class="border-0 " style="color: #4A59A7; font-weight: 500;">Company
+                                                    Name</th>
+                                                <th class="border-0 " style="color: #4A59A7; font-weight: 500;">
+                                                    Department</th>
+                                                <th class="border-0 " style="color: #4A59A7; font-weight: 500;">Role
+                                                </th>
+                                                <th class="border-0 text-center" style=" font-weight: 500; ">View</th>
 
-                                                <th class="border-0 " style="font-weight: 500;">
-                                                    Holiday Description
+                                                <th class="border-0 text-center" style="font-weight: 500;">
+                                                    Status
                                                 </th>
                                                 <th class="border-0 text-center" style="font-weight: 500;">Action</th>
                                             </tr>
@@ -968,19 +1112,35 @@
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
 
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
+                                                <td class="p-2">Forest Essentials</td>
+                                                <td class="p-2">Accounts</td>
 
                                                 <td class="p-2">
-                                                    Gandhi jayanti
+                                                    Accounts
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target="#viewInformationarea"
+                                                            style="color: #4A59A7; font-size: 25px;">
+                                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                                        </button>
+                                                    </div>
+
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <span class="activemarkbutton">Active</span>
+                                                    </div>
+
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
+                                                        <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                         <button class="deleteBtn  " style="height: 25px; width: 25px;">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1011,19 +1171,35 @@
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
 
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
+                                                <td class="p-2">Forest Essentials</td>
+                                                <td class="p-2">Accounts</td>
 
                                                 <td class="p-2">
-                                                    Gandhi jayanti
+                                                    Accounts
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target="#viewInformationarea"
+                                                            style="color: #4A59A7; font-size: 25px;">
+                                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                                        </button>
+                                                    </div>
+
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <span class="activemarkbutton">Active</span>
+                                                    </div>
+
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
+                                                        <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                         <button class="deleteBtn  " style="height: 25px; width: 25px;">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1054,19 +1230,35 @@
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
 
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
+                                                <td class="p-2">Forest Essentials</td>
+                                                <td class="p-2">Accounts</td>
 
                                                 <td class="p-2">
-                                                    Gandhi jayanti
+                                                    Accounts
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target="#viewInformationarea"
+                                                            style="color: #4A59A7; font-size: 25px;">
+                                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                                        </button>
+                                                    </div>
+
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <span class="activemarkbutton">Active</span>
+                                                    </div>
+
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
+                                                        <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                         <button class="deleteBtn  " style="height: 25px; width: 25px;">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1097,19 +1289,35 @@
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
 
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
+                                                <td class="p-2">Forest Essentials</td>
+                                                <td class="p-2">Accounts</td>
 
                                                 <td class="p-2">
-                                                    Gandhi jayanti
+                                                    Accounts
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target="#viewInformationarea"
+                                                            style="color: #4A59A7; font-size: 25px;">
+                                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                                        </button>
+                                                    </div>
+
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <span class="activemarkbutton">Active</span>
+                                                    </div>
+
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
+                                                        <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                         <button class="deleteBtn  " style="height: 25px; width: 25px;">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1140,19 +1348,35 @@
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
 
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
+                                                <td class="p-2">Forest Essentials</td>
+                                                <td class="p-2">Accounts</td>
 
                                                 <td class="p-2">
-                                                    Gandhi jayanti
+                                                    Accounts
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target="#viewInformationarea"
+                                                            style="color: #4A59A7; font-size: 25px;">
+                                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                                        </button>
+                                                    </div>
+
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <span class="activemarkbutton">Active</span>
+                                                    </div>
+
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
+                                                        <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                         <button class="deleteBtn  " style="height: 25px; width: 25px;">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1183,19 +1407,35 @@
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
 
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
+                                                <td class="p-2">Forest Essentials</td>
+                                                <td class="p-2">Accounts</td>
 
                                                 <td class="p-2">
-                                                    Gandhi jayanti
+                                                    Accounts
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target="#viewInformationarea"
+                                                            style="color: #4A59A7; font-size: 25px;">
+                                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                                        </button>
+                                                    </div>
+
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <span class="activemarkbutton">Active</span>
+                                                    </div>
+
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
+                                                        <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                         <button class="deleteBtn  " style="height: 25px; width: 25px;">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1226,19 +1466,35 @@
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
 
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">02/10/2025</td>
+                                                <td class="p-2">Forest Essentials</td>
+                                                <td class="p-2">Accounts</td>
 
                                                 <td class="p-2">
-                                                    Gandhi jayanti
+                                                    Accounts
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target="#viewInformationarea"
+                                                            style="color: #4A59A7; font-size: 25px;">
+                                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                                        </button>
+                                                    </div>
+
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <span class="activemarkbutton">Active</span>
+                                                    </div>
+
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="editHolidays.html"
+                                                        <button
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                         <button class="deleteBtn  " style="height: 25px; width: 25px;">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1266,13 +1522,81 @@
                                                     </div>
                                                 </td>
                                             </tr>
+
 
                                         </tbody>
                                     </table>
                                 </div>
 
+
+                                <!-- ===============view information area start============ -->
+                                <div class="modal fade" id="viewInformationarea" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
+                                                    List of Approvers</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="table-responsive ">
+                                                    <table class="table table-bordered border-gray ">
+                                                        <thead>
+                                                            <tr class=" border-0 text-nowrap  "
+                                                                style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
+
+                                                                <th class="border-0 " style=" font-weight: 500;">
+                                                                    Employee Code</th>
+                                                                <th class="border-0 " style=" font-weight: 500;">
+                                                                    Employee Name</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody
+                                                            style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
+                                                            <tr class="text-nowrap   border-top-0"
+                                                                style=" height: 50px; vertical-align: middle; ">
+
+                                                                <td class="p-2">SUP00001</td>
+                                                                <td class="p-2">SupperAdmin Admin</td>
+
+
+                                                            </tr>
+                                                            <tr class="text-nowrap   border-top-0"
+                                                                style=" height: 50px; vertical-align: middle; ">
+
+                                                                <td class="p-2">SUP00001</td>
+                                                                <td class="p-2">SupperAdmin Admin</td>
+
+
+                                                            </tr>
+                                                            <tr class="text-nowrap   border-top-0"
+                                                                style=" height: 50px; vertical-align: middle; ">
+
+                                                                <td class="p-2">SUP00001</td>
+                                                                <td class="p-2">SupperAdmin Admin</td>
+
+
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ===============View information area end============ -->
                             </div>
-                
+
+
                         </div>
                         <!-- =================data table area end=================== -->
 
