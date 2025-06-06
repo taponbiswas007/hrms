@@ -3575,3 +3575,161 @@ footer {
     max-width: unset;
   }
 }
+.adminDashbordCardtitle {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #202224;
+  opacity: 70%;
+}
+
+.adminDashbordCardtitlecountNUmber {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #202224;
+  opacity: 70%;
+}
+
+.card_image_box {
+  height: 60px;
+  width: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 23px;
+}
+
+.bg-purple {
+  background: rgba(130, 128, 255, 0.21);
+}
+
+.bg-orange {
+  background: rgba(255, 172, 128, 0.1294117647);
+}
+
+.bg-green {
+  background: rgba(74, 217, 145, 0.1294117647);
+}
+
+.bg-dark-orange {
+  background: rgba(255, 172, 128, 0.1882352941);
+}
+
+.bg-yellow {
+  background: rgba(254, 197, 61, 0.1294117647);
+}
+
+.card_icon_box {
+  border-right: 1px solid #E5E5EA;
+  padding-right: 5px;
+  height: 97px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card_icon_box img {
+  width: 118px;
+  height: 82px;
+}
+
+.addtopicLink {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.6%;
+  color: #4A59A7;
+  text-align: left;
+}
+
+.assignEmployeecount {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.6%;
+  color: #000000;
+}
+.assignEmployeecount span {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.6%;
+  color: #4A59A7;
+}
+
+.onlineornot {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 13.08px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  background: #FFDEBD;
+  color: #F67B00;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.onlinepersonCounter {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 13.08px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  background: #D5BDFF;
+  color: #9C00F6;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.addcourse_type_changer button {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  color: #8E8E93;
+  padding: 3px 10px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.addcourse_type_changer button:hover {
+  background: #5A6185;
+  color: #ffffff;
+}
+.addcourse_type_changer .active {
+  background: #5A6185;
+  color: #ffffff;
+}
+
+.activeCoursearea {
+  display: block;
+}
+
+@media (max-width: 370px) {
+  .card_icon_box img {
+    width: 92px;
+    height: 58px;
+  }
+}

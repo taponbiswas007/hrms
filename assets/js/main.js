@@ -748,6 +748,29 @@ $(document).ready(function () {
     });
 
 
+    // Add New Course area start
+    $('.addcourse_type_changer button').click(function () {
+        $('.addcourse_type_changer button').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.addcourseInfoarea').hide();  // Hide all by default
+    $('#addcourseGeneralInfo').show().addClass('activeCoursearea'); // Show default one
+
+    function changeaddcourseinfoTab(target) {
+        $('.addcourseInfoarea.activeCoursearea').fadeOut(300, function () {
+            $(this).removeClass('activeCoursearea');
+            $('#' + target).fadeIn(300).addClass('activeCoursearea');
+        });
+    }
+
+    $('.addcourseInfoareabtn').click(function () {
+        changeaddcourseinfoTab('addcourseGeneralInfo');
+    });
+    $('.addcourseDescriptionbtn').click(function () {
+        changeaddcourseinfoTab('addcourseDescription');
+    });
+    // Add New Course area end
 
 
 
