@@ -774,6 +774,40 @@ $(document).ready(function () {
 
 
 
+    // add resource area start
+    // Hide all input areas initially except the first one
+    $("#youtubeLink, #uploadVideo, #webpageLink").hide();
+
+    // Show/hide based on selected option
+    $(".uploadFiletype").change(function () {
+        var selectedValue = $(this).val();
+
+        // Hide all input areas first
+        $("#documentFile, #youtubeLink, #uploadVideo, #webpageLink").hide();
+
+        // Show the selected one
+        switch (selectedValue) {
+            case "document":
+                $("#documentFile").show();
+                break;
+            case "Youtube Link":
+                $("#youtubeLink").show();
+                break;
+            case "Upload Video":
+                $("#uploadVideo").show();
+                break;
+            case "Webpage Link":
+                $("#webpageLink").show();
+                break;
+            default:
+                $("#documentFile").show();
+        }
+    });
+
+    // Trigger change event on page load to set initial state
+    $(".uploadFiletype").trigger('change');
+    // add resource area end
+
     // side bar items
     // $('.sidebarItem .submenu').click(function () {
     //     $('.sidebarItem .submenu').removeClass('sideBarActive');
