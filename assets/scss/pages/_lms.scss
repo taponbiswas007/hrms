@@ -174,7 +174,38 @@
     padding: 7px 10px;
     border-radius: 2px;
 }
-.fs-10{
+
+.questionBtn {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 13.08px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    background: #4A59A7;
+    color: #ffffff;
+    padding: 7px 10px;
+    border-radius: 2px;
+}
+
+.bg-green {
+    background: #00B445 !important;
+}
+
+.lookdetails {
+    font-family: DM Sans;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #4A59A7;
+    background: #0048B454;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.fs-10 {
     font-size: 10px !important;
 }
 
