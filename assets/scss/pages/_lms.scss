@@ -439,6 +439,85 @@
     color: #4A59A7;
 }
 
+.gridbtn {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22.48px;
+    letter-spacing: -0.6%;
+    color: #ffffff;
+    background: #5A6185;
+    border-radius: 3px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+
+    svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    &:hover {
+        color: #FFD8D8;
+    }
+}
+
+.listBtn {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22.48px;
+    letter-spacing: -0.6%;
+    color: #8E8E93;
+    background: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    &:hover {
+        color: #000000;
+    }
+}
+
+.completeText {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.6%;
+    color: #00B445;
+}
+
+.topicCourseList {
+    li {
+        border-bottom: 0.9px solid #D2D2D2;
+        padding: 15px 0;
+
+        a {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 1%;
+            text-align: center;
+            color: #4A59A7;
+
+            &:hover {
+                color: #0A7E22;
+            }
+        }
+    }
+}
+
 @media (max-width: 370px) {
     .card_icon_box img {
         width: 92px;

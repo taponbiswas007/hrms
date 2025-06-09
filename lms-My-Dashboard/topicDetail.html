@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fav icon -->
     <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
-    <title>Admin</title>
+    <title>LMS</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -539,7 +539,7 @@
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="lmsLink"
                                     data-bs-parent="#accordionMenu">
-                                     <li><a href="../lms-AdminDashboard/adminDashboard.html" class="mb-1">
+                                    <li><a href="../lms-AdminDashboard/adminDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -584,7 +584,7 @@
                                             </div>
                                             QuestionBank
                                         </a></li>
-                                    <li><a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
+                                    <li><a href="myDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -845,336 +845,295 @@
 
                         <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a style="color: #757575;" href="#">Admin</a></li>
+                                <li class="breadcrumb-item"><a style="color: #757575;" href="#">LMS</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">EMS Master <img class="d-inline" height="20px "
+                                        aria-expanded="false">My Dashboard <img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1"
-                                                href="../admin-memberSetup/memberSetup.html">Member Setup</a></li>
-
-                                        <li><a class="dropdown-item mb-1"
-                                                href="../admin-companyMaster/companySetup.html">Company Master</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="joiningDetails.html">EMS Master</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1"
-                                                href="../admin-attendanceMaster/leave.html">Attendance Master</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1"
-                                                href="../admin-historyData/historyData.html">History Data</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1"
-                                                href="../admin-EmployeeSeparationMaster/employeeSeparationMaster.html">Employee
-                                                Separation Master</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1"
-                                                href="../admin-confirmationMaster/probationAssessmentMaster.html">Confirmation
-                                                Master</a>
+                                                href="../lms-AdminDashboard/adminDashboard.html">Admin Dashboard</a>
                                         </li>
 
-
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../lms-Course-Management/courseManagement.html">Course
+                                                Management</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../lms-Assessment/assessment.html">Assessment</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="../lms-Module/module.html">Module</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../lms-Question-Bank/questionBank.html">Question Bank</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="myDashboard.html">My
+                                                Dashboard</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="../lms-My-Courses/myCourses.html">My
+                                                Courses</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../lms-Trainer-Dashboard/trainerDashboard.html">Trainer
+                                                Dashboard</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="../lms-Time -table/timeTable.html">Time
+                                                Table</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../lms-Assigned-Courses/assignedCourses.html">Assigned Courses</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../lms-Category/category.html">Category</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="../lms-Report/report.html">Report</a>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li class="breadcrumb-item" aria-current="page">
-                                    <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Joining Details <img class="d-inline" height="20px "
-                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
-                                            alt=""></button>
-                                    <ul class="dropdown-menu  border-0 rounded-3 shadow-lg">
-                                         <li><a class="dropdown-item mb-1" href="joiningDetails.html">Joining Details</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="medicalDetails.html">Medical Details</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="salaryStructure.html">Salary
-                                                Structure</a>
-                                        </li>
-                                         <li><a class="dropdown-item mb-1" href="salaryComponent.html">Salary Component</a>
-                                        </li>
-                                         <li><a class="dropdown-item mb-1" href="assignHOD.html">Assign HOD</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="generalSetting.html">General Setting</a>
-                                        </li>
-
-
-                                    </ul>
-                                </li>
-
                             </ol>
                         </nav>
                     </div>
 
-                    <!-- ================= leave approval area start================= -->
+                    <!-- ================= main content area start================= -->
                     <div class=" pb-4 pt-3">
 
-
-
-                        <!-- =================data table area start=================== -->
-                        <div class="bg-white p-3 rounded-4 shadow dataTable-area">
-
+                        <div class="bg-white p-3 rounded-4 shadow mb-4">
                             <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-5 text-black  ">
-                                    Joining Details</h1>
+                                <h1 class=" fw-medium fs-6 text-black  ">
+                                    Topic Detail</h1>
+                                <div
+                                    class="d-flex flex-wrap justify-content-sm-end justify-content-center align-items-center gap-3">
+                                    <a href="demonstrations.html" class="btn  text-white rounded-4 px-4 "
+                                        style="background:#5A6185 ;">
+                                        Back</a>
 
-
-
-                            </div>
-
-
-
-                            <!-- =============List start============= -->
-                            <div class="mt-3">
-                                <div class="table-responsive ">
-                                    <table class="table table-bordered border-gray ">
-                                        <thead>
-                                            <tr class=" border-0 text-nowrap  "
-                                                style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
-
-                                                <th class="border-0 " style=" font-weight: 500;">Description</th>
-                                                <th class="border-0 " style="font-weight: 500;">Mandatory</th>
-                                                <th class="border-0 " style="font-weight: 500;">
-                                                    Active
-                                                </th>
-                                                <th class="border-0 " style="font-weight: 500;">Edit/Update</th>
-
-
-
-
-                                            </tr>
-                                        </thead>
-                                        <tbody style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Passport Size Photograph</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn px-5">Edit</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Passport Size Photograph</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn px-5">Edit</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Passport Size Photograph</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn px-5">Edit</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Passport Size Photograph</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn px-5">Edit</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Passport Size Photograph</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn px-5">Edit</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Passport Size Photograph</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn px-5">Edit</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Passport Size Photograph</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn px-5">Edit</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Passport Size Photograph</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn px-5">Edit</button>
-                                                </td>
-
-
-
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-
-                                                <td class="p-2">Passport Size Photograph</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2">True</td>
-                                                <td class="p-2 ">
-                                                    <button class="detailsviewbtn px-5">Edit</button>
-                                                </td>
-
-
-
-                                            </tr>
-
-
-
-
-                                        </tbody>
-                                    </table>
                                 </div>
 
+
                             </div>
 
-                            <!-- =============List end============= -->
+                            <div
+                                class="mt-4 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3">
+                                <h1 class=" fw-medium fs-6 text-black  ">
+                                    Resource List</h1>
+                                <div
+                                    class="d-flex flex-wrap justify-content-sm-end justify-content-center align-items-center gap-3">
+                                    <a href="demonstrations.html" class="btn  text-white rounded-4 px-4 "
+                                        style="background:#FF8A14 ;">
+                                        Pending</a>
+                                </div>
+                            </div>
+                            <div class="table-responsive " >
+                                <table class="table table-bordered border-gray ">
+                                    <thead>
+                                        <tr class=" border-0 text-nowrap  "
+                                            style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
 
-
-
-
-
-
-
-
-
-
+                                            <th class="border-0 " style="font-weight: 500;">Sr. No.
+                                            </th>
+                                            <th class="border-0 " style="font-weight: 500;">Resource
+                                            </th>
+                                            <th class="border-0 " style="font-weight: 500;">
+                                                Description
+                                            </th>
+                                            <th class="border-0 " style="font-weight: 500;">Time (in
+                                                minutes)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
+                                        <tr class="text-nowrap   border-top-0"
+                                            style=" height: 50px; vertical-align: middle; ">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">
+                                                <button data-bs-toggle="modal" data-bs-target="#videoPlayArea"
+                                                    style="color: #4A59A7;">
+                                                    Deeply nourishing facial cleansing paste.mp4
+                                                </button>
+                                            </td>
+                                            <td class="p-2">
+                                                Facial Care - Cleanser & Toners
+                                            </td>
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap   border-top-0"
+                                            style=" height: 50px; vertical-align: middle; ">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">
+                                                <button data-bs-toggle="modal" data-bs-target="#videoPlayArea"
+                                                    style="color: #4A59A7;">
+                                                    Deeply nourishing facial cleansing paste.mp4
+                                                </button>
+                                            </td>
+                                            <td class="p-2">
+                                                Facial Care - Cleanser & Toners
+                                            </td>
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap   border-top-0"
+                                            style=" height: 50px; vertical-align: middle; ">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">
+                                                <button data-bs-toggle="modal" data-bs-target="#videoPlayArea"
+                                                    style="color: #4A59A7;">
+                                                    Deeply nourishing facial cleansing paste.mp4
+                                                </button>
+                                            </td>
+                                            <td class="p-2">
+                                                Facial Care - Cleanser & Toners
+                                            </td>
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap   border-top-0"
+                                            style=" height: 50px; vertical-align: middle; ">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">
+                                                <button data-bs-toggle="modal" data-bs-target="#videoPlayArea"
+                                                    style="color: #4A59A7;">
+                                                    Deeply nourishing facial cleansing paste.mp4
+                                                </button>
+                                            </td>
+                                            <td class="p-2">
+                                                Facial Care - Cleanser & Toners
+                                            </td>
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap   border-top-0"
+                                            style=" height: 50px; vertical-align: middle; ">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">
+                                                <button data-bs-toggle="modal" data-bs-target="#videoPlayArea"
+                                                    style="color: #4A59A7;">
+                                                    Deeply nourishing facial cleansing paste.mp4
+                                                </button>
+                                            </td>
+                                            <td class="p-2">
+                                                Facial Care - Cleanser & Toners
+                                            </td>
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap   border-top-0"
+                                            style=" height: 50px; vertical-align: middle; ">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">
+                                                <button data-bs-toggle="modal" data-bs-target="#videoPlayArea"
+                                                    style="color: #4A59A7;">
+                                                    Deeply nourishing facial cleansing paste.mp4
+                                                </button>
+                                            </td>
+                                            <td class="p-2">
+                                                Facial Care - Cleanser & Toners
+                                            </td>
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap   border-top-0"
+                                            style=" height: 50px; vertical-align: middle; ">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">
+                                                <button data-bs-toggle="modal" data-bs-target="#videoPlayArea"
+                                                    style="color: #4A59A7;">
+                                                    Deeply nourishing facial cleansing paste.mp4
+                                                </button>
+                                            </td>
+                                            <td class="p-2">
+                                                Facial Care - Cleanser & Toners
+                                            </td>
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap   border-top-0"
+                                            style=" height: 50px; vertical-align: middle; ">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">
+                                                <button data-bs-toggle="modal" data-bs-target="#videoPlayArea"
+                                                    style="color: #4A59A7;">
+                                                    Deeply nourishing facial cleansing paste.mp4
+                                                </button>
+                                            </td>
+                                            <td class="p-2">
+                                                Facial Care - Cleanser & Toners
+                                            </td>
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap   border-top-0"
+                                            style=" height: 50px; vertical-align: middle; ">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">
+                                                <button data-bs-toggle="modal" data-bs-target="#videoPlayArea"
+                                                    style="color: #4A59A7;">
+                                                    Deeply nourishing facial cleansing paste.mp4
+                                                </button>
+                                            </td>
+                                            <td class="p-2">
+                                                Facial Care - Cleanser & Toners
+                                            </td>
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap   border-top-0"
+                                            style=" height: 50px; vertical-align: middle; ">
+                                            <td class="p-2">1</td>
+                                            <td class="p-2">
+                                                <button data-bs-toggle="modal" data-bs-target="#videoPlayArea"
+                                                    style="color: #4A59A7;">
+                                                    Deeply nourishing facial cleansing paste.mp4
+                                                </button>
+                                            </td>
+                                            <td class="p-2">
+                                                Facial Care - Cleanser & Toners
+                                            </td>
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
                         </div>
 
 
-                        <!-- =================data table area end=================== -->
 
 
-                        <div class="bg-white p-3 rounded-4 shadow mt-4 ">
-
-                            <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
-                                style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-5 text-black  ">
-                                    Joining Details</h1>
-
-
-
-                            </div>
-
-                            <div class="row g-4 pt-3">
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                    <label class=" mb-1" for="">
-                                        Enter Description
-                                    </label>
-                                    <input type="text" name="" id="" placeholder="Enter Description"
-                                        style="border-color: #C2C2C2; border-radius:8px;" class=" form-control fs-7">
-
-                                </div>
-                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12">
-                                    <div
-                                        class=" h-100 w-100 d-flex justify-content-md-start pb-2 justify-content-center align-items-end gap-3 ">
-                                        <div class="position-relative">
-                                            <label class="custom-checkbox ">
-                                                Is Mandatory?
-                                                <input type="checkbox">
-                                                <span class="checkmark ms-2"></span>
-
-                                            </label>
-                                        </div>
-                                        <div class="position-relative">
-                                            <label class="custom-checkbox ">
-                                                Is Active?
-                                                <input type="checkbox">
-                                                <span class="checkmark ms-2"></span>
-
-                                            </label>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-
-                                <div class="col-xxl-4 col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                                    <div class=" h-100 w-100 d-flex justify-content-end align-items-end ">
-                                        <button class="btn bg-blue text-white rounded-4 px-5">Submit</button>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
                     </div>
-                    <!-- ================= Joing details area end================= -->
-
-
+                    <!-- ================main content area end============== -->
+                    <!-- ==========footer area start========= -->
+                    <footer class="d-flex align-items-center justify-content-center p-2" style=" background: #DBE1FF;">
+                        <small class="text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
+                    </footer>
+                    <!-- ==========footer area end========= -->
 
 
                 </div>
-                <!-- ================main content area end============== -->
-                <!-- ==========footer area start========= -->
-                <footer class="d-flex align-items-center justify-content-center p-2" style=" background: #DBE1FF;">
-                    <small class="text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
-                </footer>
-                <!-- ==========footer area end========= -->
-
-
             </div>
         </div>
-    </div>
 
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- simple bar js -->
-    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-    <!-- js -->
-    <script src="../assets/js/main.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- simple bar js -->
+        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+        <!-- js -->
+        <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
