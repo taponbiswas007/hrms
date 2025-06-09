@@ -3787,6 +3787,32 @@ footer {
   font-size: 10px !important;
 }
 
+.failStatus {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FF3C3C;
+  background: #FFD8D8;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+.passStatus {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #00B445;
+  background: rgba(70, 176, 0, 0.168627451);
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
 @media (max-width: 370px) {
   .card_icon_box img {
     width: 92px;
