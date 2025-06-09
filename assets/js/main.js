@@ -808,11 +808,7 @@ $(document).ready(function () {
     $(".uploadFiletype").trigger('change');
     // add resource area end
 
-    // side bar items
-    // $('.sidebarItem .submenu').click(function () {
-    //     $('.sidebarItem .submenu').removeClass('sideBarActive');
-    //     $(this).addClass('sideBarActive');
-    // });
+
 
 
     // leave request table checkbox controller
@@ -918,7 +914,50 @@ $(document).ready(function () {
             $('input[name="selectAllbranch"]').siblings('.branchCheckmark').removeClass('basicCheckmark');
         }
     });
+
+
+
 })
+// progress chart area
+$(document).ready(function () {
+    // Configuration
+    const config = {
+        completed: 30,  // 30% completed
+        pending: 70,    // 70% pending
+        radius: 75,
+        container: '.progress-ring-container'
+    };
+
+    // Initialize progress ring
+    initProgressRing(config);
+});
+
+function initProgressRing(config) {
+    const circumference = 2 * Math.PI * config.radius;
+    const total = config.completed + config.pending;
+
+    // Calculate dasharray and dashoffset for completed portion (left side)
+    const completedDashoffset = circumference - (config.completed / 100) * circumference;
+
+    // Calculate dasharray and dashoffset for pending portion (right side)
+    const pendingDashoffset = circumference - (config.pending / 100) * circumference;
+
+    // Apply styles to completed portion (starts at bottom, goes left)
+    $(config.container + ' .progress-ring-completed').css({
+        'stroke-dasharray': circumference,
+        'stroke-dashoffset': completedDashoffset,
+        'transform': 'rotate(90deg)',
+        'transform-origin': '50% 50%'
+    });
+
+    // Apply styles to pending portion (starts after completed, goes right)
+    $(config.container + ' .progress-ring-pending').css({
+        'stroke-dasharray': circumference,
+        'stroke-dashoffset': pendingDashoffset,
+        'transform': 'rotate(' + (90 + (config.completed / 100 * 360)) + 'deg)',
+        'transform-origin': '50% 50%'
+    });
+}
 
 
 
