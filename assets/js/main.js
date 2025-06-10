@@ -961,6 +961,26 @@ function initProgressRing(config) {
 
 
 
+// topic wise data add area 
+$(document).ready(function () {
+    // Listen for changes on the checkbox
+    $('.topicWiseSessionCheck').change(function () {
+        if ($(this).is(':checked')) {
+            // When checked
+            $('.topicSelct_area').removeClass('d-none').addClass('col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12');
+            $('.topicbtn_area').removeClass('col-xxl-3 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12').addClass('col-xxl-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12');
+        } else {
+            // When unchecked
+            $('.topicSelct_area').removeClass('col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12').addClass('d-none');
+            $('.topicbtn_area').removeClass('col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12').addClass('col-xxl-3 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12');
+        }
+    });
+
+    // Trigger the change event on page load in case the checkbox is already checked
+    $('.topicWiseSessionCheck').trigger('change');
+});
+
+
 
 
 
