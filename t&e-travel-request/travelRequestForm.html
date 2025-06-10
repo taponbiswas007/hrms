@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fav icon -->
     <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
-    <title>Reimbursement</title>
+    <title>Travel & Expense</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -985,196 +985,333 @@
                         <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
-                                    <a style="color: #757575" href="#">Asset Management</a>
+                                    <a style="color: #757575" href="#">Travel & Expense</a>
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Asset Issuance <img class="d-inline" height="20px "
+                                        aria-expanded="false">Travel Request <img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="assetIssuance.html">Asset Issuance</a>
+                                        <li><a class="dropdown-item mb-1" href="travelRequestForm.html">Travel
+                                                Request</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="employeeAssetReports.html">Reports</a>
+                                        <li><a class="dropdown-item mb-1" href="../t&e-myTravels/travelDetails.html">My
+                                                Travel</a>
                                         </li>
-
-
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../t&e-TravelMaster/travelMode.html">Travel Master</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../t&e-TravelApprovals/travelApprovalRequest.html">Travel
+                                                Approvals</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../t&e-TravelDesk/travelDeskRequests.html">Travel Desk</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../t&e-TravelAccounts/travelAccountRequests.html">Travel
+                                                Accounts</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../t&e-ClaimRequest/travelClaimRequest.html">Claim Request</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../t&e-ClaimApprovalL1/claimApprovalRequests.html">Claim Approval
+                                                L1</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../t&e-ClaimApprovalL2/claimApprovalRequests.html">Claim Approval
+                                                L2</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../t&e-claimAccounts/claimAccountRequests.html">Claim Accounts</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../t&e-TravelDeskL2/travelDeskRequestsL2.html">Travel Desk L2</a>
+                                        </li>
                                     </ul>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a style="color: #000000" href="#">Travel Request Form</a>
                                 </li>
 
 
 
                             </ol>
                         </nav>
-                        <!-- user role area -->
-                        <div class="user-role-area d-flex justify-content-end align-items-center ">
-                            <ul>
-                                <li>Role</li>
-                                <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
 
-
-                                <li class="roleDropdownarea">
-                                    <div class="custom-dropdown roleDropdown" style="width: 100%;">
-                                        <!-- Dropdown button -->
-                                        <div class="custom-dropdown-button border-0"
-                                            style="font-size: 12px !important; padding:0 18px 0 0;"
-                                            onclick="toggleDropdown(event)">
-                                            HR Factory
-                                        </div>
-                                        <!-- Dropdown options -->
-                                        <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
-                                            style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'1', ' HR Factory')"> HR Factory</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'2', 'L2')">L2</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'3', 'L1')">L1</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'4', 'CorpComm')">CorpComm</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'5', 'Administration Clearance Factory')">
-                                                Administration Clearance Factory</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'6', 'Business Card')">Business Card
-                                            </div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'7', 'HRADMIN')">HRADMIN</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'8', 'Administration')">Administration
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
 
                     <!-- ================= Main body area area start================= -->
                     <div class="main-body-area pb-4 pt-3">
-                        <div class="bg-white p-3 rounded-4 shadow mb-4">
-                            <h1 class=" fw-medium fs-5 assetissuance_title text-black pb-3 "
-                                style=" border-bottom: 0.9px dashed #D2D2D2">
-                                Search Employee for Asset Issue / Return
-                            </h1>
-
-
-
-                            <div class="row g-4 pt-3">
-
-
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Employee Code</label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Employee Code">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Employee Name</label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Employee Name">
-                                </div>
-
-
-                                <div class="col-xxl-6 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <div class="h-100 d-flex justify-content-end align-items-end flex-wrap gap-3">
-                                        <button class="btn bg-blue text-white rounded-4 px-5">
-                                            Search
-                                        </button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- =================Employee Details area start=================== -->
-                        <div class="bg-white p-3 rounded-4 mt-4 shadow dataTable-area">
-                            <div class="d-flex select-criteria justify-content-between align-items-center pb-3"
-                                style="border-bottom: 0.9px dashed #d2d2d2">
-                                <h1 class="fw-medium fs-5 text-black">Employee Details</h1>
-
-                            </div>
-
-                            <div class="row g-xl-4 g-1 pt-4">
-                                <div class="col-xxl-4 col-xl-4 col-lg-12">
+                        <div class="bg-white p-3 rounded-4 mt-4 shadow mb-4">
+                            <div class="row g-xl-4 g-1 ">
+                                <div class="col-xxl-5 col-xl-5 col-lg-12">
                                     <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div class="d-flex justify-content-start align-items-center gap-5">
+                                                <span>Request Code :</span>
+                                                <span>TR00029</span>
+                                            </div>
+                                        </li>
                                         <li>
                                             <div class="d-flex justify-content-start align-items-center gap-5">
                                                 <span>Employee Code : </span>
                                                 <span>FE2733</span>
                                             </div>
                                         </li>
-
-
-                                    </ul>
-                                </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-12">
-                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
                                         <li>
                                             <div class="d-flex justify-content-start align-items-center gap-5">
-                                                <span> Employee Name : </span>
-                                                <span>John Doe</span>
+                                                <span>Employee Name :</span>
+                                                <span>Nitin Kumar</span>
                                             </div>
                                         </li>
-
-
-
-                                    </ul>
-                                </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-12">
-                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
-
-
                                         <li>
                                             <div class="d-flex justify-content-start align-items-center gap-5">
-                                                <span> Branch Name :</span>
-                                                <span>Head Office</span>
-                                            </div>
-                                        </li>
-
-
-                                    </ul>
-                                </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-12">
-                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
-
-                                        <li>
-                                            <div class="d-flex justify-content-start align-items-center gap-5">
-                                                <span>Division : </span>
-                                                <span>NA</span>
-                                            </div>
-                                        </li>
-
-
-                                    </ul>
-                                </div>
-                                <div class="col-xxl-4 col-xl-4 col-lg-12">
-                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
-
-
-
-                                        <li>
-                                            <div class="d-flex justify-content-start align-items-center gap-5">
-                                                <span> Designation : </span>
+                                                <span>Designation :</span>
                                                 <span>Senior Executive</span>
                                             </div>
                                         </li>
-
-
+                                        <li>
+                                            <div class="d-flex justify-content-start align-items-center gap-5">
+                                                <span>Supervisor Name :</span>
+                                                <span>Sanjay Kumar Singh</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xxl-5 col-xl-5 col-lg-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div class="d-flex justify-content-start align-items-center gap-5">
+                                                <span>Submitted On :</span>
+                                                <span>28/04/2025</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-start align-items-center gap-5">
+                                                <span>Request Status :</span>
+                                                <span>DRAFT</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-start align-items-center gap-5">
+                                                <span>Grade :</span>
+                                                <span>C - E1</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-start align-items-center gap-5">
+                                                <span>Department :</span>
+                                                <span>Accounts</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <!-- =================Employee Details area end=================== -->
 
-
-                        <!-- =================List of Asset Issued / Returned area start=================== -->
-                        <div class="bg-white p-3 rounded-4 mt-4 shadow dataTable-area">
-                            <div class="d-flex select-criteria justify-content-between align-items-center pb-3"
-                                style="border-bottom: 0.9px dashed #d2d2d2">
-                                <h1 class="fw-medium fs-5 text-black">List of Asset Issued / Returned </h1>
-
+                        <div class="bg-white p-3 rounded-4 shadow mb-4 ">
+                            <div class="row g-4">
+                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div
+                                        class="d-flex justify-content-start align-items-sm-center align-items-start flex-sm-row flex-column gap-3 fs-14">
+                                        <span class="fw-bold">Travel Type</span>
+                                        <div class="d-flex justify-content-between align-items-center gap-3">
+                                            <div class="d-flex justify-content-start align-items-center gap-3">
+                                                <input type="radio" name="TravelType" checked class="  custom-radio">
+                                                <label>Domestic</label>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center gap-3">
+                                                <input type="radio" name="TravelType" class="  custom-radio">
+                                                <label>International</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div
+                                        class="d-flex justify-content-start align-items-sm-center align-items-start flex-sm-row flex-column gap-3 fs-14">
+                                        <span class="fw-bold">Travel Location</span>
+                                        <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap">
+                                            <div class="d-flex justify-content-start align-items-center gap-3">
+                                                <input type="radio" name="TravelLocation" checked
+                                                    class="  custom-radio">
+                                                <label>One Way</label>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center gap-3">
+                                                <input type="radio" name="TravelLocation" class="  custom-radio">
+                                                <label>Round Trip</label>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center gap-3">
+                                                <input type="radio" name="TravelLocation" class="  custom-radio">
+                                                <label>Multi-City</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Travel Start Date</label>
+                                    <input type="date" style="border-color: #c2c2c2; border-radius: 8px"
+                                        class="form-control fs-7">
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Travel End Date</label>
+                                    <input type="date" style="border-color: #c2c2c2; border-radius: 8px"
+                                        class="form-control fs-7">
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Purpose of Travel</label>
+                                    <select name="" id="" style="border-color: #c2c2c2; border-radius: 8px"
+                                        class="form-select fs-7">
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-612col-md-12 col-sm-12 col-12">
+                                    <label class="mb-1" for=""> Description</label>
+                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
+                                        class="form-control fs-7" placeholder="Enter Description">
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Email</label>
+                                    <input type="email" style="border-color: #c2c2c2; border-radius: 8px"
+                                        class="form-control fs-7" placeholder="Enter Email">
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Mobile</label>
+                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
+                                        class="form-control fs-7" placeholder="Enter Mobile Number">
+                                </div>
                             </div>
+                        </div>
+
+
+
+
+                        <!-- =================Transport Details area start=================== -->
+                        <div class="bg-white p-3 rounded-4 mt-4 shadow">
+                            <div class="d-flex select-criteria justify-content-between align-items-center flex-wrap gap-3 pb-3"
+                                style="border-bottom: 0.9px dashed #d2d2d2">
+                                <h1 class="fw-medium fs-6 text-black">Transport Details</h1>
+                                <button data-bs-toggle="modal" data-bs-target="#addTransportDetails"
+                                    class="btn bg-blue text-white rounded-4 px-sm-5 px-3">
+                                    Add New
+                                </button>
+                            </div>
+
+
+                            <!-- ===============Add Transport Details  area area start============ -->
+                            <div class="modal fade" id="addTransportDetails" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
+                                                Transport Details</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="row g-4">
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Source Name
+                                                    </label>
+                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" placeholder="Enter Source Name">
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Destination Name
+                                                    </label>
+                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" placeholder="Enter Destination Name">
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Preferred Time
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">Select</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Departure On
+                                                    </label>
+                                                    <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7">
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Arrival On
+                                                    </label>
+                                                    <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7">
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Travel Mode
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">Select</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Travel Class
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">Select</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Is Self Booking
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">Select</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Remarks
+                                                    </label>
+                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" placeholder="Enter Remarks">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ===============Add Transport Details  area end============ -->
+
+
 
                             <!-- =============List start============= -->
                             <div class="mt-3">
@@ -1184,26 +1321,13 @@
                                             <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
                                                 style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
 
-                                                <th class="border-0 ">Emp. Code</th>
-                                                <th class="border-0 ">Asset Name</th>
-                                                <th class="border-0 ">Brand</th>
-                                                <th class="border-0  ">Tag No</th>
-                                                <th class="border-0  ">Serial No</th>
-                                                <th class="border-0   ">Model No</th>
-                                                <th class="border-0   ">Status</th>
-                                                <th class="border-0">Provided Date
-                                                </th>
-                                                <th class="border-0">Remarks
-                                                </th>
-                                                <th class="border-0">Return Date
-                                                </th>
-                                                <th class="border-0">Return Remarks
-                                                </th>
-                                                <th class="border-0">
-                                                    Edit/Update
-                                                </th>
-
-
+                                                <th class="border-0 ">Src/Dest</th>
+                                                <th class="border-0 ">Depart On</th>
+                                                <th class="border-0 ">Arrive On</th>
+                                                <th class="border-0  ">Mode</th>
+                                                <th class="border-0  ">Class</th>
+                                                <th class="border-0   ">Self Booking</th>
+                                                <th class="border-0 text-center">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody style="
@@ -1217,42 +1341,259 @@
                                                 ">
 
 
-                                                <td class="p-2">FE0123</td>
-                                                <td class="p-2">LAPTOP</td>
+                                                <td class="p-2">delhi - mumbai</td>
                                                 <td class="p-2">
-                                                    Brand
+                                                    <span>02/05/2025</span> <br>
+                                                    <span style="color:#4A59A7 ; font-size: 12px;">12:00 - 15:00</span>
+                                                </td>
+                                                <td class="p-2">
+                                                    03/05/2025
                                                 </td>
                                                 <td class="p-2  ">
-                                                    12
+                                                    Train
                                                 </td>
                                                 <td class="p-2  ">
-                                                    10
+                                                    1A - 1 Tier AC
                                                 </td>
                                                 <td class="p-2  ">
-                                                    10
+                                                    Yes
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="depstatustext">
-                                                        Uncleared
-                                                    </span>
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <button
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </button>
+                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <button
+                                                            class=" lookdetailsorange d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </button>
+                                                    </div>
                                                 </td>
-                                                <td class="p-2">
-                                                    01/04/2025
-                                                </td>
-                                                <td class="p-2">
-                                                    Remarks
-                                                </td>
-                                                <td class="p-2">
-                                                    01/04/2025
-                                                </td>
-                                                <td class="p-2">
-                                                    Remarks
-                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-start align-items-center gap-3">
-                                                        <a href="#" class="datadownloadbtn px-4">Edit</a>
 
+
+                            </div>
+
+                            <!-- =============List end============= -->
+                        </div>
+                        <!-- =================ransport Details area end=================== -->
+
+
+                        <!-- =================Accomodation Details area start=================== -->
+                        <div class="bg-white p-3 rounded-4 mt-4 shadow">
+                            <div class="d-flex select-criteria justify-content-between align-items-center flex-wrap pb-3 gap-3"
+                                style="border-bottom: 0.9px dashed #d2d2d2">
+                                <h1 class="fw-medium fs-6 text-black">Accomodation Details</h1>
+                                <button data-bs-toggle="modal" data-bs-target="#addAccommodationDetails"
+                                    class="btn bg-blue text-white rounded-4 px-sm-5 px-3">
+                                    Add New
+                                </button>
+                            </div>
+
+
+                            <!-- ===============Add Accommodation Details area start============ -->
+                            <div class="modal fade" id="addAccommodationDetails" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
+                                                Accommodation Details</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="row g-4">
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Place
+                                                    </label>
+                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" placeholder="Enter Place Name">
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        From
+                                                    </label>
+                                                    <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7">
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        To
+                                                    </label>
+                                                    <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7">
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        City Category
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">Select</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Stay Type
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">Select</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Is Self Booking
+                                                    </label>
+                                                    <select name="" id=""
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-select fs-7">
+                                                        <option value="">Select</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Remarks
+                                                    </label>
+                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" placeholder="Enter Remarks">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ===============Add Accommodation Details  area end============ -->
+
+
+                            <!-- =============List start============= -->
+                            <div class="mt-3">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered border-gray">
+                                        <thead>
+                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
+                                                style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
+
+                                                <th class="border-0 ">Place</th>
+                                                <th class="border-0 ">From</th>
+                                                <th class="border-0 ">To</th>
+                                                <th class="border-0  ">City Category</th>
+                                                <th class="border-0  ">Star</th>
+                                                <th class="border-0   ">Self Booking</th>
+                                                <th class="border-0 text-center">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="
+                                                font-family: DM Sans, sans-serif;
+                                                font-size: 14px !important;
+                                                ">
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+
+
+                                                <td class="p-2">mumbai hotel</td>
+                                                <td class="p-2">
+                                                    03/05/2025
+                                                </td>
+                                                <td class="p-2">
+                                                    03/05/2025
+                                                </td>
+                                                <td class="p-2  ">
+                                                    A+
+                                                </td>
+                                                <td class="p-2  ">
+                                                    4 Star
+                                                </td>
+                                                <td class="p-2  ">
+                                                    Yes
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <button
+                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-pen-to-square"></i>
+                                                        </button>
+                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+                                                                    stroke="#FF0000" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <button
+                                                            class=" lookdetailsorange d-flex justify-content-center align-items-center p-0"
+                                                            style="height: 25px; width: 25px;">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </button>
                                                     </div>
                                                 </td>
 
@@ -1269,72 +1610,26 @@
 
                             <!-- =============List end============= -->
                         </div>
-                        <!-- =================List of Asset Issued / Returned area end=================== -->
+                        <!-- =================Accomodation Details area end=================== -->
 
 
-                        <!-- =================Assign Asset to Employee area start=================== -->
+                        <!-- =================confirm button area start=================== -->
                         <div class="bg-white p-3 mt-3 rounded-4 shadow mb-4">
-                            <h1 class=" fw-medium fs-5 text-black pb-3 " style=" border-bottom: 0.9px dashed #D2D2D2">
-                                Assign Asset to Employee
-                            </h1>
+                            <div
+                                class=" d-flex justify-content-md-end justify-content-center align-items-end flex-wrap gap-3">
+                                <button class="btn bg-blue text-white rounded-4 px-4">
+                                    Save as Draft
+                                </button>
+                                <button class="btn bg-blue text-white rounded-4 px-5">
+                                    Submit
+                                </button>
+                                <button class="btn bg-blue text-white rounded-4 px-5" style="background: #5A6185;">
+                                    Cancel
+                                </button>
 
-
-
-                            <div class="row g-4 pt-3">
-
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Asset </label>
-                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
-                                        name="" id="">
-                                        <option value="">Select</option>
-                                        <option value="">Example 1</option>
-                                        <option value="">Example 2</option>
-                                    </select>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Tag No </label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Tag No">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Serial No </label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Serial No">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Model No </label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Model No">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Brand </label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Brand">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Remarks </label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Remarks">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> <span class="text-danger">*</span>Provided On </label>
-                                    <input type="date" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7">
-                                </div>
-
-
-
-                                <div class="col-xxl-3 col-xl-8 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="h-100 d-flex justify-content-end align-items-end flex-wrap gap-3">
-                                        <button class="btn bg-blue text-white rounded-4 px-5">
-                                            Add
-                                        </button>
-
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <!-- =================Assign Asset to Employee area end=================== -->
+                        <!-- =================confirm button area end=================== -->
 
                     </div>
                     <!-- ================= Main body area area end================= -->
