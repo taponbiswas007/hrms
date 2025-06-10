@@ -528,6 +528,41 @@
     }
 }
 
+.present_progress {
+    h1 {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 125%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+        color: #000000;
+
+    }
+
+    span {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 125%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+        color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .border_line {
+        background: #E5E5EA;
+        width: 126px;
+        height: 1px;
+        margin: 7px 0;
+    }
+}
+
 @media (max-width: 370px) {
     .card_icon_box img {
         width: 92px;

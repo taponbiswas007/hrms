@@ -4108,6 +4108,42 @@ footer {
   background: #F5F5F5;
 }
 
+.present_progress h1 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+}
+.present_progress span {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.present_progress .border_line {
+  background: #E5E5EA;
+  width: 126px;
+  height: 1px;
+  margin: 7px 0;
+}
+
 @media (max-width: 370px) {
   .card_icon_box img {
     width: 92px;
