@@ -223,6 +223,20 @@
     border-radius: 3px;
 }
 
+.absentStatus {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FF3C3C;
+    background: #FFD8D8;
+    ;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
 .pendingTopicStatus {
     font-family: DM Sans;
     font-weight: 500;
@@ -237,6 +251,19 @@
 }
 
 .passStatus {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #00B445;
+    background: #46B0002B;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+.presentStatus {
     font-family: DM Sans;
     font-weight: 500;
     font-size: 12px;
