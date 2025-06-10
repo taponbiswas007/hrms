@@ -518,6 +518,16 @@
     }
 }
 
+.scoreCard_area {
+    table {
+        tr {
+            &:nth-child(odd) {
+                background: #F5F5F5;
+            }
+        }
+    }
+}
+
 @media (max-width: 370px) {
     .card_icon_box img {
         width: 92px;
