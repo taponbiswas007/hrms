@@ -539,7 +539,7 @@
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="lmsLink"
                                     data-bs-parent="#accordionMenu">
-                                     <li><a href="../lms-AdminDashboard/adminDashboard.html" class="mb-1">
+                                    <li><a href="../lms-AdminDashboard/adminDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -584,7 +584,7 @@
                                             </div>
                                             QuestionBank
                                         </a></li>
-                                      <li><a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
+                                    <li><a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -593,7 +593,7 @@
                                             </div>
                                             My Dashboard
                                         </a></li>
-                                   <li><a href="../lms-Trainer-Dashboard/trainerDashboard.html" class="mb-1">
+                                    <li><a href="../lms-Trainer-Dashboard/trainerDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -618,7 +618,7 @@
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             </div>
-                                          Assigned Courses
+                                            Assigned Courses
                                         </a></li>
                                     <li><a href="../lms-My-Courses/myCourses.html" class="mb-1">
                                             <div class="arrow-right">
@@ -1065,7 +1065,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
-                                                Update Section</h5>
+                                                Add Sub-Section</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close">
                                                 <i class="fa-solid fa-xmark"></i>
@@ -1133,7 +1133,7 @@
                                             <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
                                                 data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
                                             <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
-                                                data-bs-dismiss="modal">Update</button>
+                                                data-bs-dismiss="modal">Save</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1213,14 +1213,16 @@
                                         <thead>
                                             <tr class=" border-0 text-nowrap  "
                                                 style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
-                                                
+
+                                                <th class="border-0 " style=" font-weight: 500;">
+                                                    Sr.No</th>
                                                 <th class="border-0 " style=" font-weight: 500;">
                                                     Probation Assessment</th>
                                                 <th class="border-0 " style=" font-weight: 500;">
                                                     Section</th>
-                                                <th class="border-0 " style=" font-weight: 500;">Questions
+                                                <th class="border-0 " style=" font-weight: 500;">Section-Sub Heading
                                                 </th>
-                                                <th class="border-0 text-center" style=" font-weight: 500;">Is Active
+                                                <th class="border-0 text-center" style=" font-weight: 500;">Status
                                                 </th>
                                                 <th class="border-0 text-center" style="font-weight: 500;">Action</th>
                                             </tr>
@@ -1228,145 +1230,151 @@
                                         <tbody style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
                                                 <td class="p-2">Probation Assessment Form - Head Office</td>
                                                 <td class="p-2">To Be Filled By The Employee</td>
                                                 <td class="p-2">
-                                                   1. What has been your areas of contribution in the past 3months?
+                                                    1. What has been your areas of contribution in the past 3months?
                                                 </td>
                                                 <td class="p-2 text-center">
                                                     Yes
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="newQuestionAdd.html" 
+                                                        <button data-bs-toggle="modal" data-bs-target="#newSectionArea"
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
                                                 <td class="p-2">Probation Assessment Form - Head Office</td>
                                                 <td class="p-2">To Be Filled By The Employee</td>
                                                 <td class="p-2">
-                                                   1. What has been your areas of contribution in the past 3months?
+                                                    1. What has been your areas of contribution in the past 3months?
                                                 </td>
                                                 <td class="p-2 text-center">
                                                     Yes
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="newQuestionAdd.html" 
+                                                        <button data-bs-toggle="modal" data-bs-target="#newSectionArea"
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
                                                 <td class="p-2">Probation Assessment Form - Head Office</td>
                                                 <td class="p-2">To Be Filled By The Employee</td>
                                                 <td class="p-2">
-                                                   1. What has been your areas of contribution in the past 3months?
+                                                    1. What has been your areas of contribution in the past 3months?
                                                 </td>
                                                 <td class="p-2 text-center">
                                                     Yes
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="newQuestionAdd.html" 
+                                                        <button data-bs-toggle="modal" data-bs-target="#newSectionArea"
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
                                                 <td class="p-2">Probation Assessment Form - Head Office</td>
                                                 <td class="p-2">To Be Filled By The Employee</td>
                                                 <td class="p-2">
-                                                   1. What has been your areas of contribution in the past 3months?
+                                                    1. What has been your areas of contribution in the past 3months?
                                                 </td>
                                                 <td class="p-2 text-center">
                                                     Yes
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="newQuestionAdd.html" 
+                                                        <button data-bs-toggle="modal" data-bs-target="#newSectionArea"
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
                                                 <td class="p-2">Probation Assessment Form - Head Office</td>
                                                 <td class="p-2">To Be Filled By The Employee</td>
                                                 <td class="p-2">
-                                                   1. What has been your areas of contribution in the past 3months?
+                                                    1. What has been your areas of contribution in the past 3months?
                                                 </td>
                                                 <td class="p-2 text-center">
                                                     Yes
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="newQuestionAdd.html" 
+                                                        <button data-bs-toggle="modal" data-bs-target="#newSectionArea"
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
                                                 <td class="p-2">Probation Assessment Form - Head Office</td>
                                                 <td class="p-2">To Be Filled By The Employee</td>
                                                 <td class="p-2">
-                                                   1. What has been your areas of contribution in the past 3months?
+                                                    1. What has been your areas of contribution in the past 3months?
                                                 </td>
                                                 <td class="p-2 text-center">
                                                     Yes
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="newQuestionAdd.html" 
+                                                        <button data-bs-toggle="modal" data-bs-target="#newSectionArea"
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
+                                                <td class="p-2">1</td>
                                                 <td class="p-2">Probation Assessment Form - Head Office</td>
                                                 <td class="p-2">To Be Filled By The Employee</td>
                                                 <td class="p-2">
-                                                   1. What has been your areas of contribution in the past 3months?
+                                                    1. What has been your areas of contribution in the past 3months?
                                                 </td>
                                                 <td class="p-2 text-center">
                                                     Yes
                                                 </td>
                                                 <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="newQuestionAdd.html" 
+                                                        <button data-bs-toggle="modal" data-bs-target="#newSectionArea"
                                                             class="approvedStatus d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
+                                                        </button>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            
                                         </tbody>
                                     </table>
                                 </div>

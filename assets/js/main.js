@@ -527,6 +527,13 @@ $(document).ready(function () {
         $(".side-bar").removeClass('sidebarActive');
 
     });
+    $(document).mouseup(function (e) {
+        var sidebar = $(".side-bar");
+        // If the target of the click isn't the sidebar nor a descendant of the sidebar
+        if (!sidebar.is(e.target) && sidebar.has(e.target).length === 0) {
+            sidebar.removeClass('sidebarActive');
+        }
+    });
     $(".tablink").click(function () {
         $(".tablink").removeClass('active');
         $(this).addClass('active');
