@@ -4439,6 +4439,16 @@ footer {
   padding: 0;
 }
 
+.approveConfirmationText {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.7px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+}
+
 @media (max-width: 576px) {
   .policyDeviationDetailsList li {
     font-size: 14px;
