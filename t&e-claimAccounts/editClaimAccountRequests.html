@@ -1491,7 +1491,7 @@
                                                 <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
                                                     style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
 
-                                                    <th class="border-0 ">Approved Amount</th>
+                                                    <th class="border-0  text-md-end">Approved Amount</th>
                                                 </tr>
                                             </thead>
                                             <tbody style="
@@ -1503,40 +1503,17 @@
                                                     height: 54px;
                                                     vertical-align: middle;
                                                 ">
-                                                    <td class="p-2 fs-6 fw-bold">₹ 15000</td>
+                                                    <td class="p-2 fs-6 fw-bold  text-md-end">₹ 15000</td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12">
-                                    <div
-                                        class=" d-flex justify-content-xl-end justify-content-center align-items-end flex-wrap gap-3">
-                                        <button data-bs-toggle="modal" data-bs-target="#approveConfirmation"
-                                            class="btn bg-blue text-white rounded-4 px-4 fs-14"
-                                            style="background:#34C759 ;">
-                                            Approve
-                                        </button>
-                                        <button data-bs-toggle="modal" data-bs-target="#reconsiderConfirmation"
-                                            class="btn bg-blue text-white rounded-4 px-4 fs-14">
-                                            Reconsider
-                                        </button>
-                                        <button data-bs-toggle="modal" data-bs-target="#rejectConfirmation"
-                                            class="btn bg-blue text-white rounded-4 px-4 fs-14"
-                                            style="background:#FF2D55 ;">
-                                            Reject
-                                        </button>
-                                        <a href="travelDeskRequests.html"
-                                            class="btn bg-blue text-white rounded-4 px-4 fs-14">
-                                            Back to List
-                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- =================Total Expense Amount area end=================== -->
 
-                         <!-- =================Settlement Details area start=================== -->
+                        <!-- =================Settlement Details area start=================== -->
                         <div class="bg-white p-3 rounded-4 mt-4 shadow">
                             <div class="d-flex select-criteria justify-content-between align-items-center flex-wrap gap-3 pb-3"
                                 style="border-bottom: 0.9px dashed #d2d2d2">
@@ -1551,11 +1528,11 @@
                             <!-- ===============Add Settlement Details area start============ -->
                             <div class="modal fade" id="addTransportDetails" aria-hidden="true"
                                 aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
-                                                Transport Details</h5>
+                                                Settlement</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close">
                                                 <i class="fa-solid fa-xmark"></i>
@@ -1564,83 +1541,28 @@
                                         <div class="modal-body">
 
                                             <div class="row g-4">
-                                                <div class="col-xl-4 col-lg-6 col-12">
-                                                    <label class=" mb-1" for="">
-                                                        Source Name
-                                                    </label>
-                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                                        class=" form-control fs-7" placeholder="Enter Source Name">
-                                                </div>
-                                                <div class="col-xl-4 col-lg-6 col-12">
-                                                    <label class=" mb-1" for="">
-                                                        Destination Name
-                                                    </label>
-                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                                        class=" form-control fs-7" placeholder="Enter Destination Name">
-                                                </div>
-                                                <div class="col-xl-4 col-lg-6 col-12">
-                                                    <label class=" mb-1" for="">
-                                                        Preferred Time
-                                                    </label>
-                                                    <select name="" id=""
-                                                        style="border-color: #C2C2C2; border-radius:8px;"
-                                                        class=" form-select fs-7">
-                                                        <option value="">Select</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-6 col-12">
-                                                    <label class=" mb-1" for="">
-                                                        Departure On
-                                                    </label>
-                                                    <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
-                                                        class=" form-control fs-7">
-                                                </div>
-                                                <div class="col-xl-4 col-lg-6 col-12">
-                                                    <label class=" mb-1" for="">
-                                                        Arrival On
-                                                    </label>
-                                                    <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
-                                                        class=" form-control fs-7">
-                                                </div>
-                                                <div class="col-xl-4 col-lg-6 col-12">
-                                                    <label class=" mb-1" for="">
-                                                        Travel Mode
-                                                    </label>
-                                                    <select name="" id=""
-                                                        style="border-color: #C2C2C2; border-radius:8px;"
-                                                        class=" form-select fs-7">
-                                                        <option value="">Select</option>
-                                                    </select>
-
-                                                </div>
-                                                <div class="col-xl-6 col-lg-6 col-12">
-                                                    <label class=" mb-1" for="">
-                                                        Travel Class
-                                                    </label>
-                                                    <select name="" id=""
-                                                        style="border-color: #C2C2C2; border-radius:8px;"
-                                                        class=" form-select fs-7">
-                                                        <option value="">Select</option>
-                                                    </select>
-
-                                                </div>
-                                                <div class="col-xl-6 col-lg-6 col-12">
-                                                    <label class=" mb-1" for="">
-                                                        Is Self Booking
-                                                    </label>
-                                                    <select name="" id=""
-                                                        style="border-color: #C2C2C2; border-radius:8px;"
-                                                        class=" form-select fs-7">
-                                                        <option value="">Select</option>
-                                                    </select>
-
-                                                </div>
                                                 <div class="col-xl-12 col-lg-12 col-12">
                                                     <label class=" mb-1" for="">
-                                                        Remarks
+                                                        Balance Debit From
                                                     </label>
-                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                                        class=" form-control fs-7" placeholder="Enter Remarks">
+                                                    <input type="text" disabled
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" value="Company Account">
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Amount
+                                                    </label>
+                                                    <input type="text" disabled
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" value="8000.00">
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6 col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Payment Date
+                                                    </label>
+                                                    <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7">
                                                 </div>
                                             </div>
                                         </div>
@@ -1685,11 +1607,11 @@
 
                                                 <td class="p-2">21/05/2025</td>
                                                 <td class="p-2">
-                                                   15000
+                                                    15000
                                                 </td>
                                                 <td class="p-2">
-                                                   Company Account
-                                                </td>                                               
+                                                    Company Account
+                                                </td>
                                                 <td class="p-2">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
                                                         <button class="deleteBtn  " style="height: 25px; width: 25px;">
@@ -1726,95 +1648,62 @@
 
 
                             </div>
-                             <!-- remark area -->
-                                    <label class="mb-1" for=""> Remarks</label>
-                                    <textarea name="" id=""
-                                        style="border-color: #c2c2c2; border-radius: 8px; height: 67px; resize: none;"
-                                        class="form-control fs-7" placeholder="Enter Remarks"></textarea>
+                            <!-- remark area -->
+                            <label class="mb-1" for=""> Remarks</label>
+                            <textarea name="" id=""
+                                style="border-color: #c2c2c2; border-radius: 8px; height: 67px; resize: none;"
+                                class="form-control fs-7" placeholder="Enter Remarks"></textarea>
 
                             <!-- =============List end============= -->
                         </div>
                         <!-- =================Settlement Details area end=================== -->
 
-                         <!-- =================Total Expense Amount area start=================== -->
-                        <div class="bg-white p-3 mt-3 rounded-4 shadow mb-4">
-                            <div class="row g-4">
-                                <div class="col-xxl-6 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered border-gray mb-0">
-                                            <thead>
-                                                <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
-                                                    style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
+                        <!-- =================button area start=================== -->
+                        <div class="bg-white p-3 mt-4 rounded-4 shadow mb-4">
+                            <div
+                                class=" d-flex justify-content-xl-end justify-content-center align-items-end flex-wrap gap-3">
+                                <button data-bs-toggle="modal" data-bs-target="#approveConfirmation"
+                                    class="btn bg-blue text-white rounded-4 px-5 fs-14" style="background:#34C759 ;">
+                                    Submit
+                                </button>
 
-                                                    <th class="border-0 ">Total Expense Amount</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody style="
-                                                font-family: DM Sans, sans-serif;
-                                                font-size: 14px !important;
-                                                ">
-                                                <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 54px;
-                                                    vertical-align: middle;
-                                                ">
-                                                    <td class="p-2 fs-6 fw-bold">₹ 15000</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered border-gray mb-0">
-                                            <thead>
-                                                <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
-                                                    style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
+                                <a href="claimAccountRequests.html" class="btn bg-blue text-white rounded-4 px-4 fs-14">
+                                    Back to List
+                                </a>
+                            </div>
+                        </div>
+                        <!-- =================button area end=================== -->
 
-                                                    <th class="border-0 ">Approved Amount</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody style="
-                                                font-family: DM Sans, sans-serif;
-                                                font-size: 14px !important;
-                                                ">
-                                                <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 54px;
-                                                    vertical-align: middle;
-                                                ">
-                                                    <td class="p-2 fs-6 fw-bold">₹ 15000</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+
+                        <!-- ===============Approve confirmation area start============ -->
+                        <div class="modal fade" id="approveConfirmation" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered ">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
+                                            Approve</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12">
-                                    <div
-                                        class=" d-flex justify-content-xl-end justify-content-center align-items-end flex-wrap gap-3">
-                                        <button data-bs-toggle="modal" data-bs-target="#approveConfirmation"
-                                            class="btn bg-blue text-white rounded-4 px-4 fs-14"
-                                            style="background:#34C759 ;">
-                                            Approve
-                                        </button>
-                                        <button data-bs-toggle="modal" data-bs-target="#reconsiderConfirmation"
-                                            class="btn bg-blue text-white rounded-4 px-4 fs-14">
-                                            Reconsider
-                                        </button>
-                                        <button data-bs-toggle="modal" data-bs-target="#rejectConfirmation"
-                                            class="btn bg-blue text-white rounded-4 px-4 fs-14"
-                                            style="background:#FF2D55 ;">
-                                            Reject
-                                        </button>
-                                        <a href="travelDeskRequests.html"
-                                            class="btn bg-blue text-white rounded-4 px-4 fs-14">
-                                            Back to List
-                                        </a>
+                                    <div class="modal-body">
+                                        <p class="approveConfirmationText">
+                                            Are you sure to approve this request ?
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn  text-white rounded-4 px-4" style="background: #34C759;"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Approve</button>
+                                        <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- =================Total Expense Amount area end=================== -->
+
+                        <!-- ===============Approve confirmation area end============ -->
 
                     </div>
                     <!-- ================= Main body area area end================= -->
