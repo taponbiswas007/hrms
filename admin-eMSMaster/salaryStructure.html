@@ -539,7 +539,7 @@
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="lmsLink"
                                     data-bs-parent="#accordionMenu">
-                                     <li><a href="../lms-AdminDashboard/adminDashboard.html" class="mb-1">
+                                    <li><a href="../lms-AdminDashboard/adminDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -584,7 +584,7 @@
                                             </div>
                                             QuestionBank
                                         </a></li>
-                                      <li><a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
+                                    <li><a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -593,7 +593,7 @@
                                             </div>
                                             My Dashboard
                                         </a></li>
-                                   <li><a href="../lms-Trainer-Dashboard/trainerDashboard.html" class="mb-1">
+                                    <li><a href="../lms-Trainer-Dashboard/trainerDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -618,7 +618,7 @@
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             </div>
-                                          Assigned Courses
+                                            Assigned Courses
                                         </a></li>
                                     <li><a href="../lms-My-Courses/myCourses.html" class="mb-1">
                                             <div class="arrow-right">
@@ -1030,9 +1030,10 @@
                                         <li><a class="dropdown-item mb-1" href="salaryStructure.html">Salary
                                                 Structure</a>
                                         </li>
-                                         <li><a class="dropdown-item mb-1" href="salaryComponent.html">Salary Component</a>
+                                        <li><a class="dropdown-item mb-1" href="salaryComponent.html">Salary
+                                                Component</a>
                                         </li>
-                                         <li><a class="dropdown-item mb-1" href="assignHOD.html">Assign HOD</a>
+                                        <li><a class="dropdown-item mb-1" href="assignHOD.html">Assign HOD</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1" href="generalSetting.html">General Setting</a>
                                         </li>
@@ -1057,19 +1058,29 @@
                                     <label class=" mb-1" for="">
                                         Available Salary Structure
                                     </label>
-                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-select fs-7">
-                                        <option value="">
-                                            Select
-                                        </option>
+                                    <select name="" id="redirectSelect"
+                                        style="border-color: #C2C2C2; border-radius:8px;" class="form-select fs-7">
+                                        <option value="">Select</option>
+                                        <option value="selectSalaryStructure.html">Main Salary Head</option>
                                     </select>
+
+                                    <script>
+                                        document.getElementById('redirectSelect').addEventListener('change',
+                                        function () {
+                                            const selectedValue = this.value;
+                                            if (selectedValue) {
+                                                window.location.href = selectedValue;
+                                            }
+                                        });
+                                    </script>
 
                                 </div>
                                 <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12">
                                     <div
                                         class=" h-100 w-100 d-flex justify-content-md-start justify-content-center align-items-end gap-3 ">
 
-                                        <a href="addUpdateSalaryStructure.html" class="btn bg-blue text-white rounded-4 px-4">Add/Update Salary
+                                        <a href="addUpdateSalaryStructure.html"
+                                            class="btn bg-blue text-white rounded-4 px-4">Add/Update Salary
                                             Structure</a>
                                     </div>
 
