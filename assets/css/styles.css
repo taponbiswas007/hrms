@@ -4449,6 +4449,24 @@ footer {
   color: #000000;
 }
 
+.iIcon {
+  height: 13px;
+  width: 13px;
+  background: #4A59A7;
+  color: #ffffff;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 7px;
+}
+
 @media (max-width: 576px) {
   .policyDeviationDetailsList li {
     font-size: 14px;

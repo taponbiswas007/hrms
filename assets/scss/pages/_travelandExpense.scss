@@ -204,6 +204,18 @@
     color: #000000;
 }
 
+.iIcon {
+    height: 13px;
+    width: 13px;
+    background: #4A59A7;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7px;
+}
+
 @media (max-width: 576px) {
     .policyDeviationDetailsList li {
         font-size: 14px;
