@@ -1111,19 +1111,265 @@
                                 <div class="col-12">
                                     <div
                                         class=" d-flex justify-content-md-end justify-content-center align-items-end flex-wrap gap-3">
-                                        <button style="background:#34C759 ;"
-                                            class="btn  text-white rounded-4 px-4 fs-14">
+                                        <button data-bs-toggle="modal" data-bs-target="#approvedAmountHistory"
+                                            style="background:#34C759 ;" class="btn  text-white rounded-4 px-4 fs-14">
                                             Approved Amount
                                         </button>
                                         <button data-bs-toggle="modal" data-bs-target="#requestHistoryDetails"
                                             class="btn bg-blue text-white rounded-4 px-4 fs-14">
                                             Claim History
                                         </button>
-                                        <button data-bs-toggle="modal" data-bs-target="#remarksConfirmation"
+                                        <button data-bs-toggle="modal" data-bs-target="#remarksHistory"
                                             class="btn bg-blue text-white rounded-4 px-5 fs-14">
                                             Remarks
                                         </button>
                                     </div>
+
+                                    <!-- ===============Approve confirmation area start============ -->
+                                    <div class="modal fade" id="approvedAmountHistory" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered ">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
+                                                        Approved Amount History</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <ul class="remarksHistoryList">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center">
+                                                                <div>
+                                                                    <h6>
+                                                                        INR 250.00 is approved by Sanjay Singh ( FE0003
+                                                                        )
+                                                                    </h6>
+                                                                    <span>
+                                                                        03/05/2025
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn  text-white rounded-4 px-4"
+                                                        style="background: #5A6185;" data-bs-toggle="modal"
+                                                        data-bs-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ===============Approved Amount History area end============ -->
+
+                                    <!-- ===============Request History Details  area start============ -->
+                                    <div class="modal fade" id="requestHistoryDetails" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
+                                                        Request History Details</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <ul class="requestHistoryList">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-start flex-column flex-sm-row gap-3">
+                                                                <span class="historyDate">
+                                                                    03/05/2025
+                                                                </span>
+                                                                <div
+                                                                    class="d-flex justify-content-start align-items-start">
+                                                                    <span class="icon_box">
+                                                                        <i class="fa-solid fa-pen"></i>
+                                                                    </span>
+                                                                    <div class="historyDetails">
+                                                                        <h2>Nitin (FE0134)</h2>
+                                                                        <p>Request is Submitted by Nitin (FE0134)</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-start flex-column flex-sm-row gap-3">
+                                                                <span class="historyDate">
+                                                                    03/05/2025
+                                                                </span>
+                                                                <div
+                                                                    class="d-flex justify-content-start align-items-start">
+                                                                    <span class="icon_box">
+                                                                        <i class="fa-solid fa-pen"></i>
+                                                                    </span>
+                                                                    <div class="historyDetails">
+                                                                        <h2>NSanjay Singh ( FE0003 )</h2>
+                                                                        <p>Request is APPROVED at L1 by Sanjay Singh (
+                                                                            FE0003 )
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-start flex-column flex-sm-row gap-3">
+                                                                <span class="historyDate">
+                                                                    03/05/2025
+                                                                </span>
+                                                                <div
+                                                                    class="d-flex justify-content-start align-items-start">
+                                                                    <span class="icon_box">
+                                                                        <i class="fa-solid fa-pen"></i>
+                                                                    </span>
+                                                                    <div class="historyDetails">
+                                                                        <h2>Neha ( FE0117 )</h2>
+                                                                        <p>Request is APPROVED at TRAVEL_DESK_AGENT_L1
+                                                                            by Neha (
+                                                                            FE0117 )</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-start flex-column flex-sm-row gap-3">
+                                                                <span class="historyDate">
+                                                                    03/05/2025
+                                                                </span>
+                                                                <div
+                                                                    class="d-flex justify-content-start align-items-start">
+                                                                    <span class="icon_box">
+                                                                        <i class="fa-solid fa-pen"></i>
+                                                                    </span>
+                                                                    <div class="historyDetails">
+                                                                        <h2>Nitin (FE0134)</h2>
+                                                                        <p>Request is Submitted by Nitin (FE0134)</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-start flex-column flex-sm-row gap-3">
+                                                                <span class="historyDate">
+                                                                    03/05/2025
+                                                                </span>
+                                                                <div
+                                                                    class="d-flex justify-content-start align-items-start">
+                                                                    <span class="icon_box">
+                                                                        <i class="fa-solid fa-pen"></i>
+                                                                    </span>
+                                                                    <div class="historyDetails">
+                                                                        <h2>Nitin (FE0134)</h2>
+                                                                        <p>Request is Submitted by Nitin (FE0134)</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn  text-white rounded-4 px-4"
+                                                        style="background: #5A6185;" data-bs-toggle="modal"
+                                                        data-bs-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ===============Request History Details  area end============ -->
+
+
+
+                                    <!-- ===============Remarks History Details area start============ -->
+                                    <div class="modal fade" id="remarksHistory" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered ">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
+                                                        Remarks History</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <ul class="remarksHistoryList">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
+                                                                <div>
+                                                                    <h6>
+                                                                        Sanjay Singh ( FE0003 )
+                                                                    </h6>
+                                                                    <h6>
+                                                                        test
+                                                                    </h6>
+                                                                </div>
+                                                                <span>
+                                                                    03/05/2025
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
+                                                                <div>
+                                                                    <h6>
+                                                                        Sanjay Singh ( FE0003 )
+                                                                    </h6>
+                                                                    <h6>
+                                                                        test
+                                                                    </h6>
+                                                                </div>
+                                                                <span>
+                                                                    03/05/2025
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
+                                                                <div>
+                                                                    <h6>
+                                                                        Sanjay Singh ( FE0003 )
+                                                                    </h6>
+                                                                    <h6>
+                                                                        test
+                                                                    </h6>
+                                                                </div>
+                                                                <span>
+                                                                    03/05/2025
+                                                                </span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn  text-white rounded-4 px-4"
+                                                        style="background: #5A6185;" data-bs-toggle="modal"
+                                                        data-bs-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ===============Remarks History Details  area end============ -->
                                 </div>
                             </div>
                         </div>
@@ -1271,23 +1517,26 @@
                                 </div>
                                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12">
                                     <div
-                                class=" d-flex justify-content-xl-end justify-content-center align-items-end flex-wrap gap-3">
-                                <button data-bs-toggle="modal" data-bs-target="#approveConfirmation"
-                                    class="btn bg-blue text-white rounded-4 px-4 fs-14" style="background:#34C759 ;">
-                                    Approve
-                                </button>
-                                <button data-bs-toggle="modal" data-bs-target="#reconsiderConfirmation"
-                                    class="btn bg-blue text-white rounded-4 px-4 fs-14">
-                                    Reconsider
-                                </button>
-                                <button data-bs-toggle="modal" data-bs-target="#rejectConfirmation"
-                                    class="btn bg-blue text-white rounded-4 px-4 fs-14" style="background:#FF2D55 ;">
-                                    Reject
-                                </button>
-                                <a href="travelDeskRequests.html" class="btn bg-blue text-white rounded-4 px-4 fs-14">
-                                    Back to List
-                                </a>
-                            </div>
+                                        class=" d-flex justify-content-xl-end justify-content-center align-items-end flex-wrap gap-3">
+                                        <button data-bs-toggle="modal" data-bs-target="#approveConfirmation"
+                                            class="btn bg-blue text-white rounded-4 px-4 fs-14"
+                                            style="background:#34C759 ;">
+                                            Approve
+                                        </button>
+                                        <button data-bs-toggle="modal" data-bs-target="#reconsiderConfirmation"
+                                            class="btn bg-blue text-white rounded-4 px-4 fs-14">
+                                            Reconsider
+                                        </button>
+                                        <button data-bs-toggle="modal" data-bs-target="#rejectConfirmation"
+                                            class="btn bg-blue text-white rounded-4 px-4 fs-14"
+                                            style="background:#FF2D55 ;">
+                                            Reject
+                                        </button>
+                                        <a href="travelDeskRequests.html"
+                                            class="btn bg-blue text-white rounded-4 px-4 fs-14">
+                                            Back to List
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
