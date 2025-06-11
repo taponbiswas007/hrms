@@ -584,7 +584,7 @@
                                             </div>
                                             QuestionBank
                                         </a></li>
-                                      <li><a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
+                                    <li><a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -593,7 +593,7 @@
                                             </div>
                                             My Dashboard
                                         </a></li>
-                                   <li><a href="../lms-Trainer-Dashboard/trainerDashboard.html" class="mb-1">
+                                    <li><a href="../lms-Trainer-Dashboard/trainerDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -618,7 +618,7 @@
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             </div>
-                                          Assigned Courses
+                                            Assigned Courses
                                         </a></li>
                                     <li><a href="../lms-My-Courses/myCourses.html" class="mb-1">
                                             <div class="arrow-right">
@@ -1025,7 +1025,7 @@
                                         <li><a class="dropdown-item mb-1"
                                                 href="../lms-Category/category.html">Category</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="../lms-Report/report.html">Report</a>
+                                        <li><a class="dropdown-item mb-1" href="../lms-Report/report.html">Reports</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -1166,19 +1166,18 @@
                                         </table>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div class=" h-100 w-100 d-flex justify-content-end align-items-end mt-3">
-                                    <button class="btn bg-blue text-white rounded-4 px-4">Save Question</button>
+                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class=" h-100 w-100 d-flex justify-content-end align-items-end">
+                                        <button class="btn bg-blue text-white rounded-4 px-4">Save Question</button>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
 
                     <!-- =================data table area start=================== -->
-                    <div class="bg-white p-3 rounded-4 shadow ">
+                    <div class="bg-white p-3 rounded-4 mb-4 shadow ">
                         <div class=" w-100 d-flex flex-sm-row flex-column gap-3 justify-content-between align-items-center pb-3"
                             style="border-bottom:0.9px dashed #D2D2D2 ;">
                             <h1 class=" fw-medium fs-5 text-black  ">
@@ -1436,19 +1435,46 @@
                         </div>
 
                         <!-- =============List end============= -->
-
-
-
-
-
-
-
-
-
-
-
                     </div>
                     <!-- =================data table area end=================== -->
+
+
+                    <!-- =================Choose file area start=================== -->
+                    <div class="bg-white p-3 rounded-4 mb-4 shadow ">
+                        <div class="row g-4 ">
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <label class="mb-1">
+                                    <span class="text-danger">*</span> Module
+                                </label>
+                                <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                    class=" form-select fs-7">
+                                    <option value="">Select</option>
+                                </select>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <label class="mb-1">
+                                    Choose file
+                                </label>
+                                <div class="position-relative">
+                                    <div class="custom-file-input attachfile form-control p-0"
+                                        style="border-color: #c2c2c2; border-radius: 8px">
+                                        <input type="file" id="fileInput" class="form-floating fs-7">
+                                        <label for="fileInput" class=" h-100 w-100 fs-7">Choose file</label>
+
+                                    </div>
+                                    <img class="position-absolute top-50  translate-middle-y " style="right:  10px;"
+                                        src="../assets/images/attachicon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                <div class=" h-100 w-100 d-flex justify-content-end align-items-end ">
+                                    <button class="btn bg-blue text-white rounded-4 px-4">Upload</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- =================Choose file area end=================== -->
                 </div>
                 <!-- ================main content area end============== -->
                 <!-- ==========footer area start========= -->

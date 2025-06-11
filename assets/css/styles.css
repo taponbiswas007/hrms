@@ -226,10 +226,6 @@ ul {
   display: block;
 }
 
-.dropdown-menu {
-  max-height: calc(100vh - 250px);
-}
-
 .roleDropdownarea .custom-dropdown-button {
   color: #000000 !important;
 }
@@ -3828,8 +3824,12 @@ footer {
   border-radius: 3px;
 }
 
-.fs-10 {
+.fs-12 {
   font-size: 10px !important;
+}
+
+.fs-12 {
+  font-size: 12px !important;
 }
 
 .failStatus {
