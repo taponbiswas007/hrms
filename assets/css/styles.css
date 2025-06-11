@@ -4473,3 +4473,79 @@ footer {
     line-height: 20px;
   }
 }
+.progressline hr {
+  color: #4A59A7;
+  height: 2px;
+  opacity: 1;
+  margin-left: 27px;
+  margin-right: 66px;
+}
+.progressline .progressStepbox_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -30px;
+  width: 100%;
+}
+.progressline .progressStepbox_area .incompleteprogressbox {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #4A59A7;
+  border: 1px solid #4A59A7;
+}
+.progressline .progressStepbox_area .completeprogressbox {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #4A59A7;
+  border: 4px solid #CAD3FF;
+}
+
+.progresstext {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #333333;
+}
+
+@media (max-width: 500px) {
+  .progresstext {
+    font-size: 12px;
+  }
+}
+@media (max-width: 414px) {
+  .progressline .progressStepbox_area .incompleteprogressbox {
+    height: 15px;
+    width: 15px;
+  }
+  .progressline .progressStepbox_area .completeprogressbox {
+    height: 15px;
+    width: 15px;
+  }
+  .progressline .progressStepbox_area {
+    margin-top: -25px;
+  }
+  .progresstext {
+    font-size: 10px;
+  }
+  .progressline hr {
+    margin-right: 49px;
+  }
+}
+@media (max-width: 360px) {
+  .progresstext {
+    font-size: 9px;
+  }
+  .progressline hr {
+    margin-right: 45px;
+  }
+}
