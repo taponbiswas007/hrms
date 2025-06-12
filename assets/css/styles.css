@@ -4780,6 +4780,25 @@ footer {
   color: #ffffff;
 }
 
+.backbtn {
+  background: #ffffff;
+  color: #4A59A7;
+  border: 2px solid #4A59A7;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (max-width: 500px) {
   .progresstext {
     font-size: 12px;

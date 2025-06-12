@@ -297,6 +297,19 @@
     }
 }
 
+.backbtn {
+    background: #ffffff;
+    color: #4A59A7;
+    border: 2px solid #4A59A7;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 500px) {
     .progresstext {
         font-size: 12px;
