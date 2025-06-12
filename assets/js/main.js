@@ -987,7 +987,14 @@ $(document).ready(function () {
     $('.topicWiseSessionCheck').trigger('change');
 });
 
+// see guidline area
+$(document).ready(function () {
+    $('.guidlineSeemoreBtn').click(function () {
+        $('.guidlineSeemoreBtn').toggleClass('rotated90');
+        $('.guidlineItems').toggle();
+    });
 
+});
 
 
 
@@ -1256,6 +1263,9 @@ function toggleSections() {
         todoListContainer.parentNode.insertBefore(holidayListContainer, todoListContainer);
     }
 }
+
+
+
 
 
 
