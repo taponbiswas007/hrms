@@ -1014,8 +1014,14 @@ $(document).ready(function () {
     $('.goalsAssessmentBtn').click(function () {
         changeEvaluationTab('goalsAssessment');
     });
+    $('.coreCompetenciesBtn').click(function () {
+        changeEvaluationTab('coreCompetencies');
+    });
     $('.teamCompanyContributionBtn').click(function () {
         changeEvaluationTab('teamCompanyContribution');
+    });
+    $('.finalPerformanceOutcomeBtn').click(function () {
+        changeEvaluationTab('finalPerformanceOutcome');
     });
 });
 
