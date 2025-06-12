@@ -4536,6 +4536,29 @@ footer {
   display: none;
 }
 
+.totalweightagearea h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #000000;
+}
+.totalweightagearea .totalweightageBox {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #F2F2F7;
+  background: #8E8E93;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-top: 4px;
+}
+
 @media (max-width: 500px) {
   .progresstext {
     font-size: 12px;
