@@ -861,14 +861,6 @@ $(document).ready(function () {
         $('.approved_checkbox').prop('checked', allChecked);
     });
 
-    // $('#assignReassignshow').change(function () {
-    //     if ($(this).is(':checked')) {
-    //         $('#conditionalSupstatus_area').show();
-    //     } else {
-    //         $('#conditionalSupstatus_area').hide();
-    //     }
-    // }).trigger('change');
-
 
     // supervisor setup
 
@@ -994,6 +986,37 @@ $(document).ready(function () {
         $('.guidlineItems').toggle();
     });
 
+});
+
+
+// Year End Evaluation pages
+$(document).ready(function () {
+    $('.supAssessmentShowBtn').click(function () {
+        // Find the closest parent expectationItems div, then find the supervisorsAssessmentlist within it
+        $(this).closest('.expectationItems').find('.supervisorsAssessmentlist').toggleClass('supAssessmentShow');
+        $(this).closest('.expectationItems').find('.supAssessmentShowBtn').toggleClass('rotated90');
+    });
+    $('.yearendtabbuttonarea button').click(function () {
+        $('.yearendtabbuttonarea button').removeClass('active');
+        $(this).addClass('active');
+    })
+
+    $('.evaluationItems').hide();  // Hide all by default
+    $('#goalsAssessment').show().addClass('activeevaluationItems'); // Show default one
+
+    function changeEvaluationTab(target) {
+        $('.evaluationItems.activeevaluationItems').fadeOut(300, function () {
+            $(this).removeClass('activeevaluationItems');
+            $('#' + target).fadeIn(300).addClass('activeevaluationItems');
+        });
+    }
+
+    $('.goalsAssessmentBtn').click(function () {
+        changeEvaluationTab('goalsAssessment');
+    });
+    $('.addcourseDescriptionbtn').click(function () {
+        changeEvaluationTab('addcourseDescription');
+    });
 });
 
 
