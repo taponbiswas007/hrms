@@ -1014,8 +1014,8 @@ $(document).ready(function () {
     $('.goalsAssessmentBtn').click(function () {
         changeEvaluationTab('goalsAssessment');
     });
-    $('.addcourseDescriptionbtn').click(function () {
-        changeEvaluationTab('addcourseDescription');
+    $('.coreCompetenciesBtn').click(function () {
+        changeEvaluationTab('coreCompetencies');
     });
 });
 
