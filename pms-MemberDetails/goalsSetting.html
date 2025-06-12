@@ -1085,7 +1085,8 @@
                                         class="btn bg-blue text-white fs-14 px-3">
                                         View Goal Setting Instructions
                                     </button>
-                                    <button class="btn bg-blue text-white fs-14 px-3">
+                                    <button data-bs-toggle="modal" data-bs-target="#viewCompetencies"
+                                        class="btn bg-blue text-white fs-14 px-3">
                                         View Competencies
                                     </button>
                                     <button class="btn bg-blue text-white fs-14 px-3">
@@ -1219,6 +1220,32 @@
                             </div>
                             <!-- ===============View Goal Setting Instructions area end============ -->
 
+
+                            <!-- ===============View Competencies area start============ -->
+                            <div class="modal fade" id="viewCompetencies" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                Core Competencies</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div
+                                                class="d-flex coreDownloadtext py-4 px-4 justify-content-start align-items-center gap-3 flex-wrap">
+                                                <span>Download:</span>
+                                                <a href="#">Competencies of Individual Contributor</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===============View Competencies area end============ -->
+
                         </div>
                         <!-- =================Your Info area end=================== -->
 
@@ -1253,7 +1280,8 @@
                                         class="btn text-white px-3 py-1" style="background: #34C759;">
                                         <i class="fa-solid fa-comment"></i>
                                     </button>
-                                    <button class="btn text-white bg-blue px-3 py-1">
+                                    <button data-bs-toggle="modal" data-bs-target="#changeHistoryDetails"
+                                        class="btn text-white bg-blue px-3 py-1">
                                         <i class="fa-solid fa-eye me-2"></i>
                                         1
                                     </button>
@@ -1303,6 +1331,61 @@
                                 </div>
                             </div>
                             <!-- ===============Feedback area end============ -->
+
+
+                            <!-- ===============Change History Details area start============ -->
+                            <div class="modal fade" id="changeHistoryDetails" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                Change History Details</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="feedbackBox">
+                                                <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap pb-2 mb-2"
+                                                    style="border-bottom:  1px solid #E5E5EA;">
+                                                    <h2><span>Changed on:</span> 10/01/2024 05:58:23 </h2>
+                                                    <span class="originalGoalstatus">Original Goal</span>
+                                                </div>
+                                                <h3 class="text-dark fs-12 fw-normal mb-2">Test-1</h3>
+                                                <ul>
+                                                    <li>
+                                                        Sunil Gavaskar was all praise for KL Rahul. The batting legend
+                                                        also issued a noteworthy remark about Rishabh Pant.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="fs-10 fw-normal mb-3" style="color: #AEAEB2;">By Vinod Verma</p>
+                                            <div class="feedbackBox">
+                                                <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap pb-2 mb-2"
+                                                    style="border-bottom:  1px solid #E5E5EA;">
+                                                    <h2><span>Changed on:</span> 10/01/2024 05:58:23 </h2>
+                                                    <span class="originalGoalstatus">Original Goal</span>
+                                                </div>
+                                                <h3 class="text-dark fs-12 fw-normal mb-2">Test-1</h3>
+                                                <ul>
+                                                    <li>
+                                                        Sunil Gavaskar was all praise for KL Rahul. The batting legend
+                                                        also issued a noteworthy remark about Rishabh Pant.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="fs-10 fw-normal mb-3" style="color: #AEAEB2;">By Vinod Verma</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Ok</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===============Change History Details area end============ -->
                         </div>
                         <!-- =================Weightage details area end=================== -->
 
