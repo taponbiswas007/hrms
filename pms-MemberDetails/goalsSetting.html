@@ -1081,7 +1081,8 @@
                                         class="btn bg-blue text-white fs-14 px-3">
                                         Add New Goal
                                     </button>
-                                    <button class="btn bg-blue text-white fs-14 px-3">
+                                    <button data-bs-toggle="modal" data-bs-target="#viewGoalSettingInstructions"
+                                        class="btn bg-blue text-white fs-14 px-3">
                                         View Goal Setting Instructions
                                     </button>
                                     <button class="btn bg-blue text-white fs-14 px-3">
@@ -1165,8 +1166,58 @@
                                     </div>
                                 </div>
                             </div>
-
                             <!-- ===============add new goal area end============ -->
+
+
+                            <!-- ===============View Goal Setting Instructions area start============ -->
+                            <div class="modal fade" id="viewGoalSettingInstructions" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                Goal Setting</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h1 class="fs-6 fw-medium mb-4 ps-4">Instructions for Goal Setting:</h1>
+                                            <ul class="instructionslist ps-5">
+                                                <li>
+                                                    The Performance Management process for IDF starts with the
+                                                    goal-setting process, which should be completed as per the timeline.
+                                                    The following steps should have been completed during this process.
+                                                </li>
+                                                <li>
+                                                    Please begin by filling in the section on Goals in discussion with
+                                                    your Supervisor. Please select your goals in a way that reflects all
+                                                    the work that you do. You may fill between 3 to 5 goals for the
+                                                    year, ensuring that each goal has a weightage of between 10%-35%,
+                                                    and that all goals total up to 100%. These weightages simply help
+                                                    determine the relative importance of goals and will not be used for
+                                                    any scoring purposes.
+                                                </li>
+                                                <li>
+                                                    Next, please read through and understand the section on
+                                                    Competencies. Competencies are the key behavioural expectations from
+                                                    you and are an important part of your overall performance. You have
+                                                    5 competencies that have been pre-determined for the year, and all
+                                                    of them are equally important.
+                                                </li>
+                                                <li>
+                                                    Finally, read and understand the expectations from you around
+                                                    contributing to Team/Organizational Performance. These are uniform
+                                                    for all members of IDF and are an important aspect of your overall
+                                                    performance.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===============View Goal Setting Instructions area end============ -->
 
                         </div>
                         <!-- =================Your Info area end=================== -->
@@ -1198,7 +1249,8 @@
                                     </ul>
                                 </div>
                                 <div class="weightage_footer">
-                                    <button class="btn text-white px-3 py-1" style="background: #34C759;">
+                                    <button data-bs-toggle="modal" data-bs-target="#viewFeedback"
+                                        class="btn text-white px-3 py-1" style="background: #34C759;">
                                         <i class="fa-solid fa-comment"></i>
                                     </button>
                                     <button class="btn text-white bg-blue px-3 py-1">
@@ -1217,6 +1269,40 @@
                                     the same.
                                 </label>
                             </div>
+
+                            <!-- ===============Feedback area start============ -->
+                            <div class="modal fade" id="viewFeedback" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                Feedback</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h1 class="fs-14 fw-medium text-dark mb-3">Feedbacks</h1>
+                                            <div class="feedbackBox">
+                                                <h2><span>Feedback on:</span> 10/01/2024 Feedback </h2>
+                                                <ul>
+                                                    <li>
+                                                        Plz change desc
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="fs-10 fw-normal mb-4" style="color: #AEAEB2;">By Vinod Verma</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Ok</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===============Feedback area end============ -->
                         </div>
                         <!-- =================Weightage details area end=================== -->
 
