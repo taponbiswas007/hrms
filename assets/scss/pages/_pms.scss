@@ -322,15 +322,21 @@
     }
 }
 
-@media screen and (max-width: 420px) {
-    .w-cus-100 {
-        width: 100% !important;
+@media (max-width: 575px) {
+    .requestHistoryList li .historyDetails {
+        padding: 0 0 20px 35px;
     }
 }
 
 @media (max-width: 500px) {
     .progresstext {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .w-cus-100 {
+        width: 100% !important;
     }
 }
 

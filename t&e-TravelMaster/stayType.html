@@ -1076,25 +1076,25 @@
                                         <div class="modal-body">
                                             <div class="row g-4">
                                                 <div class="col-lg-12 col-12">
-                                                     <label for="" class="mb-1">
-                                              Stay Type
-                                            </label>
-                                            <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                                class=" form-control fs-7" placeholder="Enter Stay Type">
+                                                    <label for="" class="mb-1">
+                                                        Stay Type
+                                                    </label>
+                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" placeholder="Enter Stay Type">
                                                 </div>
                                                 <div class="col-lg-6 col-12">
-                                                     <label for="" class="mb-1">
-                                              Minimum Rate
-                                            </label>
-                                            <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                                class=" form-control fs-7" placeholder="Enter Minimum Rate">
+                                                    <label for="" class="mb-1">
+                                                        Minimum Rate
+                                                    </label>
+                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" placeholder="Enter Minimum Rate">
                                                 </div>
                                                 <div class="col-lg-6 col-12">
-                                                     <label for="" class="mb-1">
-                                             Maximum Rate
-                                            </label>
-                                            <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                                class=" form-control fs-7" placeholder="Enter Maximum Rate">
+                                                    <label for="" class="mb-1">
+                                                        Maximum Rate
+                                                    </label>
+                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" placeholder="Enter Maximum Rate">
                                                 </div>
                                             </div>
                                         </div>
@@ -1641,6 +1641,60 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                </div>
+                                <!-- pagination area -->
+                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
+                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                                        <li>
+                                            <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                <i class="fa-angle-left fa-solid"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                Prev
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                Next
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <small>Page:</small>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex gap-2">
+                                                <small>Of</small>
+                                                <p>100</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-dropdown">
+                                                <!-- Dropdown button -->
+                                                <div class="custom-dropdown-button" onclick="toggleDropdown(event)">
+                                                    10
+                                                </div>
+                                                <!-- Dropdown options -->
+                                                <div class="custom-dropdown-options shadow">
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '1', '10')">10</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '2', '11')">11</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '3', '12')">12</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '4', '13')">13</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '5', '14')">14</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <!-- =============List end============= -->
