@@ -1025,7 +1025,15 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.breadcrumb > .breadcrumb-item:first-child').click(function () {
+        // Toggle all breadcrumb items except the first one
+        $('.breadcrumb > .breadcrumb-item:not(:first-child)').slideToggle();
 
+        // Or if you want to toggle all items including the first one:
+        // $('.breadcrumb > .breadcrumb-item').slideToggle();
+    });
+});
 
 
 
