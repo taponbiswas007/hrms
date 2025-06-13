@@ -1034,25 +1034,25 @@ $(document).ready(function () {
 //         // $('.breadcrumb > .breadcrumb-item').slideToggle();
 //     });
 // });
-$(document).ready(function () {
-    function handleBreadcrumbToggle(mediaQuery) {
-        if (mediaQuery.matches) { // If screen ≤ 640px
-            $('.breadcrumb > .breadcrumb-item:first-child').on('click', function () {
-                $('.breadcrumb > .breadcrumb-item:not(:first-child)').slideToggle();
-            });
-        } else { // If screen > 640px, remove the click event
-            $('.breadcrumb > .breadcrumb-item:first-child').off('click');
-            $('.breadcrumb > .breadcrumb-item').show(); // Ensure all items are visible
-        }
-    }
+// $(document).ready(function () {
+//     function handleBreadcrumbToggle(mediaQuery) {
+//         if (mediaQuery.matches) { // If screen ≤ 640px
+//             $('.breadcrumb > .breadcrumb-item:first-child').on('click', function () {
+//                 $('.breadcrumb > .breadcrumb-item:not(:first-child)').slideToggle();
+//             });
+//         } else { // If screen > 640px, remove the click event
+//             $('.breadcrumb > .breadcrumb-item:first-child').off('click');
+//             $('.breadcrumb > .breadcrumb-item').show(); // Ensure all items are visible
+//         }
+//     }
 
-    // Check on load
-    const mediaQuery = window.matchMedia('(max-width: 640px)');
-    handleBreadcrumbToggle(mediaQuery);
+//     // Check on load
+//     const mediaQuery = window.matchMedia('(max-width: 640px)');
+//     handleBreadcrumbToggle(mediaQuery);
 
-    // Check when window is resized
-    mediaQuery.addEventListener('change', handleBreadcrumbToggle);
-});
+//     // Check when window is resized
+//     mediaQuery.addEventListener('change', handleBreadcrumbToggle);
+// });
 
 
 
