@@ -531,7 +531,7 @@
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="lmsLink"
                                     data-bs-parent="#accordionMenu">
-                                     <li><a href="../lms-AdminDashboard/adminDashboard.html" class="mb-1">
+                                    <li><a href="../lms-AdminDashboard/adminDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -576,7 +576,7 @@
                                             </div>
                                             QuestionBank
                                         </a></li>
-                                      <li><a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
+                                    <li><a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -585,7 +585,7 @@
                                             </div>
                                             My Dashboard
                                         </a></li>
-                                   <li><a href="../lms-Trainer-Dashboard/trainerDashboard.html" class="mb-1">
+                                    <li><a href="../lms-Trainer-Dashboard/trainerDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -610,7 +610,7 @@
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             </div>
-                                          Assigned Courses
+                                            Assigned Courses
                                         </a></li>
                                     <li><a href="../lms-My-Courses/myCourses.html" class="mb-1">
                                             <div class="arrow-right">
@@ -1601,7 +1601,61 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- pagination area -->
+                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
+                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                                        <li>
+                                            <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                <i class="fa-angle-left fa-solid"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                Prev
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                Next
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <small>Page:</small>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex gap-2">
+                                                <small>Of</small>
+                                                <p>100</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-dropdown">
+                                                <!-- Dropdown button -->
+                                                <div class="custom-dropdown-button" onclick="toggleDropdown(event)">
+                                                    10
+                                                </div>
+                                                <!-- Dropdown options -->
+                                                <div class="custom-dropdown-options shadow">
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '1', '10')">10</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '2', '11')">11</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '3', '12')">12</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '4', '13')">13</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '5', '14')">14</div>
+                                                </div>
+                                            </div>
 
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <!-- =============List end============= -->
