@@ -4837,6 +4837,11 @@ footer {
     margin-right: 49px;
   }
 }
+@media (max-width: 375px) {
+  .mt-cus-0 {
+    margin-top: 0 !important;
+  }
+}
 @media (max-width: 360px) {
   .progresstext {
     font-size: 9px;

@@ -1026,7 +1026,7 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Travel Desk Requests </button>
+                                        aria-expanded="false">Travel Desk Details </button>
 
                                 </li>
                             </ol>
@@ -1037,7 +1037,11 @@
                     <div class="main-body-area pb-4 pt-3">
                         <!-- =================Employee Details area start=================== -->
                         <div class="bg-white p-3 rounded-4  shadow mb-4">
-                            <div class="row g-xl-4 g-1 ">
+                            <div class="d-flex select-criteria justify-content-between align-items-center flex-wrap gap-3 pb-3"
+                                style="border-bottom: 0.9px dashed #d2d2d2">
+                                <h1 class="fw-medium fs-6 text-black">Travel Desk Details</h1>
+                            </div>
+                            <div class="row g-xl-4 g-1 mt-2 ">
                                 <div class="col-xxl-5 col-xl-5 col-lg-12">
                                     <ul class="employee_leave_details_list resignationemployee_leave_details_list">
                                         <li>
@@ -1072,7 +1076,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-xxl-5 col-xl-5 col-lg-12">
+                                <div class="col-xxl-5 col-xl-5 col-lg-12 mt-2 mt-xl-4 mt-cus-0">
                                     <ul class="employee_leave_details_list resignationemployee_leave_details_list">
                                         <li>
                                             <div class="d-flex justify-content-start align-items-center gap-5">
@@ -1107,10 +1111,86 @@
                                             class="btn bg-blue text-white rounded-4 px-4 fs-14">
                                             Request History
                                         </button>
-                                        <button data-bs-toggle="modal" data-bs-target="#remarksConfirmation"
+                                        <button data-bs-toggle="modal" data-bs-target="#remarksHistory"
                                             class="btn bg-blue text-white rounded-4 px-5 fs-14">
                                             Remarks
                                         </button>
+
+                                        <!-- ===============Remarks History Details area start============ -->
+                                        <div class="modal fade" id="remarksHistory" aria-hidden="true"
+                                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered ">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
+                                                            Remarks History</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <ul class="remarksHistoryList">
+                                                            <li>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <h6>
+                                                                            Sanjay Singh ( FE0003 )
+                                                                        </h6>
+                                                                        <h6>
+                                                                            test
+                                                                        </h6>
+                                                                    </div>
+                                                                    <span>
+                                                                        03/05/2025
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <h6>
+                                                                            Sanjay Singh ( FE0003 )
+                                                                        </h6>
+                                                                        <h6>
+                                                                            test
+                                                                        </h6>
+                                                                    </div>
+                                                                    <span>
+                                                                        03/05/2025
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <h6>
+                                                                            Sanjay Singh ( FE0003 )
+                                                                        </h6>
+                                                                        <h6>
+                                                                            test
+                                                                        </h6>
+                                                                    </div>
+                                                                    <span>
+                                                                        03/05/2025
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn  text-white rounded-4 px-4"
+                                                            style="background: #5A6185;" data-bs-toggle="modal"
+                                                            data-bs-dismiss="modal">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- ===============Remarks History Details  area end============ -->
                                     </div>
                                 </div>
                             </div>
@@ -1412,7 +1492,8 @@
                                                 </td>
                                                 <td class="p-2">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <button
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target="#remarksConfirmation"
                                                             class=" lookdetailsorange d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-eye"></i>
@@ -1448,7 +1529,7 @@
 
                                                     <div class="chooseFile-area w-100">
                                                         <label class=" mb-1" for="">
-                                                            Select File for ticket
+                                                            Select File for Ticket
                                                         </label>
                                                         <div class="imageBox profile_image_box"
                                                             style="max-width: unset;">
@@ -1534,7 +1615,8 @@
                                                 </td>
                                                 <td class="p-2">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <button
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target="#remarksConfirmation"
                                                             class=" lookdetailsorange d-flex justify-content-center align-items-center p-0"
                                                             style="height: 25px; width: 25px;">
                                                             <i class="fa-solid fa-eye"></i>
@@ -1564,6 +1646,34 @@
                                 class="form-control fs-7" placeholder="Enter Remarks"></textarea>
                         </div>
                         <!-- =================Accomodation Details area end=================== -->
+
+
+                        <!-- ===============Remarks History Details area start============ -->
+                        <div class="modal fade" id="remarksConfirmation" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered ">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-wrap" id="exampleModalToggleLabel">
+                                            Remarks</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="approveConfirmationText">
+                                            Remarks here..
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ===============Remarks History Details  area end============ -->
 
 
                         <!-- =================confirm button area start=================== -->
