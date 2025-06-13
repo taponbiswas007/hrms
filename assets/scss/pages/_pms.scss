@@ -310,6 +310,24 @@
     align-items: center;
 }
 
+@media (min-width: 1400px) {
+    .w-max-640 {
+        max-width: 640px !important;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 420px) {
+    .w-cus-48 {
+        width: 47% !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .w-cus-100 {
+        width: 100% !important;
+    }
+}
+
 @media (max-width: 500px) {
     .progresstext {
         font-size: 12px;
