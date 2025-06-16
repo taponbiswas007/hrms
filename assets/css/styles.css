@@ -4233,6 +4233,49 @@ footer {
     height: 58px;
   }
 }
+/* Custom Tooltip Styling */
+.tooltip {
+  --bs-tooltip-bg: white;
+  /* Background color */
+  --bs-tooltip-color: black;
+  /* Text color */
+  font-family: "Inter", sans-serif;
+  /* Font family */
+}
+
+.tooltip .tooltip-inner {
+  background-color: var(--bs-tooltip-bg);
+  color: var(--bs-tooltip-color);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  /* Small shadow */
+  padding: 8px 12px;
+  /* Adjust padding if needed */
+  font-weight: 400;
+  /* Adjust font weight */
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: var(--bs-tooltip-bg);
+  /* Arrow color (matches background) */
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: var(--bs-tooltip-bg);
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before,
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: var(--bs-tooltip-bg);
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before,
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: var(--bs-tooltip-bg);
+}
+
 .alert_text_with_icon {
   font-family: Inter;
   font-weight: 600;
