@@ -4227,6 +4227,135 @@ footer {
   margin: 7px 0;
 }
 
+.retakeprofilemain-area {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 260px);
+}
+
+.retakeProfilearea {
+  max-width: 533px;
+  width: 100%;
+}
+.retakeProfilearea .profileImagebox {
+  height: 142px;
+  width: 117px;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+}
+.retakeProfilearea .profileImagebox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+.retakeProfilearea .retakeprofileDetailsarea .pInner {
+  border: 0.75px solid #EDEDED;
+  border-radius: 6px;
+}
+.retakeProfilearea .retakeprofileDetailsarea .pInner .name_area h2 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 27.04px;
+  letter-spacing: -2.1%;
+  vertical-align: middle;
+  color: #404040;
+}
+.retakeProfilearea .retakeprofileDetailsarea .pInner .name_area span {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13.52px;
+  letter-spacing: 0%;
+  color: #8E8E93;
+}
+.retakeProfilearea .retakeprofileDetailsarea .pInner .examName {
+  border-left: 0.75px solid #E0E0E0;
+  padding-left: 15px;
+}
+.retakeProfilearea .retakeprofileDetailsarea .pInner .examName h2 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 27.04px;
+  letter-spacing: -2.1%;
+  vertical-align: middle;
+  color: #404040;
+}
+.retakeProfilearea .retakeprofileDetailsarea .pInner .examName span {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13.52px;
+  letter-spacing: 0%;
+  color: #8E8E93;
+}
+.retakeProfilearea .examDetails_area h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.08px;
+  letter-spacing: 0%;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.retakeProfilearea .examDetails_area ul {
+  list-style-type: disc;
+}
+.retakeProfilearea .examDetails_area ul li {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23.08px;
+  letter-spacing: 0%;
+  color: #FC5A5A;
+}
+
+@media (max-height: 600px) {
+  .retakeprofilemain-area {
+    position: unset !important;
+    width: unset !important;
+    height: unset !important;
+  }
+  .retakeProfilearea {
+    position: unset !important;
+    -webkit-transform: unset !important;
+            transform: unset !important;
+  }
+}
+@media (max-width: 576px) {
+  .retakeprofilemain-area {
+    position: unset !important;
+    width: unset !important;
+    height: unset !important;
+  }
+  .retakeProfilearea {
+    position: unset !important;
+    -webkit-transform: unset !important;
+            transform: unset !important;
+  }
+}
+@media (max-height: 700px) and (min-width: 576px) {
+  .retakeprofilemain-area {
+    position: relative !important;
+    width: 100% !important;
+    height: 100vh !important;
+    overflow-y: auto;
+  }
+  .retakeProfilearea {
+    position: absolute !important;
+    -webkit-transform: translateX(-50%) translateY(0) !important;
+            transform: translateX(-50%) translateY(0) !important;
+    top: 0 !important;
+  }
+}
 @media (max-width: 370px) {
   .card_icon_box img {
     width: 92px;
