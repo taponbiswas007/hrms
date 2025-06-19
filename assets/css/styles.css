@@ -4318,6 +4318,42 @@ footer {
   color: #FC5A5A;
 }
 
+.examinstructionalart {
+  background: #E4FFEE;
+  padding: 20px 10px;
+}
+.examinstructionalart p {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #00B445;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.examDetails_area h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.08px;
+  letter-spacing: 0%;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.examDetails_area ul {
+  list-style-type: disc;
+}
+.examDetails_area ul li {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23.08px;
+  letter-spacing: 0%;
+  color: #FC5A5A;
+}
+
 @media (max-height: 600px) {
   .retakeprofilemain-area {
     position: unset !important;
@@ -4354,6 +4390,11 @@ footer {
     -webkit-transform: translateX(-50%) translateY(0) !important;
             transform: translateX(-50%) translateY(0) !important;
     top: 0 !important;
+  }
+}
+@media (max-width: 420px) {
+  .examDetails_area ul li {
+    font-size: 12px;
   }
 }
 @media (max-width: 370px) {

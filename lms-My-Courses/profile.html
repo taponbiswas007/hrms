@@ -1064,7 +1064,7 @@
                                     </ul>
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-4">
-                                    <button class="btn bg-blue text-white rounded-4  px-4 fs-14">
+                                    <button data-bs-toggle="modal" data-bs-target="#examInstructions" class="btn bg-blue text-white rounded-4  px-4 fs-14">
                                         Exam Instructions
                                     </button>
                                     <a href="startexam.html" class="btn bg-blue text-white rounded-4  px-4 fs-14">
@@ -1073,6 +1073,46 @@
                                 </div>
                             </div>
                         </div>
+
+                          <!-- ===============Exam Instructions area start============ -->
+                            <div class="modal fade" id="examInstructions" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered " style="max-width: 675px !important;">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                               Exam Instructions</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="examinstructionalart">
+                                                <p>Good Luck!!</p>
+                                            </div>
+                                            <div class="examDetails_area px-lg-4 mt-4">
+                                    <h1>During the exam :</h1>
+                                    <ul class="px-lg-4 px-3">
+                                        <li>Do not Resize (or Minimize) the browser during the test.</li>
+                                        <li>Do not click back button on the browser.</li>
+                                        <li>Do not click Esc or F11 during the exam.</li>
+                                        <li>Click 'Finish' to Submit your exam.</li>
+                                        <li>For any technical issue, send an email to abc@xyz.com</li>
+                                        <li>Do not click Esc or F11 during the exam.</li>
+                                        <li>Click 'Finish' to Submit your exam.</li>
+                                    </ul>
+                                </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ===============Exam Instructions area end============ -->
 
                     </div>
                     <!-- ================main content area end============== -->
