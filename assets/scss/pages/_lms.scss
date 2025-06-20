@@ -905,6 +905,86 @@
 
 }
 
+.question_type_area {
+    .qt_items {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 15px;
+
+        span {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            display: block;
+        }
+
+        p {
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #333333;
+            margin-bottom: 0;
+        }
+
+        .bg-red {
+            background: #FC5A5A;
+        }
+
+        .bg-green {
+            background: #27D962;
+        }
+
+        .bg-purple {
+            background: #8280FF;
+        }
+
+        .bg-simpleblur {
+            background: #3484F0;
+        }
+    }
+
+}
+
+.question_area {
+    p {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000000;
+        margin-bottom: 0;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .ansqeroption_area {
+        label {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000000;
+        }
+    }
+}
+
+.autoguide {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
 @media (max-height: 700px) and (min-width: 576px) {
     .retakeprofilemain-area {
         position: relative !important;
