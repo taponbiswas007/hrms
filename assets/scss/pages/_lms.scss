@@ -1011,6 +1011,19 @@
     border-radius: 3px;
 }
 
+.noneStatus {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #F67B00;
+    background: #FFDEBD;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
 @media (max-height: 700px) and (min-width: 576px) {
     .retakeprofilemain-area {
         position: relative !important;

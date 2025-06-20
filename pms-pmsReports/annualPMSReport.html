@@ -1079,7 +1079,7 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Employee PMR History <img class="d-inline" height="20px "
+                                        aria-expanded="false">Annual PMS Report <img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
@@ -1106,16 +1106,31 @@
                         <div class="bg-white p-3 rounded-4 shadow mb-4 ">
                             <div class="row g-4">
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Select PMR Year</label>
+                                    <label class="mb-1" for=""> Member</label>
+                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
+                                        class="form-control fs-7" placeholder="Enter Member Id">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Status</label>
                                     <select name="" id="" style="border-color: #c2c2c2; border-radius: 8px"
                                         class="form-select fs-7">
                                         <option value="">Select</option>
                                     </select>
                                 </div>
-                                <div class="col-xxl-9 col-xl-8 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="d-flex justify-content-end align-items-end h-100 w-100">
-                                        <button class="btn bg-blue text-white rounded-4  px-5">
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Select Year</label>
+                                    <select name="" id="" style="border-color: #c2c2c2; border-radius: 8px"
+                                        class="form-select fs-7">
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="d-flex justify-content-end align-items-end h-100 w-100 gap-3">
+                                        <button class="btn bg-blue text-white rounded-4  px-3">
                                             Search
+                                        </button>
+                                        <button class="btn bg-blue text-white rounded-4  px-3">
+                                            Export to Excel
                                         </button>
                                     </div>
                                 </div>
@@ -1133,12 +1148,20 @@
                                             <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
                                                 style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
 
-                                                <th class="border-0 ">Member Code</th>
-                                                <th class="border-0 ">Member Name</th>
-                                                <th class="border-0 ">Goal Setting Status</th>
-                                                <th class="border-0 ">Mid Year Status</th>
-                                                <th class="border-0 ">Year End Status</th>
-                                                <th class="border-0 text-center">Action</th>
+                                                <th class="border-0 ">Emp ID</th>
+                                                <th class="border-0 ">Name</th>
+                                                <th class="border-0 ">Designation</th>
+                                                <th class="border-0 ">State</th>
+                                                <th class="border-0 ">Supervisor</th>
+                                                <th class="border-0 ">Status</th>
+                                                <th class="border-0 ">Date of Member Sign Off</th>
+                                                <th class="border-0 ">Date of Supervisor Sign Off</th>
+                                                <th class="border-0 ">Date of 2nd level Supervisor Sign Off</th>
+                                                <th class="border-0 ">Final Rating by Supervisor</th>
+                                                <th class="border-0 ">Supervisor Remarks</th>
+                                                <th class="border-0 ">Member Remarks</th>
+                                                <th class="border-0 ">Final Rating by 2nd level Supervisor</th>
+                                                <th class="border-0 ">2nd Level Supervisor Remarks</th>
                                             </tr>
                                         </thead>
                                         <tbody style="
@@ -1150,23 +1173,45 @@
                                                     height: 50px;
                                                     vertical-align: middle;
                                                 ">
-                                                <td class="p-2" style="color: #4A59A7;">INTR0002</td>
+                                                <td class="p-2">INTR0002</td>
                                                 <td class="p-2">
                                                     Vinod Verma
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    HR Coordinator
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Haryana
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Amit Mishra
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <button class="commonbtn">Download</button>
-                                                    </div>
+                                                    <span class="activemarkbutton py-1">Approved</span>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Sup remarks exceptional..
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Agreed
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Exceptional
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap fw-normal" style="
@@ -1174,23 +1219,45 @@
                                                     height: 50px;
                                                     vertical-align: middle;
                                                 ">
-                                                <td class="p-2" style="color: #4A59A7;">INTR0002</td>
+                                                <td class="p-2">INTR0002</td>
                                                 <td class="p-2">
                                                     Vinod Verma
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    HR Coordinator
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Haryana
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Amit Mishra
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <button class="commonbtn">Download</button>
-                                                    </div>
+                                                    <span class="failStatus py-1">Failed</span>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Sup remarks exceptional..
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Agreed
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Exceptional
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap fw-normal" style="
@@ -1198,23 +1265,45 @@
                                                     height: 50px;
                                                     vertical-align: middle;
                                                 ">
-                                                <td class="p-2" style="color: #4A59A7;">INTR0002</td>
+                                                <td class="p-2">INTR0002</td>
                                                 <td class="p-2">
                                                     Vinod Verma
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    HR Coordinator
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Haryana
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Amit Mishra
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <button class="commonbtn">Download</button>
-                                                    </div>
+                                                    <span class="noneStatus">NA</span>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Sup remarks exceptional..
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Agreed
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Exceptional
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap fw-normal" style="
@@ -1222,23 +1311,45 @@
                                                     height: 50px;
                                                     vertical-align: middle;
                                                 ">
-                                                <td class="p-2" style="color: #4A59A7;">INTR0002</td>
+                                                <td class="p-2">INTR0002</td>
                                                 <td class="p-2">
                                                     Vinod Verma
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    HR Coordinator
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Haryana
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Amit Mishra
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <button class="commonbtn">Download</button>
-                                                    </div>
+                                                    <span class="activemarkbutton py-1">Approved</span>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Sup remarks exceptional..
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Agreed
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Exceptional
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap fw-normal" style="
@@ -1246,23 +1357,45 @@
                                                     height: 50px;
                                                     vertical-align: middle;
                                                 ">
-                                                <td class="p-2" style="color: #4A59A7;">INTR0002</td>
+                                                <td class="p-2">INTR0002</td>
                                                 <td class="p-2">
                                                     Vinod Verma
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    HR Coordinator
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Haryana
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Amit Mishra
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <button class="commonbtn">Download</button>
-                                                    </div>
+                                                    <span class="failStatus py-1">Failed</span>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Sup remarks exceptional..
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Agreed
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Exceptional
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap fw-normal" style="
@@ -1270,23 +1403,45 @@
                                                     height: 50px;
                                                     vertical-align: middle;
                                                 ">
-                                                <td class="p-2" style="color: #4A59A7;">INTR0002</td>
+                                                <td class="p-2">INTR0002</td>
                                                 <td class="p-2">
                                                     Vinod Verma
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    HR Coordinator
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Haryana
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Amit Mishra
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <button class="commonbtn">Download</button>
-                                                    </div>
+                                                    <span class="noneStatus">NA</span>
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Sup remarks exceptional..
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Agreed
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Exceptional
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap fw-normal" style="
@@ -1294,51 +1449,104 @@
                                                     height: 50px;
                                                     vertical-align: middle;
                                                 ">
-                                                <td class="p-2" style="color: #4A59A7;">INTR0002</td>
+                                                <td class="p-2">INTR0002</td>
                                                 <td class="p-2">
                                                     Vinod Verma
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    HR Coordinator
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Haryana
                                                 </td>
                                                 <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    Amit Mishra
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <button class="commonbtn">Download</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 50px;
-                                                    vertical-align: middle;
-                                                ">
-                                                <td class="p-2" style="color: #4A59A7;">INTR0002</td>
-                                                <td class="p-2">
-                                                    Vinod Verma
-                                                </td>
-                                                <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
-                                                </td>
-                                                <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
-                                                </td>
-                                                <td class="p-2">
-                                                    <span class="activemarkbutton">Completed</span>
+                                                    <span class="noneStatus">NA</span>
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <button class="commonbtn">Download</button>
-                                                    </div>
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    25/12/2024
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Sup remarks exceptional..
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Agreed
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Exceptional
+                                                </td>
+                                                <td class="p-2 ">
+                                                    Highly Effective
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                </div>
+                                <!-- pagination area -->
+                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
+                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                                        <li>
+                                            <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                <i class="fa-angle-left fa-solid"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                Prev
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex align-items-center border justify-content-center p-2 "
+                                                style=" border-radius: 7.24px;" href="">
+                                                Next
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <small>Page:</small>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex gap-2">
+                                                <small>Of</small>
+                                                <p>100</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-dropdown">
+                                                <!-- Dropdown button -->
+                                                <div class="custom-dropdown-button" onclick="toggleDropdown(event)">
+                                                    10
+                                                </div>
+                                                <!-- Dropdown options -->
+                                                <div class="custom-dropdown-options shadow">
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '1', '10')">10</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '2', '11')">11</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '3', '12')">12</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '4', '13')">13</div>
+                                                    <div class="custom-dropdown-option"
+                                                        onclick="selectOption(event, '5', '14')">14</div>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
