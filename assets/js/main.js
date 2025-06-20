@@ -1053,8 +1053,58 @@ $(document).ready(function () {
 //     // Check when window is resized
 //     mediaQuery.addEventListener('change', handleBreadcrumbToggle);
 // });
+$(document).ready(function () {
+    // Question items click handler
+    $('.questionItems').click(function () {
+        $('.questionItems').removeClass('active');
+        $(this).addClass('active');
+    });
 
+    // Countdown function
+    function startCountdown(targetDate, $timebox) {
+        // Cache the elements
+        const $hours = $timebox.find('.hours');
+        const $minutes = $timebox.find('.minuts');
+        const $seconds = $timebox.find('.second');
 
+        function updateCountdown() {
+            // Get current time
+            const now = new Date();
+            const diff = targetDate - now;
+
+            // If time is up, stop the countdown
+            if (diff <= 0) {
+                $hours.text('00');
+                $minutes.text('00');
+                $seconds.text('00');
+                clearInterval(timer);
+                return;
+            }
+
+            // Calculate remaining time
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // Update the display with leading zeros
+            $hours.text(hours.toString().padStart(2, '0'));
+            $minutes.text(minutes.toString().padStart(2, '0'));
+            $seconds.text(seconds.toString().padStart(2, '0'));
+        }
+
+        // Update immediately and then every second
+        updateCountdown();
+        const timer = setInterval(updateCountdown, 1000);
+
+        return timer;
+    }
+
+    // Initialize the countdown - ADD THIS PART
+    const targetDate = new Date();
+    targetDate.setHours(targetDate.getHours() + 2); // Set 2 hours from now as example
+    const $timebox = $('.timebox');
+    startCountdown(targetDate, $timebox);
+});
 
 
 
