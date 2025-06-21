@@ -1548,7 +1548,7 @@ footer {
 }
 
 @media (max-width: 1185px) {
-  .subdrpdownActive {
+  .teamContributionmenuautoreg .subdrpdownActive {
     -webkit-transform: unset !important;
             transform: unset !important;
     inset: unset !important;
@@ -1561,6 +1561,15 @@ footer {
 @media (max-width: 768px) {
   .header {
     padding-right: 0.25rem !important;
+  }
+  .subdrpdownActive {
+    -webkit-transform: unset !important;
+            transform: unset !important;
+    inset: unset !important;
+    clear: unset !important;
+    margin-top: -5px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
   }
 }
 .authpage {

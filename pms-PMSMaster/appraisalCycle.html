@@ -1078,45 +1078,71 @@
                                         </li>
                                         <li><a class="dropdown-item mb-1" href="appraisalGroup.html">Appraisal Group</a>
                                         </li>
-                                </li>
-                                <!-- ===Team Contribution Master menu=== -->
-                                <li class=" splitmenuItems teamContributionmenuautoreg">
-                                    <button class="dropdown-item mb-1 ps-3 dropdown-toggle-split"
-                                        data-bs-toggle="dropdown">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span>Team Contribution Master</span>
-                                            <span class=" ms-5"><i class="fa-solid fa-angle-right"></i></span>
-                                        </div>
-                                    </button>
-                                    <!-- ===Team Contribution Master submenu=== -->
-                                    <ul class="dropdown-menu subdrpdownActive border-0 rounded-3 shadow-lg ">
-                                        <li><a href="bulkImportofTeamContributions.html" class="dropdown-item mb-1">
+
+                                        <!-- ===Team Contribution Master menu=== -->
+                                        <li class=" splitmenuItems teamContributionmenuautoreg">
+                                            <button class="dropdown-item mb-1 ps-3 dropdown-toggle-split"
+                                                data-bs-toggle="dropdown">
                                                 <div class="d-flex justify-content-between align-items-center">
-                                                    <span>Bulk Import of Team Contributions</span>
+                                                    <span>Team Contribution Master</span>
+                                                    <span class=" ms-5"><i class="fa-solid fa-angle-right"></i></span>
                                                 </div>
-                                            </a>
+                                            </button>
+                                            <!-- ===Team Contribution Master submenu=== -->
+                                            <ul class="dropdown-menu subdrpdownActive border-0 rounded-3 shadow-lg ">
+                                                <li><a href="bulkImportofTeamContributions.html"
+                                                        class="dropdown-item mb-1">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Bulk Import of Team Contributions</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a href="bulkImportofTeamContributions.html" class="dropdown-item mb-1">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Single Record Entry</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="singleRecordEntry.html" class="dropdown-item mb-1">
+                                        <li><a class="dropdown-item mb-1"
+                                                href="teamContribution-GroupMappings.html">Team
+                                                Contribution - Group Mappings</a>
+                                        </li>
+                                        <!-- ===Competencies Master menu=== -->
+                                        <li class=" splitmenuItems teamContributionmenuautoreg">
+                                            <button class="dropdown-item mb-1 ps-3 dropdown-toggle-split"
+                                                data-bs-toggle="dropdown">
                                                 <div class="d-flex justify-content-between align-items-center">
-                                                    <span>Single Record Entry</span>
+                                                    <span>Competencies Master</span>
+                                                    <span class=" ms-5"><i class="fa-solid fa-angle-right"></i></span>
                                                 </div>
-                                            </a>
+                                            </button>
+                                            <!-- ===Competencies Master submenu=== -->
+                                            <ul class="dropdown-menu subdrpdownActive border-0 rounded-3 shadow-lg ">
+                                                <li><a href="bulkImportofCompetencies.html" class="dropdown-item mb-1">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Bulk Import of Competencies</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a href="bulkImportofTeamContributions.html" class="dropdown-item mb-1">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Single Record Entry</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="competencies-GroupMappings.html">Competencies -
+                                                Group Mappings</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="member-GroupMappings.html">Member -
+                                                Group
+                                                Mappings</a>
                                         </li>
                                     </ul>
-                                </li>
-                                <li><a class="dropdown-item mb-1" href="teamContribution-GroupMappings.html">Team
-                                        Contribution - Group Mappings</a>
-                                </li>
-                                <li><a class="dropdown-item mb-1" href="bulkImportofCompetencies.html">Competencies
-                                        Master</a>
-                                </li>
-                                <li><a class="dropdown-item mb-1" href="competencies-GroupMappings.html">Competencies -
-                                        Group Mappings</a>
-                                </li>
-                                <li><a class="dropdown-item mb-1" href="member-GroupMappings.html">Member - Group
-                                        Mappings</a>
-                                </li>
-                                </ul>
                                 </li>
                             </ol>
                         </nav>
@@ -1126,119 +1152,65 @@
                     <!-- ================= Main body area area start================= -->
                     <div class="main-body-area pb-4 pt-3">
                         <div class="bg-white p-3 rounded-4 shadow mb-4 ">
+                            <h1 class="fs-6 text-dark fw-medium pb-3 mb-3" style="border-bottom: 0.9px dashed #D2D2D2;">
+                                Add Appraisal Cycle
+                            </h1>
                             <div class="row g-4">
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Select year</label>
-                                    <select name="" id="" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-select fs-7">
-                                        <option value="">Select</option>
-                                    </select>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Member</label>
+                                <div class="col-xxl-4 col-xl-5 col-lg-9 col-md-8 col-sm-8 col-12">
+                                    <label class="mb-1" for="">
+                                        <span class="text-danger">*</span> Cycle Description
+                                    </label>
                                     <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Member id or name">
+                                        class="form-control fs-7" placeholder="Enter Cycle Description">
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12">
 
                                     <div class="d-flex justify-content-start align-items-end pb-2 h-100 w-100 gap-3">
                                         <div class="position-relative ">
                                             <label class="custom-checkbox">
                                                 <input type="checkbox" checked>
-                                                <span class="checkmark basicCheckmark me-2"></span>
-                                                Member without group
+                                                <span class="checkmark me-2"></span>
+                                                Active
                                             </label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xxl-3 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> <span class="text-danger">*</span>Cycle Start
+                                        Date</label>
+                                    <input type="date" style="border-color: #c2c2c2; border-radius: 8px"
+                                        class="form-control fs-7">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> <span class="text-danger">*</span>Cycle End Date</label>
+                                    <input type="date" style="border-color: #c2c2c2; border-radius: 8px"
+                                        class="form-control fs-7">
+                                </div>
+                                <div class="col-xxl-12 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
                                     <div class="d-flex justify-content-end align-items-end h-100 w-100 gap-3">
-                                        <button class="btn bg-blue text-white rounded-4  px-3">
-                                            Search
-                                        </button>
-                                        <button data-bs-toggle="modal" data-bs-target="#createNewHierarchy"
-                                            class="btn bg-blue text-white rounded-4  px-2">
-                                            + New Hierarchy
+                                        <button class="btn bg-blue text-white rounded-4  px-4">
+                                            Save
                                         </button>
                                     </div>
                                 </div>
-
-                                <!-- ===============Create New Hierarchy area start============ -->
-                                <div class="modal fade" id="createNewHierarchy" aria-hidden="true"
-                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
-                                                    Create New Hierarchy</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <i class="fa-solid fa-xmark"></i>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row g-4">
-                                                    <div class=" col-12">
-                                                        <label class=" mb-1" for="">
-                                                            Member
-                                                        </label>
-                                                        <input type="text"
-                                                            style="border-color: #C2C2C2; border-radius:8px;"
-                                                            class=" form-control fs-7"
-                                                            placeholder="Enter Member id or Name">
-                                                    </div>
-                                                    <div class=" col-12">
-                                                        <label class=" mb-1" for="">
-                                                            Supervisor
-                                                        </label>
-                                                        <input type="text"
-                                                            style="border-color: #C2C2C2; border-radius:8px;"
-                                                            class=" form-control fs-7" placeholder="Enter Supervisor">
-                                                    </div>
-                                                    <div class=" col-12">
-                                                        <label class=" mb-1" for="">
-                                                            Second Level Supervisor
-                                                        </label>
-                                                        <input type="text"
-                                                            style="border-color: #C2C2C2; border-radius:8px;"
-                                                            class=" form-control fs-7"
-                                                            placeholder="Enter Second Level Supervisor">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-
-
-                                                <button class="btn  text-white rounded-4 px-4"
-                                                    style="background: #5A6185;" data-bs-toggle="modal"
-                                                    data-bs-dismiss="modal">Cancel</button>
-                                                <button class="btn bg-blue text-white rounded-4 px-4"
-                                                    data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- ===============Create New Hierarchy area end============ -->
                             </div>
                         </div>
                         <!-- ================= Details area start=================== -->
                         <div class="bg-white p-3 rounded-4 mt-4 shadow">
                             <h1 class="fs-6 text-dark fw-medium pb-3 mb-3" style="border-bottom: 0.9px dashed #D2D2D2;">
-                                List of Member Hierarchy
+                                Appraisal Cycle Details
                             </h1>
                             <div class="table-responsive">
                                 <table class="table table-bordered border-gray">
                                     <thead>
                                         <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
                                             style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
-                                            <th class="border-0 ">Sr.no.</th>
-                                            <th class="border-0 ">Member Code</th>
-                                            <th class="border-0 ">Member</th>
-                                            <th class="border-0 ">Supervisor</th>
-                                            <th class="border-0 ">Second Level Supervisor</th>
-                                            <th class="border-0 ">Group</th>
-                                            <th class="border-0 text-center ">Action</th>
+                                            <th class="border-0 ">Year Description</th>
+                                            <th class="border-0 ">Cycle Start Date</th>
+                                            <th class="border-0 ">Cycle End Date</th>
+                                            <th class="border-0 ">Status</th>
+                                            <th class="border-0 text-center">Update</th>
+                                            <th class="border-0 text-center ">Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody style="
@@ -1251,27 +1223,25 @@
                                                     vertical-align: middle;
                                                 ">
                                             <td class="p-2">
-                                                1
+                                                2023-24
                                             </td>
                                             <td class="p-2">
-                                                RFEPL00279
+                                                01/04/2022
                                             </td>
                                             <td class="p-2">
-                                                Rajeev Singhal
+                                                30/06/2023
                                             </td>
                                             <td class="p-2">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-
+                                                <span class="activemarkbutton fw-medium">Active</span>
                                             </td>
                                             <td class="p-2 ">
                                                 <div class="d-flex justify-content-center align-items-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
-                                                        class="commonbtn px-4">Edit</button>
+                                                    <button class="commonbtn px-3">Update</button>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button class="commonbtn px-3">Delete</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1281,27 +1251,25 @@
                                                     vertical-align: middle;
                                                 ">
                                             <td class="p-2">
-                                                1
+                                                2023-24
                                             </td>
                                             <td class="p-2">
-                                                RFEPL00279
+                                                01/04/2022
                                             </td>
                                             <td class="p-2">
-                                                Rajeev Singhal
+                                                30/06/2023
                                             </td>
                                             <td class="p-2">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-
+                                                <span class="activemarkbutton fw-medium">Active</span>
                                             </td>
                                             <td class="p-2 ">
                                                 <div class="d-flex justify-content-center align-items-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
-                                                        class="commonbtn px-4">Edit</button>
+                                                    <button class="commonbtn px-3">Update</button>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button class="commonbtn px-3">Delete</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1311,27 +1279,25 @@
                                                     vertical-align: middle;
                                                 ">
                                             <td class="p-2">
-                                                1
+                                                2023-24
                                             </td>
                                             <td class="p-2">
-                                                RFEPL00279
+                                                01/04/2022
                                             </td>
                                             <td class="p-2">
-                                                Rajeev Singhal
+                                                30/06/2023
                                             </td>
                                             <td class="p-2">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-
+                                                <span class="activemarkbutton fw-medium">Active</span>
                                             </td>
                                             <td class="p-2 ">
                                                 <div class="d-flex justify-content-center align-items-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
-                                                        class="commonbtn px-4">Edit</button>
+                                                    <button class="commonbtn px-3">Update</button>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button class="commonbtn px-3">Delete</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1341,27 +1307,25 @@
                                                     vertical-align: middle;
                                                 ">
                                             <td class="p-2">
-                                                1
+                                                2023-24
                                             </td>
                                             <td class="p-2">
-                                                RFEPL00279
+                                                01/04/2022
                                             </td>
                                             <td class="p-2">
-                                                Rajeev Singhal
+                                                30/06/2023
                                             </td>
                                             <td class="p-2">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-
+                                                <span class="activemarkbutton fw-medium">Active</span>
                                             </td>
                                             <td class="p-2 ">
                                                 <div class="d-flex justify-content-center align-items-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
-                                                        class="commonbtn px-4">Edit</button>
+                                                    <button class="commonbtn px-3">Update</button>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button class="commonbtn px-3">Delete</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1371,27 +1335,25 @@
                                                     vertical-align: middle;
                                                 ">
                                             <td class="p-2">
-                                                1
+                                                2023-24
                                             </td>
                                             <td class="p-2">
-                                                RFEPL00279
+                                                01/04/2022
                                             </td>
                                             <td class="p-2">
-                                                Rajeev Singhal
+                                                30/06/2023
                                             </td>
                                             <td class="p-2">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-
+                                                <span class="activemarkbutton fw-medium">Active</span>
                                             </td>
                                             <td class="p-2 ">
                                                 <div class="d-flex justify-content-center align-items-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
-                                                        class="commonbtn px-4">Edit</button>
+                                                    <button class="commonbtn px-3">Update</button>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button class="commonbtn px-3">Delete</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1401,27 +1363,25 @@
                                                     vertical-align: middle;
                                                 ">
                                             <td class="p-2">
-                                                1
+                                                2023-24
                                             </td>
                                             <td class="p-2">
-                                                RFEPL00279
+                                                01/04/2022
                                             </td>
                                             <td class="p-2">
-                                                Rajeev Singhal
+                                                30/06/2023
                                             </td>
                                             <td class="p-2">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-
+                                                <span class="activemarkbutton fw-medium">Active</span>
                                             </td>
                                             <td class="p-2 ">
                                                 <div class="d-flex justify-content-center align-items-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
-                                                        class="commonbtn px-4">Edit</button>
+                                                    <button class="commonbtn px-3">Update</button>
+                                                </div>
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button class="commonbtn px-3">Delete</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1431,57 +1391,25 @@
                                                     vertical-align: middle;
                                                 ">
                                             <td class="p-2">
-                                                1
+                                                2023-24
                                             </td>
                                             <td class="p-2">
-                                                RFEPL00279
+                                                01/04/2022
                                             </td>
                                             <td class="p-2">
-                                                Rajeev Singhal
+                                                30/06/2023
                                             </td>
                                             <td class="p-2">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-
+                                                <span class="activemarkbutton fw-medium">Active</span>
                                             </td>
                                             <td class="p-2 ">
                                                 <div class="d-flex justify-content-center align-items-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
-                                                        class="commonbtn px-4">Edit</button>
+                                                    <button class="commonbtn px-3">Update</button>
                                                 </div>
                                             </td>
-                                        </tr>
-                                        <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 50px;
-                                                    vertical-align: middle;
-                                                ">
-                                            <td class="p-2">
-                                                1
-                                            </td>
-                                            <td class="p-2">
-                                                RFEPL00279
-                                            </td>
-                                            <td class="p-2">
-                                                Rajeev Singhal
-                                            </td>
-                                            <td class="p-2">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-                                                Vikas Saini (RFEPL00191)
-                                            </td>
-                                            <td class="p-2 ">
-
-                                            </td>
                                             <td class="p-2 ">
                                                 <div class="d-flex justify-content-center align-items-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
-                                                        class="commonbtn px-4">Edit</button>
+                                                    <button class="commonbtn px-3">Delete</button>
                                                 </div>
                                             </td>
                                         </tr>

@@ -924,6 +924,22 @@ footer {
 }
 
 @media (max-width: 1185px) {
+    .teamContributionmenuautoreg {
+        .subdrpdownActive {
+            transform: unset !important;
+            inset: unset !important;
+            clear: unset !important;
+            margin-top: -5px !important;
+            margin-left: 0px !important;
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-right: .25rem !important;
+    }
 
     .subdrpdownActive {
         transform: unset !important;
@@ -932,11 +948,5 @@ footer {
         margin-top: -5px !important;
         margin-left: 0px !important;
         width: 100% !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        padding-right: .25rem !important;
     }
 }
