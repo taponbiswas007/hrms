@@ -1115,16 +1115,75 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="col-xxl-3 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div class="d-flex justify-content-end align-items-end h-100 w-100 gap-3">
                                         <button class="btn bg-blue text-white rounded-4  px-3">
                                             Search
                                         </button>
-                                        <button class="btn bg-blue text-white rounded-4  px-3">
+                                        <button data-bs-toggle="modal" data-bs-target="#createNewHierarchy"
+                                            class="btn bg-blue text-white rounded-4  px-2">
                                             + New Hierarchy
                                         </button>
                                     </div>
                                 </div>
+
+                                <!-- ===============Create New Hierarchy area start============ -->
+                                <div class="modal fade" id="createNewHierarchy" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                    Create New Hierarchy</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row g-4">
+                                                    <div class=" col-12">
+                                                        <label class=" mb-1" for="">
+                                                            Member
+                                                        </label>
+                                                        <input type="text"
+                                                            style="border-color: #C2C2C2; border-radius:8px;"
+                                                            class=" form-control fs-7"
+                                                            placeholder="Enter Member id or Name">
+                                                    </div>
+                                                    <div class=" col-12">
+                                                        <label class=" mb-1" for="">
+                                                            Supervisor
+                                                        </label>
+                                                        <input type="text"
+                                                            style="border-color: #C2C2C2; border-radius:8px;"
+                                                            class=" form-control fs-7" placeholder="Enter Supervisor">
+                                                    </div>
+                                                    <div class=" col-12">
+                                                        <label class=" mb-1" for="">
+                                                            Second Level Supervisor
+                                                        </label>
+                                                        <input type="text"
+                                                            style="border-color: #C2C2C2; border-radius:8px;"
+                                                            class=" form-control fs-7"
+                                                            placeholder="Enter Second Level Supervisor">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+
+
+                                                <button class="btn  text-white rounded-4 px-4"
+                                                    style="background: #5A6185;" data-bs-toggle="modal"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                                <button class="btn bg-blue text-white rounded-4 px-4"
+                                                    data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ===============Create New Hierarchy area end============ -->
                             </div>
                         </div>
                         <!-- ================= Details area start=================== -->
@@ -1175,7 +1234,218 @@
                                             </td>
                                             <td class="p-2 ">
                                                 <div class="d-flex justify-content-center align-items-center">
-                                                    <button class="commonbtn px-4">Edit</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
+                                                        class="commonbtn px-4">Edit</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                            <td class="p-2">
+                                                RFEPL00279
+                                            </td>
+                                            <td class="p-2">
+                                                Rajeev Singhal
+                                            </td>
+                                            <td class="p-2">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
+                                                        class="commonbtn px-4">Edit</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                            <td class="p-2">
+                                                RFEPL00279
+                                            </td>
+                                            <td class="p-2">
+                                                Rajeev Singhal
+                                            </td>
+                                            <td class="p-2">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
+                                                        class="commonbtn px-4">Edit</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                            <td class="p-2">
+                                                RFEPL00279
+                                            </td>
+                                            <td class="p-2">
+                                                Rajeev Singhal
+                                            </td>
+                                            <td class="p-2">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
+                                                        class="commonbtn px-4">Edit</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                            <td class="p-2">
+                                                RFEPL00279
+                                            </td>
+                                            <td class="p-2">
+                                                Rajeev Singhal
+                                            </td>
+                                            <td class="p-2">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
+                                                        class="commonbtn px-4">Edit</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                            <td class="p-2">
+                                                RFEPL00279
+                                            </td>
+                                            <td class="p-2">
+                                                Rajeev Singhal
+                                            </td>
+                                            <td class="p-2">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
+                                                        class="commonbtn px-4">Edit</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                            <td class="p-2">
+                                                RFEPL00279
+                                            </td>
+                                            <td class="p-2">
+                                                Rajeev Singhal
+                                            </td>
+                                            <td class="p-2">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
+                                                        class="commonbtn px-4">Edit</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                            <td class="p-2">
+                                                1
+                                            </td>
+                                            <td class="p-2">
+                                                RFEPL00279
+                                            </td>
+                                            <td class="p-2">
+                                                Rajeev Singhal
+                                            </td>
+                                            <td class="p-2">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+                                                Vikas Saini (RFEPL00191)
+                                            </td>
+                                            <td class="p-2 ">
+
+                                            </td>
+                                            <td class="p-2 ">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button data-bs-toggle="modal" data-bs-target="#editHierarchy"
+                                                        class="commonbtn px-4">Edit</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1236,6 +1506,57 @@
                                     </li>
                                 </ul>
                             </div>
+
+                            <!-- ===============Edit Hierarchyy area start============ -->
+                            <div class="modal fade" id="editHierarchy" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                Edit Hierarchy</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row g-4">
+                                                <div class=" col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Member
+                                                    </label>
+                                                    <input type="text" disabled
+                                                        style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" value="Rajeev Singhal">
+                                                </div>
+                                                <div class=" col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Supervisor
+                                                    </label>
+                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" value=" Vikas Saini (RFEPL00191)">
+                                                </div>
+                                                <div class=" col-12">
+                                                    <label class=" mb-1" for="">
+                                                        Second Level Supervisor
+                                                    </label>
+                                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                                        class=" form-control fs-7" value=" Vikas Saini (RFEPL00191)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Cancel</button>
+                                            <button class="btn bg-blue text-white rounded-4 px-4" data-bs-toggle="modal"
+                                                data-bs-dismiss="modal">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ===============Edit Hierarchy area end============ -->
                         </div>
                         <!-- ================= Details area end=================== -->
 
