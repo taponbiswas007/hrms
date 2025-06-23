@@ -309,7 +309,17 @@
     justify-content: center;
     align-items: center;
 }
-
+.editbtngray{
+    height: 25px;
+    width: 25px;
+    color: #8E8E93;
+    background: #E5E5EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 3px;
+}
 @media (min-width: 1400px) {
     .w-max-640 {
         max-width: 640px !important;
