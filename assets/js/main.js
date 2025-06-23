@@ -1014,6 +1014,9 @@ $(document).ready(function () {
     $('.goalsAssessmentBtn').click(function () {
         changeEvaluationTab('goalsAssessment');
     });
+    $('.multiRaterFeedbackbtn').click(function () {
+        changeEvaluationTab('multiRaterFeedback');
+    });
     $('.coreCompetenciesBtn').click(function () {
         changeEvaluationTab('coreCompetencies');
     });
