@@ -51,6 +51,32 @@ $(document).ready(function () {
         $headerCheckbox.prop('checked', $allCheckboxes.length === $checkedCheckboxes.length);
     });
 
+    // select all function approve
+    // Handle select all in thead
+    $(document).on('change', '.select-all-checkboxapp', function () {
+        const $table = $(this).closest('table');
+        const isChecked = $(this).is(':checked');
+        $table.find('tbody .row-checkboxapp').prop('checked', isChecked);
+    });
+
+    // Handle single checkbox in tbody
+    $(document).on('change', '.row-checkboxapp', function () {
+        const $table = $(this).closest('table');
+        const $allCheckboxes = $table.find('tbody .row-checkbox');
+        const $checkedCheckboxes = $allCheckboxes.filter(':checked');
+        const $headerCheckbox = $table.find('thead .select-all-checkboxapp');
+
+        $headerCheckbox.prop('checked', $allCheckboxes.length === $checkedCheckboxes.length);
+    });
+
+
+
+
+
+
+
+
+
 
     // approve checkbox
     $(document).on('change', '.approvecheckbox-group input[name="approval-status"]', function () {
