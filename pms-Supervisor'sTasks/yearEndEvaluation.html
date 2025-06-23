@@ -1175,10 +1175,10 @@
                                                                             style=" font-weight: 500; min-width: 196px;">
                                                                             Rating</th>
 
-                                                                        <th class="border-0 text-center"
+                                                                        <th class="border-0 "
                                                                             style="font-weight: 500; min-width: 302px;">
                                                                             When rating Goals</th>
-                                                                        <th class="border-0 text-center"
+                                                                        <th class="border-0 "
                                                                             style="font-weight: 500; min-width: 296px;">
                                                                             When rating Competencies</th>
                                                                     </tr>
@@ -1253,7 +1253,7 @@
                                                                             Final Performance Outcome
                                                                         </th>
 
-                                                                        <th class="border-0 text-center"
+                                                                        <th class="border-0 "
                                                                             style="font-weight: 500; min-width: 543px;">
                                                                             When rating Final Performance Outcome
                                                                         </th>
@@ -1402,7 +1402,7 @@
 
 
                                 </div>
-                                <div class="weightage_details_item">
+                                <div class="weightage_details_item mt-3">
                                     <div class="weightage_title gap-3" style="background: none;">
                                         <h1>Goal (2) - Test-2</h1>
                                         <div
@@ -1479,7 +1479,7 @@
 
 
                                 </div>
-                                <div class="weightage_details_item">
+                                <div class="weightage_details_item mt-3">
                                     <div class="weightage_title gap-3" style="background: none;">
                                         <h1>Goal (3) - Test-3</h1>
                                         <div
@@ -1556,7 +1556,7 @@
 
 
                                 </div>
-                                <div class="weightage_details_item">
+                                <div class="weightage_details_item mt-3">
                                     <div class="weightage_title gap-3" style="background: none;">
                                         <h1>Goal (4) - Test-4</h1>
                                         <div
@@ -1646,16 +1646,16 @@
 
                             <!-- =============multi Rater Feedback area start================= -->
                             <div class="evaluationItems" id="multiRaterFeedback">
-                                <div class="d-flex justify-content-between align-items-center py-3">
-                                    <div class="d-flex justify-content-start gap-3">
-                                         <div
+                                <div class="d-flex justify-content-between align-items-center py-3 flex-wrap gap-3">
+                                    <div class="d-flex justify-content-start gap-3 flex-wrap">
+                                        <div
                                             class="d-flex totalweightagearea justify-content-start align-items-center gap-3">
                                             <h1>Multi-raters Assigned</h1>
                                             <span class="totalweightageBox py-2">
                                                 3
                                             </span>
                                         </div>
-                                         <div
+                                        <div
                                             class="d-flex totalweightagearea justify-content-start align-items-center gap-3">
                                             <h1>Total Feedback</h1>
                                             <span class="totalweightageBox py-2">
@@ -1663,177 +1663,109 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <button data-bs-toggle="modal" data-bs-target="#yearEndEvaluationInstructions"
+                                    <button data-bs-toggle="modal" data-bs-target="#addMultirater"
                                         class="btn bg-blue text-white fs-14 px-4 rounded-4">
                                         Assign multi-raters
                                     </button>
 
-                                    <!-- ===============Instructions for Final Assessment: area start============ -->
-                                    <div class="modal fade" id="yearEndEvaluationInstructions" aria-hidden="true"
+                                    <!-- ===============Add Multi-rater area start============ -->
+                                    <div class="modal fade" id="addMultirater" aria-hidden="true"
                                         aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title text-wrap lh-base"
                                                         id="exampleModalToggleLabel">
-                                                        Year End Evaluation</h5>
+                                                        Add Multi-rater</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close">
                                                         <i class="fa-solid fa-xmark"></i>
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <h1 class="fs-6 fw-medium mb-4 ps-4">Using the Rating Scale</h1>
-                                                    <p class="fs-14 fw-medium text-dark lh-base ps-4">
-                                                        This table explains the rating scale that is used for assessing
-                                                        goals, competencies and overall performance. Some guidelines and
-                                                        cues are provided to help you and your Supervisor to understand
-                                                        and apply the rating scale effectively:
-                                                    </p>
-                                                    <div class="mt-3">
-                                                        <div class="table-responsive ">
-                                                            <table class="table table-bordered border-gray ">
-                                                                <thead>
-                                                                    <tr class=" border-0 text-wrap  "
-                                                                        style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
-
-                                                                        <th class="border-0 "
-                                                                            style=" font-weight: 500; min-width: 196px;">
-                                                                            Rating</th>
-
-                                                                        <th class="border-0 text-center"
-                                                                            style="font-weight: 500; min-width: 302px;">
-                                                                            When rating Goals</th>
-                                                                        <th class="border-0 text-center"
-                                                                            style="font-weight: 500; min-width: 296px;">
-                                                                            When rating Competencies</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody
-                                                                    style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
-                                                                    <tr class="text-wrap   border-top-0"
-                                                                        style=" height: 50px; vertical-align: middle; ">
-                                                                        <td class="p-2 fw-medium">
-                                                                            Does Not Meet Expectation
-                                                                        </td>
-                                                                        <td class="p-2">
-                                                                            The goal is mostly or wholly unachieved (<
-                                                                                60% of the target) </td> <td
-                                                                                class="p-2">
-                                                                                The desired behaviour is not
-                                                                                demonstrated at all
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="text-wrap   border-top-0"
-                                                                        style=" height: 50px; vertical-align: middle; ">
-                                                                        <td class="p-2 fw-medium">
-                                                                            Inconsistently Meets Expectation
-                                                                        </td>
-                                                                        <td class="p-2">
-                                                                            The goal is partly achieved (60% - 90% of
-                                                                            the target) </td>
-                                                                        <td class="p-2">
-                                                                            The desired behaviour is demonstrated in a
-                                                                            few instances, but not in all
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="text-wrap   border-top-0"
-                                                                        style=" height: 50px; vertical-align: middle; ">
-                                                                        <td class="p-2 fw-medium">
-                                                                            Consistently Meets Expectation
-                                                                        </td>
-                                                                        <td class="p-2">
-                                                                            The goal is mostly or fully achieved (91% -
-                                                                            120% of the target)</td>
-                                                                        <td class="p-2">
-                                                                            The desired behaviour is demonstrated in
-                                                                            every instance
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="text-wrap   border-top-0"
-                                                                        style=" height: 50px; vertical-align: middle; ">
-                                                                        <td class="p-2 fw-medium">
-                                                                            Consistently Meets Expectation
-                                                                        </td>
-                                                                        <td class="p-2">
-                                                                            The goal is mostly or fully achieved (91% -
-                                                                            120% of the target)</td>
-                                                                        <td class="p-2">
-                                                                            The desired behaviour is demonstrated in
-                                                                            every instance
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                    <div class="row g-4">
+                                                        <div class="col-lg-6 col-md-8 col-12">
+                                                            <label for="" class="mb-1">
+                                                                Assign
+                                                            </label>
+                                                            <input type="text"
+                                                                style="border-color: #C2C2C2; border-radius:8px;"
+                                                                class=" form-control fs-7"
+                                                                placeholder="Enter Id or Name">
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-4 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-md-start justify-content-end h-100 w-100 align-items-end">
+                                                                <button class="btn bg-blue text-white rounded-4 px-4">
+                                                                    Add New
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="mt-3">
+                                                    <div class="mt-4">
                                                         <div class="table-responsive ">
                                                             <table class="table table-bordered border-gray ">
                                                                 <thead>
-                                                                    <tr class=" border-0 text-wrap  "
+                                                                    <tr class=" border-0 text-nowrap  "
                                                                         style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
 
                                                                         <th class="border-0 "
-                                                                            style=" font-weight: 500; min-width: 250px;">
-                                                                            Final Performance Outcome
-                                                                        </th>
+                                                                            style=" font-weight: 500; ">
+                                                                            Sr. No.</th>
 
+                                                                        <th class="border-0" style="font-weight: 500;">
+                                                                            Member Name</th>
                                                                         <th class="border-0 text-center"
-                                                                            style="font-weight: 500; min-width: 543px;">
-                                                                            When rating Final Performance Outcome
-                                                                        </th>
+                                                                            style="font-weight: 500; ">
+                                                                            Action</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody
                                                                     style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
-                                                                    <tr class="text-wrap   border-top-0"
+                                                                    <tr class="text-nowrap   border-top-0"
                                                                         style=" height: 50px; vertical-align: middle; ">
                                                                         <td class="p-2 fw-medium">
-                                                                            Exceptional
+                                                                            1
                                                                         </td>
                                                                         <td class="p-2">
-                                                                            Relative to the unit the individual belongs,
-                                                                            has demonstrated highest quality of work
-                                                                            performance in all essential areas of
-                                                                            responsibility, resulting in an overall
-                                                                            quality of work that was superior. </td>
+                                                                            ASHISH TESTING SECOND SUPERVISOR (T007)</td>
+                                                                        <td class="p-2">
+                                                                            <div
+                                                                                class="d-flex justify-content-center align-items-center">
+                                                                                <button
+                                                                                    class="commonbtn">Remove</button>
+                                                                            </div>
+                                                                        </td>
                                                                     </tr>
-                                                                    <tr class="text-wrap   border-top-0"
+                                                                    <tr class="text-nowrap   border-top-0"
                                                                         style=" height: 50px; vertical-align: middle; ">
                                                                         <td class="p-2 fw-medium">
-                                                                            Exceptional
+                                                                            1
                                                                         </td>
                                                                         <td class="p-2">
-                                                                            Relative to the unit the individual belongs,
-                                                                            has demonstrated highest quality of work
-                                                                            performance in all essential areas of
-                                                                            responsibility, resulting in an overall
-                                                                            quality of work that was superior. </td>
+                                                                            ASHISH TESTING SECOND SUPERVISOR (T007)</td>
+                                                                        <td class="p-2">
+                                                                            <div
+                                                                                class="d-flex justify-content-center align-items-center">
+                                                                                <button
+                                                                                    class="commonbtn">Remove</button>
+                                                                            </div>
+                                                                        </td>
                                                                     </tr>
-                                                                    <tr class="text-wrap   border-top-0"
+                                                                    <tr class="text-nowrap   border-top-0"
                                                                         style=" height: 50px; vertical-align: middle; ">
                                                                         <td class="p-2 fw-medium">
-                                                                            Exceptional
+                                                                            1
                                                                         </td>
                                                                         <td class="p-2">
-                                                                            Relative to the unit the individual belongs,
-                                                                            has demonstrated highest quality of work
-                                                                            performance in all essential areas of
-                                                                            responsibility, resulting in an overall
-                                                                            quality of work that was superior. </td>
-                                                                    </tr>
-                                                                    <tr class="text-wrap   border-top-0"
-                                                                        style=" height: 50px; vertical-align: middle; ">
-                                                                        <td class="p-2 fw-medium">
-                                                                            Exceptional
-                                                                        </td>
+                                                                            ASHISH TESTING SECOND SUPERVISOR (T007)</td>
                                                                         <td class="p-2">
-                                                                            Relative to the unit the individual belongs,
-                                                                            has demonstrated highest quality of work
-                                                                            performance in all essential areas of
-                                                                            responsibility, resulting in an overall
-                                                                            quality of work that was superior. </td>
+                                                                            <div
+                                                                                class="d-flex justify-content-center align-items-center">
+                                                                                <button
+                                                                                    class="commonbtn">Remove</button>
+                                                                            </div>
+                                                                        </td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -1841,25 +1773,28 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
+                                                    <button class="btn bg-blue text-white rounded-4 px-4"
+                                                        data-bs-toggle="modal" data-bs-dismiss="modal">Save</button>
                                                     <button class="btn text-white rounded-4 px-4" data-bs-toggle="modal"
                                                         data-bs-dismiss="modal"
-                                                        style="background: #5A6185;">Close</button>
+                                                        style="background: #5A6185;">Cancel</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- ===============Instructions for Final Assessment: area end============ -->
+                                    <!-- ===============Add Multi-rater area end============ -->
 
                                 </div>
                                 <div class="weightage_details_item">
-                                    
+
                                     <!-- Expectation items start-->
-                                    <div class="expectationItems">
+                                    <div class="expectationItems rounded-3">
                                         <div
-                                            class="expectionItems_header d-flex justify-content-between align-items-center gap-3 px-3 py-3">
-                                            <div class="d-flex justify-content-start align-items-start gap-3 flex-wrap">
+                                            class="expectionItems_header d-flex justify-content-between align-items-center gap-3 bg-white px-3 py-2">
+                                            <div
+                                                class="d-flex justify-content-start align-items-start gap-3 flex-wrap ">
                                                 <h1 class="fs-14 fw-medium text-dark mb-0">
-                                                    Member's Assessment
+                                                    Accountability
                                                 </h1>
                                             </div>
                                             <button
@@ -1867,257 +1802,29 @@
                                                 <i class="fa-solid fa-angle-up"></i>
                                             </button>
                                         </div>
-                                        <div class="supervisorsAssessmentlist supAssessmentShow d-none px-3">
-                                            <p class="fs-14 fw-medium text-dark py-3">
-                                                ok
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Expectation items end-->
-
-
-
-
-                                </div>
-                                <div class="weightage_details_item">
-                                    <div class="weightage_title gap-3" style="background: none;">
-                                        <h1>Goal (2) - Test-2</h1>
-                                        <div
-                                            class="d-flex totalweightagearea justify-content-start align-items-center gap-3">
-                                            <h1>Total Weightage</h1>
-                                            <span class="totalweightageBox">
-                                                100
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="weightage_body">
-                                        <ul class="py-2">
-                                            <li class="lh-base">
-                                                A
-                                            </li>
-                                            <li class="lh-base">
-                                                B
-                                            </li>
-                                            <li class="lh-base">
-                                                C
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Expectation items start-->
-                                    <div class="expectationItems">
-                                        <div
-                                            class="expectionItems_header d-flex justify-content-between align-items-center gap-3 px-3 py-3">
-                                            <div class="d-flex justify-content-start align-items-start gap-3 flex-wrap">
-                                                <h1 class="fs-14 fw-medium text-dark mb-0">
-                                                    Member's Assessment
-                                                </h1>
+                                        <div class="supervisorsAssessmentlist supAssessmentShow d-none">
+                                            <div class="bg-gray p-3"
+                                                style="background: #F3F5FF; border-bottom: 1px solid  #E5E5EA">
+                                                Feedback
                                             </div>
-                                            <button
-                                                class="btn rotated90  supAssessmentShowBtn rounded-circle bg-blue text-white pb-1">
-                                                <i class="fa-solid fa-angle-up"></i>
-                                            </button>
-                                        </div>
-                                        <div class="supervisorsAssessmentlist supAssessmentShow d-none px-3">
-                                            <p class="fs-14 fw-medium text-dark py-3">
-                                                ok
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Expectation items end-->
-                                    <!-- Expectation items start-->
-                                    <div class="expectationItems">
-                                        <div
-                                            class="expectionItems_header d-flex justify-content-between align-items-center gap-3 px-3 py-3">
-                                            <div class="d-flex justify-content-start align-items-start flex-wrap gap-3">
-                                                <h1 class="fs-14 fw-medium text-dark mb-0">
-                                                    Supervisor's Assessment
-                                                </h1>
-                                                <span class="fs-12 fw-medium px-2 py-1"
-                                                    style="background: #C2FFCF; color:#0A7E22;">
-                                                    Consistently Exceeds Expectation
-                                                </span>
+                                            <ul class="py-3 fs-14 ps-5">
+                                                <li class="lh-base" style="list-style-type: disc;">
+                                                    She is good in accountability
+                                                </li>
+                                            </ul>
+                                            <div class="bg-gray p-3"
+                                                style="background: #F3F5FF; border-bottom: 1px solid  #E5E5EA">
+                                                Feedback
                                             </div>
-                                            <button
-                                                class="btn rotated90 supAssessmentShowBtn rounded-circle bg-blue text-white pb-1">
-                                                <i class="fa-solid fa-angle-up"></i>
-                                            </button>
-                                        </div>
-                                        <div class="supervisorsAssessmentlist supAssessmentShow d-none px-3">
-                                            <p class="fs-14 fw-medium text-dark py-3">
-                                                Same
-                                            </p>
+                                            <ul class="py-3 fs-14 " style="padding-left: 34px;">
+                                                <li class="lh-base" style="list-style-type: none;">
+                                                    Testing Multi-Rater Feedback
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
 
                                     <!-- Expectation items end-->
-
-
-
-                                </div>
-                                <div class="weightage_details_item">
-                                    <div class="weightage_title gap-3" style="background: none;">
-                                        <h1>Goal (3) - Test-3</h1>
-                                        <div
-                                            class="d-flex totalweightagearea justify-content-start align-items-center gap-3">
-                                            <h1>Total Weightage</h1>
-                                            <span class="totalweightageBox">
-                                                100
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="weightage_body">
-                                        <ul class="py-2">
-                                            <li class="lh-base">
-                                                A
-                                            </li>
-                                            <li class="lh-base">
-                                                B
-                                            </li>
-                                            <li class="lh-base">
-                                                C
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Expectation items start-->
-                                    <div class="expectationItems">
-                                        <div
-                                            class="expectionItems_header d-flex justify-content-between align-items-center gap-3 px-3 py-3">
-                                            <div class="d-flex justify-content-start align-items-start gap-3 flex-wrap">
-                                                <h1 class="fs-14 fw-medium text-dark mb-0">
-                                                    Member's Assessment
-                                                </h1>
-                                            </div>
-                                            <button
-                                                class="btn rotated90  supAssessmentShowBtn rounded-circle bg-blue text-white pb-1">
-                                                <i class="fa-solid fa-angle-up"></i>
-                                            </button>
-                                        </div>
-                                        <div class="supervisorsAssessmentlist supAssessmentShow d-none px-3">
-                                            <p class="fs-14 fw-medium text-dark py-3">
-                                                ok
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Expectation items end-->
-                                    <!-- Expectation items start-->
-                                    <div class="expectationItems">
-                                        <div
-                                            class="expectionItems_header d-flex justify-content-between align-items-center gap-3 px-3 py-3">
-                                            <div class="d-flex justify-content-start align-items-start flex-wrap gap-3">
-                                                <h1 class="fs-14 fw-medium text-dark mb-0">
-                                                    Supervisor's Assessment
-                                                </h1>
-                                                <span class="fs-12 fw-medium px-2 py-1"
-                                                    style="background: #C2FFCF; color:#0A7E22;">
-                                                    Consistently Exceeds Expectation
-                                                </span>
-                                            </div>
-                                            <button
-                                                class="btn rotated90 supAssessmentShowBtn rounded-circle bg-blue text-white pb-1">
-                                                <i class="fa-solid fa-angle-up"></i>
-                                            </button>
-                                        </div>
-                                        <div class="supervisorsAssessmentlist supAssessmentShow d-none px-3">
-                                            <p class="fs-14 fw-medium text-dark py-3">
-                                                Same
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Expectation items end-->
-
-
-
-                                </div>
-                                <div class="weightage_details_item">
-                                    <div class="weightage_title gap-3" style="background: none;">
-                                        <h1>Goal (4) - Test-4</h1>
-                                        <div
-                                            class="d-flex totalweightagearea justify-content-start align-items-center gap-3">
-                                            <h1>Total Weightage</h1>
-                                            <span class="totalweightageBox">
-                                                100
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="weightage_body">
-                                        <ul class="py-2">
-                                            <li class="lh-base">
-                                                A
-                                            </li>
-                                            <li class="lh-base">
-                                                B
-                                            </li>
-                                            <li class="lh-base">
-                                                C
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Expectation items start-->
-                                    <div class="expectationItems">
-                                        <div
-                                            class="expectionItems_header d-flex justify-content-between align-items-center gap-3 px-3 py-3">
-                                            <div class="d-flex justify-content-start align-items-start gap-3 flex-wrap">
-                                                <h1 class="fs-14 fw-medium text-dark mb-0">
-                                                    Member's Assessment
-                                                </h1>
-                                            </div>
-                                            <button
-                                                class="btn rotated90  supAssessmentShowBtn rounded-circle bg-blue text-white pb-1">
-                                                <i class="fa-solid fa-angle-up"></i>
-                                            </button>
-                                        </div>
-                                        <div class="supervisorsAssessmentlist supAssessmentShow d-none px-3">
-                                            <p class="fs-14 fw-medium text-dark py-3">
-                                                ok
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Expectation items end-->
-                                    <!-- Expectation items start-->
-                                    <div class="expectationItems">
-                                        <div
-                                            class="expectionItems_header d-flex justify-content-between align-items-center gap-3 px-3 py-3">
-                                            <div class="d-flex justify-content-start align-items-start flex-wrap gap-3">
-                                                <h1 class="fs-14 fw-medium text-dark mb-0">
-                                                    Supervisor's Assessment
-                                                </h1>
-                                                <span class="fs-12 fw-medium px-2 py-1"
-                                                    style="background: #C2FFCF; color:#0A7E22;">
-                                                    Consistently Exceeds Expectation
-                                                </span>
-                                            </div>
-                                            <button
-                                                class="btn rotated90 supAssessmentShowBtn rounded-circle bg-blue text-white pb-1">
-                                                <i class="fa-solid fa-angle-up"></i>
-                                            </button>
-                                        </div>
-                                        <div class="supervisorsAssessmentlist supAssessmentShow d-none px-3">
-                                            <p class="fs-14 fw-medium text-dark py-3">
-                                                Same
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Expectation items end-->
-
-
-
-                                </div>
-
-
-                                <div
-                                    class="mt-4 d-flex justify-content-sm-end justify-content-center align-items-center gap-3">
-                                    <button class="btn bg-blue fs-14 px-4 text-white rounded-4">
-                                        Export to Pdf
-                                    </button>
                                 </div>
                             </div>
                             <!-- ============multi Rater Feedback area end================= -->
@@ -2157,7 +1864,7 @@
                                                 </h1>
                                                 <span class="fs-12 fw-medium px-2 py-1"
                                                     style="background: #C2FFCF; color:#0A7E22;">
-                                                    Does Not Meet Expectation
+                                                    Consistently Meet Expectation
                                                 </span>
                                             </div>
                                             <button
@@ -2165,10 +1872,10 @@
                                                 <i class="fa-solid fa-angle-up"></i>
                                             </button>
                                         </div>
-                                        <ul
-                                            class="supervisorsAssessmentlist supAssessmentShow d-none px-3 list-group-numbered">
+                                        <ul class="supervisorsAssessmentlist supAssessmentShow d-none pe-3  "
+                                            style="list-style-type: disc; padding-left: 30px;">
                                             <li class="fs-14 fw-medium text-dark py-3">
-                                                Core Comp
+                                                all good
                                             </li>
                                         </ul>
                                     </div>
@@ -2187,21 +1894,6 @@
 
                             <!-- ============= Team/Company Contribution area start================= -->
                             <div class="evaluationItems" id="teamCompanyContribution">
-                                <div class="weightage_details_item">
-                                    <div class="weightage_title gap-3" style="background: none;">
-                                        <h1>Test</h1>
-                                    </div>
-                                    <div class="weightage_body">
-                                        <ul class="py-2">
-                                            <li class="lh-base">
-                                                Test
-                                            </li>
-                                            <li class="lh-base">
-                                                Test
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                                 <div class="weightage_details_item mt-4">
                                     <div class="weightage_title gap-3" style="background: none;">
                                         <h1 class="lh-base">Contribution to Team/ Organization Performance</h1>
@@ -2236,7 +1928,7 @@
                                                 </h1>
                                                 <span class="fs-12 fw-medium px-2 py-1"
                                                     style="background: #C2FFCF; color:#0A7E22;">
-                                                    Inconsistently Meet Expectation
+                                                    Consistently Meet Expectation
                                                 </span>
                                             </div>
                                             <button
@@ -2244,10 +1936,9 @@
                                                 <i class="fa-solid fa-angle-up"></i>
                                             </button>
                                         </div>
-                                        <ul
-                                            class="supervisorsAssessmentlist supAssessmentShow d-none px-3 list-group-numbered">
+                                        <ul class="supervisorsAssessmentlist supAssessmentShow d-none px-3 ">
                                             <li class="fs-14 fw-medium text-dark py-3">
-                                                TC
+                                                Good
                                             </li>
                                         </ul>
                                     </div>
@@ -2267,105 +1958,219 @@
 
                             <!-- ============= Final Performance Outcome area start================= -->
                             <div class="evaluationItems" id="finalPerformanceOutcome">
-                                <div class="weightage_details_item p-3">
-                                    <div class="row g-xl-4 g-1 mt-1">
-                                        <div class="col-xxl-7 col-xl-7 col-lg-12 mt-0">
-                                            <ul
-                                                class="employee_leave_details_list resignationemployee_leave_details_list">
 
-                                                <li>
-                                                    <div
-                                                        class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap gap-md-5 gap-2">
-                                                        <span class="flex-shrink-0">Supervisor Rating :</span>
-                                                        <span class="activemarkbutton"
-                                                            style="width: fit-content !important;">Exceptional</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div
-                                                        class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap gap-md-5 gap-2">
-                                                        <span class="flex-shrink-0">Supervisor Comments :</span>
-                                                        <span style="width: fit-content !important;">Sup remarks
-                                                            exceptional</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div
-                                                        class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap gap-md-5 gap-2">
-                                                        <span class="flex-shrink-0">Member Comments :</span>
-                                                        <span style="width: fit-content !important;">Member has agreed
-                                                            with the supervisor's assessments</span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-xxl-5 col-xl-5 col-lg-12 mt-0">
-                                            <label for="" class="mb-1 fs-14">
-                                                Member Comments:
-                                            </label>
-                                            <input type="text" value="Agreed"
-                                                style="border-color: #C2C2C2; border-radius:8px;"
-                                                class=" form-control fs-7">
-                                        </div>
+                                <div class="mt-4">
+                                    <div class="table-responsive ">
+                                        <table class="table table-bordered border-gray ">
+                                            <thead>
+                                                <tr class=" border-0 text-nowrap  "
+                                                    style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
+
+                                                    <th class="border-0 w-50" style=" font-weight: 500; ">
+                                                        Assessed on</th>
+
+                                                    <th class="border-0 w-50" style="font-weight: 500;">
+                                                        Assessment</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody
+                                                style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
+                                                <tr class="text-nowrap   border-top-0"
+                                                    style=" height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-medium" colspan="2" style="background: #E5E5EA;">
+                                                        Goals
+                                                    </td>
+
+                                                </tr>
+                                                <tr class="text-nowrap   border-top-0"
+                                                    style=" height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-medium">
+                                                        Goal(1) - TEST 1
+                                                    </td>
+                                                    <td class="p-2 fs-12">
+                                                        Consistently Meet Expectation</td>
+
+                                                </tr>
+                                                <tr class="text-nowrap   border-top-0"
+                                                    style=" height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-medium">
+                                                        Goal(1) - TEST 1
+                                                    </td>
+                                                    <td class="p-2 fs-12">
+                                                        Consistently Meet Expectation</td>
+
+                                                </tr>
+                                                <tr class="text-nowrap   border-top-0"
+                                                    style=" height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-medium">
+                                                        Goal(1) - TEST 1
+                                                    </td>
+                                                    <td class="p-2 fs-12">
+                                                        Consistently Meet Expectation</td>
+
+                                                </tr>
+                                                <tr class="text-nowrap   border-top-0"
+                                                    style=" height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-medium">
+                                                        Goal(1) - TEST 1
+                                                    </td>
+                                                    <td class="p-2 fs-12">
+                                                        Consistently Meet Expectation</td>
+
+                                                </tr>
+                                                <tr class="text-nowrap   border-top-0"
+                                                    style=" height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-medium" colspan="2" style="background: #E5E5EA;">
+                                                        Core Competencies
+                                                    </td>
+
+                                                </tr>
+                                                <tr class="text-nowrap   border-top-0"
+                                                    style=" height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-medium">
+                                                        Accountability
+                                                    </td>
+                                                    <td class="p-2 fs-12">
+                                                        Consistently Meet Expectation</td>
+
+                                                </tr>
+                                                <tr class="text-nowrap   border-top-0"
+                                                    style=" height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-medium" colspan="2" style="background: #E5E5EA;">
+                                                        Team Contributions
+                                                    </td>
+
+                                                </tr>
+                                                <tr class="text-nowrap   border-top-0"
+                                                    style=" height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-medium">
+                                                        Contribution to Team/ Organization Performance
+                                                    </td>
+                                                    <td class="p-2 fs-12">
+                                                        Consistently Meet Expectation</td>
+
+                                                </tr>
+                                                <tr class="text-nowrap   border-top-0"
+                                                    style=" height: 50px; vertical-align: middle; ">
+                                                    <td class="p-2 fw-medium">
+                                                        Test
+                                                    </td>
+                                                    <td class="p-2 fs-12">
+                                                        Consistently Meet Expectation</td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
 
-                                <div class="weightage_details_item p-3 mt-4">
-                                    <div class="row g-xl-4 g-1 mt-1">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-12 mt-0">
-                                            <ul
-                                                class="employee_leave_details_list resignationemployee_leave_details_list">
 
-
-                                                <li>
-                                                    <div
-                                                        class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap gap-md-5 gap-2">
-                                                        <span class="flex-shrink-0"
-                                                            style="width: 246px !important;">Second Level Supervisor
-                                                            Status:</span>
-                                                        <span style="width: fit-content !important;">Second Level
-                                                            Supervisor has disagreed with supervisor's
-                                                            assessments</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div
-                                                        class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap gap-md-5 gap-2">
-                                                        <span class="flex-shrink-0"
-                                                            style="width: 246px !important;">Second Level Supervisor
-                                                            Rating:</span>
-                                                        <span class="activemarkbutton"
-                                                            style="width: fit-content !important;">Highly
-                                                            Effective</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div
-                                                        class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap gap-md-5 gap-2">
-                                                        <span class="flex-shrink-0"
-                                                            style="width: 246px !important;">Second Level Supervisor
-                                                            Comments:</span>
-                                                        <span style="width: fit-content !important;">Highly
-                                                            Effective</span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="mt-4 d-flex justify-content-sm-end justify-content-center align-items-center gap-3">
-                                    <button class="btn bg-blue fs-14 px-4 text-white rounded-4">
-                                        Export to Pdf
-                                    </button>
-                                </div>
                             </div>
                             <!-- =============Final Performance Outcome area end================= -->
 
-
-
-
                         </div>
+                        <!-- Final Performance Outcome bottom section start -->
+                        <div class="evaluationItems bg-white p-3 rounded-4 shadow mt-4" id="finalPerformanceOutcome2">
+                            <div class="weightage_details_item p-3 mt-4">
+                                <div class="row  ">
+                                    <div class="col-12 mt-0">
+                                        <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+
+                                            <li>
+                                                <div
+                                                    class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap gap-md-5 gap-2">
+                                                    <span class="flex-shrink-0">Supervisor Rating :</span>
+                                                    <span class="activemarkbutton fs-12 py-0"
+                                                        style="width: fit-content !important;">Highly Effective</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label for="" class="mb-1 fs-14">
+                                                    Supervisor Remarks
+                                                </label>
+                                                <input type="text" value="Good" disabled
+                                                    style="border-color: #C2C2C2; border-radius:8px;"
+                                                    class=" form-control fs-7 w-100">
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weightage_details_item p-3 mt-4">
+                                <div class="row ">
+                                    <div class="col-12">
+                                        <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                            <li>
+                                                <div
+                                                    class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap  gap-2">
+                                                    <span class="flex-shrink-0" style="width: 246px !important;">Member
+                                                        Status :</span>
+                                                    <span style="width: fit-content !important;">Member has agreed with
+                                                        the final assessments</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap  gap-2">
+                                                    <span class="flex-shrink-0" style="width: 246px !important;">Member
+                                                        Comments:</span>
+                                                    <span style="width: fit-content !important;">I agree</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="weightage_details_item p-3 mt-4">
+                                <div class="row g-xl-4 g-1 mt-1">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 mt-0">
+                                        <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                            <li>
+                                                <div
+                                                    class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap  gap-2">
+                                                    <span class="flex-shrink-0" style="width: 246px !important;">Second
+                                                        Level Supervisor
+                                                        Status:</span>
+                                                    <span style="width: fit-content !important;">Second Level
+                                                        Supervisor has disagreed with supervisor's
+                                                        assessments</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap  gap-2">
+                                                    <span class="flex-shrink-0" style="width: 246px !important;">Second
+                                                        Level Supervisor
+                                                        Rating:</span>
+                                                    <span class="activemarkbutton fs-12 py-0"
+                                                        style="width: fit-content !important;">Highly
+                                                        Effective</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    class="d-flex justify-content-start align-items-sm-center align-items-start flex-wrap  gap-2">
+                                                    <span class="flex-shrink-0" style="width: 246px !important;">Second
+                                                        Level Supervisor
+                                                        Comments:</span>
+                                                    <span style="width: fit-content !important;">agree</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="mt-4 d-flex justify-content-sm-end justify-content-center align-items-center gap-3">
+                                <button class="btn bg-blue fs-14 px-4 text-white rounded-4">
+                                    Export to Pdf
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Final Performance Outcome bottom section end -->
                         <!-- =================Year End Evaluation details area end=================== -->
 
                     </div>

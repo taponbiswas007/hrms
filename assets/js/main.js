@@ -1026,6 +1026,9 @@ $(document).ready(function () {
     $('.finalPerformanceOutcomeBtn').click(function () {
         changeEvaluationTab('finalPerformanceOutcome');
     });
+    $('.finalPerformanceOutcomeBtn').click(function () {
+        changeEvaluationTab('finalPerformanceOutcome2');
+    });
 });
 
 // $(document).ready(function () {
