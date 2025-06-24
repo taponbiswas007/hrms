@@ -1057,6 +1057,62 @@ $(document).ready(function () {
     });
 });
 
+// role access
+$(document).ready(function () {
+    // Track if items list was opened by checkbox
+    let openedByCheckbox = false;
+
+    // Handle main checkbox click
+    $('.group-main-checkbox').on('change', function () {
+        const $group = $(this).closest('.checkbox-group');
+        const $caret = $group.find('.group-caret i');
+        const $checkboxes = $group.find('.item-single-checkbox');
+        const $itemsList = $group.find('.checkbox-group-items');
+
+        if (!$itemsList.is(':visible')) {
+            // First click - just open the list
+            $itemsList.slideDown();
+            $caret.addClass('fa-rotate-90');
+            openedByCheckbox = true;
+
+            // Prevent checkbox state change
+            $(this).prop('checked', false);
+            return;
+        }
+
+        // Only change checkboxes if list was already open
+        if (openedByCheckbox) {
+            // Toggle all checkboxes in group
+            $checkboxes.prop('checked', this.checked);
+        }
+
+        openedByCheckbox = false;
+    });
+
+    // Handle caret click (only toggle visibility)
+    $('.group-caret').on('click', function (e) {
+        e.preventDefault();
+        const $group = $(this).closest('.checkbox-group');
+        const $itemsList = $group.find('.checkbox-group-items');
+        const $caret = $(this).find('i');
+
+        $itemsList.slideToggle();
+        $caret.toggleClass('fa-rotate-90');
+        openedByCheckbox = false;
+    });
+
+    // Handle individual checkbox clicks
+    $('.item-single-checkbox').on('change', function () {
+        const $group = $(this).closest('.checkbox-group');
+        const $mainCheckbox = $group.find('.group-main-checkbox');
+        const $checkboxes = $group.find('.item-single-checkbox');
+
+        // Update main checkbox state
+        const allChecked = $checkboxes.length === $checkboxes.filter(':checked').length;
+        $mainCheckbox.prop('checked', allChecked);
+    });
+});
+
 // $(document).ready(function () {
 //     $('.breadcrumb > .breadcrumb-item:first-child').click(function () {
 //         // Toggle all breadcrumb items except the first one
