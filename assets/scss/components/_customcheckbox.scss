@@ -91,3 +91,36 @@
     width: 4px !important;
     height: 8px !important;
 }
+
+/* Hide default appearance */
+.group-main-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #65558F;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+
+/* Checked background */
+.group-main-checkbox:checked {
+    background-color: #65558F;
+    border-color: #65558F;
+}
+
+/* Tick mark using :after */
+.group-main-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}

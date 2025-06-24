@@ -1059,59 +1059,74 @@ $(document).ready(function () {
 
 // role access
 $(document).ready(function () {
-    // Track if items list was opened by checkbox
-    let openedByCheckbox = false;
 
-    // Handle main checkbox click
-    $('.group-main-checkbox').on('change', function () {
-        const $group = $(this).closest('.checkbox-group');
-        const $caret = $group.find('.group-caret i');
-        const $checkboxes = $group.find('.item-single-checkbox');
-        const $itemsList = $group.find('.checkbox-group-items');
 
-        if (!$itemsList.is(':visible')) {
-            // First click - just open the list
-            $itemsList.slideDown();
-            $caret.addClass('fa-rotate-90');
-            openedByCheckbox = true;
-
-            // Prevent checkbox state change
-            $(this).prop('checked', false);
-            return;
+    // Click outside any group closes all
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.roleaccess_details_checkbox_area').length) {
+            $('.checkbox-group-items').slideUp();
+            $('.selectallopenmark i').removeClass('rotate-caret');
         }
-
-        // Only change checkboxes if list was already open
-        if (openedByCheckbox) {
-            // Toggle all checkboxes in group
-            $checkboxes.prop('checked', this.checked);
-        }
-
-        openedByCheckbox = false;
     });
 
-    // Handle caret click (only toggle visibility)
-    $('.group-caret').on('click', function (e) {
-        e.preventDefault();
-        const $group = $(this).closest('.checkbox-group');
-        const $itemsList = $group.find('.checkbox-group-items');
-        const $caret = $(this).find('i');
+    $('.roleaccess_details_checkbox_area').each(function () {
+        const group = $(this);
+        const mainCheckbox = group.find('.select-all-checkbox');
+        const itemCheckboxes = group.find('.item-single-checkbox');
+        const itemList = group.find('.checkbox-group-items');
+        const caretIcon = group.find('.selectallopenmark i');
 
-        $itemsList.slideToggle();
-        $caret.toggleClass('fa-rotate-90');
-        openedByCheckbox = false;
-    });
+        // Clicking label area (not checkbox) toggles list open/close
+        group.find('.group-checkbox').on('click', function (e) {
+            if ($(e.target).is('input')) return; // Ignore checkbox clicks
 
-    // Handle individual checkbox clicks
-    $('.item-single-checkbox').on('change', function () {
-        const $group = $(this).closest('.checkbox-group');
-        const $mainCheckbox = $group.find('.group-main-checkbox');
-        const $checkboxes = $group.find('.item-single-checkbox');
+            const isOpen = itemList.is(':visible');
 
-        // Update main checkbox state
-        const allChecked = $checkboxes.length === $checkboxes.filter(':checked').length;
-        $mainCheckbox.prop('checked', allChecked);
+            // Close others
+            $('.checkbox-group-items').slideUp();
+            $('.selectallopenmark i').removeClass('rotate-caret');
+
+            // Open this one if closed
+            if (!isOpen) {
+                itemList.slideDown();
+                caretIcon.addClass('rotate-caret');
+            }
+
+            e.preventDefault();
+            e.stopPropagation();
+        });
+
+        // Main checkbox: expand if hidden, otherwise check/uncheck all
+        mainCheckbox.on('click', function (e) {
+            const isListVisible = itemList.is(':visible');
+
+            if (!isListVisible) {
+                // Expand list only, no check/uncheck
+                $('.checkbox-group-items').slideUp();
+                $('.selectallopenmark i').removeClass('rotate-caret');
+
+                itemList.slideDown();
+                caretIcon.addClass('rotate-caret');
+
+                e.preventDefault(); // Cancel checkbox toggle
+                return;
+            }
+
+            // If list is visible, perform check/uncheck
+            const isChecked = $(this).is(':checked');
+            itemCheckboxes.prop('checked', isChecked);
+        });
+
+        // Update main checkbox when any item is clicked
+        itemCheckboxes.on('change', function () {
+            const allChecked = itemCheckboxes.length === itemCheckboxes.filter(':checked').length;
+            mainCheckbox.prop('checked', allChecked);
+        });
     });
 });
+
+
+
 
 // $(document).ready(function () {
 //     $('.breadcrumb > .breadcrumb-item:first-child').click(function () {

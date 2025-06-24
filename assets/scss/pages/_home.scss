@@ -898,6 +898,27 @@ footer {
     }
 }
 
+.rotate-caret {
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+.checkbox-group-items {
+    display: none;
+    padding-left: 40px;
+}
+
+.group-checkbox {
+    width: fit-content;
+}
+
+@media (max-width: 420px) {
+    .checkbox-group-items {
+        display: none;
+        padding-left: 0px;
+    }
+}
+
 .CompensatoryOffmenu {
     &:hover {
         .subdrpdownActive {

@@ -679,6 +679,42 @@ ul {
   height: 8px !important;
 }
 
+/* Hide default appearance */
+.group-main-checkbox {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #65558F;
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+/* Checked background */
+.group-main-checkbox:checked {
+  background-color: #65558F;
+  border-color: #65558F;
+}
+
+/* Tick mark using :after */
+.group-main-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .texteditor_area .editor-container {
   width: 100%;
 }
@@ -1524,6 +1560,32 @@ footer {
   margin-left: -5px !important;
 }
 
+.rotate-caret {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.checkbox-group-items {
+  display: none;
+  padding-left: 40px;
+}
+
+.group-checkbox {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 420px) {
+  .checkbox-group-items {
+    display: none;
+    padding-left: 0px;
+  }
+}
 .CompensatoryOffmenu:hover .subdrpdownActive {
   display: block;
   width: -webkit-fit-content;
