@@ -1399,15 +1399,33 @@
                                                 <span class="flex-shrink-0">Your declaration type :</span>
                                                 <div class="yourdeclarationtypearea">
                                                     <div class="d-flex justify-content-start align-items-start gap-3">
-                                                        <input type="radio" name="applicationFor"
-                                                            class="  custom-radio flex-shrink-0 mt-1">
+                                                        <input type="radio" name="tAXREGIME" checked
+                                                            class="  descustom-radio flex-shrink-0 mt-1">
                                                         <label>
-                                                            <span class="fw-medium d-inline" style="width: fit-content !important;">Option A (OLD
-                                                                TAX REGIME) :</span> Regular (allows you scope for
-                                                            claiming exemption of house rent allowance, standard
-                                                            deduction and deductions under chapter VIA of Income Tax Act
-                                                            which includes deduction for tuition fee, premium on life
-                                                            policies, national pension fund etc.)
+                                                            <span class="fw-medium d-inline"
+                                                                style="width: fit-content !important;">Option A (OLD
+                                                                TAX REGIME) :</span> <span class="d-inline">
+                                                                Regular (allows you scope for
+                                                                claiming exemption of house rent allowance, standard
+                                                                deduction and deductions under chapter VIA of Income Tax
+                                                                Act
+                                                                which includes deduction for tuition fee, premium on
+                                                                life
+                                                                policies, national pension fund etc.)
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-start gap-3">
+                                                        <input type="radio" name="tAXREGIME"
+                                                            class="  descustom-radio flex-shrink-0 mt-1">
+                                                        <label>
+                                                            <span class="fw-medium d-inline"
+                                                                style="width: fit-content !important;">Option B (NEW TAX REGIME):</span> <span class="d-inline fw-normal">
+                                                                Declaration under section 115BAC under new tax regime effective from FY 2020-21
+                                                            </span> 
+                                                            <span class="d-inline text-danger">
+                                                                (prohibits exemption of house rent allowance, standard deduction and certain deductions under chapter VIA of Income Tax Act which includes deduction for tuition fee, premium on life policies, national pension fund etc.) The option once exercised cannot be changed throughout the year. However salaried individuals can switch to other option in the subsequent year(s)
+                                                            </span>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -1419,174 +1437,197 @@
                         </div>
                         <!-- =================Employee Details area end=================== -->
 
-
-                        <!-- =================List of Asset Issued / Returned area start=================== -->
+                        <!-- =================Investment Details area start=================== -->
                         <div class="bg-white p-3 rounded-4 mt-4 shadow dataTable-area">
                             <div class="d-flex select-criteria justify-content-between align-items-center pb-3"
                                 style="border-bottom: 0.9px dashed #d2d2d2">
-                                <h1 class="fw-medium fs-5 text-black">List of Asset Issued / Returned </h1>
-
+                                <h1 class="fw-medium fs-5 text-black">Investment</h1>
                             </div>
-
-                            <!-- =============List start============= -->
-                            <div class="mt-3">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered border-gray">
-                                        <thead>
-                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
-                                                style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
-
-                                                <th class="border-0 ">Emp. Code</th>
-                                                <th class="border-0 ">Asset Name</th>
-                                                <th class="border-0 ">Brand</th>
-                                                <th class="border-0  ">Tag No</th>
-                                                <th class="border-0  ">Serial No</th>
-                                                <th class="border-0   ">Model No</th>
-                                                <th class="border-0   ">Status</th>
-                                                <th class="border-0">Provided Date
-                                                </th>
-                                                <th class="border-0">Remarks
-                                                </th>
-                                                <th class="border-0">Return Date
-                                                </th>
-                                                <th class="border-0">Return Remarks
-                                                </th>
-                                                <th class="border-0">
-                                                    Edit/Update
-                                                </th>
-
-
-                                            </tr>
-                                        </thead>
-                                        <tbody style="
-                                                font-family: DM Sans, sans-serif;
-                                                font-size: 14px !important;
-                                                ">
-                                            <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 40px;
-                                                    vertical-align: middle;
-                                                ">
-
-
-                                                <td class="p-2">FE0123</td>
-                                                <td class="p-2">LAPTOP</td>
-                                                <td class="p-2">
-                                                    Brand
-                                                </td>
-                                                <td class="p-2  ">
-                                                    12
-                                                </td>
-                                                <td class="p-2  ">
-                                                    10
-                                                </td>
-                                                <td class="p-2  ">
-                                                    10
-                                                </td>
-                                                <td class="p-2">
-                                                    <span class="depstatustext">
-                                                        Uncleared
-                                                    </span>
-                                                </td>
-                                                <td class="p-2">
-                                                    01/04/2025
-                                                </td>
-                                                <td class="p-2">
-                                                    Remarks
-                                                </td>
-                                                <td class="p-2">
-                                                    01/04/2025
-                                                </td>
-                                                <td class="p-2">
-                                                    Remarks
-                                                </td>
-
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-start align-items-center gap-3">
-                                                        <a href="#" class="datadownloadbtn px-4">Edit</a>
-
+                            <div class="row g-xl-3 g-1 pt-4">
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>House Rent Paid (Rs.) : </span>
+                                                <span style="width: fit-content !important;">0.00</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>Father's Name : </span>
+                                                <span style="width: fit-content !important;">Shri Sarya Narayan
+                                                    Singh</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>Employee Code : </span>
+                                                <span style="width: fit-content !important;">FE0123</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>Date Of Joining : </span>
+                                                <span style="width: fit-content !important;">04/04/2007</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>PAN Number(Approved) : </span>
+                                                <span style="width: fit-content !important;">AMSHFKE3I</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>Sex : </span>
+                                                <span style="width: fit-content !important;">Male</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>Designation : </span>
+                                                <span style="width: fit-content !important;">Assistant Sales
+                                                    Manager</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>Marital Status : </span>
+                                                <span style="width: fit-content !important;">Married</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>Start Period : </span>
+                                                <span style="width: fit-content !important;">01/04/2025</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>End Period :</span>
+                                                <span style="width: fit-content !important;">01/04/2025</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>Address :</span>
+                                                <span style="width: fit-content !important;">NA, West Kameng, Arunachal
+                                                    Pradesh</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-6 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-wrap gap-sm-3 gap-1">
+                                                <span>Email Id :</span>
+                                                <span
+                                                    style="width: fit-content !important;">shivam.sharma@intero.in</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-xl-12 col-12">
+                                    <ul class="employee_leave_details_list resignationemployee_leave_details_list">
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-start gap-xxl-3 gap-xl-3 flex-sm-nowrap flex-wrap gap-sm-3 gap-1">
+                                                <span class="flex-shrink-0">Your declaration type :</span>
+                                                <div class="yourdeclarationtypearea">
+                                                    <div class="d-flex justify-content-start align-items-start gap-3">
+                                                        <input type="radio" name="tAXREGIME" checked
+                                                            class="  descustom-radio flex-shrink-0 mt-1">
+                                                        <label>
+                                                            <span class="fw-medium d-inline"
+                                                                style="width: fit-content !important;">Option A (OLD
+                                                                TAX REGIME) :</span> <span class="d-inline">
+                                                                Regular (allows you scope for
+                                                                claiming exemption of house rent allowance, standard
+                                                                deduction and deductions under chapter VIA of Income Tax
+                                                                Act
+                                                                which includes deduction for tuition fee, premium on
+                                                                life
+                                                                policies, national pension fund etc.)
+                                                            </span>
+                                                        </label>
                                                     </div>
-                                                </td>
-
-                                            </tr>
-
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-
-
-                            </div>
-
-                            <!-- =============List end============= -->
-                        </div>
-                        <!-- =================List of Asset Issued / Returned area end=================== -->
-
-
-                        <!-- =================Assign Asset to Employee area start=================== -->
-                        <div class="bg-white p-3 mt-3 rounded-4 shadow mb-4">
-                            <h1 class=" fw-medium fs-5 text-black pb-3 " style=" border-bottom: 0.9px dashed #D2D2D2">
-                                Assign Asset to Employee
-                            </h1>
-
-
-
-                            <div class="row g-4 pt-3">
-
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Asset </label>
-                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
-                                        name="" id="">
-                                        <option value="">Select</option>
-                                        <option value="">Example 1</option>
-                                        <option value="">Example 2</option>
-                                    </select>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Tag No </label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Tag No">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Serial No </label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Serial No">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Model No </label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Model No">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Brand </label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Enter Brand">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> Remarks </label>
-                                    <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7" placeholder="Remarks">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label class="mb-1" for=""> <span class="text-danger">*</span>Provided On </label>
-                                    <input type="date" style="border-color: #c2c2c2; border-radius: 8px"
-                                        class="form-control fs-7">
-                                </div>
-
-
-
-                                <div class="col-xxl-3 col-xl-8 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="h-100 d-flex justify-content-end align-items-end flex-wrap gap-3">
-                                        <button class="btn bg-blue text-white rounded-4 px-5">
-                                            Add
-                                        </button>
-
-                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-start gap-3">
+                                                        <input type="radio" name="tAXREGIME"
+                                                            class="  descustom-radio flex-shrink-0 mt-1">
+                                                        <label>
+                                                            <span class="fw-medium d-inline"
+                                                                style="width: fit-content !important;">Option B (NEW TAX REGIME):</span> <span class="d-inline fw-normal">
+                                                                Declaration under section 115BAC under new tax regime effective from FY 2020-21
+                                                            </span> 
+                                                            <span class="d-inline text-danger">
+                                                                (prohibits exemption of house rent allowance, standard deduction and certain deductions under chapter VIA of Income Tax Act which includes deduction for tuition fee, premium on life policies, national pension fund etc.) The option once exercised cannot be changed throughout the year. However salaried individuals can switch to other option in the subsequent year(s)
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- =================Assign Asset to Employee area end=================== -->
+                        <!-- =================Investment Details area end=================== -->
+
+
+                       
 
                     </div>
                     <!-- ================= Main body area area end================= -->
