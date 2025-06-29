@@ -943,6 +943,55 @@ $(document).ready(function () {
 
 
 })
+
+
+
+$(document).ready(function () {
+    const $notification = $('#roleNotification');
+    const $closeBtn = $('#closeNotification');
+
+    // Show notification on page load
+    setTimeout(function () {
+        $notification.css('display', 'block');
+    }, 1000);
+
+    // Close notification when X is clicked
+    $closeBtn.on('click', function (e) {
+        e.stopPropagation(); // Prevent event bubbling
+        $notification.addClass('fade-out');
+        setTimeout(function () {
+            $notification.css('display', 'none');
+        }, 300);
+    });
+
+    // Auto-hide after 8 seconds if not closed
+    setTimeout(function () {
+        if ($notification.css('display') === 'block') {
+            $notification.addClass('fade-out');
+            setTimeout(function () {
+                $notification.css('display', 'none');
+            }, 300);
+        }
+    }, 8000);
+
+    $('.role_changer').click(function () {
+        $('.roleSelector').css({
+            'display': 'block'
+        })
+        $(this).css({
+            'display': 'none'
+        })
+    });
+    $('.roleAreaclose').click(function () {
+        $('.role_changer').css({
+            'display': 'block'
+        });
+        $('.roleSelector').css({
+            'display': 'none'
+        });
+    });
+});
+
 // progress chart area
 $(document).ready(function () {
     // Configuration
@@ -1472,9 +1521,6 @@ function toggleSections() {
         todoListContainer.parentNode.insertBefore(holidayListContainer, todoListContainer);
     }
 }
-
-
-
 
 
 

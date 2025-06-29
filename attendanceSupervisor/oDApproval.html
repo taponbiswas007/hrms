@@ -442,8 +442,8 @@
                             </li>
                             <!--  TDS  -->
                             <li class="sidebar-link-items">
-                                 <button data-bs-toggle="collapse" data-bs-target="#tdsLink"
-                                    aria-expanded="false" aria-controls="hRPoliciesLink"
+                                <button data-bs-toggle="collapse" data-bs-target="#tdsLink" aria-expanded="false"
+                                    aria-controls="hRPoliciesLink"
                                     class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/tdsicon.svg" alt="">
                                     TDS
@@ -931,10 +931,11 @@
                             </li>
                             <!-- Travel & Expense  -->
                             <li class="sidebar-link-items">
-                                 <button data-bs-toggle="collapse" data-bs-target="#travelExpenseLink"
+                                <button data-bs-toggle="collapse" data-bs-target="#travelExpenseLink"
                                     aria-expanded="false" aria-controls="hRPoliciesLink"
                                     class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
-                                    <img height="25px" width="25px" src="../assets/images/dashboard/traveExpenseicon.svg" alt="">
+                                    <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/traveExpenseicon.svg" alt="">
                                     Travel & Expense
                                 </button>
                                 <!-- dropdown -->
@@ -1136,9 +1137,9 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">New Joinee Attendance Approval <img class="d-inline"
-                                            height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
+                                        aria-expanded="false">OD Approval <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3  shadow-lg">
                                         <li><a class="dropdown-item mb-1" href="subordinateRegularizationRequests.html">
                                                 Subordinate Regularization Requests</a></li>
@@ -1146,9 +1147,9 @@
                                                 Multiple Days OD</a></li>
                                         <li><a class="dropdown-item mb-1" href="newJoineeAttendanceApproval.html">New
                                                 Joinee Attendance Approval</a></li>
-                                       <li><a class="dropdown-item mb-1" href="subordinateAttendance.html">
+                                        <li><a class="dropdown-item mb-1" href="subordinateAttendance.html">
                                                 Subordinate Attendance</a></li>
-                                       <li><a class="dropdown-item mb-1" href="oDApproval.html">
+                                        <li><a class="dropdown-item mb-1" href="oDApproval.html">
                                                 OD Approval</a></li>
 
                                         <!-- ===Roster Update menu=== -->
@@ -1182,93 +1183,76 @@
                                 </li>
                             </ol>
                         </nav>
+                        <div class="role_changer">
+                            <div class="main_icon" title="Change User Role">
+                                <svg fill="#ffffff" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m27.3 37.6c-3-1.2-3.5-2.3-3.5-3.5 0-1.2 0.8-2.3 1.8-3.2 1.8-1.5 2.6-3.9 2.6-6.4 0-4.7-2.9-8.5-8.3-8.5s-8.3 3.8-8.3 8.5c0 2.5 0.8 4.9 2.6 6.4 1 0.9 1.8 2 1.8 3.2 0 1.2-0.5 2.3-3.5 3.5-4.4 1.8-8.6 3.8-8.7 7.6 0.2 2.6 2.2 4.8 4.7 4.8h23c2.5 0 4.5-2.2 4.5-4.7-0.1-3.8-4.3-5.9-8.7-7.7z m17.2-18.6c0-7.4-6.1-13.5-13.5-13.5v-3.5l-6.8 5.5c-0.3 0.3-0.2 0.8 0.1 1.1l6.7 5.4v-3.5c4.7 0 8.5 3.8 8.5 8.5h-3.5l5.5 6.8c0.3 0.3 0.8 0.3 1.1 0l5.4-6.8h-3.5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="role_notification" id="roleNotification">
+                                <div class="close_notification" id="closeNotification"></div>
+                                <strong>Click me</strong> to change your user role
+                            </div>
+                        </div>
+                        <ul class="roleSelector">
+                            <li>Role</li>
+                            <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
+                            <li class="roleDropdownarea text-nowrap">
+                                <div class="custom-dropdown roleDropdown" style="width: 100%;">
+                                    <!-- Dropdown button -->
+                                    <div class="custom-dropdown-button border-0"
+                                        style="font-size: 12px !important; padding:0 18px 0 0;"
+                                        onclick="toggleDropdown(event)">
+                                        HR Factory
+                                    </div>
+                                    <!-- Dropdown options -->
+                                    <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
+                                        style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
+                                        <div class="text-nowrap custom-dropdown-option"
+                                            onclick="selectOption(event,'1', ' HR Factory')"> HR Factory</div>
+                                        <div class="text-nowrap custom-dropdown-option"
+                                            onclick="selectOption(event,'2', 'L2')">L2</div>
+                                        <div class="text-nowrap custom-dropdown-option"
+                                            onclick="selectOption(event,'3', 'L1')">L1</div>
+                                        <div class="text-nowrap custom-dropdown-option"
+                                            onclick="selectOption(event,'4', 'CorpComm')">CorpComm</div>
+                                        <div class="text-nowrap custom-dropdown-option"
+                                            onclick="selectOption(event,'5', 'Administration Clearance Factory')">
+                                            Administration Clearance Factory</div>
+                                        <div class="text-nowrap custom-dropdown-option"
+                                            onclick="selectOption(event,'6', 'Business Card')">Business Card
+                                        </div>
+                                        <div class="text-nowrap custom-dropdown-option"
+                                            onclick="selectOption(event,'7', 'HRADMIN')">HRADMIN</div>
+                                        <div class="text-nowrap custom-dropdown-option"
+                                            onclick="selectOption(event,'8', 'Administration')">Administration
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="roleAreaclose"><i class="fa-solid fa-xmark"></i></li>
+                        </ul>
                     </div>
 
-                    <!-- ================= Search Request Requests area start================= -->
+                    <!-- ================= OD Approval area start================= -->
                     <div class="attendance-area pb-4 pt-3">
-                        <div class="bg-white p-3 rounded-4 shadow mb-4">
-                            <div class="d-flex select-criteria justify-content-between align-items-center  pb-3"
-                                style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-5 text-black ">
-                                    Search Request</h1>
-                                <ul>
-                                    <li>Role</li>
-                                    <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
-
-
-                                    <li class="roleDropdownarea">
-                                        <div class="custom-dropdown roleDropdown" style="width: 100%;">
-                                            <!-- Dropdown button -->
-                                            <div class="custom-dropdown-button border-0"
-                                                style="font-size: 12px !important; padding:0 18px 0 0;"
-                                                onclick="toggleDropdown(event)">
-                                                HR Factory
-                                            </div>
-                                            <!-- Dropdown options -->
-                                            <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
-                                                style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'1', ' HR Factory')"> HR Factory</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'2', 'L2')">L2</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'3', 'L1')">L1</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'4', 'CorpComm')">CorpComm</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'5', 'Administration Clearance Factory')">
-                                                    Administration Clearance Factory</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'6', 'Business Card')">Business Card
-                                                </div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'7', 'HRADMIN')">HRADMIN</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'8', 'Administration')">Administration
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
+                        <div class="bg-white p-3 rounded-4 shadow ">OD Approval</h1>
                             <div class="row g-4 pt-3">
                                 <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label class=" mb-1" for="">
-                                        Department
+                                        Status
                                     </label>
-                                    <select name="" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-select fs-7" id="">
+                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7">
                                         <option value="">Select</option>
-                                        <option value="">Example</option>
                                     </select>
                                 </div>
-
-
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
-                                        Division
-                                    </label>
-                                    <select name="" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-select fs-7" id="">
-                                        <option value="">Select</option>
-                                        <option value="">Example</option>
-                                    </select>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <label class=" mb-1" for="">
-                                        Branch
-                                    </label>
-                                    <select name="" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-select fs-7" id="">
-                                        <option value="">Select</option>
-                                        <option value="">Example</option>
-                                    </select>
-                                </div>
-                                <div class="col-xxl-3 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
-                                    <div class=" h-100 w-100 d-flex justify-content-end align-items-end">
-                                        <button class="btn bg-blue text-white rounded-4 px-4">Filter</button>
+                                <div class="col-xxl-9 col-xl-8 col-lg-8 col-md-6 col-sm-6 col-12">
+                                    <div class=" h-100 w-100 d-flex  justify-content-end align-items-end">
+                                        <button class="btn bg-blue text-white rounded-4 px-4">Search</button>
                                     </div>
                                 </div>
                             </div>
@@ -1278,345 +1262,296 @@
 
                         <!-- =================data table area start=================== -->
                         <div class="bg-white p-3 rounded-4 shadow dataTable-area">
-                            <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                List</h1>
-
-
-
                             <!-- =============List start============= -->
-                            <div class="mt-3">
-                                <div class="table-responsive ">
-                                    <table class="table table-bordered border-gray">
-                                        <thead>
-                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top align-top"
-                                                style="color: #404040; background: #F9F9F9">
-                                                <th class="border-0 text-center">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="select-all-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
+                            <div class="table-responsive ">
+                                <table class="table table-bordered border-gray">
+                                    <thead>
+                                        <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top align-top"
+                                            style="color: #404040; background: #F9F9F9">
+
+                                            <th class="border-0">Code</th>
+                                            <th class="border-0">Employee Name</th>
+                                            <th class="border-0">Attendance Date</th>
+                                            <th class="border-0">Time In</th>
+                                            <th class="border-0">Time Out</th>
+                                            <th class="border-0">Status</th>
+                                            <th class="border-0 text-center">Reject</th>
+                                            <th class="border-0 text-center">Approved</th>
+                                            <th class="border-0 text-center">
+                                                Action
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody style="font-family: DM Sans, sans-serif;">
+                                        <tr class="text-nowrap fs-7 fw-normal"
+                                            style="color: #202020; height: 40px; vertical-align: middle; ">
+                                            <td class="p-2">FE1611</td>
+                                            <td class="p-2">John Doe</td>
+                                            <td class="p-2">
+                                                01/04/2025
+                                            </td>
+                                            <td class="p-2">
+                                                12:00 PM
+                                            </td>
+                                            <td class="p-2">
+                                                12:00 PM
+                                            </td>
+                                            <td class="p-2 text-center">
+                                                <span class="approvedStatus">Approve</span>
+                                            </td>
+                                            <td class="p-2">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <div class="position-relative" style="height: 20px; width: 20px">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" class="row-checkbox" />
+                                                            <span class="checkmark basicCheckmark"></span>
+                                                        </label>
                                                     </div>
-
-                                                </th>
-                                                <th class="border-0">Employee Name/Code</th>
-                                                <th class="border-0">Date</th>
-                                                <th class="border-0">Status</th>
-                                                <th class="border-0">Department_Name</th>
-                                                <th class="border-0">Division</th>
-                                                <th class="border-0">Branch</th>
-
-
-                                            </tr>
-                                        </thead>
-                                        <tbody style="font-family: DM Sans, sans-serif;">
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2">E123 - Shivam</td>
-                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                <td class="p-2">
-                                                    <span class="statustext">Present</span>
-                                                </td>
-                                                <td class="p-2">Development</td>
-                                                <td class="p-2">Tech</td>
-                                                <td class="p-2">
-                                                    Mumbai
-
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2">E123 - Shivam</td>
-                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                <td class="p-2">
-                                                    <span class="depstatustext">Absent</span>
-                                                </td>
-                                                <td class="p-2">Development</td>
-                                                <td class="p-2">Tech</td>
-                                                <td class="p-2">
-                                                    Mumbai
-
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2">E123 - Shivam</td>
-                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                <td class="p-2">
-                                                    <span class="statustext">Present</span>
-                                                </td>
-                                                <td class="p-2">Development</td>
-                                                <td class="p-2">Tech</td>
-                                                <td class="p-2">
-                                                    Mumbai
-
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2">E123 - Shivam</td>
-                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                <td class="p-2">
-                                                    <span class="depstatustext">Absent</span>
-                                                </td>
-                                                <td class="p-2">Development</td>
-                                                <td class="p-2">Tech</td>
-                                                <td class="p-2">
-                                                    Mumbai
-
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2">E123 - Shivam</td>
-                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                <td class="p-2">
-                                                    <span class="statustext">Present</span>
-                                                </td>
-                                                <td class="p-2">Development</td>
-                                                <td class="p-2">Tech</td>
-                                                <td class="p-2">
-                                                    Mumbai
-
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2">E123 - Shivam</td>
-                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                <td class="p-2">
-                                                    <span class="depstatustext">Absent</span>
-                                                </td>
-                                                <td class="p-2">Development</td>
-                                                <td class="p-2">Tech</td>
-                                                <td class="p-2">
-                                                    Mumbai
-
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2">E123 - Shivam</td>
-                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                <td class="p-2">
-                                                    <span class="statustext">Present</span>
-                                                </td>
-                                                <td class="p-2">Development</td>
-                                                <td class="p-2">Tech</td>
-                                                <td class="p-2">
-                                                    Mumbai
-
-                                                </td>
-
-                                            </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2">E123 - Shivam</td>
-                                                <td class="p-2">5/16/2025 12:00:00 AM</td>
-                                                <td class="p-2">
-                                                    <span class="depstatustext">Absent</span>
-                                                </td>
-                                                <td class="p-2">Development</td>
-                                                <td class="p-2">Tech</td>
-                                                <td class="p-2">
-                                                    Mumbai
-
-                                                </td>
-
-                                            </tr>
-
-
-
-
-
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- pagination area -->
-                                <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
-                                    <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                                        <li>
-                                            <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                <i class="fa-angle-left fa-solid"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                Prev
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
-                                                Next
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <small>Page:</small>
-                                            <span>1</span>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex gap-2">
-                                                <small>Of</small>
-                                                <p>100</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="custom-dropdown">
-                                                <!-- Dropdown button -->
-                                                <div class="custom-dropdown-button" onclick="toggleDropdown(event)">
-                                                    10
                                                 </div>
-                                                <!-- Dropdown options -->
-                                                <div class="custom-dropdown-options shadow">
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '1', '10')">10</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '2', '11')">11</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '3', '12')">12</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '4', '13')">13</div>
-                                                    <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '5', '14')">14</div>
+                                            </td>
+                                            <td class="p-2">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <div class="position-relative" style="height: 20px; width: 20px">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" class="row-checkbox" />
+                                                            <span class="checkmark basicCheckmark"></span>
+                                                        </label>
+                                                    </div>
                                                 </div>
+                                            </td>
+                                            <td class="p-2">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <button data-bs-toggle="modal" data-bs-target="#employeeODDetail"
+                                                        class="commonbtn px-4">View</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- ===============Employee OD Detail area start============ -->
+                            <div class="modal fade" id="employeeODDetail" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                Employee OD Detail <span class="approvedStatus ms-3">Approved</span>
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row g-xl-3 g-1 pt-4 employeeOdDetails">
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>Attendance Date :</span>
+                                                                <span
+                                                                    style="width: fit-content !important;">01/04/2025</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>Employee Name : </span>
+                                                                <span style="width: fit-content !important;">Champak
+                                                                    Baishya</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>Employee Code :</span>
+                                                                <span
+                                                                    style="width: fit-content !important;">INTR0008</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>Time Out : </span>
+                                                                <span style="width: fit-content !important;">12:00
+                                                                    PM</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>Time In :</span>
+                                                                <span style="width: fit-content !important;">12:00
+                                                                    PM</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>Out Latitude :</span>
+                                                                <span
+                                                                    style="width: fit-content !important;">27.6077123</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>In Latitude :</span>
+                                                                <span
+                                                                    style="width: fit-content !important;">27.6077151</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>Out Longitude :</span>
+                                                                <span
+                                                                    style="width: fit-content !important;">78.0518444</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>In Longitude : </span>
+                                                                <span
+                                                                    style="width: fit-content !important;">78.0518481</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>Out Address : </span>
+                                                                <span style="width: fit-content !important;">street no
+                                                                    2, Panchvati, Hathras, Aligarh Division, Uttar
+                                                                    Pradesh, 204101, India</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>In Address :</span>
+                                                                <span style="width: fit-content !important;">street no
+                                                                    2, Panchvati, Hathras, Aligarh Division, Uttar
+                                                                    Pradesh, 204101, India</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3 flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>Clock Out Comment :</span>
+                                                                <span
+                                                                    style="width: fit-content !important;">78.0518481</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class=" col-xl-6 col-12">
+                                                    <ul
+                                                        class="employee_leave_details_list resignationemployee_leave_details_list">
+                                                        <li>
+                                                            <div
+                                                                class="d-flex justify-content-start align-items-center gap-xxl-3 gap-xl-3  flex-lg-nowrap flex-wrap gap-sm-3 gap-1">
+                                                                <span>Clock In Comment :</span>
+                                                                <span
+                                                                    style="width: fit-content !important;">78.0518481</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
                                             </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div
-                                    class=" w-100 d-flex justify-content-sm-end justify-content-center fs-14 align-items-end gap-3 pt-3 ">
-                                    <button class="btn bg-blue text-white rounded-4 px-sm-4 px-3 fs-14">Reject
-                                        Selected</button>
-                                    <button class="btn bg-blue text-white rounded-4 px-sm-4 px-3 fs-14">Approve
-                                        Selected</button>
+                            </div>
+
+                            <!-- ===============Employee OD Detail area end============ -->
+                            <div class="row g-4 pt-3">
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Mark selected employee(s) as
+                                    </label>
+                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7">
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-9 col-xl-8 col-lg-8 col-md-6 col-sm-6 col-12">
+                                    <div
+                                        class=" h-100 w-100 d-flex justify-content-sm-start justify-content-end align-items-end">
+                                        <button class="btn bg-blue text-white rounded-4 px-4">Mark Attendance</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- =============List end============= -->
 
-
-
-
-
-
-
-
-
-
                         </div>
                         <!-- =================data table area end=================== -->
                     </div>
-                    <!-- ================= Employee Regularization Requests area end================= -->
-
 
 
 
@@ -1642,6 +1577,9 @@
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <!-- js -->
     <script src="../assets/js/main.js"></script>
+
+    </script>
+
 </body>
 
 </html>
