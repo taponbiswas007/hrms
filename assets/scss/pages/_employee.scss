@@ -593,6 +593,17 @@
     color: #4A59A7;
 }
 
+.employeeInformation {
+    table {
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    background: #F9F9F9;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 992px) {
 

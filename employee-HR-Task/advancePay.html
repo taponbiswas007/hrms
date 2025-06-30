@@ -1130,10 +1130,6 @@
                                         <li><a class="dropdown-item mb-1" href="companyAnnouncements.html">Hr Task</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
-                                                href="../employee_SupervisorTask/advanceRecommend.html">Supervisor
-                                                Tasks</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1"
                                                 href="../employee-Reports/letters.html">Reports</a></li>
                                         <li><a class="dropdown-item mb-1"
                                                 href="../employee-Appointment-Letters/appointmentLetters.html">Appointment
@@ -1141,10 +1137,9 @@
 
                                     </ul>
                                 </li>
-
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Clearance <img class="d-inline" height="20px "
+                                        aria-expanded="false">Advance Approval <img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
@@ -1178,10 +1173,11 @@
                                         <li><a class="dropdown-item mb-1"
                                                 href="reinstatementApproval.html">Reinstatement Approval</a>
                                         </li>
-
                                     </ul>
                                 </li>
-
+                                <li class="breadcrumb-item">
+                                    <a style="color: #000000" href="#">Advance Pay</a>
+                                </li>
                             </ol>
                         </nav>
                         <!-- user role area -->
@@ -1233,13 +1229,18 @@
                     <div class="main-body-area pb-4 pt-3">
                         <div class="bg-white p-3 rounded-4 shadow mb-4">
                             <h1 class=" fw-medium fs-5 text-black pb-3 " style=" border-bottom: 0.9px dashed #D2D2D2">
-                                Search Resignation Employee
+                                Search Panel
                             </h1>
-
-
-
                             <div class="row g-4 pt-3">
-
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Company </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class="mb-1" for=""> Employee Code </label>
                                     <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
@@ -1259,13 +1260,10 @@
                                         <option value="">Example 2</option>
                                     </select>
                                 </div>
-
-
-
-                                <div class="col-xxl-3 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <div class="h-100 d-flex justify-content-end align-items-end">
+                                <div class="col-xxl-12 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="h-100 d-flex justify-content-end align-items-end flex-wrap gap-3">
                                         <button class="btn bg-blue text-white rounded-4 px-5">
-                                            Search
+                                            Get
                                         </button>
                                     </div>
                                 </div>
@@ -1276,7 +1274,7 @@
                         <div class="bg-white p-3 rounded-4 mt-4 shadow dataTable-area">
                             <div class="d-flex select-criteria justify-content-between align-items-center pb-3"
                                 style="border-bottom: 0.9px dashed #d2d2d2">
-                                <h1 class="fw-medium fs-5 text-black">Resigned Employee Detail</h1>
+                                <h1 class="fw-medium fs-5 text-black">Advance Request List</h1>
 
                             </div>
 
@@ -1287,125 +1285,208 @@
                                         <thead>
                                             <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
                                                 style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
-                                                <th class="border-0 px-2">
-                                                    <div class="d-flex justify-content-start align-items-center gap-1">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="select-all-checkbox" />
-                                                                <span class="checkmark basicCheckmark"></span>
-                                                            </label>
-                                                        </div>
-                                                        <span> All</span>
-                                                    </div>
-                                                </th>
-                                                <th class="border-0 "></th>
-                                                <th class="border-0 ">Code</th>
-                                                <th class="border-0 ">Name</th>
-                                                <th class="border-0   ">Shortfall in Notice Period</th>
-                                                <th class="border-0   ">Effective Date</th>
-                                                <th class="border-0  text-center ">Department status</th>
-                                                <th class="border-0   ">Relieving Date</th>
-                                                <th class="border-0   ">Last Working Date</th>
-                                                <th class="border-0  px-3 ">Resigned / Terminated
-                                                </th>
-                                                <th class="border-0  px-3 ">DR/CR
-                                                </th>
-                                                <th class="border-0  px-3 ">Amount (Rs.)
-                                                </th>
-                                                <th class="border-0  px-3 ">Remarks
-                                                </th>
-                                                <th class="border-0  px-3 ">HR Action
-                                                </th>
-                                                <th class="border-0  px-3 text-center">Clearance Report
-                                                </th>
 
+                                                <th class="border-0 ">Request Id</th>
+                                                <th class="border-0 ">Emp. Code</th>
+                                                <th class="border-0 ">Emp. Name</th>
+                                                <th class="border-0 ">Requested Amount</th>
+                                                <th class="border-0 ">Approved Amount</th>
+                                                <th class="border-0 ">Status</th>
+                                                <th class="border-0 ">Approved On</th>
+                                                <th class="border-0 text-center ">Action
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody style="
                                                 font-family: DM Sans, sans-serif;
-                                                font-size: 12px !important;
+                                                font-size: 14px !important;
                                                 ">
                                             <tr class="text-nowrap fw-normal" style="
                                                     color: #202020;
                                                     height: 40px;
                                                     vertical-align: middle;
                                                 ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                                <td class="p-2">
-                                                    <button class="detailsviewbtn">View</button>
-                                                </td>
+                                                <td class="p-2">1</td>
                                                 <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
-                                                <td class="p-2">
-                                                    0
+                                                <td class="p-2  ">
+                                                    10001.00
                                                 </td>
-                                                <td class="p-2 ">
-                                                    14/10/2024
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    Accepted by HR
+                                                </td>
+                                                <td class="p-2">
+                                                    25/02/2025
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <span class="depstatustext">
-                                                        Not Approved
-                                                    </span>
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#approveRejectAdvancePay"
+                                                        style="color: #3A57E8;">Select</button>
                                                 </td>
-
-                                                <td class="p-2 text-center">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <input type="date" class="form-control" placeholder="Remarks">
-                                                    </div>
-                                                </td>
-                                                <td class="p-2">
-                                                    24/10/2024
-                                                </td>
-                                                <td class="p-2">
-                                                    VOLUNTARY
-                                                </td>
-                                                <td class="p-2 " style="min-width: 130px;">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <select name="" id="" class="form-select">
-                                                            <option value="">Credit</option>
-                                                        </select>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2" style="min-width: 165px;">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter Amount">
-                                                    </div>
-                                                </td>
-                                                <td class="p-2" style="min-width: 165px;">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <input type="text" class="form-control" placeholder="Remarks">
-                                                    </div>
-                                                </td>
-                                                <td class="p-2">
-                                                    <button class="seeapprobtn">Undo Resignation /Termination</button>
-                                                </td>
-                                                <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">Download</button>
-                                                </td>
-
-
-
-
-
                                             </tr>
-
-
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    Accepted by HR
+                                                </td>
+                                                <td class="p-2">
+                                                    25/02/2025
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#approveRejectAdvancePay"
+                                                        style="color: #3A57E8;">Select</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    Accepted by HR
+                                                </td>
+                                                <td class="p-2">
+                                                    25/02/2025
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#approveRejectAdvancePay"
+                                                        style="color: #3A57E8;">Select</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    Accepted by HR
+                                                </td>
+                                                <td class="p-2">
+                                                    25/02/2025
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#approveRejectAdvancePay"
+                                                        style="color: #3A57E8;">Select</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    Accepted by HR
+                                                </td>
+                                                <td class="p-2">
+                                                    25/02/2025
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#approveRejectAdvancePay"
+                                                        style="color: #3A57E8;">Select</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    Accepted by HR
+                                                </td>
+                                                <td class="p-2">
+                                                    25/02/2025
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#approveRejectAdvancePay"
+                                                        style="color: #3A57E8;">Select</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 40px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">1</td>
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    10001.00
+                                                </td>
+                                                <td class="p-2  ">
+                                                    Accepted by HR
+                                                </td>
+                                                <td class="p-2">
+                                                    25/02/2025
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#approveRejectAdvancePay"
+                                                        style="color: #3A57E8;">Select</button>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
+
                                 <!-- pagination area -->
                                 <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
                                     <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
@@ -1457,20 +1538,385 @@
                                                         onclick="selectOption(event, '5', '14')">14</div>
                                                 </div>
                                             </div>
-
                                         </li>
                                     </ul>
                                 </div>
-
-                                <div class=" h-100 d-flex justify-content-end gap-3 mt-4 align-items-center">
-                                    <button class="btn bg-blue text-white rounded-4 px-4">
-                                        Approve
-                                    </button>
-                                    <button class="btn bg-blue text-white rounded-4 px-4" style="background: #FC5A5A;">
-                                        Cancel
-                                    </button>
+                                <!-- ===============Approve/Reject Advance Pay area start============ -->
+                                <div class="modal fade" id="approveRejectAdvancePay" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                    Approve/Reject Advance Pay</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div
+                                                    class="d-flex justify-content-end align-items-center gap-3 flex-wrap">
+                                                    <button data-bs-toggle="modal" data-bs-target="#rescheduleHistory"
+                                                        class="btn bg-blue text-white fs-14 px-4 rounded-4">Reschedule
+                                                        History</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#paymentHistory"
+                                                        class="btn bg-blue text-white fs-14 px-4 rounded-4">Payment
+                                                        History</button>
+                                                </div>
+                                                <div class="row g-3  mt-4">
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Requested By </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7"
+                                                            value="INTR0001 - Yu Huaiqing Pet" />
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Amount Requested </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7" value="10001.00" />
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Requested No of Installment </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7" value="1" />
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Requested Date </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7" value="11-Mar-2024" />
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Loan Purpose </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7" value="test" />
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Loan Type </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7" value="Advance" />
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Approved Amount Rs. </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7" value="10001.00" />
+                                                    </div>
+                                                    <div class="col-xl-8 col-lg-8 col-12">
+                                                        <label class="mb-1" for=""> Approved No of Installment </label>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center gap-3 flex-lg-nowrap flex-wrap">
+                                                            <input type="text"
+                                                                style="border-color: #c2c2c2; border-radius: 8px"
+                                                                disabled class="form-control w-100 fs-7" value="1" />
+                                                            <div class="position-relative flex-shrink-0">
+                                                                <label class="custom-checkbox">
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="checkmark basicCheckmark me-2"
+                                                                        style="margin-top: -3px;"></span>
+                                                                    Is Post Dated Cheques recieved
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12 col-lg-12 col-12">
+                                                        <label class="mb-1" for="">If Yes then Cheque Nos.</label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px"
+                                                            class="form-control fs-7" value="NA" />
+                                                    </div>
+                                                    <div class="col-xl-12 col-lg-12 col-12">
+                                                        <label class="mb-1" for="">Deduction Month</label>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center flex-sm-nowrap flex-wrap gap-3">
+                                                            <input type="date" disabled
+                                                                style="border-color: #c2c2c2; border-radius: 8px"
+                                                                class="form-control fs-7" value="Mar-2024" />
+                                                            <div
+                                                                class=" d-flex justify-content-start flex-shrink-0  align-items-center flex-wrap gap-3 fs-14">
+                                                                <span>Status</span>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center gap-3">
+                                                                    <div
+                                                                        class="d-flex justify-content-start align-items-center gap-3">
+                                                                        <input type="radio" name="status" disabled
+                                                                            class="  descustom-radio flex-shrink-0">
+                                                                        <label>Approve</label>
+                                                                    </div>
+                                                                    <div
+                                                                        class="d-flex justify-content-start align-items-center  gap-3">
+                                                                        <input type="radio" name="status" disabled
+                                                                            class="  descustom-radio flex-shrink-0">
+                                                                        <label>Reject</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12 col-lg-12 col-12">
+                                                        <label class=" mb-1" for="">
+                                                            Remarks
+                                                        </label>
+                                                        <textarea name="" id=""
+                                                            style="border-color: #C2C2C2; border-radius:8px; height: 83px; resize: none;"
+                                                            class=" form-control fs-7" disabled></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer justify-content-center justify-content-sm-end">
+                                                <button class="btn bg-blue text-white rounded-4 px-4"
+                                                    data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
+                                                <button class="btn  text-white rounded-4 px-4"
+                                                    style="background: #5A6185;" data-bs-toggle="modal"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                                <button class="btn bg-blue text-white rounded-4 px-4"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#rescheduleAdvancePay">Reschedule</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
+                                <!-- ==============Approve/Reject Advance Pay area end============ -->
+
+
+                                <!-- ===============Reschedule Advance Pay area start============ -->
+                                <div class="modal fade" id="rescheduleAdvancePay" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                    Reschedule Advance Pay</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row g-3 ">
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Total Approved Amount </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7" />
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Total Outstanding Balance </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7" />
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Remaining Tenure (Months) </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7" />
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> Effective From </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px" disabled
+                                                            class="form-control fs-7" />
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""> <span
+                                                                class="text-danger">*</span>Reschedule Type </label>
+                                                        <select name="" id=""
+                                                            style="border-color: #c2c2c2; border-radius: 8px"
+                                                            class="form-select fs-7">
+                                                            <option value="">Select</option>
+                                                        </select>
+                                                        <p class="notetext mb-0">*Enter months to skip for deduction in
+                                                            next payroll</p>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 col-12">
+                                                        <label class="mb-1" for=""><span class="text-danger">*</span>
+                                                            Reschedule Value </label>
+                                                        <input type="text"
+                                                            style="border-color: #c2c2c2; border-radius: 8px"
+                                                            class="form-control fs-7" />
+                                                    </div>
+                                                    <div class="col-xl-12 col-lg-12 col-12">
+                                                        <label class="mb-1" for=""><span class="text-danger">*</span>
+                                                            Reason </label>
+                                                        <textarea name="" id=""
+                                                            style="border-color: #c2c2c2; border-radius: 8px; height: 60px;"
+                                                            class="form-control fs-7"
+                                                            placeholder="Enter Reason"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer justify-content-center justify-content-sm-end">
+                                                <button class="btn  text-white rounded-4 px-4"
+                                                    style="background: #5A6185;" data-bs-toggle="modal"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                                <button class="btn bg-blue text-white rounded-4 px-4"
+                                                    data-bs-toggle="modal" data-bs-dismiss="modal">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ==============Reschedule Advance Pay area end============ -->
+
+
+                                <!-- ===============Reschedule History area start============ -->
+                                <div class="modal fade" id="rescheduleHistory" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                    Reschedule History</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered border-gray">
+                                                        <thead>
+                                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
+                                                                style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
+
+                                                                <th class="border-0 ">Request_Id</th>
+                                                                <th class="border-0 ">Scheduling Date</th>
+                                                                <th class="border-0 ">Start From</th>
+                                                                <th class="border-0 ">End To</th>
+                                                                <th class="border-0 ">Scheduling Type</th>
+                                                                <th class="border-0 ">Change Value</th>
+                                                                <th class="border-0 ">Current Tenure</th>
+                                                                <th class="border-0  ">Outstanding Balance
+                                                                </th>
+                                                                <th class="border-0 text-center ">Remarks
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody style="
+                                                font-family: DM Sans, sans-serif;
+                                                font-size: 14px !important;
+                                                ">
+                                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">01/03/2024</td>
+                                                                <td class="p-2">March-2024</td>
+                                                                <td class="p-2  ">
+                                                                    April-2024
+                                                                </td>
+                                                                <td class="p-2  ">
+                                                                    Original
+                                                                </td>
+                                                                <td class="p-2  ">
+                                                                    0
+                                                                </td>
+                                                                <td class="p-2">
+                                                                    1
+                                                                </td>
+                                                                <td class="p-2">
+                                                                    1
+                                                                </td>
+                                                                <td class="p-2 text-center">
+                                                                    hr approved
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button class="btn  text-white rounded-4 px-4"
+                                                    style="background: #5A6185;" data-bs-toggle="modal"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- =============Reschedule History area end============ -->
+
+
+                                <!-- ===============Payment History area start============ -->
+                                <div class="modal fade" id="paymentHistory" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                    Payment History</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered border-gray">
+                                                        <thead>
+                                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
+                                                                style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
+
+                                                                <th class="border-0 ">Request_Id</th>
+                                                                <th class="border-0 ">Employee Name</th>
+                                                                <th class="border-0 ">Month</th>
+                                                                <th class="border-0 ">Year</th>
+                                                                <th class="border-0 ">Instalment Amount</th>
+                                                                <th class="border-0 ">Paid Amount</th>
+                                                                <th class="border-0 ">Outstanding Amount</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody style="
+                                                font-family: DM Sans, sans-serif;
+                                                font-size: 14px !important;
+                                                ">
+                                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                                                <td class="p-2">1</td>
+                                                                <td class="p-2">Yu Huaiqing Pet</td>
+                                                                <td class="p-2">3</td>
+                                                                <td class="p-2  ">
+                                                                    2024
+                                                                </td>
+                                                                <td class="p-2  ">
+                                                                    10001.00
+                                                                </td>
+                                                                <td class="p-2  ">
+                                                                    10001.00
+                                                                </td>
+                                                                <td class="p-2">
+                                                                    0.00
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button class="btn  text-white rounded-4 px-4"
+                                                    style="background: #5A6185;" data-bs-toggle="modal"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                                <button class="btn  bg-blue text-white rounded-4 px-4"
+                                                    data-bs-toggle="modal" data-bs-dismiss="modal">Download</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- =============Payment History area end============ -->
                             </div>
 
                             <!-- =============List end============= -->

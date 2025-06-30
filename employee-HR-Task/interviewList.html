@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- fav icon -->
-    <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon" />
     <title>Employee HR Task</title>
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <!-- bootstrap -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <!-- simple bar -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
     <noscript>
@@ -41,7 +41,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css -->
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 
 <body>
@@ -49,14 +49,17 @@
         <div class="d-flex align-items-start justify-content-between">
             <!-- side bar -->
             <div class="bg-white side-bar vh-100">
-                <div class="position-relative ">
-                    <a href="#" class="d-flex  align-items-center justify-content-center p-3 logo"
-                        style="  background: url(../assets/images/dashboard/topbar_bg.png) no-repeat 0 0/100% 100%; margin-bottom: -1px">
-                        <img src="../assets/images/dashboard/logo.png" height="42px" width="63px" alt="logo">
+                <div class="position-relative">
+                    <a href="#" class="d-flex align-items-center justify-content-center p-3 logo" style="
+                background: url(../assets/images/dashboard/topbar_bg.png)
+                  no-repeat 0 0/100% 100%;
+                margin-bottom: -1px;
+              ">
+                        <img src="../assets/images/dashboard/logo.png" height="42px" width="63px" alt="logo" />
                     </a>
 
                     <button class="d-block d-lg-none position-absolute closeSidebar z-3"
-                        style=" top: 25px ; right: -35px">
+                        style="top: 25px; right: -35px">
                         <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <!-- Arrow line -->
                             <path d="M5 11H18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
@@ -68,26 +71,23 @@
                         </svg>
                     </button>
 
-                    <div data-simplebar class="bg-blue text-white menu ">
-
+                    <div data-simplebar class="bg-blue text-white menu">
                         <!-- menu items -->
-                        <ul class="list-unstyled " id="accordionMenu">
-
+                        <ul class="list-unstyled" id="accordionMenu">
                             <!-- admin -->
                             <li class="sidebar-link-items">
                                 <button type="button" data-bs-toggle="collapse" data-bs-target="#adminLink"
                                     aria-expanded="false" aria-controls="adminLink"
-                                    class=" collapsed d-flex align-items-center border-bottom-op4 justify-content-start text-capitalize text-white fs-7 fw-normal py-2 ps-3 sidebar-link w-100 gap-3">
+                                    class="collapsed d-flex align-items-center border-bottom-op4 justify-content-start text-capitalize text-white fs-7 fw-normal py-2 ps-3 sidebar-link w-100 gap-3">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/settings.svg"
-                                        alt="">
+                                        alt="" />
                                     Admin
-
                                 </button>
                                 <!-- dropdown menu -->
-                                <ul class=" sidebar-submenu accordion-collapse collapse" id="adminLink"
+                                <ul class="sidebar-submenu accordion-collapse collapse" id="adminLink"
                                     data-bs-parent="#accordionMenu">
-                                     <li>
-                                        <a href="../admin-memberSetup/memberSetup.html" class=" mb-1">
+                                    <li>
+                                        <a href="../admin-memberSetup/memberSetup.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -98,7 +98,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="../admin-companyMaster/companySetup.html" class=" mb-1">
+                                        <a href="../admin-companyMaster/companySetup.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -108,7 +108,8 @@
                                             Company Master
                                         </a>
                                     </li>
-                                    <li><a href="../admin-eMSMaster/joiningDetails.html" class=" mb-1">
+                                    <li>
+                                        <a href="../admin-eMSMaster/joiningDetails.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -116,8 +117,10 @@
                                                 </svg>
                                             </div>
                                             EMS Master
-                                        </a></li>
-                                    <li><a href="../admin-attendanceMaster/leave.html" class=" mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../admin-attendanceMaster/leave.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -125,8 +128,10 @@
                                                 </svg>
                                             </div>
                                             Attendance Master
-                                        </a></li>
-                                    <li><a href="../admin-historyData/historyData.html" class=" mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../admin-historyData/historyData.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -134,8 +139,11 @@
                                                 </svg>
                                             </div>
                                             History Data
-                                        </a></li>
-                                    <li><a href="../admin-EmployeeSeparationMaster/employeeSeparationMaster.html" class=" mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../admin-EmployeeSeparationMaster/employeeSeparationMaster.html"
+                                            class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -143,8 +151,10 @@
                                                 </svg>
                                             </div>
                                             Emp Seperation Master
-                                        </a></li>
-                                    <li><a href="../admin-confirmationMaster/probationAssessmentMaster.html" class=" ">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../admin-confirmationMaster/probationAssessmentMaster.html" class=" ">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -152,24 +162,26 @@
                                                 </svg>
                                             </div>
                                             Confirmation Master
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             <!-- Dashboard -->
                             <li class="sidebar-link-items">
-                                <a class="d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
+                                <a class="d-flex align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
                                     href="../dashboard/dashboard.html">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
-                                        alt="">
+                                        alt="" />
                                     Dashboard
                                 </a>
                             </li>
 
                             <!-- my profile -->
                             <li class="sidebar-link-items">
-                                <a class="d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
+                                <a class="d-flex align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
                                     href="../myProfile/general.html">
-                                    <img height="25px" width="25px" src="../assets/images/dashboard/profile.svg" alt="">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/profile.svg"
+                                        alt="" />
                                     My Profile
                                 </a>
                             </li>
@@ -178,26 +190,28 @@
                             <li class="sidebar-link-items">
                                 <button type="button" data-bs-toggle="collapse" data-bs-target="#attendanceLink"
                                     aria-expanded="false" aria-controls="attendanceLink"
-                                    class="collapsed d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    class="collapsed d-flex align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/attendance.svg"
-                                        alt="">
+                                        alt="" />
                                     Attendance
                                 </button>
 
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" data-bs-parent="#accordionMenu"
                                     id="attendanceLink">
-                                    <li><a href="../attendance/attendanceDetails.html" class="mb-1">
+                                    <li>
+                                        <a href="../attendance/attendanceDetails.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             </div>
-                                            My
-                                            Attendance
-                                        </a></li>
-                                    <li><a href="../reports/attendance.html" class="mb-1">
+                                            My Attendance
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../reports/attendance.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -205,18 +219,21 @@
                                                 </svg>
                                             </div>
                                             Reports
-                                        </a></li>
-                                    <li><a href="../branchHr/markAttendance.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../branchHr/markAttendance.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             </div>
-                                            Branch
-                                            Hr
-                                        </a></li>
-                                    <li><a href="../attendanceSupervisor/newJoineeAttendanceApproval.html" class="mb-1">
+                                            Branch Hr
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../attendanceSupervisor/newJoineeAttendanceApproval.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -224,9 +241,10 @@
                                                 </svg>
                                             </div>
                                             Supervisor
-                                        </a></li>
-                                   <li><a href="../hr-task/markUserAttendance.html"
-                                            class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../hr-task/markUserAttendance.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -234,8 +252,10 @@
                                                 </svg>
                                             </div>
                                             HR Task
-                                        </a></li>
-                                    <li><a href="../late/lateUpdate.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../late/lateUpdate.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -243,32 +263,34 @@
                                                 </svg>
                                             </div>
                                             Late
-                                        </a></li>
-                                    <li><a href="../biometric/bioMetricStatusUpdate.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../biometric/bioMetricStatusUpdate.html" class="mb-1">
                                             <div class="arrow-right">
-
-
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             </div>
                                             Biometric
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             <!-- Leaves -->
                             <li class="sidebar-link-items">
                                 <button data-bs-toggle="collapse" data-bs-target="#leaveLink" aria-expanded="false"
                                     aria-controls="leaveLink"
-                                    class="collapsed d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
-                                    <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg" alt="">
+                                    class="collapsed d-flex align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/leave.svg" alt="" />
                                     Leave
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="leaveLink"
                                     data-bs-parent="#accordionMenu">
-                                    <li><a href="../myLeave/leaveRequest.html" class="mb-1">
+                                    <li>
+                                        <a href="../myLeave/leaveRequest.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -278,7 +300,8 @@
                                             My Leaves
                                         </a>
                                     </li>
-                                    <li><a href="../supervisor/leaveApproval.html" class="mb-1">
+                                    <li>
+                                        <a href="../supervisor/leaveApproval.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -286,8 +309,10 @@
                                                 </svg>
                                             </div>
                                             Supervisor
-                                        </a></li>
-                                    <li><a href="../leaveReports/employeeLeaveApplication.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../leaveReports/employeeLeaveApplication.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -295,8 +320,10 @@
                                                 </svg>
                                             </div>
                                             Reports
-                                        </a></li>
-                                    <li><a href="../leavesHR-task/leaveApproval.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../leavesHR-task/leaveApproval.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -304,8 +331,10 @@
                                                 </svg>
                                             </div>
                                             HR Task
-                                        </a></li>
-                                    <li><a href="../leaveRegularization/leaveRegularization.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../leaveRegularization/leaveRegularization.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -313,22 +342,24 @@
                                                 </svg>
                                             </div>
                                             Leave Regularization
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             <!-- employee -->
                             <li class="sidebar-link-items">
                                 <button data-bs-toggle="collapse" data-bs-target="#employeeLink" aria-expanded="false"
                                     aria-controls="employeeLink"
-                                    class=" collapsed d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    class="collapsed d-flex align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/employee.svg"
-                                        alt="">
+                                        alt="" />
                                     Employee
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="employeeLink"
                                     data-bs-parent="#accordionMenu">
-                                    <li><a href="../employee/employeeManagement.html" class="mb-1">
+                                    <li>
+                                        <a href="../employee/employeeManagement.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -336,8 +367,10 @@
                                                 </svg>
                                             </div>
                                             Employee Management
-                                        </a></li>
-                                      <li><a href="../employee-HR-Task/companyAnnouncements.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../employee-HR-Task/companyAnnouncements.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -345,8 +378,10 @@
                                                 </svg>
                                             </div>
                                             HR Task
-                                        </a></li>
-                                    <li><a href="../employee_SupervisorTask/advanceRecommend.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../employee_SupervisorTask/advanceRecommend.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -354,8 +389,10 @@
                                                 </svg>
                                             </div>
                                             Supervisor Tasks
-                                        </a></li>
-                                    <li><a href="../employee-Reports/letters.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../employee-Reports/letters.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -363,8 +400,10 @@
                                                 </svg>
                                             </div>
                                             Reports
-                                        </a></li>
-                                    <li><a href="../employee-Appointment-Letters/appointmentLetters.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../employee-Appointment-Letters/appointmentLetters.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -372,7 +411,8 @@
                                                 </svg>
                                             </div>
                                             Appointment Letters
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -382,13 +422,14 @@
                                     aria-controls="probationLink"
                                     class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
-                                        alt="">
+                                        alt="" />
                                     Probation
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="probationLink"
                                     data-bs-parent="#accordionMenu">
-                                    <li><a href="../probation/myProbation.html" class="mb-1">
+                                    <li>
+                                        <a href="../probation/myProbation.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -396,8 +437,10 @@
                                                 </svg>
                                             </div>
                                             My Probation
-                                        </a></li>
-                                    <li><a href="../probation/probationKRA.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../probation/probationKRA.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -405,15 +448,16 @@
                                                 </svg>
                                             </div>
                                             Probation KRA
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             <!-- Bulk upload -->
                             <li class="sidebar-link-items">
-                                <a class="d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
+                                <a class="d-flex align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
                                     href="../bulkUpload/importEmployee.html">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/bulkUpload.svg"
-                                        alt="">
+                                        alt="" />
                                     Bulk Upload
                                 </a>
                             </li>
@@ -423,13 +467,14 @@
                                     aria-controls="assetsLink"
                                     class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/dashboard.svg"
-                                        alt="">
+                                        alt="" />
                                     Assets
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="assetsLink"
                                     data-bs-parent="#accordionMenu">
-                                    <li><a href="../asset_management/assetIssuance.html" class="mb-1">
+                                    <li>
+                                        <a href="../asset_management/assetIssuance.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -437,8 +482,10 @@
                                                 </svg>
                                             </div>
                                             Asset Issuance
-                                        </a></li>
-                                    <li><a href="../asset_management/employeeAssetReports.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../asset_management/employeeAssetReports.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -446,21 +493,24 @@
                                                 </svg>
                                             </div>
                                             Reports
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             <!--  TDS  -->
                             <li class="sidebar-link-items">
-                                 <button data-bs-toggle="collapse" data-bs-target="#tdsLink"
-                                    aria-expanded="false" aria-controls="hRPoliciesLink"
+                                <button data-bs-toggle="collapse" data-bs-target="#tdsLink" aria-expanded="false"
+                                    aria-controls="hRPoliciesLink"
                                     class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
-                                    <img height="25px" width="25px" src="../assets/images/dashboard/tdsicon.svg" alt="">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/tdsicon.svg"
+                                        alt="" />
                                     TDS
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="tdsLink"
                                     data-bs-parent="#accordionMenu">
-                                    <li><a href="../tDs-MyDeclarations/investmentDeclaration12BB.html" class="mb-1">
+                                    <li>
+                                        <a href="../tDs-MyDeclarations/investmentDeclaration12BB.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -468,8 +518,10 @@
                                                 </svg>
                                             </div>
                                             My Declarations
-                                        </a></li>
-                                    <li><a href="../tDs-EmployeeDeclarations/employeeDeclarations.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../tDs-EmployeeDeclarations/employeeDeclarations.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -477,8 +529,10 @@
                                                 </svg>
                                             </div>
                                             Employee Declarations
-                                        </a></li>
-                                    <li><a href="../tDs-TaxDeclarationSetting/taxDeclarationSetting.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../tDs-TaxDeclarationSetting/taxDeclarationSetting.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -486,8 +540,10 @@
                                                 </svg>
                                             </div>
                                             Tax Declaration Setting
-                                        </a></li>
-                                    <li><a href="../tDs-TaxDeclarationReports/taxDeclarationReports.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../tDs-TaxDeclarationReports/taxDeclarationReports.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -495,8 +551,10 @@
                                                 </svg>
                                             </div>
                                             Tax Declaration Reports
-                                        </a></li>
-                                    <li><a href="../tDs-TaxComputationSheet/taxComputationSheet.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../tDs-TaxComputationSheet/taxComputationSheet.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -504,8 +562,10 @@
                                                 </svg>
                                             </div>
                                             Tax Computation Sheet
-                                        </a></li>
-                                    <li><a href="../tDs-EmployeePerks/employeePerks.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../tDs-EmployeePerks/employeePerks.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -513,8 +573,10 @@
                                                 </svg>
                                             </div>
                                             Employee Perks
-                                        </a></li>
-                                    <li><a href="../tDs-EmployeeExemptedAllowance/employeeExemptedAllowance.html"
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../tDs-EmployeeExemptedAllowance/employeeExemptedAllowance.html"
                                             class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
@@ -523,8 +585,10 @@
                                                 </svg>
                                             </div>
                                             Employee Exempted Allowance
-                                        </a></li>
-                                    <li><a href="../tDs-TDSBulkUpload/tDSBulkUpload.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../tDs-TDSBulkUpload/tDSBulkUpload.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -532,8 +596,10 @@
                                                 </svg>
                                             </div>
                                             TDS Bulk Upload
-                                        </a></li>
-                                    <li><a href="../tDs-EmployeeForm16/employeeForm16.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../tDs-EmployeeForm16/employeeForm16.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -541,22 +607,24 @@
                                                 </svg>
                                             </div>
                                             Employee Form 16
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             <!-- PMS -->
                             <li class="sidebar-link-items">
                                 <button data-bs-toggle="collapse" data-bs-target="#pmsLink" aria-expanded="false"
                                     aria-controls="pmsLink"
-                                    class="d-flex  collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/performance.svg"
-                                        alt="">
+                                        alt="" />
                                     PMS
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="pmsLink"
                                     data-bs-parent="#accordionMenu">
-                                    <li><a href="../pms-MemberDetails/yourDetails.html" class="mb-1">
+                                    <li>
+                                        <a href="../pms-MemberDetails/yourDetails.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -564,8 +632,10 @@
                                                 </svg>
                                             </div>
                                             Member Details
-                                        </a></li>
-                                    <li><a href="../pms-GoalsSetting/goalsSetting.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pms-GoalsSetting/goalsSetting.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -573,8 +643,10 @@
                                                 </svg>
                                             </div>
                                             Goals' Setting
-                                        </a></li>
-                                    <li><a href="../pms-MidYearReview/midYearReview.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pms-MidYearReview/midYearReview.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -582,8 +654,10 @@
                                                 </svg>
                                             </div>
                                             Mid Year Review
-                                        </a></li>
-                                    <li><a href="../pms-YearEndEvaluation/yearEndEvaluation.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pms-YearEndEvaluation/yearEndEvaluation.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -591,8 +665,10 @@
                                                 </svg>
                                             </div>
                                             Year End Evaluation
-                                        </a></li>
-                                    <li><a href="../pms-MultiRaterFeedback/multiRaterFeedback.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pms-MultiRaterFeedback/multiRaterFeedback.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -600,8 +676,10 @@
                                                 </svg>
                                             </div>
                                             Multi-Rater Feedback
-                                        </a></li>
-                                    <li><a href="../pms-SecondLevelSupervisorasks/secondLevelSupervisorTasks.html"
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pms-SecondLevelSupervisorasks/secondLevelSupervisorTasks.html"
                                             class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
@@ -610,8 +688,10 @@
                                                 </svg>
                                             </div>
                                             Second Level Supervisor's Tasks
-                                        </a></li>
-                                      <li><a href="../pms-pmsReports/employeePMSHistory.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pms-pmsReports/employeePMSHistory.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -619,8 +699,10 @@
                                                 </svg>
                                             </div>
                                             PMS Reports
-                                        </a></li>
-                                    <li><a href="../pms-PMRCycleSettings/managePMSAnnualActivity.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pms-PMRCycleSettings/managePMSAnnualActivity.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -628,8 +710,10 @@
                                                 </svg>
                                             </div>
                                             PMS Cycle Settings
-                                        </a></li>
-                                    <li><a href="../pms-HierarchySettings/pMSHierarchyBulkUploader.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pms-HierarchySettings/pMSHierarchyBulkUploader.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -637,8 +721,10 @@
                                                 </svg>
                                             </div>
                                             Hierarchy Settings
-                                        </a></li>
-                                    <li><a href="../pms-PMSMaster/appraisalCycle.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pms-PMSMaster/appraisalCycle.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -646,16 +732,19 @@
                                                 </svg>
                                             </div>
                                             PMS Master
-                                        </a></li>
-                                    <li><a href="../pms-Supervisor'sTasks/supervisor'sTasks.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pms-Supervisor'sTasks/supervisor'sTasks.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             </div>
-                                           Supervisor's Tasks
-                                        </a></li>
+                                            Supervisor's Tasks
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -663,15 +752,16 @@
                             <li class="sidebar-link-items">
                                 <button data-bs-toggle="collapse" data-bs-target="#lmsLink" aria-expanded="false"
                                     aria-controls="lmsLink"
-                                    class="d-flex collapsed  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/learn-outline.svg"
-                                        alt="">
+                                        alt="" />
                                     LMS
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="lmsLink"
                                     data-bs-parent="#accordionMenu">
-                                     <li><a href="../lms-AdminDashboard/adminDashboard.html" class="mb-1">
+                                    <li>
+                                        <a href="../lms-AdminDashboard/adminDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -679,8 +769,10 @@
                                                 </svg>
                                             </div>
                                             Admin Dashboard
-                                        </a></li>
-                                    <li><a href="../lms-Course-Management/courseManagement.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-Course-Management/courseManagement.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -688,8 +780,10 @@
                                                 </svg>
                                             </div>
                                             Course Management
-                                        </a></li>
-                                    <li><a href="../lms-Assessment/assessment.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-Assessment/assessment.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -697,8 +791,10 @@
                                                 </svg>
                                             </div>
                                             Assessment
-                                        </a></li>
-                                    <li><a href="../lms-Module/module.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-Module/module.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -706,8 +802,10 @@
                                                 </svg>
                                             </div>
                                             Module
-                                        </a></li>
-                                    <li><a href="../lms-Question-Bank/questionBank.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-Question-Bank/questionBank.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -715,8 +813,10 @@
                                                 </svg>
                                             </div>
                                             QuestionBank
-                                        </a></li>
-                                      <li><a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-My-Dashboard/myDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -724,8 +824,10 @@
                                                 </svg>
                                             </div>
                                             My Dashboard
-                                        </a></li>
-                                   <li><a href="../lms-Trainer-Dashboard/trainerDashboard.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-Trainer-Dashboard/trainerDashboard.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -733,8 +835,10 @@
                                                 </svg>
                                             </div>
                                             Trainer Dashboard
-                                        </a></li>
-                                    <li><a href="../lms-Time -table/timeTable.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-Time -table/timeTable.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -742,17 +846,21 @@
                                                 </svg>
                                             </div>
                                             Time Table
-                                        </a></li>
-                                    <li><a href="../lms-Assigned-Courses/assignedCourses.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-Assigned-Courses/assignedCourses.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             </div>
-                                          Assigned Courses
-                                        </a></li>
-                                    <li><a href="../lms-My-Courses/myCourses.html" class="mb-1">
+                                            Assigned Courses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-My-Courses/myCourses.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -760,8 +868,10 @@
                                                 </svg>
                                             </div>
                                             My Courses
-                                        </a></li>
-                                    <li><a href="../lms-Category/category.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-Category/category.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -769,8 +879,10 @@
                                                 </svg>
                                             </div>
                                             Category
-                                        </a></li>
-                                    <li><a href="../lms-Report/report.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../lms-Report/report.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -778,8 +890,8 @@
                                                 </svg>
                                             </div>
                                             Reports
-                                        </a></li>
-
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -787,14 +899,16 @@
                             <li class="sidebar-link-items">
                                 <button data-bs-toggle="collapse" data-bs-target="#reimbursementsLink"
                                     aria-expanded="false" aria-controls="reimbursementsLink"
-                                    class="d-flex collapsed  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
-                                    <img height="25px" width="25px" src="../assets/images/dashboard/expanse.svg" alt="">
+                                    class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/expanse.svg"
+                                        alt="" />
                                     Reimbursements
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="reimbursementsLink"
                                     data-bs-parent="#accordionMenu">
-                                    <li><a href="../reimbursement/myClaim.html" class="mb-1">
+                                    <li>
+                                        <a href="../reimbursement/myClaim.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -802,8 +916,10 @@
                                                 </svg>
                                             </div>
                                             My Claim
-                                        </a></li>
-                                    <li><a href="../reimbursement/claimApproval.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../reimbursement/claimApproval.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -811,8 +927,10 @@
                                                 </svg>
                                             </div>
                                             Claim Approval
-                                        </a></li>
-                                    <li><a href="../reimbursement/claimPayment.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../reimbursement/claimPayment.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -820,8 +938,10 @@
                                                 </svg>
                                             </div>
                                             Claim Payment
-                                        </a></li>
-                                    <li><a href="../reimbursement/claimMaster.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../reimbursement/claimMaster.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -829,8 +949,10 @@
                                                 </svg>
                                             </div>
                                             Configuration
-                                        </a></li>
-                                    <li><a href="../reimbursement/claimReport.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../reimbursement/claimReport.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -838,25 +960,25 @@
                                                 </svg>
                                             </div>
 
-
                                             Claim Report
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
-
 
                             <!-- Managerial Task -->
                             <li class="sidebar-link-items">
                                 <button data-bs-toggle="collapse" data-bs-target="#managerialTaskLink"
                                     aria-expanded="false" aria-controls="managerialTaskLink"
-                                    class="d-flex collapsed  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
-                                    <img height="25px" width="25px" src="../assets/images/dashboard/task.svg" alt="">
+                                    class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/task.svg" alt="" />
                                     Managerial Task
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="managerialTaskLink"
                                     data-bs-parent="#accordionMenu">
-                                    <li><a href="../managerialTask-SupervisorTasks/resignationAcceptance.html"
+                                    <li>
+                                        <a href="../managerialTask-SupervisorTasks/resignationAcceptance.html"
                                             class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
@@ -865,8 +987,10 @@
                                                 </svg>
                                             </div>
                                             Supervisor Task
-                                        </a></li>
-                                    <li><a href="../managerialTask-departmentClearance/departmentClearance.html"
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../managerialTask-departmentClearance/departmentClearance.html"
                                             class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
@@ -875,8 +999,10 @@
                                                 </svg>
                                             </div>
                                             Department Clearance
-                                        </a></li>
-                                    <li><a href="../managerialTask-L1ProbationApproval/l1ProbationApproval.html"
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../managerialTask-L1ProbationApproval/l1ProbationApproval.html"
                                             class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
@@ -885,8 +1011,10 @@
                                                 </svg>
                                             </div>
                                             L1 Probation Approval
-                                        </a></li>
-                                    <li><a href="../managerialTask-l2ProbationApproval/l2ProbationApproval.html"
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../managerialTask-l2ProbationApproval/l2ProbationApproval.html"
                                             class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
@@ -895,30 +1023,33 @@
                                                 </svg>
                                             </div>
                                             L2 Probation Approval
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="sidebar-link-items">
-                                <a class="d-flex  align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
+                                <a class="d-flex align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3"
                                     href="../resignation/resignation.html">
                                     <img height="25px" width="25px" src="../assets/images/dashboard/registration.svg"
-                                        alt="">
+                                        alt="" />
                                     Resignation
                                 </a>
                             </li>
 
-<!-- HR Policies  -->
+                            <!-- HR Policies  -->
                             <li class="sidebar-link-items">
                                 <button data-bs-toggle="collapse" data-bs-target="#hRPoliciesLink" aria-expanded="false"
                                     aria-controls="hRPoliciesLink"
                                     class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
-                                    <img height="25px" width="25px" src="../assets/images/dashboard/policy.svg" alt="">
+                                    <img height="25px" width="25px" src="../assets/images/dashboard/policy.svg"
+                                        alt="" />
                                     HR Policies
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="hRPoliciesLink"
                                     data-bs-parent="#accordionMenu">
-                                    <li><a href="../hrPolicies/documents.html" class="mb-1">
+                                    <li>
+                                        <a href="../hrPolicies/documents.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -926,8 +1057,10 @@
                                                 </svg>
                                             </div>
                                             Document
-                                        </a></li>
-                                    <li><a href="../hrPolicies/documentMaster.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../hrPolicies/documentMaster.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -935,21 +1068,24 @@
                                                 </svg>
                                             </div>
                                             Document Master
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             <!-- Travel & Expense  -->
                             <li class="sidebar-link-items">
-                                 <button data-bs-toggle="collapse" data-bs-target="#travelExpenseLink"
+                                <button data-bs-toggle="collapse" data-bs-target="#travelExpenseLink"
                                     aria-expanded="false" aria-controls="hRPoliciesLink"
                                     class="d-flex collapsed align-items-center border-bottom-op4 justify-content-start gap-3 text-capitalize text-white fs-7 fw-normal py-2 sidebar-link ps-3">
-                                    <img height="25px" width="25px" src="../assets/images/dashboard/traveExpenseicon.svg" alt="">
+                                    <img height="25px" width="25px"
+                                        src="../assets/images/dashboard/traveExpenseicon.svg" alt="" />
                                     Travel & Expense
                                 </button>
                                 <!-- dropdown -->
                                 <ul class="sidebar-submenu accordion-collapse collapse" id="travelExpenseLink"
                                     data-bs-parent="#accordionMenu">
-                                    <li><a href="../t&e-travel-request/travelRequestForm.html" class="mb-1">
+                                    <li>
+                                        <a href="../t&e-travel-request/travelRequestForm.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -957,8 +1093,10 @@
                                                 </svg>
                                             </div>
                                             Travel Request
-                                        </a></li>
-                                    <li><a href="../t&e-myTravels/travelDetails.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../t&e-myTravels/travelDetails.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -966,8 +1104,10 @@
                                                 </svg>
                                             </div>
                                             My Travels
-                                        </a></li>
-                                    <li><a href="../t&e-TravelMaster/travelMode.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../t&e-TravelMaster/travelMode.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -975,8 +1115,10 @@
                                                 </svg>
                                             </div>
                                             Travel Master
-                                        </a></li>
-                                    <li><a href="../t&e-TravelApprovals/travelApprovalRequest.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../t&e-TravelApprovals/travelApprovalRequest.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -984,8 +1126,10 @@
                                                 </svg>
                                             </div>
                                             Travel Approval
-                                        </a></li>
-                                    <li><a href="../t&e-TravelDesk/travelDeskRequests.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../t&e-TravelDesk/travelDeskRequests.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -993,8 +1137,10 @@
                                                 </svg>
                                             </div>
                                             Travel Desk
-                                        </a></li>
-                                    <li><a href="../t&e-TravelAccounts/travelAccountRequests.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../t&e-TravelAccounts/travelAccountRequests.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -1002,8 +1148,10 @@
                                                 </svg>
                                             </div>
                                             Travel Accounts
-                                        </a></li>
-                                    <li><a href="../t&e-ClaimRequest/travelClaimRequest.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../t&e-ClaimRequest/travelClaimRequest.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -1011,8 +1159,10 @@
                                                 </svg>
                                             </div>
                                             Claim Request
-                                        </a></li>
-                                    <li><a href="../t&e-ClaimApprovalL1/claimApprovalRequests.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../t&e-ClaimApprovalL1/claimApprovalRequests.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -1020,8 +1170,10 @@
                                                 </svg>
                                             </div>
                                             Claim Approval L1
-                                        </a></li>
-                                    <li><a href="../t&e-ClaimApprovalL2/claimApprovalRequests.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../t&e-ClaimApprovalL2/claimApprovalRequests.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -1029,8 +1181,10 @@
                                                 </svg>
                                             </div>
                                             Claim Approval L2
-                                        </a></li>
-                                    <li><a href="../t&e-claimAccounts/claimAccountRequests.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../t&e-claimAccounts/claimAccountRequests.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -1038,8 +1192,10 @@
                                                 </svg>
                                             </div>
                                             Claim Accounts
-                                        </a></li>
-                                    <li><a href="../t&e-TravelDeskL2/travelDeskRequestsL2.html" class="mb-1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../t&e-TravelDeskL2/travelDeskRequestsL2.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -1047,7 +1203,8 @@
                                                 </svg>
                                             </div>
                                             Travel Desk L2
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -1057,7 +1214,7 @@
             <!-- main content area -->
             <div class="main-content">
                 <!-- header area -->
-                <div class="d-flex align-items-center justify-content-between header  px-1 px-md-4 sticky-top z-3">
+                <div class="d-flex align-items-center justify-content-between header px-1 px-md-4 sticky-top z-3">
                     <div class="d-flex align-items-center justify-content-start gap-4">
                         <button class="d-block d-lg-none toggleBar">
                             <svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -1074,134 +1231,203 @@
                     <div class="d-flex align-items-center justify-content-end">
                         <!-- notification area -->
                         <button class="notification-btn">
-                            <img src="../assets/images/dashboard/bell.svg" alt="">
+                            <img src="../assets/images/dashboard/bell.svg" alt="" />
                         </button>
 
                         <!-- profile area -->
-                        <div class=" position-relative">
+                        <div class="position-relative">
                             <button class="d-flex align-items-center justify-content-end profiledetails"
                                 id="headerProfile">
                                 <img height="45px" width="45px" class="rounded-circle"
-                                    src="../assets/images/dashboard/managerimg.png" alt="">
+                                    src="../assets/images/dashboard/managerimg.png" alt="" />
                                 <div class="name-and-position">
-                                    <h1 class="text-capitalize text-start text-white fs-7 fw-semibold mb-0 mx-3">Austin
-                                        Robertson</h1>
+                                    <h1 class="text-capitalize text-start text-white fs-7 fw-semibold mb-0 mx-3">
+                                        Austin Robertson
+                                    </h1>
                                     <small class="text-capitalize text-start text-white fs-8">Hr Manager</small>
                                 </div>
-                                <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg" alt="">
+                                <img height="15px" width="15px" src="../assets/images/dashboard/angle_down.svg"
+                                    alt="" />
                             </button>
                             <ul
-                                class="headerProfileDropdown bg-white  rounded-4 top-100 end-0 position-absolute shadow-lg py-3 px-2">
-                                <li><a class="d-flex w-100 dropdown-item align-items-center justify-content-start gap-2 mb-2"
-                                        href="#"> <img height="30px" width="30px"
-                                            src="../assets/images/dashboard/info_icon.svg" alt=""> Personal
-                                        Information</a></li>
-                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-2 mb-2"
-                                        href="#"> <img height="30px" width="30px"
-                                            src="../assets/images/dashboard/lock-password.svg" alt=""> Change
-                                        Password</a></li>
-                                <li><a class="d-flex dropdown-item align-items-center justify-content-start gap-2 mb-2"
-                                        href="../authentication-pages/login.html"> <img height="30px" width="30px"
-                                            src="../assets/images/dashboard/logout.svg" alt=""> Log Out</a></li>
+                                class="headerProfileDropdown bg-white rounded-4 top-100 end-0 position-absolute shadow-lg py-3 px-2">
+                                <li>
+                                    <a class="d-flex w-100 dropdown-item align-items-center justify-content-start gap-2 mb-2"
+                                        href="#">
+                                        <img height="30px" width="30px" src="../assets/images/dashboard/info_icon.svg"
+                                            alt="" />
+                                        Personal Information</a>
+                                </li>
+                                <li>
+                                    <a class="d-flex dropdown-item align-items-center justify-content-start gap-2 mb-2"
+                                        href="#">
+                                        <img height="30px" width="30px"
+                                            src="../assets/images/dashboard/lock-password.svg" alt="" />
+                                        Change Password</a>
+                                </li>
+                                <li>
+                                    <a class="d-flex dropdown-item align-items-center justify-content-start gap-2 mb-2"
+                                        href="../authentication-pages/login.html">
+                                        <img height="30px" width="30px" src="../assets/images/dashboard/logout.svg"
+                                            alt="" />
+                                        Log Out</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!-- ================main content area start============== -->
                 <div class="main-content-area pb-5 pt-3 px-2 px-lg-3">
-
                     <!-- tabs area -->
                     <div
                         class="d-flex align-items-sm-center align-items-start bg-white justify-content-between p-3 rounded-3 shadow-sm mb-3 tabarea flex-column flex-sm-row gap-4">
-
-                        <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
+                        <nav style="--bs-breadcrumb-divider: '->'" aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
                                     <a style="color: #757575" href="employeeManagement.html">Employee</a>
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Hr Task <img class="d-inline" height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
+                                        aria-expanded="false">
+                                        Hr Task
+                                        <img class="d-inline" height="20px " width="20px"
+                                            src="../assets/images/dashboard/downarrowBlack.svg" alt="" />
+                                    </button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1"
-                                                href="../employee/employeeManagement.html">Employee Management</a></li>
-                                          <li><a class="dropdown-item mb-1" href="companyAnnouncements.html">Hr Task</a>
+                                        <li>
+                                            <a class="dropdown-item mb-1"
+                                                href="../employee/employeeManagement.html">Employee Management</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="../employee_SupervisorTask/advanceRecommend.html">Supervisor Tasks</a>
+                                        <li>
+                                            <a class="dropdown-item mb-1" href="companyAnnouncements.html">Hr Task</a>
                                         </li>
-                     <li><a class="dropdown-item mb-1" href="../employee-Reports/letters.html">Reports</a></li>
-                                        <li><a class="dropdown-item mb-1"
+                                        <li>
+                                            <a class="dropdown-item mb-1"
+                                                href="../employee_SupervisorTask/advanceRecommend.html">Supervisor
+                                                Tasks</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item mb-1"
+                                                href="../employee-Reports/letters.html">Reports</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item mb-1"
                                                 href="../employee-Appointment-Letters/appointmentLetters.html">Appointment
-                                                Letters</a></li>
-
+                                                Letters</a>
+                                        </li>
                                     </ul>
                                 </li>
 
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Interview List <img class="d-inline" height="20px "
-                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
-                                            alt=""></button>
+                                        aria-expanded="false">
+                                        Interview List
+                                        <img class="d-inline" height="20px " width="20px"
+                                            src="../assets/images/dashboard/downarrowBlack.svg" alt="" />
+                                    </button>
                                     <ul class="dropdown-menu overflow-y-auto border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="companyAnnouncements.html">Company
-                                                Announcements</a></li>
-                                        <li><a class="dropdown-item mb-1" href="employeeRequest.html">Employee
-                                                Request</a></li>
-                                        <li><a class="dropdown-item mb-1" href="resignationList.html">Resignation
-                                                List</a></li>
-                                        <li><a class="dropdown-item mb-1" href="resignationAcceptance.html">Resignation
-                                                Acceptance</a></li>
-                                        <li><a class="dropdown-item mb-1"
-                                                href="involuntarySeparationApproval.html">Absconding Separation</a></li>
-                                        <li><a class="dropdown-item mb-1" href="probationList.html">Probation List</a>
+                                        <li>
+                                            <a class="dropdown-item mb-1" href="companyAnnouncements.html">Company
+                                                Announcements</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="clearance.html">Clearance</a></li>
+                                        <li>
+                                            <a class="dropdown-item mb-1" href="employeeRequest.html">Employee
+                                                Request</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item mb-1" href="resignationList.html">Resignation
+                                                List</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item mb-1" href="resignationAcceptance.html">Resignation
+                                                Acceptance</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item mb-1"
+                                                href="involuntarySeparationApproval.html">Absconding Separation</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item mb-1" href="probationList.html">Probation List</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item mb-1" href="clearance.html">Clearance</a>
+                                        </li>
                                         <li><a class="dropdown-item mb-1" href="interviewList.html">Interview List</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="resignationPrivileges.html">Resignation
+                                                Privileges</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="advancePay.html">Advance Pay</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="paySlip.html">Pay Slip</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="paySlip.html">Appraisal Letter</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="reinstatementRequest.html">Reinstatement
+                                                Request</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="reinstatementApproval.html">Reinstatement Approval</a>
                                         </li>
                                     </ul>
                                 </li>
-
                             </ol>
                         </nav>
                         <!-- user role area -->
-                        <div class="user-role-area d-flex justify-content-end align-items-center ">
+                        <div class="user-role-area d-flex justify-content-end align-items-center">
                             <ul>
                                 <li>Role</li>
                                 <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
 
-
                                 <li class="roleDropdownarea">
-                                    <div class="custom-dropdown roleDropdown" style="width: 100%;">
+                                    <div class="custom-dropdown roleDropdown" style="width: 100%">
                                         <!-- Dropdown button -->
                                         <div class="custom-dropdown-button border-0"
-                                            style="font-size: 12px !important; padding:0 18px 0 0;"
+                                            style="font-size: 12px !important; padding: 0 18px 0 0"
                                             onclick="toggleDropdown(event)">
                                             HR Factory
                                         </div>
                                         <!-- Dropdown options -->
-                                        <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
-                                            style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
+                                        <div class="shadow custom-dropdown-options p-2 overflow-y-auto" style="
+                          bottom: unset;
+                          top: 100%;
+                          font-size: 12px;
+                          max-height: calc(100vh - 250px);
+                          width: fit-content;
+                          right: 0;
+                        ">
                                             <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'1', ' HR Factory')"> HR Factory</div>
+                                                onclick="selectOption(event,'1', ' HR Factory')">
+                                                HR Factory
+                                            </div>
                                             <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'2', 'L2')">L2</div>
+                                                onclick="selectOption(event,'2', 'L2')">
+                                                L2
+                                            </div>
                                             <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'3', 'L1')">L1</div>
+                                                onclick="selectOption(event,'3', 'L1')">
+                                                L1
+                                            </div>
                                             <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'4', 'CorpComm')">CorpComm</div>
+                                                onclick="selectOption(event,'4', 'CorpComm')">
+                                                CorpComm
+                                            </div>
                                             <div class="text-nowrap custom-dropdown-option"
                                                 onclick="selectOption(event,'5', 'Administration Clearance Factory')">
-                                                Administration Clearance Factory</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'6', 'Business Card')">Business Card
+                                                Administration Clearance Factory
                                             </div>
                                             <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'7', 'HRADMIN')">HRADMIN</div>
-                                            <div class="text-nowrap custom-dropdown-option"
-                                                onclick="selectOption(event,'8', 'Administration')">Administration
+                                                onclick="selectOption(event,'6', 'Business Card')">
+                                                Business Card
                                             </div>
-
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'7', 'HRADMIN')">
+                                                HRADMIN
+                                            </div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'8', 'Administration')">
+                                                Administration
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -1212,14 +1438,11 @@
                     <!-- ================= Main body area area start================= -->
                     <div class="main-body-area pb-4 pt-3">
                         <div class="bg-white p-3 rounded-4 shadow mb-4">
-                            <h1 class=" fw-medium fs-5 text-black pb-3 " style=" border-bottom: 0.9px dashed #D2D2D2">
+                            <h1 class="fw-medium fs-5 text-black pb-3" style="border-bottom: 0.9px dashed #d2d2d2">
                                 Search
                             </h1>
 
-
-
                             <div class="row g-4 pt-3">
-
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <label class="mb-1" for=""> Company </label>
                                     <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
@@ -1304,7 +1527,6 @@
                             <div class="d-flex select-criteria justify-content-between align-items-center pb-3"
                                 style="border-bottom: 0.9px dashed #d2d2d2">
                                 <h1 class="fw-medium fs-5 text-black">Interview List</h1>
-
                             </div>
 
                             <!-- =============List start============= -->
@@ -1312,219 +1534,243 @@
                                 <div class="table-responsive">
                                     <table class="table table-bordered border-gray">
                                         <thead>
-                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
-                                                style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
-
-                                                <th class="border-0 ">Emp. Code</th>
-                                                <th class="border-0 ">Emp. Name</th>
-                                                <th class="border-0 ">Designation</th>
-                                                <th class="border-0  text-center ">Pending Date</th>
-                                                <th class="border-0  text-center ">Accepted Date</th>
-                                                <th class="border-0   ">Submitted Date</th>
-                                                <th class="border-0  text-center ">Status</th>
-                                                <th class="border-0 text-center  ">Action</th>
-                                                <th class="border-0 text-center px-3 ">Status
-                                                </th>
-
-
+                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top" style="
+                            color: #404040;
+                            background: #f9f9f9;
+                            vertical-align: middle;
+                          ">
+                                                <th class="border-0">Emp. Code</th>
+                                                <th class="border-0">Emp. Name</th>
+                                                <th class="border-0">Designation</th>
+                                                <th class="border-0 text-center">Pending Date</th>
+                                                <th class="border-0 text-center">Accepted Date</th>
+                                                <th class="border-0">Submitted Date</th>
+                                                <th class="border-0 text-center">Status</th>
+                                                <th class="border-0 text-center">Action</th>
+                                                <th class="border-0 text-center px-3">Status</th>
                                             </tr>
                                         </thead>
                                         <tbody style="
-                                                font-family: DM Sans, sans-serif;
-                                                font-size: 12px !important;
-                                                ">
+                          font-family: DM Sans, sans-serif;
+                          font-size: 12px !important;
+                        ">
                                             <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 40px;
-                                                    vertical-align: middle;
-                                                ">
-
-
+                            color: #202020;
+                            height: 40px;
+                            vertical-align: middle;
+                          ">
                                                 <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
-                                                <td class="p-2">
-                                                    Senior Ayurvedic Consultant
-                                                </td>
-                                                <td class="p-2 text-center ">
-                                                    18/04/2025 <br> 15:05
-                                                </td>
-                                                <td class="p-2 text-center ">
-                                                    18/04/2025 <br> 15:05
-                                                </td>
-                                                <td class="p-2  ">
-                                                    18/04/2025
+                                                <td class="p-2">Senior Ayurvedic Consultant</td>
+                                                <td class="p-2 text-center">
+                                                    18/04/2025 <br />
+                                                    15:05
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <span class="depstatustext">
-                                                        Pending
-                                                    </span>
+                                                    18/04/2025 <br />
+                                                    15:05
+                                                </td>
+                                                <td class="p-2">18/04/2025</td>
+                                                <td class="p-2 text-center">
+                                                    <span class="pendingTopicStatus"> Pending </span>
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">Accept</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#doyouwanttoaccept"
+                                                        class="datadownloadbtn">Accept</button>
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">View</button>
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#interviewDetailsView" class="datadownloadbtn">
+                                                        View
+                                                    </button>
                                                 </td>
-
-
-
-
-
                                             </tr>
                                             <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 40px;
-                                                    vertical-align: middle;
-                                                ">
-
-
+                            color: #202020;
+                            height: 40px;
+                            vertical-align: middle;
+                          ">
                                                 <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
-                                                <td class="p-2">
-                                                    Senior Ayurvedic Consultant
-                                                </td>
-                                                <td class="p-2 text-center ">
-                                                    18/04/2025 <br> 15:05
-                                                </td>
-                                                <td class="p-2 text-center ">
-                                                    18/04/2025 <br> 15:05
-                                                </td>
-                                                <td class="p-2  ">
-                                                    18/04/2025
+                                                <td class="p-2">Senior Ayurvedic Consultant</td>
+                                                <td class="p-2 text-center">
+                                                    18/04/2025 <br />
+                                                    15:05
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <span class="depstatustext">
-                                                        Pending
-                                                    </span>
+                                                    18/04/2025 <br />
+                                                    15:05
+                                                </td>
+                                                <td class="p-2">18/04/2025</td>
+                                                <td class="p-2 text-center">
+                                                    <span class="pendingTopicStatus"> Pending </span>
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">Accept</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#doyouwanttoaccept"
+                                                        class="datadownloadbtn">Accept</button>
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">View</button>
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#interviewDetailsView" class="datadownloadbtn">
+                                                        View
+                                                    </button>
                                                 </td>
-
-
-
-
-
                                             </tr>
                                             <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 40px;
-                                                    vertical-align: middle;
-                                                ">
-
-
+                            color: #202020;
+                            height: 40px;
+                            vertical-align: middle;
+                          ">
                                                 <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
-                                                <td class="p-2">
-                                                    Senior Ayurvedic Consultant
-                                                </td>
-                                                <td class="p-2 text-center ">
-                                                    18/04/2025 <br> 15:05
-                                                </td>
-                                                <td class="p-2 text-center ">
-                                                    18/04/2025 <br> 15:05
-                                                </td>
-                                                <td class="p-2  ">
-                                                    18/04/2025
+                                                <td class="p-2">Senior Ayurvedic Consultant</td>
+                                                <td class="p-2 text-center">
+                                                    18/04/2025 <br />
+                                                    15:05
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <span class="depstatustext">
-                                                        Pending
-                                                    </span>
+                                                    18/04/2025 <br />
+                                                    15:05
+                                                </td>
+                                                <td class="p-2">18/04/2025</td>
+                                                <td class="p-2 text-center">
+                                                    <span class="pendingTopicStatus"> Pending </span>
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">Accept</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#doyouwanttoaccept"
+                                                        class="datadownloadbtn">Accept</button>
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">View</button>
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#interviewDetailsView" class="datadownloadbtn">
+                                                        View
+                                                    </button>
                                                 </td>
-
-
-
-
-
                                             </tr>
                                             <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 40px;
-                                                    vertical-align: middle;
-                                                ">
-
-
+                            color: #202020;
+                            height: 40px;
+                            vertical-align: middle;
+                          ">
                                                 <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
-                                                <td class="p-2">
-                                                    Senior Ayurvedic Consultant
-                                                </td>
-                                                <td class="p-2 text-center ">
-                                                    18/04/2025 <br> 15:05
-                                                </td>
-                                                <td class="p-2 text-center ">
-                                                    18/04/2025 <br> 15:05
-                                                </td>
-                                                <td class="p-2  ">
-                                                    18/04/2025
+                                                <td class="p-2">Senior Ayurvedic Consultant</td>
+                                                <td class="p-2 text-center">
+                                                    18/04/2025 <br />
+                                                    15:05
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <span class="depstatustext">
-                                                        Pending
-                                                    </span>
+                                                    18/04/2025 <br />
+                                                    15:05
+                                                </td>
+                                                <td class="p-2">18/04/2025</td>
+                                                <td class="p-2 text-center">
+                                                    <span class="pendingTopicStatus"> Pending </span>
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">Accept</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#doyouwanttoaccept"
+                                                        class="datadownloadbtn">Accept</button>
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">View</button>
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#interviewDetailsView" class="datadownloadbtn">
+                                                        View
+                                                    </button>
                                                 </td>
-
-
-
-
-
                                             </tr>
                                             <tr class="text-nowrap fw-normal" style="
-                                                    color: #202020;
-                                                    height: 40px;
-                                                    vertical-align: middle;
-                                                ">
-
-
+                            color: #202020;
+                            height: 40px;
+                            vertical-align: middle;
+                          ">
                                                 <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
-                                                <td class="p-2">
-                                                    Senior Ayurvedic Consultant
-                                                </td>
-                                                <td class="p-2 text-center ">
-                                                    18/04/2025 <br> 15:05
-                                                </td>
-                                                <td class="p-2 text-center ">
-                                                    18/04/2025 <br> 15:05
-                                                </td>
-                                                <td class="p-2  ">
-                                                    18/04/2025
+                                                <td class="p-2">Senior Ayurvedic Consultant</td>
+                                                <td class="p-2 text-center">
+                                                    18/04/2025 <br />
+                                                    15:05
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <span class="depstatustext">
-                                                        Pending
-                                                    </span>
+                                                    18/04/2025 <br />
+                                                    15:05
+                                                </td>
+                                                <td class="p-2">18/04/2025</td>
+                                                <td class="p-2 text-center">
+                                                    <span class="pendingTopicStatus"> Pending </span>
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">Accept</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#doyouwanttoaccept"
+                                                        class="datadownloadbtn">Accept</button>
                                                 </td>
                                                 <td class="p-2 text-center">
-                                                    <button class="datadownloadbtn">View</button>
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#interviewDetailsView" class="datadownloadbtn">
+                                                        View
+                                                    </button>
                                                 </td>
-
-
-
-
-
                                             </tr>
-
-
+                                            <tr class="text-nowrap fw-normal" style="
+                            color: #202020;
+                            height: 40px;
+                            vertical-align: middle;
+                          ">
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">Senior Ayurvedic Consultant</td>
+                                                <td class="p-2 text-center">
+                                                    18/04/2025 <br />
+                                                    15:05
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    18/04/2025 <br />
+                                                    15:05
+                                                </td>
+                                                <td class="p-2">18/04/2025</td>
+                                                <td class="p-2 text-center">
+                                                    <span class="pendingTopicStatus"> Pending </span>
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button data-bs-toggle="modal" data-bs-target="#doyouwanttoaccept"
+                                                        class="datadownloadbtn">Accept</button>
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#interviewDetailsView" class="datadownloadbtn">
+                                                        View
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-nowrap fw-normal" style="
+                            color: #202020;
+                            height: 40px;
+                            vertical-align: middle;
+                          ">
+                                                <td class="p-2">FE0123</td>
+                                                <td class="p-2">John Doe</td>
+                                                <td class="p-2">Senior Ayurvedic Consultant</td>
+                                                <td class="p-2 text-center">
+                                                    18/04/2025 <br />
+                                                    15:05
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    18/04/2025 <br />
+                                                    15:05
+                                                </td>
+                                                <td class="p-2">18/04/2025</td>
+                                                <td class="p-2 text-center">
+                                                    <span class="pendingTopicStatus"> Pending </span>
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button data-bs-toggle="modal" data-bs-target="#doyouwanttoaccept"
+                                                        class="datadownloadbtn">Accept</button>
+                                                </td>
+                                                <td class="p-2 text-center">
+                                                    <button data-bs-toggle="modal"
+                                                        data-bs-target="#interviewDetailsView" class="datadownloadbtn">
+                                                        View
+                                                    </button>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -1533,20 +1779,20 @@
                                 <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
                                     <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
                                         <li>
-                                            <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
+                                            <a class="d-flex align-items-center fs-6 border justify-content-center p-2"
+                                                style="border-radius: 7.24px" href="">
                                                 <i class="fa-angle-left fa-solid"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
+                                            <a class="d-flex align-items-center border justify-content-center p-2"
+                                                style="border-radius: 7.24px" href="">
                                                 Prev
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="d-flex align-items-center border justify-content-center p-2 "
-                                                style=" border-radius: 7.24px;" href="">
+                                            <a class="d-flex align-items-center border justify-content-center p-2"
+                                                style="border-radius: 7.24px" href="">
                                                 Next
                                             </a>
                                         </li>
@@ -1569,21 +1815,334 @@
                                                 <!-- Dropdown options -->
                                                 <div class="custom-dropdown-options shadow">
                                                     <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '1', '10')">10</div>
+                                                        onclick="selectOption(event, '1', '10')">
+                                                        10
+                                                    </div>
                                                     <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '2', '11')">11</div>
+                                                        onclick="selectOption(event, '2', '11')">
+                                                        11
+                                                    </div>
                                                     <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '3', '12')">12</div>
+                                                        onclick="selectOption(event, '3', '12')">
+                                                        12
+                                                    </div>
                                                     <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '4', '13')">13</div>
+                                                        onclick="selectOption(event, '4', '13')">
+                                                        13
+                                                    </div>
                                                     <div class="custom-dropdown-option"
-                                                        onclick="selectOption(event, '5', '14')">14</div>
+                                                        onclick="selectOption(event, '5', '14')">
+                                                        14
+                                                    </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
 
+                                <!-- ===============interview details area start============ -->
+                                <div class="modal fade" id="interviewDetailsView" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                    View
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1 class="fw-normal fs-6 mb-3">
+                                                    Status:
+                                                    <span class="pendingTopicStatus py-1 ms-3">Pending</span>
+                                                </h1>
+                                                <p class="fs-12 fw-normal text-dark">
+                                                    Help us make Schoolnet a great place to work by
+                                                    completing this questionnaire and send a completed
+                                                    copy to us before your scheduled exit interview.
+                                                    Your honest and open feedback is important to us. It
+                                                    will help us assess and improve our organization. It
+                                                    will also help us develop policies and practices
+                                                    that reflect needs of employees. We urge you to be
+                                                    absolutely honest, as your responses will remain
+                                                    confidential and will be communicated to the
+                                                    management in aggregate form only. Your signature at
+                                                    the end of the questionnaire is optional. Your
+                                                    responses will not affect any future references or
+                                                    prospects for re-employment.
+                                                </p>
+                                                <div class="px-lg-5 mt-4">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered border-gray">
+                                                            <tbody
+                                                                style=" font-family: DM Sans, sans-serif; font-size: 14px !important; ">
+                                                                <tr class="text-nowrap fw-normal"
+                                                                    style=" color: #202020; height: 40px; vertical-align: middle;">
+                                                                    <td class="p-2" style="vertical-align: top">
+                                                                        <ul>
+                                                                            <li class="mb-2">
+                                                                                <div
+                                                                                    class="d-flex justify-content-start gap-3 align-items-center">
+                                                                                    <span class="fw-medium">Company Name
+                                                                                        :</span>
+                                                                                    <span>ABC India Pvt. Ltd</span>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="mb-2">
+                                                                                <div
+                                                                                    class="d-flex justify-content-start gap-3 align-items-center">
+                                                                                    <span class="fw-medium">Department
+                                                                                        :</span>
+                                                                                    <span>IT</span>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="mb-2">
+                                                                                <div
+                                                                                    class="d-flex justify-content-start gap-3 align-items-center">
+                                                                                    <span class="fw-medium">Resignation
+                                                                                        Date :</span>
+                                                                                    <span>17/03/2025</span>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div
+                                                                                    class="d-flex justify-content-start gap-3 align-items-center">
+                                                                                    <span class="fw-medium">Reporting To
+                                                                                        :</span>
+                                                                                    <span>Amit Kumar Mishra</span>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td class="p-2" style="vertical-align: top">
+                                                                        <ul>
+                                                                            <li class="mb-2">
+                                                                                <div
+                                                                                    class="d-flex justify-content-start gap-3 align-items-center">
+                                                                                    <span class="fw-medium">Employee
+                                                                                        Name :</span>
+                                                                                    <span>INTR0002 - Vinod 1</span>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="mb-2">
+                                                                                <div
+                                                                                    class="d-flex justify-content-start gap-3 align-items-center">
+                                                                                    <span class="fw-medium">Designation
+                                                                                        :</span>
+                                                                                    <span>HR Coordinator</span>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div
+                                                                                    class="d-flex justify-content-start gap-3 align-items-center">
+                                                                                    <span class="fw-medium">Last Working
+                                                                                        Day :</span>
+                                                                                    <span>16/04/2025</span>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <h1 class="mb-2 fw-normal fs-6">
+                                                        Personal Details
+                                                    </h1>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered border-gray">
+                                                            <thead>
+                                                                <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
+                                                                    style="
+                                                                            color: #404040;
+                                                                            background: #f9f9f9;
+                                                                            vertical-align: middle;
+                                                                            ">
+                                                                    <th class="border-0">Sr.No.</th>
+                                                                    <th class="border-0">Description</th>
+                                                                    <th class="border-0" style="min-width: 200px">
+                                                                        Comments
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody style="
+                                                                        font-family: DM Sans, sans-serif;
+                                                                        font-size: 14px !important;
+                                                                    ">
+                                                                <tr class="text-nowrap fw-normal" style="
+                                                                        color: #202020;
+                                                                        height: 50px;
+                                                                        vertical-align: middle;
+                                                                        ">
+                                                                    <td class="p-2">1</td>
+                                                                    <td class="p-2">
+                                                                        No. of years in organisation
+                                                                    </td>
+                                                                    <td class="p-2">
+                                                                        <input type="text"
+                                                                            class="form-control fs-14 rounded-4" />
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <h1 class="mb-2 fw-normal fs-6">
+                                                        Positive Aspects of The Job
+                                                    </h1>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered border-gray">
+                                                            <thead>
+                                                                <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
+                                                                    style="
+                                                                        color: #404040;
+                                                                        background: #f9f9f9;
+                                                                        vertical-align: middle;
+                                                                        ">
+                                                                    <th class="border-0">Sr.No.</th>
+                                                                    <th class="border-0">Description</th>
+                                                                    <th class="border-0" style="min-width: 200px">
+                                                                        Comments
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody style="
+                                                                    font-family: DM Sans, sans-serif;
+                                                                    font-size: 14px !important;
+                                                                ">
+                                                                <tr class="text-nowrap fw-normal" style="
+                                                                        color: #202020;
+                                                                        height: 50px;
+                                                                        vertical-align: middle;
+                                                                        ">
+                                                                    <td class="p-2">1</td>
+                                                                    <td class="p-2">
+                                                                        Positive aspects of the job
+                                                                    </td>
+                                                                    <td class="p-2">
+                                                                        <input type="text"
+                                                                            class="form-control fs-14 rounded-4" />
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <h1 class="mb-2 fw-normal fs-6">
+                                                        Please Rate Your Satisfaction With The Following
+                                                    </h1>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered border-gray">
+                                                            <thead>
+                                                                <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
+                                                                    style="
+                                                                        color: #404040;
+                                                                        background: #f9f9f9;
+                                                                        vertical-align: middle;
+                                                                        ">
+                                                                    <th class="border-0">Sr.No.</th>
+                                                                    <th class="border-0">Description</th>
+                                                                    <th class="border-0 text-center"
+                                                                        style="min-width: 200px">
+                                                                        Tick The Options
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody style="
+                                                                        font-family: DM Sans, sans-serif;
+                                                                        font-size: 14px !important;
+                                                                    ">
+                                                                <tr class="text-nowrap fw-normal" style="
+                                                                        color: #202020;
+                                                                        height: 50px;
+                                                                        vertical-align: middle;
+                                                                        ">
+                                                                    <td class="p-2">1</td>
+                                                                    <td class="p-2">
+                                                                        Satisfaction with my job *
+                                                                    </td>
+                                                                    <td class="p-2">
+                                                                        <div
+                                                                            class="d-flex justify-content-center align-items-center gap-3">
+                                                                            <div
+                                                                                class="d-flex justify-content-start align-items-center gap-3">
+                                                                                <input type="radio" name="status"
+                                                                                    checked
+                                                                                    class="custom-radio flex-shrink-0" />
+                                                                                <label>Yes</label>
+                                                                            </div>
+                                                                            <div
+                                                                                class="d-flex justify-content-start align-items-center gap-3">
+                                                                                <input type="radio" name="status"
+                                                                                    class="custom-radio flex-shrink-0" />
+                                                                                <label>No</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn text-white rounded-4 px-4"
+                                                    style="background: #5a6185" data-bs-toggle="modal"
+                                                    data-bs-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ==============interview details area end============ -->
+
+
+                                <!-- ===============Do you want to accept area start============ -->
+                                <div class="modal fade" id="doyouwanttoaccept" aria-hidden="true"
+                                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
+                                                    Do you want to accept?
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <label for="" class="mb-1 fs-14">
+                                                    Please enter your comments
+                                                </label>
+                                                <textarea name="" id="" class="form-control rounded-4"
+                                                    style="resize: none; height: 100px;"></textarea>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn text-white rounded-4 px-4 bg-blue"
+                                                    data-bs-toggle="modal" data-bs-dismiss="modal">
+                                                    Yes
+                                                </button>
+                                                <button class="btn text-white rounded-4 px-4"
+                                                    style="background: #5a6185" data-bs-toggle="modal"
+                                                    data-bs-dismiss="modal">
+                                                    No
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ==============Do you want to accept area end============ -->
                             </div>
 
                             <!-- =============List end============= -->
@@ -1591,23 +2150,16 @@
                         <!-- =================data table area end=================== -->
                     </div>
                     <!-- ================= Main body area area end================= -->
-
-
-
-
                 </div>
                 <!-- ================main content area end============== -->
                 <!-- ==========footer area start========= -->
-                <footer class="d-flex align-items-center justify-content-center p-2" style=" background: #DBE1FF;">
+                <footer class="d-flex align-items-center justify-content-center p-2" style="background: #dbe1ff">
                     <small class="text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
                 </footer>
                 <!-- ==========footer area end========= -->
-
-
             </div>
         </div>
     </div>
-
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
