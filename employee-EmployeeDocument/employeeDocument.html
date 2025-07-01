@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fav icon -->
     <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
-    <title>Attendance</title>
+    <title>Employee HR Task</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -217,7 +217,7 @@
                                             Branch
                                             Hr
                                         </a></li>
-                                    <li><a href="newJoineeAttendanceApproval.html" class="mb-1">
+                                    <li><a href="../attendanceSupervisor/newJoineeAttendanceApproval.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
@@ -1127,454 +1127,343 @@
                     </div>
                 </div>
                 <!-- ================main content area start============== -->
-                <div class="pb-5 pt-3 px-2 px-lg-3">
+                <div class="main-content-area pb-5 pt-3 px-2 px-lg-3">
 
                     <!-- tabs area -->
                     <div
-                        class="d-flex align-items-center bg-white justify-content-between p-3 rounded-3 shadow-sm mb-3 tabarea">
+                        class="d-flex align-items-sm-center align-items-start bg-white justify-content-between p-3 rounded-3 shadow-sm mb-3 tabarea flex-column flex-sm-row gap-4">
 
                         <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><button style="color: #757575;">Attendance</button></li>
-                                <li class="breadcrumb-item" aria-current="page">
-                                    <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Supervisor <img class="d-inline" height="20px "
-                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
-                                            alt=""></button>
-                                    <ul class="dropdown-menu border-0 rounded-3 overflow-y-auto shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="../attendance/attendanceDetails.html">My
-                                                Attendance</a></li>
-                                        <li><a class="dropdown-item mb-1" href="../reports/attendance.html">Reports</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="../branchHr/markAttendance.html">Branch
-                                                Hr</a></li>
-                                        <li><a class="dropdown-item mb-1"
-                                                href="newJoineeAttendanceApproval.html">Supervisor</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="markUserAttendance.html">HR
-                                                Task</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="../late/lateUpdate.html">Late</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1"
-                                                href="../biometric/bioMetricStatusUpdate.html">Biometric</a>
-                                        </li>
-
-                                    </ul>
+                                <li class="breadcrumb-item">
+                                    <a style="color: #757575" href="employeeManagement.html">Employee</a>
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Multiple Days OD <img class="d-inline" height="20px "
+                                        aria-expanded="false">Employee Document <img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
-                                    <ul class="dropdown-menu border-0 rounded-3  shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="subordinateRegularizationRequests.html">
-                                                Subordinate Regularization Requests</a></li>
-                                        <li><a class="dropdown-item mb-1" href="multipleDaysOD.html">
-                                                Multiple Days OD</a></li>
-                                        <li><a class="dropdown-item mb-1" href="newJoineeAttendanceApproval.html">New
-                                                Joinee Attendance Approval</a></li>
-                                        <li><a class="dropdown-item mb-1" href="subordinateAttendance.html">
-                                                Subordinate Attendance</a></li>
-                                        <li><a class="dropdown-item mb-1" href="oDApproval.html">
-                                                OD Approval</a></li>
-
-                                        <!-- ===Roster Update menu=== -->
-                                        <li class=" splitmenuItems suprosterUpdatemenuautoreg">
-                                            <button class="dropdown-item mb-1 ps-3 dropdown-toggle-split"
-                                                data-bs-toggle="dropdown">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <span>Roster Update</span>
-                                                    <span class=" ms-5"><i class="fa-solid fa-angle-right"></i></span>
-                                                </div>
-                                            </button>
-                                            <!-- ===Roster Update submenu=== -->
-                                            <ul class="dropdown-menu subdrpdownActive border-0 rounded-3 shadow-lg">
-                                                <li><a href="showRoster.html" class="dropdown-item mb-1">
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <span>Show Roster</span>
-
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li><a href="uploadRoster.html" class="dropdown-item mb-1">
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <span>Upload Roster</span>
-
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                    <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../employee/employeeManagement.html">Employee Management</a></li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../employee-HR-Task/companyAnnouncements.html">Hr Task</a></li>
+                                        <li><a class="dropdown-item mb-1" href="letters.html">Reports</a></li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../employee-Appointment-Letters/appointmentLetters.html">Appointment
+                                                Letters</a></li>
+                                        <li><a class="dropdown-item mb-1" href="../employee-MyProfile/paySlip.html">My
+                                                Profile</a></li>
+                                        <li><a class="dropdown-item mb-1" href="employeeDocument.html">Employee
+                                                Document</a></li>
                                     </ul>
                                 </li>
                             </ol>
                         </nav>
+                        <!-- user role area -->
+                        <div class="user-role-area d-flex justify-content-end align-items-center ">
+                            <ul>
+                                <li>Role</li>
+                                <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
+
+
+                                <li class="roleDropdownarea">
+                                    <div class="custom-dropdown roleDropdown" style="width: 100%;">
+                                        <!-- Dropdown button -->
+                                        <div class="custom-dropdown-button border-0"
+                                            style="font-size: 12px !important; padding:0 18px 0 0;"
+                                            onclick="toggleDropdown(event)">
+                                            HR Factory
+                                        </div>
+                                        <!-- Dropdown options -->
+                                        <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
+                                            style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'1', ' HR Factory')"> HR Factory</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'2', 'L2')">L2</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'3', 'L1')">L1</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'4', 'CorpComm')">CorpComm</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'5', 'Administration Clearance Factory')">
+                                                Administration Clearance Factory</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'6', 'Business Card')">Business Card
+                                            </div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'7', 'HRADMIN')">HRADMIN</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'8', 'Administration')">Administration
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <!-- ================= Search Request Requests area start================= -->
-                    <div class="attendance-area pb-4 pt-3">
+                    <!-- ================= Main body area area start================= -->
+                    <div class="main-body-area pb-4 pt-3">
+                        <div class="bg-white p-3 rounded-4 shadow mb-4">
+                            <div class="row g-4">
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Company </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Branch </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Employee Category </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Employee Designation </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <label class="mb-1" for=""> Employee Role </label>
+                                    <select style="border-color: #c2c2c2; border-radius: 8px" class="form-select fs-7"
+                                        name="" id="">
+                                        <option value="">Select</option>
+                                        <option value="">Example 1</option>
+                                        <option value="">Example 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-6 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                    <div class="h-100 d-flex justify-content-center align-items-center pt-xxl-4  gap-3">
+                                        <label class="" for=""> Search </label>
+                                        <input type="text" style="border-color: #c2c2c2; border-radius: 8px"
+                                            class="form-control fs-7" />
+                                        <button class="btn bg-blue text-white rounded-4 px-4">
+                                            Find
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- =================data table area start=================== -->
-                        <div class="bg-white p-3 rounded-4 shadow dataTable-area">
-                            <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                List</h1>
+                        <div class="bg-white p-3 rounded-4 mt-4 shadow dataTable-area">
+
+
                             <!-- =============List start============= -->
                             <div class="mt-3">
-                                <div class="table-responsive ">
+                                <div class="table-responsive">
                                     <table class="table table-bordered border-gray">
                                         <thead>
-                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top align-top"
-                                                style="color: #404040; background: #F9F9F9">
-                                                <th class="border-0">Code</th>
-                                                <th class="border-0">Name</th>
-                                                <th class="border-0">Request Reason</th>
-                                                <th class="border-0">Request From</th>
-                                                <th class="border-0">Request To</th>
-                                                <th class="border-0 text-center">Days</th>
-                                                <th class="border-0">Requested On</th>
-                                                <th class="border-0">
-                                                    <div
-                                                        class="d-flex justify-content-center align-items-center flex-column">
-                                                        <span>Reject</span>
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="select-all-checkbox" />
-                                                                <span class="checkmark basicCheckmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                            <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
+                                                style="color: #404040; background: #f9f9f9;   vertical-align: middle;">
+                                                <th class="border-0 px-2">
                                                 </th>
-                                                <th class="border-0">
-                                                    <div
-                                                        class="d-flex justify-content-center align-items-center flex-column">
-                                                        <span>Approved</span>
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="select-all-checkboxapp" />
-                                                                <span class="checkmark basicCheckmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </th>
-                                                <th class="border-0 text-center">Rejection Reason</th>
-
-
+                                                <th class="border-0 ">Code</th>
+                                                <th class="border-0 ">Name</th>
+                                                <th class="border-0   ">Designation</th>
+                                                <th class="border-0   ">Mobile</th>
+                                                <th class="border-0   ">Email ID</th>
+                                                <th class="border-0   ">Branch</th>
+                                                <th class="border-0  ">Status</th>
                                             </tr>
                                         </thead>
-                                        <tbody style="font-family: DM Sans, sans-serif;">
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
+                                        <tbody style="
+                                                font-family: DM Sans, sans-serif;
+                                                font-size: 12px !important;
+                                                ">
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <div class="position-relative"
+                                                            style="height: 20px; width: 20px">
+                                                            <label class="custom-checkbox">
+                                                                <input type="checkbox" />
+                                                                <span class="checkmark basicCheckmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
                                                 <td class="p-2">
-                                                    <button data-bs-toggle="modal" data-bs-target="#requestReason"
-                                                        style="color: #4A59A7;">Test..</button>
+                                                    Assistant Sales Manager
                                                 </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2 text-center">
-                                                    1
+                                                <td class="p-2 ">
+                                                    9955661122
                                                 </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                                <td class="p-2">Johndoe@gmail.com</td>
+
+                                                <td class="p-2 ">
+                                                    Bengaluru
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkboxapp" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2" style="min-width: 150px;">
-                                                    <div class="d-flex justify-content-center align-items-center w-100">
-                                                        <select name="" id="" class="form-select w-100 fs-14 rounded-4">
-                                                            <option value="">Select</option>
-                                                        </select>
-                                                    </div>
+                                                    PERMANENT
                                                 </td>
                                             </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <div class="position-relative"
+                                                            style="height: 20px; width: 20px">
+                                                            <label class="custom-checkbox">
+                                                                <input type="checkbox" />
+                                                                <span class="checkmark basicCheckmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
                                                 <td class="p-2">
-                                                    <button data-bs-toggle="modal" data-bs-target="#requestReason"
-                                                        style="color: #4A59A7;">Test..</button>
+                                                    Assistant Sales Manager
                                                 </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2 text-center">
-                                                    1
+                                                <td class="p-2 ">
+                                                    9955661122
                                                 </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                                <td class="p-2">Johndoe@gmail.com</td>
+
+                                                <td class="p-2 ">
+                                                    Bengaluru
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkboxapp" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2" style="min-width: 150px;">
-                                                    <div class="d-flex justify-content-center align-items-center w-100">
-                                                        <select name="" id="" class="form-select w-100 fs-14 rounded-4">
-                                                            <option value="">Select</option>
-                                                        </select>
-                                                    </div>
+                                                    PERMANENT
                                                 </td>
                                             </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <div class="position-relative"
+                                                            style="height: 20px; width: 20px">
+                                                            <label class="custom-checkbox">
+                                                                <input type="checkbox" />
+                                                                <span class="checkmark basicCheckmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
                                                 <td class="p-2">
-                                                    <button data-bs-toggle="modal" data-bs-target="#requestReason"
-                                                        style="color: #4A59A7;">Test..</button>
+                                                    Assistant Sales Manager
                                                 </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2 text-center">
-                                                    1
+                                                <td class="p-2 ">
+                                                    9955661122
                                                 </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                                <td class="p-2">Johndoe@gmail.com</td>
+
+                                                <td class="p-2 ">
+                                                    Bengaluru
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkboxapp" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2" style="min-width: 150px;">
-                                                    <div class="d-flex justify-content-center align-items-center w-100">
-                                                        <select name="" id="" class="form-select w-100 fs-14 rounded-4">
-                                                            <option value="">Select</option>
-                                                        </select>
-                                                    </div>
+                                                    PERMANENT
                                                 </td>
                                             </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <div class="position-relative"
+                                                            style="height: 20px; width: 20px">
+                                                            <label class="custom-checkbox">
+                                                                <input type="checkbox" />
+                                                                <span class="checkmark basicCheckmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
                                                 <td class="p-2">
-                                                    <button data-bs-toggle="modal" data-bs-target="#requestReason"
-                                                        style="color: #4A59A7;">Test..</button>
+                                                    Assistant Sales Manager
                                                 </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2 text-center">
-                                                    1
+                                                <td class="p-2 ">
+                                                    9955661122
                                                 </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                                <td class="p-2">Johndoe@gmail.com</td>
+
+                                                <td class="p-2 ">
+                                                    Bengaluru
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkboxapp" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2" style="min-width: 150px;">
-                                                    <div class="d-flex justify-content-center align-items-center w-100">
-                                                        <select name="" id="" class="form-select w-100 fs-14 rounded-4">
-                                                            <option value="">Select</option>
-                                                        </select>
-                                                    </div>
+                                                    PERMANENT
                                                 </td>
                                             </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
+                                            <tr class="text-nowrap fw-normal" style="
+                                                    color: #202020;
+                                                    height: 50px;
+                                                    vertical-align: middle;
+                                                ">
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <div class="position-relative"
+                                                            style="height: 20px; width: 20px">
+                                                            <label class="custom-checkbox">
+                                                                <input type="checkbox" />
+                                                                <span class="checkmark basicCheckmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">FE0123</td>
                                                 <td class="p-2">John Doe</td>
                                                 <td class="p-2">
-                                                    <button data-bs-toggle="modal" data-bs-target="#requestReason"
-                                                        style="color: #4A59A7;">Test..</button>
+                                                    Assistant Sales Manager
                                                 </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2 text-center">
-                                                    1
+                                                <td class="p-2 ">
+                                                    9955661122
                                                 </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                                <td class="p-2">Johndoe@gmail.com</td>
+
+                                                <td class="p-2 ">
+                                                    Bengaluru
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkboxapp" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2" style="min-width: 150px;">
-                                                    <div class="d-flex justify-content-center align-items-center w-100">
-                                                        <select name="" id="" class="form-select w-100 fs-14 rounded-4">
-                                                            <option value="">Select</option>
-                                                        </select>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
-                                                <td class="p-2">
-                                                    <button data-bs-toggle="modal" data-bs-target="#requestReason"
-                                                        style="color: #4A59A7;">Test..</button>
-                                                </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2 text-center">
-                                                    1
-                                                </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkboxapp" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2" style="min-width: 150px;">
-                                                    <div class="d-flex justify-content-center align-items-center w-100">
-                                                        <select name="" id="" class="form-select w-100 fs-14 rounded-4">
-                                                            <option value="">Select</option>
-                                                        </select>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-nowrap fs-7 fw-normal"
-                                                style="color: #202020; height: 40px; vertical-align: middle; ">
-                                                <td class="p-2">FE1611</td>
-                                                <td class="p-2">John Doe</td>
-                                                <td class="p-2">
-                                                    <button data-bs-toggle="modal" data-bs-target="#requestReason"
-                                                        style="color: #4A59A7;">Test..</button>
-                                                </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2 text-center">
-                                                    1
-                                                </td>
-                                                <td class="p-2">04/07/2024</td>
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative"
-                                                            style="height: 20px; width: 20px">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkboxapp" />
-                                                                <span class="checkmark"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2" style="min-width: 150px;">
-                                                    <div class="d-flex justify-content-center align-items-center w-100">
-                                                        <select name="" id="" class="form-select w-100 fs-14 rounded-4">
-                                                            <option value="">Select</option>
-                                                        </select>
-                                                    </div>
+                                                    PERMANENT
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+
                                 <!-- pagination area -->
                                 <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
                                     <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
@@ -1626,58 +1515,61 @@
                                                         onclick="selectOption(event, '5', '14')">14</div>
                                                 </div>
                                             </div>
+
                                         </li>
                                     </ul>
                                 </div>
-                                <div
-                                    class=" w-100 d-flex justify-content-sm-end justify-content-center fs-14 align-items-end gap-3 pt-3 ">
-                                    <button class="btn bg-blue text-white rounded-4 px-sm-4 px-3 fs-14">Submit</button>
-                                </div>
+
                             </div>
-
-                            <!-- ===============Request Reason area start============ -->
-                            <div class="modal fade" id="requestReason" aria-hidden="true"
-                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                <div class="modal-dialog modal-dialog-centered ">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-wrap lh-base" id="exampleModalToggleLabel">
-                                                Request Reason</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close">
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h1 class="fs-14 fw-normal py-3 mb-0">Reason - test</h1>
-                                        </div>
-                                        <div class="modal-footer">
-
-
-                                            <button class="btn  text-white rounded-4 px-4" style="background: #5A6185;"
-                                                data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- ===============Request Reason area end============ -->
 
                             <!-- =============List end============= -->
+                        </div>
+                        <!-- =================data table area end=================== -->
 
 
-
-
-
-
-
-
+                        <!-- generate letters area start -->
+                        <div class="bg-white p-3 rounded-4 mt-4 shadow dataTable-area">
+                            <ul class="generateLetterlist ">
+                                <li>
+                                    <button class="enabledatabtn">Download Employment Form</button>
+                                </li>
+                                <li>
+                                    <button class="enabledatabtn">Download Acknowledgement</button>
+                                </li>
+                                <li>
+                                    <button class="enabledatabtn">Download Undertaking</button>
+                                </li>
+                                <li>
+                                    <button class="enabledatabtn">Download Undertaking grooming kit</button>
+                                </li>
+                                <li>
+                                    <button class="enabledatabtn">Download Insurance Form</button>
+                                </li>
+                                <li>
+                                    <button class="enabledatabtn">Download Food Handlers</button>
+                                </li>
+                                <li>
+                                    <button class="enabledatabtn">Download Form-F Gratuity</button>
+                                </li>
+                                <li>
+                                    <button class="enabledatabtn">Download Form_2 Nomination PF</button>
+                                </li>
+                                <li>
+                                    <button class="enabledatabtn">Download Form No.11- Declaration Form</button>
+                                </li>
+                                <li>
+                                    <button class="enabledatabtn">Download Declaration of Covid-19</button>
+                                </li>
+                                <li>
+                                    <button class="enabledatabtn">Download Background Verification form</button>
+                                </li>
+                            </ul>
 
 
                         </div>
-                        <!-- =================data table area end=================== -->
+                        <!-- generate letters area end -->
                     </div>
-                    <!-- ================= Employee Regularization Requests area end================= -->
+                    <!-- ================= Main body area area end================= -->
 
 
 
