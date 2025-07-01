@@ -1106,6 +1106,35 @@ $(document).ready(function () {
     });
 });
 
+// Submit to HRAdmin for Approval
+$(document).ready(function () {
+
+
+    $('.submittoHRAdminforApprovalDetails').hide();  // Hide all by default
+    $('#approvalRequestedArea').show().addClass('submittoHRAdminforApprovalDetailsactive');
+
+    function changeHrapprovalTab(target) {
+        $('.submittoHRAdminforApprovalDetails.submittoHRAdminforApprovalDetailsactive').fadeOut(300, function () {
+            $(this).removeClass('submittoHRAdminforApprovalDetailsactive');
+            $('#' + target).fadeIn(300).addClass('submittoHRAdminforApprovalDetailsactive');
+        });
+    }
+
+    $('.approvalRequestedBtn').click(function () {
+        changeHrapprovalTab('approvalRequestedArea');
+    });
+    $('.approvalApprovedBtn').click(function () {
+        changeHrapprovalTab('approvalApprovedArea');
+    });
+    $('.approvalCancelledBtn').click(function () {
+        changeHrapprovalTab('approvalCancelledArea');
+    });
+    $('.approvalRejectedBtn').click(function () {
+        changeHrapprovalTab('approvalRejectedArea');
+    });
+
+});
+
 // role access
 $(document).ready(function () {
 

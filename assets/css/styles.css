@@ -2733,6 +2733,14 @@ footer {
           align-items: center;
 }
 
+textarea {
+  resize: none;
+}
+
+.approvalTap_area .active {
+  background: #5A6185 !important;
+}
+
 .modal-footer {
   background: rgba(195, 206, 255, 0.2);
   border-top: none;
