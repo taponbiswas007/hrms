@@ -1891,6 +1891,11 @@ footer {
   color: #FC5A5A;
 }
 
+.userInformation_area {
+  border: 1px solid #E5E5EA;
+  border-radius: 8px;
+}
+
 .financial_filter_area {
   padding-left: 0;
   margin-bottom: 0;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fav icon -->
     <link rel="shortcut icon" href="../assets/images/dashboard/favIcon.png" type="image/x-icon">
-    <title>My Profile</title>
+    <title>Employee HR Task</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1127,203 +1127,114 @@
                     </div>
                 </div>
                 <!-- ================main content area start============== -->
-                <div class="pb-5 pt-3 px-2 px-lg-3">
+                <div class="main-content-area pb-5 pt-3 px-2 px-lg-3">
 
                     <!-- tabs area -->
                     <div
-                        class="d-flex align-items-center bg-white justify-content-between p-3 rounded-3 shadow-sm mb-3 tabarea">
+                        class="d-flex align-items-sm-center align-items-start bg-white justify-content-between p-3 rounded-3 shadow-sm mb-3 tabarea flex-column flex-sm-row gap-4">
 
                         <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a style="color: #757575;" href="general.html">My
-                                        Profile</a></li>
-                                <li class="breadcrumb-item" aria-current="page">
-                                    <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">My Info <img class="d-inline" height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
-                                    <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="general.html">My Info</a></li>
-                                        <li><a class="dropdown-item mb-1"
-                                                href="../myProfile-AppointmentLetter/appointmentLetter.html">Appointment
-                                                Letter</a></li>
-                                    </ul>
+                                <li class="breadcrumb-item">
+                                    <a style="color: #757575" href="#">My Profile</a>
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Medical <img class="d-inline" height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
+                                        aria-expanded="false">Appointment Letter <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="general.html">General</a></li>
-                                        <li><a class="dropdown-item mb-1" href="administration.html">Administration</a>
+                                        <li><a class="dropdown-item mb-1" href="../myProfile/general.html">My Info</a>
                                         </li>
-                                        <li><a class="dropdown-item mb-1" href="communication.html">Communication</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="financial.html">Financial</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="medical.html">Medical</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="joining.html">Joining</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="personal.html">Personal</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="educational.html">Educational</a></li>
-                                        <li><a class="dropdown-item mb-1" href="workExp.html">Work Exp.</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="other.html">Other</a>
-                                        </li>
-
+                                        <li><a class="dropdown-item mb-1" href="appointmentLetter.html">Appointment
+                                                Letter</a></li>
                                     </ul>
                                 </li>
                             </ol>
                         </nav>
+                        <!-- user role area -->
+                        <div class="user-role-area d-flex justify-content-end align-items-center ">
+                            <ul>
+                                <li>Role</li>
+                                <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
+
+
+                                <li class="roleDropdownarea">
+                                    <div class="custom-dropdown roleDropdown" style="width: 100%;">
+                                        <!-- Dropdown button -->
+                                        <div class="custom-dropdown-button border-0"
+                                            style="font-size: 12px !important; padding:0 18px 0 0;"
+                                            onclick="toggleDropdown(event)">
+                                            HR Factory
+                                        </div>
+                                        <!-- Dropdown options -->
+                                        <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
+                                            style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'1', ' HR Factory')"> HR Factory</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'2', 'L2')">L2</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'3', 'L1')">L1</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'4', 'CorpComm')">CorpComm</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'5', 'Administration Clearance Factory')">
+                                                Administration Clearance Factory</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'6', 'Business Card')">Business Card
+                                            </div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'7', 'HRADMIN')">HRADMIN</div>
+                                            <div class="text-nowrap custom-dropdown-option"
+                                                onclick="selectOption(event,'8', 'Administration')">Administration
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <!-- ================= Main body area area start================= -->
                     <div class="main-body-area pb-4 pt-3">
-                        <div class="bg-white p-3 rounded-4 shadow mb-4">
-                            <div class="d-flex select-criteria justify-content-between align-items-center  pb-3"
-                                style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <div class="d-flex justify-content-start align-items-center gap-4">
-                                    <h1 class=" fw-medium fs-5 text-black ">
-                                        Medical Info</h1>
-                                    <button class="profileEditbtn">
-                                        <i class="fa-solid fa-pen-to-square"></i>
-                                    </button>
+                        <div class="bg-white p-3 rounded-4 shadow">
+                            <h1 class=" fw-medium fs-6 text-black pb-3 " style="border-bottom: 0.9px dashed #d2d2d2">
+                                User Information
+                            </h1>
+                            <div class="userInformation_area p-sm-4 p-2 mt-4">
+                                <div class="table-responsive">
+                                    <table class="table fs-14 text-nowrap table-bordered "
+                                        style="border-color: #ffffff;">
+                                        <tr>
+                                            <td class="fw-medium" style="width: 200px;">Code:</td>
+                                            <td class="fw-normal">FE0134</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-medium " style="width: 200px;">Name:</td>
+                                            <td class="fw-normal">Nitin Kumar</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-medium" style="width: 200px;">Date of Letter:</td>
+                                            <td class="fw-normal">6/26/2025 5:51:42 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 200px;">
+                                                <button class="btn bg-blue text-white px-4 rounded-4">Download</button>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
 
-                                <ul>
-                                    <li>Role</li>
-                                    <!-- <li>User Role <span class=" ms-2"><i class="fa-solid fa-angle-down"></i></span></li> -->
-
-
-                                    <li class="roleDropdownarea">
-                                        <div class="custom-dropdown roleDropdown" style="width: 100%;">
-                                            <!-- Dropdown button -->
-                                            <div class="custom-dropdown-button border-0"
-                                                style="font-size: 12px !important; padding:0 18px 0 0;"
-                                                onclick="toggleDropdown(event)">
-                                                HR Factory
-                                            </div>
-                                            <!-- Dropdown options -->
-                                            <div class="shadow custom-dropdown-options p-2 overflow-y-auto"
-                                                style="bottom: unset; top: 100%;font-size: 12px;  max-height: calc(100vh - 250px); width:fit-content; right: 0; ">
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'1', ' HR Factory')"> HR Factory</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'2', 'L2')">L2</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'3', 'L1')">L1</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'4', 'CorpComm')">CorpComm</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'5', 'Administration Clearance Factory')">
-                                                    Administration Clearance Factory</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'6', 'Business Card')">Business Card
-                                                </div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'7', 'HRADMIN')">HRADMIN</div>
-                                                <div class="text-nowrap custom-dropdown-option"
-                                                    onclick="selectOption(event,'8', 'Administration')">Administration
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
                             </div>
-
-                            <div class="table-responsive  mt-3">
-                                <table class="table table-bordered border-gray">
-                                    <thead>
-                                        <tr class="border-0 text-nowrap fs-7 fw-medium sticky-top"
-                                            style="color: #404040; background: #F9F9F9">
-                                            <th class="border-0">Question</th>
-                                            <th class="border-0 text-center">Answer</th>
-                                            <th class="border-0">Description</th>
-
-
-
-
-                                        </tr>
-                                    </thead>
-                                    <tbody style="font-family: DM Sans, sans-serif;">
-                                        <tr class="text-nowrap fs-7 fw-normal"
-                                            style="color: #202020; height: 40px; vertical-align: middle; ">
-                                            <td class="p-2" style="min-width: 100px">
-                                                Do you have any disability
-                                            </td>
-                                            <td class="p-2" style="min-width: 100px; text-align: center;">
-                                                <div class="position-relative">
-                                                    <label class="custom-checkbox " for="answer">
-
-                                                        <input type="checkbox" id="answer">
-                                                        <span class="checkmark"></span>
-
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td class="p-2">
-                                                <input type="text" class=" form-control fs-7" id=""
-                                                    style="min-width: 200px;" placeholder="Description">
-                                            </td>
-                                        </tr>
-                                        <tr class="text-nowrap fs-7 fw-normal"
-                                            style="color: #202020; height: 40px; vertical-align: middle; ">
-                                            <td class="p-2" style="min-width: 100px">
-                                                Do you have any chronic ailment
-                                            </td>
-                                            <td class="p-2" style="min-width: 100px; text-align: center;">
-                                                <div class="position-relative">
-                                                    <label class="custom-checkbox " for="answer2">
-
-                                                        <input type="checkbox" id="answer2">
-                                                        <span class="checkmark"></span>
-
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td class="p-2">
-                                                <input type="text" class=" form-control fs-7" id=""
-                                                    style="min-width: 200px;" placeholder="Description">
-                                            </td>
-                                        </tr>
-                                        <tr class="text-nowrap fs-7 fw-normal"
-                                            style="color: #202020; height: 40px; vertical-align: middle; ">
-                                            <td class="p-2" style="min-width: 100px">
-                                                Do you have any contagious Diseases
-                                            </td>
-                                            <td class="p-2" style="min-width: 100px; text-align: center;">
-                                                <div class="position-relative">
-                                                    <label class="custom-checkbox " for="answer3">
-
-                                                        <input type="checkbox" id="answer3">
-                                                        <span class="checkmark"></span>
-
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td class="p-2">
-                                                <input type="text" class=" form-control fs-7" id=""
-                                                    style="min-width: 200px;" placeholder="Description">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap mt-3">
+                                <p class="notetext">
+                                    Note: pls acknowledge to hr,If you have already check appointment letter
+                                </p>
+                                <button class="btn bg-blue text-white px-4 rounded-4">Acknowledge</button>
                             </div>
-
-
-                            <div class=" pt-3 d-flex justify-content-end align-items-end gap-3">
-                                <button class="btn bg-blue text-white rounded-4 px-4"><i
-                                        class="fa-solid fa-arrow-left me-2"></i>Back </button>
-                                <button class="btn bg-blue text-white rounded-4 px-4">Next <i
-                                        class="fa-solid fa-arrow-right ms-2"></i></button>
-                            </div>
-
-
                         </div>
-
-
                     </div>
                     <!-- ================= Main body area area end================= -->
 
