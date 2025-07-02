@@ -45,6 +45,21 @@
     }
 }
 
+.userIconBox {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: #E1F1FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
 .recentOpenings {
 
     thead {
@@ -111,6 +126,62 @@
                     background: #00B445;
                     border-radius: 3px;
                     padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    .userDetails {
+        h1 {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000000;
+
+            span {
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #4A59A7;
+                margin-left: 5px;
+            }
+        }
+
+        ul {
+            display: flex;
+            column-gap: 5px;
+            margin-top: 7px;
+
+            li {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #8E8E93;
+
+                .graduation {
+                    color: #4AD991;
+                }
+
+                .file {
+                    color: #8280FF;
+                }
+
+                .email {
+                    color: #4A59A7;
+                }
+
+                .mobile {
+                    color: #4A59A7;
+                }
+
+                .address {
+                    color: #4A59A7;
                 }
             }
         }

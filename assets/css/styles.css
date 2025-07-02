@@ -5828,6 +5828,26 @@ textarea {
   width: 24px;
 }
 
+.userIconBox {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: #E1F1FE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.userIconBox img {
+  height: 100%;
+  width: 100%;
+}
+
 .recentOpenings thead {
   position: relative;
 }
@@ -5889,6 +5909,55 @@ textarea {
   background: #00B445;
   border-radius: 3px;
   padding: 5px 10px;
+}
+.recentOpenings .userDetails h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.recentOpenings .userDetails h1 span {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #4A59A7;
+  margin-left: 5px;
+}
+.recentOpenings .userDetails ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  margin-top: 7px;
+}
+.recentOpenings .userDetails ul li {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #8E8E93;
+}
+.recentOpenings .userDetails ul li .graduation {
+  color: #4AD991;
+}
+.recentOpenings .userDetails ul li .file {
+  color: #8280FF;
+}
+.recentOpenings .userDetails ul li .email {
+  color: #4A59A7;
+}
+.recentOpenings .userDetails ul li .mobile {
+  color: #4A59A7;
+}
+.recentOpenings .userDetails ul li .address {
+  color: #4A59A7;
 }
 
 @media (max-width: 440px) {
