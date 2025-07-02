@@ -5960,6 +5960,26 @@ textarea {
   color: #4A59A7;
 }
 
+.applicantImage {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.applicantImage img {
+  height: 100%;
+  width: 100%;
+}
+
+.resum_area {
+  height: 346px;
+  width: 100%;
+  border-radius: 10px;
+}
+.resum_area img {
+  height: 100%;
+  width: 100%;
+}
+
 @media (max-width: 440px) {
   .recent_resum_cardHeader .cardToolBox li button {
     font-size: 17px;
