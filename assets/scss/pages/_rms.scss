@@ -1,0 +1,128 @@
+.recent_resum_card_area {
+    height: 575px;
+}
+
+.recent_resum_cardHeader {
+    border-bottom: 1px solid #DADADA;
+    padding: 14px;
+
+    h1 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000000;
+    }
+
+    .cardToolBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 12px;
+
+        li {
+            button {
+                font-size: 25px;
+                color: #8E8E93;
+            }
+        }
+    }
+}
+
+.jobItemsIconBox {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: #E1F1FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.recentOpenings {
+
+    thead {
+        position: relative;
+
+        &::after {
+            content: ' ';
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            border-bottom: 1px dashed #DADADA;
+        }
+    }
+
+    tr {
+        vertical-align: middle;
+        padding: 10px;
+    }
+
+    .jobDetails {
+        a {
+            color: #4A59A7;
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            display: block;
+
+        }
+
+        ul {
+            display: flex;
+            column-gap: 5px;
+            margin-top: 5px;
+            padding-left: 0;
+
+            li {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #8E8E93;
+
+                span {
+                    font-family: Inter;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: #8E8E93;
+                }
+
+                .openStatus {
+                    font-family: DM Sans;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    color: #ffffff;
+                    background: #00B445;
+                    border-radius: 3px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .recent_resum_cardHeader .cardToolBox li button {
+        font-size: 17px;
+    }
+
+    .recent_resum_cardHeader h1 {
+        font-size: 16px;
+    }
+}

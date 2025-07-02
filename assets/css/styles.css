@@ -3804,7 +3804,7 @@ textarea {
   background: rgba(255, 172, 128, 0.1294117647);
 }
 
-.bg-green {
+.bg-green-simple {
   background: rgba(74, 217, 145, 0.1294117647);
 }
 
@@ -5771,5 +5771,131 @@ textarea {
   }
   .role_changer {
     display: block;
+  }
+}
+.recent_resum_card_area {
+  height: 575px;
+}
+
+.recent_resum_cardHeader {
+  border-bottom: 1px solid #DADADA;
+  padding: 14px;
+}
+.recent_resum_cardHeader h1 {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.recent_resum_cardHeader .cardToolBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+.recent_resum_cardHeader .cardToolBox li button {
+  font-size: 25px;
+  color: #8E8E93;
+}
+
+.jobItemsIconBox {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: #E1F1FE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.jobItemsIconBox img {
+  height: 24px;
+  width: 24px;
+}
+
+.recentOpenings thead {
+  position: relative;
+}
+.recentOpenings thead::after {
+  content: " ";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  border-bottom: 1px dashed #DADADA;
+}
+.recentOpenings tr {
+  vertical-align: middle;
+  padding: 10px;
+}
+.recentOpenings .jobDetails a {
+  color: #4A59A7;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: block;
+}
+.recentOpenings .jobDetails ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  margin-top: 5px;
+  padding-left: 0;
+}
+.recentOpenings .jobDetails ul li {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #8E8E93;
+}
+.recentOpenings .jobDetails ul li span {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #8E8E93;
+}
+.recentOpenings .jobDetails ul li .openStatus {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+  background: #00B445;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+@media (max-width: 440px) {
+  .recent_resum_cardHeader .cardToolBox li button {
+    font-size: 17px;
+  }
+  .recent_resum_cardHeader h1 {
+    font-size: 16px;
   }
 }
