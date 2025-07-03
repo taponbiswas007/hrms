@@ -6009,15 +6009,55 @@ textarea {
   background: #5A6185;
 }
 
-.addclientinformationActive {
-  display: block;
+.jobopeningFilterlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 15px;
+}
+.jobopeningFilterlist li {
+  border: 1px solid #5A6185;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  color: #5A6185;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.jobopeningFilterlist .active {
+  background: #5A6185;
+  color: #ffffff;
 }
 
+@media (max-width: 773px) {
+  .jobopeningDescriptionarea {
+    height: 301px !important;
+  }
+}
 @media (max-width: 440px) {
   .recent_resum_cardHeader .cardToolBox li button {
     font-size: 17px;
   }
   .recent_resum_cardHeader h1 {
     font-size: 16px;
+  }
+}
+@media (max-width: 427px) {
+  .jobopeningDescriptionarea {
+    height: 337px !important;
   }
 }

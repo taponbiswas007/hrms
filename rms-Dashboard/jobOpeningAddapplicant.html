@@ -1236,496 +1236,370 @@
 
                     <!-- ================= main dashboard area start================= -->
                     <div class=" pb-4 pt-3">
-                        <div class="row g-4">
-                            <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 col-md-6 col-sm-6 ">
-                                <div class="card h-100 shadow-sm border-0 rounded-4">
-                                    <div class="card-body d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center gap-3">
-                                            <div>
-                                                <a href="applicantList.html" class="adminDashbordCardtitle d-block mb-4"
-                                                    style="color: #4A59A7;">
-                                                    Total Applicants</a>
-                                                <h1 class="adminDashbordCardtitlecountNUmber mb-0">0</h1>
-                                            </div>
-                                        </div>
-                                        <div class="card_image_box bg-purple">
-                                            <img src="../assets/images/admin_dashboard/trainer.svg" alt="">
-                                        </div>
 
+                        <!-- =================Applicant List start=================== -->
+                        <div class="bg-white p-3 rounded-4 shadow dataTable-area">
+                            <div class=" w-100 d-flex flex-wrap gap-3 justify-content-between align-items-center pb-3"
+                                style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                <h1 class=" fw-medium fs-5 text-black  ">
+                                    Add Applicant</h1>
+                            </div>
+
+                            <!-- add applicants type tablist -->
+                            <ul class="addapplicantTablist mt-3">
+                                <li>
+                                    <button class="active generalInformationbtn">General</button>
+                                </li>
+                                <li>
+                                    <button class="otherInformationbtn">Other</button>
+                                </li>
+                            </ul>
+                            <!-- general form area -->
+                            <div id="generalInformation" class=" addclientinformation addclientinformationActive mt-4">
+                                <div class="row g-4 ">
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Job Opening Title <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Job Opening Title">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Requirement Originator <span class="text-danger">*</span>
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Primary Skill <span class="text-danger">*</span>
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Experience <span class="text-danger">*</span>
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Job Opening Status <span class="text-danger">*</span>
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Job Opening Date<span class="text-danger">*</span>
+                                        </label>
+                                        <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Job Country <span class="text-danger">*</span>
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Job State <span class="text-danger">*</span>
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Job City <span class="text-danger">*</span>
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <label for="" class="mb-1">
+                                            Job Description
+                                        </label>
+                                        <div class="jobDescriptiontexteditor_area jobopeningDescriptionarea pb-2">
+                                            <div
+                                                class="jobDescriptionToolbar  d-flex justify-content-between align-items-center">
+                                                <div
+                                                    class="d-flex justify-content-start align-items-center gap-3 flex-wrap ">
+                                                    <button class="text-dark">
+                                                        Roboto <span class="ms-2"><i
+                                                                class="fa-solid fa-angle-down"></i></span>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        Normal <span class="ms-2"><i
+                                                                class="fa-solid fa-angle-down"></i></span>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-bold"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-italic"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-underline"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-strikethrough"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <img src="../assets/images/textColor.svg" alt="">
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-paintbrush"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-list-ol"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-list-ul"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-outdent"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-indent"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-subscript"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-superscript"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-images"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <textarea name="" id="" placeholder="Enter Job Description"></textarea>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div
+                                            class=" h-100 w-100 d-flex justify-content-sm-end gap-3 justify-content-center flex-wrap align-items-end ">
+                                            <button class="btn bg-blue text-white rounded-4 px-4">Save</button>
+                                            <button href="#" class="btn  text-white rounded-4 px-4"
+                                                style="background: #5A6185;">Clear</button>
+                                            <a href="jobOpeningStatistics.html"
+                                                class="btn bg-blue text-white rounded-4 px-4"><i
+                                                    class="fa-solid fa-arrow-left me-2"></i>Back</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 col-md-6 col-sm-6 ">
-                                <div class="card h-100 shadow-sm border-0 rounded-4">
-                                    <div class="card-body d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center gap-3">
-                                            <div>
-                                                <a href="#" class="adminDashbordCardtitle d-block mb-4"
-                                                    style="color: #4A59A7;">
-                                                    Total Recruiter</a>
-                                                <h1 class="adminDashbordCardtitlecountNUmber mb-0">7</h1>
-                                            </div>
-                                        </div>
-                                        <div class="card_image_box bg-orange">
-                                            <img src="../assets/images/admin_dashboard/trainees.svg" alt="">
-                                        </div>
 
+                            <!-- other form area -->
+                            <div id="otherInformation" class=" addclientinformation  mt-4">
+                                <div class="row g-4 ">
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Employment Type
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Salary Rate
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Salary Rate">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Rate Type
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Positions
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Positions">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Availability Start Date
+                                        </label>
+                                        <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Availability End Date
+                                        </label>
+                                        <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Highest Qualification
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Industry
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Applicant Placement
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-9 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <label for="" class="mb-1">
+                                            Other Skills
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Other Skills">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <label for="" class="mb-1">
+                                            Job Summary
+                                        </label>
+                                        <div class="jobDescriptiontexteditor_area jobopeningDescriptionarea pb-2">
+                                            <div
+                                                class="jobDescriptionToolbar  d-flex justify-content-between align-items-center">
+                                                <div
+                                                    class="d-flex justify-content-start align-items-center flex-wrap gap-3 ">
+                                                    <button class="text-dark">
+                                                        Roboto <span class="ms-2"><i
+                                                                class="fa-solid fa-angle-down"></i></span>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        Normal <span class="ms-2"><i
+                                                                class="fa-solid fa-angle-down"></i></span>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-bold"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-italic"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-underline"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-strikethrough"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <img src="../assets/images/textColor.svg" alt="">
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-paintbrush"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-list-ol"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-list-ul"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-outdent"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-indent"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-subscript"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-superscript"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </button>
+                                                    <button class="text-dark">
+                                                        <i class="fa-solid fa-images"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <textarea name="" id="" placeholder="Enter Job Description"></textarea>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div
+                                            class=" h-100 w-100 d-flex justify-content-sm-end gap-3 justify-content-center flex-wrap align-items-end ">
+                                            <button class="btn bg-blue text-white rounded-4 px-4">Save</button>
+                                            <button href="#" class="btn  text-white rounded-4 px-4"
+                                                style="background: #5A6185;">Clear</button>
+                                            <a href="jobOpeningStatistics.html"
+                                                class="btn bg-blue text-white rounded-4 px-4"><i
+                                                    class="fa-solid fa-arrow-left me-2"></i>Back</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 col-md-6 col-sm-6 ">
-                                <div class="card h-100 shadow-sm border-0 rounded-4">
-                                    <div class="card-body d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center gap-3">
-                                            <div>
-                                                <a href="#" class="adminDashbordCardtitle d-block mb-4"
-                                                    style="color: #4A59A7;">
-                                                    Total Interviewer</a>
-                                                <h1 class="adminDashbordCardtitlecountNUmber mb-0">3</h1>
-                                            </div>
-                                        </div>
-                                        <div class="card_image_box bg-green-simple">
-                                            <img src="../assets/images/admin_dashboard/courses.svg" alt="">
-                                        </div>
+                            <!-- =================Applicant List area end=================== -->
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 col-md-6 col-sm-6 ">
-                                <div class="card h-100 shadow-sm border-0 rounded-4">
-                                    <div class="card-body d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center gap-3">
-                                            <div>
-                                                <a href="jobOpeningStatistics.html"
-                                                    class="adminDashbordCardtitle d-block mb-4" style="color: #4A59A7;">
-                                                    Total Openings</a>
-                                                <h1 class="adminDashbordCardtitlecountNUmber mb-0">11</h1>
-                                            </div>
-                                        </div>
-                                        <div class="card_image_box bg-dark-orange">
-                                            <img src="../assets/images/admin_dashboard/topics.svg" alt="">
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <!-- Recent Openings and Recent Resume start -->
-                        <div class="row g-4 mt-3">
-                            <div class="col-xl-6">
-                                <div class="bg-white rounded-3 shadow recent_resum_card_area">
-                                    <div
-                                        class="recent_resum_cardHeader d-flex justify-content-between align-items-center flex-wrap gap-3">
-                                        <h1>Recent Openings</h1>
-                                        <ul class="cardToolBox">
-                                            <li><button><i class="fa-solid fa-gear"></i></button></li>
-                                            <li><button><i class="fa-solid fa-minus"></i></button></li>
-                                            <li><button><i
-                                                        class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
-                                            </li>
-                                            <li><button><i class="fa-solid fa-xmark"></i></button></li>
-                                        </ul>
-                                    </div>
-                                    <div class="px-3">
-                                        <div class="table-responsive" style="max-height: 476px;">
-                                            <table class="table recentOpenings table-bordered px-3"
-                                                style="border-color: #ffffff;">
-                                                <thead class="position-sticky top-0 bg-white">
-                                                    <tr class="fs-14 fw-normal py-2">
-                                                        <th></th>
-                                                        <th>Job Title</th>
-                                                        <th>Post On</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr class="text-nowrap">
-                                                        <td>
-                                                            <div class="jobItemsIconBox">
-                                                                <img src="../assets/images/managerIcon.svg" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="jobDetails">
-                                                            <a href="#">Branch Manager</a>
-                                                            <ul>
-                                                                <li><span>Source:</span> IT,</li>
-                                                                <li><span>Skill:</span> Java Developer,</li>
-                                                                <li><span>Experience:</span>Fresher,</li>
-                                                                <li><span>Status:</span> <span
-                                                                        class="openStatus">Open</span>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            10 Jun 2025
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="bg-white rounded-3 shadow recent_resum_card_area">
-                                    <div
-                                        class="recent_resum_cardHeader d-flex justify-content-between align-items-center flex-wrap gap-3">
-                                        <h1>Recent Resume</h1>
-                                        <ul class="cardToolBox">
-                                            <li><button><i class="fa-solid fa-gear"></i></button></li>
-                                            <li><button><i class="fa-solid fa-minus"></i></button></li>
-                                            <li><button><i
-                                                        class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
-                                            </li>
-                                            <li><button><i class="fa-solid fa-xmark"></i></button></li>
-                                        </ul>
-                                    </div>
-                                    <div class="px-3">
-                                        <div class="table-responsive" style="max-height: 476px;">
-                                            <table class="table recentOpenings table-bordered px-3"
-                                                style="border-color: #ffffff;">
-                                                <tbody>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Recent Openings and Recent Resume end -->
-
-                        <!-- ================= main dashboard area end================= -->
-
-
+                        <!-- ================main content area end============== -->
+                        <!-- ==========footer area start========= -->
+                        <footer class="d-flex align-items-center justify-content-center p-2"
+                            style=" background: #DBE1FF;">
+                            <small class="text-black fw-normal">© 2025, Intero Software LLP. All rights
+                                reserved.</small>
+                        </footer>
+                        <!-- ==========footer area end========= -->
 
 
                     </div>
-                    <!-- ================main content area end============== -->
-                    <!-- ==========footer area start========= -->
-                    <footer class="d-flex align-items-center justify-content-center p-2" style=" background: #DBE1FF;">
-                        <small class="text-black fw-normal">© 2025, Intero Software LLP. All rights reserved.</small>
-                    </footer>
-                    <!-- ==========footer area end========= -->
-
-
                 </div>
             </div>
-        </div>
 
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- simple bar js -->
-        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-        <!-- js -->
-        <script src="../assets/js/main.js"></script>
+            <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <!-- bootstrap js -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- simple bar js -->
+            <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+            <!-- js -->
+            <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

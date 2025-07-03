@@ -1139,6 +1139,10 @@ $(document).ready(function () {
         $(".addapplicantTablist li button").removeClass('active');
         $(this).addClass('active');
     });
+    $(".jobopeningFilterlist li ").click(function () {
+        $(".jobopeningFilterlist li ").removeClass('active');
+        $(this).addClass('active');
+    });
 
     $('.addclientinformation').hide();  // Hide all by default
     $('#generalInformation').show().addClass('addclientinformationActive');
