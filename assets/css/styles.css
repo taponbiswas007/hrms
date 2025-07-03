@@ -6212,6 +6212,29 @@ textarea {
   padding: 5px 10px;
 }
 
+.titleExperienceLocationTable thead {
+  position: sticky;
+  top: 0;
+  background: #F3F5FF;
+  z-index: 1;
+}
+
+.applicantminingDatatable tbody tr {
+  position: relative;
+}
+.applicantminingDatatable tbody tr::after {
+  content: " ";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.9px dashed #D2D2D2;
+}
+.applicantminingDatatable tbody tr td {
+  padding: 10px !important;
+}
+
 @media (max-width: 773px) {
   .jobopeningDescriptionarea {
     height: 301px !important;

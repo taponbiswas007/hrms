@@ -1164,6 +1164,27 @@ $(document).ready(function () {
 
 });
 
+$(document).ready(function () {
+    $('.javatesterstatus_area').hide();  // Hide all by default
+    $('#assignTeamArea').show().addClass('javatesterstatus_areaActive');
+
+    function changeapplicantMiningTab(target) {
+        $('.javatesterstatus_area.javatesterstatus_areaActive').fadeOut(300, function () {
+            $(this).removeClass('javatesterstatus_areaActive');
+            $('#' + target).fadeIn(300).addClass('javatesterstatus_areaActive');
+        });
+    }
+
+    $('.assignTeambtn').click(function () {
+        changeapplicantMiningTab('assignTeamArea');
+    });
+    $('.applicantMiningbtn').click(function () {
+        changeapplicantMiningTab('applicantMiningArea');
+    });
+
+
+});
+
 // role access
 $(document).ready(function () {
 
