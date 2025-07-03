@@ -210,6 +210,35 @@
     }
 }
 
+.addapplicantTablist {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 15px;
+
+    li {
+        button {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22.48px;
+            letter-spacing: -0.6%;
+            color: #8E8E93;
+            padding: 3px 10px;
+            border-radius: 5px;
+        }
+
+        .active {
+            color: #ffffff;
+            background: #5A6185;
+        }
+    }
+}
+
+.addclientinformationActive {
+    display: block;
+}
+
 @media (max-width: 440px) {
     .recent_resum_cardHeader .cardToolBox li button {
         font-size: 17px;

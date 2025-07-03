@@ -1134,6 +1134,31 @@ $(document).ready(function () {
     });
 
 });
+$(document).ready(function () {
+    $(".addapplicantTablist li button").click(function () {
+        $(".addapplicantTablist li button").removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.addclientinformation').hide();  // Hide all by default
+    $('#generalInformation').show().addClass('addclientinformationActive');
+
+    function changeapplicantInformationTab(target) {
+        $('.addclientinformation.addclientinformationActive').fadeOut(300, function () {
+            $(this).removeClass('addclientinformationActive');
+            $('#' + target).fadeIn(300).addClass('addclientinformationActive');
+        });
+    }
+
+    $('.generalInformationbtn').click(function () {
+        changeapplicantInformationTab('generalInformation');
+    });
+    $('.otherInformationbtn').click(function () {
+        changeapplicantInformationTab('otherInformation');
+    });
+
+
+});
 
 // role access
 $(document).ready(function () {
