@@ -632,15 +632,118 @@
     }
 
     .slick-dots li button::before {
-        font-size: 14px;
-        border: 1px solid #ffffff;
+        font-size: 15px;
+        border: 2px solid #ffffff;
         border-radius: 50%;
+        padding: 0;
+    }
+
+    .slick-dots li button::before {
+        height: 21px;
+    }
+
+    .slick-dots li.slick-active button::before {
+        color: #ffffff !important;
+    }
+}
+
+.slider_area {
+    .slider_applicantDate {
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 12px;
+        line-height: 22.48px;
+        letter-spacing: -0.6%;
+        color: #ffffff;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    .profile_image_and_name_area {
+        position: absolute;
+        top: 38px;
+        left: 72px;
+
+        .pImage {
+            height: 104px;
+            width: 103px;
+            border: 3px solid #FFFFFF;
+            border-radius: 22px;
+            overflow: hidden;
+            background: #E1F1FE;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .name_qualification {
+            padding-top: 20px;
+
+            h1 {
+                font-family: Inter;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 20px;
+                line-height: 25.12px;
+                letter-spacing: -0.6%;
+                color: #ffffff;
+                margin-bottom: 0;
+            }
+
+            h2 {
+                font-family: Inter;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 12px;
+                line-height: 22.48px;
+                letter-spacing: -0.6%;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.about_me_text {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 22.48px;
+    letter-spacing: -0.6%;
+    color: #000000;
+}
+
+@media (min-width: 1400px) {
+    .col-xxl-5ths {
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider_wrapper .slick-dots {
+        bottom: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: end;
     }
 }
 
 @media (max-width: 773px) {
     .jobopeningDescriptionarea {
         height: 301px !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .slider_area .profile_image_and_name_area {
+        position: absolute;
+        top: 38px;
+        left: 10px;
     }
 }
 
@@ -655,6 +758,33 @@
 
     .recent_resum_cardHeader h1 {
         font-size: 16px;
+    }
+
+    .slider_area .profile_image_and_name_area .pImage {
+        height: 70px;
+        width: 60px;
+        border-radius: 5px;
+        border: 1px solid #ffffff;
+    }
+
+    .slider_area .profile_image_and_name_area {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+    }
+
+    .slider_area .profile_image_and_name_area .name_qualification {
+        padding-top: 10px;
+    }
+
+    .slider_area .profile_image_and_name_area .name_qualification h1 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .slider_area .profile_image_and_name_area .name_qualification h2 {
+        font-size: 11px;
+        line-height: 15px;
     }
 }
 
