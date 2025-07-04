@@ -6474,6 +6474,15 @@ textarea {
   color: #000000;
 }
 
+.resumeFullView {
+  height: 616px;
+  width: 100%;
+}
+.resumeFullView img {
+  height: 100%;
+  width: 100%;
+}
+
 @media (min-width: 1400px) {
   .col-xxl-5ths {
     -webkit-box-flex: 0 !important;

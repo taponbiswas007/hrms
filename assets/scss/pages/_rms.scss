@@ -717,6 +717,16 @@
     color: #000000;
 }
 
+.resumeFullView {
+    height: 616px;
+    width: 100%;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
 @media (min-width: 1400px) {
     .col-xxl-5ths {
         flex: 0 0 20% !important;

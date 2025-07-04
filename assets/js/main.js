@@ -1218,6 +1218,15 @@ $(document).ready(function () {
     $('.applicantinterviewbtn').click(function () {
         changeapplicantDetailsTab('applicantinterviewArea');
     });
+    $('.applicantResumebtn').click(function () {
+        changeapplicantDetailsTab('applicantResumeArea');
+    });
+    $('.applicantDocumentsbtn').click(function () {
+        changeapplicantDetailsTab('applicantDocumentsArea');
+    });
+    $('.applicantOfferbtn').click(function () {
+        changeapplicantDetailsTab('applicantOfferArea');
+    });
 
 });
 $(document).ready(function () {
