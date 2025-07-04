@@ -1209,7 +1209,8 @@
                                         aria-expanded="false">Opening <img class="d-inline" height="20px " width="20px"
                                             src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="dashboard.html">Dashboard</a>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../rms-Dashboard/dashboard.html">Dashboard</a>
                                         </li>
 
                                         <li><a class="dropdown-item mb-1" href="../rms-ManageMaster/skill.html">Manage
@@ -1291,10 +1292,10 @@
                             <!-- add applicants type tablist -->
                             <ul class="javatesterTablist flex-wrap gap-3 mb-4">
                                 <li>
-                                    <button class="active assignTeambtn">Assign Team</button>
+                                    <button class=" assignTeambtn">Assign Team</button>
                                 </li>
                                 <li>
-                                    <button class="applicantMiningbtn">Applicant Mining</button>
+                                    <button class="applicantMiningbtn active">Applicant Mining</button>
                                 </li>
                                 <li>
                                     <button class="attachResumebtn">Attach Resume</button>
@@ -1308,16 +1309,15 @@
                             </ul>
 
                             <!-- Assign Team area start -->
-                            <div id="assignTeamArea" class="javatesterstatus_area javatesterstatus_areaActive">
+                            <div id="assignTeamArea" class="javatesterstatus_area">
                                 <div class=" w-100 d-flex flex-wrap gap-3 justify-content-end align-items-center pb-3">
-                                    <button class="btn bg-blue text-white rounded-4 fs-14 px-4">
-                                        Assign Team
-                                    </button>
-                                </div>
-                                <div class=" w-100 d-flex flex-wrap gap-3 justify-content-between align-items-center pb-3 my-3"
-                                    style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                    <h1 class=" fw-medium fs-6 text-black  ">
-                                        Assign Interviewer</h1>
+                                    <a href="assignInterviewer.html"
+                                        class="btn bg-blue text-white rounded-4 fs-14 px-4">
+                                        Assign Interviewer
+                                    </a>
+                                    <a href="assignRecruiter.html" class="btn bg-blue text-white rounded-4 fs-14 px-4">
+                                        Assign Recruiter
+                                    </a>
                                 </div>
                                 <div class="table-responsive ">
                                     <table class="table table-bordered border-gray ">
@@ -1331,6 +1331,7 @@
                                                     Email Id
                                                 </th>
                                                 <th class="border-0 " style="font-weight: 500;">Contact</th>
+                                                <th class="border-0 " style="font-weight: 500;">User Type</th>
                                                 <th class="border-0 text-center" style="font-weight: 500;">Action</th>
                                             </tr>
                                         </thead>
@@ -1348,13 +1349,13 @@
 
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
+                                                    Recruiter
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal" data-bs-target="#statusDetails"
+                                                            class="commonbtn"
+                                                            style="background: #FC5A5A;">Release</button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1371,13 +1372,13 @@
 
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
+                                                    Recruiter
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal" data-bs-target="#statusDetails"
+                                                            class="commonbtn"
+                                                            style="background: #FC5A5A;">Release</button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1394,13 +1395,13 @@
 
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
+                                                    Recruiter
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal" data-bs-target="#statusDetails"
+                                                            class="commonbtn"
+                                                            style="background: #FC5A5A;">Release</button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1417,13 +1418,13 @@
 
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
+                                                    Recruiter
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal" data-bs-target="#statusDetails"
+                                                            class="commonbtn"
+                                                            style="background: #FC5A5A;">Release</button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1440,13 +1441,13 @@
 
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
+                                                    Recruiter
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal" data-bs-target="#statusDetails"
+                                                            class="commonbtn"
+                                                            style="background: #FC5A5A;">Release</button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1463,13 +1464,13 @@
 
                                                 </td>
                                                 <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
+                                                    Recruiter
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <button data-bs-toggle="modal" data-bs-target="#statusDetails"
+                                                            class="commonbtn"
+                                                            style="background: #FC5A5A;">Release</button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1535,7 +1536,7 @@
                             <!-- Assign Team area end -->
 
                             <!-- Applicant Mining area start -->
-                            <div id="applicantMiningArea" class="javatesterstatus_area ">
+                            <div id="applicantMiningArea" class="javatesterstatus_area javatesterstatus_areaActive">
                                 <div class="row g-4">
                                     <div class="col-md-5">
                                         <input type="text" style="border-color: #C2C2C2; border-radius:8px;"

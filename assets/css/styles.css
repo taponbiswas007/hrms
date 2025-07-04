@@ -6483,6 +6483,10 @@ textarea {
   width: 100%;
 }
 
+.javatesterstatus_areaActive {
+  display: block !important;
+}
+
 @media (min-width: 1400px) {
   .col-xxl-5ths {
     -webkit-box-flex: 0 !important;

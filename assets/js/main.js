@@ -1170,7 +1170,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
     $('.javatesterstatus_area').hide();  // Hide all by default
-    $('#assignTeamArea').show().addClass('javatesterstatus_areaActive');
+    // $('#assignTeamArea').show();
 
     function changeapplicantMiningTab(target) {
         $('.javatesterstatus_area.javatesterstatus_areaActive').fadeOut(300, function () {
