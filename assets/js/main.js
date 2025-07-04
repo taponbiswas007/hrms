@@ -1197,6 +1197,35 @@ $(document).ready(function () {
 
 
 });
+$(document).ready(function () {
+    $(".applicantDetailsTablist li button").click(function () {
+        $(".applicantDetailsTablist li button").removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.applicantDetailsstatus_area').hide();  // Hide all by default
+    $('#applicantDetailsArea').show().addClass('applicantDetailsstatus_areaActive');
+
+    function changeapplicantDetailsTab(target) {
+        $('.applicantDetailsstatus_area.applicantDetailsstatus_areaActive').fadeOut(300, function () {
+            $(this).removeClass('applicantDetailsstatus_areaActive');
+            $('#' + target).fadeIn(300).addClass('applicantDetailsstatus_areaActive');
+        });
+    }
+
+    $('.applicantDetailsbtn').click(function () {
+        changeapplicantDetailsTab('applicantDetailsArea');
+    });
+
+});
+$(document).ready(function () {
+    $('.applicantcoverSlider').slick({
+        arrows: false,  // Correct property name is 'arrows' (with an 's')
+        autoplay: true,  // Enable auto-sliding
+        autoplaySpeed: 3000,  // 3 seconds gap between slides
+        pauseOnHover: false, // Optional: continue autoplay when hovering
+        dots: true,
+    });
+});
 
 // role access
 $(document).ready(function () {

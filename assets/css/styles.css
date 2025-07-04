@@ -6009,6 +6009,35 @@ textarea {
   background: #5A6185;
 }
 
+.applicantDetailsTablist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.applicantDetailsTablist li button {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.48px;
+  letter-spacing: -0.6%;
+  color: #8E8E93;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.applicantDetailsTablist li .active {
+  color: #ffffff;
+  background: #5A6185;
+}
+
 .javatesterTablist {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6336,6 +6365,44 @@ textarea {
   text-align: center;
   padding: 7px 10px;
   border-radius: 3px;
+}
+
+.offerAndAcceptStaus {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 7px 10px;
+  border-radius: 3px;
+  background: rgba(54, 0, 180, 0.2);
+  color: #4B00B4;
+}
+
+.slider_wrapper .slider_item .slider_image_box {
+  position: relative;
+  height: 113px;
+  width: 100%;
+}
+.slider_wrapper .slider_item .slider_image_box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.slider_wrapper .slick-dots {
+  bottom: 10px;
+}
+.slider_wrapper .slick-dots li button::before {
+  font-size: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
 }
 
 @media (max-width: 773px) {
