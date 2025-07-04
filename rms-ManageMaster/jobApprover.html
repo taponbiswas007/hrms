@@ -1234,8 +1234,9 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Skill <img class="d-inline" height="20px " width="20px"
-                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
+                                        aria-expanded="false">Job Approver <img class="d-inline" height="20px "
+                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
+                                            alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
                                         <li><a class="dropdown-item mb-1" href="skill.html">Skill</a>
                                         </li>
@@ -1271,45 +1272,13 @@
                     <!-- ================= main dashboard area start================= -->
                     <div class=" pb-4 pt-3">
 
-                        <!-- =================Applicant List start=================== -->
-                        <div class="bg-white p-3 rounded-4 shadow mb-4">
-                            <div class=" w-100 d-flex flex-wrap gap-3 justify-content-between align-items-center pb-3"
-                                style="border-bottom:0.9px dashed #D2D2D2 ;">
-                                <h1 class=" fw-medium fs-5 text-black  ">
-                                    Add Skill</h1>
-                            </div>
-                            <div class="row g-4 mt-1">
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <label for="" class="mb-1">
-                                        Skill Name <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-control fs-7" placeholder="Enter Skill Name">
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <div
-                                        class="h-100 w-100 d-flex justify-content-sm-start justify-content-end align-items-end">
-                                        <button class="btn bg-blue text-white rounded-4 fs-14 px-5">
-                                            Save
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-
-                        <!-- =================Skill List start=================== -->
+                        <!-- =================Job Approver List start=================== -->
                         <div class="bg-white p-3 rounded-4 shadow dataTable-area">
                             <div class=" w-100 d-flex flex-wrap gap-3 justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
                                 <h1 class=" fw-medium fs-5 text-black  ">
-                                    Skill List</h1>
-                            </div>
-                            <div class="mt-3 d-flex justify-content-between align-items-center gap-3 flex-wrap">
-                                <button class="delectRecordBtn btn  text-white rounded-4 px-4"
-                                    style="background: #FC5A5A;">
-                                    Delete Records
-                                </button>
+                                    Job Approver List</h1>
                             </div>
                             <!-- =============List start============= -->
                             <div class="mt-3">
@@ -1318,374 +1287,111 @@
                                         <thead>
                                             <tr class=" border-0 text-nowrap fs-14 "
                                                 style=" background: #F9F9F9; height: 40px; vertical-align: middle;">
-                                                <th class="border-0 " style="font-weight: 500; width: 55px;">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="select-all-checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </th>
                                                 <th class="border-0 " style="font-weight: 500; width: 79px;">Sr. No.
                                                 </th>
-                                                <th class="border-0 " style="font-weight: 500;">Module Name</th>
-                                                <th class="border-0 text-center "
-                                                    style="font-weight: 500; width: 150px;">
-                                                    Action
+                                                <th class="border-0 " style="font-weight: 500;"> Name</th>
+                                                <th class="border-0 " style="font-weight: 500;"> Email</th>
+                                                <th class="border-0 " style="font-weight: 500;"> Phone</th>
+                                                <th class="border-0 " style="font-weight: 500; ">
+                                                    Department
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody style="font-family: DM Sans, sans-serif; font-size: 14px !important;">
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
                                                 <td class="p-2">1</td>
                                                 <td class="p-2">
-                                                    UI Designer
+                                                    Manoj Sharma
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="#"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
+                                                    shivam.sharma@intero.in
+                                                </td>
+                                                <td class="p-2 ">
+                                                    8956426457
+                                                </td>
+                                                <td class="p-2 ">
+                                                    IT
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
                                                 <td class="p-2">1</td>
                                                 <td class="p-2">
-                                                    UI Designer
+                                                    Manoj Sharma
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="#"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
+                                                    shivam.sharma@intero.in
+                                                </td>
+                                                <td class="p-2 ">
+                                                    8956426457
+                                                </td>
+                                                <td class="p-2 ">
+                                                    IT
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
                                                 <td class="p-2">1</td>
                                                 <td class="p-2">
-                                                    UI Designer
+                                                    Manoj Sharma
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="#"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
+                                                    shivam.sharma@intero.in
+                                                </td>
+                                                <td class="p-2 ">
+                                                    8956426457
+                                                </td>
+                                                <td class="p-2 ">
+                                                    IT
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
                                                 <td class="p-2">1</td>
                                                 <td class="p-2">
-                                                    UI Designer
+                                                    Manoj Sharma
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="#"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
+                                                    shivam.sharma@intero.in
+                                                </td>
+                                                <td class="p-2 ">
+                                                    8956426457
+                                                </td>
+                                                <td class="p-2 ">
+                                                    IT
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
                                                 <td class="p-2">1</td>
                                                 <td class="p-2">
-                                                    UI Designer
+                                                    Manoj Sharma
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="#"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
+                                                    shivam.sharma@intero.in
+                                                </td>
+                                                <td class="p-2 ">
+                                                    8956426457
+                                                </td>
+                                                <td class="p-2 ">
+                                                    IT
                                                 </td>
                                             </tr>
                                             <tr class="text-nowrap   border-top-0"
                                                 style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
                                                 <td class="p-2">1</td>
                                                 <td class="p-2">
-                                                    UI Designer
+                                                    Manoj Sharma
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="#"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2">
-                                                    <div class="d-flex justify-content-center align-items-center">
-                                                        <div class="position-relative ">
-                                                            <label class="custom-checkbox">
-                                                                <input type="checkbox" class="row-checkbox">
-                                                                <span class="checkmark basicCheckmark ms-2"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="p-2">1</td>
-                                                <td class="p-2">
-                                                    UI Designer
+                                                    shivam.sharma@intero.in
                                                 </td>
                                                 <td class="p-2 ">
-                                                    <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <a href="#"
-                                                            class="approvedStatus d-flex justify-content-center align-items-center p-0"
-                                                            style="height: 25px; width: 25px;">
-                                                            <i class="fa-solid fa-pen-to-square"></i>
-                                                        </a>
-                                                        <button class="deleteBtn  " style="height: 25px; width: 25px;">
-                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M14 12V17" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path d="M4 7H20" stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M6 10V18C6 19.6569 7.34315 21 9 21H15C16.6569 21 18 19.6569 18 18V10"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                                <path
-                                                                    d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
-                                                                    stroke="#FF0000" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
+                                                    8956426457
+                                                </td>
+                                                <td class="p-2 ">
+                                                    IT
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -1750,7 +1456,7 @@
 
                             <!-- =============List end============= -->
                         </div>
-                        <!-- =================Applicant List area end=================== -->
+                        <!-- =================Job Approver List area end=================== -->
 
                     </div>
                     <!-- ================main content area end============== -->
