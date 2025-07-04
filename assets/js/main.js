@@ -1165,6 +1165,10 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    $(".javatesterTablist li button").click(function () {
+        $(".javatesterTablist li button").removeClass('active');
+        $(this).addClass('active');
+    });
     $('.javatesterstatus_area').hide();  // Hide all by default
     $('#assignTeamArea').show().addClass('javatesterstatus_areaActive');
 
@@ -1180,6 +1184,15 @@ $(document).ready(function () {
     });
     $('.applicantMiningbtn').click(function () {
         changeapplicantMiningTab('applicantMiningArea');
+    });
+    $('.attachResumebtn').click(function () {
+        changeapplicantMiningTab('attachResumeArea');
+    });
+    $('.applicantLeadStatusbtn').click(function () {
+        changeapplicantMiningTab('applicantLeadStatusArea');
+    });
+    $('.applicantStatusbtn').click(function () {
+        changeapplicantMiningTab('applicantStatusArea');
     });
 
 

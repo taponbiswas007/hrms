@@ -235,6 +235,31 @@
     }
 }
 
+.javatesterTablist {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 15px;
+
+    li {
+        button {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22.48px;
+            letter-spacing: -0.6%;
+            color: #8E8E93;
+            padding: 3px 10px;
+            border-radius: 5px;
+        }
+
+        .active {
+            color: #ffffff;
+            background: #5A6185;
+        }
+    }
+}
+
 
 .jobopeningFilterlist {
     display: flex;
@@ -461,6 +486,88 @@
     }
 }
 
+.userDetails {
+    h1 {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000000;
+
+        span {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #4A59A7;
+            margin-left: 5px;
+        }
+    }
+
+    ul {
+        display: flex;
+        column-gap: 5px;
+        margin-top: 7px;
+
+        li {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #8E8E93;
+
+            .graduation {
+                color: #4AD991;
+            }
+
+            .file {
+                color: #8280FF;
+            }
+
+            .email {
+                color: #4A59A7;
+            }
+
+            .mobile {
+                color: #4A59A7;
+            }
+
+            .address {
+                color: #4A59A7;
+            }
+        }
+    }
+}
+
+.ratingStar {
+    span {
+        height: 14px;
+        width: 14px;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%,
+                79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    .yellow {
+        background: #FFCC00;
+    }
+
+    .gray {
+        background: #C7C7CC;
+    }
+}
+.commonStatus {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
 @media (max-width: 773px) {
     .jobopeningDescriptionarea {
         height: 301px !important;
