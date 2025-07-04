@@ -1232,7 +1232,7 @@
                                 </li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Job Openings <img class="d-inline" height="20px "
+                                        aria-expanded="false">Opening Summary <img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
@@ -1274,21 +1274,12 @@
                             <div class=" w-100 d-flex flex-wrap gap-3 justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
                                 <h1 class=" fw-medium fs-5 text-black  ">
-                                    Job Openings</h1>
+                                    Opening Summary</h1>
                             </div>
                             <div class="row g-4 mt-1">
                                 <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                     <label for="" class="mb-1">
                                         Department
-                                    </label>
-                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                        class=" form-select fs-7">
-                                        <option value="">Select</option>
-                                    </select>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                    <label for="" class="mb-1">
-                                        Opening Status
                                     </label>
                                     <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-select fs-7">
@@ -1309,7 +1300,7 @@
                                     <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
                                         class=" form-control fs-7">
                                 </div>
-                                <div class="col-xxl-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                <div class="col-xxl-3 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
                                     <div
                                         class="h-100 w-100 d-flex  justify-content-end align-items-end gap-3 flex-wrap">
                                         <button class="btn bg-blue text-white rounded-4 fs-14 px-4">
@@ -1339,24 +1330,29 @@
                                                 </th>
                                                 <th class="border-0 " style="font-weight: 500;">Posting Date
                                                 </th>
-                                                <th class="border-0 " style="font-weight: 500;">Skill
+                                                <th class="border-0 text-center" style="font-weight: 500;">Status
                                                 </th>
-                                                <th class="border-0 " style="font-weight: 500;">Experience
-                                                </th>
-                                                <th class="border-0 " style="font-weight: 500;">Salary
-                                                </th>
-                                                <th class="border-0 " style="font-weight: 500;">Recruiter
-                                                </th>
-                                                <th class="border-0 " style="font-weight: 500;">Approver
+                                                <th class="border-0 " style="font-weight: 500;">Positions
                                                 </th>
                                                 <th class="border-0 " style="font-weight: 500;">Department
                                                 </th>
-                                                <th class="border-0 " style="font-weight: 500;">Closing Date
+                                                <th class="border-0 text-center" style="font-weight: 500;">Skill
+                                                    Assessment
                                                 </th>
-                                                <th class="border-0 " style="font-weight: 500;">Days
+                                                <th class="border-0 text-center" style="font-weight: 500;">Interview
+                                                </th>
+                                                <th class="border-0 text-center" style="font-weight: 500;">Profile
+                                                    Submission
+                                                </th>
+                                                <th class="border-0 text-center" style="font-weight: 500;">Offer
+                                                </th>
+                                                <th class="border-0 text-center" style="font-weight: 500;">Applicant
+                                                    Check
+                                                </th>
+                                                <th class="border-0 text-center" style="font-weight: 500;">On Boarding
                                                 </th>
                                                 <th class="border-0 text-center " style="font-weight: 500; ">
-                                                    Status
+                                                    Guarantee Period
                                                 </th>
                                             </tr>
                                         </thead>
@@ -1371,33 +1367,57 @@
                                                     27 Mar 2025
                                                 </td>
                                                 <td class="p-2">
-                                                    Housekeeping
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus"
+                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-                                                    5 to 8 Years
-                                                </td>
-                                                <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
+                                                    0
                                                 </td>
                                                 <td class="p-2">
                                                     Management
                                                 </td>
                                                 <td class="p-2">
-                                                    27 Mar 2025
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4000033 ; color:#B40000;">0</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <span class="commonStatus"
-                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4690033 ; color:#B46F00;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#54B40033 ; color:#4EB400;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#00B49633 ; color:#00B496;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#0048B433 ; color:#0063B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#2700B433 ; color:#3600B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4009333 ; color:#AB00B4;">0</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1411,33 +1431,57 @@
                                                     27 Mar 2025
                                                 </td>
                                                 <td class="p-2">
-                                                    Housekeeping
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus"
+                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-                                                    5 to 8 Years
-                                                </td>
-                                                <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
+                                                    0
                                                 </td>
                                                 <td class="p-2">
                                                     Management
                                                 </td>
                                                 <td class="p-2">
-                                                    27 Mar 2025
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4000033 ; color:#B40000;">0</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <span class="commonStatus"
-                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4690033 ; color:#B46F00;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#54B40033 ; color:#4EB400;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#00B49633 ; color:#00B496;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#0048B433 ; color:#0063B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#2700B433 ; color:#3600B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4009333 ; color:#AB00B4;">0</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1451,33 +1495,57 @@
                                                     27 Mar 2025
                                                 </td>
                                                 <td class="p-2">
-                                                    Housekeeping
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus"
+                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-                                                    5 to 8 Years
-                                                </td>
-                                                <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
+                                                    0
                                                 </td>
                                                 <td class="p-2">
                                                     Management
                                                 </td>
                                                 <td class="p-2">
-                                                    27 Mar 2025
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4000033 ; color:#B40000;">0</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <span class="commonStatus"
-                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4690033 ; color:#B46F00;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#54B40033 ; color:#4EB400;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#00B49633 ; color:#00B496;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#0048B433 ; color:#0063B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#2700B433 ; color:#3600B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4009333 ; color:#AB00B4;">0</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1491,33 +1559,57 @@
                                                     27 Mar 2025
                                                 </td>
                                                 <td class="p-2">
-                                                    Housekeeping
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus"
+                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-                                                    5 to 8 Years
-                                                </td>
-                                                <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
+                                                    0
                                                 </td>
                                                 <td class="p-2">
                                                     Management
                                                 </td>
                                                 <td class="p-2">
-                                                    27 Mar 2025
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4000033 ; color:#B40000;">0</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <span class="commonStatus"
-                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4690033 ; color:#B46F00;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#54B40033 ; color:#4EB400;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#00B49633 ; color:#00B496;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#0048B433 ; color:#0063B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#2700B433 ; color:#3600B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4009333 ; color:#AB00B4;">0</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1531,33 +1623,57 @@
                                                     27 Mar 2025
                                                 </td>
                                                 <td class="p-2">
-                                                    Housekeeping
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus"
+                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-                                                    5 to 8 Years
-                                                </td>
-                                                <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
+                                                    0
                                                 </td>
                                                 <td class="p-2">
                                                     Management
                                                 </td>
                                                 <td class="p-2">
-                                                    27 Mar 2025
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4000033 ; color:#B40000;">0</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <span class="commonStatus"
-                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4690033 ; color:#B46F00;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#54B40033 ; color:#4EB400;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#00B49633 ; color:#00B496;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#0048B433 ; color:#0063B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#2700B433 ; color:#3600B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4009333 ; color:#AB00B4;">0</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1571,33 +1687,57 @@
                                                     27 Mar 2025
                                                 </td>
                                                 <td class="p-2">
-                                                    Housekeeping
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus"
+                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-                                                    5 to 8 Years
-                                                </td>
-                                                <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
+                                                    0
                                                 </td>
                                                 <td class="p-2">
                                                     Management
                                                 </td>
                                                 <td class="p-2">
-                                                    27 Mar 2025
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4000033 ; color:#B40000;">0</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <span class="commonStatus"
-                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4690033 ; color:#B46F00;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#54B40033 ; color:#4EB400;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#00B49633 ; color:#00B496;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#0048B433 ; color:#0063B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#2700B433 ; color:#3600B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4009333 ; color:#AB00B4;">0</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1611,73 +1751,57 @@
                                                     27 Mar 2025
                                                 </td>
                                                 <td class="p-2">
-                                                    Housekeeping
-                                                </td>
-                                                <td class="p-2">
-                                                    5 to 8 Years
-                                                </td>
-                                                <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
-                                                </td>
-                                                <td class="p-2">
-                                                    Management
-                                                </td>
-                                                <td class="p-2">
-                                                    27 Mar 2025
-                                                </td>
-                                                <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
                                                         <span class="commonStatus"
                                                             style="background:#00B44533 ; color:#00B445;">Open</span>
                                                     </div>
                                                 </td>
-                                            </tr>
-                                            <tr class="text-nowrap   border-top-0"
-                                                style=" height: 50px; vertical-align: middle; ">
-                                                <td class="p-2">1</td>
                                                 <td class="p-2">
-                                                    Hk Test
-                                                </td>
-                                                <td class="p-2">
-                                                    27 Mar 2025
-                                                </td>
-                                                <td class="p-2">
-                                                    Housekeeping
-                                                </td>
-                                                <td class="p-2">
-                                                    5 to 8 Years
-                                                </td>
-                                                <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
-                                                </td>
-                                                <td class="p-2">
-                                                    Manoj Sharma
+                                                    0
                                                 </td>
                                                 <td class="p-2">
                                                     Management
                                                 </td>
                                                 <td class="p-2">
-                                                    27 Mar 2025
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4000033 ; color:#B40000;">0</span>
+                                                    </div>
                                                 </td>
                                                 <td class="p-2">
-
-                                                </td>
-                                                <td class="p-2 ">
                                                     <div class="d-flex justify-content-center align-items-center gap-3">
-                                                        <span class="commonStatus"
-                                                            style="background:#00B44533 ; color:#00B445;">Open</span>
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4690033 ; color:#B46F00;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#54B40033 ; color:#4EB400;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#00B49633 ; color:#00B496;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#0048B433 ; color:#0063B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#2700B433 ; color:#3600B4;">0</span>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <span class="commonStatus px-4"
+                                                            style="background:#B4009333 ; color:#AB00B4;">0</span>
                                                     </div>
                                                 </td>
                                             </tr>
