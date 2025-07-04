@@ -1215,6 +1215,9 @@ $(document).ready(function () {
     $('.applicantDetailsbtn').click(function () {
         changeapplicantDetailsTab('applicantDetailsArea');
     });
+    $('.applicantinterviewbtn').click(function () {
+        changeapplicantDetailsTab('applicantinterviewArea');
+    });
 
 });
 $(document).ready(function () {
