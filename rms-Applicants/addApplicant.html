@@ -1206,7 +1206,7 @@
                                 <li class="breadcrumb-item"><a style="color: #757575;" href="#">RMS</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Job Opening <img class="d-inline" height="20px "
+                                        aria-expanded="false">Applicants <img class="d-inline" height="20px "
                                             width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
                                             alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
@@ -1238,7 +1238,7 @@
                     <div class=" pb-4 pt-3">
 
                         <!-- =================Applicant List start=================== -->
-                        <div class="bg-white p-3 rounded-4 shadow ">
+                        <div class="bg-white p-3 rounded-4 shadow dataTable-area">
                             <div class=" w-100 d-flex flex-wrap gap-3 justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
                                 <h1 class=" fw-medium fs-5 text-black  ">
@@ -1259,14 +1259,44 @@
                                 <div class="row g-4 ">
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Job Opening Title <span class="text-danger">*</span>
+                                            Title <span class="text-danger">*</span>
+                                        </label>
+                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-select fs-7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            First Name <span class="text-danger">*</span>
                                         </label>
                                         <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7" placeholder="Enter Job Opening Title">
+                                            class=" form-control fs-7" placeholder="Enter First Name">
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Requirement Originator <span class="text-danger">*</span>
+                                            Last Name <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Last Name">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Email <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Email">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Phone <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Phone Number">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Total Experience <span class="text-danger">*</span>
                                         </label>
                                         <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                             class=" form-select fs-7">
@@ -1275,7 +1305,14 @@
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Primary Skill <span class="text-danger">*</span>
+                                            Current Job Title <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Current Job Title">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Highest Qualification <span class="text-danger">*</span>
                                         </label>
                                         <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                             class=" form-select fs-7">
@@ -1284,7 +1321,7 @@
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Experience <span class="text-danger">*</span>
+                                            Country <span class="text-danger">*</span>
                                         </label>
                                         <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                             class=" form-select fs-7">
@@ -1293,7 +1330,7 @@
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Job Opening Status <span class="text-danger">*</span>
+                                            State <span class="text-danger">*</span>
                                         </label>
                                         <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                             class=" form-select fs-7">
@@ -1302,14 +1339,7 @@
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Job Opening Date<span class="text-danger">*</span>
-                                        </label>
-                                        <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7">
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <label for="" class="mb-1">
-                                            Job Country <span class="text-danger">*</span>
+                                            City <span class="text-danger">*</span>
                                         </label>
                                         <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                             class=" form-select fs-7">
@@ -1318,86 +1348,52 @@
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Job State <span class="text-danger">*</span>
+                                            Zipcode/ Pincode <span class="text-danger">*</span>
                                         </label>
-                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-select fs-7">
-                                            <option value="">Select</option>
-                                        </select>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Zipcode/ Pincode">
                                     </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Job City <span class="text-danger">*</span>
+                                            Attach Resume
                                         </label>
-                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-select fs-7">
-                                            <option value="">Select</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <label for="" class="mb-1">
-                                            Job Description
-                                        </label>
-                                        <div class="jobDescriptiontexteditor_area jobopeningDescriptionarea pb-2">
-                                            <div
-                                                class="jobDescriptionToolbar  d-flex justify-content-between align-items-center">
-                                                <div
-                                                    class="d-flex justify-content-start align-items-center gap-3 flex-wrap ">
-                                                    <button class="text-dark">
-                                                        Roboto <span class="ms-2"><i
-                                                                class="fa-solid fa-angle-down"></i></span>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        Normal <span class="ms-2"><i
-                                                                class="fa-solid fa-angle-down"></i></span>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-bold"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-italic"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-underline"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-strikethrough"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <img src="../assets/images/textColor.svg" alt="">
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-paintbrush"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-list-ol"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-list-ul"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-outdent"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-indent"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-subscript"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-superscript"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-link"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-images"></i>
-                                                    </button>
-                                                </div>
+                                        <div class="position-relative">
+                                            <div class="custom-file-input attachfile form-control p-0"
+                                                style="border-color: #c2c2c2; border-radius: 8px">
+                                                <input type="file" id="fileInput" class="form-floating fs-7">
+                                                <label for="fileInput" class=" h-100 w-100">Choose file</label>
                                             </div>
-                                            <textarea name="" id="" placeholder="Enter Job Description"></textarea>
-
+                                            <img class="position-absolute top-50  translate-middle-y "
+                                                style="right:  10px;" src="../assets/images/attachicon.svg" alt="">
                                         </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Attach Image
+                                        </label>
+                                        <div class="position-relative">
+                                            <div class="custom-file-input attachfile form-control p-0"
+                                                style="border-color: #c2c2c2; border-radius: 8px">
+                                                <input type="file" id="fileInput" class="form-floating fs-7">
+                                                <label for="fileInput" class=" h-100 w-100">Choose file</label>
+                                            </div>
+                                            <img class="position-absolute top-50  translate-middle-y "
+                                                style="right:  10px;" src="../assets/images/attachicon.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Skill Tags(CSV)
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Skill">
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Address
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Address">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <div
@@ -1405,7 +1401,7 @@
                                             <button class="btn bg-blue text-white rounded-4 px-4">Save</button>
                                             <button href="#" class="btn  text-white rounded-4 px-4"
                                                 style="background: #5A6185;">Clear</button>
-                                            <a href="jobOpeningStatistics.html"
+                                            <a href="applicantList.html"
                                                 class="btn bg-blue text-white rounded-4 px-4"><i
                                                     class="fa-solid fa-arrow-left me-2"></i>Back</a>
                                         </div>
@@ -1418,58 +1414,61 @@
                                 <div class="row g-4 ">
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Employment Type
-                                        </label>
-                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-select fs-7">
-                                            <option value="">Select</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <label for="" class="mb-1">
-                                            Salary Rate
+                                            Skype Id
                                         </label>
                                         <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7" placeholder="Enter Salary Rate">
+                                            class=" form-control fs-7" placeholder="Enter Skype Id">
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Rate Type
-                                        </label>
-                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-select fs-7">
-                                            <option value="">Select</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                        <label for="" class="mb-1">
-                                            Positions
+                                            LinkedIn URL
                                         </label>
                                         <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7" placeholder="Enter Positions">
+                                            class=" form-control fs-7" placeholder="Enter LinkedIn URL">
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Availability Start Date
+                                            Nationality
                                         </label>
-                                        <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7">
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Nationality">
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Availability End Date
+                                            Languages Knew
                                         </label>
-                                        <input type="date" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7">
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Languages Knew">
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Highest Qualification
+                                            Currency
                                         </label>
                                         <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                             class=" form-select fs-7">
                                             <option value="">Select</option>
                                         </select>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Current CTC
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Current CTC">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Expected CTC
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Expected CTC">
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <label for="" class="mb-1">
+                                            Current Employer
+                                        </label>
+                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                            class=" form-control fs-7" placeholder="Enter Current Employer">
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
@@ -1482,84 +1481,19 @@
                                     </div>
                                     <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                         <label for="" class="mb-1">
-                                            Applicant Placement
+                                            Functional Area
                                         </label>
                                         <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
                                             class=" form-select fs-7">
                                             <option value="">Select</option>
                                         </select>
                                     </div>
-                                    <div class="col-xxl-9 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="col-xxl-6 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                                         <label for="" class="mb-1">
-                                            Other Skills
+                                            Additional Info
                                         </label>
                                         <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7" placeholder="Enter Other Skills">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <label for="" class="mb-1">
-                                            Job Summary
-                                        </label>
-                                        <div class="jobDescriptiontexteditor_area jobopeningDescriptionarea pb-2">
-                                            <div
-                                                class="jobDescriptionToolbar  d-flex justify-content-between align-items-center">
-                                                <div
-                                                    class="d-flex justify-content-start align-items-center flex-wrap gap-3 ">
-                                                    <button class="text-dark">
-                                                        Roboto <span class="ms-2"><i
-                                                                class="fa-solid fa-angle-down"></i></span>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        Normal <span class="ms-2"><i
-                                                                class="fa-solid fa-angle-down"></i></span>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-bold"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-italic"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-underline"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-strikethrough"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <img src="../assets/images/textColor.svg" alt="">
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-paintbrush"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-list-ol"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-list-ul"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-outdent"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-indent"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-subscript"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-superscript"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-link"></i>
-                                                    </button>
-                                                    <button class="text-dark">
-                                                        <i class="fa-solid fa-images"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <textarea name="" id="" placeholder="Enter Job Description"></textarea>
-
-                                        </div>
+                                            class=" form-control fs-7" placeholder="Enter Additional Info">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <div
@@ -1567,7 +1501,7 @@
                                             <button class="btn bg-blue text-white rounded-4 px-4">Save</button>
                                             <button href="#" class="btn  text-white rounded-4 px-4"
                                                 style="background: #5A6185;">Clear</button>
-                                            <a href="jobOpeningStatistics.html"
+                                            <a href="applicantList.html"
                                                 class="btn bg-blue text-white rounded-4 px-4"><i
                                                     class="fa-solid fa-arrow-left me-2"></i>Back</a>
                                         </div>
