@@ -6273,7 +6273,7 @@ textarea {
 
 .titleExperienceLocationTable thead {
   position: sticky;
-  top: 0;
+  top: -2px;
   background: #F3F5FF;
   z-index: 1;
 }
@@ -6519,6 +6519,17 @@ textarea {
     top: 38px;
     left: 10px;
   }
+  .slider_wrapper .slick-dots li button::before {
+    font-size: 8px !important;
+    height: 15px !important;
+    width: 15px !important;
+  }
+  .slick-dots li button {
+    padding: 0 !important;
+  }
+  .slick-dots li button::before {
+    line-height: 12px !important;
+  }
 }
 @media (max-width: 440px) {
   .recent_resum_cardHeader .cardToolBox li button {
@@ -6531,8 +6542,8 @@ textarea {
     font-size: 16px;
   }
   .slider_area .profile_image_and_name_area .pImage {
-    height: 70px;
-    width: 60px;
+    height: 76px;
+    width: 71px;
     border-radius: 5px;
     border: 1px solid #ffffff;
   }
