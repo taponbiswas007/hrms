@@ -6137,6 +6137,15 @@ textarea {
   color: #8E8E93;
 }
 
+.timeSheetslist ul {
+  width: 33%;
+}
+
+@media (max-width: 768px) {
+  .timeSheetslist ul {
+    width: 250px;
+  }
+}
 .applicantScreeningandleadgraph .progress-ring-container {
   position: relative;
   width: 180px;
