@@ -437,6 +437,24 @@ textarea {
     }
 }
 
+.commonbtndesable {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    background: #6879CD;
+    padding: 7px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+
+}
+
 .addressTable {
 
 
