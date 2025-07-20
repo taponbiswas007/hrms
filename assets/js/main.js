@@ -1653,11 +1653,98 @@ function toggleSections() {
         // Otherwise, show Holiday List first
         todoListContainer.parentNode.insertBefore(holidayListContainer, todoListContainer);
     }
-}
+};
 
 
 
 
+// Monthly Recap Report chart with all dates
+var recapseries = {
+    monthDataSeries1: {
+        prices: [
+            0, 0, 1,  // 1st, 2nd, 3rd
+            2, 3, 0,   // 4th, 5th, 6th
+            0, 0, 0,  // 7th, 8th, 9th
+            0, 0, 0,   // 10th, 11th, 12th
+            0, 0, 0,  // 13th, 14th, 15th
+            4, 5, 6,   // 16th, 17th, 18th
+            0, 0, 0,   // 19th, 20th, 21st
+            0, 0, 0,  // 22nd, 23rd, 24th
+            0, 0, 0,   // 25th, 26th, 27th
+            0, 0, 1,   // 28th, 29th, 30th
+            0          // 31st
+        ],
+        dates: [
+            "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+            "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+            "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
+            "31"
+        ]
+    },
+};
+
+var options = {
+    series: [{
+        name: "Tickets",
+        data: recapseries.monthDataSeries1.prices
+    }],
+    chart: {
+        height: 360,
+        type: 'line',
+        id: 'areachart-2'
+    },
+    dataLabels: {
+        enabled: true,
+        style: {
+            colors: ['#7787FF']
+        }
+    },
+    stroke: {
+        curve: 'smooth',
+        width: 2,
+        colors: ['#7787FF']
+    },
+    markers: {
+        size: 4,
+        colors: ['#7787FF'],
+        strokeColors: '#fff',
+        strokeWidth: 1,
+        shape: "circle"
+    },
+    grid: {
+        padding: {
+            right: 30,
+            left: 20
+        }
+    },
+    labels: recapseries.monthDataSeries1.dates,
+    xaxis: {
+        type: 'category',
+        labels: {
+            formatter: function (value) {
+                return value;
+            }
+        }
+    },
+    yaxis: {
+        title: {
+            text: 'Number of Tickets'
+        },
+        min: 0,
+        max: 6
+    },
+    tooltip: {
+        enabled: true,
+        y: {
+            formatter: function (value) {
+                return value + " tickets";
+            }
+        }
+    }
+};
+
+var chart = new ApexCharts(document.querySelector("#monthlyRecapReport"), options);
+chart.render();
 
 
 

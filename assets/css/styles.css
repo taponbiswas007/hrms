@@ -6602,3 +6602,28 @@ textarea {
     height: 337px !important;
   }
 }
+.bg_purple {
+  background: rgba(130, 128, 255, 0.1294117647);
+}
+
+.bg_green {
+  background: rgba(74, 217, 145, 0.1294117647);
+}
+
+.bg_yellow {
+  background: rgba(255, 202, 128, 0.1294117647);
+}
+
+.bg_orange {
+  background: rgba(255, 144, 102, 0.1294117647);
+}
+
+.goalCompletionProgress_area {
+  height: 19px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #E5E5EA;
+}
+.goalCompletionProgress_area .completion {
+  height: 100%;
+}

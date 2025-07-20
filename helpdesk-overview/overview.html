@@ -1396,30 +1396,49 @@
 
                         <nav style="--bs-breadcrumb-divider: '->';" aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a style="color: #757575;" href="#">RMS</a></li>
+                                <li class="breadcrumb-item"><a style="color: #757575;" href="#">Helpdesk</a></li>
                                 <li class="breadcrumb-item" aria-current="page">
                                     <button type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Dashboard <img class="d-inline" height="20px "
-                                            width="20px" src="../assets/images/dashboard/downarrowBlack.svg"
-                                            alt=""></button>
+                                        aria-expanded="false">Overview <img class="d-inline" height="20px " width="20px"
+                                            src="../assets/images/dashboard/downarrowBlack.svg" alt=""></button>
                                     <ul class="dropdown-menu border-0 rounded-3 shadow-lg">
-                                        <li><a class="dropdown-item mb-1" href="dashboard.html">Dashboard</a>
-                                        </li>
-
-                                        <li><a class="dropdown-item mb-1" href="../rms-ManageMaster/skill.html">Manage
-                                                Master</a>
-                                        </li>
-                                        <li><a class="dropdown-item mb-1" href="../rms-JobOpening/jobOpening.html">Job
-                                                Opening</a>
+                                        <li><a class="dropdown-item mb-1" href="overview.html">Overview</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
-                                                href="../rms-Applicants/applicants.html">Applicants</a>
+                                                href="../helpdesk-ManageTickets/manageTickets.html">Manage Tickets</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
-                                                href="../rms-Reports/jobOpenings.html">Reports</a>
+                                                href="../helpdesk-ManageTerms/manageTeams.html">Manage Terms</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
-                                                href="../rms-AcceptedOffers/acceptedOffers.html">Accepted Offers</a>
+                                                href="../helpdesk-TicketType/ticketType.html">Ticket Type</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../helpdesk-TicketClass/ticketClass.html">Ticket Class</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../helpdesk-TicketSubType/ticketSubType.html">Ticket SubType</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../helpdesk-ManageStages/manageStages.html">Manage Stages</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../helpdesk-ManageTAT/manageTAT.html">Manage TAT</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../helpdesk-CreateTicket/createTicket.html">Create Ticket</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../helpdesk-EmailTemplate/emailTemplates.html">Email Template</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1" href="../helpdesk-MyTickets/myTickets.html">My
+                                                Tickets</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../helpdesk-TeamTickets/teamTickets.html">Team Tickets</a>
+                                        </li>
+                                        <li><a class="dropdown-item mb-1"
+                                                href="../helpdesk-SupportTickets/supportTicket.html">Support Tickets</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -1431,628 +1450,142 @@
                     <div class=" pb-4 pt-3">
                         <div class="row g-4">
                             <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 col-md-6 col-sm-6 ">
-                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                <a href="manageTickets.html" class="card h-100 shadow-sm border-0 rounded-4">
                                     <div class="card-body d-flex align-items-center justify-content-between">
                                         <div class="d-flex align-items-center gap-3">
                                             <div>
-                                                <a href="applicantList.html" class="adminDashbordCardtitle d-block mb-4"
-                                                    style="color: #4A59A7;">
-                                                    Total Applicants</a>
-                                                <h1 class="adminDashbordCardtitlecountNUmber mb-0">0</h1>
+                                                <h1 class="adminDashbordCardtitlecountNUmber fs-6 mb-3">Open Tickets<i
+                                                        class="fa-solid fa-circle-arrow-right ms-2"></i></h1>
+                                                <h2 class="adminDashbordCardtitlecountNUmber fs-4  mb-0"
+                                                    style="color: #202224;">5
+                                                </h2>
                                             </div>
                                         </div>
-                                        <div class="card_image_box bg-purple">
-                                            <img src="../assets/images/admin_dashboard/trainer.svg" alt="">
+                                        <div class="card_image_box bg_purple">
+                                            <img src="../assets/images/tickets/fe_ticket_purple.svg" alt="">
                                         </div>
-
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 col-md-6 col-sm-6 ">
-                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                <a href="manageTickets.html" class="card h-100 shadow-sm border-0 rounded-4">
                                     <div class="card-body d-flex align-items-center justify-content-between">
                                         <div class="d-flex align-items-center gap-3">
                                             <div>
-                                                <a href="#" class="adminDashbordCardtitle d-block mb-4"
-                                                    style="color: #4A59A7;">
-                                                    Total Recruiter</a>
-                                                <h1 class="adminDashbordCardtitlecountNUmber mb-0">7</h1>
+                                                <h1 class="adminDashbordCardtitlecountNUmber fs-6 mb-3">Closed Tickets<i
+                                                        class="fa-solid fa-circle-arrow-right ms-2"></i></h1>
+                                                <h2 class="adminDashbordCardtitlecountNUmber fs-4  mb-0"
+                                                    style="color: #202224;">0
+                                                </h2>
                                             </div>
                                         </div>
-                                        <div class="card_image_box bg-orange">
-                                            <img src="../assets/images/admin_dashboard/trainees.svg" alt="">
+                                        <div class="card_image_box bg_yellow">
+                                            <img src="../assets/images/tickets/fe_ticket_yellow.svg" alt="">
                                         </div>
-
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 col-md-6 col-sm-6 ">
-                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                <a href="manageTickets.html" class="card h-100 shadow-sm border-0 rounded-4">
                                     <div class="card-body d-flex align-items-center justify-content-between">
                                         <div class="d-flex align-items-center gap-3">
                                             <div>
-                                                <a href="#" class="adminDashbordCardtitle d-block mb-4"
-                                                    style="color: #4A59A7;">
-                                                    Total Interviewer</a>
-                                                <h1 class="adminDashbordCardtitlecountNUmber mb-0">3</h1>
+                                                <h1 class="adminDashbordCardtitlecountNUmber fs-6 mb-3">Unassigned
+                                                    Tickets<i class="fa-solid fa-circle-arrow-right ms-2"></i></h1>
+                                                <h2 class="adminDashbordCardtitlecountNUmber fs-4  mb-0"
+                                                    style="color: #202224;">2
+                                                </h2>
                                             </div>
                                         </div>
-                                        <div class="card_image_box bg-green-simple">
-                                            <img src="../assets/images/admin_dashboard/courses.svg" alt="">
+                                        <div class="card_image_box bg_green">
+                                            <img src="../assets/images/tickets/fe_ticket_green.svg" alt="">
                                         </div>
-
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 col-md-6 col-sm-6 ">
-                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                <a href="manageTickets.html" class="card h-100 shadow-sm border-0 rounded-4">
                                     <div class="card-body d-flex align-items-center justify-content-between">
                                         <div class="d-flex align-items-center gap-3">
                                             <div>
-                                                <a href="jobOpeningStatistics.html"
-                                                    class="adminDashbordCardtitle d-block mb-4" style="color: #4A59A7;">
-                                                    Total Openings</a>
-                                                <h1 class="adminDashbordCardtitlecountNUmber mb-0">11</h1>
+                                                <h1 class="adminDashbordCardtitlecountNUmber fs-6 mb-3">Ticket Breached
+                                                    SLAs<i class="fa-solid fa-circle-arrow-right ms-2"></i></h1>
+                                                <h2 class="adminDashbordCardtitlecountNUmber fs-4  mb-0"
+                                                    style="color: #202224;">0
+                                                </h2>
                                             </div>
                                         </div>
-                                        <div class="card_image_box bg-dark-orange">
-                                            <img src="../assets/images/admin_dashboard/topics.svg" alt="">
+                                        <div class="card_image_box bg_orange">
+                                            <img src="../assets/images/tickets/fe_ticket_orange.svg" alt="">
                                         </div>
-
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <!-- Recent Openings and Recent Resume start -->
                         <div class="row g-4 mt-3">
-                            <div class="col-xl-6">
-                                <div class="bg-white rounded-3 shadow recent_resum_card_area">
+                            <div class="col-12">
+                                <div class="bg-white rounded-3 shadow pb-3">
                                     <div
                                         class="recent_resum_cardHeader d-flex justify-content-between align-items-center flex-wrap gap-3">
-                                        <h1>Recent Openings</h1>
+                                        <h1>Monthly Recap Report</h1>
                                         <ul class="cardToolBox">
-                                            <li><button><i class="fa-solid fa-gear"></i></button></li>
                                             <li><button><i class="fa-solid fa-minus"></i></button></li>
-                                            <li><button><i
-                                                        class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
-                                            </li>
+                                            <li><button><i class="fa-solid fa-wrench"></i></button></li>
                                             <li><button><i class="fa-solid fa-xmark"></i></button></li>
                                         </ul>
                                     </div>
                                     <div class="px-3">
-                                        <div class="table-responsive" style="max-height: 476px;">
-                                            <table class="table recentOpenings table-bordered px-3"
-                                                style="border-color: #ffffff;">
-                                                <thead class="position-sticky  bg-white" style="top: -2px;">
-                                                    <tr class="fs-14 fw-normal py-2">
-                                                        <th></th>
-                                                        <th>Job Title</th>
-                                                        <th>Post On</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr class="text-nowrap">
-                                                        <td>
-                                                            <div class="jobItemsIconBox">
-                                                                <img src="../assets/images/managerIcon.svg" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="jobDetails">
-                                                            <a href="openingDetails.html">Branch Manager</a>
-                                                            <ul>
-                                                                <li><span>Source:</span> IT,</li>
-                                                                <li><span>Skill:</span> Java Developer,</li>
-                                                                <li><span>Experience:</span>Fresher,</li>
-                                                                <li><span>Status:</span> <span
-                                                                        class="openStatus">Open</span>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            10 Jun 2025
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td>
-                                                            <div class="jobItemsIconBox">
-                                                                <img src="../assets/images/managerIcon.svg" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="jobDetails">
-                                                            <a href="openingDetails.html">Branch Manager</a>
-                                                            <ul>
-                                                                <li><span>Source:</span> IT,</li>
-                                                                <li><span>Skill:</span> Java Developer,</li>
-                                                                <li><span>Experience:</span>Fresher,</li>
-                                                                <li><span>Status:</span> <span
-                                                                        class="openStatus">Open</span>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            10 Jun 2025
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td>
-                                                            <div class="jobItemsIconBox">
-                                                                <img src="../assets/images/managerIcon.svg" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="jobDetails">
-                                                            <a href="openingDetails.html">Branch Manager</a>
-                                                            <ul>
-                                                                <li><span>Source:</span> IT,</li>
-                                                                <li><span>Skill:</span> Java Developer,</li>
-                                                                <li><span>Experience:</span>Fresher,</li>
-                                                                <li><span>Status:</span> <span
-                                                                        class="openStatus">Open</span>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            10 Jun 2025
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td>
-                                                            <div class="jobItemsIconBox">
-                                                                <img src="../assets/images/managerIcon.svg" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="jobDetails">
-                                                            <a href="openingDetails.html">Branch Manager</a>
-                                                            <ul>
-                                                                <li><span>Source:</span> IT,</li>
-                                                                <li><span>Skill:</span> Java Developer,</li>
-                                                                <li><span>Experience:</span>Fresher,</li>
-                                                                <li><span>Status:</span> <span
-                                                                        class="openStatus">Open</span>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            10 Jun 2025
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td>
-                                                            <div class="jobItemsIconBox">
-                                                                <img src="../assets/images/managerIcon.svg" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="jobDetails">
-                                                            <a href="openingDetails.html">Branch Manager</a>
-                                                            <ul>
-                                                                <li><span>Source:</span> IT,</li>
-                                                                <li><span>Skill:</span> Java Developer,</li>
-                                                                <li><span>Experience:</span>Fresher,</li>
-                                                                <li><span>Status:</span> <span
-                                                                        class="openStatus">Open</span>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            10 Jun 2025
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td>
-                                                            <div class="jobItemsIconBox">
-                                                                <img src="../assets/images/managerIcon.svg" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="jobDetails">
-                                                            <a href="openingDetails.html">Branch Manager</a>
-                                                            <ul>
-                                                                <li><span>Source:</span> IT,</li>
-                                                                <li><span>Skill:</span> Java Developer,</li>
-                                                                <li><span>Experience:</span>Fresher,</li>
-                                                                <li><span>Status:</span> <span
-                                                                        class="openStatus">Open</span>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            10 Jun 2025
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td>
-                                                            <div class="jobItemsIconBox">
-                                                                <img src="../assets/images/managerIcon.svg" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="jobDetails">
-                                                            <a href="openingDetails.html">Branch Manager</a>
-                                                            <ul>
-                                                                <li><span>Source:</span> IT,</li>
-                                                                <li><span>Skill:</span> Java Developer,</li>
-                                                                <li><span>Experience:</span>Fresher,</li>
-                                                                <li><span>Status:</span> <span
-                                                                        class="openStatus">Open</span>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            10 Jun 2025
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td>
-                                                            <div class="jobItemsIconBox">
-                                                                <img src="../assets/images/managerIcon.svg" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="jobDetails">
-                                                            <a href="openingDetails.html">Branch Manager</a>
-                                                            <ul>
-                                                                <li><span>Source:</span> IT,</li>
-                                                                <li><span>Skill:</span> Java Developer,</li>
-                                                                <li><span>Experience:</span>Fresher,</li>
-                                                                <li><span>Status:</span> <span
-                                                                        class="openStatus">Open</span>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            10 Jun 2025
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td>
-                                                            <div class="jobItemsIconBox">
-                                                                <img src="../assets/images/managerIcon.svg" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="jobDetails">
-                                                            <a href="openingDetails.html">Branch Manager</a>
-                                                            <ul>
-                                                                <li><span>Source:</span> IT,</li>
-                                                                <li><span>Skill:</span> Java Developer,</li>
-                                                                <li><span>Experience:</span>Fresher,</li>
-                                                                <li><span>Status:</span> <span
-                                                                        class="openStatus">Open</span>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                        <td>
-                                                            10 Jun 2025
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="bg-white rounded-3 shadow recent_resum_card_area">
-                                    <div
-                                        class="recent_resum_cardHeader d-flex justify-content-between align-items-center flex-wrap gap-3">
-                                        <h1>Recent Resume</h1>
-                                        <ul class="cardToolBox">
-                                            <li><button><i class="fa-solid fa-gear"></i></button></li>
-                                            <li><button><i class="fa-solid fa-minus"></i></button></li>
-                                            <li><button><i
-                                                        class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
-                                            </li>
-                                            <li><button><i class="fa-solid fa-xmark"></i></button></li>
-                                        </ul>
-                                    </div>
-                                    <div class="px-3">
-                                        <div class="table-responsive" style="max-height: 476px;">
-                                            <table class="table recentOpenings table-bordered px-3"
-                                                style="border-color: #ffffff;">
-                                                <tbody>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="text-nowrap">
-                                                        <td style="width: 50px;">
-                                                            <div class="userIconBox">
-                                                                <img src="../assets/images/userimages.png" alt="BM">
-                                                            </div>
-                                                        </td>
-                                                        <td class="userDetails px-3">
-                                                            <h1>Kshitiz Chopra <span>(For : java tester)</span></h1>
-                                                            <ul>
-                                                                <li><span class="graduation"><i
-                                                                            class="fa-solid fa-graduation-cap"></i></span>
-                                                                    Full Stack Developer,</li>
-                                                                <li><span class="file"><i
-                                                                            class="fa-solid fa-file"></i></span> .NET,
-                                                                    C#, AngularJs</li>
-                                                                </li>
-                                                            </ul>
-                                                            <ul>
-                                                                <li><span class="email"><i
-                                                                            class="fa-solid fa-envelope"></i></span>
-                                                                    shivam.sharma@intero.in</li>
-                                                                <li><span class="mobile"><i
-                                                                            class="fa-solid fa-mobile-screen-button"></i></span>
-                                                                    +91
-                                                                    1234567890</li>
-                                                                </li>
-                                                                <li><span class="address"><i
-                                                                            class="fa-solid fa-location-arrow"></i></span>
-                                                                    East
-                                                                    Delhi, Delhi</li>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="row g-4">
+                                            <div class=" col-xl-7">
+                                                <h1 class="text-dark fs-14 fw-medium py-3">
+                                                    Tickets: 6/2/2025-7/1/2025
+                                                </h1>
+                                                <div class="p-3">
+                                                    <div id="monthlyRecapReport"></div>
+                                                </div>
+                                            </div>
+                                            <div class=" col-xl-5">
+                                                <h1 class="text-dark fs-14 fw-medium py-3 border-bottom">
+                                                    Goal Completion
+                                                </h1>
+                                                <div class="goalCompletionItems mt-4 ">
+                                                    <h1 class="fs-6 fw-medium mb-3 text-dark">Open</h1>
+                                                    <p>5 <span class="text-secondary">/ 5</span></p>
+                                                    <div class="goalCompletionProgress_area w-100">
+                                                        <div class="completion position-relative "
+                                                            style="width: 100%; background-color: #4AD991;">
+                                                            <h1
+                                                                class="position-absolute  top-50 start-50 translate-middle text-white fs-12 mb-0 fw-medium text-center">
+                                                                100%</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="goalCompletionItems mt-4 ">
+                                                    <h1 class="fs-6 fw-medium mb-3 text-dark">Unassigned</h1>
+                                                    <p>2 <span class="text-secondary">/ 5</span></p>
+                                                    <div class="goalCompletionProgress_area w-100">
+                                                        <div class="completion position-relative "
+                                                            style="width: 40%; background-color: #FF9500;">
+                                                            <h1
+                                                                class="position-absolute  top-50 start-50 translate-middle text-white fs-12 mb-0 fw-medium text-center">
+                                                                40%</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="goalCompletionItems mt-4 ">
+                                                    <h1 class="fs-6 fw-medium mb-3 text-dark">Tickets Breached SLAs</h1>
+                                                    <p>0 <span class="text-secondary">/ 5</span></p>
+                                                    <div class="goalCompletionProgress_area w-100">
+                                                        <div class="completion position-relative "
+                                                            style="width: 0%; background-color: #FF9500;">
+                                                            <h1
+                                                                class="position-absolute  top-50 start-50 translate-middle text-white fs-12 mb-0 fw-medium text-center">
+                                                            </h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2085,6 +1618,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- simple bar js -->
         <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+        <!-- apex chart -->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
         <!-- js -->
         <script src="../assets/js/main.js"></script>
 </body>

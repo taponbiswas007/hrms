@@ -1,0 +1,26 @@
+.bg_purple {
+    background: #8280FF21;
+}
+
+.bg_green {
+    background: #4AD99121;
+}
+
+.bg_yellow {
+    background: #FFCA8021;
+}
+
+.bg_orange {
+    background: #FF906621;
+}
+
+.goalCompletionProgress_area {
+    height: 19px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #E5E5EA;
+
+    .completion {
+        height: 100%;
+    }
+}
