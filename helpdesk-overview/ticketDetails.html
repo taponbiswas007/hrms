@@ -1452,438 +1452,118 @@
                             <div class=" w-100 d-flex flex-wrap gap-3 justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
                                 <h1 class=" fw-medium fs-6 text-black  ">
-                                    Manage Tickets</h1>
+                                    Ticket</h1>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center w-100 mt-3">
+                            <div class="d-flex justify-content-start p-3 rounded-4 align-items-center w-100 mt-3 gap-lg-5 flex-wrap gap-3"
+                                style="background:#5A6185 ;">
+                                <h1 class="fw-semibold fs-14 text-white mb-0">Ticket : T-00000001</h1>
+                                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item fs-14 fw-semibold"><a style="color: #ffffff;"
+                                                href="#">Resolved</a>
+                                        </li>
+                                        <li class="breadcrumb-item fs-14 fw-normal" style="color: #E3E3E3;"
+                                            aria-current="page">
+                                            new
+                                        </li>
+                                        <li class="breadcrumb-item fs-14 fw-normal" style="color: #E3E3E3;"
+                                            aria-current="page">
+                                            inprogress
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <button class="btn bg-blue fs-14 fw-semibold text-white px-4 rounded-4"
+                                    style="border: 1px solid #FFFFFF">Edit Ticket</button>
+                            </div>
+                            <div
+                                class="d-flex justify-content-start align-items-start gap-2 fs-6 fw-normal text-dark mt-3">
+                                <span class="fw-medium flex-shrink-0">Description : </span>
+                                <p class="mb-0"> test
+                                </p>
+                            </div>
+                            <div
+                                class="d-flex justify-content-start align-items-start gap-2 fs-6 fw-normal text-dark mt-3">
+                                <span class="fw-medium flex-shrink-0">Customer : </span>
+                                <p class="mb-0"> Vinod
+                                    Verma(INTR0002)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-3 rounded-4 shadow mt-4">
+                            <div class=" w-100 d-flex flex-wrap gap-3 justify-content-between align-items-center pb-3"
+                                style="border-bottom:0.9px dashed #D2D2D2 ;">
+                                <h1 class=" fw-medium fs-6 text-black  ">
+                                    Customer Details</h1>
+                            </div>
+                            <div class="table-responsive pb-3">
+                                <div
+                                    class="javaTesterDetailsArea timeSheetslist justify-content-between  mt-3 gap-3 d-flex align-items-center ">
+                                    <ul>
+                                        <li>Bronze</li>
+                                        <li>Category</li>
+                                    </ul>
+                                    <ul>
+                                        <li>USER</li>
+                                        <li>Type</li>
+                                    </ul>
+                                    <ul>
+                                        <li>class1</li>
+                                        <li>Class</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table-responsive pb-3">
+                                <div
+                                    class="javaTesterDetailsArea timeSheetslist justify-content-between  mt-3 gap-3 d-flex align-items-center ">
+                                    <ul>
+                                        <li>type1</li>
+                                        <li>Type</li>
+                                    </ul>
+                                    <ul>
+                                        <li>subtype1</li>
+                                        <li>Subtype</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Low</li>
+                                        <li>Severity</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table-responsive pb-3">
+                                <div
+                                    class="javaTesterDetailsArea timeSheetslist justify-content-between  mt-3 gap-3 d-flex align-items-center ">
+                                    <ul>
+                                        <li>
+                                            <button
+                                                class="btn bg-blue text-white fs-12 px-4 py-1 rounded-4 mb-1">Attach</button>
+                                        </li>
+                                        <li>Attachment</li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <div
+                                                class="d-flex justify-content-start align-items-center gap-2 mb-1 flex-wrap">
+                                                <span class="text-wrap">Close by : May 3 2024 12:00AM</span>
+                                                <button
+                                                    class="btn bg-danger text-white fs-12 px-4 py-1 rounded-4">Breached</button>
+                                            </div>
+                                        </li>
+                                        <li>SLA</li>
+                                    </ul>
+                                    <ul>
+                                        <li>INTR0001</li>
+                                        <li>Assign to</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-start mt-3">
                                 <button class="btn bg-blue text-white fs-14 px-4 rounded-4">
-                                    Export to Excel
-                                </button>
-                                <button data-bs-toggle="modal" data-bs-target="#filterTickets"
-                                    class="btn bg-blue text-white fs-14 px-3 rounded-4">
-                                    <i class="fa-solid fa-filter"></i>
+                                    Change Progress
                                 </button>
                             </div>
-                            <div class="table-responsive pb-3 mt-4">
-                                <table class="table-bordered w-100 fs-14 " style="border: 1px solid #D2D2D2;">
-                                    <thead>
-                                        <tr class="text-nowrap fw-medium align-middle" style="background: #F9F9F9;">
-                                            <th class="p-2">
-                                                Ticket #
-                                            </th>
-                                            <th class="p-2">
-                                                Description
-                                            </th>
-                                            <th class="p-2">
-                                                Class
-                                            </th>
-                                            <th class="p-2">
-                                                Type
-                                            </th>
-                                            <th class="p-2">
-                                                Subtype
-                                            </th>
-                                            <th class="p-2 ">
-                                                Severity
-                                            </th>
-                                            <th class="p-2 ">
-                                                SLA Status
-                                            </th>
-                                            <th class="p-2 ">
-                                                Status
-                                            </th>
-                                            <th class="p-2 ">
-                                                Stage
-                                            </th>
-                                            <th class="p-2 ">
-                                                Customer
-                                            </th>
-                                            <th class="p-2">
-                                                Assigned To
-                                            </th>
-                                            <th class="p-2">
-                                                Team
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="fs-14">
-                                        <tr class="text-nowrap" style="height: 50px;">
-                                            <td class="p-2">
-                                                <a style="color:#4A59A7 ;" href="ticketDetails.html">
-                                                    T-00000001
-                                                </a>
-                                            </td>
-                                            <td class="p-2">
-                                                testing
-                                            </td>
-                                            <td class="p-2">
-                                                class1
-                                            </td>
-                                            <td class="p-2">
-                                                Type 1
-                                            </td>
-                                            <td class="p-2">
-                                                subtype1
-                                            </td>
-                                            <td class="p-2">
-                                                Low
-                                            </td>
-                                            <td class="p-2">
-                                                Normal
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Open</span>
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Resolved</span>
-                                            </td>
-                                            <td class="p-2">
-                                                Vinod Verma(INTR0002)
-                                            </td>
-                                            <td class="p-2">
-                                                Yu Huaiqing Pet(INTR0001)
-                                            </td>
-                                            <td class="p-2">
-                                                HR
-                                            </td>
-                                        </tr>
-                                        <tr class="text-nowrap" style="height: 50px;">
-                                            <td class="p-2">
-                                                <a style="color:#4A59A7 ;" href="ticketDetails.html">
-                                                    T-00000001
-                                                </a>
-                                            </td>
-                                            <td class="p-2">
-                                                testing
-                                            </td>
-                                            <td class="p-2">
-                                                class1
-                                            </td>
-                                            <td class="p-2">
-                                                Type 1
-                                            </td>
-                                            <td class="p-2">
-                                                subtype1
-                                            </td>
-                                            <td class="p-2">
-                                                Low
-                                            </td>
-                                            <td class="p-2">
-                                                Normal
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Open</span>
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="inprogressStatus">In Progress</span>
-                                            </td>
-                                            <td class="p-2">
-                                                Vinod Verma(INTR0002)
-                                            </td>
-                                            <td class="p-2">
-                                                Yu Huaiqing Pet(INTR0001)
-                                            </td>
-                                            <td class="p-2">
-                                                HR
-                                            </td>
-                                        </tr>
-                                        <tr class="text-nowrap" style="height: 50px;">
-                                            <td class="p-2">
-                                                <a style="color:#4A59A7 ;" href="ticketDetails.html">
-                                                    T-00000001
-                                                </a>
-                                            </td>
-                                            <td class="p-2">
-                                                testing
-                                            </td>
-                                            <td class="p-2">
-                                                class1
-                                            </td>
-                                            <td class="p-2">
-                                                Type 1
-                                            </td>
-                                            <td class="p-2">
-                                                subtype1
-                                            </td>
-                                            <td class="p-2">
-                                                Low
-                                            </td>
-                                            <td class="p-2">
-                                                Normal
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Open</span>
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Resolved</span>
-                                            </td>
-                                            <td class="p-2">
-                                                Vinod Verma(INTR0002)
-                                            </td>
-                                            <td class="p-2">
-                                                Yu Huaiqing Pet(INTR0001)
-                                            </td>
-                                            <td class="p-2">
-                                                HR
-                                            </td>
-                                        </tr>
-                                        <tr class="text-nowrap" style="height: 50px;">
-                                            <td class="p-2">
-                                                <a style="color:#4A59A7 ;" href="ticketDetails.html">
-                                                    T-00000001
-                                                </a>
-                                            </td>
-                                            <td class="p-2">
-                                                testing
-                                            </td>
-                                            <td class="p-2">
-                                                class1
-                                            </td>
-                                            <td class="p-2">
-                                                Type 1
-                                            </td>
-                                            <td class="p-2">
-                                                subtype1
-                                            </td>
-                                            <td class="p-2">
-                                                Low
-                                            </td>
-                                            <td class="p-2">
-                                                Normal
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Open</span>
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Resolved</span>
-                                            </td>
-                                            <td class="p-2">
-                                                Vinod Verma(INTR0002)
-                                            </td>
-                                            <td class="p-2">
-                                                Yu Huaiqing Pet(INTR0001)
-                                            </td>
-                                            <td class="p-2">
-                                                HR
-                                            </td>
-                                        </tr>
-                                        <tr class="text-nowrap" style="height: 50px;">
-                                            <td class="p-2">
-                                                <a style="color:#4A59A7 ;" href="ticketDetails.html">
-                                                    T-00000001
-                                                </a>
-                                            </td>
-                                            <td class="p-2">
-                                                testing
-                                            </td>
-                                            <td class="p-2">
-                                                class1
-                                            </td>
-                                            <td class="p-2">
-                                                Type 1
-                                            </td>
-                                            <td class="p-2">
-                                                subtype1
-                                            </td>
-                                            <td class="p-2">
-                                                Low
-                                            </td>
-                                            <td class="p-2">
-                                                Normal
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Open</span>
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Resolved</span>
-                                            </td>
-                                            <td class="p-2">
-                                                Vinod Verma(INTR0002)
-                                            </td>
-                                            <td class="p-2">
-                                                Yu Huaiqing Pet(INTR0001)
-                                            </td>
-                                            <td class="p-2">
-                                                HR
-                                            </td>
-                                        </tr>
-                                        <tr class="text-nowrap" style="height: 50px;">
-                                            <td class="p-2">
-                                                <a style="color:#4A59A7 ;" href="ticketDetails.html">
-                                                    T-00000001
-                                                </a>
-                                            </td>
-                                            <td class="p-2">
-                                                testing
-                                            </td>
-                                            <td class="p-2">
-                                                class1
-                                            </td>
-                                            <td class="p-2">
-                                                Type 1
-                                            </td>
-                                            <td class="p-2">
-                                                subtype1
-                                            </td>
-                                            <td class="p-2">
-                                                Low
-                                            </td>
-                                            <td class="p-2">
-                                                Normal
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Open</span>
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Resolved</span>
-                                            </td>
-                                            <td class="p-2">
-                                                Vinod Verma(INTR0002)
-                                            </td>
-                                            <td class="p-2">
-                                                Yu Huaiqing Pet(INTR0001)
-                                            </td>
-                                            <td class="p-2">
-                                                HR
-                                            </td>
-                                        </tr>
-                                        <tr class="text-nowrap" style="height: 50px;">
-                                            <td class="p-2">
-                                                <a style="color:#4A59A7 ;" href="ticketDetails.html">
-                                                    T-00000001
-                                                </a>
-                                            </td>
-                                            <td class="p-2">
-                                                testing
-                                            </td>
-                                            <td class="p-2">
-                                                class1
-                                            </td>
-                                            <td class="p-2">
-                                                Type 1
-                                            </td>
-                                            <td class="p-2">
-                                                subtype1
-                                            </td>
-                                            <td class="p-2">
-                                                Low
-                                            </td>
-                                            <td class="p-2">
-                                                Normal
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Open</span>
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Resolved</span>
-                                            </td>
-                                            <td class="p-2">
-                                                Vinod Verma(INTR0002)
-                                            </td>
-                                            <td class="p-2">
-                                                Yu Huaiqing Pet(INTR0001)
-                                            </td>
-                                            <td class="p-2">
-                                                HR
-                                            </td>
-                                        </tr>
-                                        <tr class="text-nowrap" style="height: 50px;">
-                                            <td class="p-2">
-                                                <a style="color:#4A59A7 ;" href="ticketDetails.html">
-                                                    T-00000001
-                                                </a>
-                                            </td>
-                                            <td class="p-2">
-                                                testing
-                                            </td>
-                                            <td class="p-2">
-                                                class1
-                                            </td>
-                                            <td class="p-2">
-                                                Type 1
-                                            </td>
-                                            <td class="p-2">
-                                                subtype1
-                                            </td>
-                                            <td class="p-2">
-                                                Low
-                                            </td>
-                                            <td class="p-2">
-                                                Normal
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Open</span>
-                                            </td>
-                                            <td class="p-2">
-                                                <span class="approvedStatus">Resolved</span>
-                                            </td>
-                                            <td class="p-2">
-                                                Vinod Verma(INTR0002)
-                                            </td>
-                                            <td class="p-2">
-                                                Yu Huaiqing Pet(INTR0001)
-                                            </td>
-                                            <td class="p-2">
-                                                HR
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- pagination area -->
-                            <div class="d-flex align-items-center justify-content-end pagination_area pt-2">
-                                <ul class="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                                    <li>
-                                        <a class="d-flex align-items-center fs-6  border justify-content-center p-2 "
-                                            style=" border-radius: 7.24px;" href="">
-                                            <i class="fa-angle-left fa-solid"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 "
-                                            style=" border-radius: 7.24px;" href="">
-                                            Prev
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="d-flex align-items-center border justify-content-center p-2 "
-                                            style=" border-radius: 7.24px;" href="">
-                                            Next
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <small>Page:</small>
-                                        <span>1</span>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex gap-2">
-                                            <small>Of</small>
-                                            <p>100</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="custom-dropdown">
-                                            <!-- Dropdown button -->
-                                            <div class="custom-dropdown-button" onclick="toggleDropdown(event)">
-                                                10
-                                            </div>
-                                            <!-- Dropdown options -->
-                                            <div class="custom-dropdown-options shadow">
-                                                <div class="custom-dropdown-option"
-                                                    onclick="selectOption(event, '1', '10')">10</div>
-                                                <div class="custom-dropdown-option"
-                                                    onclick="selectOption(event, '2', '11')">11</div>
-                                                <div class="custom-dropdown-option"
-                                                    onclick="selectOption(event, '3', '12')">12</div>
-                                                <div class="custom-dropdown-option"
-                                                    onclick="selectOption(event, '4', '13')">13</div>
-                                                <div class="custom-dropdown-option"
-                                                    onclick="selectOption(event, '5', '14')">14</div>
-                                            </div>
-                                        </div>
 
-                                    </li>
-                                </ul>
-                            </div>
+
+
                             <!-- ===============Add/Edit Project area start============ -->
                             <div class="modal fade" id="filterTickets" aria-hidden="true"
                                 aria-labelledby="exampleModalToggleLabel" tabindex="-1">
