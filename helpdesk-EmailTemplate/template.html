@@ -1453,55 +1453,234 @@
                             <div class=" w-100 d-flex flex-wrap gap-3 justify-content-between align-items-center pb-3"
                                 style="border-bottom:0.9px dashed #D2D2D2 ;">
                                 <h1 class=" fw-medium fs-6 text-black  ">
-                                    Email Templates</h1>
+                                    Template</h1>
                             </div>
-                            <div class="table-responsive pb-3 mt-4">
-                                <table class="table-bordered w-100 fs-14 " style="border: 1px solid #D2D2D2;">
-                                    <thead>
-                                        <tr class="text-nowrap fw-medium align-middle" style="background: #F9F9F9;">
-                                            <th class="p-2">
-                                                Subject
-                                            </th>
-                                            <th class="p-2">
-                                                To
-                                            </th>
-                                            <th class="p-2">
-                                                Cc
-                                            </th>
-                                            <th class="p-2">
-                                                Bcc
-                                            </th>
-                                            <th class="p-2 text-center" style="width: 192px;">
-                                                Action
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="fs-14">
-                                        <tr class="text-nowrap" style="height: 50px;">
-                                            <td class="p-2">
-                                                Ticket Assigned
-                                            </td>
-                                            <td class="p-2">
-                                                Assigned To
-                                            </td>
-                                            <td class="p-2">
-                                                Assigned Team
-                                            </td>
-                                            <td class="p-2">
-
-                                            </td>
-                                            <td class="p-2">
-                                                <div class="d-flex justify-content-center align-items-center">
-                                                    <button class="commonbtn px-4">Edit</button>
+                            <div class="row g-4 mt-1">
+                                <div class="col-lg-6">
+                                    <label class=" mb-1" for="">
+                                        To recipients
+                                    </label>
+                                    <div style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" border fs-7 px-3 py-2 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center gap-2 flex-wrap ">
+                                            <span
+                                                class="d-flex text-white bg-blue px-2 py-1  justify-content-center align-items-center gap-2">
+                                                <h1 class="fs-12 text-white">Assigned To</h1>
+                                                <button class="text-white fs-12"><i
+                                                        class="fa-solid fa-xmark"></i></button>
+                                            </span>
+                                        </div>
+                                        <button class="text-dark fs-6"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label class=" mb-1" for="">
+                                        Cc recipients
+                                    </label>
+                                    <div style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" border fs-7 px-3 py-2 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center gap-2 flex-wrap ">
+                                            <span
+                                                class="d-flex text-white bg-blue px-2 py-1  justify-content-center align-items-center gap-2">
+                                                <h1 class="fs-12 text-white">Assigned Team</h1>
+                                                <button class="text-white fs-12"><i
+                                                        class="fa-solid fa-xmark"></i></button>
+                                            </span>
+                                        </div>
+                                        <button class="text-dark fs-6"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label class=" mb-1" for="">
+                                        Additional Cc recipients
+                                    </label>
+                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-control fs-7" placeholder="Enter Additional Cc recipients">
+                                    <p class="notetext">Please fill semi-colon (;) separated e-mail addresses</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label class=" mb-1" for="">
+                                        Bcc recipients
+                                    </label>
+                                    <div style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" border fs-7 px-3 py-2 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center gap-2 flex-wrap ">
+                                            <span
+                                                class="d-flex text-white bg-blue px-2 py-1  justify-content-center align-items-center gap-2">
+                                                <h1 class="fs-12 text-white">Assigned Team</h1>
+                                                <button class="text-white fs-12"><i
+                                                        class="fa-solid fa-xmark"></i></button>
+                                            </span>
+                                        </div>
+                                        <button class="text-dark fs-6"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label class=" mb-1" for="">
+                                        Additional Bcc recipients
+                                    </label>
+                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-control fs-7" placeholder="Enter Additional Cc recipients">
+                                    <p class="notetext">Please fill semi-colon (;) separated e-mail addresses</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex justify-content-between align-items-center gap-2">
+                                        <div class="d-flex justify-content-start align-items-start flex-column gap-3">
+                                            <label class=" mb-1" for="">
+                                                Tokens
+                                            </label>
+                                            <h1 class="fs-12 fw-normal text-dark">Use the tokens to parameterize subject
+                                                and body content</h1>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-start  flex-column gap-3 flex-shrink-0 pt-3"
+                                            style="width: fit-content;">
+                                            <button data-bs-toggle="modal" data-bs-target="#showTokens"
+                                                class="btn bg-blue text-white fs-14 rounded-3 px-3 flex-shrink-0 mt-1">Show
+                                                Tokens</button>
+                                        </div>
+                                        <!-- ===============Show Tokens area start============ -->
+                                        <div class="modal fade" id="showTokens" aria-hidden="true"
+                                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered ">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title text-wrap lh-base"
+                                                            id="exampleModalToggleLabel">
+                                                            Tokens</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#TICKETNUMBER#</span><span
+                                                                class="px-2">-</span><span>Ticket's number</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#DESCRIPTION#</span><span
+                                                                class="px-2">-</span><span>Description of the
+                                                                ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#CLASS#</span><span
+                                                                class="px-2">-</span><span>Class of the ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#TYPE#</span><span
+                                                                class="px-2">-</span><span>Type of the ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#SUBTYPE#</span><span
+                                                                class="px-2">-</span><span>Subtype of the ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#STATUS#</span><span
+                                                                class="px-2">-</span><span>Status of the ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#SEVERITY#</span><span
+                                                                class="px-2">-</span><span>Severity of the ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#STAGE#</span><span
+                                                                class="px-2">-</span><span>Stage of the ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#SLASTATUS#</span><span
+                                                                class="px-2">-</span><span>SLA status of the
+                                                                ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#NOTE#</span><span
+                                                                class="px-2">-</span><span>Note added to the
+                                                                Ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#ATTACHMENT#</span><span
+                                                                class="px-2">-</span><span>Attachment added to the
+                                                                Ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#FINALRESOLUTION#</span><span
+                                                                class="px-2">-</span><span>Final resolution provided for
+                                                                the ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#MODIFIEDBY#</span><span
+                                                                class="px-2">-</span><span>Name of the user who modified
+                                                                the ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#ASSIGNEDTO#</span><span
+                                                                class="px-2">-</span><span>Name of the user to whom the
+                                                                ticket is assigned</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#ASSIGNEDTEAM#</span><span
+                                                                class="px-2">-</span><span>Name of the team manager to
+                                                                whose team the ticket is assigned</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#CUSTOMER#</span><span
+                                                                class="px-2">-</span><span>Name of the customer who
+                                                                created the ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#CREATEDBY#</span><span
+                                                                class="px-2">-</span><span>Name of the user who created
+                                                                the ticket</span>
+                                                        </p>
+                                                        <p class="fs-14 text-dark mb-2 fw-normal">
+                                                            <span class="fw-medium">#HELPADMIN#</span><span
+                                                                class="px-2">-</span><span>Name of helpdesk
+                                                                administrator</span>
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="d-flex justify-content-end align-items-center mt-4">
-                                <a href="template.html" class="btn bg-blue text-white fs-14 rounded-4 px-4">+ New
-                                    Template</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- ===============Show Tokens area end============ -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <label class=" mb-1" for="">
+                                        Subject
+                                    </label>
+                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-control fs-7" placeholder="Enter Subject">
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap mb-1">
+                                        <label for="">
+                                            Body
+                                        </label>
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle text-white" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                style="background: #34C759;">
+                                                Text
+                                            </button>
+                                            <ul class="dropdown-menu border-0 shadow rounded-4"
+                                                aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <textarea name="" id=""
+                                        style="border-color: #C2C2C2; border-radius:8px; height: 180px;"
+                                        class=" form-control fs-7"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="d-flex justify-content-end align-items-end gap-3 h-100 w-100">
+                                        <button class="btn bg-blue text-white rounded-4 px-4">Update</button>
+                                        <button class="btn  text-white rounded-4 px-4"
+                                            style="background: #5A6185;">Cancel</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
