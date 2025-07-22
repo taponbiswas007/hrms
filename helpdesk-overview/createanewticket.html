@@ -959,14 +959,14 @@
                                             </div>
                                             Manage Tickets
                                         </a></li>
-                                    <li><a href="../helpdesk-ManageTerms/manageTeams.html" class="mb-1">
+                                    <li><a href="../helpdesk-ManageTeams/manageTeams.html" class="mb-1">
                                             <div class="arrow-right">
                                                 <svg viewBox="0 0 448 512" width="10" height="10">
                                                     <path fill="currentColor"
                                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                                 </svg>
                                             </div>
-                                            Manage Terms
+                                            Manage Teams
                                         </a></li>
                                     <li><a href="../helpdesk-TicketType/ticketType.html" class="mb-1">
                                             <div class="arrow-right">
@@ -1408,7 +1408,7 @@
                                                 href="../helpdesk-ManageTickets/manageTickets.html">Manage Tickets</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
-                                                href="../helpdesk-ManageTerms/manageTeams.html">Manage Terms</a>
+                                                href="../helpdesk-ManageTeams/manageTeams.html">Manage Teams</a>
                                         </li>
                                         <li><a class="dropdown-item mb-1"
                                                 href="../helpdesk-TicketType/ticketType.html">Ticket Type</a>
@@ -1454,90 +1454,86 @@
                                 <h1 class=" fw-medium fs-6 text-black  ">
                                     Ticket</h1>
                             </div>
-                            <div class="modal-body">
-                                <div class="row g-4">
-                                    <div class="col-xl-6 col-lg-12 col-12">
-                                        <label class=" mb-1" for="">
-                                            Description
-                                        </label>
-                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7" placeholder="Enter Description">
+                            <div class="row g-4">
+                                <div class="col-xl-6 col-lg-12 col-12">
+                                    <label class=" mb-1" for="">
+                                        Description
+                                    </label>
+                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-control fs-7" placeholder="Enter Description">
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Customer
+                                    </label>
+                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-control fs-7" placeholder="Enter Customer Name">
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Class
+                                    </label> <br>
+                                    <div class="d-flex justify-content-start align-items-center gap-3 mt-2">
+                                        <input type="radio" name="class" class="  custom-radio">
+                                        <label for="class1">class1</label>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
-                                        <label class=" mb-1" for="">
-                                            Customer
-                                        </label>
-                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7" placeholder="Enter Customer Name">
-                                    </div>
-                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
-                                        <label class=" mb-1" for="">
-                                            Class
-                                        </label> <br>
-                                        <div class="d-flex justify-content-start align-items-center gap-3 mt-2">
-                                            <input type="radio" name="class" class="  custom-radio">
-                                            <label for="class1">class1</label>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Type
+                                    </label>
+                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7">
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        SubType
+                                    </label>
+                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7">
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Severity
+                                    </label>
+                                    <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-select fs-7">
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
+                                    <div class="d-flex justify-content-between align-items-center gap-2">
+                                        <div class="d-flex justify-content-start align-items-start flex-column gap-3">
+                                            <label class=" mb-1" for="">
+                                                Stage
+                                            </label>
+                                            <h1 class="fs-14 fw-medium text-dark">Unavailable</h1>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-start flex-column gap-3">
+                                            <h1 class="fs-14 fw-medium text-dark">Attachment</h1>
+                                            <button data-bs-toggle="modal" data-bs-target="#attachafile"
+                                                class="btn bg-blue text-white fs-12 rounded-3 px-4">Attach</button>
                                         </div>
                                     </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
-                                        <label class=" mb-1" for="">
-                                            Type
-                                        </label>
-                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-select fs-7">
-                                            <option value="">Select</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
-                                        <label class=" mb-1" for="">
-                                            SubType
-                                        </label>
-                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-select fs-7">
-                                            <option value="">Select</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
-                                        <label class=" mb-1" for="">
-                                            Severity
-                                        </label>
-                                        <select name="" id="" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-select fs-7">
-                                            <option value="">Select</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
-                                        <div class="d-flex justify-content-between align-items-center gap-2">
-                                            <div
-                                                class="d-flex justify-content-start align-items-start flex-column gap-3">
-                                                <label class=" mb-1" for="">
-                                                    Stage
-                                                </label>
-                                                <h1 class="fs-14 fw-medium text-dark">Unavailable</h1>
-                                            </div>
-                                            <div
-                                                class="d-flex justify-content-start align-items-start flex-column gap-3">
-                                                <h1 class="fs-14 fw-medium text-dark">Attachment</h1>
-                                                <button data-bs-toggle="modal" data-bs-target="#attachafile"
-                                                    class="btn bg-blue text-white fs-12 rounded-3 px-4">Attach</button>
-                                            </div>
-                                        </div>
 
 
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
-                                        <label class=" mb-1" for="">
-                                            Assign to
-                                        </label>
-                                        <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
-                                            class=" form-control fs-7" placeholder="Enter Assign to">
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
-                                        <div class="d-flex justify-content-start align-items-end gap-3 h-100">
-                                            <button class="btn  text-white rounded-4 px-4"
-                                                style="background: #5A6185;">Cancel</button>
-                                            <button class="btn bg-blue text-white rounded-4 px-4">Submit</button>
-                                        </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
+                                    <label class=" mb-1" for="">
+                                        Assign to
+                                    </label>
+                                    <input type="text" style="border-color: #C2C2C2; border-radius:8px;"
+                                        class=" form-control fs-7" placeholder="Enter Assign to">
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 col-12">
+                                    <div class="d-flex justify-content-start align-items-end gap-3 h-100">
+                                        <button class="btn  text-white rounded-4 px-4"
+                                            style="background: #5A6185;">Cancel</button>
+                                        <button class="btn bg-blue text-white rounded-4 px-4">Submit</button>
                                     </div>
                                 </div>
                             </div>
