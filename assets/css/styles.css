@@ -1214,9 +1214,6 @@ footer {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.announcement-list .items:hover {
-  background: rgba(172, 180, 245, 0.2);
-}
 
 .todolistitemssection:nth-child(even) .todosubtitle {
   border-left: 1.5px solid #00b445;
@@ -2898,6 +2895,7 @@ textarea {
           align-items: center;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  cursor: not-allowed !important;
 }
 
 .addressTable tbody tr:nth-child(odd) {
