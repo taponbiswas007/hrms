@@ -364,6 +364,14 @@
     }
 }
 
+@media (max-width: 768px) {
+    .myprofileinhelpDesk {
+        ul {
+            width: 300px !important;
+        }
+    }
+}
+
 .applicantScreeningandleadgraph {
     .progress-ring-container {
         position: relative;

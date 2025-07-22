@@ -6183,6 +6183,11 @@ textarea {
     width: 250px;
   }
 }
+@media (max-width: 768px) {
+  .myprofileinhelpDesk ul {
+    width: 300px !important;
+  }
+}
 .applicantScreeningandleadgraph .progress-ring-container {
   position: relative;
   width: 180px;
@@ -6393,8 +6398,7 @@ textarea {
 .ratingStar span {
   height: 14px;
   width: 14px;
-  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 .ratingStar .yellow {
   background: #FFCC00;
