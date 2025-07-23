@@ -3797,10 +3797,9 @@ textarea {
   font-family: Inter;
   font-weight: 500;
   font-size: 28px;
-  line-height: 100%;
+  line-height: 25px;
   letter-spacing: 1px;
   color: #202224;
-  opacity: 70%;
 }
 
 .card_image_box {
@@ -4034,7 +4033,7 @@ textarea {
   text-align: center;
   color: #D49100;
   background: rgba(255, 136, 0, 0.2);
-  padding: 7px 10px;
+  padding: 6px 10px;
   border-radius: 3px;
 }
 
@@ -6166,7 +6165,7 @@ textarea {
 .javaTesterDetailsArea ul li:last-child {
   font-family: Inter;
   font-weight: 400;
-  font-size: 11.62px;
+  font-size: 14px;
   line-height: 13.52px;
   letter-spacing: 0%;
   color: #8E8E93;
@@ -6288,7 +6287,7 @@ textarea {
           column-gap: 12px;
 }
 .jobpostingLink_area .jobpostinglinkHeader .cardToolBox li button {
-  font-size: 25px;
+  font-size: 18px;
   color: #8E8E93;
 }
 .jobpostingLink_area .jobpostinglink {
@@ -6318,6 +6317,10 @@ textarea {
   text-align: center;
   color: #0A7E22;
   padding: 5px 10px;
+}
+
+.recent_resum_cardHeader .cardToolBox li button {
+  font-size: 18px;
 }
 
 .titleExperienceLocationTable thead {

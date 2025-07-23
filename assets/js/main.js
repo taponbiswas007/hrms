@@ -1726,13 +1726,13 @@ var options = {
             }
         }
     },
-    yaxis: {
-        title: {
-            text: 'Number of Tickets'
-        },
-        min: 0,
-        max: 6
-    },
+    // yaxis: {
+    //     title: {
+    //         text: 'Number of Tickets'
+    //     },
+    //     min: 0,
+    //     max: 6
+    // },
     tooltip: {
         enabled: true,
         y: {
